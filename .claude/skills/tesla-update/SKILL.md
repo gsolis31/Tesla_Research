@@ -1,0 +1,346 @@
+---
+name: tesla-update
+description: Automatically research and update the Tesla investor tracking dashboard with the latest news across all categories plus quarterly production & delivery data
+user-invocable: true
+allowed-tools: WebSearch, Read, Edit, Write, Bash
+---
+
+# Tesla Tracker Update Skill
+
+## What This Skill Does
+
+When invoked, this skill will:
+1. Read the current `tesla-tracking-data.json` to get the last update date
+2. Research latest news for all 5 news categories from the last update date until today
+3. Check for new quarterly production & delivery reports from ir.tesla.com/press
+4. Update `tesla-tracking-data.json` with new weekly summary, metrics, and P&D data
+5. Sync the embedded data in `tesla-dashboard.html`
+6. Open the dashboard in the browser
+7. Provide a summary of key updates
+
+---
+
+## File Locations
+
+- **JSON Data**: `/Users/gonzalosolis/Research/tesla-tracking-data.json`
+- **HTML Dashboard**: `/Users/gonzalosolis/Research/tesla-dashboard.html`
+- **Working Directory**: `/Users/gonzalosolis/Research`
+
+---
+
+## One-Time Setup (Required for HTML Sync)
+
+**IMPORTANT**: The HTML file must have marker comments for reliable data syncing.
+
+If not already present, add these markers to `tesla-dashboard.html`:
+
+**Around line 450** (before `const data = {`):
+```html
+    <script>
+        // Embedded data - updated automatically from tesla-tracking-data.json
+        <!-- DATA_OBJECT_START -->
+        const data = {
+```
+
+**Around line 1352** (after the closing `}`):
+```html
+        };
+        <!-- DATA_OBJECT_END -->
+
+        function renderProductionDelivery() {
+```
+
+These markers ensure the update script can reliably find and replace the data object without syntax errors.
+
+---
+
+## Categories to Track
+
+### News Categories (1-5)
+
+### 1. AI Chip Production (AI5/AI6 at Samsung/TSMC)
+**Search for**:
+- Production timeline updates
+- Samsung/TSMC 2nm yield improvements or delays
+- Wafer capacity expansion news
+- Terafab developments
+- Risk production vs mass production milestones
+
+### 2. Cybercab Production
+**Search for**:
+- Production unit counts and locations
+- Testing deployment updates
+- Mass production timeline progress
+- Crash testing and validation status
+- Public road testing locations
+
+### 3. FSD Country Approvals
+**Search for**:
+- New country approvals (especially EU via mutual recognition)
+- Regulatory timeline updates
+- Subscription pricing launches
+- Japan deployment progress
+- Early Access program expansion
+
+### 4. Job Postings (Optimus-related)
+**Search for**:
+- Current Optimus-related job posting count
+- Significant hiring changes
+- New role types or locations
+- Strategic hires from competitors
+
+### 5. Optimus Production
+**Search for**:
+- Production timeline updates
+- Facility setup progress (Fremont, Giga Texas)
+- Commercial customer announcements
+- Pricing updates
+- Gen 3/Gen 4 developments
+- Cortex AI infrastructure updates
+- Digital Optimus developments
+
+### 6. Vehicle Production & Delivery (Quarterly Reports)
+**CRITICAL - Official Source Only**:
+- **Official URL**: https://ir.tesla.com/press
+- Search for quarterly production and delivery press releases
+- Look for releases titled "Tesla [Quarter] [Year] Production, Deliveries & Deployments"
+- Extract exact production and delivery numbers (not rounded "over X" figures)
+- Update for any new quarters since last update
+- Calculate annual totals and YoY growth for completed years
+
+**What to extract**:
+- Exact production number for the quarter
+- Exact delivery number for the quarter
+- Quarter designation (e.g., Q1-26, Q2-26)
+
+---
+
+## Preferred News Sources
+
+Search using these source domains for best results:
+- Electrek (electrek.co)
+- Teslarati (teslarati.com)
+- TeslaNorth (teslanorth.com)
+- Tesla Oracle (teslaoracle.com)
+- Basenor (basenor.com)
+- Optimusk Blog (optimusk.blog)
+- Official Tesla announcements
+
+---
+
+## Execution Steps
+
+### Step 1: Read Current State
+```
+1. Read tesla-tracking-data.json
+2. Extract lastUpdated date
+3. Calculate date range: lastUpdated → today
+```
+
+### Step 2: Research Updates
+For each of the 5 categories, use WebSearch to find news from the date range:
+```
+- Search query format: "Tesla [category] [keywords] 2026 [months]"
+- Review top 5-10 results per category
+- Identify key changes, status (positive/negative/neutral), sources
+```
+
+**IMPORTANT - Production & Delivery Data**:
+After researching the 5 news categories, ALWAYS check for new quarterly production & delivery reports:
+```
+1. Search: "Tesla Q[N] [YEAR] production delivery report site:ir.tesla.com"
+   - Check for all quarters since last update in data file
+   - Example: If last quarter is Q4 2024, search for Q1 2025, Q2 2025, etc.
+
+2. For each new quarter found:
+   - Use WebSearch to get the report URL
+   - Extract exact production and delivery numbers
+   - Note: Reports say "over XXX,XXX" but search results usually have exact figures
+
+3. Calculate annual totals for completed years:
+   - Sum all 4 quarters for deliveries
+   - Calculate YoY growth: ((current year - previous year) / previous year) × 100
+   - Update totalProduction and totalDeliveries (sum ALL quarters from all years)
+```
+
+### Step 3: Update JSON Data
+Update `tesla-tracking-data.json`:
+
+**A. Update lastUpdated**:
+```json
+"lastUpdated": "YYYY-MM-DD"  // Today's date
+```
+
+**B. Add new weekly summary** (at START of weeklySummaries array):
+```json
+{
+  "weekOf": "YYYY-MM-DD",
+  "keyChanges": [
+    {
+      "category": "Category Name",
+      "status": "positive|negative|neutral",
+      "title": "Brief title (under 80 chars)",
+      "description": "Detailed description with key data points",
+      "source": "https://source-url.com"
+    }
+  ],
+  "trends": [
+    "Trend observation 1",
+    "Trend observation 2",
+    "Trend observation 3",
+    "Trend observation 4"
+  ]
+}
+```
+
+**C. Update metrics** (if applicable):
+- Add new Cybercab production counts to `metrics.cybercab.data[]`
+- Add new job posting counts to `metrics.jobPostings.data[]`
+- Update FSD approval countries in `metrics.fsdApprovals.countries[]`
+
+**D. Update categories** (for each relevant category):
+- Update `latestUpdate` to today's date
+- Update `criticalNews` with most important recent development
+- Add/update `keyPoints` array with new information
+- Add new timeline events to `timeline[]` array
+
+**E. Update Production & Delivery Data** (if new quarters available):
+Update `categories.productionDelivery`:
+- Update `latestUpdate` to today's date
+- Update `criticalNews` with latest quarter results
+- **Append** new quarters to `quarterlyData[]` array:
+  ```json
+  { "quarter": "Q1-26", "production": 408386, "delivery": 358023 }
+  ```
+- Update `annualSummary[]` when a full year is complete:
+  ```json
+  { "year": "2025", "deliveries": 1636129, "yoyGrowth": -8.56 }
+  ```
+- Recalculate `totalProduction` (sum of ALL production values)
+- Recalculate `totalDeliveries` (sum of ALL delivery values)
+
+### Step 4: Sync HTML Dashboard
+Update `tesla-dashboard.html`:
+
+**Process**:
+Use the following Python script to sync the data reliably:
+
+```python
+import json
+import re
+
+# Read the updated JSON data
+with open('/Users/gonzalosolis/Research/tesla-tracking-data.json', 'r') as f:
+    data = json.load(f)
+
+# Read the HTML file
+with open('/Users/gonzalosolis/Research/tesla-dashboard.html', 'r') as f:
+    html_content = f.read()
+
+# Format JSON as JavaScript with proper indentation
+json_str = json.dumps(data, indent=2)
+js_lines = json_str.split('\n')
+
+# Build properly indented JavaScript (8 spaces base indent)
+indented_js = '        const data = ' + js_lines[0] + '\n'
+for line in js_lines[1:]:
+    indented_js += '        ' + line + '\n'
+indented_js = indented_js.rstrip() + ';\n'
+
+# Replace between markers (ensures reliable replacement)
+pattern = r'(<!-- DATA_OBJECT_START -->\n).*?(<!-- DATA_OBJECT_END -->)'
+new_html = re.sub(pattern, rf'\1{indented_js}        \2', html_content, flags=re.DOTALL)
+
+# Verify markers exist
+if '<!-- DATA_OBJECT_START -->' not in html_content:
+    print("ERROR: Markers not found in HTML. See 'One-Time Setup' section in skill.md")
+    exit(1)
+
+# Write the updated HTML
+with open('/Users/gonzalosolis/Research/tesla-dashboard.html', 'w') as f:
+    f.write(new_html)
+
+print("✓ HTML dashboard synced with JSON data")
+```
+
+**Note**: This script uses marker comments to reliably locate and replace the data object, preventing syntax errors.
+
+### Step 5: Open Dashboard
+```bash
+open tesla-dashboard.html
+```
+
+### Step 6: Provide Summary
+Output a concise summary to user:
+- Week range updated (last date → today)
+- Number of key changes found per category
+- Major highlights (🟢 positive, 🔴 negative, 🟡 neutral)
+- Links to top 3-5 sources
+
+**Troubleshooting Note**:
+If the dashboard appears blank in the browser, tell the user:
+"If you see a blank dashboard, press `Cmd+Option+I` to open the browser console and check for JavaScript errors. This usually indicates a syntax issue in the data object."
+
+---
+
+## Data Structure Notes
+
+**CRITICAL RULES**:
+- ✅ **ALWAYS AUGMENT, NEVER OVERWRITE** existing data
+- ✅ Add new weekly summaries at the **BEGINNING** of weeklySummaries array
+- ✅ Keep all historical data intact
+- ✅ Weekly summaries in reverse chronological order (newest first)
+- ✅ Metrics data arrays grow over time (append new data points)
+- ✅ Timeline arrays in categories should be in chronological order
+- ✅ Status values: "positive" (🟢), "negative" (🔴), "neutral" (🟡)
+
+**Status Guidelines**:
+- **Positive**: Approvals, production milestones hit, yield improvements, new customers
+- **Negative**: Delays, production misses, regulatory setbacks, cancellations
+- **Neutral**: Stable metrics, ongoing progress, minor updates
+
+---
+
+## Error Handling
+
+If any step fails:
+1. Report the specific error to user
+2. Ask if they want to continue with partial update
+3. Do NOT overwrite existing data if update is incomplete
+4. Suggest manual intervention if needed
+
+---
+
+## Example Invocation
+
+```
+User: /tesla-update
+```
+
+Expected behavior:
+1. Skill automatically executes all steps
+2. No questions asked (unless errors occur)
+3. Dashboard opens with updated data
+4. User receives summary of changes
+
+---
+
+## Tips for Best Results
+
+- **Be comprehensive**: Don't skip categories even if no major news
+- **Verify dates**: Ensure timeline events are in correct chronological order
+- **Source quality**: Prefer official announcements and reliable Tesla news sites
+- **Data consistency**: Match existing tone and detail level in descriptions
+- **Metric tracking**: If a new metric appears regularly, consider adding it to the tracking structure
+- **Production & Delivery**: ALWAYS check ir.tesla.com/press for new quarterly reports - this is the single source of truth for official numbers. Tesla releases quarterly reports typically within the first week of each quarter (early Jan, Apr, Jul, Oct)
+
+---
+
+## Skill Maintenance
+
+Update this skill file if:
+- File paths change
+- Data structure evolves
+- New categories are added
+- News sources change
+- User preferences change

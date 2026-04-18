@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Investor Tracking Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tesla-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .stock-price {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+
+        .stock-header {
+            margin-bottom: 20px;
+        }
+
+        .stock-header h2 {
+            color: #fff;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .tradingview-widget-container {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .weekly-summary {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+
+        .weekly-summary h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .change-card {
+            background: #252525;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #666;
+        }
+
+        .change-card.positive {
+            border-left-color: #10b981;
+            background: #1a2e23;
+        }
+
+        .change-card.negative {
+            border-left-color: #ef4444;
+            background: #2e1a1a;
+        }
+
+        .change-card.neutral {
+            border-left-color: #f59e0b;
+            background: #2e2a1a;
+        }
+
+        .change-card h3 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .change-card .category {
+            color: #888;
+            font-size: 0.85em;
+            margin-bottom: 8px;
+        }
+
+        .change-card p {
+            color: #ccc;
+            font-size: 0.95em;
+        }
+
+        .change-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+
+        .change-card a:hover {
+            text-decoration: underline;
+        }
+
+        .trends {
+            margin-top: 20px;
+            padding: 20px;
+            background: #252525;
+            border-radius: 8px;
+        }
+
+        .trends h3 {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .trends ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .trends li {
+            padding: 8px 0;
+            color: #ccc;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .trends li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+        }
+
+        .charts-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .chart-card h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            background: #252525;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid #333;
+            color: #ccc;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            border-color: #3b82f6;
+            color: #fff;
+        }
+
+        .tab.active {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-content h2 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .critical-news {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .critical-news strong {
+            color: #3b82f6;
+        }
+
+        .key-points {
+            margin: 20px 0;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .key-points li {
+            padding: 10px 0 10px 25px;
+            position: relative;
+            color: #ccc;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .key-points li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .timeline {
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            padding: 12px 0 12px 25px;
+            position: relative;
+            border-left: 2px solid #333;
+            margin-left: 10px;
+            color: #ccc;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 18px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #3b82f6;
+        }
+
+        .timeline-item strong {
+            color: #fff;
+        }
+
+        .pd-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.85em;
+        }
+
+        .pd-table th {
+            background: #252525;
+            color: #fff;
+            padding: 12px 8px;
+            text-align: right;
+            border: 1px solid #333;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+        }
+
+        .pd-table th:first-child {
+            text-align: left;
+        }
+
+        .pd-table td {
+            padding: 10px 8px;
+            text-align: right;
+            border: 1px solid #2a2a2a;
+            color: #ccc;
+        }
+
+        .pd-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .pd-table tr:hover {
+            background: #252525;
+        }
+
+        .pd-table .positive {
+            color: #10b981;
+        }
+
+        .pd-table .negative {
+            color: #ef4444;
+        }
+
+        .pd-charts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .charts-section {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                width: 100%;
+            }
+
+            .pd-charts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="/Users/gonzalosolis/Desktop/Tlogo.jpg" alt="Tesla Logo" class="tesla-logo">
+                <h1>Tesla Investor Tracking Dashboard</h1>
+            </div>
+            <div class="last-updated">Last Updated: <span id="lastUpdated"></span></div>
+        </header>
+
+        <div id="stockPrice" class="stock-price">
+            <div class="stock-header">
+                <h2>TSLA Stock Price</h2>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div id="tradingview_widget"></div>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div class="weekly-summary">
+            <h2>Weekly Summary</h2>
+            <div id="weeklySummaryContent"></div>
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-card">
+                <h3>Cybercab Production Count</h3>
+                <canvas id="cybercabChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Optimus Job Postings</h3>
+                <canvas id="jobPostingsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('aiChip')">AI Chip Production</div>
+            <div class="tab" onclick="showTab('cybercab')">Cybercab</div>
+            <div class="tab" onclick="showTab('fsd')">FSD Approvals</div>
+            <div class="tab" onclick="showTab('jobPostings')">Job Postings</div>
+            <div class="tab" onclick="showTab('optimus')">Optimus Production</div>
+            <div class="tab" onclick="showTab('productionDelivery')">Production & Delivery</div>
+        </div>
+
+        <div id="aiChip" class="tab-content active"></div>
+        <div id="cybercab" class="tab-content"></div>
+        <div id="fsd" class="tab-content"></div>
+        <div id="jobPostings" class="tab-content"></div>
+        <div id="optimus" class="tab-content"></div>
+        <div id="productionDelivery" class="tab-content"></div>
+    </div>
+
+    <script>
+        // Embedded data - updated automatically from tesla-tracking-data.json
+        <!-- DATA_OBJECT_START -->
+        const data = {
+          "lastUpdated": "2026-04-18",
+          "weeklySummaries": [
+            {
+              "weekOf": "2026-04-18",
+              "keyChanges": [
+                {
+                  "category": "AI Chip Production",
+                  "status": "positive",
+                  "title": "AI5 Chip Taped Out, Samsung Taylor Fab Equipment Ceremony April 24",
+                  "description": "Tesla announced AI5 chip tape-out on April 15, 2026 - key milestone sending final design to foundry. First silicon samples expected later 2026, high-volume production mid-2027. Samsung holding equipment installation ceremony at Taylor, Texas foundry on April 24, 2026, kicking off final run-up to mass production of AI5 and AI6 chips on 2nm process. AI5 dual-sourced at TSMC Arizona and Samsung Texas facilities.",
+                  "source": "https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/"
+                },
+                {
+                  "category": "Cybercab",
+                  "status": "positive",
+                  "title": "60 Cybercab Units Spotted at Giga Texas Mid-April",
+                  "description": "Drone footage captured approximately 60 Cybercab units at Giga Texas on April 13-17, 2026, up from 50+ units earlier. 14 units spotted on April 17 without steering wheels, indicating regulatory-ready production models. Mass production ramping successfully following April launch target.",
+                  "source": "https://www.teslarati.com/tesla-cybercab-production-ignites-60-units-spotted-at-giga-texas/"
+                },
+                {
+                  "category": "FSD Approvals",
+                  "status": "positive",
+                  "title": "Belgium Expected Mid-May, EU-Wide Vote Possible May-June 2026",
+                  "description": "Belgium authorities signaled they will recognize Dutch approval within ~30 days (mid-May 2026 target), making it the fastest EU follower. Germany (KBA) expected to move in late spring (May-June 2026, 4-8 weeks post-April 10). EU-wide vote at Technical Committee on Motor Vehicles (TCMV) could happen as soon as May/June, automatically extending FSD across entire EU.",
+                  "source": "https://notanfsdtracker.com/tesla-fsd-eu-regulatory-approval-tracker/"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "title": "Shanghai Gigafactory Positioned for Optimus Mass Production",
+                  "description": "Tesla China President Allan Wang Hao announced on April 14, 2026 that Giga Shanghai will play a crucial role in Optimus production. Shanghai planning to ramp six new production lines in 2026 across vehicles, robots, energy storage, and battery manufacturing. Production targeted before end of 2026 with eventual capacity of 1 million robots/year. Over 1,000 Gen 3 units already deployed across Tesla facilities.",
+                  "source": "https://247wallst.com/investing/2026/04/14/elon-musks-tesla-exec-shanghai-factory-is-the-key-to-unlocking-robot-mass-production/"
+                },
+                {
+                  "category": "Job Postings",
+                  "status": "positive",
+                  "title": "Optimus Job Postings Increase to 100+ Active Roles",
+                  "description": "Tesla posted well over 100 Optimus-related job openings across U.S. facilities in April 2026, representing expansion in robotics hiring. Roles span full product lifecycle including Robotics Software Engineers, Manufacturing Engineers, Mechanical Integration Engineers, and AI Engineers focused on world modeling and video generation.",
+                  "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
+                }
+              ],
+              "trends": [
+                "AI5 tape-out marks major milestone; production timeline now clearer: mid-2027 for high volume",
+                "Cybercab production ramp accelerating - 60 units milestone with steering-wheel-free models appearing",
+                "EU FSD domino effect beginning: Belgium and Germany expected within 4-8 weeks",
+                "Optimus multi-factory strategy emerging: Fremont + Shanghai + Texas long-term"
+              ]
+            },
+            {
+              "weekOf": "2026-04-11",
+              "keyChanges": [
+                {
+                  "category": "FSD Approvals",
+                  "status": "positive",
+                  "title": "Netherlands FSD Officially Approved April 10, Subscriptions Live",
+                  "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at \u20ac99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
+                  "source": "https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "title": "Cortex 2.0 Supercomputer Phase 1 Online, Digital Optimus Announced",
+                  "description": "Tesla's Cortex 2.0 supercomputer Phase 1 (250MW) came online in April 2026, providing AI training for Optimus fleet learning. Full 500MW capacity expected mid-2026. Digital Optimus (codename: Macrohard) announced March 11 - AI system combining physical Optimus robots with Grok-based AI for complete automation.",
+                  "source": "https://optimusk.blog/blog/tesla-optimus-production-timeline/"
+                },
+                {
+                  "category": "Cybercab",
+                  "status": "positive",
+                  "title": "April Mass Production Started On Schedule",
+                  "description": "Cybercab mass production began in April 2026 as planned. Validation testing across multiple US cities (Austin, San Jose, Chicago, DC) completed successfully. Production lines operational targeting hundreds of units weekly.",
+                  "source": "https://www.basenor.com/blogs/news/tesla-cybercab-production-starts-april-2026-the-autonomous-era-begins"
+                },
+                {
+                  "category": "AI Chip Production",
+                  "status": "neutral",
+                  "title": "AI6 Timeline Stable at Q3-Q4 2027",
+                  "description": "AI6 chip timeline remains Q3-Q4 2027 for mass production. Post-silicon validation stage ongoing. No new delays reported since March updates.",
+                  "source": "https://electrek.co/2026/03/12/tesla-ai6-chip-delayed-samsung-2nm-production-slips/"
+                },
+                {
+                  "category": "Job Postings",
+                  "status": "neutral",
+                  "title": "Optimus Job Postings Stable at 110+",
+                  "description": "110+ Optimus-related job postings remain active across robotics software, manufacturing, AI, and mechanical design roles at Austin and Fremont facilities.",
+                  "source": "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026"
+                }
+              ],
+              "trends": [
+                "FSD EU rollout velocity post-Netherlands approval - watch Belgium, Germany next",
+                "Cortex 2.0 AI training impact on Optimus capabilities through summer 2026",
+                "Cybercab production scale-up from hundreds/week toward thousands/week",
+                "Digital Optimus commercial potential combining physical + AI automation"
+              ]
+            },
+            {
+              "weekOf": "2026-03-28",
+              "keyChanges": [
+                {
+                  "category": "AI Chip Production",
+                  "status": "positive",
+                  "title": "Samsung 2nm Yields Improve to 60%, Production Confirmed for H2 2027",
+                  "description": "Samsung achieved 60% yield on 2nm process (3x improvement from 20%). Confirmed AI6 chip production at Texas facility starting H2 2027. Tesla planning to double orders to 40,000 wafers/month.",
+                  "source": "https://www.sammyfans.com/2026/03/24/samsung-is-back-and-its-2nm-progress-should-worry-tsmc/"
+                },
+                {
+                  "category": "Cybercab",
+                  "status": "positive",
+                  "title": "35 Units at Giga Texas, Intensive Crash Testing Underway",
+                  "description": "Drone footage shows 35 Cybercab units with 12 simultaneously in crash testing facility. SXSW showcase demonstrated production-ready vehicle. Testing expanded to multiple US cities. April mass production target on track.",
+                  "source": "https://www.basenor.com/blogs/news/tesla-cybercab-crash-testing-intensifies-at-giga-texas"
+                },
+                {
+                  "category": "FSD Approvals",
+                  "status": "negative",
+                  "title": "Netherlands Approval Delayed to April 10, EU Rollout Progressing",
+                  "description": "Netherlands approval delayed from March 20 to April 10. Belgium signals approval within 30 days of Dutch approval. EU-wide rollout anticipated for summer 2026. Japan released first public FSD demo video in Tokyo.",
+                  "source": "https://electrek.co/2026/03/20/tesla-fsd-europe-netherlands-approval-delayed-april/"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "title": "Summer 2026 Production Start Confirmed at Abundance Summit",
+                  "description": "Musk confirmed at Abundance Summit (March 12) that Optimus V3 production begins Summer 2026 at Fremont. Model S/X ending Q2 2026 to free production lines. First commercial customers expected late 2026.",
+                  "source": "https://www.basenor.com/blogs/news/tesla-optimus-v3-production-starts-this-summer-full-timeline"
+                },
+                {
+                  "category": "Job Postings",
+                  "status": "neutral",
+                  "title": "Job Postings Remain Stable at 110+",
+                  "description": "110+ Optimus-related job postings maintained across multiple locations and roles",
+                  "source": "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026"
+                }
+              ],
+              "trends": [
+                "Cybercab crash testing intensity signals final validation before April production",
+                "EU mutual recognition pathway clarifying post-Netherlands approval",
+                "Samsung 2nm yield improvements reducing AI6 production risk",
+                "Optimus production timeline firming up for Summer 2026 launch"
+              ]
+            },
+            {
+              "weekOf": "2026-03-13",
+              "keyChanges": [
+                {
+                  "category": "AI Chip Production",
+                  "status": "negative",
+                  "title": "AI6 Chip Delayed ~6 Months",
+                  "description": "Mass production pushed to Q4 2027 (from mid-2027) due to Samsung 2nm yield challenges",
+                  "source": "https://electrek.co/2026/03/12/tesla-ai6-chip-delayed-samsung-2nm-production-slips/"
+                },
+                {
+                  "category": "FSD Approvals",
+                  "status": "positive",
+                  "title": "Netherlands Approved FSD (March 4)",
+                  "description": "First EU country to grant official approval, earlier than March 20 target. Opens door to EU-wide rollout via mutual recognition. Early Access invitations already being sent.",
+                  "source": "https://www.basenor.com/blogs/news/tesla-fsd-supervised-tackles-dutch-city-traffic-eu-approval-nears"
+                },
+                {
+                  "category": "Cybercab",
+                  "status": "positive",
+                  "title": "Cybercab Production Accelerating",
+                  "description": "25 units (Mar 3) \u2192 30+ units (Mar 9) \u2192 16+ shipped in single day (Mar 11). Setting up for hundreds/week, appears ahead of April schedule.",
+                  "source": "https://www.tesery.com/blogs/news/tesla-cybercab-ramps-up-public-street-testing-as-revolutionary-robotaxi-enters-mass-production-queue"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "title": "Optimus Timeline Accelerated",
+                  "description": "Gen 3 facility setup moved from end of 2026 to Q2/Q3 2026 (this summer). Model S/X ending Q2 2026 to free Fremont lines.",
+                  "source": "https://www.tesery.com/blogs/news/elon-musk-reveals-aggressive-production-timeline-for-tesla-optimus-3"
+                },
+                {
+                  "category": "Job Postings",
+                  "status": "neutral",
+                  "title": "Job Postings Stable",
+                  "description": "110 Optimus roles (no change week-over-week)",
+                  "source": "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026"
+                }
+              ],
+              "trends": [
+                "Cybercab weekly unit count growth rate",
+                "FSD rollout velocity in other EU countries",
+                "Impact of AI6 delay on FSD development timeline",
+                "Job posting changes as Optimus production ramp approaches"
+              ]
+            },
+            {
+              "weekOf": "2026-03-08",
+              "keyChanges": [
+                {
+                  "category": "Initial Baseline",
+                  "status": "neutral",
+                  "title": "Tracking Baseline Established",
+                  "description": "Initial data collection across all categories"
+                }
+              ]
+            }
+          ],
+          "metrics": {
+            "cybercab": {
+              "title": "Cybercab Production Count",
+              "data": [
+                {
+                  "date": "2026-02-15",
+                  "count": 1,
+                  "note": "First mass-produced unit"
+                },
+                {
+                  "date": "2026-03-03",
+                  "count": 25,
+                  "note": "Test units at Giga Texas"
+                },
+                {
+                  "date": "2026-03-09",
+                  "count": 30,
+                  "note": "Production ramping"
+                },
+                {
+                  "date": "2026-03-11",
+                  "count": 46,
+                  "note": "16+ shipped in single day (cumulative estimate)"
+                },
+                {
+                  "date": "2026-03-25",
+                  "count": 35,
+                  "note": "35 units observed at Giga Texas, 12 in crash testing"
+                },
+                {
+                  "date": "2026-04-13",
+                  "count": 50,
+                  "note": "50+ units at Giga Texas"
+                },
+                {
+                  "date": "2026-04-17",
+                  "count": 60,
+                  "note": "60 units spotted, 14 without steering wheels"
+                }
+              ],
+              "target": "Hundreds per week by April 2026, 2M/year at full capacity"
+            },
+            "jobPostings": {
+              "title": "Optimus Job Postings",
+              "data": [
+                {
+                  "date": "2026-01-01",
+                  "count": 110,
+                  "note": "Late 2025/Early 2026 baseline"
+                },
+                {
+                  "date": "2026-03-08",
+                  "count": 110,
+                  "note": "Week 1 tracking"
+                },
+                {
+                  "date": "2026-03-13",
+                  "count": 110,
+                  "note": "Week 2 - stable"
+                },
+                {
+                  "date": "2026-03-28",
+                  "count": 110,
+                  "note": "Week 4 - stable"
+                },
+                {
+                  "date": "2026-04-11",
+                  "count": 110,
+                  "note": "Week 6 - stable"
+                },
+                {
+                  "date": "2026-04-18",
+                  "count": 100,
+                  "note": "Week 7 - 100+ active roles (increased)"
+                }
+              ]
+            },
+            "fsdApprovals": {
+              "title": "FSD Country Approvals",
+              "countries": [
+                {
+                  "name": "United States",
+                  "status": "active",
+                  "date": "2020-10-01"
+                },
+                {
+                  "name": "China",
+                  "status": "active",
+                  "date": "2024-04-01"
+                },
+                {
+                  "name": "Netherlands",
+                  "status": "active",
+                  "date": "2026-04-10",
+                  "note": "Subscriptions \u20ac99/month - First EU country approved"
+                },
+                {
+                  "name": "Belgium",
+                  "status": "pending",
+                  "expectedDate": "2026-05-10",
+                  "note": "Expected via EU mutual recognition"
+                },
+                {
+                  "name": "Other EU Countries",
+                  "status": "pending",
+                  "expectedDate": "2026-08-31",
+                  "note": "Summer 2026 via mutual recognition"
+                },
+                {
+                  "name": "Japan",
+                  "status": "pending",
+                  "expectedDate": "2026-12-31",
+                  "note": "First public demo released March 6"
+                }
+              ]
+            }
+          },
+          "categories": {
+            "aiChip": {
+              "title": "AI Chip Production (Samsung/TSMC)",
+              "latestUpdate": "2026-04-18",
+              "criticalNews": "AI5 Chip Taped Out April 15, Samsung Taylor Equipment Ceremony April 24",
+              "keyPoints": [
+                "AI5 chip taped out on April 15, 2026 - final design sent to foundry for fabrication",
+                "AI5 performance: 40x improvement over AI4 (9x more memory, 8x higher compute capacity)",
+                "AI5 first silicon samples expected later 2026, high-volume production mid-2027",
+                "AI5 dual-sourced: TSMC Arizona facility and Samsung Texas plant (both US-based)",
+                "Samsung holding equipment installation ceremony at Taylor, Texas on April 24, 2026",
+                "Samsung Taylor Fab: $44B campus for 2nm production using Gate-All-Around transistor architecture",
+                "Samsung 2nm yield reached 60% (3x improvement from 20%), competitive with TSMC",
+                "AI6 production confirmed at Samsung Texas facility starting H2 2027",
+                "AI6 mass production delayed to Q4 2027 due to earlier Samsung 2nm yield challenges",
+                "Tesla planning to double AI6 orders to 40,000 wafers/month (from 16,000)",
+                "Terafab: $25B joint chip factory announced (Tesla/SpaceX/xAI) in Austin",
+                "Dual-foundry strategy: AI5 split between Samsung and TSMC; AI6 entirely at Samsung Taylor"
+              ],
+              "timeline": [
+                {
+                  "date": "2025-10",
+                  "event": "AI5 production split announced (Samsung/TSMC)"
+                },
+                {
+                  "date": "2026-01",
+                  "event": "$16.5B Samsung deal confirmed"
+                },
+                {
+                  "date": "2026-03-08",
+                  "event": "Plans to double AI6 production capacity"
+                },
+                {
+                  "date": "2026-03-13",
+                  "event": "AI6 delayed ~6 months to Q4 2027"
+                },
+                {
+                  "date": "2026-03-13",
+                  "event": "EUV equipment testing began at Taylor Fab 1"
+                },
+                {
+                  "date": "2026-03-18",
+                  "event": "Samsung confirms H2 2027 production start at Texas facility"
+                },
+                {
+                  "date": "2026-03-22",
+                  "event": "$25B Terafab factory announced (Tesla/SpaceX/xAI)"
+                },
+                {
+                  "date": "2026-03-24",
+                  "event": "Samsung 2nm yield reaches 60% (3x improvement)"
+                },
+                {
+                  "date": "2026-04-15",
+                  "event": "AI5 chip tape-out completed"
+                },
+                {
+                  "date": "2026-04-24",
+                  "event": "Samsung Taylor Fab equipment installation ceremony"
+                }
+              ]
+            },
+            "cybercab": {
+              "title": "Cybercab Production",
+              "latestUpdate": "2026-04-18",
+              "criticalNews": "60 Units at Giga Texas, Steering-Wheel-Free Models Appearing",
+              "keyPoints": [
+                "60 Cybercab units spotted at Giga Texas on April 13-17, 2026 (up from 50+ earlier)",
+                "14 units spotted on April 17 without steering wheels - regulatory-ready production models",
+                "Mass production began in April 2026 as planned - hitting target date",
+                "Production lines operational and ramping toward hundreds of units weekly target",
+                "Validation testing completed successfully across multiple US cities",
+                "Most units still carry steering wheels and pedals for data accumulation during regulatory approval phase",
+                "Parallel crash testing completed final validation phase",
+                "SXSW showcase (March 13-14) demonstrated production-ready vehicle",
+                "Testing locations: Austin, San Jose, Los Gatos, Chicago, Washington D.C.",
+                "Production line cycle time: <10 seconds per unit",
+                "Long-term target: 2 million units/year at full capacity, late 2026 commercial robotaxi launch in Austin"
+              ],
+              "timeline": [
+                {
+                  "date": "2024-10-23",
+                  "event": "2026 production target announced"
+                },
+                {
+                  "date": "2026-02-15",
+                  "event": "First mass-produced unit rolls off line"
+                },
+                {
+                  "date": "2026-02-17",
+                  "event": "First production Cybercab rolls off Giga Texas line"
+                },
+                {
+                  "date": "2026-03-03",
+                  "event": "25 test units at Giga Texas"
+                },
+                {
+                  "date": "2026-03-09",
+                  "event": "30+ units observed"
+                },
+                {
+                  "date": "2026-03-11",
+                  "event": "16+ units shipped in single day"
+                },
+                {
+                  "date": "2026-03-13",
+                  "event": "SXSW Austin showcase with production unit"
+                },
+                {
+                  "date": "2026-03-25",
+                  "event": "35 units at Giga Texas, 12 in crash testing"
+                },
+                {
+                  "date": "2026-04",
+                  "event": "Mass production begins - target achieved"
+                },
+                {
+                  "date": "2026-04-13",
+                  "event": "50+ units at Giga Texas"
+                },
+                {
+                  "date": "2026-04-17",
+                  "event": "60 units spotted, 14 without steering wheels"
+                }
+              ]
+            },
+            "fsd": {
+              "title": "FSD Country Approvals",
+              "latestUpdate": "2026-04-18",
+              "criticalNews": "Belgium Expected Mid-May, EU-Wide Vote Possible May-June 2026",
+              "keyPoints": [
+                "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
+                "Subscriptions launched at \u20ac99/month in Netherlands",
+                "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
+                "Belgium expected to be fastest EU follower - authorities signaled recognition within ~30 days (mid-May 2026)",
+                "Germany (KBA) expected to move in late spring: May-June 2026, 4-8 weeks post-April 10",
+                "EU-wide vote at Technical Committee on Motor Vehicles (TCMV) possible as soon as May/June 2026",
+                "Majority vote in May or June would make FSD Supervised available automatically across entire EU",
+                "Every EU member state can recognize Dutch approval nationally via mutual recognition - no re-testing required",
+                "No mandatory waiting period - countries notify RDW in writing to honor Dutch decision",
+                "Germany, France, Belgium, Spain, Italy rollout anticipated by summer 2026",
+                "Japan released first public FSD demo video in Tokyo (March 6)",
+                "Japan targeting end of 2026 commercial rollout",
+                "Approved under Article 39 (EU mutual recognition mechanism)"
+              ],
+              "activeCountries": [
+                "United States",
+                "China",
+                "Netherlands"
+              ],
+              "pendingCountries": [
+                "Belgium (Mid-May 2026)",
+                "Germany (May-June 2026)",
+                "Other EU countries (Summer 2026)",
+                "Japan (End 2026)"
+              ],
+              "timeline": [
+                {
+                  "date": "2026-02",
+                  "event": "RDW scheduled demonstration"
+                },
+                {
+                  "date": "2026-03-04",
+                  "event": "Netherlands grants Extended Type Approval (early)"
+                },
+                {
+                  "date": "2026-03-13",
+                  "event": "Early Access invitations sent to European owners"
+                },
+                {
+                  "date": "2026-03-20",
+                  "event": "Original approval target date (delayed)"
+                },
+                {
+                  "date": "2026-04-10",
+                  "event": "Official RDW type approval issued under UN Regulation 171"
+                },
+                {
+                  "date": "2026-04-10",
+                  "event": "Subscriptions launched at \u20ac99/month"
+                },
+                {
+                  "date": "2026-05-Mid",
+                  "event": "Belgium approval expected via mutual recognition"
+                },
+                {
+                  "date": "2026-05-06",
+                  "event": "EU-wide TCMV vote possible"
+                },
+                {
+                  "date": "2026-Summer",
+                  "event": "EU-wide rollout expected via mutual recognition"
+                }
+              ]
+            },
+            "jobPostings": {
+              "title": "Job Postings",
+              "latestUpdate": "2026-04-18",
+              "criticalNews": "100+ Active Optimus Roles - Hiring Expansion Underway",
+              "keyPoints": [
+                "100+ Optimus-related job openings posted in April 2026 across U.S. facilities",
+                "Significant expansion in robotics hiring representing pivot from prototypes to production lines",
+                "Roles span full product lifecycle: AI engineers to manufacturing specialists",
+                "Recent hire: AI engineer Yilun Chen from Apple",
+                "Locations: Palo Alto, Austin, and Fremont facilities",
+                "New focus areas: world modeling, video generation, simulation infrastructure"
+              ],
+              "roleTypes": [
+                "AI Engineers (manipulation, world modeling, video generation)",
+                "Reinforcement Learning Engineers (policy optimization for Optimus)",
+                "Mechanical Design Engineers",
+                "Manufacturing Engineers",
+                "Software Engineers",
+                "Integration Specialists",
+                "Fullstack Engineers for AI tooling",
+                "Machine Learning Infrastructure Engineers (simulation)",
+                "Actuator Design Engineers"
+              ]
+            },
+            "optimus": {
+              "title": "Optimus Production",
+              "latestUpdate": "2026-04-18",
+              "criticalNews": "Shanghai Gigafactory Positioned for Optimus Mass Production",
+              "keyPoints": [
+                "Tesla China President announced April 14 that Giga Shanghai will play crucial role in Optimus production",
+                "Shanghai planning to ramp six new production lines in 2026: vehicles, robots, energy storage, batteries",
+                "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
+                "Over 1,000 Gen 3 units already deployed across Tesla's own manufacturing facilities",
+                "Shanghai Gigafactory delivered 851,000 EVs in 2025 (>50% of Tesla's total global deliveries)",
+                "Multi-factory strategy emerging: Fremont (1M/year) + Shanghai (1M/year) + Giga Texas (10M/year by 2027)",
+                "Cortex 2.0 supercomputer Phase 1 (250MW) came online April 2026 for Optimus AI training",
+                "Full Cortex 2.0 capacity (500MW) expected mid-2026 - critical for fleet learning",
+                "Digital Optimus (codename: Macrohard) announced March 11 - combines physical robots with Grok AI",
+                "Summer 2026 Gen 3 production start confirmed (Abundance Summit March 12)",
+                "Gen 3 facility setup at Fremont moved to Q2/Q3 2026 (from end of 2026)",
+                "Model S/X production ending Q2 2026 to free Fremont lines",
+                "First commercial customers expected late 2026 at premium pricing ($100K+)",
+                "2026 production target: 50,000-100,000 units",
+                "Gen 3: 22 degrees of freedom, 50 actuators in hands",
+                "Consumer sales targeted for end of 2027 (pricing below $20K requires millions of units)"
+              ],
+              "timeline": [
+                {
+                  "date": "2025-12",
+                  "event": "Video released showing Optimus jogging"
+                },
+                {
+                  "date": "2026-01-21",
+                  "event": "Mass production commenced at Fremont (internal use)"
+                },
+                {
+                  "date": "2026-01-28",
+                  "event": "Model S/X ending Q2 2026 announced"
+                },
+                {
+                  "date": "2026-02-03",
+                  "event": "V3 production-intent prototype demo"
+                },
+                {
+                  "date": "2026-03-11",
+                  "event": "Digital Optimus (Macrohard) announced - Grok AI integration"
+                },
+                {
+                  "date": "2026-03-12",
+                  "event": "Summer 2026 production start confirmed (Abundance Summit)"
+                },
+                {
+                  "date": "2026-03-13",
+                  "event": "Timeline accelerated to Q2/Q3 2026"
+                },
+                {
+                  "date": "2026-04",
+                  "event": "Cortex 2.0 supercomputer Phase 1 (250MW) online"
+                },
+                {
+                  "date": "2026-04-14",
+                  "event": "Shanghai Gigafactory announced as key Optimus production facility"
+                },
+                {
+                  "date": "2026-Mid",
+                  "event": "Cortex 2.0 full capacity (500MW) expected"
+                },
+                {
+                  "date": "2026-Summer",
+                  "event": "Optimus 3 production begins"
+                },
+                {
+                  "date": "2026-Late",
+                  "event": "First external commercial customers (B2B)"
+                },
+                {
+                  "date": "2026-Late",
+                  "event": "Shanghai Optimus production targeted to start"
+                },
+                {
+                  "date": "2027",
+                  "event": "Giga Texas facility targeting 10M units/year"
+                },
+                {
+                  "date": "2027-End",
+                  "event": "Consumer sales target"
+                }
+              ],
+              "pricing": {
+                "target": "$30,000",
+                "currentCost": "$50,000-$100,000",
+                "initialCommercial": "$100,000-$150,000"
+              }
+            },
+            "productionDelivery": {
+              "title": "Vehicle Production & Delivery",
+              "latestUpdate": "2026-04-11",
+              "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered",
+              "totalProduction": "9,277,574",
+              "totalDeliveries": "9,156,179",
+              "quarterlyData": [
+                {
+                  "quarter": "Q1-15",
+                  "production": 11160,
+                  "delivery": 10030
+                },
+                {
+                  "quarter": "Q2-15",
+                  "production": null,
+                  "delivery": 11507
+                },
+                {
+                  "quarter": "Q3-15",
+                  "production": null,
+                  "delivery": 11580
+                },
+                {
+                  "quarter": "Q4-15",
+                  "production": null,
+                  "delivery": 17400
+                },
+                {
+                  "quarter": "Q1-16",
+                  "production": 15510,
+                  "delivery": 14820
+                },
+                {
+                  "quarter": "Q2-16",
+                  "production": 18345,
+                  "delivery": 14370
+                },
+                {
+                  "quarter": "Q3-16",
+                  "production": 25185,
+                  "delivery": 24500
+                },
+                {
+                  "quarter": "Q4-16",
+                  "production": 24882,
+                  "delivery": 22200
+                },
+                {
+                  "quarter": "Q1-17",
+                  "production": 25418,
+                  "delivery": 25000
+                },
+                {
+                  "quarter": "Q2-17",
+                  "production": 25708,
+                  "delivery": 22000
+                },
+                {
+                  "quarter": "Q3-17",
+                  "production": 25336,
+                  "delivery": 26150
+                },
+                {
+                  "quarter": "Q4-17",
+                  "production": 24565,
+                  "delivery": 29870
+                },
+                {
+                  "quarter": "Q1-18",
+                  "production": 34494,
+                  "delivery": 29980
+                },
+                {
+                  "quarter": "Q2-18",
+                  "production": 53339,
+                  "delivery": 40740
+                },
+                {
+                  "quarter": "Q3-18",
+                  "production": 80142,
+                  "delivery": 83500
+                },
+                {
+                  "quarter": "Q4-18",
+                  "production": 86555,
+                  "delivery": 90966
+                },
+                {
+                  "quarter": "Q1-19",
+                  "production": 77138,
+                  "delivery": 63019
+                },
+                {
+                  "quarter": "Q2-19",
+                  "production": 87048,
+                  "delivery": 95356
+                },
+                {
+                  "quarter": "Q3-19",
+                  "production": 96155,
+                  "delivery": 97186
+                },
+                {
+                  "quarter": "Q4-19",
+                  "production": 104891,
+                  "delivery": 112095
+                },
+                {
+                  "quarter": "Q1-20",
+                  "production": 102672,
+                  "delivery": 88496
+                },
+                {
+                  "quarter": "Q2-20",
+                  "production": 82272,
+                  "delivery": 90891
+                },
+                {
+                  "quarter": "Q3-20",
+                  "production": 145036,
+                  "delivery": 139593
+                },
+                {
+                  "quarter": "Q4-20",
+                  "production": 179757,
+                  "delivery": 180667
+                },
+                {
+                  "quarter": "Q1-21",
+                  "production": 180338,
+                  "delivery": 184877
+                },
+                {
+                  "quarter": "Q2-21",
+                  "production": 206421,
+                  "delivery": 201304
+                },
+                {
+                  "quarter": "Q3-21",
+                  "production": 237823,
+                  "delivery": 241391
+                },
+                {
+                  "quarter": "Q4-21",
+                  "production": 305840,
+                  "delivery": 308650
+                },
+                {
+                  "quarter": "Q1-22",
+                  "production": 305407,
+                  "delivery": 310048
+                },
+                {
+                  "quarter": "Q2-22",
+                  "production": 258580,
+                  "delivery": 254695
+                },
+                {
+                  "quarter": "Q3-22",
+                  "production": 365923,
+                  "delivery": 343830
+                },
+                {
+                  "quarter": "Q4-22",
+                  "production": 439701,
+                  "delivery": 405278
+                },
+                {
+                  "quarter": "Q1-23",
+                  "production": 440808,
+                  "delivery": 422875
+                },
+                {
+                  "quarter": "Q2-23",
+                  "production": 479700,
+                  "delivery": 466140
+                },
+                {
+                  "quarter": "Q3-23",
+                  "production": 430488,
+                  "delivery": 435059
+                },
+                {
+                  "quarter": "Q4-23",
+                  "production": 494989,
+                  "delivery": 484507
+                },
+                {
+                  "quarter": "Q1-24",
+                  "production": 433371,
+                  "delivery": 386810
+                },
+                {
+                  "quarter": "Q2-24",
+                  "production": 410831,
+                  "delivery": 443956
+                },
+                {
+                  "quarter": "Q3-24",
+                  "production": 469796,
+                  "delivery": 462890
+                },
+                {
+                  "quarter": "Q4-24",
+                  "production": 459445,
+                  "delivery": 495570
+                },
+                {
+                  "quarter": "Q1-25",
+                  "production": 362615,
+                  "delivery": 336681
+                },
+                {
+                  "quarter": "Q2-25",
+                  "production": 410244,
+                  "delivery": 384122
+                },
+                {
+                  "quarter": "Q3-25",
+                  "production": 447450,
+                  "delivery": 497099
+                },
+                {
+                  "quarter": "Q4-25",
+                  "production": 434358,
+                  "delivery": 418227
+                },
+                {
+                  "quarter": "Q1-26",
+                  "production": 408386,
+                  "delivery": 358023
+                }
+              ],
+              "annualSummary": [
+                {
+                  "year": "2018",
+                  "deliveries": 245186,
+                  "yoyGrowth": null
+                },
+                {
+                  "year": "2019",
+                  "deliveries": 367656,
+                  "yoyGrowth": 49.95
+                },
+                {
+                  "year": "2020",
+                  "deliveries": 499647,
+                  "yoyGrowth": 35.9
+                },
+                {
+                  "year": "2021",
+                  "deliveries": 936222,
+                  "yoyGrowth": 87.38
+                },
+                {
+                  "year": "2022",
+                  "deliveries": 1313851,
+                  "yoyGrowth": 40.34
+                },
+                {
+                  "year": "2023",
+                  "deliveries": 1808581,
+                  "yoyGrowth": 37.65
+                },
+                {
+                  "year": "2024",
+                  "deliveries": 1789226,
+                  "yoyGrowth": -1.07
+                },
+                {
+                  "year": "2025",
+                  "deliveries": 1636129,
+                  "yoyGrowth": -8.56
+                }
+              ]
+            }
+          }
+        };
+        <!-- DATA_OBJECT_END -->
+
+        function renderProductionDelivery() {
+            const pd = data.categories.productionDelivery;
+            const container = document.getElementById('productionDelivery');
+
+            let html = `
+                <h2>${pd.title}</h2>
+                <div style="color: #888; margin-bottom: 15px;">Last Updated: ${pd.latestUpdate}</div>
+                <div class="critical-news">
+                    <strong>Latest:</strong> ${pd.criticalNews}
+                </div>
+
+                <div class="key-points" style="margin-bottom: 30px;">
+                    <h3 style="color: #fff; margin-bottom: 15px; margin-top: 20px;">All-Time Totals</h3>
+                    <ul>
+                        <li><strong>Total Production:</strong> ${parseInt(pd.totalProduction).toLocaleString()} vehicles</li>
+                        <li><strong>Total Deliveries:</strong> ${parseInt(pd.totalDeliveries).toLocaleString()} vehicles</li>
+                    </ul>
+                </div>
+
+                <div class="pd-charts">
+                    <div class="chart-card">
+                        <h3>Quarterly Production & Delivery</h3>
+                        <canvas id="pdQuarterlyChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Annual Delivery Growth</h3>
+                        <canvas id="pdAnnualChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3 style="color: #fff; margin-bottom: 15px;">Quarterly Data</h3>
+                    <table class="pd-table">
+                        <thead>
+                            <tr>
+                                <th>Quarter</th>
+                                <th>Production</th>
+                                <th>Delivery</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            pd.quarterlyData.forEach(row => {
+                html += `
+                    <tr>
+                        <td>${row.quarter}</td>
+                        <td>${row.production ? parseInt(row.production).toLocaleString() : '-'}</td>
+                        <td>${row.delivery ? parseInt(row.delivery).toLocaleString() : '-'}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-points" style="margin-top: 30px;">
+                    <h3 style="color: #fff; margin-bottom: 15px;">Annual Summary</h3>
+                    <table class="pd-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Deliveries</th>
+                                <th>YoY Growth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            pd.annualSummary.forEach(row => {
+                const growthClass = row.yoyGrowth > 0 ? 'positive' : (row.yoyGrowth < 0 ? 'negative' : '');
+                const growthDisplay = row.yoyGrowth !== null ?
+                    `<span class="${growthClass}">${row.yoyGrowth > 0 ? '+' : ''}${row.yoyGrowth.toFixed(2)}%</span>` :
+                    '-';
+                html += `
+                    <tr>
+                        <td>${row.year}</td>
+                        <td>${parseInt(row.deliveries).toLocaleString()}</td>
+                        <td>${growthDisplay}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+
+            container.innerHTML = html;
+
+            // Render charts after DOM is updated
+            setTimeout(() => {
+                renderPDQuarterlyChart();
+                renderPDAnnualChart();
+            }, 100);
+        }
+
+        function renderPDQuarterlyChart() {
+            const ctx = document.getElementById('pdQuarterlyChart');
+            if (!ctx) return;
+
+            const pd = data.categories.productionDelivery.quarterlyData;
+            const labels = pd.map(d => d.quarter);
+            const production = pd.map(d => d.production || 0);
+            const delivery = pd.map(d => d.delivery || 0);
+
+            new Chart(ctx.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Production',
+                            data: production,
+                            borderColor: '#3b82f6',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            pointRadius: 2,
+                            pointHoverRadius: 5
+                        },
+                        {
+                            label: 'Delivery',
+                            data: delivery,
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            pointRadius: 2,
+                            pointHoverRadius: 5
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e0e0e0' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.y.toLocaleString();
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#e0e0e0',
+                                callback: function(value) {
+                                    return value.toLocaleString();
+                                }
+                            },
+                            grid: { color: '#333' }
+                        },
+                        x: {
+                            ticks: {
+                                color: '#e0e0e0',
+                                maxRotation: 45,
+                                minRotation: 45
+                            },
+                            grid: { color: '#333' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderPDAnnualChart() {
+            const ctx = document.getElementById('pdAnnualChart');
+            if (!ctx) return;
+
+            const annual = data.categories.productionDelivery.annualSummary;
+            const labels = annual.map(d => d.year);
+            const deliveries = annual.map(d => d.deliveries);
+            const growth = annual.map(d => d.yoyGrowth || 0);
+
+            new Chart(ctx.getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Deliveries',
+                            data: deliveries,
+                            backgroundColor: '#10b981',
+                            borderColor: '#10b981',
+                            borderWidth: 1,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'YoY Growth %',
+                            data: growth,
+                            type: 'line',
+                            borderColor: '#f59e0b',
+                            backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                            tension: 0.4,
+                            yAxisID: 'y1',
+                            pointRadius: 5,
+                            pointHoverRadius: 7
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e0e0e0' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    if (context.dataset.label === 'Deliveries') {
+                                        return context.dataset.label + ': ' + context.parsed.y.toLocaleString();
+                                    } else {
+                                        return context.dataset.label + ': ' + context.parsed.y.toFixed(2) + '%';
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            position: 'left',
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#e0e0e0',
+                                callback: function(value) {
+                                    return value.toLocaleString();
+                                }
+                            },
+                            grid: { color: '#333' }
+                        },
+                        y1: {
+                            type: 'linear',
+                            position: 'right',
+                            ticks: {
+                                color: '#e0e0e0',
+                                callback: function(value) {
+                                    return value.toFixed(0) + '%';
+                                }
+                            },
+                            grid: { display: false }
+                        },
+                        x: {
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function loadData() {
+            initializeDashboard();
+            initTradingViewWidget();
+        }
+
+        function initTradingViewWidget() {
+            new TradingView.widget({
+                "width": "100%",
+                "height": 400,
+                "symbol": "NASDAQ:TSLA",
+                "interval": "D",
+                "timezone": "America/New_York",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#1a1a1a",
+                "enable_publishing": false,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": false,
+                "container_id": "tradingview_widget",
+                "backgroundColor": "#1a1a1a",
+                "gridColor": "#2a2a2a",
+                "studies": [
+                    "Volume@tv-basicstudies"
+                ]
+            });
+        }
+
+        function initializeDashboard() {
+            // Set last updated
+            document.getElementById('lastUpdated').textContent = data.lastUpdated;
+
+            // Render weekly summary
+            renderWeeklySummary();
+
+            // Render charts
+            renderCybercabChart();
+            renderJobPostingsChart();
+
+            // Render category content
+            renderCategoryContent('aiChip', data.categories.aiChip);
+            renderCategoryContent('cybercab', data.categories.cybercab);
+            renderCategoryContent('fsd', data.categories.fsd);
+            renderCategoryContent('jobPostings', data.categories.jobPostings);
+            renderCategoryContent('optimus', data.categories.optimus);
+
+            // Render Production & Delivery
+            renderProductionDelivery();
+        }
+
+        function renderWeeklySummary() {
+            const latestWeek = data.weeklySummaries[0];
+            const container = document.getElementById('weeklySummaryContent');
+
+            let html = `<h3>Week of ${latestWeek.weekOf}</h3>`;
+
+            latestWeek.keyChanges.forEach(change => {
+                html += `
+                    <div class="change-card ${change.status}">
+                        <div class="category">${change.category}</div>
+                        <h3>${change.title}</h3>
+                        <p>${change.description}</p>
+                        ${change.source ? `<a href="${change.source}" target="_blank">View Source →</a>` : ''}
+                    </div>
+                `;
+            });
+
+            if (latestWeek.trends) {
+                html += `
+                    <div class="trends">
+                        <h3>Trends to Watch</h3>
+                        <ul>
+                            ${latestWeek.trends.map(trend => `<li>${trend}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function renderCybercabChart() {
+            const ctx = document.getElementById('cybercabChart').getContext('2d');
+            const chartData = data.metrics.cybercab.data;
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: chartData.map(d => d.date),
+                    datasets: [{
+                        label: 'Unit Count',
+                        data: chartData.map(d => d.count),
+                        borderColor: '#10b981',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e0e0e0' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                afterLabel: function(context) {
+                                    return chartData[context.dataIndex].note;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        },
+                        x: {
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderJobPostingsChart() {
+            const ctx = document.getElementById('jobPostingsChart').getContext('2d');
+            const chartData = data.metrics.jobPostings.data;
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: chartData.map(d => d.date),
+                    datasets: [{
+                        label: 'Job Count',
+                        data: chartData.map(d => d.count),
+                        backgroundColor: '#3b82f6',
+                        borderColor: '#3b82f6',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e0e0e0' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                afterLabel: function(context) {
+                                    return chartData[context.dataIndex].note;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        },
+                        x: {
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderCategoryContent(id, category) {
+            const container = document.getElementById(id);
+
+            let html = `
+                <h2>${category.title}</h2>
+                <div style="color: #888; margin-bottom: 15px;">Last Updated: ${category.latestUpdate}</div>
+                <div class="critical-news">
+                    <strong>Latest:</strong> ${category.criticalNews}
+                </div>
+            `;
+
+            if (category.keyPoints) {
+                html += `
+                    <div class="key-points">
+                        <h3 style="color: #fff; margin-bottom: 15px;">Key Points</h3>
+                        <ul>
+                            ${category.keyPoints.map(point => `<li>${point}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (category.timeline) {
+                html += `
+                    <div class="timeline">
+                        <h3 style="color: #fff; margin-bottom: 15px; margin-top: 25px;">Timeline</h3>
+                        ${category.timeline.map(item => `
+                            <div class="timeline-item">
+                                <strong>${item.date}:</strong> ${item.event}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            if (category.activeCountries) {
+                html += `
+                    <div class="key-points">
+                        <h3 style="color: #fff; margin-bottom: 15px; margin-top: 25px;">Active Countries</h3>
+                        <ul>
+                            ${category.activeCountries.map(country => `<li>${country}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (category.pendingCountries) {
+                html += `
+                    <div class="key-points">
+                        <h3 style="color: #fff; margin-bottom: 15px; margin-top: 25px;">Pending/In Progress</h3>
+                        <ul>
+                            ${category.pendingCountries.map(country => `<li>${country}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (category.roleTypes) {
+                html += `
+                    <div class="key-points">
+                        <h3 style="color: #fff; margin-bottom: 15px; margin-top: 25px;">Role Types</h3>
+                        <ul>
+                            ${category.roleTypes.map(role => `<li>${role}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (category.pricing) {
+                html += `
+                    <div class="key-points">
+                        <h3 style="color: #fff; margin-bottom: 15px; margin-top: 25px;">Pricing</h3>
+                        <ul>
+                            <li><strong>Target Price:</strong> ${category.pricing.target}</li>
+                            <li><strong>Current Manufacturing Cost:</strong> ${category.pricing.currentCost}</li>
+                            <li><strong>Initial Commercial Price:</strong> ${category.pricing.initialCommercial}</li>
+                        </ul>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function showTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
