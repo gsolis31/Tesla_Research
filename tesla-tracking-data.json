@@ -230,6 +230,13 @@
         { "date": "2026-04-18", "count": 100, "note": "Week 7 - 100+ active roles (increased)" }
       ]
     },
+    "robotaxiFleet": {
+      "title": "Robotaxi Fleet (Active Vehicles)",
+      "data": [
+        { "date": "2026-04-18", "count": 13, "note": "Active vehicles in last 30 days - Houston & Dallas launch" }
+      ],
+      "target": "Multi-city deployment across 7+ cities in H1 2026"
+    },
     "fsdApprovals": {
       "title": "FSD Country Approvals",
       "countries": [

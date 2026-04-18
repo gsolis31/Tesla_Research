@@ -181,9 +181,15 @@
 
         .charts-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 30px;
+        }
+
+        @media (max-width: 1400px) {
+            .charts-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .chart-card {
@@ -421,6 +427,10 @@
             <div class="chart-card">
                 <h3>Cybercab Production Count</h3>
                 <canvas id="cybercabChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Robotaxi Fleet Growth</h3>
+                <canvas id="robotaxiFleetChart"></canvas>
             </div>
             <div class="chart-card">
                 <h3>Optimus Job Postings</h3>
@@ -731,6 +741,17 @@
                   "note": "Week 7 - 100+ active roles (increased)"
                 }
               ]
+            },
+            "robotaxiFleet": {
+              "title": "Robotaxi Fleet (Active Vehicles)",
+              "data": [
+                {
+                  "date": "2026-04-18",
+                  "count": 13,
+                  "note": "Active vehicles in last 30 days - Houston & Dallas launch"
+                }
+              ],
+              "target": "Multi-city deployment across 7+ cities in H1 2026"
             },
             "fsdApprovals": {
               "title": "FSD Country Approvals",
@@ -1676,6 +1697,7 @@
 
             // Render charts
             renderCybercabChart();
+            renderRobotaxiFleetChart();
             renderJobPostingsChart();
 
             // Render category content
@@ -1804,6 +1826,59 @@
                         y: {
                             beginAtZero: true,
                             ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        },
+                        x: {
+                            ticks: { color: '#e0e0e0' },
+                            grid: { color: '#333' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderRobotaxiFleetChart() {
+            const ctx = document.getElementById('robotaxiFleetChart').getContext('2d');
+            const chartData = data.metrics.robotaxiFleet.data;
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: chartData.map(d => d.date),
+                    datasets: [{
+                        label: 'Active Vehicles',
+                        data: chartData.map(d => d.count),
+                        backgroundColor: 'rgba(34, 197, 94, 0.2)',
+                        borderColor: '#22c55e',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e0e0e0' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                afterLabel: function(context) {
+                                    return chartData[context.dataIndex].note;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#e0e0e0',
+                                stepSize: 5
+                            },
                             grid: { color: '#333' }
                         },
                         x: {
