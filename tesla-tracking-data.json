@@ -38,11 +38,19 @@
           "title": "Optimus Job Postings Increase to 100+ Active Roles",
           "description": "Tesla posted well over 100 Optimus-related job openings across U.S. facilities in April 2026, representing expansion in robotics hiring. Roles span full product lifecycle including Robotics Software Engineers, Manufacturing Engineers, Mechanical Integration Engineers, and AI Engineers focused on world modeling and video generation.",
           "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
+        },
+        {
+          "category": "Cybercab",
+          "status": "positive",
+          "title": "BREAKING: Robotaxi Service Launches in Houston & Dallas (April 18)",
+          "description": "Tesla announced April 18, 2026 that unsupervised Robotaxi service is now live in Dallas and Houston, Texas. Fully autonomous rides with no safety driver are now operating in 3 Texas cities: Austin, Dallas, and Houston. Tracker data shows 35 Cybercabs in test fleet, 29% of Austin rides now unsupervised (20 of 69 in last 7 days), with 2,053 total trips recorded covering 7,271 miles. Part of H1 2026 expansion to 7 cities including Phoenix, Miami, Orlando, Tampa, and Las Vegas.",
+          "source": "https://driveteslacanada.ca/news/tesla-robotaxi-expands-to-dallas-and-houston-with-fully-autonomous-rides/"
         }
       ],
       "trends": [
         "AI5 tape-out marks major milestone; production timeline now clearer: mid-2027 for high volume",
         "Cybercab production ramp accelerating - 60 units milestone with steering-wheel-free models appearing",
+        "MAJOR: Robotaxi service expansion to Houston & Dallas marks commercial deployment acceleration",
         "EU FSD domino effect beginning: Belgium and Germany expected within 4-8 weeks",
         "Optimus multi-factory strategy emerging: Fremont + Shanghai + Texas long-term"
       ]
@@ -269,19 +277,23 @@
     "cybercab": {
       "title": "Cybercab Production",
       "latestUpdate": "2026-04-18",
-      "criticalNews": "60 Units at Giga Texas, Steering-Wheel-Free Models Appearing",
+      "criticalNews": "BREAKING: Unsupervised Robotaxi Service Launches in Houston & Dallas (April 18)",
       "keyPoints": [
+        "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
+        "Now operating in 3 Texas cities: Austin, Dallas, Houston - fully autonomous with no safety driver",
+        "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
+        "29% of Austin rides now unsupervised (20 of 69 rides in last 7 days)",
+        "2,053 total trips recorded covering 7,271 miles (avg 3.54 miles per trip)",
+        "H1 2026 expansion plan: 7 cities including Phoenix, Miami, Orlando, Tampa, Las Vegas",
         "60 Cybercab units spotted at Giga Texas on April 13-17, 2026 (up from 50+ earlier)",
         "14 units spotted on April 17 without steering wheels - regulatory-ready production models",
         "Mass production began in April 2026 as planned - hitting target date",
         "Production lines operational and ramping toward hundreds of units weekly target",
         "Validation testing completed successfully across multiple US cities",
-        "Most units still carry steering wheels and pedals for data accumulation during regulatory approval phase",
         "Parallel crash testing completed final validation phase",
         "SXSW showcase (March 13-14) demonstrated production-ready vehicle",
-        "Testing locations: Austin, San Jose, Los Gatos, Chicago, Washington D.C.",
         "Production line cycle time: <10 seconds per unit",
-        "Long-term target: 2 million units/year at full capacity, late 2026 commercial robotaxi launch in Austin"
+        "Long-term target: 2 million units/year at full capacity"
       ],
       "timeline": [
         { "date": "2024-10-23", "event": "2026 production target announced" },
@@ -294,7 +306,8 @@
         { "date": "2026-03-25", "event": "35 units at Giga Texas, 12 in crash testing" },
         { "date": "2026-04", "event": "Mass production begins - target achieved" },
         { "date": "2026-04-13", "event": "50+ units at Giga Texas" },
-        { "date": "2026-04-17", "event": "60 units spotted, 14 without steering wheels" }
+        { "date": "2026-04-17", "event": "60 units spotted, 14 without steering wheels" },
+        { "date": "2026-04-18", "event": "Unsupervised Robotaxi service launches in Houston & Dallas" }
       ]
     },
     "fsd": {
