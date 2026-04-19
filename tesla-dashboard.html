@@ -245,6 +245,37 @@
             display: block;
         }
 
+        .toggle-button {
+            background: #252525;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid #333;
+            color: #ccc;
+            font-size: 1em;
+            transition: all 0.3s;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .toggle-button:hover {
+            border-color: #3b82f6;
+            color: #fff;
+            background: #2a2a2a;
+        }
+
+        .toggle-button #toggleIcon {
+            display: inline-block;
+            transition: transform 0.3s;
+            color: #3b82f6;
+        }
+
+        .collapsible-section {
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
         .tab-content h2 {
             color: #fff;
             margin-bottom: 15px;
@@ -1431,34 +1462,6 @@
                     </div>
                 </div>
 
-                <div class="table-container">
-                    <h3 style="color: #fff; margin-bottom: 15px;">Quarterly Data</h3>
-                    <table class="pd-table">
-                        <thead>
-                            <tr>
-                                <th>Quarter</th>
-                                <th>Production</th>
-                                <th>Delivery</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-            `;
-
-            pd.quarterlyData.forEach(row => {
-                html += `
-                    <tr>
-                        <td>${row.quarter}</td>
-                        <td>${row.production ? parseInt(row.production).toLocaleString() : '-'}</td>
-                        <td>${row.delivery ? parseInt(row.delivery).toLocaleString() : '-'}</td>
-                    </tr>
-                `;
-            });
-
-            html += `
-                        </tbody>
-                    </table>
-                </div>
-
                 <div class="key-points" style="margin-top: 30px;">
                     <h3 style="color: #fff; margin-bottom: 15px;">Annual Summary</h3>
                     <table class="pd-table">
@@ -1489,6 +1492,41 @@
             html += `
                         </tbody>
                     </table>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button id="toggleQuarterlyData" class="toggle-button" onclick="toggleQuarterlyData()">
+                        <span id="toggleIcon">▼</span> Show Full Quarterly Data (${pd.quarterlyData.length} quarters)
+                    </button>
+
+                    <div id="quarterlyDataSection" class="collapsible-section" style="display: none;">
+                        <div class="table-container" style="margin-top: 15px;">
+                            <table class="pd-table">
+                                <thead>
+                                    <tr>
+                                        <th>Quarter</th>
+                                        <th>Production</th>
+                                        <th>Delivery</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+            `;
+
+            pd.quarterlyData.forEach(row => {
+                html += `
+                    <tr>
+                        <td>${row.quarter}</td>
+                        <td>${row.production ? parseInt(row.production).toLocaleString() : '-'}</td>
+                        <td>${row.delivery ? parseInt(row.delivery).toLocaleString() : '-'}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             `;
 
@@ -1983,6 +2021,22 @@
             }
 
             container.innerHTML = html;
+        }
+
+        function toggleQuarterlyData() {
+            const section = document.getElementById('quarterlyDataSection');
+            const button = document.getElementById('toggleQuarterlyData');
+            const icon = document.getElementById('toggleIcon');
+
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▲';
+                button.childNodes[1].textContent = ' Hide Full Quarterly Data (' + data.categories.productionDelivery.quarterlyData.length + ' quarters)';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▼';
+                button.childNodes[1].textContent = ' Show Full Quarterly Data (' + data.categories.productionDelivery.quarterlyData.length + ' quarters)';
+            }
         }
 
         function showTab(tabId) {
