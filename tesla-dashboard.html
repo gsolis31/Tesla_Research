@@ -429,7 +429,7 @@
                 <canvas id="cybercabChart"></canvas>
             </div>
             <div class="chart-card">
-                <h3>Robotaxi Fleet Growth</h3>
+                <h3>Total Robotaxi Fleet</h3>
                 <canvas id="robotaxiFleetChart"></canvas>
             </div>
             <div class="chart-card">
@@ -743,15 +743,26 @@
               ]
             },
             "robotaxiFleet": {
-              "title": "Robotaxi Fleet (Active Vehicles)",
+              "title": "Total Robotaxi Fleet (All Cities)",
               "data": [
                 {
                   "date": "2026-04-18",
-                  "count": 13,
-                  "note": "Active vehicles in last 30 days - Houston & Dallas launch"
+                  "count": 285,
+                  "note": "~250 Model Y + 35 Cybercabs across Austin, Bay Area, Dallas, Houston, Phoenix"
                 }
               ],
-              "target": "Multi-city deployment across 7+ cities in H1 2026"
+              "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
+              "breakdown": {
+                "modelY": 250,
+                "cybercab": 35,
+                "cities": [
+                  "Austin (42)",
+                  "Bay Area (130)",
+                  "Phoenix (60)",
+                  "Dallas (new)",
+                  "Houston (new)"
+                ]
+              }
             },
             "fsdApprovals": {
               "title": "FSD Country Approvals",
@@ -1846,7 +1857,7 @@
                 data: {
                     labels: chartData.map(d => d.date),
                     datasets: [{
-                        label: 'Active Vehicles',
+                        label: 'Total Fleet Size',
                         data: chartData.map(d => d.count),
                         backgroundColor: 'rgba(34, 197, 94, 0.2)',
                         borderColor: '#22c55e',

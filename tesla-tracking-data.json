@@ -231,11 +231,16 @@
       ]
     },
     "robotaxiFleet": {
-      "title": "Robotaxi Fleet (Active Vehicles)",
+      "title": "Total Robotaxi Fleet (All Cities)",
       "data": [
-        { "date": "2026-04-18", "count": 13, "note": "Active vehicles in last 30 days - Houston & Dallas launch" }
+        { "date": "2026-04-18", "count": 285, "note": "~250 Model Y + 35 Cybercabs across Austin, Bay Area, Dallas, Houston, Phoenix" }
       ],
-      "target": "Multi-city deployment across 7+ cities in H1 2026"
+      "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
+      "breakdown": {
+        "modelY": 250,
+        "cybercab": 35,
+        "cities": ["Austin (42)", "Bay Area (130)", "Phoenix (60)", "Dallas (new)", "Houston (new)"]
+      }
     },
     "fsdApprovals": {
       "title": "FSD Country Approvals",
