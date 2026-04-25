@@ -3,7 +3,7 @@
 An automated tracking system for monitoring Tesla's key development milestones across AI chips, autonomous vehicles, robotics, and regulatory approvals. Built with a custom Claude AI skill that automatically researches and updates the dashboard weekly.
 
 ![Dashboard Preview](https://img.shields.io/badge/Status-Active-success)
-![Last Updated](https://img.shields.io/badge/Updated-2026--04--18-blue)
+![Last Updated](https://img.shields.io/badge/Updated-2026--04--25-blue)
 
 ## 🎯 What This Tracks
 
@@ -92,6 +92,7 @@ All data is stored in `tesla-tracking-data.json` with this structure:
   "metrics": {
     "cybercab": { "data": [...] },
     "jobPostings": { "data": [...] },
+    "robotaxiFleet": { "data": [...] },
     "fsdApprovals": { "countries": [...] }
   },
   "categories": {
@@ -109,7 +110,7 @@ All data is stored in `tesla-tracking-data.json` with this structure:
 
 - **Weekly Summaries** - Latest developments with trend analysis
 - **Category Deep Dives** - Detailed timelines and key points for each area
-- **Interactive Charts** - Cybercab production, job postings, quarterly deliveries
+- **Interactive Charts** - Cybercab production, robotaxi fleet deployment, quarterly deliveries
 - **Status Indicators** - 🟢 Positive, 🔴 Negative, 🟡 Neutral
 - **Source Links** - Every update links to original source
 - **Historical Data** - Complete tracking history since March 2026
@@ -117,9 +118,10 @@ All data is stored in `tesla-tracking-data.json` with this structure:
 ## 🛠️ Technical Details
 
 **Dashboard Technology:**
-- Pure HTML/CSS/JavaScript (no dependencies)
-- Chart.js for visualizations
-- TradingView widget for Tesla stock
+- Single HTML file with embedded CSS/JavaScript/data
+- Chart.js for visualizations (loaded from CDN)
+- TradingView widget for Tesla stock (loaded from CDN)
+- Requires internet for CDN libraries, otherwise fully standalone
 - Responsive design for mobile/desktop
 
 **Data Management:**
@@ -168,4 +170,4 @@ Personal research project for educational and investment tracking purposes.
 
 **Note**: This project tracks publicly available information for research purposes. Not financial advice. Always verify information with official sources before making investment decisions.
 
-**Last Updated**: April 18, 2026 | [View Dashboard](tesla-dashboard.html)
+**Last Updated**: April 25, 2026 | [View Dashboard](tesla-dashboard.html)
