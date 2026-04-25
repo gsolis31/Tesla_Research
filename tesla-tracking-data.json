@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-04-18",
+  "lastUpdated": "2026-04-25",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-04-25",
+      "keyChanges": [
+        {
+          "category": "AI Chip Production",
+          "status": "positive",
+          "title": "Samsung Taylor Fab Equipment Ceremony Completed, AI6.5 at TSMC Arizona",
+          "description": "Samsung completed equipment installation ceremony at Taylor, Texas foundry on April 24, 2026, marking final run-up to 2nm mass production. Tesla employing multi-foundry approach: AI5 and AI6 at Samsung Texas, AI6.5 at TSMC Arizona. AI6.5 will deliver optimized performance on TSMC's 2nm node following AI6. Qualified 2nm volume production expected in H2 2027 with Tesla AI5 and AI6 as first products.",
+          "source": "https://wccftech.com/tesla-pulls-2nm-ai-chip-production-onto-us-soil-splits-ai6-ai6-5-between-samsung-tsmc/"
+        },
+        {
+          "category": "Cybercab",
+          "status": "positive",
+          "title": "Glossy Gold Cybercab Production Units Spotted at Giga Texas",
+          "description": "Glossy gold Tesla Cybercab production units spotted at Giga Texas on April 24, 2026, showing continued production ramp. CEO Elon Musk confirmed during Q1 2026 earnings call on April 22 that Cybercab production has officially begun at Giga Texas. Volume production underway with Giga Texas line prepared to produce hundreds of units per week.",
+          "source": "https://teslanorth.com/2026/04/24/glossy-gold-tesla-cybercab-production-units-spotted-at-giga-texas/"
+        },
+        {
+          "category": "FSD Approvals",
+          "status": "neutral",
+          "title": "EU Rollout Progressing Toward Summer 2026 Timeline",
+          "description": "Following Netherlands approval on April 10, EU-wide rollout remains on track for summer 2026. Belgium expected mid-May, Germany expected May-June 2026 (4-8 weeks post-approval). Every EU member state can recognize Dutch approval via mutual recognition without full re-testing. Majority vote at EU Technical Committee possible May-June for automatic EU-wide availability.",
+          "source": "https://notanfsdtracker.com/tesla-fsd-eu-regulatory-approval-tracker/"
+        },
+        {
+          "category": "Optimus Production",
+          "status": "positive",
+          "title": "Fremont Production Confirmed July-August Start, Giga Texas Expansion",
+          "description": "CEO Elon Musk confirmed Optimus robot production will begin at Fremont in late July or August 2026, just four months after last Model S and X roll off line in early May. Tesla's Q1 2026 report confirms 5.2 million square foot Optimus factory expansion at Giga Texas, targeting 10M robots/year, with Fremont's Model S and X lines converted to 1M unit pilot line. Initial output will be slow given 10,000 unique parts across entirely new production line.",
+          "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+        },
+        {
+          "category": "Job Postings",
+          "status": "positive",
+          "title": "100+ Optimus Roles Continue with Production Focus",
+          "description": "Tesla maintains 100+ Optimus-related job openings in April 2026, with focus shifting to production engineering and manufacturing as Summer 2026 production start approaches. Roles span AI engineers, manufacturing engineers, mechanical design, and simulation infrastructure at Palo Alto, Austin, and Fremont facilities.",
+          "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
+        },
+        {
+          "category": "Production & Delivery",
+          "status": "neutral",
+          "title": "Q1 2026: 408,386 Produced, 358,023 Delivered",
+          "description": "Tesla produced 408,386 vehicles and delivered 358,023 vehicles in Q1 2026 (announced April 2). Model 3/Y production: 394,611 units (+14% YoY), deliveries: 341,893 units (+6% YoY). Other models production: 13,775 units (-20% YoY), deliveries: 16,130 units (+25% YoY). Active FSD Subscriptions grew to 1.28M (+51% YoY). Cumulative all-time deliveries reached 9.2M vehicles (+21% YoY).",
+          "source": "https://ir.tesla.com/press-release/tesla-first-quarter-2026-production-deliveries-and-deployments"
+        }
+      ],
+      "trends": [
+        "AI chip dual-foundry strategy solidifying: AI5/AI6 at Samsung Texas, AI6.5 at TSMC Arizona",
+        "Cybercab production scaling continues - official confirmation from CEO in Q1 earnings",
+        "Optimus production timeline firming: Fremont pilot line July/August, Giga Texas 10M/year facility expansion",
+        "Q1 2026 deliveries at 358K - steady state as company focuses on next-gen platforms",
+        "FSD subscription growth accelerating: 1.28M active (+51% YoY) signaling strong monetization"
+      ]
+    },
     {
       "weekOf": "2026-04-18",
       "keyChanges": [
@@ -62,7 +116,7 @@
           "category": "FSD Approvals",
           "status": "positive",
           "title": "Netherlands FSD Officially Approved April 10, Subscriptions Live",
-          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at €99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
+          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at \u20ac99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
           "source": "https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/"
         },
         {
@@ -168,7 +222,7 @@
           "category": "Cybercab",
           "status": "positive",
           "title": "Cybercab Production Accelerating",
-          "description": "25 units (Mar 3) → 30+ units (Mar 9) → 16+ shipped in single day (Mar 11). Setting up for hundreds/week, appears ahead of April schedule.",
+          "description": "25 units (Mar 3) \u2192 30+ units (Mar 9) \u2192 16+ shipped in single day (Mar 11). Setting up for hundreds/week, appears ahead of April schedule.",
           "source": "https://www.tesery.com/blogs/news/tesla-cybercab-ramps-up-public-street-testing-as-revolutionary-robotaxi-enters-mass-production-queue"
         },
         {
@@ -209,57 +263,154 @@
     "cybercab": {
       "title": "Cybercab Production Count",
       "data": [
-        { "date": "2026-02-15", "count": 1, "note": "First mass-produced unit" },
-        { "date": "2026-03-03", "count": 25, "note": "Test units at Giga Texas" },
-        { "date": "2026-03-09", "count": 30, "note": "Production ramping" },
-        { "date": "2026-03-11", "count": 46, "note": "16+ shipped in single day (cumulative estimate)" },
-        { "date": "2026-03-25", "count": 35, "note": "35 units observed at Giga Texas, 12 in crash testing" },
-        { "date": "2026-04-13", "count": 50, "note": "50+ units at Giga Texas" },
-        { "date": "2026-04-17", "count": 60, "note": "60 units spotted, 14 without steering wheels" }
+        {
+          "date": "2026-02-15",
+          "count": 1,
+          "note": "First mass-produced unit"
+        },
+        {
+          "date": "2026-03-03",
+          "count": 25,
+          "note": "Test units at Giga Texas"
+        },
+        {
+          "date": "2026-03-09",
+          "count": 30,
+          "note": "Production ramping"
+        },
+        {
+          "date": "2026-03-11",
+          "count": 46,
+          "note": "16+ shipped in single day (cumulative estimate)"
+        },
+        {
+          "date": "2026-03-25",
+          "count": 35,
+          "note": "35 units observed at Giga Texas, 12 in crash testing"
+        },
+        {
+          "date": "2026-04-13",
+          "count": 50,
+          "note": "50+ units at Giga Texas"
+        },
+        {
+          "date": "2026-04-17",
+          "count": 60,
+          "note": "60 units spotted, 14 without steering wheels"
+        }
       ],
       "target": "Hundreds per week by April 2026, 2M/year at full capacity"
     },
     "jobPostings": {
       "title": "Optimus Job Postings",
       "data": [
-        { "date": "2026-01-01", "count": 110, "note": "Late 2025/Early 2026 baseline" },
-        { "date": "2026-03-08", "count": 110, "note": "Week 1 tracking" },
-        { "date": "2026-03-13", "count": 110, "note": "Week 2 - stable" },
-        { "date": "2026-03-28", "count": 110, "note": "Week 4 - stable" },
-        { "date": "2026-04-11", "count": 110, "note": "Week 6 - stable" },
-        { "date": "2026-04-18", "count": 100, "note": "Week 7 - 100+ active roles (increased)" }
+        {
+          "date": "2026-01-01",
+          "count": 110,
+          "note": "Late 2025/Early 2026 baseline"
+        },
+        {
+          "date": "2026-03-08",
+          "count": 110,
+          "note": "Week 1 tracking"
+        },
+        {
+          "date": "2026-03-13",
+          "count": 110,
+          "note": "Week 2 - stable"
+        },
+        {
+          "date": "2026-03-28",
+          "count": 110,
+          "note": "Week 4 - stable"
+        },
+        {
+          "date": "2026-04-11",
+          "count": 110,
+          "note": "Week 6 - stable"
+        },
+        {
+          "date": "2026-04-18",
+          "count": 100,
+          "note": "Week 7 - 100+ active roles (increased)"
+        }
       ]
     },
     "robotaxiFleet": {
       "title": "Total Robotaxi Fleet (All Cities)",
       "data": [
-        { "date": "2026-04-18", "count": 285, "note": "~250 Model Y + 35 Cybercabs across Austin, Bay Area, Dallas, Houston, Phoenix" }
+        {
+          "date": "2026-04-18",
+          "count": 285,
+          "note": "~250 Model Y + 35 Cybercabs across Austin, Bay Area, Dallas, Houston, Phoenix"
+        },
+        {
+          "date": "2026-04-25",
+          "count": 400,
+          "note": "400 active vehicles across 5 cities - Bay Area leads deployment. ~573 total vehicles including staged units in Dallas/Houston"
+        }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
       "breakdown": {
-        "modelY": 250,
-        "cybercab": 35,
-        "cities": ["Austin (42)", "Bay Area (130)", "Phoenix (60)", "Dallas (new)", "Houston (new)"]
+        "active": 400,
+        "staged": 173,
+        "cities": [
+          "Bay Area (leading)",
+          "Austin",
+          "Phoenix",
+          "Dallas",
+          "Houston"
+        ]
       }
     },
     "fsdApprovals": {
       "title": "FSD Country Approvals",
       "countries": [
-        { "name": "United States", "status": "active", "date": "2020-10-01" },
-        { "name": "China", "status": "active", "date": "2024-04-01" },
-        { "name": "Netherlands", "status": "active", "date": "2026-04-10", "note": "Subscriptions €99/month - First EU country approved" },
-        { "name": "Belgium", "status": "pending", "expectedDate": "2026-05-10", "note": "Expected via EU mutual recognition" },
-        { "name": "Other EU Countries", "status": "pending", "expectedDate": "2026-08-31", "note": "Summer 2026 via mutual recognition" },
-        { "name": "Japan", "status": "pending", "expectedDate": "2026-12-31", "note": "First public demo released March 6" }
+        {
+          "name": "United States",
+          "status": "active",
+          "date": "2020-10-01"
+        },
+        {
+          "name": "China",
+          "status": "active",
+          "date": "2024-04-01"
+        },
+        {
+          "name": "Netherlands",
+          "status": "active",
+          "date": "2026-04-10",
+          "note": "Subscriptions \u20ac99/month - First EU country approved"
+        },
+        {
+          "name": "Belgium",
+          "status": "pending",
+          "expectedDate": "2026-05-10",
+          "note": "Expected via EU mutual recognition"
+        },
+        {
+          "name": "Other EU Countries",
+          "status": "pending",
+          "expectedDate": "2026-08-31",
+          "note": "Summer 2026 via mutual recognition"
+        },
+        {
+          "name": "Japan",
+          "status": "pending",
+          "expectedDate": "2026-12-31",
+          "note": "First public demo released March 6"
+        }
       ]
     }
   },
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-04-18",
-      "criticalNews": "AI5 Chip Taped Out April 15, Samsung Taylor Equipment Ceremony April 24",
+      "latestUpdate": "2026-04-25",
+      "criticalNews": "Samsung Taylor Fab Equipment Ceremony Completed April 24, AI6.5 to be manufactured at TSMC Arizona",
       "keyPoints": [
+        "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 entirely TSMC Arizona",
+        "AI6.5 (optimized version) will be manufactured at TSMC Arizona on 2nm node following AI6",
         "AI5 chip taped out on April 15, 2026 - final design sent to foundry for fabrication",
         "AI5 performance: 40x improvement over AI4 (9x more memory, 8x higher compute capacity)",
         "AI5 first silicon samples expected later 2026, high-volume production mid-2027",
@@ -274,23 +425,55 @@
         "Dual-foundry strategy: AI5 split between Samsung and TSMC; AI6 entirely at Samsung Taylor"
       ],
       "timeline": [
-        { "date": "2025-10", "event": "AI5 production split announced (Samsung/TSMC)" },
-        { "date": "2026-01", "event": "$16.5B Samsung deal confirmed" },
-        { "date": "2026-03-08", "event": "Plans to double AI6 production capacity" },
-        { "date": "2026-03-13", "event": "AI6 delayed ~6 months to Q4 2027" },
-        { "date": "2026-03-13", "event": "EUV equipment testing began at Taylor Fab 1" },
-        { "date": "2026-03-18", "event": "Samsung confirms H2 2027 production start at Texas facility" },
-        { "date": "2026-03-22", "event": "$25B Terafab factory announced (Tesla/SpaceX/xAI)" },
-        { "date": "2026-03-24", "event": "Samsung 2nm yield reaches 60% (3x improvement)" },
-        { "date": "2026-04-15", "event": "AI5 chip tape-out completed" },
-        { "date": "2026-04-24", "event": "Samsung Taylor Fab equipment installation ceremony" }
+        {
+          "date": "2025-10",
+          "event": "AI5 production split announced (Samsung/TSMC)"
+        },
+        {
+          "date": "2026-01",
+          "event": "$16.5B Samsung deal confirmed"
+        },
+        {
+          "date": "2026-03-08",
+          "event": "Plans to double AI6 production capacity"
+        },
+        {
+          "date": "2026-03-13",
+          "event": "AI6 delayed ~6 months to Q4 2027"
+        },
+        {
+          "date": "2026-03-13",
+          "event": "EUV equipment testing began at Taylor Fab 1"
+        },
+        {
+          "date": "2026-03-18",
+          "event": "Samsung confirms H2 2027 production start at Texas facility"
+        },
+        {
+          "date": "2026-03-22",
+          "event": "$25B Terafab factory announced (Tesla/SpaceX/xAI)"
+        },
+        {
+          "date": "2026-03-24",
+          "event": "Samsung 2nm yield reaches 60% (3x improvement)"
+        },
+        {
+          "date": "2026-04-15",
+          "event": "AI5 chip tape-out completed"
+        },
+        {
+          "date": "2026-04-24",
+          "event": "Samsung Taylor Fab equipment installation ceremony"
+        }
       ]
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-04-18",
+      "latestUpdate": "2026-04-25",
       "criticalNews": "BREAKING: Unsupervised Robotaxi Service Launches in Houston & Dallas (April 18)",
       "keyPoints": [
+        "Glossy gold production units spotted at Giga Texas on April 24, 2026",
+        "CEO Elon Musk confirmed in Q1 2026 earnings call (April 22) that Cybercab production officially began",
         "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
         "Now operating in 3 Texas cities: Austin, Dallas, Houston - fully autonomous with no safety driver",
         "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
@@ -308,18 +491,62 @@
         "Long-term target: 2 million units/year at full capacity"
       ],
       "timeline": [
-        { "date": "2024-10-23", "event": "2026 production target announced" },
-        { "date": "2026-02-15", "event": "First mass-produced unit rolls off line" },
-        { "date": "2026-02-17", "event": "First production Cybercab rolls off Giga Texas line" },
-        { "date": "2026-03-03", "event": "25 test units at Giga Texas" },
-        { "date": "2026-03-09", "event": "30+ units observed" },
-        { "date": "2026-03-11", "event": "16+ units shipped in single day" },
-        { "date": "2026-03-13", "event": "SXSW Austin showcase with production unit" },
-        { "date": "2026-03-25", "event": "35 units at Giga Texas, 12 in crash testing" },
-        { "date": "2026-04", "event": "Mass production begins - target achieved" },
-        { "date": "2026-04-13", "event": "50+ units at Giga Texas" },
-        { "date": "2026-04-17", "event": "60 units spotted, 14 without steering wheels" },
-        { "date": "2026-04-18", "event": "Unsupervised Robotaxi service launches in Houston & Dallas" }
+        {
+          "date": "2024-10-23",
+          "event": "2026 production target announced"
+        },
+        {
+          "date": "2026-02-15",
+          "event": "First mass-produced unit rolls off line"
+        },
+        {
+          "date": "2026-02-17",
+          "event": "First production Cybercab rolls off Giga Texas line"
+        },
+        {
+          "date": "2026-03-03",
+          "event": "25 test units at Giga Texas"
+        },
+        {
+          "date": "2026-03-09",
+          "event": "30+ units observed"
+        },
+        {
+          "date": "2026-03-11",
+          "event": "16+ units shipped in single day"
+        },
+        {
+          "date": "2026-03-13",
+          "event": "SXSW Austin showcase with production unit"
+        },
+        {
+          "date": "2026-03-25",
+          "event": "35 units at Giga Texas, 12 in crash testing"
+        },
+        {
+          "date": "2026-04",
+          "event": "Mass production begins - target achieved"
+        },
+        {
+          "date": "2026-04-13",
+          "event": "50+ units at Giga Texas"
+        },
+        {
+          "date": "2026-04-17",
+          "event": "60 units spotted, 14 without steering wheels"
+        },
+        {
+          "date": "2026-04-18",
+          "event": "Unsupervised Robotaxi service launches in Houston & Dallas"
+        },
+        {
+          "date": "2026-04-22",
+          "event": "CEO confirms Cybercab production in Q1 earnings call"
+        },
+        {
+          "date": "2026-04-24",
+          "event": "Gold production units spotted at Giga Texas"
+        }
       ]
     },
     "fsd": {
@@ -328,7 +555,7 @@
       "criticalNews": "Belgium Expected Mid-May, EU-Wide Vote Possible May-June 2026",
       "keyPoints": [
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
-        "Subscriptions launched at €99/month in Netherlands",
+        "Subscriptions launched at \u20ac99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
         "Belgium expected to be fastest EU follower - authorities signaled recognition within ~30 days (mid-May 2026)",
         "Germany (KBA) expected to move in late spring: May-June 2026, 4-8 weeks post-April 10",
@@ -341,18 +568,54 @@
         "Japan targeting end of 2026 commercial rollout",
         "Approved under Article 39 (EU mutual recognition mechanism)"
       ],
-      "activeCountries": ["United States", "China", "Netherlands"],
-      "pendingCountries": ["Belgium (Mid-May 2026)", "Germany (May-June 2026)", "Other EU countries (Summer 2026)", "Japan (End 2026)"],
+      "activeCountries": [
+        "United States",
+        "China",
+        "Netherlands"
+      ],
+      "pendingCountries": [
+        "Belgium (Mid-May 2026)",
+        "Germany (May-June 2026)",
+        "Other EU countries (Summer 2026)",
+        "Japan (End 2026)"
+      ],
       "timeline": [
-        { "date": "2026-02", "event": "RDW scheduled demonstration" },
-        { "date": "2026-03-04", "event": "Netherlands grants Extended Type Approval (early)" },
-        { "date": "2026-03-13", "event": "Early Access invitations sent to European owners" },
-        { "date": "2026-03-20", "event": "Original approval target date (delayed)" },
-        { "date": "2026-04-10", "event": "Official RDW type approval issued under UN Regulation 171" },
-        { "date": "2026-04-10", "event": "Subscriptions launched at €99/month" },
-        { "date": "2026-05-Mid", "event": "Belgium approval expected via mutual recognition" },
-        { "date": "2026-05-06", "event": "EU-wide TCMV vote possible" },
-        { "date": "2026-Summer", "event": "EU-wide rollout expected via mutual recognition" }
+        {
+          "date": "2026-02",
+          "event": "RDW scheduled demonstration"
+        },
+        {
+          "date": "2026-03-04",
+          "event": "Netherlands grants Extended Type Approval (early)"
+        },
+        {
+          "date": "2026-03-13",
+          "event": "Early Access invitations sent to European owners"
+        },
+        {
+          "date": "2026-03-20",
+          "event": "Original approval target date (delayed)"
+        },
+        {
+          "date": "2026-04-10",
+          "event": "Official RDW type approval issued under UN Regulation 171"
+        },
+        {
+          "date": "2026-04-10",
+          "event": "Subscriptions launched at \u20ac99/month"
+        },
+        {
+          "date": "2026-05-Mid",
+          "event": "Belgium approval expected via mutual recognition"
+        },
+        {
+          "date": "2026-05-06",
+          "event": "EU-wide TCMV vote possible"
+        },
+        {
+          "date": "2026-Summer",
+          "event": "EU-wide rollout expected via mutual recognition"
+        }
       ]
     },
     "jobPostings": {
@@ -381,9 +644,11 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-04-18",
-      "criticalNews": "Shanghai Gigafactory Positioned for Optimus Mass Production",
+      "latestUpdate": "2026-04-25",
+      "criticalNews": "Fremont Production Confirmed July-August 2026, Giga Texas 5.2M sq ft Expansion",
       "keyPoints": [
+        "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
+        "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
         "Tesla China President announced April 14 that Giga Shanghai will play crucial role in Optimus production",
         "Shanghai planning to ramp six new production lines in 2026: vehicles, robots, energy storage, batteries",
         "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
@@ -402,21 +667,74 @@
         "Consumer sales targeted for end of 2027 (pricing below $20K requires millions of units)"
       ],
       "timeline": [
-        { "date": "2025-12", "event": "Video released showing Optimus jogging" },
-        { "date": "2026-01-21", "event": "Mass production commenced at Fremont (internal use)" },
-        { "date": "2026-01-28", "event": "Model S/X ending Q2 2026 announced" },
-        { "date": "2026-02-03", "event": "V3 production-intent prototype demo" },
-        { "date": "2026-03-11", "event": "Digital Optimus (Macrohard) announced - Grok AI integration" },
-        { "date": "2026-03-12", "event": "Summer 2026 production start confirmed (Abundance Summit)" },
-        { "date": "2026-03-13", "event": "Timeline accelerated to Q2/Q3 2026" },
-        { "date": "2026-04", "event": "Cortex 2.0 supercomputer Phase 1 (250MW) online" },
-        { "date": "2026-04-14", "event": "Shanghai Gigafactory announced as key Optimus production facility" },
-        { "date": "2026-Mid", "event": "Cortex 2.0 full capacity (500MW) expected" },
-        { "date": "2026-Summer", "event": "Optimus 3 production begins" },
-        { "date": "2026-Late", "event": "First external commercial customers (B2B)" },
-        { "date": "2026-Late", "event": "Shanghai Optimus production targeted to start" },
-        { "date": "2027", "event": "Giga Texas facility targeting 10M units/year" },
-        { "date": "2027-End", "event": "Consumer sales target" }
+        {
+          "date": "2025-12",
+          "event": "Video released showing Optimus jogging"
+        },
+        {
+          "date": "2026-01-21",
+          "event": "Mass production commenced at Fremont (internal use)"
+        },
+        {
+          "date": "2026-01-28",
+          "event": "Model S/X ending Q2 2026 announced"
+        },
+        {
+          "date": "2026-02-03",
+          "event": "V3 production-intent prototype demo"
+        },
+        {
+          "date": "2026-03-11",
+          "event": "Digital Optimus (Macrohard) announced - Grok AI integration"
+        },
+        {
+          "date": "2026-03-12",
+          "event": "Summer 2026 production start confirmed (Abundance Summit)"
+        },
+        {
+          "date": "2026-03-13",
+          "event": "Timeline accelerated to Q2/Q3 2026"
+        },
+        {
+          "date": "2026-04",
+          "event": "Cortex 2.0 supercomputer Phase 1 (250MW) online"
+        },
+        {
+          "date": "2026-04-14",
+          "event": "Shanghai Gigafactory announced as key Optimus production facility"
+        },
+        {
+          "date": "2026-Mid",
+          "event": "Cortex 2.0 full capacity (500MW) expected"
+        },
+        {
+          "date": "2026-Summer",
+          "event": "Optimus 3 production begins"
+        },
+        {
+          "date": "2026-Late",
+          "event": "First external commercial customers (B2B)"
+        },
+        {
+          "date": "2026-Late",
+          "event": "Shanghai Optimus production targeted to start"
+        },
+        {
+          "date": "2027",
+          "event": "Giga Texas facility targeting 10M units/year"
+        },
+        {
+          "date": "2027-End",
+          "event": "Consumer sales target"
+        },
+        {
+          "date": "2026-04-22",
+          "event": "Q1 report confirms Giga Texas 5.2M sq ft expansion for 10M units/year"
+        },
+        {
+          "date": "2026-04-22",
+          "event": "Fremont production start confirmed for late July/August 2026"
+        }
       ],
       "pricing": {
         "target": "$30,000",
@@ -426,66 +744,278 @@
     },
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
-      "latestUpdate": "2026-04-11",
-      "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered",
-      "totalProduction": "9,277,574",
-      "totalDeliveries": "9,156,179",
+      "latestUpdate": "2026-04-25",
+      "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered - Model 3/Y production +14% YoY",
+      "totalProduction": "9308122",
+      "totalDeliveries": "9183948",
       "quarterlyData": [
-        { "quarter": "Q1-15", "production": 11160, "delivery": 10030 },
-        { "quarter": "Q2-15", "production": null, "delivery": 11507 },
-        { "quarter": "Q3-15", "production": null, "delivery": 11580 },
-        { "quarter": "Q4-15", "production": null, "delivery": 17400 },
-        { "quarter": "Q1-16", "production": 15510, "delivery": 14820 },
-        { "quarter": "Q2-16", "production": 18345, "delivery": 14370 },
-        { "quarter": "Q3-16", "production": 25185, "delivery": 24500 },
-        { "quarter": "Q4-16", "production": 24882, "delivery": 22200 },
-        { "quarter": "Q1-17", "production": 25418, "delivery": 25000 },
-        { "quarter": "Q2-17", "production": 25708, "delivery": 22000 },
-        { "quarter": "Q3-17", "production": 25336, "delivery": 26150 },
-        { "quarter": "Q4-17", "production": 24565, "delivery": 29870 },
-        { "quarter": "Q1-18", "production": 34494, "delivery": 29980 },
-        { "quarter": "Q2-18", "production": 53339, "delivery": 40740 },
-        { "quarter": "Q3-18", "production": 80142, "delivery": 83500 },
-        { "quarter": "Q4-18", "production": 86555, "delivery": 90966 },
-        { "quarter": "Q1-19", "production": 77138, "delivery": 63019 },
-        { "quarter": "Q2-19", "production": 87048, "delivery": 95356 },
-        { "quarter": "Q3-19", "production": 96155, "delivery": 97186 },
-        { "quarter": "Q4-19", "production": 104891, "delivery": 112095 },
-        { "quarter": "Q1-20", "production": 102672, "delivery": 88496 },
-        { "quarter": "Q2-20", "production": 82272, "delivery": 90891 },
-        { "quarter": "Q3-20", "production": 145036, "delivery": 139593 },
-        { "quarter": "Q4-20", "production": 179757, "delivery": 180667 },
-        { "quarter": "Q1-21", "production": 180338, "delivery": 184877 },
-        { "quarter": "Q2-21", "production": 206421, "delivery": 201304 },
-        { "quarter": "Q3-21", "production": 237823, "delivery": 241391 },
-        { "quarter": "Q4-21", "production": 305840, "delivery": 308650 },
-        { "quarter": "Q1-22", "production": 305407, "delivery": 310048 },
-        { "quarter": "Q2-22", "production": 258580, "delivery": 254695 },
-        { "quarter": "Q3-22", "production": 365923, "delivery": 343830 },
-        { "quarter": "Q4-22", "production": 439701, "delivery": 405278 },
-        { "quarter": "Q1-23", "production": 440808, "delivery": 422875 },
-        { "quarter": "Q2-23", "production": 479700, "delivery": 466140 },
-        { "quarter": "Q3-23", "production": 430488, "delivery": 435059 },
-        { "quarter": "Q4-23", "production": 494989, "delivery": 484507 },
-        { "quarter": "Q1-24", "production": 433371, "delivery": 386810 },
-        { "quarter": "Q2-24", "production": 410831, "delivery": 443956 },
-        { "quarter": "Q3-24", "production": 469796, "delivery": 462890 },
-        { "quarter": "Q4-24", "production": 459445, "delivery": 495570 },
-        { "quarter": "Q1-25", "production": 362615, "delivery": 336681 },
-        { "quarter": "Q2-25", "production": 410244, "delivery": 384122 },
-        { "quarter": "Q3-25", "production": 447450, "delivery": 497099 },
-        { "quarter": "Q4-25", "production": 434358, "delivery": 418227 },
-        { "quarter": "Q1-26", "production": 408386, "delivery": 358023 }
+        {
+          "quarter": "Q1-15",
+          "production": 11160,
+          "delivery": 10030
+        },
+        {
+          "quarter": "Q2-15",
+          "production": null,
+          "delivery": 11507
+        },
+        {
+          "quarter": "Q3-15",
+          "production": null,
+          "delivery": 11580
+        },
+        {
+          "quarter": "Q4-15",
+          "production": null,
+          "delivery": 17400
+        },
+        {
+          "quarter": "Q1-16",
+          "production": 15510,
+          "delivery": 14820
+        },
+        {
+          "quarter": "Q2-16",
+          "production": 18345,
+          "delivery": 14370
+        },
+        {
+          "quarter": "Q3-16",
+          "production": 25185,
+          "delivery": 24500
+        },
+        {
+          "quarter": "Q4-16",
+          "production": 24882,
+          "delivery": 22200
+        },
+        {
+          "quarter": "Q1-17",
+          "production": 25418,
+          "delivery": 25000
+        },
+        {
+          "quarter": "Q2-17",
+          "production": 25708,
+          "delivery": 22000
+        },
+        {
+          "quarter": "Q3-17",
+          "production": 25336,
+          "delivery": 26150
+        },
+        {
+          "quarter": "Q4-17",
+          "production": 24565,
+          "delivery": 29870
+        },
+        {
+          "quarter": "Q1-18",
+          "production": 34494,
+          "delivery": 29980
+        },
+        {
+          "quarter": "Q2-18",
+          "production": 53339,
+          "delivery": 40740
+        },
+        {
+          "quarter": "Q3-18",
+          "production": 80142,
+          "delivery": 83500
+        },
+        {
+          "quarter": "Q4-18",
+          "production": 86555,
+          "delivery": 90966
+        },
+        {
+          "quarter": "Q1-19",
+          "production": 77138,
+          "delivery": 63019
+        },
+        {
+          "quarter": "Q2-19",
+          "production": 87048,
+          "delivery": 95356
+        },
+        {
+          "quarter": "Q3-19",
+          "production": 96155,
+          "delivery": 97186
+        },
+        {
+          "quarter": "Q4-19",
+          "production": 104891,
+          "delivery": 112095
+        },
+        {
+          "quarter": "Q1-20",
+          "production": 102672,
+          "delivery": 88496
+        },
+        {
+          "quarter": "Q2-20",
+          "production": 82272,
+          "delivery": 90891
+        },
+        {
+          "quarter": "Q3-20",
+          "production": 145036,
+          "delivery": 139593
+        },
+        {
+          "quarter": "Q4-20",
+          "production": 179757,
+          "delivery": 180667
+        },
+        {
+          "quarter": "Q1-21",
+          "production": 180338,
+          "delivery": 184877
+        },
+        {
+          "quarter": "Q2-21",
+          "production": 206421,
+          "delivery": 201304
+        },
+        {
+          "quarter": "Q3-21",
+          "production": 237823,
+          "delivery": 241391
+        },
+        {
+          "quarter": "Q4-21",
+          "production": 305840,
+          "delivery": 308650
+        },
+        {
+          "quarter": "Q1-22",
+          "production": 305407,
+          "delivery": 310048
+        },
+        {
+          "quarter": "Q2-22",
+          "production": 258580,
+          "delivery": 254695
+        },
+        {
+          "quarter": "Q3-22",
+          "production": 365923,
+          "delivery": 343830
+        },
+        {
+          "quarter": "Q4-22",
+          "production": 439701,
+          "delivery": 405278
+        },
+        {
+          "quarter": "Q1-23",
+          "production": 440808,
+          "delivery": 422875
+        },
+        {
+          "quarter": "Q2-23",
+          "production": 479700,
+          "delivery": 466140
+        },
+        {
+          "quarter": "Q3-23",
+          "production": 430488,
+          "delivery": 435059
+        },
+        {
+          "quarter": "Q4-23",
+          "production": 494989,
+          "delivery": 484507
+        },
+        {
+          "quarter": "Q1-24",
+          "production": 433371,
+          "delivery": 386810
+        },
+        {
+          "quarter": "Q2-24",
+          "production": 410831,
+          "delivery": 443956
+        },
+        {
+          "quarter": "Q3-24",
+          "production": 469796,
+          "delivery": 462890
+        },
+        {
+          "quarter": "Q4-24",
+          "production": 459445,
+          "delivery": 495570
+        },
+        {
+          "quarter": "Q1-25",
+          "production": 362615,
+          "delivery": 336681
+        },
+        {
+          "quarter": "Q2-25",
+          "production": 410244,
+          "delivery": 384122
+        },
+        {
+          "quarter": "Q3-25",
+          "production": 447450,
+          "delivery": 497099
+        },
+        {
+          "quarter": "Q4-25",
+          "production": 434358,
+          "delivery": 418227
+        },
+        {
+          "quarter": "Q1-26",
+          "production": 408386,
+          "delivery": 358023
+        }
       ],
       "annualSummary": [
-        { "year": "2018", "deliveries": 245186, "yoyGrowth": null },
-        { "year": "2019", "deliveries": 367656, "yoyGrowth": 49.95 },
-        { "year": "2020", "deliveries": 499647, "yoyGrowth": 35.90 },
-        { "year": "2021", "deliveries": 936222, "yoyGrowth": 87.38 },
-        { "year": "2022", "deliveries": 1313851, "yoyGrowth": 40.34 },
-        { "year": "2023", "deliveries": 1808581, "yoyGrowth": 37.65 },
-        { "year": "2024", "deliveries": 1789226, "yoyGrowth": -1.07 },
-        { "year": "2025", "deliveries": 1636129, "yoyGrowth": -8.56 }
+        {
+          "year": "2018",
+          "deliveries": 245186,
+          "yoyGrowth": null
+        },
+        {
+          "year": "2019",
+          "deliveries": 367656,
+          "yoyGrowth": 49.95
+        },
+        {
+          "year": "2020",
+          "deliveries": 499647,
+          "yoyGrowth": 35.9
+        },
+        {
+          "year": "2021",
+          "deliveries": 936222,
+          "yoyGrowth": 87.38
+        },
+        {
+          "year": "2022",
+          "deliveries": 1313851,
+          "yoyGrowth": 40.34
+        },
+        {
+          "year": "2023",
+          "deliveries": 1808581,
+          "yoyGrowth": 37.65
+        },
+        {
+          "year": "2024",
+          "deliveries": 1789226,
+          "yoyGrowth": -1.07
+        },
+        {
+          "year": "2025",
+          "deliveries": 1636129,
+          "yoyGrowth": -8.56
+        }
       ]
     }
   }

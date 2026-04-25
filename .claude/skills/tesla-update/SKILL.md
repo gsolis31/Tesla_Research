@@ -163,6 +163,21 @@ After researching the 5 news categories, ALWAYS check for new quarterly producti
    - Update totalProduction and totalDeliveries (sum ALL quarters from all years)
 ```
 
+**IMPORTANT - Robotaxi Fleet Data**:
+ALWAYS check for updated robotaxi fleet deployment numbers:
+```
+1. Search: "Tesla robotaxi fleet size active vehicles April [YEAR]"
+2. Search: "Tesla robotaxi deployment Dallas Houston Phoenix Austin site:robotaxitracker.com"
+3. Look for:
+   - Total active vehicles across all cities
+   - City-specific deployment numbers
+   - New city launches
+   - Fleet growth metrics
+4. Sources to check:
+   - robotaxitracker.com (primary source for real-time data)
+   - Basenor, Teslarati, Electrek for deployment announcements
+```
+
 ### Step 3: Update JSON Data
 Update `tesla-tracking-data.json`:
 
@@ -196,6 +211,10 @@ Update `tesla-tracking-data.json`:
 **C. Update metrics** (if applicable):
 - Add new Cybercab production counts to `metrics.cybercab.data[]`
 - Add new job posting counts to `metrics.jobPostings.data[]`
+- **ALWAYS add new robotaxi fleet counts to `metrics.robotaxiFleet.data[]`** with format:
+  ```json
+  { "date": "YYYY-MM-DD", "count": XXX, "note": "Description with city breakdown" }
+  ```
 - Update FSD approval countries in `metrics.fsdApprovals.countries[]`
 
 **D. Update categories** (for each relevant category):

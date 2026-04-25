@@ -490,8 +490,62 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-04-18",
+          "lastUpdated": "2026-04-25",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-04-25",
+              "keyChanges": [
+                {
+                  "category": "AI Chip Production",
+                  "status": "positive",
+                  "title": "Samsung Taylor Fab Equipment Ceremony Completed, AI6.5 at TSMC Arizona",
+                  "description": "Samsung completed equipment installation ceremony at Taylor, Texas foundry on April 24, 2026, marking final run-up to 2nm mass production. Tesla employing multi-foundry approach: AI5 and AI6 at Samsung Texas, AI6.5 at TSMC Arizona. AI6.5 will deliver optimized performance on TSMC's 2nm node following AI6. Qualified 2nm volume production expected in H2 2027 with Tesla AI5 and AI6 as first products.",
+                  "source": "https://wccftech.com/tesla-pulls-2nm-ai-chip-production-onto-us-soil-splits-ai6-ai6-5-between-samsung-tsmc/"
+                },
+                {
+                  "category": "Cybercab",
+                  "status": "positive",
+                  "title": "Glossy Gold Cybercab Production Units Spotted at Giga Texas",
+                  "description": "Glossy gold Tesla Cybercab production units spotted at Giga Texas on April 24, 2026, showing continued production ramp. CEO Elon Musk confirmed during Q1 2026 earnings call on April 22 that Cybercab production has officially begun at Giga Texas. Volume production underway with Giga Texas line prepared to produce hundreds of units per week.",
+                  "source": "https://teslanorth.com/2026/04/24/glossy-gold-tesla-cybercab-production-units-spotted-at-giga-texas/"
+                },
+                {
+                  "category": "FSD Approvals",
+                  "status": "neutral",
+                  "title": "EU Rollout Progressing Toward Summer 2026 Timeline",
+                  "description": "Following Netherlands approval on April 10, EU-wide rollout remains on track for summer 2026. Belgium expected mid-May, Germany expected May-June 2026 (4-8 weeks post-approval). Every EU member state can recognize Dutch approval via mutual recognition without full re-testing. Majority vote at EU Technical Committee possible May-June for automatic EU-wide availability.",
+                  "source": "https://notanfsdtracker.com/tesla-fsd-eu-regulatory-approval-tracker/"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "title": "Fremont Production Confirmed July-August Start, Giga Texas Expansion",
+                  "description": "CEO Elon Musk confirmed Optimus robot production will begin at Fremont in late July or August 2026, just four months after last Model S and X roll off line in early May. Tesla's Q1 2026 report confirms 5.2 million square foot Optimus factory expansion at Giga Texas, targeting 10M robots/year, with Fremont's Model S and X lines converted to 1M unit pilot line. Initial output will be slow given 10,000 unique parts across entirely new production line.",
+                  "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+                },
+                {
+                  "category": "Job Postings",
+                  "status": "positive",
+                  "title": "100+ Optimus Roles Continue with Production Focus",
+                  "description": "Tesla maintains 100+ Optimus-related job openings in April 2026, with focus shifting to production engineering and manufacturing as Summer 2026 production start approaches. Roles span AI engineers, manufacturing engineers, mechanical design, and simulation infrastructure at Palo Alto, Austin, and Fremont facilities.",
+                  "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
+                },
+                {
+                  "category": "Production & Delivery",
+                  "status": "neutral",
+                  "title": "Q1 2026: 408,386 Produced, 358,023 Delivered",
+                  "description": "Tesla produced 408,386 vehicles and delivered 358,023 vehicles in Q1 2026 (announced April 2). Model 3/Y production: 394,611 units (+14% YoY), deliveries: 341,893 units (+6% YoY). Other models production: 13,775 units (-20% YoY), deliveries: 16,130 units (+25% YoY). Active FSD Subscriptions grew to 1.28M (+51% YoY). Cumulative all-time deliveries reached 9.2M vehicles (+21% YoY).",
+                  "source": "https://ir.tesla.com/press-release/tesla-first-quarter-2026-production-deliveries-and-deployments"
+                }
+              ],
+              "trends": [
+                "AI chip dual-foundry strategy solidifying: AI5/AI6 at Samsung Texas, AI6.5 at TSMC Arizona",
+                "Cybercab production scaling continues - official confirmation from CEO in Q1 earnings",
+                "Optimus production timeline firming: Fremont pilot line July/August, Giga Texas 10M/year facility expansion",
+                "Q1 2026 deliveries at 358K - steady state as company focuses on next-gen platforms",
+                "FSD subscription growth accelerating: 1.28M active (+51% YoY) signaling strong monetization"
+              ]
+            },
             {
               "weekOf": "2026-04-18",
               "keyChanges": [
@@ -780,18 +834,23 @@
                   "date": "2026-04-18",
                   "count": 285,
                   "note": "~250 Model Y + 35 Cybercabs across Austin, Bay Area, Dallas, Houston, Phoenix"
+                },
+                {
+                  "date": "2026-04-25",
+                  "count": 400,
+                  "note": "400 active vehicles across 5 cities - Bay Area leads deployment. ~573 total vehicles including staged units in Dallas/Houston"
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
               "breakdown": {
-                "modelY": 250,
-                "cybercab": 35,
+                "active": 400,
+                "staged": 173,
                 "cities": [
-                  "Austin (42)",
-                  "Bay Area (130)",
-                  "Phoenix (60)",
-                  "Dallas (new)",
-                  "Houston (new)"
+                  "Bay Area (leading)",
+                  "Austin",
+                  "Phoenix",
+                  "Dallas",
+                  "Houston"
                 ]
               }
             },
@@ -838,9 +897,11 @@
           "categories": {
             "aiChip": {
               "title": "AI Chip Production (Samsung/TSMC)",
-              "latestUpdate": "2026-04-18",
-              "criticalNews": "AI5 Chip Taped Out April 15, Samsung Taylor Equipment Ceremony April 24",
+              "latestUpdate": "2026-04-25",
+              "criticalNews": "Samsung Taylor Fab Equipment Ceremony Completed April 24, AI6.5 to be manufactured at TSMC Arizona",
               "keyPoints": [
+                "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 entirely TSMC Arizona",
+                "AI6.5 (optimized version) will be manufactured at TSMC Arizona on 2nm node following AI6",
                 "AI5 chip taped out on April 15, 2026 - final design sent to foundry for fabrication",
                 "AI5 performance: 40x improvement over AI4 (9x more memory, 8x higher compute capacity)",
                 "AI5 first silicon samples expected later 2026, high-volume production mid-2027",
@@ -899,9 +960,11 @@
             },
             "cybercab": {
               "title": "Cybercab Production",
-              "latestUpdate": "2026-04-18",
+              "latestUpdate": "2026-04-25",
               "criticalNews": "BREAKING: Unsupervised Robotaxi Service Launches in Houston & Dallas (April 18)",
               "keyPoints": [
+                "Glossy gold production units spotted at Giga Texas on April 24, 2026",
+                "CEO Elon Musk confirmed in Q1 2026 earnings call (April 22) that Cybercab production officially began",
                 "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
                 "Now operating in 3 Texas cities: Austin, Dallas, Houston - fully autonomous with no safety driver",
                 "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
@@ -966,6 +1029,14 @@
                 {
                   "date": "2026-04-18",
                   "event": "Unsupervised Robotaxi service launches in Houston & Dallas"
+                },
+                {
+                  "date": "2026-04-22",
+                  "event": "CEO confirms Cybercab production in Q1 earnings call"
+                },
+                {
+                  "date": "2026-04-24",
+                  "event": "Gold production units spotted at Giga Texas"
                 }
               ]
             },
@@ -1064,9 +1135,11 @@
             },
             "optimus": {
               "title": "Optimus Production",
-              "latestUpdate": "2026-04-18",
-              "criticalNews": "Shanghai Gigafactory Positioned for Optimus Mass Production",
+              "latestUpdate": "2026-04-25",
+              "criticalNews": "Fremont Production Confirmed July-August 2026, Giga Texas 5.2M sq ft Expansion",
               "keyPoints": [
+                "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
+                "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
                 "Tesla China President announced April 14 that Giga Shanghai will play crucial role in Optimus production",
                 "Shanghai planning to ramp six new production lines in 2026: vehicles, robots, energy storage, batteries",
                 "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
@@ -1144,6 +1217,14 @@
                 {
                   "date": "2027-End",
                   "event": "Consumer sales target"
+                },
+                {
+                  "date": "2026-04-22",
+                  "event": "Q1 report confirms Giga Texas 5.2M sq ft expansion for 10M units/year"
+                },
+                {
+                  "date": "2026-04-22",
+                  "event": "Fremont production start confirmed for late July/August 2026"
                 }
               ],
               "pricing": {
@@ -1154,10 +1235,10 @@
             },
             "productionDelivery": {
               "title": "Vehicle Production & Delivery",
-              "latestUpdate": "2026-04-11",
-              "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered",
-              "totalProduction": "9,277,574",
-              "totalDeliveries": "9,156,179",
+              "latestUpdate": "2026-04-25",
+              "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered - Model 3/Y production +14% YoY",
+              "totalProduction": "9308122",
+              "totalDeliveries": "9183948",
               "quarterlyData": [
                 {
                   "quarter": "Q1-15",
