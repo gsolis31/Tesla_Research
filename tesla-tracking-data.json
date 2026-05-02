@@ -1,6 +1,53 @@
 {
-  "lastUpdated": "2026-04-25",
+  "lastUpdated": "2026-05-02",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-05-02",
+      "keyChanges": [
+        {
+          "category": "FSD Approvals",
+          "status": "positive",
+          "title": "EU Technical Committee Meeting May 5 - Extended Session for Tesla FSD",
+          "description": "European Commission extended the TCMV (Technical Committee on Motor Vehicles) session dedicated to Tesla FSD at May 5 meeting. Dutch regulator RDW will present Tesla's FSD Supervised approval under Article 39 in extended afternoon session starting 13:30. No vote scheduled for May 5 - session serves as informational briefing for 27 member states. EU-wide vote could occur at June 30 meeting, automatically extending FSD across entire EU.",
+          "source": "https://eletric-vehicles.com/tesla/eu-extends-slot-for-tesla-fsd-presentation-at-may-5-meeting/"
+        },
+        {
+          "category": "Cybercab",
+          "status": "neutral",
+          "title": "Unsupervised Fleet Grows to 25 Vehicles, Scaling Challenges Evident",
+          "description": "Tesla's unsupervised Robotaxi fleet reached 25 cumulative vehicles across Texas cities by end of April (19 in Austin, 3 in Dallas, 3 in Houston). Total active fleet: 165 vehicles (seen in last 30 days), with Bay Area accounting for 107. Robotaxi Tracker shows 101 active robotaxis plus 38 Cybercabs in test fleet. Fleet growth accelerating from single digits in January. Android app launched April 27 after nearly one year iOS-exclusive period. H1 2026 expansion to five additional cities delayed.",
+          "source": "https://electrek.co/2026/04/30/tesla-robotaxi-unsupervised-finally-signs-ramping-up/"
+        },
+        {
+          "category": "Optimus Production",
+          "status": "positive",
+          "title": "Model S/X Production Ending Early May, Line Conversion Underway",
+          "description": "Last Model S and Model X vehicles rolling off Fremont production line in early May 2026. Disassembly of existing line already begun in parts. Optimus production at Fremont to begin late July or August 2026 - aggressive 4-month transition timeline. First-generation line designed for 1M robots/year capacity. Musk described timeline as unusually fast: dismantling entire line and installing new production system in four months. Testing and validation will take several months post-installation.",
+          "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+        },
+        {
+          "category": "AI Chip Production",
+          "status": "neutral",
+          "title": "AI5 Production Timeline Stable - Mid-2027 High Volume Target",
+          "description": "Following April 15 tape-out, AI5 chip progressing toward first silicon samples in late 2026. High-volume production confirmed for mid-2027 at both Samsung Texas and TSMC Arizona facilities. Full-scale mass production of AI5 anticipated around 2027 with sampling potentially beginning late 2026. Qualified 2nm volume production starting H2 2027 with Tesla AI5 and AI6 as first products. No new delays or changes reported since late April updates.",
+          "source": "https://wccftech.com/tesla-pulls-2nm-ai-chip-production-onto-us-soil-splits-ai6-ai6-5-between-samsung-tsmc/"
+        },
+        {
+          "category": "Job Postings",
+          "status": "positive",
+          "title": "100+ Optimus Roles Maintained with Summer Internship Programs",
+          "description": "Tesla maintaining 100+ Optimus-related job openings in May 2026 including summer 2026 internships. New intern positions include Simulation Software Engineer, Software Engineer (Connectivity C++), and Mechanical Design Engineer for Optimus. Roles focus on production readiness, robotics modeling, simulation infrastructure, and manufacturing engineering. Locations span Palo Alto, Austin, and Fremont as production ramp approaches.",
+          "source": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/"
+        }
+      ],
+      "trends": [
+        "EU FSD approval process advancing - May 5 TCMV presentation sets stage for potential June vote",
+        "Robotaxi scaling challenges: slow growth to 25 unsupervised vehicles, delayed city expansions",
+        "Optimus production transition accelerating - Model S/X ending early May, 4-month line conversion",
+        "AI5 chip on track for mid-2027 production following successful tape-out",
+        "Hiring continues at 100+ roles focused on production engineering and manufacturing readiness"
+      ]
+    },
     {
       "weekOf": "2026-04-25",
       "keyChanges": [
@@ -348,6 +395,11 @@
           "date": "2026-04-25",
           "count": 400,
           "note": "400 active vehicles across 5 cities - Bay Area leads deployment. ~573 total vehicles including staged units in Dallas/Houston"
+        },
+        {
+          "date": "2026-04-30",
+          "count": 165,
+          "note": "165 total active (seen in 30 days): 107 Bay Area, 25 unsupervised in Texas (19 Austin, 3 Dallas, 3 Houston), 38 Cybercabs in test fleet"
         }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -469,9 +521,13 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-04-25",
+      "latestUpdate": "2026-05-02",
       "criticalNews": "BREAKING: Unsupervised Robotaxi Service Launches in Houston & Dallas (April 18)",
       "keyPoints": [
+        "Unsupervised fleet reached 25 vehicles by end of April (19 Austin, 3 Dallas, 3 Houston)",
+        "Total active fleet: 165 vehicles across all cities (107 in Bay Area)",
+        "Android app launched April 27, 2026 after nearly one year iOS-exclusive",
+        "H1 2026 expansion to five additional cities delayed beyond initial timeline",
         "Glossy gold production units spotted at Giga Texas on April 24, 2026",
         "CEO Elon Musk confirmed in Q1 2026 earnings call (April 22) that Cybercab production officially began",
         "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
@@ -546,14 +602,26 @@
         {
           "date": "2026-04-24",
           "event": "Gold production units spotted at Giga Texas"
+        },
+        {
+          "date": "2026-04-27",
+          "event": "Android app launched (nearly one year after iOS)"
+        },
+        {
+          "date": "2026-04-30",
+          "event": "Unsupervised fleet reaches 25 vehicles (19 Austin, 3 Dallas, 3 Houston)"
         }
       ]
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-04-18",
-      "criticalNews": "Belgium Expected Mid-May, EU-Wide Vote Possible May-June 2026",
+      "latestUpdate": "2026-05-02",
+      "criticalNews": "EU Technical Committee Meeting May 5 - Extended Session, Potential June Vote",
       "keyPoints": [
+        "EU Technical Committee extended session for Tesla FSD presentation on May 5, 2026",
+        "RDW to present Dutch approval under Article 39 in afternoon session starting 13:30",
+        "No vote scheduled for May 5 - serves as informational briefing for 27 member states",
+        "EU-wide vote possible at June 30 TCMV meeting for automatic approval across entire EU",
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
         "Subscriptions launched at \u20ac99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
@@ -615,6 +683,10 @@
         {
           "date": "2026-Summer",
           "event": "EU-wide rollout expected via mutual recognition"
+        },
+        {
+          "date": "2026-05-05",
+          "event": "RDW presents FSD approval to EU TCMV - extended session, informational briefing"
         }
       ]
     },
@@ -644,7 +716,7 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-04-25",
+      "latestUpdate": "2026-05-02",
       "criticalNews": "Fremont Production Confirmed July-August 2026, Giga Texas 5.2M sq ft Expansion",
       "keyPoints": [
         "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
@@ -734,6 +806,10 @@
         {
           "date": "2026-04-22",
           "event": "Fremont production start confirmed for late July/August 2026"
+        },
+        {
+          "date": "2026-05-Early",
+          "event": "Last Model S and X production - line conversion begins"
         }
       ],
       "pricing": {
