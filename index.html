@@ -564,6 +564,62 @@
             letter-spacing: 1px;
         }
 
+        .gap-badge {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+        .evidence-section {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .evidence-positive {
+            color: #4ade80;
+        }
+
+        .evidence-negative {
+            color: #ef4444;
+        }
+
+        .metrics-box {
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 0.9em;
+        }
+
+        .reality-gaps {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .reality-gap-item {
+            padding: 12px;
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 3px solid #fbbf24;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .sentiment-layer {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 5px;
+        }
+
         .growth-badge {
             display: inline-block;
             margin-left: 8px;
@@ -638,6 +694,12 @@
                 <h3>Recent Sentiment Trend (Last 4 Weeks)</h3>
                 <div id="sentimentTrend" class="sentiment-display"></div>
             </div>
+
+            <!-- Reality Check -->
+            <div class="reality-gaps">
+                <h3>⚠️ Reality Check: Headline vs Metrics</h3>
+                <div id="realityGaps"></div>
+            </div>
         </section>
 
         <div class="weekly-summary">
@@ -681,7 +743,7 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-05-02",
+          "lastUpdated": "2026-05-03",
           "weeklySummaries": [
             {
               "weekOf": "2026-05-02",
@@ -695,10 +757,36 @@
                 },
                 {
                   "category": "Cybercab",
-                  "status": "neutral",
-                  "title": "Unsupervised Fleet Grows to 25 Vehicles, Scaling Challenges Evident",
-                  "description": "Tesla's unsupervised Robotaxi fleet reached 25 cumulative vehicles across Texas cities by end of April (19 in Austin, 3 in Dallas, 3 in Houston). Total active fleet: 165 vehicles (seen in last 30 days), with Bay Area accounting for 107. Robotaxi Tracker shows 101 active robotaxis plus 38 Cybercabs in test fleet. Fleet growth accelerating from single digits in January. Android app launched April 27 after nearly one year iOS-exclusive period. H1 2026 expansion to five additional cities delayed.",
-                  "source": "https://electrek.co/2026/04/30/tesla-robotaxi-unsupervised-finally-signs-ramping-up/"
+                  "status": "negative",
+                  "title": "Unsupervised Fleet Grows to 29 Vehicles, Scaling Challenges Evident",
+                  "description": "Tesla's unsupervised Robotaxi fleet reached 29 cumulative vehicles across Texas cities by May 3 (20 in Austin, 5 in Dallas, 4 in Houston), up from 25 on April 30. Total active fleet: 165 vehicles (seen in last 30 days), with Bay Area accounting for 107. Robotaxi Tracker shows supervised + unsupervised fleet. Fleet growth accelerating from single digits in January. Android app launched April 27 after nearly one year iOS-exclusive period. H1 2026 expansion to five additional cities delayed, presenting significant scaling challenges toward 1000+ vehicle target.",
+                  "source": "https://electrek.co/2026/04/30/tesla-robotaxi-unsupervised-finally-signs-ramping-up/",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "29 vehicles (updated May 3) represents only 2.9% of H1 2026 target (1000+ across 7 cities), significantly behind required deployment pace"
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Fleet growth from 25 to 29 vehicles (+16% in 3 days)",
+                      "Android app launched April 27 expanding rider access",
+                      "3 cities now operational (Austin, Dallas, Houston)",
+                      "Public unsupervised testing phase initiated"
+                    ],
+                    "negative_signals": [
+                      "Only 29 unsupervised vehicles after 4+ months of operation",
+                      "97% below target trajectory for H1 2026 goal",
+                      "Expansion to remaining 5 planned cities not announced",
+                      "H1 2026 multi-city expansion explicitly delayed",
+                      "No mass production timeline confirmed for scale"
+                    ],
+                    "key_metrics": {
+                      "actual": 29,
+                      "target": "1000+ across 7 cities by H1 2026",
+                      "trajectory": "2.9% of target (29 vehicles / ~1000 target)"
+                    }
+                  }
                 },
                 {
                   "category": "Optimus Production",
@@ -1082,6 +1170,11 @@
                   "date": "2026-04-30",
                   "count": 165,
                   "note": "165 total active (seen in 30 days): 107 Bay Area, 25 unsupervised in Texas (19 Austin, 3 Dallas, 3 Houston), 38 Cybercabs in test fleet"
+                },
+                {
+                  "date": "2026-05-03",
+                  "count": 29,
+                  "note": "29 unsupervised vehicles in Texas: 20 Austin, 5 Houston, 4 Dallas. Total 165 active across all cities."
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -1846,39 +1939,113 @@
             // Get last 4 weeks of summaries
             const recentWeeks = data.weeklySummaries.slice(0, 4);
             
-            let positive = 0, neutral = 0, negative = 0;
+            // Track both headline and reality sentiment (with backward compatibility)
+            let headlinePos = 0, headlineNeu = 0, headlineNeg = 0;
+            let realityPos = 0, realityNeu = 0, realityNeg = 0;
             
             recentWeeks.forEach(week => {
                 week.keyChanges.forEach(change => {
-                    if (change.status === 'positive') positive++;
-                    else if (change.status === 'neutral') neutral++;
-                    else if (change.status === 'negative') negative++;
+                    // Reality sentiment (what metrics show) - use status field
+                    const reality = change.sentiment?.reality || change.status;
+                    if (reality === 'positive') realityPos++;
+                    else if (reality === 'neutral') realityNeu++;
+                    else if (reality === 'negative') realityNeg++;
+                    
+                    // Headline sentiment (what media says) - fallback to status if not present
+                    const headline = change.sentiment?.headline || change.status;
+                    if (headline === 'positive') headlinePos++;
+                    else if (headline === 'neutral') headlineNeu++;
+                    else if (headline === 'negative') headlineNeg++;
                 });
             });
             
-            const total = positive + neutral + negative;
-            const posPercent = Math.round((positive / total) * 100);
-            const neuPercent = Math.round((neutral / total) * 100);
-            const negPercent = Math.round((negative / total) * 100);
+            const total = realityPos + realityNeu + realityNeg;
+            const realityPosPercent = Math.round((realityPos / total) * 100);
+            const realityNeuPercent = Math.round((realityNeu / total) * 100);
+            const realityNegPercent = Math.round((realityNeg / total) * 100);
+            
+            const headlinePosPercent = Math.round((headlinePos / total) * 100);
+            const headlineNeuPercent = Math.round((headlineNeu / total) * 100);
+            const headlineNegPercent = Math.round((headlineNeg / total) * 100);
+            
+            // Check if we have dual-layer data
+            const hasDualLayer = recentWeeks.some(week => 
+                week.keyChanges.some(change => change.sentiment?.headline && change.sentiment?.reality)
+            );
             
             container.innerHTML = `
                 <div class="sentiment-box positive">
-                    <div class="percentage">${posPercent}%</div>
+                    <div class="percentage">${realityPosPercent}%</div>
                     <div class="label">Positive</div>
-                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${positive} updates</div>
+                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${realityPos} updates</div>
+                    ${hasDualLayer ? `<div class="sentiment-layer">Headline: ${headlinePosPercent}%</div>` : ''}
                 </div>
                 <div class="sentiment-box neutral">
-                    <div class="percentage">${neuPercent}%</div>
+                    <div class="percentage">${realityNeuPercent}%</div>
                     <div class="label">Neutral</div>
-                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${neutral} updates</div>
+                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${realityNeu} updates</div>
+                    ${hasDualLayer ? `<div class="sentiment-layer">Headline: ${headlineNeuPercent}%</div>` : ''}
                 </div>
                 <div class="sentiment-box negative">
-                    <div class="percentage">${negPercent}%</div>
+                    <div class="percentage">${realityNegPercent}%</div>
                     <div class="label">Negative</div>
-                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${negative} updates</div>
+                    <div style="color: #666; font-size: 0.8em; margin-top: 5px;">${realityNeg} updates</div>
+                    ${hasDualLayer ? `<div class="sentiment-layer">Headline: ${headlineNegPercent}%</div>` : ''}
                 </div>
             `;
         }
+
+        function renderRealityGaps() {
+            const container = document.getElementById('realityGaps');
+            const recentWeeks = data.weeklySummaries.slice(0, 4);
+            
+            // Find all entries with headline-reality gaps
+            const gaps = [];
+            recentWeeks.forEach(week => {
+                week.keyChanges.forEach(change => {
+                    if (change.sentiment?.headline && change.sentiment?.reality && 
+                        change.sentiment.headline !== change.sentiment.reality) {
+                        gaps.push({
+                            weekOf: week.weekOf,
+                            category: change.category,
+                            title: change.title,
+                            headline: change.sentiment.headline,
+                            reality: change.sentiment.reality,
+                            rationale: change.sentiment.rationale,
+                            confidence: change.sentiment.confidence
+                        });
+                    }
+                });
+            });
+            
+            if (gaps.length === 0) {
+                container.innerHTML = '<p style="color: #666;">No headline-reality gaps detected in recent updates.</p>';
+                return;
+            }
+            
+            let html = '';
+            gaps.forEach(gap => {
+                const headlineColor = gap.headline === 'positive' ? '#4ade80' : gap.headline === 'neutral' ? '#fbbf24' : '#ef4444';
+                const realityColor = gap.reality === 'positive' ? '#4ade80' : gap.reality === 'neutral' ? '#fbbf24' : '#ef4444';
+                
+                html += `
+                    <div class="reality-gap-item">
+                        <div style="font-weight: 600; margin-bottom: 8px;">${gap.category}: ${gap.title}</div>
+                        <div style="font-size: 0.9em; margin-bottom: 8px;">
+                            <span style="color: ${headlineColor};">⬤ ${gap.headline} headline</span>
+                            →
+                            <span style="color: ${realityColor};">⬤ ${gap.reality} reality</span>
+                            ${gap.confidence ? `<span style="color: #999; margin-left: 8px;">(${gap.confidence} confidence)</span>` : ''}
+                        </div>
+                        ${gap.rationale ? `<div style="color: #999; font-size: 0.85em;">${gap.rationale}</div>` : ''}
+                        <div style="color: #666; font-size: 0.8em; margin-top: 4px;">Week of ${gap.weekOf}</div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
 
         function calculateGrowthRate(dataArray, metric = 'count') {
             if (dataArray.length < 2) return null;
@@ -2213,6 +2380,7 @@
             renderCategoryStatus();
             renderNextMilestones();
             renderSentimentTrend();
+            renderRealityGaps();
 
             // Render charts
             renderCybercabChart();
@@ -2237,12 +2405,61 @@
             let html = `<h3>Week of ${latestWeek.weekOf}</h3>`;
 
             latestWeek.keyChanges.forEach(change => {
+                // Check for headline-reality gap
+                const hasGap = change.sentiment?.headline && change.sentiment?.reality && 
+                               change.sentiment.headline !== change.sentiment.reality;
+                const gapBadge = hasGap ? 
+                    `<span class="gap-badge">⚠️ Reality Check</span>` : '';
+                
                 html += `
                     <div class="change-card ${change.status}">
-                        <div class="category">${change.category}</div>
+                        <div class="category">${change.category}${gapBadge}</div>
                         <h3>${change.title}</h3>
                         <p>${change.description}</p>
-                        ${change.source ? `<a href="${change.source}" target="_blank">View Source →</a>` : ''}
+                `;
+                
+                // Show evidence if available
+                if (change.evidence) {
+                    html += '<div class="evidence-section">';
+                    
+                    if (change.evidence.positive_signals && change.evidence.positive_signals.length > 0) {
+                        html += '<div class="evidence-positive"><strong>✓ Positive signals:</strong><ul>';
+                        change.evidence.positive_signals.forEach(signal => {
+                            html += `<li>${signal}</li>`;
+                        });
+                        html += '</ul></div>';
+                    }
+                    
+                    if (change.evidence.negative_signals && change.evidence.negative_signals.length > 0) {
+                        html += '<div class="evidence-negative"><strong>⚠ Negative signals:</strong><ul>';
+                        change.evidence.negative_signals.forEach(signal => {
+                            html += `<li>${signal}</li>`;
+                        });
+                        html += '</ul></div>';
+                    }
+                    
+                    // Show key metrics
+                    if (change.evidence.key_metrics) {
+                        const metrics = change.evidence.key_metrics;
+                        html += '<div class="metrics-box">';
+                        html += '<strong>Key Metrics:</strong><br>';
+                        if (metrics.actual) html += `Actual: ${metrics.actual}<br>`;
+                        if (metrics.target) html += `Target: ${metrics.target}<br>`;
+                        if (metrics.trajectory) html += `Trajectory: ${metrics.trajectory}`;
+                        html += '</div>';
+                    }
+                    
+                    html += '</div>';
+                }
+                
+                // Show sentiment rationale if available
+                if (change.sentiment?.rationale) {
+                    html += `<div style="margin-top: 10px; padding: 8px; background: rgba(251, 191, 36, 0.1); border-radius: 4px; font-size: 0.9em;">
+                        <strong>Analysis:</strong> ${change.sentiment.rationale}
+                    </div>`;
+                }
+                
+                html += `${change.source ? `<a href="${change.source}" target="_blank">View Source →</a>` : ''}
                     </div>
                 `;
             });

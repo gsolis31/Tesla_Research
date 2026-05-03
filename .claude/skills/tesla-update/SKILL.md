@@ -318,6 +318,154 @@ If the dashboard appears blank in the browser, tell the user:
 - **Negative**: Delays, production misses, regulatory setbacks, cancellations
 - **Neutral**: Stable metrics, ongoing progress, minor updates
 
+### Multi-Layered Sentiment Analysis
+
+**CRITICAL**: Use rigorous, evidence-based sentiment analysis to distinguish between headline framing and objective reality.
+
+**Analysis Framework**:
+
+Each keyChange entry should include dual-layer sentiment assessment:
+
+```json
+{
+  "status": "negative",  // Reality assessment (what metrics show)
+  "sentiment": {
+    "headline": "neutral",     // What the article/announcement says
+    "reality": "negative",      // What the data actually shows
+    "confidence": "high|medium|low",
+    "rationale": "Explain why reality differs from headline"
+  },
+  "evidence": {
+    "positive_signals": [
+      "List 2-5 genuinely positive data points"
+    ],
+    "negative_signals": [
+      "List 2-5 concerning data points"
+    ],
+    "key_metrics": {
+      "actual": "Current performance",
+      "target": "Goal or expectation",
+      "trajectory": "Percentage of target or timeline status"
+    }
+  },
+  "category": "...",
+  "title": "...",
+  "description": "...",
+  "source": "..."
+}
+```
+
+**Required Analysis Steps**:
+
+1. **Extract Objective Metrics**
+   - Production counts, dates, percentages, timelines
+   - Do NOT rely on headline framing ("milestone reached", "successful launch")
+   - Focus on actual numbers vs targets
+
+2. **Gather Evidence**
+   - List 2-5 positive_signals (real achievements)
+   - List 2-5 negative_signals (real concerns)
+   - Be objective - a "launch" with 25 units is both a launch (positive) AND far below scale (negative)
+
+3. **Calculate Reality Assessment**
+   - Compare actual performance to stated targets
+   - Evaluate trajectory toward goals
+   - Consider timeline delays or accelerations
+
+4. **Assign Dual Sentiment**
+   - `headline`: What the media/announcement emphasizes
+   - `reality`: What the metrics objectively show
+   - `confidence`: How certain you are (high/medium/low)
+   - `rationale`: Explain any headline-reality gap
+
+5. **Set Status Field**
+   - `status` should ALWAYS reflect the `reality` assessment, NOT the headline
+   - This is what appears in sentiment trend charts
+
+**Category-Specific Thresholds**:
+
+**Cybercab/Robotaxi**:
+- POSITIVE: ≥80% of target trajectory, ahead of schedule
+- NEUTRAL: 40-79% of target, minor delays <1 month
+- NEGATIVE: <40% of target, major delays >1 month
+- Example: "25 vehicles, target 1000+ by H1 2026" = 25/1000 = 2.5% = NEGATIVE
+
+**AI Chip Production**:
+- POSITIVE: On schedule, yields >80% of target
+- NEUTRAL: Delay 3-6 months, yields 60-80%
+- NEGATIVE: Delay >6 months, yields <60%, technology fallback
+
+**FSD Country Approvals**:
+- POSITIVE: New country approval, early expansion
+- NEUTRAL: Expected timeline, minor delays <1 month
+- NEGATIVE: Rejection, delays >1 month, regulatory setbacks
+
+**Optimus Production**:
+- POSITIVE: Timeline advancing, facility expansions, customer deals
+- NEUTRAL: Stable progress, on schedule
+- NEGATIVE: Timeline delays >1 quarter, facility setbacks, order cancellations
+
+**Job Postings**:
+- POSITIVE: +20% increase in relevant roles
+- NEUTRAL: ±20% range (stable)
+- NEGATIVE: -20% decrease in relevant roles
+
+**Example - Robotaxi Fleet Analysis**:
+
+```json
+{
+  "status": "negative",
+  "sentiment": {
+    "headline": "neutral",
+    "reality": "negative",
+    "confidence": "high",
+    "rationale": "25 vehicles represents only 6% of the pace needed to reach 1000+ vehicles across 7 cities by H1 2026"
+  },
+  "evidence": {
+    "positive_signals": [
+      "Android app launched for rider access",
+      "3 cities now operational (Dallas, Houston, Phoenix)",
+      "Public testing phase initiated"
+    ],
+    "negative_signals": [
+      "Only 25 vehicles deployed after 4 months of operation",
+      "94% below required trajectory for H1 2026 target",
+      "Expansion to remaining 5 cities not yet announced",
+      "No mass production timeline confirmed"
+    ],
+    "key_metrics": {
+      "actual": 25,
+      "target": "1000+ across 7 cities by H1 2026",
+      "trajectory": "6% of target pace (25 vehicles / ~400 needed now)"
+    }
+  },
+  "category": "Cybercab Production",
+  "title": "Robotaxi fleet grows to 25 vehicles across 3 cities",
+  "description": "Tesla's robotaxi fleet now includes 25 operational vehicles across Dallas, Houston, and Phoenix. Android app launched for public testing. However, this represents significant delay toward stated H1 2026 target of 1000+ vehicles across 7 cities.",
+  "source": "https://..."
+}
+```
+
+**Detecting Headline-Reality Gaps**:
+
+Watch for these patterns:
+- "Milestone reached" but numbers are <50% of target
+- "Launched" but deployment is <100 units
+- "On track" but timeline has slipped >1 quarter
+- "Successful" but metrics show decline YoY
+- "Expansion" but new locations are <20% of plan
+
+When you detect a gap:
+- Set `headline` to the media framing
+- Set `reality` to the metrics-based assessment
+- Set `status` to match `reality`
+- Provide clear `rationale` explaining the discrepancy
+
+**Backward Compatibility**:
+- All new fields (sentiment, evidence) are OPTIONAL
+- Existing entries without these fields will continue to work
+- Dashboard will fall back to `status` field when sentiment.* is missing
+
 ---
 
 ## Error Handling

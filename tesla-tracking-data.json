@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02",
+  "lastUpdated": "2026-05-03",
   "weeklySummaries": [
     {
       "weekOf": "2026-05-02",
@@ -13,10 +13,36 @@
         },
         {
           "category": "Cybercab",
-          "status": "neutral",
-          "title": "Unsupervised Fleet Grows to 25 Vehicles, Scaling Challenges Evident",
-          "description": "Tesla's unsupervised Robotaxi fleet reached 25 cumulative vehicles across Texas cities by end of April (19 in Austin, 3 in Dallas, 3 in Houston). Total active fleet: 165 vehicles (seen in last 30 days), with Bay Area accounting for 107. Robotaxi Tracker shows 101 active robotaxis plus 38 Cybercabs in test fleet. Fleet growth accelerating from single digits in January. Android app launched April 27 after nearly one year iOS-exclusive period. H1 2026 expansion to five additional cities delayed.",
-          "source": "https://electrek.co/2026/04/30/tesla-robotaxi-unsupervised-finally-signs-ramping-up/"
+          "status": "negative",
+          "title": "Unsupervised Fleet Grows to 29 Vehicles, Scaling Challenges Evident",
+          "description": "Tesla's unsupervised Robotaxi fleet reached 29 cumulative vehicles across Texas cities by May 3 (20 in Austin, 5 in Dallas, 4 in Houston), up from 25 on April 30. Total active fleet: 165 vehicles (seen in last 30 days), with Bay Area accounting for 107. Robotaxi Tracker shows supervised + unsupervised fleet. Fleet growth accelerating from single digits in January. Android app launched April 27 after nearly one year iOS-exclusive period. H1 2026 expansion to five additional cities delayed, presenting significant scaling challenges toward 1000+ vehicle target.",
+          "source": "https://electrek.co/2026/04/30/tesla-robotaxi-unsupervised-finally-signs-ramping-up/",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "29 vehicles (updated May 3) represents only 2.9% of H1 2026 target (1000+ across 7 cities), significantly behind required deployment pace"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Fleet growth from 25 to 29 vehicles (+16% in 3 days)",
+              "Android app launched April 27 expanding rider access",
+              "3 cities now operational (Austin, Dallas, Houston)",
+              "Public unsupervised testing phase initiated"
+            ],
+            "negative_signals": [
+              "Only 29 unsupervised vehicles after 4+ months of operation",
+              "97% below target trajectory for H1 2026 goal",
+              "Expansion to remaining 5 planned cities not announced",
+              "H1 2026 multi-city expansion explicitly delayed",
+              "No mass production timeline confirmed for scale"
+            ],
+            "key_metrics": {
+              "actual": 29,
+              "target": "1000+ across 7 cities by H1 2026",
+              "trajectory": "2.9% of target (29 vehicles / ~1000 target)"
+            }
+          }
         },
         {
           "category": "Optimus Production",
@@ -400,6 +426,11 @@
           "date": "2026-04-30",
           "count": 165,
           "note": "165 total active (seen in 30 days): 107 Bay Area, 25 unsupervised in Texas (19 Austin, 3 Dallas, 3 Houston), 38 Cybercabs in test fleet"
+        },
+        {
+          "date": "2026-05-03",
+          "count": 29,
+          "note": "29 unsupervised vehicles in Texas: 20 Austin, 5 Houston, 4 Dallas. Total 165 active across all cities."
         }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
