@@ -1,9 +1,9 @@
 name: Tesla Tracker Auto-Update
 
 on:
-  # Run weekly on Monday at 12:00 PM UTC (4 AM PST / 7 AM EST)
+  # Run weekly on Monday at 8 AM PDT / 7 AM PST (15:00 UTC)
   schedule:
-    - cron: '0 12 * * 1'
+    - cron: '0 15 * * 1'
 
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
