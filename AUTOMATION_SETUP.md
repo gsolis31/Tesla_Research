@@ -1,8 +1,16 @@
 # Tesla Tracker - Automation Setup
 
-## Overview
+## ⚠️ Note: Automation Currently Disabled
 
-The Tesla tracker can automatically update itself weekly via GitHub Actions, without your laptop needing to be on.
+**Issue**: Claude API doesn't have built-in web search, so automated updates can't fetch Tesla news.
+
+**Solution**: Use manual `/tesla-update` via Claude Code CLI (works perfectly with web search).
+
+The GitHub Actions workflow has been disabled to avoid wasting API credits.
+
+---
+
+## Original Documentation (For Reference)
 
 ## How It Works
 

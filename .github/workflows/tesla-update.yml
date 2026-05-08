@@ -1,11 +1,13 @@
 name: Tesla Tracker Auto-Update
 
 on:
-  # Run weekly on Monday at 8 AM PDT / 7 AM PST (15:00 UTC)
-  schedule:
-    - cron: '0 15 * * 1'
+  # Automated scheduling disabled - web search not available in Claude API
+  # Use manual /tesla-update via Claude Code CLI instead
 
-  # Allow manual trigger from GitHub Actions tab
+  # schedule:
+  #   - cron: '0 15 * * 1'
+
+  # Allow manual trigger from GitHub Actions tab (for testing only)
   workflow_dispatch:
 
 jobs:
