@@ -1,6 +1,176 @@
 {
-  "lastUpdated": "2026-05-03",
+  "lastUpdated": "2026-05-08",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-05-08",
+      "keyChanges": [
+        {
+          "category": "FSD Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high",
+            "rationale": "May 5 TCMV meeting was informational only with no vote, delaying decision to June 30. While presentation occurred as planned (positive signal), lack of vote and regulatory skepticism from Nordic countries indicates uncertain approval path."
+          },
+          "evidence": {
+            "positive_signals": [
+              "May 5 TCMV presentation by Dutch RDW occurred as scheduled",
+              "Netherlands approval (April 10) remains valid",
+              "EU-wide vote could happen June 30, 2026"
+            ],
+            "negative_signals": [
+              "No vote occurred on May 5 as some hoped",
+              "Regulatory skepticism from Sweden, Finland, Denmark, Norway",
+              "Approval timeline pushed to June 30 at earliest",
+              "Session held behind closed doors, no transparency on member state reactions"
+            ],
+            "key_metrics": {
+              "actual": "1 EU country approved (Netherlands)",
+              "target": "At least 14 of 27 EU countries for majority approval",
+              "trajectory": "Vote delayed minimum 8 weeks to June 30 meeting"
+            }
+          },
+          "title": "EU FSD Vote Delayed to June 30 - May 5 Informational Only",
+          "description": "The May 5 TCMV meeting in Brussels served as an informational briefing where Dutch RDW presented Tesla's FSD Supervised approval, but no vote occurred. National authorities are reviewing the information before a formal vote, now expected at the June 30 TCMV session at earliest. Sweden, Finland, Denmark, and Norway have expressed skepticism about approving the system. Meeting held behind closed doors with no public outcome disclosed.",
+          "source": "https://www.electrive.com/2026/05/06/eu-approval-for-tesla-fsd-remains-uncertain/"
+        },
+        {
+          "category": "Cybercab",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Fleet grew from 29 to 33 vehicles (+14% in 5 days), but 33 vehicles represents only 3.3% of H1 2026 target (1000+ across 7 cities). With less than 2 months remaining in H1, scaling to target is mathematically impossible."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Fleet grew from 29 to 33 unsupervised vehicles in 5 days",
+              "6 new vehicles added in a single day (May 4)",
+              "Austin robotaxis now operate unsupervised during evening hours for first time",
+              "Hundreds of vehicles reportedly staged and ready for deployment"
+            ],
+            "negative_signals": [
+              "Only 33 unsupervised vehicles after 5 months of operation",
+              "97% below H1 2026 target trajectory",
+              "Planned expansion to 5 additional cities changed from '1H 2026' to 'preparations underway'",
+              "Less than 2 months remain in H1 2026 to reach 1000+ vehicle target",
+              "H1 expansion timeline explicitly abandoned"
+            ],
+            "key_metrics": {
+              "actual": 33,
+              "target": "1000+ across 7 cities by H1 2026 (end of June)",
+              "trajectory": "3.3% of target with 7 weeks remaining"
+            }
+          },
+          "title": "Robotaxi Fleet Reaches 33 Vehicles, H1 Target Abandoned",
+          "description": "Tesla's unsupervised robotaxi fleet grew to 33 vehicles across Texas cities by May 4 (breakdown not specified, but Austin continues to lead). Fleet added 6 vehicles in a single day and expanded evening operations in Austin beyond previous daylight-only restrictions. However, Tesla quietly changed the status of 5 planned expansion cities (Phoenix, Miami, Orlando, Tampa, Las Vegas) from 'H1 2026' launch to 'preparations underway,' effectively abandoning the H1 2026 target of 1000+ vehicles across 7 cities with only 7 weeks remaining.",
+          "source": "https://driveteslacanada.ca/news/tesla-expands-robotaxi-operations-as-unsupervised-fleet-growth-accelerates/"
+        },
+        {
+          "category": "Optimus Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Model S/X shutdown and Fremont line conversion proceeding on schedule for late July/August production start. However, Musk's admission of 'literally impossible to predict' production rates and zero useful Optimus robots in factories indicates significant execution risk."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Model S/X shutdown proceeding as planned in early May",
+              "4-month line conversion timeline maintained (May-August)",
+              "Fremont Optimus production start confirmed for late July/August",
+              "Giga Texas second Optimus factory planned for summer 2027"
+            ],
+            "negative_signals": [
+              "Musk admits 'literally impossible to predict' 2026 production rates",
+              "Zero Optimus robots doing 'useful work' in Tesla factories as of January 2026",
+              "10,000 unique parts across entirely new production line",
+              "Significant walk-back from January 2025 prediction of 10,000 units in 2025 (actual: 0)"
+            ],
+            "key_metrics": {
+              "actual": "Line conversion in progress, production starts July/August",
+              "target": "1M robots/year capacity at Fremont pilot line",
+              "trajectory": "On schedule for production start, but ramp rate unknown"
+            }
+          },
+          "title": "Model S/X Ends Early May, Optimus Line Conversion Underway",
+          "description": "Last Model S and Model X vehicles produced in early May 2026, ending 14-year and 11-year production runs respectively (610,000+ combined units produced, but sales dwindled to ~30,000 annually). Tesla immediately began dismantling the production line for conversion to Optimus manufacturing, targeting late July or August 2026 start. CEO Musk acknowledged initial output will be 'quite slow' and production rates are 'literally impossible to predict' given 10,000 unique parts. This marks significant walk-back from 2025 prediction of 10,000 units (actual: 0 doing useful work).",
+          "source": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+        },
+        {
+          "category": "AI Chip Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "neutral",
+            "confidence": "high",
+            "rationale": "AI5 tape-out completed on schedule (April 15), production timeline remains mid-2027 as expected. However, AI6 delayed to Q4 2027 due to Samsung yield issues, and foundry profitability concerns create supply risk."
+          },
+          "evidence": {
+            "positive_signals": [
+              "AI5 chip successfully taped out April 15, 2026",
+              "Dual-foundry strategy (TSMC + Samsung) reduces dependency risk",
+              "AI5 first silicon samples expected late 2026",
+              "TSMC Arizona and Samsung Texas both producing AI5"
+            ],
+            "negative_signals": [
+              "AI6 delayed ~6 months to Q4 2027 due to Samsung 2nm yield issues",
+              "Samsung yields in 50-60% range (below break-even targets)",
+              "Samsung foundry division unprofitable, struggling to reach Q4 2026 break-even",
+              "Tesla may need to rely more heavily on TSMC if Samsung yields don't improve"
+            ],
+            "key_metrics": {
+              "actual": "AI5 taped out, AI6 in development",
+              "target": "AI5 mass production mid-2027, AI6 Q4 2027",
+              "trajectory": "AI5 on track, AI6 delayed 6 months from original timeline"
+            }
+          },
+          "title": "AI5 Tape-Out Complete, AI6 Delayed to Q4 2027",
+          "description": "Tesla completed AI5 chip tape-out on April 15, 2026, finalizing design and sending to manufacturing partners TSMC (Taiwan/Arizona) and Samsung (Texas/Korea). AI5 mass production remains on track for mid-2027 with late 2026 sampling. However, AI6 production timeline slipped to Q4 2027 (6-month delay) due to Samsung 2nm yield challenges. Samsung foundry division's ongoing unprofitability and 50-60% yields create supply risk, potentially forcing Tesla to lean more heavily on TSMC for AI5 volume if yields don't improve.",
+          "source": "https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/"
+        },
+        {
+          "category": "Job Postings",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "100+ Optimus job postings maintained in May 2026 with summer internship programs starting, indicating continued investment in production readiness ahead of July/August ramp."
+          },
+          "evidence": {
+            "positive_signals": [
+              "100+ Optimus job postings maintained across U.S. facilities",
+              "Summer 2026 internship programs starting in May",
+              "Roles focused on production engineering and manufacturing readiness",
+              "Multi-location hiring (Palo Alto, Fremont, Austin, Draper, Sparks)"
+            ],
+            "negative_signals": [
+              "No significant increase from previous 100+ baseline",
+              "Internship-heavy suggests leveraging lower-cost labor"
+            ],
+            "key_metrics": {
+              "actual": "100+ active Optimus roles",
+              "target": "Stable baseline maintained",
+              "trajectory": "Steady hiring consistent with July/August production start"
+            }
+          },
+          "title": "100+ Optimus Roles Maintained, Summer Internships Begin",
+          "description": "Tesla maintains 100+ Optimus-related job openings across U.S. facilities in May 2026, with summer internship programs starting. Roles span robotics software, manufacturing engineering, AI for world modeling, data pipelines, and simulation. Internships include Robotics Modeling & Simulation Engineer and Technical Program Manager positions starting May through August 2026. Locations include Palo Alto, Fremont, Austin, Draper (UT), and Sparks (NV). Hiring focus aligns with upcoming July/August production start at Fremont.",
+          "source": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/"
+        }
+      ],
+      "trends": [
+        "EU FSD approval delayed to June 30 - Nordic country skepticism creates uncertainty",
+        "Robotaxi H1 2026 expansion target abandoned - only 33 vehicles deployed vs 1000+ goal",
+        "Optimus production transition on track but with 'unpredictable' ramp expectations",
+        "AI5 chip progressing on schedule, AI6 delayed 6 months due to Samsung yield issues",
+        "Steady 100+ Optimus hiring maintained ahead of production start"
+      ]
+    },
     {
       "weekOf": "2026-05-02",
       "keyChanges": [
@@ -431,6 +601,11 @@
           "date": "2026-05-03",
           "count": 29,
           "note": "29 unsupervised vehicles in Texas: 20 Austin, 5 Houston, 4 Dallas. Total 165 active across all cities."
+        },
+        {
+          "date": "2026-05-04",
+          "count": 33,
+          "note": "33 unsupervised vehicles in Texas (Austin leads, Dallas/Houston expanded). Evening operations in Austin. Hundreds staged for deployment."
         }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -489,8 +664,8 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-04-25",
-      "criticalNews": "Samsung Taylor Fab Equipment Ceremony Completed April 24, AI6.5 to be manufactured at TSMC Arizona",
+      "latestUpdate": "2026-05-08",
+      "criticalNews": "AI5 tape-out complete (April 15), mass production mid-2027; AI6 delayed to Q4 2027 due to Samsung yield issues",
       "keyPoints": [
         "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 entirely TSMC Arizona",
         "AI6.5 (optimized version) will be manufactured at TSMC Arizona on 2nm node following AI6",
@@ -552,8 +727,8 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-05-02",
-      "criticalNews": "BREAKING: Unsupervised Robotaxi Service Launches in Houston & Dallas (April 18)",
+      "latestUpdate": "2026-05-08",
+      "criticalNews": "Unsupervised fleet reaches 33 vehicles, but H1 2026 expansion to 5 cities changed from specific timeline to \"preparations underway\"",
       "keyPoints": [
         "Unsupervised fleet reached 25 vehicles by end of April (19 Austin, 3 Dallas, 3 Houston)",
         "Total active fleet: 165 vehicles across all cities (107 in Bay Area)",
@@ -646,8 +821,8 @@
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-05-02",
-      "criticalNews": "EU Technical Committee Meeting May 5 - Extended Session, Potential June Vote",
+      "latestUpdate": "2026-05-08",
+      "criticalNews": "EU FSD vote delayed to June 30 TCMV meeting - May 5 was informational briefing only",
       "keyPoints": [
         "EU Technical Committee extended session for Tesla FSD presentation on May 5, 2026",
         "RDW to present Dutch approval under Article 39 in afternoon session starting 13:30",
@@ -747,8 +922,8 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-05-02",
-      "criticalNews": "Fremont Production Confirmed July-August 2026, Giga Texas 5.2M sq ft Expansion",
+      "latestUpdate": "2026-05-08",
+      "criticalNews": "Model S/X production ended early May, Fremont line conversion underway for July/August Optimus start",
       "keyPoints": [
         "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
         "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
