@@ -743,8 +743,83 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-05-08",
+          "lastUpdated": "2026-05-10",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-05-10",
+              "keyChanges": [
+                {
+                  "category": "FSD Approvals",
+                  "status": "neutral",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "neutral",
+                    "confidence": "medium",
+                    "rationale": "Ireland talks initiated (positive signal) but regulators continue expressing skepticism about speeding and safety concerns. No timeline provided for approval."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Ireland's Department of Transport confirms talks with Tesla on FSD approval",
+                      "Ireland passed Road Traffic Act amendment in March enabling Level 2 systems",
+                      "Netherlands approval (April 10) remains valid as first EU country"
+                    ],
+                    "negative_signals": [
+                      "Ireland regulators state 'not possible to provide timelines for approval'",
+                      "EU regulators continue expressing skepticism over speeding and safety (May 5)",
+                      "Swedish regulator 'quite surprised' Tesla allows FSD to speed",
+                      "Concerns raised about icy road safety and driver distraction",
+                      "Camera-only approach questioned vs multi-sensor systems"
+                    ],
+                    "key_metrics": {
+                      "actual": "1 EU country approved (Netherlands), Ireland in talks",
+                      "target": "At least 14 of 27 EU countries for majority approval",
+                      "trajectory": "Talks ongoing but timeline uncertain, vote delayed to June 30"
+                    }
+                  },
+                  "title": "Ireland Initiates FSD Talks, EU Regulators Express Safety Concerns",
+                  "description": "Tesla is engaging with Irish authorities including NSAI regarding FSD approval, following Ireland's March 2026 Road Traffic Act amendment enabling Level 2 systems. However, Department of Transport states 'at this stage it is not possible to provide timelines for approval.' Concurrently, emails obtained by Reuters reveal EU regulators' skepticism about Tesla's FSD system, with Swedish officials surprised by speeding allowance and concerns raised about icy road safety and driver distraction. Tesla's camera-only approach questioned versus multi-sensor systems.",
+                  "source": "https://www.rte.ie/news/business/2026/0510/1572395-tesla-ireland-fsd/"
+                },
+                {
+                  "category": "Optimus Production",
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Final Model S/X units produced on May 9 as scheduled, marking successful completion of 14-year production run and clearing path for Optimus line conversion on target for July/August."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Last Model S and Model X produced May 9, 2026 exactly on schedule",
+                      "Model S completed 14-year production run, Model X 11 years",
+                      "350 Signature Edition units (250 Model S Plaid, 100 Model X Plaid) for long-time customers",
+                      "Fremont line conversion proceeding as planned for Optimus production",
+                      "Clean transition with 'honorable discharge' for flagship models"
+                    ],
+                    "negative_signals": [
+                      "Combined S/X sales fell to <19,000 units in 2025 (only 1% of total deliveries)",
+                      "Far below Fremont line's ~100,000 unit capacity",
+                      "Line significantly underutilized before shutdown"
+                    ],
+                    "key_metrics": {
+                      "actual": "Production ended May 9, 2026 on schedule",
+                      "target": "Optimus production start late July/August 2026",
+                      "trajectory": "On track for 2-2.5 month line conversion timeline"
+                    }
+                  },
+                  "title": "Final Model S/X Produced May 9, Optimus Line Conversion Begins",
+                  "description": "Last Model S and Model X vehicles rolled off Fremont production line Saturday, May 9, 2026, ending 14-year (Model S) and 11-year (Model X) production runs. Final 350 units are Signature Edition (250 Model S Plaid, 100 Model X Plaid) reserved for invitation-only long-time customers. Combined 2025 sales totaled <19,000 units (1% of total deliveries), well below line's ~100,000 capacity. Fremont assembly space now converting to Optimus humanoid robot production targeting 1M units/year capacity with production start late July/August.",
+                  "source": "https://evxl.co/2026/05/10/tesla-last-model-s-x-fremont-optimus/"
+                }
+              ],
+              "trends": [
+                "Ireland FSD talks initiated but regulators emphasize no approval timeline",
+                "EU-wide skepticism persists over FSD speeding allowance and safety concerns",
+                "Model S/X production completed exactly on schedule, Optimus conversion proceeding",
+                "Legacy vehicle sales declining sharply before discontinuation (1% of total)"
+              ]
+            },
             {
               "weekOf": "2026-05-08",
               "keyChanges": [
@@ -1565,8 +1640,8 @@
             },
             "fsd": {
               "title": "FSD Country Approvals",
-              "latestUpdate": "2026-05-08",
-              "criticalNews": "EU FSD vote delayed to June 30 TCMV meeting - May 5 was informational briefing only",
+              "latestUpdate": "2026-05-10",
+              "criticalNews": "Ireland initiates FSD approval talks but cannot provide timeline; EU regulators express safety and speeding concerns",
               "keyPoints": [
                 "EU Technical Committee extended session for Tesla FSD presentation on May 5, 2026",
                 "RDW to present Dutch approval under Article 39 in afternoon session starting 13:30",
@@ -1637,6 +1712,10 @@
                 {
                   "date": "2026-05-05",
                   "event": "RDW presents FSD approval to EU TCMV - extended session, informational briefing"
+                },
+                {
+                  "date": "2026-05-10",
+                  "event": "Ireland Department of Transport confirms FSD approval talks with Tesla"
                 }
               ]
             },
@@ -1666,8 +1745,8 @@
             },
             "optimus": {
               "title": "Optimus Production",
-              "latestUpdate": "2026-05-08",
-              "criticalNews": "Model S/X production ended early May, Fremont line conversion underway for July/August Optimus start",
+              "latestUpdate": "2026-05-10",
+              "criticalNews": "Final Model S and Model X produced May 9, 2026 - Fremont line conversion to Optimus on track",
               "keyPoints": [
                 "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
                 "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
@@ -1760,6 +1839,10 @@
                 {
                   "date": "2026-05-Early",
                   "event": "Last Model S and X production - line conversion begins"
+                },
+                {
+                  "date": "2026-05-09",
+                  "event": "Last Model S and Model X produced at Fremont (14/11 year runs complete)"
                 }
               ],
               "pricing": {
