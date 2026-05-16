@@ -1,6 +1,178 @@
 {
-  "lastUpdated": "2026-05-10",
+  "lastUpdated": "2026-05-16",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-05-16",
+      "keyChanges": [
+        {
+          "category": "FSD Approvals",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Belgium approved FSD testing on public roads in Flanders (May 15), accelerating path to full approval. First concrete EU approval following Netherlands beyond just 'talks' stage."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Belgium approved 5,000-km FSD pilot test in Flanders region (May 15)",
+              "Flemish Minister Annick De Ridder confirmed approval publicly",
+              "Testing begins almost immediately once insurance/plates finalized",
+              "Belgium leveraging similar road systems to Netherlands for fast-track",
+              "June 30 TCMV vote confirmed as earliest EU-wide decision point"
+            ],
+            "negative_signals": [
+              "Only single-vehicle pilot test approved (not full rollout yet)",
+              "Still requires federal approval after Flanders pilot",
+              "EU-wide vote delayed to June 30 (no May vote occurred)"
+            ],
+            "key_metrics": {
+              "actual": "Netherlands approved, Belgium testing approved",
+              "target": "At least 14 of 27 EU countries for majority vote",
+              "trajectory": "2 countries engaged, June 30 vote scheduled for EU-wide decision"
+            }
+          },
+          "title": "Belgium Greenlights FSD Testing, June 30 EU Vote Confirmed",
+          "description": "Tesla received approval from Belgium's Flanders region on May 15, 2026 to test FSD Supervised on public roads with a 5,000-kilometer pilot program. Flemish Minister of Mobility Annick De Ridder confirmed the authorization for at least one vehicle to evaluate performance under Belgian traffic conditions, infrastructure, and road rules. Testing can begin almost immediately once insurance and license plate requirements are finalized. Belgium is leveraging similarities to Dutch road systems to fast-track evaluation. If pilot yields positive results, could accelerate provisional Europe-wide type approval. EU-wide TCMV vote confirmed for June 30, 2026 at earliest.",
+          "source": "https://teslanorth.com/2026/05/15/tesla-cracks-europe-belgium-greenlights-full-self-driving-public-trials/"
+        },
+        {
+          "category": "Cybercab",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high",
+            "rationale": "Production units grew to 70+ at Giga Texas (May 13), showing manufacturing ramp. However, unsupervised fleet only reached 39 vehicles—still 96% below H1 2026 target with 2 weeks remaining."
+          },
+          "evidence": {
+            "positive_signals": [
+              "70+ Cybercabs spotted at Giga Texas on May 13 (up from 60 on May 8)",
+              "17.5% production increase in 5 days demonstrates scaling capability",
+              "Unsupervised fleet grew to 39 vehicles (27 Austin, 6 Houston, 5 Dallas)",
+              "Austin expanded to evening unsupervised operations for first time",
+              "Hundreds of additional units reportedly staged for deployment"
+            ],
+            "negative_signals": [
+              "Only 39 unsupervised vehicles operational after 5 months",
+              "96% below H1 2026 target of 1000+ across 7 cities",
+              "Only 2 weeks remain until end of H1 2026 (June 30)",
+              "No expansion announced to remaining 4 planned cities (Phoenix, Miami, Orlando, Tampa, Las Vegas)",
+              "Production units ≠ operational fleet (70 produced, 39 operational)"
+            ],
+            "key_metrics": {
+              "actual": "70+ produced, 39 operational unsupervised",
+              "target": "1000+ operational across 7 cities by H1 2026",
+              "trajectory": "3.9% of target (39/1000) with 15 days remaining in H1"
+            }
+          },
+          "title": "Cybercab Production Reaches 70+, Unsupervised Fleet at 39 Vehicles",
+          "description": "Aerial footage from May 13, 2026 shows over 70 steering-wheel-free Cybercabs at Giga Texas outbound lots, up from 60 units on May 8—representing 17.5% growth in 5 days. Drone pilot Joe Tegtmeyer captured robotaxis across three parking areas, marking largest gathering to date. Meanwhile, unsupervised operational fleet reached 39 vehicles across Texas cities (27 Austin, 6 Houston, 5 Dallas) by mid-May. Austin expanded operations to include evening hours for first time. However, with only 2 weeks remaining in H1 2026, the fleet represents just 3.9% of stated 1000+ vehicle target across 7 cities.",
+          "source": "https://teslanorth.com/2026/05/13/tesla-accelerates-robotaxi-production-over-70-cybercabs-seen-at-giga-texas/"
+        },
+        {
+          "category": "Optimus Production",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Giga Texas Optimus factory foundation work progressing visibly on schedule (May 13 drone footage). Combined with completed Fremont Model S/X shutdown, both facilities advancing toward production targets."
+          },
+          "evidence": {
+            "positive_signals": [
+              "North Campus Optimus factory foundation actively progressing (May 13 footage)",
+              "Geopier foundation equipment observed on site",
+              "5.2M sq ft facility construction confirmed on track",
+              "Fremont line conversion proceeding as planned post-May 9 shutdown",
+              "Multi-site construction: chip fab + Optimus factory + test track simultaneous progress",
+              "Low-volume production targeted for summer 2026 as scheduled"
+            ],
+            "negative_signals": [
+              "Foundation must become functioning factory in ~6 weeks for summer 2026 target",
+              "Aggressive timeline: $5-10B investment, 10M unit/year capacity by late 2026",
+              "No production units publicly demonstrated yet"
+            ],
+            "key_metrics": {
+              "actual": "Foundation work in progress at Giga Texas, Fremont conversion underway",
+              "target": "Fremont: 1M/year (July/Aug start), Giga Texas: 10M/year (late 2026)",
+              "trajectory": "On schedule but compressed timeline creates execution risk"
+            }
+          },
+          "title": "Giga Texas Optimus Factory Foundation Progressing, Fremont on Track",
+          "description": "Drone footage from May 13, 2026 shows active construction progress on Giga Texas North Campus Optimus factory foundation alongside chip fab development. Foundation work advancing with Geopier equipment observed on site for 5.2M sq ft facility targeting 10M units/year capacity. Permit documents indicate $5-10B investment range. Low-volume production projected to begin summer 2026, requiring foundation-to-functioning-factory transformation in ~6 weeks. Meanwhile, Fremont line conversion proceeding on schedule following May 9 Model S/X shutdown, targeting late July/August production start for 1M units/year pilot line.",
+          "source": "https://www.basenor.com/blogs/news/giga-texas-chip-fab-and-optimus-factory-rising-fast"
+        },
+        {
+          "category": "AI Chip Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Unconfirmed rumors suggest AI6.5 may shift from TSMC to Intel under Trump administration pressure. However, no official confirmation from Tesla, Intel, TSMC, or government. If true, would represent significant foundry strategy change."
+          },
+          "evidence": {
+            "positive_signals": [
+              "AI5 tape-out complete and on track for mid-2027 production (no changes)",
+              "Multi-foundry strategy provides supply chain flexibility",
+              "Samsung Taylor Fab equipment installation completed April 24"
+            ],
+            "negative_signals": [
+              "Unconfirmed reports: AI6.5 may move from TSMC to Intel (political pressure)",
+              "Foundry switch would require chip redesign for different process technology",
+              "Intel 2nm technology less mature than TSMC's proven node",
+              "Political interference in technical decisions creates uncertainty"
+            ],
+            "key_metrics": {
+              "actual": "AI5 on track, AI6.5 foundry decision reportedly under review",
+              "target": "AI5 mid-2027, AI6 Q4 2027, AI6.5 TBD",
+              "trajectory": "AI5 stable, AI6.5 foundry strategy potentially changing due to political factors"
+            }
+          },
+          "title": "AI6.5 Foundry Rumors Surface: TSMC to Intel Switch Unconfirmed",
+          "description": "Unconfirmed reports emerged in May 2026 suggesting Tesla may shift AI6.5 chip production from TSMC Arizona to Intel's Arizona facilities under pressure from Trump administration to support Intel's struggling foundry business. According to rumored sources, administration is actively lobbying Tesla to redirect orders. However, neither Tesla, Intel, TSMC, nor US government has officially confirmed any manufacturing change. Analysts note such transition would be technically complex, requiring chip redesign for Intel's different 2nm process technology and design rules. AI5 chip remains on track for mid-2027 production at Samsung/TSMC as planned.",
+          "source": "https://wccftech.com/tesla-reportedly-moving-the-production-of-its-ai6-5-chip-from-tsmc-to-intel-under-the-pressure-and-insistence-of-the-trump-administration/amp/"
+        },
+        {
+          "category": "Job Postings",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "100+ Optimus job postings maintained in mid-May 2026 with no significant change from previous weeks. Stable hiring consistent with July/August production timeline."
+          },
+          "evidence": {
+            "positive_signals": [
+              "100+ Optimus roles actively posted mid-May 2026",
+              "Summer 2026 internship programs underway",
+              "Multi-location hiring maintained (Palo Alto, Fremont, Austin)",
+              "Roles focused on production readiness and manufacturing"
+            ],
+            "negative_signals": [
+              "No increase from 100+ baseline maintained since April",
+              "No hiring surge ahead of July/August production start"
+            ],
+            "key_metrics": {
+              "actual": "100+ active Optimus roles in mid-May",
+              "target": "Baseline 100+ maintained",
+              "trajectory": "Flat hiring consistent with steady production ramp preparation"
+            }
+          },
+          "title": "Optimus Hiring Stable at 100+ Roles Mid-May",
+          "description": "Tesla maintains 100+ Optimus-related job openings in mid-May 2026 with no significant change from April baseline. Roles continue spanning robotics software, manufacturing engineering, AI development, and simulation infrastructure across Palo Alto, Fremont, and Austin facilities. Summer 2026 internship programs underway. Stable hiring pattern consistent with planned July/August Fremont production start and late-2026 Giga Texas ramp.",
+          "source": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/"
+        }
+      ],
+      "trends": [
+        "Belgium becomes second EU country to advance FSD approval with public road testing",
+        "Cybercab production units reach 70+ but unsupervised fleet deployment remains far below H1 target",
+        "Giga Texas Optimus factory construction visible progress—foundation work advancing on schedule",
+        "AI6.5 foundry strategy reportedly under political pressure for Intel shift (unconfirmed)",
+        "Optimus hiring remains stable at 100+ roles ahead of summer production start"
+      ]
+    },
     {
       "weekOf": "2026-05-10",
       "keyChanges": [
@@ -434,7 +606,7 @@
           "category": "FSD Approvals",
           "status": "positive",
           "title": "Netherlands FSD Officially Approved April 10, Subscriptions Live",
-          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at \u20ac99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
+          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at €99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
           "source": "https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/"
         },
         {
@@ -540,7 +712,7 @@
           "category": "Cybercab",
           "status": "positive",
           "title": "Cybercab Production Accelerating",
-          "description": "25 units (Mar 3) \u2192 30+ units (Mar 9) \u2192 16+ shipped in single day (Mar 11). Setting up for hundreds/week, appears ahead of April schedule.",
+          "description": "25 units (Mar 3) → 30+ units (Mar 9) → 16+ shipped in single day (Mar 11). Setting up for hundreds/week, appears ahead of April schedule.",
           "source": "https://www.tesery.com/blogs/news/tesla-cybercab-ramps-up-public-street-testing-as-revolutionary-robotaxi-enters-mass-production-queue"
         },
         {
@@ -615,6 +787,16 @@
           "date": "2026-04-17",
           "count": 60,
           "note": "60 units spotted, 14 without steering wheels"
+        },
+        {
+          "date": "2026-05-08",
+          "count": 60,
+          "note": "60 units at Giga Texas"
+        },
+        {
+          "date": "2026-05-13",
+          "count": 70,
+          "note": "70+ units at Giga Texas across three parking areas"
         }
       ],
       "target": "Hundreds per week by April 2026, 2M/year at full capacity"
@@ -651,6 +833,11 @@
           "date": "2026-04-18",
           "count": 100,
           "note": "Week 7 - 100+ active roles (increased)"
+        },
+        {
+          "date": "2026-05-16",
+          "count": 100,
+          "note": "Mid-May - 100+ roles maintained"
         }
       ]
     },
@@ -681,6 +868,11 @@
           "date": "2026-05-04",
           "count": 33,
           "note": "33 unsupervised vehicles in Texas (Austin leads, Dallas/Houston expanded). Evening operations in Austin. Hundreds staged for deployment."
+        },
+        {
+          "date": "2026-05-13",
+          "count": 39,
+          "note": "39 unsupervised vehicles in Texas: 27 Austin, 6 Houston, 5 Dallas. Evening operations expanded."
         }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -713,13 +905,13 @@
           "name": "Netherlands",
           "status": "active",
           "date": "2026-04-10",
-          "note": "Subscriptions \u20ac99/month - First EU country approved"
+          "note": "Subscriptions €99/month - First EU country approved"
         },
         {
           "name": "Belgium",
-          "status": "pending",
-          "expectedDate": "2026-05-10",
-          "note": "Expected via EU mutual recognition"
+          "status": "testing",
+          "approvalDate": "2026-05-15",
+          "note": "FSD testing approved in Flanders region - 5,000km pilot"
         },
         {
           "name": "Other EU Countries",
@@ -739,11 +931,13 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-05-08",
-      "criticalNews": "AI5 tape-out complete (April 15), mass production mid-2027; AI6 delayed to Q4 2027 due to Samsung yield issues",
+      "latestUpdate": "2026-05-16",
+      "criticalNews": "AI5 on track for mid-2027; unconfirmed rumors suggest AI6.5 may shift from TSMC to Intel under political pressure",
       "keyPoints": [
-        "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 entirely TSMC Arizona",
-        "AI6.5 (optimized version) will be manufactured at TSMC Arizona on 2nm node following AI6",
+        "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 originally TSMC Arizona",
+        "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
+        "Foundry switch would require AI6.5 chip redesign for Intel's different 2nm process technology",
+        "AI6.5 (optimized version) originally planned for TSMC Arizona on 2nm node following AI6",
         "AI5 chip taped out on April 15, 2026 - final design sent to foundry for fabrication",
         "AI5 performance: 40x improvement over AI4 (9x more memory, 8x higher compute capacity)",
         "AI5 first silicon samples expected later 2026, high-volume production mid-2027",
@@ -797,18 +991,27 @@
         {
           "date": "2026-04-24",
           "event": "Samsung Taylor Fab equipment installation ceremony"
+        },
+        {
+          "date": "2026-05-Mid",
+          "event": "Unconfirmed reports: AI6.5 may shift from TSMC to Intel (political pressure)"
         }
       ]
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-05-08",
-      "criticalNews": "Unsupervised fleet reaches 33 vehicles, but H1 2026 expansion to 5 cities changed from specific timeline to \"preparations underway\"",
+      "latestUpdate": "2026-05-16",
+      "criticalNews": "70+ Cybercabs at Giga Texas (May 13), but unsupervised fleet only 39 vehicles—96% below H1 2026 target with 2 weeks left",
       "keyPoints": [
+        "70+ Cybercabs spotted at Giga Texas on May 13, 2026 (up from 60 on May 8)",
+        "Unsupervised fleet reached 39 vehicles by mid-May (27 Austin, 6 Houston, 5 Dallas)",
+        "Austin expanded to evening unsupervised operations for first time",
+        "Only 3.9% of H1 2026 target (1000+ vehicles across 7 cities) with 2 weeks remaining",
+        "H1 2026 expansion to five additional cities (Phoenix, Miami, Orlando, Tampa, Las Vegas) delayed",
+        "Production units (70+) significantly exceed operational unsupervised fleet (39)",
         "Unsupervised fleet reached 25 vehicles by end of April (19 Austin, 3 Dallas, 3 Houston)",
         "Total active fleet: 165 vehicles across all cities (107 in Bay Area)",
         "Android app launched April 27, 2026 after nearly one year iOS-exclusive",
-        "H1 2026 expansion to five additional cities delayed beyond initial timeline",
         "Glossy gold production units spotted at Giga Texas on April 24, 2026",
         "CEO Elon Musk confirmed in Q1 2026 earnings call (April 22) that Cybercab production officially began",
         "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
@@ -891,20 +1094,38 @@
         {
           "date": "2026-04-30",
           "event": "Unsupervised fleet reaches 25 vehicles (19 Austin, 3 Dallas, 3 Houston)"
+        },
+        {
+          "date": "2026-05-04",
+          "event": "Unsupervised fleet reaches 33 vehicles, evening operations in Austin"
+        },
+        {
+          "date": "2026-05-08",
+          "event": "60 Cybercabs at Giga Texas"
+        },
+        {
+          "date": "2026-05-13",
+          "event": "70+ Cybercabs at Giga Texas, 39 unsupervised operational"
         }
       ]
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-05-10",
-      "criticalNews": "Ireland initiates FSD approval talks but cannot provide timeline; EU regulators express safety and speeding concerns",
+      "latestUpdate": "2026-05-16",
+      "criticalNews": "Belgium approves FSD testing in Flanders (May 15), June 30 EU-wide vote confirmed",
       "keyPoints": [
+        "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
+        "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
+        "Testing begins almost immediately once insurance and license plate requirements finalized",
+        "Belgium leveraging similar road systems to Netherlands for fast-track evaluation",
+        "Positive pilot results could accelerate provisional Europe-wide type approval",
+        "June 30 TCMV vote confirmed as earliest EU-wide decision point",
         "EU Technical Committee extended session for Tesla FSD presentation on May 5, 2026",
-        "RDW to present Dutch approval under Article 39 in afternoon session starting 13:30",
-        "No vote scheduled for May 5 - serves as informational briefing for 27 member states",
+        "RDW presented Dutch approval under Article 39 in afternoon session starting 13:30",
+        "No vote scheduled for May 5 - served as informational briefing for 27 member states",
         "EU-wide vote possible at June 30 TCMV meeting for automatic approval across entire EU",
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
-        "Subscriptions launched at \u20ac99/month in Netherlands",
+        "Subscriptions launched at €99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
         "Belgium expected to be fastest EU follower - authorities signaled recognition within ~30 days (mid-May 2026)",
         "Germany (KBA) expected to move in late spring: May-June 2026, 4-8 weeks post-April 10",
@@ -920,10 +1141,11 @@
       "activeCountries": [
         "United States",
         "China",
-        "Netherlands"
+        "Netherlands",
+        "Belgium (testing phase)"
       ],
       "pendingCountries": [
-        "Belgium (Mid-May 2026)",
+        "Belgium (Full approval after pilot)",
         "Germany (May-June 2026)",
         "Other EU countries (Summer 2026)",
         "Japan (End 2026)"
@@ -951,7 +1173,7 @@
         },
         {
           "date": "2026-04-10",
-          "event": "Subscriptions launched at \u20ac99/month"
+          "event": "Subscriptions launched at €99/month"
         },
         {
           "date": "2026-05-Mid",
@@ -972,14 +1194,21 @@
         {
           "date": "2026-05-10",
           "event": "Ireland Department of Transport confirms FSD approval talks with Tesla"
+        },
+        {
+          "date": "2026-05-15",
+          "event": "Belgium Flanders region approves 5,000km FSD pilot test"
         }
       ]
     },
     "jobPostings": {
       "title": "Job Postings",
-      "latestUpdate": "2026-04-18",
-      "criticalNews": "100+ Active Optimus Roles - Hiring Expansion Underway",
+      "latestUpdate": "2026-05-16",
+      "criticalNews": "100+ Active Optimus Roles - Stable Hiring Ahead of July/August Production",
       "keyPoints": [
+        "100+ Optimus-related job openings maintained in mid-May 2026",
+        "No significant change from April 100+ baseline ahead of production start",
+        "Summer 2026 internship programs underway",
         "100+ Optimus-related job openings posted in April 2026 across U.S. facilities",
         "Significant expansion in robotics hiring representing pivot from prototypes to production lines",
         "Roles span full product lifecycle: AI engineers to manufacturing specialists",
@@ -1001,10 +1230,17 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-05-10",
-      "criticalNews": "Final Model S and Model X produced May 9, 2026 - Fremont line conversion to Optimus on track",
+      "latestUpdate": "2026-05-16",
+      "criticalNews": "Giga Texas Optimus factory foundation progressing visibly (May 13), Fremont conversion on track post-May 9 shutdown",
       "keyPoints": [
+        "North Campus Optimus factory foundation actively progressing as of May 13, 2026 drone footage",
+        "Geopier foundation equipment observed on site for 5.2M sq ft facility",
+        "Low-volume production targeted for summer 2026 at Giga Texas",
+        "Foundation must become functioning factory in ~6 weeks for summer 2026 target",
+        "$5-10B investment range for 10M unit/year capacity facility",
+        "Multi-site construction: chip fab + Optimus factory + test track simultaneous progress",
         "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
+        "Final Model S and Model X produced May 9, 2026 - line conversion underway",
         "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
         "Tesla China President announced April 14 that Giga Shanghai will play crucial role in Optimus production",
         "Shanghai planning to ramp six new production lines in 2026: vehicles, robots, energy storage, batteries",
@@ -1099,6 +1335,10 @@
         {
           "date": "2026-05-09",
           "event": "Last Model S and Model X produced at Fremont (14/11 year runs complete)"
+        },
+        {
+          "date": "2026-05-13",
+          "event": "Giga Texas North Campus foundation work visible progress (drone footage)"
         }
       ],
       "pricing": {
