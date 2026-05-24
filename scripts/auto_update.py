@@ -11,9 +11,23 @@ from datetime import datetime, timedelta
 from anthropic import Anthropic
 
 def read_current_data():
-    """Read the current tesla-tracking-data.json"""
+    """Read and merge tesla-tracking-data.json with archive"""
+    # Read main file
     with open('tesla-tracking-data.json', 'r') as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # Read archive file if it exists
+    try:
+        with open('tesla-tracking-data-archive.json', 'r') as f:
+            archive = json.load(f)
+            # Merge archived weekly summaries
+            if 'archivedWeeklySummaries' in archive:
+                data['weeklySummaries'].extend(archive['archivedWeeklySummaries'])
+    except FileNotFoundError:
+        # No archive yet, that's okay
+        pass
+
+    return data
 
 def update_html_dashboard(data):
     """Sync the HTML dashboard with updated JSON data"""
