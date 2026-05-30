@@ -1,6 +1,10 @@
 # Tesla Investor Tracking
 
-Last Updated: 2026-03-13
+> ⚠️ **ARCHIVED**: This document was replaced by the interactive dashboard on 2026-03-13.
+> **For current data**, see `index.html` or run `/tesla-update` to get the latest updates.
+> This file is preserved for historical reference only.
+
+Last Updated: 2026-03-13 (FINAL)
 
 ## Weekly Summary
 

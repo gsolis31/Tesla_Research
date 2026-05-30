@@ -3,7 +3,7 @@
 An automated tracking system for monitoring Tesla's key development milestones across AI chips, autonomous vehicles, robotics, and regulatory approvals. Built with a custom Claude AI skill that automatically researches and updates the dashboard weekly.
 
 ![Dashboard Preview](https://img.shields.io/badge/Status-Active-success)
-![Last Updated](https://img.shields.io/badge/Updated-2026--04--25-blue)
+![Last Updated](https://img.shields.io/badge/Updated-2026--05--24-blue)
 
 ## 🎯 What This Tracks
 
@@ -23,9 +23,9 @@ An automated tracking system for monitoring Tesla's key development milestones a
 
 ### View the Dashboard
 
-Simply open `tesla-dashboard.html` in your browser:
+Simply open `index.html` in your browser:
 ```bash
-open tesla-dashboard.html
+open index.html
 ```
 
 The dashboard is a standalone HTML file with embedded data - no server required!
@@ -49,20 +49,18 @@ This skill will:
 
 ```
 Research/
-├── tesla-dashboard.html          # Interactive dashboard (open in browser)
+├── index.html                    # Interactive dashboard (open in browser)
 ├── tesla-tracking-data.json      # All tracking data (source of truth)
 ├── .claude/
 │   └── skills/
 │       └── tesla-update/
 │           └── SKILL.md          # Automated update skill
-├── tesla-investor-tracking.md    # Original tracking document
-├── UPDATE_INSTRUCTIONS.md        # Manual update guide
+├── tesla-investor-tracking.md    # Archived tracking document (pre-dashboard)
 └── README.md                     # This file
 ```
 
 ## 🔄 How Updates Work
 
-### Automated (Recommended)
 The `/tesla-update` skill automates the entire research and update process:
 
 1. **Research** - Searches preferred news sources (Electrek, Teslarati, etc.)
@@ -71,9 +69,6 @@ The `/tesla-update` skill automates the entire research and update process:
 4. **Sync HTML** - Embeds updated data in dashboard
 5. **Validate** - Ensures no syntax errors
 6. **Open** - Launches dashboard in browser
-
-### Manual
-See `UPDATE_INSTRUCTIONS.md` for manual update procedures.
 
 ## 📊 Data Format
 
@@ -170,4 +165,4 @@ Personal research project for educational and investment tracking purposes.
 
 **Note**: This project tracks publicly available information for research purposes. Not financial advice. Always verify information with official sources before making investment decisions.
 
-**Last Updated**: April 25, 2026 | [View Dashboard](tesla-dashboard.html)
+**Last Updated**: May 24, 2026 | [View Dashboard](index.html)

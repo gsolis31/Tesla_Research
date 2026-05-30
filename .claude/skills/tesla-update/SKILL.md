@@ -14,7 +14,7 @@ When invoked, this skill will:
 2. Research latest news for all 5 news categories from the last update date until today
 3. Check for new quarterly production & delivery reports from ir.tesla.com/press
 4. Update `tesla-tracking-data.json` with new weekly summary, metrics, and P&D data
-5. Sync the embedded data in `tesla-dashboard.html`
+5. Sync the embedded data in `index.html`
 6. Open the dashboard in the browser
 7. Provide a summary of key updates
 
@@ -23,7 +23,7 @@ When invoked, this skill will:
 ## File Locations
 
 - **JSON Data**: `/Users/gonzalosolis/Research/tesla-tracking-data.json`
-- **HTML Dashboard**: `/Users/gonzalosolis/Research/tesla-dashboard.html`
+- **HTML Dashboard**: `/Users/gonzalosolis/Research/index.html`
 - **Working Directory**: `/Users/gonzalosolis/Research`
 
 ---
@@ -32,7 +32,7 @@ When invoked, this skill will:
 
 **IMPORTANT**: The HTML file must have marker comments for reliable data syncing.
 
-If not already present, add these markers to `tesla-dashboard.html`:
+If not already present, add these markers to `index.html`:
 
 **Around line 450** (before `const data = {`):
 ```html
@@ -239,7 +239,7 @@ Update `categories.productionDelivery`:
 - Recalculate `totalDeliveries` (sum of ALL delivery values)
 
 ### Step 4: Sync HTML Dashboard
-Update `tesla-dashboard.html`:
+Update `index.html`:
 
 **Process**:
 Use the following Python script to sync the data reliably:
@@ -253,7 +253,7 @@ with open('/Users/gonzalosolis/Research/tesla-tracking-data.json', 'r') as f:
     data = json.load(f)
 
 # Read the HTML file
-with open('/Users/gonzalosolis/Research/tesla-dashboard.html', 'r') as f:
+with open('/Users/gonzalosolis/Research/index.html', 'r') as f:
     html_content = f.read()
 
 # Format JSON as JavaScript with proper indentation
@@ -276,7 +276,7 @@ if '<!-- DATA_OBJECT_START -->' not in html_content:
     exit(1)
 
 # Write the updated HTML
-with open('/Users/gonzalosolis/Research/tesla-dashboard.html', 'w') as f:
+with open('/Users/gonzalosolis/Research/index.html', 'w') as f:
     f.write(new_html)
 
 print("✓ HTML dashboard synced with JSON data")
@@ -286,7 +286,7 @@ print("✓ HTML dashboard synced with JSON data")
 
 ### Step 5: Open Dashboard
 ```bash
-open tesla-dashboard.html
+open index.html
 ```
 
 ### Step 6: Provide Summary
