@@ -44,7 +44,7 @@ def sync_dashboard(json_path: str = 'tesla-tracking-data.json', html_path: str =
             return False
 
         # Format JSON as JavaScript with proper indentation (8 spaces base indent)
-        json_str = json.dumps(data, indent=2)
+        json_str = json.dumps(data, indent=2, ensure_ascii=False)
         js_lines = json_str.split('\n')
 
         indented_js = '        const data = ' + js_lines[0] + '\n'
