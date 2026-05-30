@@ -2456,30 +2456,36 @@
 
         function renderCategoryStatus() {
             const grid = document.getElementById('categoryStatusGrid');
+
+            // Helper function to get status from latest weekly summary
+            const getStatus = (categoryName) => {
+                return data.weeklySummaries[0].keyChanges.find(c => c.category === categoryName)?.status || 'neutral';
+            };
+
             const categories = [
                 {
                     name: 'AI Chips',
-                    status: 'positive',
+                    status: getStatus('AI Chip Production'),
                     desc: data.categories.aiChip.criticalNews
                 },
                 {
                     name: 'Cybercab',
-                    status: 'positive',
+                    status: getStatus('Cybercab'),
                     desc: data.categories.cybercab.criticalNews
                 },
                 {
                     name: 'FSD Approvals',
-                    status: data.weeklySummaries[0].keyChanges.find(c => c.category === 'FSD Approvals')?.status || 'neutral',
+                    status: getStatus('FSD Approvals'),
                     desc: data.categories.fsd.criticalNews
                 },
                 {
                     name: 'Optimus',
-                    status: 'positive',
+                    status: getStatus('Optimus Production'),
                     desc: data.categories.optimus.criticalNews
                 },
                 {
                     name: 'Job Postings',
-                    status: data.weeklySummaries[0].keyChanges.find(c => c.category === 'Job Postings')?.status || 'neutral',
+                    status: getStatus('Job Postings'),
                     desc: data.categories.jobPostings.criticalNews
                 }
             ];
@@ -2494,13 +2500,14 @@
 
         function renderNextMilestones() {
             const container = document.getElementById('nextMilestones');
+
+            // Key upcoming milestones based on latest data
             const milestones = [
-                { date: 'Mid-May 2026', desc: 'Belgium FSD approval expected via EU mutual recognition' },
-                { date: 'May-June 2026', desc: 'Germany FSD approval expected (4-8 weeks post-NL)' },
-                { date: 'May-June 2026', desc: 'EU-wide FSD vote at Technical Committee (TCMV)' },
+                { date: 'June 30, 2026', desc: 'EU-wide FSD vote at Technical Committee (TCMV) - delayed from May' },
                 { date: 'July-Aug 2026', desc: 'Optimus production starts at Fremont facility' },
                 { date: 'Mid-2026', desc: 'Cortex 2.0 full capacity (500MW) for Optimus AI training' },
-                { date: 'Summer 2026', desc: 'EU-wide FSD rollout via mutual recognition' },
+                { date: 'Summer 2026', desc: 'EU-wide FSD rollout via mutual recognition (Belgium, Germany testing underway)' },
+                { date: 'H2 2027', desc: 'AI5 chip mass production at Samsung Texas facility' },
                 { date: 'Late 2026', desc: 'First external Optimus customers (B2B)' },
                 { date: 'Late 2026', desc: 'Shanghai Gigafactory Optimus production targeted' },
                 { date: 'End 2026', desc: 'Japan FSD commercial rollout target' }

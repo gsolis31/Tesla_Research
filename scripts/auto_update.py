@@ -11,59 +11,19 @@ from datetime import datetime, timedelta
 from anthropic import Anthropic
 
 def read_current_data():
-    """Read and merge tesla-tracking-data.json with archive"""
-    # Read main file
+    """Read tesla-tracking-data.json"""
+    # Read main file only - archive is kept separate to avoid duplication
     with open('tesla-tracking-data.json', 'r') as f:
         data = json.load(f)
-
-    # Read archive file if it exists
-    try:
-        with open('tesla-tracking-data-archive.json', 'r') as f:
-            archive = json.load(f)
-            # Merge archived weekly summaries
-            if 'archivedWeeklySummaries' in archive:
-                data['weeklySummaries'].extend(archive['archivedWeeklySummaries'])
-    except FileNotFoundError:
-        # No archive yet, that's okay
-        pass
 
     return data
 
 def update_html_dashboard(data):
-    """Sync the HTML dashboard with updated JSON data"""
-    with open('index.html', 'r') as f:
-        html_content = f.read()
+    """Sync the HTML dashboard with updated JSON data using shared sync script"""
+    from sync_dashboard import sync_dashboard
 
-    # Format JSON as JavaScript
-    json_str = json.dumps(data, indent=2)
-    js_lines = json_str.split('\n')
-
-    indented_js = '        const data = ' + js_lines[0] + '\n'
-    for line in js_lines[1:]:
-        indented_js += '        ' + line + '\n'
-    indented_js = indented_js.rstrip() + ';\n'
-
-    # Find markers and replace
-    start_marker = '<!-- DATA_OBJECT_START -->\n'
-    end_marker = '<!-- DATA_OBJECT_END -->'
-
-    start_idx = html_content.find(start_marker)
-    end_idx = html_content.find(end_marker)
-
-    if start_idx == -1 or end_idx == -1:
-        raise ValueError("HTML markers not found")
-
-    new_html = (
-        html_content[:start_idx + len(start_marker)] +
-        indented_js +
-        '        ' +
-        html_content[end_idx:]
-    )
-
-    with open('index.html', 'w') as f:
-        f.write(new_html)
-
-    print("✓ HTML dashboard synced")
+    if not sync_dashboard():
+        raise RuntimeError("Failed to sync dashboard")
 
 def run_tesla_update():
     """Main update function using Claude API"""

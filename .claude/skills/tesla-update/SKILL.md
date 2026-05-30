@@ -242,47 +242,22 @@ Update `categories.productionDelivery`:
 Update `index.html`:
 
 **Process**:
-Use the following Python script to sync the data reliably:
+Use the shared sync script to reliably sync JSON to HTML:
 
-```python
-import json
-import re
-
-# Read the updated JSON data
-with open('/Users/gonzalosolis/Research/tesla-tracking-data.json', 'r') as f:
-    data = json.load(f)
-
-# Read the HTML file
-with open('/Users/gonzalosolis/Research/index.html', 'r') as f:
-    html_content = f.read()
-
-# Format JSON as JavaScript with proper indentation
-json_str = json.dumps(data, indent=2)
-js_lines = json_str.split('\n')
-
-# Build properly indented JavaScript (8 spaces base indent)
-indented_js = '        const data = ' + js_lines[0] + '\n'
-for line in js_lines[1:]:
-    indented_js += '        ' + line + '\n'
-indented_js = indented_js.rstrip() + ';\n'
-
-# Replace between markers (ensures reliable replacement)
-pattern = r'(<!-- DATA_OBJECT_START -->\n).*?(<!-- DATA_OBJECT_END -->)'
-new_html = re.sub(pattern, rf'\1{indented_js}        \2', html_content, flags=re.DOTALL)
-
-# Verify markers exist
-if '<!-- DATA_OBJECT_START -->' not in html_content:
-    print("ERROR: Markers not found in HTML. See 'One-Time Setup' section in skill.md")
-    exit(1)
-
-# Write the updated HTML
-with open('/Users/gonzalosolis/Research/index.html', 'w') as f:
-    f.write(new_html)
-
-print("✓ HTML dashboard synced with JSON data")
+```bash
+python scripts/sync_dashboard.py
 ```
 
-**Note**: This script uses marker comments to reliably locate and replace the data object, preventing syntax errors.
+Or in Python:
+```python
+from scripts.sync_dashboard import sync_dashboard
+
+if not sync_dashboard():
+    print("ERROR: Failed to sync dashboard")
+    exit(1)
+```
+
+**Note**: This shared script (scripts/sync_dashboard.py) uses marker comments to reliably locate and replace the data object, preventing syntax errors. It's also used by auto_update.py for consistency.
 
 ### Step 5: Open Dashboard
 ```bash
