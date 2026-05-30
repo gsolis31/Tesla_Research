@@ -1,0 +1,14 @@
+# Tesla Tracker Dependencies
+# Python 3.11+
+
+# Claude API for automated updates
+anthropic>=0.39.0,<1.0.0
+
+# HTTP requests (used by scripts)
+requests>=2.31.0,<3.0.0
+
+# HTML parsing (if needed for web scraping)
+beautifulsoup4>=4.12.0,<5.0.0
+
+# Development/validation
+# None currently - validate.py and sync_dashboard.py use stdlib only

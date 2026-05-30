@@ -49,14 +49,24 @@ This skill will:
 
 ```
 Research/
-├── index.html                    # Interactive dashboard (open in browser)
-├── tesla-tracking-data.json      # All tracking data (source of truth)
+├── index.html                         # Interactive dashboard (open in browser)
+├── tesla-tracking-data.json           # All tracking data (source of truth)
+├── tesla-tracking-data-archive.json   # Archived weekly summaries (pre-April 2026)
 ├── .claude/
 │   └── skills/
 │       └── tesla-update/
-│           └── SKILL.md          # Automated update skill
-├── tesla-investor-tracking.md    # Archived tracking document (pre-dashboard)
-└── README.md                     # This file
+│           └── SKILL.md               # Automated update skill
+├── .github/
+│   └── workflows/
+│       └── tesla-update.yml           # GitHub Actions workflow (disabled)
+├── scripts/
+│   ├── auto_update.py                 # Simplified automation script (partial)
+│   ├── sync_dashboard.py              # Shared JSON→HTML sync utility
+│   └── validate.py                    # Data validation script
+├── tesla-investor-tracking.md         # Archived tracking document (pre-dashboard)
+├── AUTOMATION_SETUP.md                # Automation setup guide
+├── requirements.txt                   # Python dependencies
+└── README.md                          # This file
 ```
 
 ## 🔄 How Updates Work
@@ -76,22 +86,44 @@ All data is stored in `tesla-tracking-data.json` with this structure:
 
 ```json
 {
-  "lastUpdated": "2026-04-18",
+  "lastUpdated": "2026-05-24",
   "weeklySummaries": [
     {
-      "weekOf": "2026-04-18",
-      "keyChanges": [...],
-      "trends": [...]
+      "weekOf": "2026-05-24",
+      "keyChanges": [
+        {
+          "category": "FSD Approvals",
+          "status": "positive",
+          "title": "Brief update title",
+          "description": "Detailed description...",
+          "source": "https://source-url.com",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Analysis of headline vs reality"
+          },
+          "evidence": {
+            "positive_signals": ["Signal 1", "Signal 2"],
+            "negative_signals": ["Signal 1"],
+            "key_metrics": {
+              "actual": "Current state",
+              "target": "Goal",
+              "trajectory": "Progress assessment"
+            }
+          }
+        }
+      ],
+      "trends": ["Trend 1", "Trend 2"]
     }
   ],
   "metrics": {
     "cybercab": { "data": [...] },
     "jobPostings": { "data": [...] },
-    "robotaxiFleet": { "data": [...] },
-    "fsdApprovals": { "countries": [...] }
+    "robotaxiFleet": { "data": [...] }
   },
   "categories": {
-    "aiChip": {...},
+    "aiChip": { "title": "...", "criticalNews": "...", "keyPoints": [...], "timeline": [...] },
     "cybercab": {...},
     "fsd": {...},
     "jobPostings": {...},

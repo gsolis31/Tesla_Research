@@ -1,24 +1,44 @@
 # Tesla Tracker - Automation Setup
 
-## ⚠️ Note: Automation Currently Disabled
+## ⚠️ Automation Currently Disabled
 
-**Issue**: Claude API doesn't have built-in web search, so automated updates can't fetch Tesla news.
+**Issue**: Claude API doesn't have built-in web search capability, so the `auto_update.py` script cannot fetch real Tesla news.
 
-**Solution**: Use manual `/tesla-update` via Claude Code CLI (works perfectly with web search).
+**Current Solution**: Use manual `/tesla-update` via Claude Code CLI, which has full web search access.
 
-The GitHub Actions workflow has been disabled to avoid wasting API credits.
+**Status**:
+- ✅ `/tesla-update` skill - **Primary update method** (recommended)
+- ⚠️ `scripts/auto_update.py` - Partial implementation, web search not wired
+- ❌ GitHub Actions workflow - Scheduled runs disabled (workflow_dispatch still available for testing)
 
 ---
 
-## Original Documentation (For Reference)
+## Current Update Workflow
 
-## How It Works
+Use the Claude Code skill for weekly updates:
 
-1. **GitHub Actions workflow** runs every Monday at 12 PM UTC (7 AM EST / 4 AM PST)
-2. **Python script** uses Claude API to research Tesla news and updates
-3. **Multi-layered sentiment analysis** is automatically applied
-4. **Changes are committed** and pushed to GitHub
-5. **GitHub Pages** auto-deploys the updated dashboard
+```bash
+/tesla-update
+```
+
+This will:
+1. Research latest news across all 5 categories with web search
+2. Apply multi-layered sentiment analysis
+3. Update tesla-tracking-data.json
+4. Sync index.html dashboard
+5. Validate changes
+6. Open dashboard in browser
+
+---
+
+## GitHub Actions Status
+
+The workflow at `.github/workflows/tesla-update.yml` is configured but **not actively used**:
+- Scheduled cron runs: **Disabled** (commented out)
+- Manual trigger: **Available** (workflow_dispatch) for testing only
+- Limitation: Cannot perform real web searches, only uses Claude API without search tools
+
+If you want to test the workflow manually, it will run `scripts/auto_update.py` but **will not fetch real news** due to lack of web search capability.
 
 ## Setup Instructions
 
@@ -47,135 +67,74 @@ The GitHub Actions workflow has been disabled to avoid wasting API credits.
 6. Value: Paste your API key from Step 2
 7. Click **Add secret**
 
-### Step 4: Enable GitHub Actions
+---
 
-1. In your repository, click **Actions** tab
-2. If prompted, click **I understand my workflows, go ahead and enable them**
-3. You should see "Tesla Tracker Auto-Update" workflow
+## Archived Documentation (For Reference Only)
 
-### Step 5: Test It
+<details>
+<summary>Original GitHub Actions Setup Instructions (Not Currently Used)</summary>
 
-#### Manual Test:
-1. Go to **Actions** tab
-2. Click **Tesla Tracker Auto-Update** workflow
-3. Click **Run workflow** dropdown (right side)
-4. Click green **Run workflow** button
-5. Watch it run (takes ~2-3 minutes)
-6. Check if `tesla-tracking-data.json` was updated
+The following documentation describes the original plan for automated GitHub Actions updates. This approach is **not currently active** because the Claude API lacks web search capabilities needed for real news research.
 
-#### Check the Schedule:
-- Workflow runs automatically every **Monday at 12 PM UTC**
-- To change schedule, edit `.github/workflows/tesla-update.yml`
-- Cron format: `'0 12 * * 1'` (minute hour day month weekday)
+### Historical Setup Steps
 
-## How Updates Work
+#### Step 1: Get Claude API Access
+1. Go to [console.anthropic.com](https://console.anthropic.com)
+2. Sign up for API access (separate from Claude Pro)
+3. New accounts get $5 free credits
+4. After free credits: ~$3 per million tokens
 
-The automation script:
+#### Step 2: Create API Key
+1. In Anthropic Console, go to **API Keys**
+2. Click **Create Key**
+3. Name it "Tesla Tracker GitHub Actions"
+4. Copy the key (starts with `sk-ant-...`)
 
-1. **Reads current data** from `tesla-tracking-data.json`
-2. **Checks last update date** to determine research period
-3. **Uses Claude API** to:
-   - Search for Tesla news in all 5 categories
-   - Apply multi-layered sentiment analysis
-   - Extract objective metrics and evidence
-   - Detect headline-reality gaps
-4. **Updates JSON** with new weekly summary and metrics
-5. **Syncs HTML dashboard** with updated data
-6. **Commits changes** to GitHub
-7. **GitHub Pages** auto-deploys within ~1 minute
+#### Step 3: Add Secret to GitHub
+1. Go to repository Settings → Secrets and variables → Actions
+2. Create secret: `ANTHROPIC_API_KEY`
+3. Paste API key value
 
-## Cost Estimate
+#### Step 4: Enable Schedule (If Web Search Becomes Available)
+Edit `.github/workflows/tesla-update.yml` and uncomment the schedule:
+```yaml
+schedule:
+  - cron: '0 12 * * 1'  # Monday at 12 PM UTC
+```
 
-**Claude API Usage** (pay-as-you-go):
+### Cost Estimate (If Re-enabled)
 - ~10,000-20,000 tokens per weekly update
 - Cost: $0.03-$0.06 per update
 - **Monthly cost: ~$0.25** (4 updates/month)
 
-Very affordable for automated updates!
+</details>
 
-## Customization
+---
 
-### Change Update Frequency
+## Manual Updates (Current Method)
 
-Edit `.github/workflows/tesla-update.yml`:
+You can run updates locally using either method:
 
-```yaml
-# Daily at noon UTC
-- cron: '0 12 * * *'
-
-# Twice weekly (Monday & Thursday)
-- cron: '0 12 * * 1,4'
-
-# Every 3 days
-- cron: '0 12 */3 * *'
-```
-
-### Change Update Time
-
-Format: `'minute hour * * *'`
-- `'0 16 * * 1'` = Monday 4 PM UTC (11 AM EST)
-- `'30 9 * * 1'` = Monday 9:30 AM UTC (4:30 AM EST)
-
-## Monitoring
-
-### View Workflow Runs:
-1. Go to **Actions** tab in GitHub
-2. See history of all runs (success/failure)
-3. Click any run to see detailed logs
-
-### Check for Updates:
-- Dashboard URL: https://gsolis31.github.io/Tesla_Research/
-- Check "Last Updated" date in top-right corner
-- Review recent commits for update history
-
-## Troubleshooting
-
-### Workflow Fails
-1. Check **Actions** tab for error logs
-2. Common issues:
-   - API key not set correctly
-   - API rate limits exceeded
-   - No significant news (not actually an error)
-
-### No Updates Showing
-1. Check if workflow ran successfully in Actions tab
-2. Verify API key is valid
-3. Check commit history - was anything committed?
-4. Clear browser cache and refresh dashboard
-
-### API Costs Too High
-1. Reduce update frequency (weekly → bi-weekly)
-2. Check token usage in Anthropic Console
-3. Optimize the prompt in `scripts/auto_update.py`
-
-## Manual Updates
-
-You can still run manual updates locally:
+### Method 1: Claude Code Skill (Recommended)
 ```bash
-# Using Claude Code CLI (current method)
 /tesla-update
-
-# OR using the automation script
-ANTHROPIC_API_KEY=your-key python scripts/auto_update.py
 ```
+Full web search, sentiment analysis, and complete data updates.
 
-## Disabling Automation
-
-To stop automatic updates:
-1. Go to `.github/workflows/tesla-update.yml`
-2. Comment out or delete the `schedule:` section
-3. Keep `workflow_dispatch:` for manual triggers only
+### Method 2: Automation Script (Limited)
+```bash
+ANTHROPIC_API_KEY=your-key python3 scripts/auto_update.py
+```
+⚠️ **Note**: This script does not have web search and cannot fetch real news. It's a partial implementation kept for reference.
 
 ---
 
 ## Summary
 
-Once set up:
-- ✅ Updates run automatically every Monday
-- ✅ No laptop needed
-- ✅ Dashboard always up-to-date
-- ✅ Costs ~$0.25/month
-- ✅ Can trigger manual updates anytime
-- ✅ Full transparency via GitHub commits
+**Current Status**:
+- ✅ Manual `/tesla-update` skill - Full functionality with web search
+- ✅ Validation and sync scripts - Working
+- ⚠️ GitHub Actions - Disabled (no web search capability)
+- ⚠️ `auto_update.py` - Partial implementation only
 
-Questions? Check the workflow logs in the Actions tab!
+**Recommended Workflow**: Use `/tesla-update` via Claude Code CLI for all updates.
