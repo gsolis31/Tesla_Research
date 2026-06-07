@@ -743,8 +743,173 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-05-29",
+          "lastUpdated": "2026-06-07",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-06-07",
+              "keyChanges": [
+                {
+                  "category": "Cybercab",
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Robotaxi fleet remains at ~42 registered vehicles in Texas with only ~20 active unsupervised vehicles. With less than 3 weeks until H1 2026 target deadline, fleet represents just 4% of 1000+ vehicle goal."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Austin service area expanded to entire metro (245 sq mi), including I-35 highway driving",
+                      "Cybercab production confirmed at 'hundreds per week' target at Giga Texas",
+                      "VP Ashok Elluswamy confirmed Cybercab units joining Austin fleet 'soon'"
+                    ],
+                    "negative_signals": [
+                      "Only 42 robotaxis registered in Texas (vs 1000+ target)",
+                      "Active unsupervised fleet stuck at ~20 vehicles, down from 25 in late May",
+                      "Dallas still at 3 vehicles, Houston at 6 vehicles - no growth since April launch",
+                      "Phoenix, Miami, Orlando, Tampa, Las Vegas deployments not yet started"
+                    ],
+                    "key_metrics": {
+                      "actual": "42 registered, ~20 active unsupervised",
+                      "target": "1000+ across 7 cities by H1 2026",
+                      "trajectory": "4% of target (42/1000)"
+                    }
+                  },
+                  "title": "Robotaxi fleet stalls at 42 Texas vehicles, 3 weeks from H1 deadline",
+                  "description": "Tesla's robotaxi fleet shows minimal growth with only 42 registered vehicles in Texas and approximately 20 active unsupervised vehicles. Austin expanded service to entire metro area (245 sq mi) including I-35 highway access. Dallas stuck at 3 vehicles, Houston at 6. Five announced cities (Phoenix, Miami, Orlando, Tampa, Las Vegas) have not launched. With H1 2026 ending June 30, current fleet represents just 4% of stated 1000+ vehicle target.",
+                  "source": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/"
+                },
+                {
+                  "category": "FSD",
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Belgium completed mandatory testing, Spain logged 80,000 km with zero incidents, EU committee vote expected late June could unlock all remaining EU countries simultaneously"
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Belgium completed 5,000 km mandatory testing, file submitted for homologation",
+                      "Spain's 30-vehicle fleet logged 80,000 km with zero reported incidents",
+                      "EU Technical Committee vote expected late June 2026 could unlock all EU member states",
+                      "3 EU countries now approved: Netherlands (April), Lithuania (mid-May), Estonia (end-May)"
+                    ],
+                    "negative_signals": [
+                      "12 countries still pending approval",
+                      "Belgium approval timing uncertain (before/after June 30 TCMV vote)"
+                    ],
+                    "key_metrics": {
+                      "actual": "3 EU countries approved",
+                      "target": "EU-wide rollout via mutual recognition",
+                      "trajectory": "Late June TCMV vote could unlock remaining EU countries"
+                    }
+                  },
+                  "title": "Belgium FSD testing complete, EU-wide approval vote expected late June",
+                  "description": "Belgium completed mandatory 5,000 km FSD testing with file submitted for official homologation. Spain's fleet logged 80,000 km with zero incidents across 30 vehicles. EU Technical Committee on Motor Vehicles expected to vote late June 2026, which could unlock all remaining EU member states simultaneously via mutual recognition. Three EU countries now approved: Netherlands, Lithuania, and Estonia.",
+                  "source": "https://www.basenor.com/blogs/news/tesla-fsd-pending-approval-in-12-countries-full-breakdown"
+                },
+                {
+                  "category": "Optimus",
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "medium",
+                    "rationale": "Gen 3 mass production started January 2026 with 100+ job openings and confirmed V3 production timeline for Summer 2026, though commercial customer validation remains uncertain"
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Gen 3 mass production started January 21, 2026 at Fremont",
+                      "100+ Optimus-related job openings posted across US facilities",
+                      "V3 full body production on track for Summer 2026",
+                      "First commercial customers expected late 2026 at $100K+ B2B pricing",
+                      "Giga Texas dedicated facility under construction (10M units/year target)"
+                    ],
+                    "negative_signals": [
+                      "Gen 3 hands still in first 24/7 autonomous industrial shift tests",
+                      "Uncertain whether units performing verifiable autonomous work vs teleoperation",
+                      "Meaningful volumes not expected until year-end 2026"
+                    ],
+                    "key_metrics": {
+                      "actual": "Gen 3 in production, targeting 50K-100K units in 2026",
+                      "target": "First commercial customers late 2026",
+                      "trajectory": "On schedule for Summer 2026 V3 production"
+                    }
+                  },
+                  "title": "Optimus Gen 3 production ramping with 100+ job openings, V3 on track",
+                  "description": "Tesla posted 100+ Optimus-related job openings across Palo Alto, Fremont, and Austin facilities, signaling transition from tech demo to manufacturing scale. Gen 3 mass production started January 21, 2026 at Fremont. V3 full body production confirmed on track for Summer 2026, with first commercial customers expected late 2026 at $100K+ B2B pricing. Targeting 50,000-100,000 units in 2026.",
+                  "source": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/"
+                },
+                {
+                  "category": "AI Chip",
+                  "status": "neutral",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "neutral",
+                    "confidence": "medium",
+                    "rationale": "AI5 tape-out completed (though nearly 2 years behind schedule), dual-foundry strategy confirmed for AI5/AI6 production at US facilities"
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "AI5 chip tape-out completed April 2026",
+                      "Dual-foundry strategy: Samsung Texas + TSMC Arizona confirmed",
+                      "AI5 mass production expected late 2026/early 2027",
+                      "AI6.5 planned for TSMC 2nm Arizona facility"
+                    ],
+                    "negative_signals": [
+                      "AI5 tape-out nearly 2 years behind schedule (June 2024 target)",
+                      "AI6 delayed ~6 months due to Samsung 2nm yield issues",
+                      "AI6 mass production pushed to Q4 2027 at earliest"
+                    ],
+                    "key_metrics": {
+                      "actual": "AI5 tape-out complete, targeting late 2026 production",
+                      "target": "AI5 in vehicles 'second half of 2025' (original)",
+                      "trajectory": "~18 months behind original schedule"
+                    }
+                  },
+                  "title": "AI5 chip tape-out complete, dual-foundry strategy confirmed",
+                  "description": "Tesla completed AI5 chip tape-out in April 2026, nearly 2 years behind original June 2024 schedule. Confirmed dual-foundry strategy with Samsung Texas and TSMC Arizona facilities for AI5 production. AI6 delayed approximately 6 months due to Samsung 2nm yield issues, pushing mass production to Q4 2027 at earliest. AI5 mass production expected late 2026/early 2027.",
+                  "source": "https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/"
+                },
+                {
+                  "category": "Production & Delivery",
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Q1 2026 deliveries down 12.3% YoY, continuing 2025's -8.56% annual decline"
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Production exceeded 408,000 vehicles in Q1 2026",
+                      "8.8 GWh energy storage deployed"
+                    ],
+                    "negative_signals": [
+                      "Q1 2026 deliveries: 358,023 vs Q1 2025: 408,386 (-12.3% YoY)",
+                      "Continuing decline from 2025 annual -8.56% YoY",
+                      "Delivery shortfall of 50,000+ vehicles vs production"
+                    ],
+                    "key_metrics": {
+                      "actual": "358,023 deliveries Q1 2026",
+                      "target": "Growth vs 2025 levels",
+                      "trajectory": "-12.3% YoY decline"
+                    }
+                  },
+                  "title": "Q1 2026 deliveries down 12.3% YoY, continuing 2025 decline trend",
+                  "description": "Tesla delivered 358,023 vehicles in Q1 2026, down 12.3% from Q1 2025's 408,386 deliveries. Production exceeded 408,000 vehicles, creating a delivery shortfall of over 50,000 units. This continues the declining trend from 2025's -8.56% annual YoY decline. Energy storage deployment reached 8.8 GWh.",
+                  "source": "https://ir.tesla.com/press-release/tesla-first-quarter-2026-production-deliveries-and-deployments"
+                }
+              ],
+              "trends": [
+                "Robotaxi deployment severely behind schedule with only 4% of H1 2026 target achieved and 3 weeks remaining",
+                "FSD European expansion accelerating with potential EU-wide approval vote in late June",
+                "Optimus transitioning from development to manufacturing scale with 100+ job openings",
+                "Vehicle delivery decline persists into 2026 with Q1 down 12.3% YoY",
+                "AI chip timeline stabilizing with AI5 tape-out complete, though 18 months behind original schedule"
+              ]
+            },
             {
               "weekOf": "2026-05-29",
               "keyChanges": [
@@ -1863,6 +2028,11 @@
                   "date": "2026-05-26",
                   "count": 20,
                   "note": "Fleet contracted 49% to 20 unsupervised vehicles: 14 Austin, 3 Dallas, 3 Houston. Total active fleet across all operations: 34 vehicles."
+                },
+                {
+                  "date": "2026-06-02",
+                  "count": 42,
+                  "note": "42 registered in Texas (14 Austin, 6 Houston, 3 Dallas); ~20 active unsupervised"
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -1927,8 +2097,8 @@
           "categories": {
             "aiChip": {
               "title": "AI Chip Production (Samsung/TSMC)",
-              "latestUpdate": "2026-05-24",
-              "criticalNews": "AI5 on track for mid-2027; unconfirmed rumors suggest AI6.5 may shift from TSMC to Intel under political pressure",
+              "latestUpdate": "2026-06-07",
+              "criticalNews": "AI5 tape-out complete, dual-foundry strategy confirmed (Samsung Texas + TSMC Arizona)",
               "keyPoints": [
                 "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 originally TSMC Arizona",
                 "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
@@ -1996,8 +2166,8 @@
             },
             "cybercab": {
               "title": "Cybercab Production",
-              "latestUpdate": "2026-05-24",
-              "criticalNews": "70+ Cybercabs at Giga Texas (May 13), but unsupervised fleet only 39 vehicles—96% below H1 2026 target with 2 weeks left",
+              "latestUpdate": "2026-06-07",
+              "criticalNews": "Fleet stalls at 42 registered vehicles in Texas with ~20 active unsupervised, 3 weeks from H1 deadline",
               "keyPoints": [
                 "70+ Cybercabs spotted at Giga Texas on May 13, 2026 (up from 60 on May 8)",
                 "Unsupervised fleet reached 39 vehicles by mid-May (27 Austin, 6 Houston, 5 Dallas)",
@@ -2107,8 +2277,8 @@
             },
             "fsd": {
               "title": "FSD Country Approvals",
-              "latestUpdate": "2026-05-24",
-              "criticalNews": "Lithuania approves FSD May 20 via mutual recognition—second EU country after Netherlands",
+              "latestUpdate": "2026-06-07",
+              "criticalNews": "Belgium testing complete, EU-wide approval vote expected late June",
               "keyPoints": [
                 "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
                 "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
@@ -2230,8 +2400,8 @@
             },
             "optimus": {
               "title": "Optimus Production",
-              "latestUpdate": "2026-05-24",
-              "criticalNews": "Giga Texas Optimus factory foundation progressing visibly (May 13), Fremont conversion on track post-May 9 shutdown",
+              "latestUpdate": "2026-06-07",
+              "criticalNews": "100+ job openings posted, Gen 3 mass production ongoing, V3 on track for Summer 2026",
               "keyPoints": [
                 "North Campus Optimus factory foundation actively progressing as of May 13, 2026 drone footage",
                 "Geopier foundation equipment observed on site for 5.2M sq ft facility",
@@ -2349,8 +2519,8 @@
             },
             "productionDelivery": {
               "title": "Vehicle Production & Delivery",
-              "latestUpdate": "2026-04-25",
-              "criticalNews": "Q1 2026: 408,386 produced, 358,023 delivered - Model 3/Y production +14% YoY",
+              "latestUpdate": "2026-06-07",
+              "criticalNews": "Q1 2026 deliveries declined 12.3% YoY to 358,023 vehicles",
               "totalProduction": "9308122",
               "totalDeliveries": "9183948",
               "quarterlyData": [
