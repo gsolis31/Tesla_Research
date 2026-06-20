@@ -743,8 +743,170 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-06-07",
+          "lastUpdated": "2026-06-19",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-06-19",
+              "keyChanges": [
+                {
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Bloomberg investigation reveals Tesla robotaxi fleet stands at just 59 total vehicles across 3 Texas cities, representing only 5.9% of the 1000+ vehicle target for H1 2026. With H1 ending June 30, the target is mathematically impossible and has been abandoned."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "102 Cybercabs spotted at Giga Texas outbound lot as of June 15, up from ~60 in late May",
+                      "Austin service area coverage remains at full metro (245 sq mi)"
+                    ],
+                    "negative_signals": [
+                      "Total fleet of only 59 vehicles across all cities (Bloomberg June 10)",
+                      "Active unsupervised fleet stuck at ~20 vehicles",
+                      "Only 3 cities operational (Austin, Dallas, Houston) vs 7 cities promised",
+                      "Phoenix, Miami, Orlando, Tampa, Las Vegas deployments never launched",
+                      "Fleet represents 5.9% of H1 2026 target with 11 days remaining"
+                    ],
+                    "key_metrics": {
+                      "actual": "59 total vehicles, ~20 active unsupervised",
+                      "target": "1000+ unsupervised across 7 cities by June 30, 2026",
+                      "trajectory": "5.9% of target — H1 2026 goal abandoned"
+                    }
+                  },
+                  "category": "Robotaxi",
+                  "title": "Bloomberg: Tesla robotaxi fleet totals just 59 vehicles, H1 target abandoned",
+                  "description": "Bloomberg investigation on June 10 reveals Tesla total robotaxi fleet stands at only 59 vehicles limited to three Texas cities (Austin, Dallas, Houston), falling dramatically short of Elon Musk promises. The fleet peaked around December 2025/January 2026 and has been declining since. With H1 2026 ending June 30, the 1000+ vehicle target across 7 cities is mathematically impossible. Musk stated Tesla is waiting for FSD v15 software rewrite before scaling, pushing meaningful ramp to late 2026 or early 2027.",
+                  "source": "https://www.bloomberg.com/news/features/2026-06-10/tesla-robotaxi-fleet-totals-just-59-vehicles-despite-musk-promises"
+                },
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Belgium became the 5th European country to approve FSD Supervised, completing the required 5,000 km testing benchmark. Approval came just 1 day after Denmark, marking the fastest back-to-back FSD expansion in Europe."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Belgium approved FSD Supervised on June 10, 2026",
+                      "Fifth EU country to approve (Netherlands, Lithuania, Estonia, Denmark, Belgium)",
+                      "Fastest back-to-back expansion: Denmark June 9, Belgium June 10",
+                      "5,000 km supervised testing completed successfully",
+                      "Leveraged Dutch RDW provisional type approval for faster rollout"
+                    ],
+                    "negative_signals": []
+                  },
+                  "key_metrics": {
+                    "actual": "5 EU countries approved",
+                    "target": "EU-wide approval",
+                    "trajectory": "Accelerating — 2 countries in 2 days"
+                  },
+                  "category": "FSD",
+                  "title": "Belgium approves FSD Supervised — 5th EU country, 2nd in 48 hours",
+                  "description": "Flemish Mobility Minister Annick De Ridder signed official approval for Tesla FSD Supervised on June 10, 2026, making Belgium the fifth European country to authorize the system. The approval came just one day after Denmark granted clearance, representing the fastest back-to-back FSD expansion in Europe. Tesla completed the required 5,000 km supervised testing on Flemish public roads. The approval leverages the Dutch RDW provisional European type approval under UN Regulation 171.",
+                  "source": "https://www.notateslaapp.com/news/4279/teslas-european-fsd-rollout-speeds-up-with-belgium-approval"
+                },
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Denmark approved FSD Supervised on June 9, 2026, marking the fourth European country to authorize the system. The Danish Road Traffic Authority conducted independent review and concluded the system will contribute positively to road safety."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Denmark approved FSD Supervised on June 9, 2026",
+                      "Fourth European country to approve",
+                      "Danish authority conducted independent review beyond accepting Dutch RDW approval",
+                      "Authority concluded system will contribute positively to road safety",
+                      "Software rollout began June 11 (FSD v14.2.2.6, firmware 2026.17.5)"
+                    ],
+                    "negative_signals": [
+                      "Denmark previously voiced concerns about FSD speed limit compliance and icy road safety"
+                    ]
+                  },
+                  "key_metrics": {
+                    "actual": "4 EU countries approved (before Belgium)",
+                    "target": "EU-wide approval",
+                    "trajectory": "Accelerating"
+                  },
+                  "category": "FSD",
+                  "title": "Denmark approves FSD Supervised after independent safety review",
+                  "description": "Denmark approved Tesla FSD Supervised on June 9, 2026, becoming the fourth European country to authorize the driver assistance system following Netherlands, Lithuania, and Estonia. The Danish Road Traffic Authority stressed it conducted independent review beyond accepting the Dutch RDW provisional type approval, concluding the system will contribute positively to road safety. Software deployment to HW4-equipped vehicles began June 11. Denmark had previously voiced concerns about speed limit compliance and icy road safety.",
+                  "source": "https://electrek.co/2026/06/09/tesla-fsd-approved-denmark-fourth-european-country/"
+                },
+                {
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Reuters investigation published June 15 found Tesla presented inflated and methodologically flawed FSD safety statistics to Dutch and Swedish regulators. 10 of 11 independent traffic-safety researchers called it misleading marketing, not a serious safety study."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Dutch RDW stated it does not rely on marketing claims and conducts own testing"
+                    ],
+                    "negative_signals": [
+                      "Tesla claimed FSD is 10x safer than human drivers using flawed methodology",
+                      "Claimed FSD could have prevented 32,000 deaths and 1.9 million injuries based on absurd assumption every US vehicle would be FSD Tesla",
+                      "10 of 11 independent researchers called methodology misleading marketing",
+                      "Multiple flawed data comparisons inflated safety assertions",
+                      "Reuters characterized materials as deceptive promotional material"
+                    ]
+                  },
+                  "key_metrics": {
+                    "actual": "10 of 11 experts called it misleading",
+                    "target": "Credible safety demonstration",
+                    "trajectory": "Reputational damage to approval process"
+                  },
+                  "category": "FSD",
+                  "title": "Reuters: Tesla presented misleading FSD safety data to European regulators",
+                  "description": "Reuters investigation published June 15 found Tesla presented inflated and methodologically flawed FSD safety statistics to regulators in Netherlands and Sweden while seeking European approvals. Tesla claimed FSD is up to 10x safer than human drivers and could have prevented 32,000 deaths, but independent analysis revealed multiple flawed data comparisons. 10 of 11 independent traffic-safety researchers characterized the materials as misleading marketing, not a serious safety study. The Dutch RDW responded it does not rely on marketing claims and conducts independent testing.",
+                  "source": "https://electrek.co/2026/06/15/tesla-fsd-misleading-safety-data-european-regulators/"
+                },
+                {
+                  "status": "neutral",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "neutral",
+                    "confidence": "medium",
+                    "rationale": "Cybercab production shows steady progress with 102 units at Giga Texas as of June 15, up from ~60 in late May. However, production remains well below hundreds per week target stated for April 2026."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "102 Cybercabs spotted at Giga Texas outbound lot on June 15",
+                      "70% increase from ~60 units in late May",
+                      "Steady, deliberate progress continues",
+                      "Production remains on track for 2M/year capacity target at scale"
+                    ],
+                    "negative_signals": [
+                      "~102 units falls short of hundreds per week target",
+                      "At current rate (~40 units/month), well below stated April target",
+                      "Production remains modest according to reports"
+                    ]
+                  },
+                  "key_metrics": {
+                    "actual": "102 units cumulative at Giga Texas",
+                    "target": "Hundreds per week by April 2026",
+                    "trajectory": "Ramping but below target pace"
+                  },
+                  "category": "Cybercab Production",
+                  "title": "102 Cybercabs spotted at Giga Texas, 70% increase from late May",
+                  "description": "Tesla Cybercab production shows continued progress with 102 units spotted in the Giga Texas outbound lot on June 15, 2026, representing a 70% increase from the ~60 units documented in late May. Production started in February with the first unit, ramped to volume in April, and continues steady expansion. While the increase is positive, current output remains below the hundreds per week target Tesla stated for April 2026. The company expects exponential scaling by year-end, targeting 2 million Cybercabs annually at full capacity.",
+                  "source": "https://www.notateslaapp.com/news/4299/over-100-tesla-cybercabs-spotted-staging-at-giga-texas"
+                }
+              ],
+              "trends": [
+                "FSD European approvals accelerating: 5 countries approved, 2 in 48 hours (Denmark June 9, Belgium June 10)",
+                "Robotaxi fleet stagnation continues: 59 total vehicles, H1 2026 target abandoned",
+                "Cybercab production ramping steadily but below hundreds per week target",
+                "FSD regulatory scrutiny increasing following Reuters misleading safety data investigation",
+                "China FSD approval pushed to Q3 2026, missing earlier Feb/March timeline"
+              ]
+            },
             {
               "weekOf": "2026-06-07",
               "keyChanges": [
@@ -1942,6 +2104,11 @@
                   "date": "2026-05-13",
                   "count": 70,
                   "note": "70+ units at Giga Texas across three parking areas"
+                },
+                {
+                  "date": "2026-06-15",
+                  "count": 102,
+                  "note": "102 Cybercabs in Giga Texas outbound lot, up 70% from ~60 in late May"
                 }
               ],
               "target": "Hundreds per week by April 2026, 2M/year at full capacity"
@@ -2033,6 +2200,16 @@
                   "date": "2026-06-02",
                   "count": 42,
                   "note": "42 registered in Texas (14 Austin, 6 Houston, 3 Dallas); ~20 active unsupervised"
+                },
+                {
+                  "date": "2026-06-10",
+                  "count": 59,
+                  "note": "Bloomberg investigation: 59 total vehicles across all cities (Austin, Dallas, Houston, Bay Area). Active unsupervised fleet ~20 vehicles. H1 2026 target abandoned."
+                },
+                {
+                  "date": "2026-06-15",
+                  "count": 59,
+                  "note": "Fleet remains at 59 total vehicles; no growth from June 10. Waiting for FSD v15 rewrite before scaling."
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -2090,6 +2267,11 @@
                   "status": "active",
                   "date": "2026-05-20",
                   "note": "Second EU country approved via mutual recognition"
+                },
+                {
+                  "name": "Denmark",
+                  "status": "active",
+                  "date": "2026-06-09"
                 }
               ]
             }
@@ -2097,8 +2279,8 @@
           "categories": {
             "aiChip": {
               "title": "AI Chip Production (Samsung/TSMC)",
-              "latestUpdate": "2026-06-07",
-              "criticalNews": "AI5 tape-out complete, dual-foundry strategy confirmed (Samsung Texas + TSMC Arizona)",
+              "latestUpdate": "2026-06-19",
+              "criticalNews": "AI5 chip taped out April 15, 2026 — nearly 2 years behind original schedule. Engineering samples expected late 2026, mass production mid-to-late 2027. First deployment in Optimus robots, not vehicles. Cybercab launching Q2 2026 still runs on older AI4.5 hardware.",
               "keyPoints": [
                 "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 originally TSMC Arizona",
                 "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
@@ -2166,8 +2348,8 @@
             },
             "cybercab": {
               "title": "Cybercab Production",
-              "latestUpdate": "2026-06-07",
-              "criticalNews": "Fleet stalls at 42 registered vehicles in Texas with ~20 active unsupervised, 3 weeks from H1 deadline",
+              "latestUpdate": "2026-06-19",
+              "criticalNews": "102 Cybercabs spotted at Giga Texas on June 15, up 70% from ~60 in late May. Production ramping steadily but remains below \"hundreds per week\" target stated for April. Bloomberg investigation revealed robotaxi fleet limited to 59 total vehicles, H1 2026 target of 1000+ abandoned.",
               "keyPoints": [
                 "70+ Cybercabs spotted at Giga Texas on May 13, 2026 (up from 60 on May 8)",
                 "Unsupervised fleet reached 39 vehicles by mid-May (27 Austin, 6 Houston, 5 Dallas)",
@@ -2272,13 +2454,23 @@
                 {
                   "date": "2026-05-13",
                   "event": "70+ Cybercabs at Giga Texas, 39 unsupervised operational"
+                },
+                {
+                  "date": "2026-06-10",
+                  "event": "Bloomberg investigation: Robotaxi fleet totals just 59 vehicles",
+                  "details": "Total fleet of 59 vehicles across Austin, Dallas, Houston. Active unsupervised fleet ~20 vehicles. H1 2026 target of 1000+ vehicles abandoned. Waiting for FSD v15 rewrite before scaling."
+                },
+                {
+                  "date": "2026-06-15",
+                  "event": "102 Cybercabs spotted at Giga Texas outbound lot",
+                  "details": "70% increase from ~60 units in late May. Production ramping steadily but below \"hundreds per week\" target. Exponential scaling expected by year-end toward 2M/year capacity."
                 }
               ]
             },
             "fsd": {
               "title": "FSD Country Approvals",
-              "latestUpdate": "2026-06-07",
-              "criticalNews": "Belgium testing complete, EU-wide approval vote expected late June",
+              "latestUpdate": "2026-06-19",
+              "criticalNews": "Belgium became 5th EU country to approve FSD Supervised on June 10, completing fastest back-to-back expansion (Denmark June 9, Belgium June 10). However, Reuters investigation June 15 revealed Tesla presented misleading safety statistics to Dutch and Swedish regulators, with 10 of 11 experts calling methodology \"misleading marketing.\" China approval pushed to Q3 2026.",
               "keyPoints": [
                 "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
                 "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
@@ -2308,7 +2500,8 @@
                 "United States",
                 "China",
                 "Netherlands",
-                "Belgium (testing phase)"
+                "Belgium",
+                "Denmark"
               ],
               "pendingCountries": [
                 "Belgium (Full approval after pilot)",
@@ -2368,6 +2561,21 @@
                 {
                   "date": "2026-05-20",
                   "event": "Lithuania approves FSD Supervised via mutual recognition"
+                },
+                {
+                  "date": "2026-06-09",
+                  "event": "Denmark approves FSD Supervised",
+                  "details": "Fourth European country to approve. Danish Road Traffic Authority conducted independent review, concluded system will contribute positively to road safety. Software rollout began June 11."
+                },
+                {
+                  "date": "2026-06-10",
+                  "event": "Belgium approves FSD Supervised",
+                  "details": "Fifth European country to approve, just 1 day after Denmark. Fastest back-to-back FSD expansion in Europe. Completed 5,000 km supervised testing on Flemish public roads."
+                },
+                {
+                  "date": "2026-06-15",
+                  "event": "Reuters investigation reveals misleading FSD safety data presented to EU regulators",
+                  "details": "Tesla presented inflated safety statistics to Dutch and Swedish regulators. 10 of 11 independent traffic-safety researchers called methodology \"misleading marketing.\" Dutch RDW responded it does not rely on marketing claims."
                 }
               ]
             },
@@ -2400,8 +2608,8 @@
             },
             "optimus": {
               "title": "Optimus Production",
-              "latestUpdate": "2026-06-07",
-              "criticalNews": "100+ job openings posted, Gen 3 mass production ongoing, V3 on track for Summer 2026",
+              "latestUpdate": "2026-06-19",
+              "criticalNews": "Optimus Gen 3 production to begin at Fremont in late July/August 2026 following Model S/X line conversion completed May 9. Initial ramp will be \"agonizingly slow\" per Musk. 2026 production target: 50-100K units. Giga Texas second factory under construction, production start summer 2027. Consumer sales targeted end of 2027.",
               "keyPoints": [
                 "North Campus Optimus factory foundation actively progressing as of May 13, 2026 drone footage",
                 "Geopier foundation equipment observed on site for 5.2M sq ft facility",
@@ -2509,6 +2717,11 @@
                 {
                   "date": "2026-05-13",
                   "event": "Giga Texas North Campus foundation work visible progress (drone footage)"
+                },
+                {
+                  "date": "2026-05-09",
+                  "event": "Last Model S and Model X produced at Fremont",
+                  "details": "Model S 14-year run complete, Model X 11-year run complete. Production line to be converted for Optimus Gen 3 production starting late July/August 2026."
                 }
               ],
               "pricing": {
@@ -2519,8 +2732,8 @@
             },
             "productionDelivery": {
               "title": "Vehicle Production & Delivery",
-              "latestUpdate": "2026-06-07",
-              "criticalNews": "Q1 2026 deliveries declined 12.3% YoY to 358,023 vehicles",
+              "latestUpdate": "2026-06-19",
+              "criticalNews": "Q2 2026 production/delivery report not yet published on ir.tesla.com. Typical release date: early July (first week). Most recent data is Q1 2026: 408,386 vehicles produced, 358,023 delivered, representing 12% YoY decline from Q1 2025.",
               "totalProduction": "9308122",
               "totalDeliveries": "9183948",
               "quarterlyData": [
