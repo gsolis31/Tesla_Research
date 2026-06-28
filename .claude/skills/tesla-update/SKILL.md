@@ -56,7 +56,7 @@ These markers ensure the update script can reliably find and replace the data ob
 
 ## Categories to Track
 
-### News Categories (1-5)
+### News Categories (1-8)
 
 ### 1. AI Chip Production (AI5/AI6 at Samsung/TSMC)
 **Search for**:
@@ -113,6 +113,78 @@ These markers ensure the update script can reliably find and replace the data ob
 - Exact delivery number for the quarter
 - Quarter designation (e.g., Q1-26, Q2-26)
 
+### 7. Terafab In-House Chip Manufacturing
+**Search for**:
+- Construction progress at Giga Texas North Campus
+- Partnership updates (Intel collaboration)
+- AI5 chip production milestones (small-batch 2026, volume 2027)
+- Facility buildout timeline and investment updates
+- Strategic implications for vertical integration
+
+### 8. 4680 Battery Cell Production
+**Search for**:
+- Production capacity updates (GWh/year)
+- Yield rate improvements
+- Cost per kWh milestones
+- Dry coating technology progress
+- Facility expansion (Giga Texas, Giga Nevada)
+- Integration into vehicle models (Model Y, Cybertruck)
+
+### 9. FSD v15 Software Rewrite (Critical Milestone)
+**Search for**:
+- Release timeline updates (target Q4 2026/Q1 2027)
+- Development progress and testing updates
+- Parameter count and architecture details
+- Hardware compatibility confirmations
+- Impact on robotaxi scaling timeline
+- Beta testing program expansion
+
+---
+
+## Policy: Avoiding Repetitive Headlines
+
+**CRITICAL RULE**: Only create keyChanges for actual news, not for "no change" situations.
+
+### When TO Create a keyChange:
+✅ New developments (approvals, deployments, announcements)
+✅ Significant changes (fleet growth >20%, timeline shifts >1 month)
+✅ Major milestones (production starts, facility openings, partnerships)
+✅ Strategic pivots (cancellations, new directions, major partnerships)
+✅ First-time revelations (investigations, leaked data, official statements)
+
+### When NOT TO Create a keyChange:
+❌ Metrics that haven't changed since last update
+❌ "Still waiting" or "remains unchanged" situations
+❌ Minor continuations of previous trends
+❌ Repeating information from previous weeks
+
+### Examples:
+
+**Good:**
+- Week 1: "Bloomberg reveals robotaxi fleet at 59 vehicles, H1 target abandoned" ✅ (major revelation)
+- Week 2: (No keyChange about fleet) ✅ (no new news, just update metric silently)
+- Week 3: "Fleet expands to 120 vehicles with FSD v14.5 deployment" ✅ (significant change)
+
+**Bad:**
+- Week 1: "Robotaxi fleet at 59 vehicles" ✅
+- Week 2: "Robotaxi fleet frozen at 59 vehicles for 7 days" ❌ (repetitive)
+- Week 3: "Robotaxi fleet still at 59 vehicles for 14 days" ❌ (repetitive)
+
+### How to Handle Ongoing Situations:
+
+**For stagnant metrics:**
+- Update the metric data point in `metrics.robotaxiFleet.data[]`
+- Mention briefly in trends if contextually relevant
+- Do NOT create a keyChange unless there's new context (statement from Musk, regulatory issue, etc.)
+
+**For slow-moving progress:**
+- Only report when there's a meaningful increment (>20% change, major milestone)
+- Consolidate minor updates into quarterly summaries
+
+**For "waiting on X" situations:**
+- Report once when the dependency is identified
+- Don't repeat weekly until the situation resolves
+
 ---
 
 ## Preferred News Sources
@@ -138,7 +210,7 @@ Search using these source domains for best results:
 ```
 
 ### Step 2: Research Updates
-For each of the 5 categories, use WebSearch to find news from the date range:
+For each of the 9 categories, use WebSearch to find news from the date range:
 ```
 - Search query format: "Tesla [category] [keywords] 2026 [months]"
 - Review top 5-10 results per category

@@ -777,36 +777,6 @@
                   "source": "https://www.basenor.com/blogs/news/tesla-fsd-free-trial-launches-in-belgium-what-owners-need-to-know"
                 },
                 {
-                  "status": "negative",
-                  "sentiment": {
-                    "headline": "neutral",
-                    "reality": "negative",
-                    "confidence": "high",
-                    "rationale": "Robotaxi fleet remains frozen at 59 total vehicles for 16 consecutive days (June 10-26) with no new deployments, no city expansions, and only ~20 active unsupervised vehicles. Tesla waiting for FSD v15 rewrite before scaling."
-                  },
-                  "evidence": {
-                    "positive_signals": [
-                      "102 Cybercabs staged at Giga Texas as of June 15 (inventory available for deployment)"
-                    ],
-                    "negative_signals": [
-                      "Fleet stuck at 59 total vehicles since June 10 (16 days no growth)",
-                      "Active unsupervised fleet remains at ~20 vehicles",
-                      "No expansion beyond 3 Texas cities (Austin, Dallas, Houston)",
-                      "Phoenix, Miami, Orlando, Tampa, Las Vegas deployments never launched",
-                      "H1 2026 target (1000+ vehicles across 7 cities) officially abandoned"
-                    ]
-                  },
-                  "key_metrics": {
-                    "actual": "59 total vehicles, ~20 active unsupervised",
-                    "target": "1000+ unsupervised across 7 cities by June 30, 2026",
-                    "trajectory": "0% growth for 16 days — scaling blocked until FSD v15"
-                  },
-                  "category": "Robotaxi",
-                  "title": "Robotaxi fleet frozen at 59 vehicles for 16 days, no new deployments",
-                  "description": "Tesla's robotaxi fleet remains unchanged at 59 total vehicles across 3 Texas cities (Austin, Dallas, Houston) from June 10-26, with no growth for 16 consecutive days. Active unsupervised fleet stuck at ~20 vehicles. Deployments to Phoenix, Miami, Orlando, Tampa, and Las Vegas never launched. Despite 102 Cybercabs staged at Giga Texas, Tesla is waiting for FSD v15 software rewrite before scaling fleet. H1 2026 target of 1000+ vehicles officially abandoned.",
-                  "source": "https://www.basenor.com/blogs/news/teslas-unsupervised-robotaxi-fleet-is-shrinking-what-the-numbers-show"
-                },
-                {
                   "status": "neutral",
                   "sentiment": {
                     "headline": "neutral",
@@ -867,10 +837,10 @@
               ],
               "trends": [
                 "FSD subscription momentum in Europe: Belgium and Denmark live at €100/month within days of approval",
-                "Robotaxi fleet frozen at 59 vehicles for 16 consecutive days (June 10-26) — no growth, no city expansion",
-                "Cybercab production inventory building (102 units staged) but deployment blocked by FSD v15 wait",
+                "Terafab construction underway at Giga Texas - $3B pilot facility targeting AI5 production 2026-2027",
+                "FSD v15 rewrite targeted for Q4 2026/Q1 2027 - critical dependency blocking robotaxi scaling",
                 "Optimus production timeline on track for Summer 2026 Fremont start, hiring stable at 100+ roles",
-                "AI chip production: AI6 remains delayed 6 months to Q4 2027, Samsung 2nm yields at 60%"
+                "4680 battery production achieving >90% yield at 15-20 GWh/year capacity, lowest cost per kWh"
               ]
             },
             {
@@ -2407,6 +2377,57 @@
                   "date": "2026-06-09"
                 }
               ]
+            },
+            "terafabMilestones": {
+              "title": "Terafab Construction Milestones",
+              "data": [
+                {
+                  "date": "2026-03-21",
+                  "milestone": "Project announced by Elon Musk",
+                  "status": "completed"
+                },
+                {
+                  "date": "2026-04-07",
+                  "milestone": "Intel partnership confirmed",
+                  "status": "completed"
+                },
+                {
+                  "date": "2026-04-22",
+                  "milestone": "Groundbreaking at Giga Texas",
+                  "status": "completed"
+                },
+                {
+                  "date": "2026-12-31",
+                  "milestone": "AI5 small-batch production (target)",
+                  "status": "pending"
+                },
+                {
+                  "date": "2027-12-31",
+                  "milestone": "AI5 volume production (target)",
+                  "status": "pending"
+                }
+              ]
+            },
+            "battery4680Production": {
+              "title": "4680 Battery Production Capacity",
+              "data": [
+                {
+                  "date": "2024-06-01",
+                  "capacityGWh": 5,
+                  "note": "Early production, cost/performance concerns"
+                },
+                {
+                  "date": "2025-12-01",
+                  "capacityGWh": 10,
+                  "note": "Yield breakthrough >90% with dry coating"
+                },
+                {
+                  "date": "2026-06-01",
+                  "capacityGWh": 17.5,
+                  "note": "15-20 GWh/year, lowest cost per kWh achieved"
+                }
+              ],
+              "target": "Expand to 100+ GWh/year across Giga Texas and Nevada"
             }
           },
           "categories": {
@@ -2482,7 +2503,7 @@
             "cybercab": {
               "title": "Cybercab Production",
               "latestUpdate": "2026-06-26",
-              "criticalNews": "Production inventory at 102 units (June 15), but robotaxi fleet frozen at 59 total vehicles with no growth since June 10. Tesla waiting for FSD v15 rewrite before scaling deployment.",
+              "criticalNews": "Production inventory at 102 units (June 15). Robotaxi fleet at 59 vehicles - scaling blocked pending FSD v15 release (Q4 2026/Q1 2027).",
               "keyPoints": [
                 "70+ Cybercabs spotted at Giga Texas on May 13, 2026 (up from 60 on May 8)",
                 "Unsupervised fleet reached 39 vehicles by mid-May (27 Austin, 6 Houston, 5 Dallas)",
@@ -2608,7 +2629,7 @@
             "fsd": {
               "title": "FSD Country Approvals",
               "latestUpdate": "2026-06-26",
-              "criticalNews": "Belgium & Denmark FSD subscriptions launched at ~€100/month within days of regulatory approval (June 9-10)",
+              "criticalNews": "Belgium & Denmark subscriptions live at €100/month. FSD v15 architectural rewrite targeted Q4 2026/Q1 2027 - blocking robotaxi scaling.",
               "keyPoints": [
                 "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
                 "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
@@ -2673,6 +2694,11 @@
                   "event": "Subscriptions launched at €99/month"
                 },
                 {
+                  "date": "2026-04-23",
+                  "event": "Musk confirms FSD v15 release target Q4 2026/Q1 2027, runs on HW4",
+                  "status": "neutral"
+                },
+                {
                   "date": "2026-05-05",
                   "event": "RDW presents FSD approval to EU TCMV - extended session, informational briefing"
                 },
@@ -2730,7 +2756,26 @@
                   "date": "2026-Summer",
                   "event": "EU-wide rollout expected via mutual recognition"
                 }
-              ]
+              ],
+              "fsdV15Milestone": {
+                "targetRelease": "Q4 2026 / Q1 2027",
+                "status": "In development",
+                "significance": "Total architectural rewrite with 10x parameter upgrade",
+                "blockingRobotaxiScale": true,
+                "hwCompatibility": "HW4 (no upgrade required)",
+                "keyImprovements": [
+                  "Complete neural network architecture overhaul",
+                  "10x parameter increase (originally planned for v14, pushed to v15)",
+                  "Orders of magnitude safety improvement target",
+                  "Foundation for unsupervised FSD and robotaxi scaling",
+                  "Compatible with existing HW4 - no hardware upgrade needed"
+                ],
+                "dependencies": [
+                  "Robotaxi fleet scaling blocked until v15 release",
+                  "Unsupervised FSD expansion waiting on v15",
+                  "Critical path item for H2 2026 / H1 2027 robotaxi goals"
+                ]
+              }
             },
             "jobPostings": {
               "title": "Job Postings",
@@ -3158,6 +3203,91 @@
                   "yoyGrowth": -8.56
                 }
               ]
+            },
+            "terafab": {
+              "title": "Terafab In-House Chip Manufacturing",
+              "latestUpdate": "2026-06-26",
+              "criticalNews": "Construction began April 22, 2026 at Giga Texas. $3B research fab targeting AI5 small-batch production 2026, volume 2027. Intel partnership confirmed.",
+              "keyPoints": [
+                "Groundbreaking April 22, 2026 at Giga Texas North Campus",
+                "Announced by Elon Musk March 21, 2026",
+                "$3B pilot research fab, potential $55-119B full buildout",
+                "Intel joined project April 7, 2026 for manufacturing expertise",
+                "Target: AI5 chip small-batch production 2026, volume 2027",
+                "Vertically integrated facility - all chip manufacturing stages in one location",
+                "Strategic goal: Reduce dependence on Samsung/TSMC external fabs",
+                "Designed for rapid iteration on custom AI chips",
+                "Part of broader 1+ terawatt AI compute capacity goal"
+              ],
+              "timeline": [
+                {
+                  "date": "2026-03-21",
+                  "event": "Elon Musk announces Terafab project",
+                  "status": "positive"
+                },
+                {
+                  "date": "2026-04-07",
+                  "event": "Intel joins Terafab project, contributing manufacturing expertise",
+                  "status": "positive"
+                },
+                {
+                  "date": "2026-04-22",
+                  "event": "Groundbreaking at Giga Texas North Campus, construction begins",
+                  "status": "positive"
+                }
+              ],
+              "risks": [
+                "Complex semiconductor manufacturing requires deep expertise",
+                "Capital intensive - $3B pilot, potentially $55-119B full scale",
+                "Timeline risk - semiconductor fabs often face construction delays",
+                "Competing with established players (TSMC, Samsung, Intel) on manufacturing quality"
+              ]
+            },
+            "battery4680": {
+              "title": "4680 Battery Cell Production",
+              "latestUpdate": "2026-06-26",
+              "criticalNews": "Production at 15-20 GWh/year from Giga Texas with >90% yield. Lowest cost per kWh achieved. Re-integrated into 2026 Model Y refresh.",
+              "keyPoints": [
+                "Annual capacity: 15-20 GWh/year from Giga Texas alone",
+                "Yield rate: >90% stable yield for anode and cathode",
+                "Cost position: Lowest cost battery cell per kWh in Tesla portfolio",
+                "Dry coating: Full dry-coating lines online at Giga Texas and Giga Nevada 2026",
+                "Floor space efficiency: Reclaimed 50% of space vs wet coating process",
+                "Production rate: >1 million cells per week",
+                "Model Y 2026 'Juniper' refresh uses 4680 cells",
+                "Expansion: Additional lines planned for Giga Nevada"
+              ],
+              "timeline": [
+                {
+                  "date": "2024-06-01",
+                  "event": "Tesla considers halting 4680 production due to cost/performance issues",
+                  "status": "negative"
+                },
+                {
+                  "date": "2025-12-01",
+                  "event": "Breakthrough: >90% yield achieved with dry coating process",
+                  "status": "positive"
+                },
+                {
+                  "date": "2026-01-28",
+                  "event": "4680 cells re-integrated into Model Y production",
+                  "status": "positive"
+                },
+                {
+                  "date": "2026-06-01",
+                  "event": "Production reaches 15-20 GWh/year, lowest cost per kWh confirmed",
+                  "status": "positive"
+                }
+              ],
+              "metrics": {
+                "annualCapacity": "15-20 GWh/year",
+                "weeklyProduction": ">1M cells",
+                "yieldRate": ">90%",
+                "facilities": [
+                  "Giga Texas",
+                  "Giga Nevada (expansion)"
+                ]
+              }
             }
           }
         };
