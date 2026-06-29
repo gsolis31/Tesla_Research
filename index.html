@@ -743,8 +743,114 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-06-28",
+          "lastUpdated": "2026-06-29",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-06-29",
+              "keyChanges": [
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "150+ Cybercabs now staged in Giga Texas outbound lot as of June 24, up from 85 on June 19 and 70+ in mid-May, confirming accelerating production cadence even as deployed fleet remains frozen at ~59 vehicles."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "150+ Cybercabs in Giga Texas outbound lot as of June 24 drone footage",
+                      "Up from 102 on June 14, 85 on June 19 — fastest week-over-week ramp yet",
+                      "North Campus steel and floor decking work underway (Terafab site prep)",
+                      "Affordable $59,990 Cybertruck AWD also entering production at same facility"
+                    ],
+                    "negative_signals": [
+                      "Deployed fleet still frozen at ~59 total vehicles / ~20 unsupervised",
+                      "Production massively outpacing deployment — vehicles accumulating in lot",
+                      "Scaling blocked on FSD v15 (Q4 2026/Q1 2027)"
+                    ],
+                    "key_metrics": {
+                      "actual": "150+ Cybercabs staged at Giga Texas",
+                      "target": "1,000+ deployed across 7 cities",
+                      "trajectory": "Production accelerating; deployment bottlenecked by software"
+                    }
+                  },
+                  "category": "Cybercab Production",
+                  "title": "150+ Cybercabs staged at Giga Texas, production ramp accelerating",
+                  "description": "Drone footage from June 24 shows 150+ Cybercabs staged in the Giga Texas outbound lot — up from 85 on June 19 and 70+ in mid-May — confirming the fastest week-over-week production ramp yet. Despite accelerating manufacturing, the deployed robotaxi fleet remains frozen at ~59 total vehicles (~20 unsupervised) as Tesla holds back deployment pending FSD v15 software rewrite. North Campus steel and floor decking work also visible in footage, indicating early Terafab facility construction progress.",
+                  "source": "https://www.evsoup.com/150-cybercabs-n-campus-steel-floor-decking-e-clearing-24-june-2026-giga-texas-update-815am/"
+                },
+                {
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Tesla simultaneously seeks 5,000-vehicle Las Vegas permit and faces NHTSA engineering analysis on 3.2M vehicles for camera visibility failures — the step immediately before a mandatory recall. The same camera-only FSD system that Nevada would certify as 'fully autonomous' is under federal scrutiny for failing in sun glare and dust, conditions endemic to Las Vegas."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Nevada permit application covers Las Vegas, Harry Reid Airport, Henderson Executive Airport",
+                      "5,000-vehicle authorization would represent 85x current deployed fleet",
+                      "Protest deadline July 5 — regulatory path still open"
+                    ],
+                    "negative_signals": [
+                      "NHTSA Engineering Analysis EA26002 covers 3,203,754 vehicles (step before recall)",
+                      "9 crashes reviewed: FSD failed to detect degraded vision state or alert driver in time",
+                      "Camera-only system being certified 'autonomous' while under active recall probe",
+                      "June 22 fatal crash in Katy, TX renewed federal scrutiny",
+                      "Las Vegas conditions (sun glare, dust) match exact failure modes under investigation"
+                    ],
+                    "key_metrics": {
+                      "actual": "5,000 vehicles requested; 3.2M vehicles under EA probe",
+                      "target": "Nevada permit approval by July 2026",
+                      "trajectory": "Regulatory risk elevated — recall could block Las Vegas expansion"
+                    }
+                  },
+                  "category": "Cybercab Production",
+                  "title": "Tesla seeks 5,000 Las Vegas robotaxi slots as NHTSA probes camera system on 3.2M vehicles",
+                  "description": "Tesla filed Docket 26-05015 with the Nevada Transportation Authority on June 5, seeking authorization for up to 5,000 autonomous vehicles across Las Vegas, Harry Reid International Airport, and Henderson Executive Airport within 12 months of approval. The application faces conflict: NHTSA's Engineering Analysis EA26002 (opened March 2026) covers 3,203,754 vehicles for failures in FSD's camera degradation detection — the same camera-only system Nevada would certify. In 9 reviewed crashes, FSD failed to detect impaired vision or warn drivers in time. A June 22 fatal crash in Katy, TX renewed scrutiny. NHTSA's next step is either an influence letter (requesting voluntary recall) or mandatory recall. Protest deadline for Nevada filing: July 5, 2026.",
+                  "source": "https://www.techtimes.com/articles/318498/20260616/tesla-seeks-5000-las-vegas-robotaxi-slots-camera-tech-under-federal-probe.htm"
+                },
+                {
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "The June 30 EU Technical Committee on Motor Vehicles meeting is confirmed as discussion-only — no vote on FSD mutual recognition. This delays the EU-wide unlock that was widely expected in late June, pushing the next possible vote window to July or later."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Belgium and Denmark subscriptions live (~€100/month)",
+                      "5 EU countries now approved: Netherlands, Lithuania, Estonia, Denmark, Belgium",
+                      "Discussion-only agenda means vote will come — question is timing"
+                    ],
+                    "negative_signals": [
+                      "June 30 TCMV meeting: FSD discussion on agenda but no vote scheduled",
+                      "EU-wide mutual recognition unlock further delayed past late June window",
+                      "Germany, France, Spain, Italy preferring coordinated EU decision over national approval",
+                      "22 EU countries still pending FSD access"
+                    ],
+                    "key_metrics": {
+                      "actual": "5 of 27 EU countries approved",
+                      "target": "EU-wide rollout via TCMV mutual recognition vote",
+                      "trajectory": "Vote postponed; next window July 2026 TCMV session at earliest"
+                    }
+                  },
+                  "category": "FSD Country Approvals",
+                  "title": "EU TCMV June 30 meeting: FSD discussed but no vote — EU-wide unlock delayed",
+                  "description": "The EU Technical Committee on Motor Vehicles (TCMV) June 30 meeting has confirmed FSD mutual recognition on the discussion agenda, but no vote is scheduled. This delays the expected EU-wide unlock past the late June window that had been widely anticipated. With 5 of 27 EU countries now approved (Netherlands, Lithuania, Estonia, Denmark, Belgium), the remaining 22 — including France, Germany, Spain, and Italy — are waiting for TCMV coordinated action. The committee will continue reviewing the Netherlands' technical report; the next possible vote window is the July 2026 TCMV session.",
+                  "source": "https://fsdtracker.eu/"
+                }
+              ],
+              "trends": [
+                "Cybercab production ramp accelerating (150+ at Giga Texas) but deployment frozen at ~59 vehicles pending FSD v15",
+                "NHTSA recall risk elevated: Engineering Analysis on 3.2M vehicles for camera visibility failures conflicts with Las Vegas expansion bid",
+                "EU-wide FSD vote delayed past June 30 — 22 of 27 EU countries still waiting",
+                "Q2 2026 delivery report imminent (~July 2) — consensus 406,024 sets low bar vs Q2 2025's 410,831",
+                "Optimus Gen 3 full-body reveal expected end of July/August 2026"
+              ]
+            },
             {
               "weekOf": "2026-06-28",
               "keyChanges": [
@@ -2422,6 +2528,11 @@
                   "date": "2026-06-28",
                   "count": 59,
                   "note": "Fleet unchanged 18+ days. Austin: 18 unsupervised, 24 rider vehicles, 42 Cybercabs in test fleet (robotaxitracker.com). Waiting for FSD v15."
+                },
+                {
+                  "date": "2026-06-29",
+                  "count": 59,
+                  "note": "Fleet unchanged 19+ days. 150+ Cybercabs staged at Giga Texas outbound lot — production accelerating but deployment frozen on FSD v15. Nevada permit (5,000 vehicles) filed; protest deadline July 5."
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
