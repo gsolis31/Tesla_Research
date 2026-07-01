@@ -743,8 +743,51 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-06-29",
+          "lastUpdated": "2026-06-30",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-06-30",
+              "keyChanges": [
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Tesla has begun on-road testing of production-intent Cybercabs without any steering wheel or pedals in Austin. This is a concrete hardware milestone for the purpose-built robotaxi, following closely after NHTSA's brake pedal rule update."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Production version Cybercab (2 seats, no wheel/pedals) now in active testing in Austin",
+                      "Testing conducted with safety monitor present (per Tesla X video)",
+                      "Follows NHTSA proposal removing brake pedal mandate for ADS-only vehicles (June 25)",
+                      "Prior prototype testing used wheel/pedals; now moving to final config"
+                    ],
+                    "negative_signals": [
+                      "Safety monitor still required in passenger seat for current tests",
+                      "Fleet operational scale unchanged (still ~19 unsupervised + 28 rider in Austin)",
+                      "Broader unsupervised scaling blocked until FSD v15 rewrite (Q4 2026/Q1 2027 target)"
+                    ],
+                    "key_metrics": {
+                      "actual": "Production Cybercab no-controls testing initiated",
+                      "target": "Unsupervised operation at scale with purpose-built vehicle",
+                      "trajectory": "Hardware validation progressing; software dependency remains primary blocker"
+                    }
+                  },
+                  "category": "Cybercab Production",
+                  "title": "Tesla begins testing production Cybercab (no wheel or pedals) in Austin",
+                  "description": "On June 30, Tesla started testing a production-version Cybercab featuring two seats and no steering wheel or pedals on roads in Austin, Texas. The test vehicle is currently operating with a safety monitor in the passenger seat, according to a video posted by Tesla. This marks the transition from prototype testing (which used temporary wheel/pedals) to validating the final control-free design. It follows last week's NHTSA update proposing removal of brake pedal requirements for ADS-only vehicles. While a major step for hardware readiness, the company continues to wait on the FSD v15 software rewrite for meaningful fleet scaling.",
+                  "source": "https://techcrunch.com/2026/06/30/tesla-starts-testing-cybercab-without-pedals-or-a-steering-wheel-in-austin/"
+                }
+              ],
+              "trends": [
+                "Production Cybercab without controls enters on-road testing in Austin - key hardware validation step",
+                "Robotaxi operational fleet remains small: ~19 unsupervised, 28 rider vehicles in Austin (no new city launches)",
+                "Q2 2026 official production & delivery report still pending (expected ~July 2); consensus 406k",
+                "FSD v15 rewrite remains critical gating item for robotaxi expansion (target Q4 2026/Q1 2027)",
+                "No significant updates in Optimus, AI chips, 4680, or Terafab in the past 48 hours"
+              ]
+            },
             {
               "weekOf": "2026-06-29",
               "keyChanges": [
@@ -2533,6 +2576,11 @@
                   "date": "2026-06-29",
                   "count": 59,
                   "note": "Fleet unchanged 19+ days. 150+ Cybercabs staged at Giga Texas outbound lot — production accelerating but deployment frozen on FSD v15. Nevada permit (5,000 vehicles) filed; protest deadline July 5."
+                },
+                {
+                  "date": "2026-06-30",
+                  "count": 59,
+                  "note": "Fleet stable at prior levels. Production Cybercab (no steering wheel/pedals) testing begins in Austin (safety monitor present). Austin: ~19 unsupervised, ~28 rider vehicles, 42 Cybercabs test fleet (robotaxitracker.com). Waiting for FSD v15."
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -2722,9 +2770,10 @@
             },
             "cybercab": {
               "title": "Cybercab Production",
-              "latestUpdate": "2026-06-28",
-              "criticalNews": "NHTSA removed brake pedal mandate for ADS-only vehicles (June 25), clearing major regulatory path for control-free Cybercab. Fleet still frozen at ~59 vehicles pending FSD v15.",
+              "latestUpdate": "2026-06-30",
+              "criticalNews": "Production Cybercab (no steering wheel or pedals) begins on-road testing in Austin (June 30, safety monitor present). Fleet stable ~59 total vehicles pending FSD v15 rewrite.",
               "keyPoints": [
+                "Production Cybercab without steering wheel or pedals enters public-road testing in Austin with safety monitor (June 30, 2026)",
                 "NHTSA updated FMVSS 135 to remove brake pedal requirement for fully autonomous vehicles (June 25, 2026)",
                 "USPTO published Cybercab wheel design patent US-D1130251-S - unique FWD staggered wheel layout (June 27)",
                 "42 Cybercabs in Austin test fleet per robotaxitracker.com (June 28)",
@@ -2855,6 +2904,10 @@
                 {
                   "date": "2026-06-27",
                   "event": "USPTO publishes Cybercab wheel design patent US-D1130251-S"
+                },
+                {
+                  "date": "2026-06-30",
+                  "event": "Production Cybercab (no wheel/pedals) begins on-road testing in Austin with safety monitor present"
                 }
               ]
             },
@@ -3162,7 +3215,7 @@
             },
             "productionDelivery": {
               "title": "Vehicle Production & Delivery",
-              "latestUpdate": "2026-06-28",
+              "latestUpdate": "2026-06-30",
               "criticalNews": "Q2 2026 analyst delivery consensus: 406,024 vehicles (22 analysts). Official Q2 production/delivery report expected ~July 2. Full-year 2026 consensus trimmed to 1,654,808 (~1% YoY growth). Giga Berlin ramping to 7,500 vehicles/week by October.",
               "totalProduction": "9308122",
               "totalDeliveries": "9183948",
