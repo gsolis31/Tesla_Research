@@ -722,6 +722,11 @@
             </div>
         </div>
 
+        <div class="chart-card" style="margin: 20px auto; max-width: 1200px;">
+            <h3>Robotaxi Service by City</h3>
+            <div id="robotaxiCitiesTable"></div>
+        </div>
+
         <div class="tabs">
             <div class="tab active" onclick="showTab('aiChip')">AI Chip Production</div>
             <div class="tab" onclick="showTab('cybercab')">Cybercab</div>
@@ -743,8 +748,114 @@
         // Embedded data - updated automatically from tesla-tracking-data.json
         <!-- DATA_OBJECT_START -->
         const data = {
-          "lastUpdated": "2026-06-30",
+          "lastUpdated": "2026-07-03",
           "weeklySummaries": [
+            {
+              "weekOf": "2026-07-03",
+              "keyChanges": [
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "positive",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Q2 2026 deliveries of 480,126 vehicles significantly exceeded analyst consensus of 406,024 (+18.2%), marking Tesla's strongest quarterly beat in over a year and alleviating concerns about demand weakness."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Deliveries beat consensus by 74,102 vehicles (+18.2%)",
+                      "Production at 451,758 units demonstrates strong manufacturing execution",
+                      "Energy storage deployment reached 13.5 GWh, highest quarterly figure to date",
+                      "Model 3/Y deliveries at 467,762 show robust demand for core products"
+                    ],
+                    "negative_signals": [
+                      "Deliveries exceeded production by 28,368 units, drawing down inventory",
+                      "Full-year 2026 consensus remains modest at ~1,654,808 (~1% YoY growth)",
+                      "Other Models (S/X/Cybertruck) deliveries at 12,364 remain relatively flat"
+                    ],
+                    "key_metrics": {
+                      "actual": "480,126 deliveries",
+                      "target": "406,024 analyst consensus",
+                      "trajectory": "118.2% of expectations"
+                    }
+                  },
+                  "category": "Vehicle Production & Delivery",
+                  "title": "Q2 2026 deliveries beat consensus by 18%, reach 480,126 vehicles",
+                  "description": "Tesla reported Q2 2026 production of 451,758 vehicles and deliveries of 480,126 vehicles, significantly exceeding the 22-analyst consensus of 406,024 deliveries by 18.2%. Model 3/Y accounted for 467,762 deliveries, while Other Models (S/X/Cybertruck) contributed 12,364 units. Energy storage deployments reached a record 13.5 GWh. The strong performance alleviates demand concerns and demonstrates Tesla's ability to execute despite cautious full-year guidance of ~1% YoY growth.",
+                  "source": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments"
+                },
+                {
+                  "status": "positive",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "positive",
+                    "confidence": "high",
+                    "rationale": "Musk's July 1 confirmation that Optimus production begins in late July/August 2026 at Fremont represents the first concrete production start date after months of speculation, moving the project from development to manufacturing phase."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "First concrete production start date announced (late July/August 2026)",
+                      "Fremont factory production line now operational, replacing Model S/X line",
+                      "Target of 1 million units annually at Fremont demonstrates confidence",
+                      "Giga Texas second-generation facility targeting 10 million units/year by summer 2027",
+                      "100+ job openings posted across US facilities signal serious ramp efforts"
+                    ],
+                    "negative_signals": [
+                      "Musk cautioned initial output will be 'extremely slow' due to 10,000 unique parts",
+                      "Model S/X production ended after 14 and 11 years respectively to make room",
+                      "No commercial customer announcements or pricing confirmed yet"
+                    ],
+                    "key_metrics": {
+                      "actual": "Production start July/August 2026",
+                      "target": "1 million units/year at Fremont, 10 million at Giga Texas",
+                      "trajectory": "On schedule for manufacturing ramp"
+                    }
+                  },
+                  "category": "Optimus Production",
+                  "title": "Musk confirms Optimus production starts late July 2026 at Fremont",
+                  "description": "On July 1, Elon Musk confirmed that Optimus humanoid robot production will commence in late July or August 2026 at Tesla's Fremont factory, marking the first concrete production timeline. The Fremont facility has replaced Model S and X production lines to accommodate Optimus manufacturing, targeting 1 million units annually. Musk cautioned that initial output will be 'extremely slow' as the production system handles 10,000 unique parts across an entirely new line. Simultaneously, Tesla is constructing a second-generation Optimus facility at Giga Texas targeting 10 million units per year with production starting summer 2027. Over 100 Optimus-related job openings have been posted across US facilities.",
+                  "source": "https://nexusvolt.com/post/tesla-optimus-production-fremont-assembly-confirmed-for-late-july-2026"
+                },
+                {
+                  "status": "negative",
+                  "sentiment": {
+                    "headline": "neutral",
+                    "reality": "negative",
+                    "confidence": "high",
+                    "rationale": "Robotaxi fleet has collapsed from peak of ~59 vehicles in June to just 34 active vehicles in July, while Austin fleet shrunk from ~25 unsupervised vehicles to ~14 active cars. This represents a 42% decline in active fleet during a critical scaling period."
+                  },
+                  "evidence": {
+                    "positive_signals": [
+                      "Miami service area now mapped, indicating geographic expansion intentions",
+                      "Production Cybercabs continue testing in Austin without controls"
+                    ],
+                    "negative_signals": [
+                      "Total active fleet collapsed to 34 vehicles (from ~59 in June)",
+                      "Austin unsupervised fleet down to ~14 active cars (from ~25 peak)",
+                      "Fleet has been in steady decline since December 2025/January 2026 peak",
+                      "Safety validation remains limiting factor for expansion",
+                      "Deployment completely blocked until FSD v15 (Q4 2026/Q1 2027)"
+                    ],
+                    "key_metrics": {
+                      "actual": "34 active robotaxi vehicles",
+                      "target": "1,000+ across 7 cities by H1 2026",
+                      "trajectory": "3.4% of H1 2026 target (missed)"
+                    }
+                  },
+                  "category": "Cybercab Production",
+                  "title": "Robotaxi fleet shrinks to 34 active vehicles, down 42% from June peak",
+                  "description": "Tesla's active robotaxi fleet has collapsed to just 34 vehicles as of early July 2026, down 42% from the ~59 vehicle peak reported in June. The Austin unsupervised fleet specifically declined from ~25 vehicles to approximately 14 active cars. The fleet has been in steady decline since peaking in December 2025/January 2026. According to multiple sources, safety validation remains the primary limiting factor for expansion, with Tesla holding back deployment until the FSD v15 software rewrite arrives in Q4 2026 or Q1 2027. Meanwhile, Tesla mapped a small Miami service area, signaling geographic expansion intentions despite the deployment bottleneck.",
+                  "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/"
+                }
+              ],
+              "trends": [
+                "Q2 2026 deliveries beat analyst consensus by 18%, strongest quarterly performance in over a year",
+                "Optimus production officially starts late July 2026 at Fremont with 1M unit/year target",
+                "Robotaxi fleet in decline: 34 active vehicles (-42% from June), expansion blocked until FSD v15",
+                "FSD v15 rewrite remains on track for Q4 2026/Q1 2027, critical for robotaxi scaling",
+                "Terafab chip factory project advancing with $55-119B investment, Intel 14A process confirmed"
+              ]
+            },
             {
               "weekOf": "2026-06-30",
               "keyChanges": [
@@ -2581,6 +2692,11 @@
                   "date": "2026-06-30",
                   "count": 59,
                   "note": "Fleet stable at prior levels. Production Cybercab (no steering wheel/pedals) testing begins in Austin (safety monitor present). Austin: ~19 unsupervised, ~28 rider vehicles, 42 Cybercabs test fleet (robotaxitracker.com). Waiting for FSD v15."
+                },
+                {
+                  "date": "2026-07-03",
+                  "count": 34,
+                  "note": "Fleet declined 42% from June peak to 34 active vehicles. Austin unsupervised fleet down to ~14 active cars (from ~25 peak). Fleet in steady decline since Dec 2025/Jan 2026. Miami service area mapped. Deployment blocked until FSD v15 (Q4 2026/Q1 2027)."
                 }
               ],
               "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -2594,6 +2710,86 @@
                   "Dallas",
                   "Houston"
                 ]
+              }
+            },
+            "robotaxiCities": {
+              "title": "Robotaxi Service by City",
+              "lastUpdated": "2026-07-03",
+              "cities": [
+                {
+                  "name": "Miami",
+                  "status": "mapped",
+                  "serviceType": "unsupervised",
+                  "vehicleType": "Model Y",
+                  "activeVehicles": 0,
+                  "launchDate": null,
+                  "serviceArea": "West Miami, Doral, Sweetwater (excludes downtown, airport, Miami Beach)",
+                  "notes": "Service area mapped July 2026. No launch date or fleet deployment announced. Originally targeted H1 2026."
+                },
+                {
+                  "name": "Dallas",
+                  "status": "active",
+                  "serviceType": "unsupervised",
+                  "vehicleType": "Model Y",
+                  "activeVehicles": 3,
+                  "launchDate": "2025",
+                  "serviceArea": "Limited coverage",
+                  "notes": "Unsupervised Model Y rides only. Part of initial Texas expansion."
+                },
+                {
+                  "name": "Houston",
+                  "status": "active",
+                  "serviceType": "unsupervised",
+                  "vehicleType": "Model Y",
+                  "activeVehicles": 5,
+                  "launchDate": "2025",
+                  "serviceArea": "Limited coverage",
+                  "notes": "Unsupervised Model Y rides only. Part of initial Texas expansion."
+                },
+                {
+                  "name": "Austin",
+                  "status": "active",
+                  "serviceType": "mixed",
+                  "vehicleType": "Model Y + Cybercab",
+                  "activeVehicles": 47,
+                  "breakdown": {
+                    "unsupervised": 14,
+                    "safetyMonitor": 33,
+                    "cybercabTesting": 42
+                  },
+                  "launchDate": "2025",
+                  "serviceArea": "Broader city coverage",
+                  "notes": "Mix of unsupervised & safety monitor Model Y rides. Production Cybercab testing ongoing (no steering wheel/pedals). Primary testing and deployment hub."
+                },
+                {
+                  "name": "Bay Area",
+                  "status": "active",
+                  "serviceType": "safety-monitor-only",
+                  "vehicleType": "Model Y",
+                  "activeVehicles": 0,
+                  "unsupervisedVehicles": 0,
+                  "launchDate": "2024",
+                  "serviceArea": "San Francisco Bay Area",
+                  "notes": "Safety monitor required for all rides. No unsupervised operation. Originally led deployment but now behind Texas cities."
+                },
+                {
+                  "name": "Phoenix",
+                  "status": "active",
+                  "serviceType": "unsupervised",
+                  "vehicleType": "Model Y",
+                  "activeVehicles": null,
+                  "launchDate": "2025",
+                  "serviceArea": "Limited coverage",
+                  "notes": "Unsupervised Model Y rides. Limited deployment information available."
+                }
+              ],
+              "summary": {
+                "totalCities": 6,
+                "activeCities": 5,
+                "mappedOnly": 1,
+                "unsupervisedCapable": 4,
+                "safetyMonitorOnly": 1,
+                "totalActiveVehicles": 34
               }
             },
             "fsdApprovals": {
@@ -3215,10 +3411,10 @@
             },
             "productionDelivery": {
               "title": "Vehicle Production & Delivery",
-              "latestUpdate": "2026-06-30",
-              "criticalNews": "Q2 2026 analyst delivery consensus: 406,024 vehicles (22 analysts). Official Q2 production/delivery report expected ~July 2. Full-year 2026 consensus trimmed to 1,654,808 (~1% YoY growth). Giga Berlin ramping to 7,500 vehicles/week by October.",
-              "totalProduction": "9308122",
-              "totalDeliveries": "9183948",
+              "latestUpdate": "2026-07-03",
+              "criticalNews": "Q2 2026 official results: 451,758 production, 480,126 deliveries—beating 22-analyst consensus of 406,024 by 18.2%. Energy storage hit record 13.5 GWh. H1 2026 total: 838,149 deliveries. Full-year 2026 consensus: ~1,654,808 (~1% YoY growth). Earnings call scheduled July 22.",
+              "totalProduction": "9759880",
+              "totalDeliveries": "9664074",
               "quarterlyData": [
                 {
                   "quarter": "Q1-15",
@@ -3444,6 +3640,11 @@
                   "quarter": "Q1-26",
                   "production": 408386,
                   "delivery": 358023
+                },
+                {
+                  "quarter": "Q2-26",
+                  "production": 451758,
+                  "delivery": 480126
                 }
               ],
               "annualSummary": [
@@ -4097,6 +4298,7 @@
             // Render charts
             renderCybercabChart();
             renderRobotaxiFleetChart();
+            renderRobotaxiCitiesTable();
             renderJobPostingsChart();
 
             // Render category content
@@ -4346,6 +4548,72 @@
                     }
                 }
             });
+        }
+
+        function renderRobotaxiCitiesTable() {
+            const container = document.getElementById('robotaxiCitiesTable');
+            const cities = data.metrics.robotaxiCities.cities;
+
+            // Service type badge styling
+            const getServiceBadge = (serviceType) => {
+                const badges = {
+                    'unsupervised': '<span style="background: #22c55e; color: #000; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">🟢 UNSUPERVISED</span>',
+                    'mixed': '<span style="background: #f59e0b; color: #000; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">🟡 MIXED</span>',
+                    'safety-monitor-only': '<span style="background: #6b7280; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">⚪ MONITOR ONLY</span>'
+                };
+                return badges[serviceType] || serviceType;
+            };
+
+            const getStatusBadge = (status) => {
+                if (status === 'active') return '<span style="color: #22c55e; font-weight: 600;">✓ Active</span>';
+                if (status === 'mapped') return '<span style="color: #888; font-weight: 600;">○ Mapped</span>';
+                return status;
+            };
+
+            let html = `
+                <div style="overflow-x: auto; font-size: 13px;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid #333;">
+                                <th style="text-align: left; padding: 8px; color: #e0e0e0;">City</th>
+                                <th style="text-align: left; padding: 8px; color: #e0e0e0;">Status</th>
+                                <th style="text-align: left; padding: 8px; color: #e0e0e0;">Service Type</th>
+                                <th style="text-align: center; padding: 8px; color: #e0e0e0;">Active Fleet</th>
+                                <th style="text-align: left; padding: 8px; color: #e0e0e0;">Vehicle Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            cities.forEach((city, index) => {
+                const rowStyle = index % 2 === 0 ? 'background: rgba(255,255,255,0.02);' : '';
+                const fleetDisplay = city.activeVehicles > 0 ? city.activeVehicles : '-';
+                const breakdown = city.breakdown ?
+                    `<div style="font-size: 11px; color: #888; margin-top: 3px;">${city.breakdown.unsupervised} unsupervised, ${city.breakdown.safetyMonitor} monitored</div>` : '';
+
+                html += `
+                    <tr style="${rowStyle}">
+                        <td style="padding: 10px; font-weight: 600; color: #fff;">${city.name}</td>
+                        <td style="padding: 10px;">${getStatusBadge(city.status)}</td>
+                        <td style="padding: 10px;">${getServiceBadge(city.serviceType)}</td>
+                        <td style="padding: 10px; text-align: center; font-weight: 600; color: ${city.activeVehicles > 0 ? '#22c55e' : '#666'};">${fleetDisplay}${breakdown}</td>
+                        <td style="padding: 10px; color: #aaa;">${city.vehicleType}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 12px; padding: 10px; background: rgba(34, 197, 94, 0.1); border-left: 3px solid #22c55e; font-size: 12px; color: #aaa;">
+                        <strong style="color: #e0e0e0;">Summary:</strong> ${data.metrics.robotaxiCities.summary.activeCities} active cities,
+                        ${data.metrics.robotaxiCities.summary.unsupervisedCapable} with unsupervised capability,
+                        ${data.metrics.robotaxiCities.summary.totalActiveVehicles} total active vehicles
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
         }
 
         function renderCategoryContent(id, category) {
