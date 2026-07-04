@@ -181,16 +181,25 @@ The dashboard is now a **React + TypeScript** application built with Vite. Key d
 
 ---
 
-## Preferred News Sources
+## News Sources (Tiered by Reliability)
 
-Search using these source domains for best results:
-- Electrek (electrek.co)
-- Teslarati (teslarati.com)
-- TeslaNorth (teslanorth.com)
-- Tesla Oracle (teslaoracle.com)
-- Basenor (basenor.com)
-- Optimusk Blog (optimusk.blog)
-- Official Tesla announcements
+**Tier 1 - Primary Sources (High Trust):**
+- **Teslarati** (teslarati.com) - Most reliable, balanced coverage
+- **TeslaNorth** (teslanorth.com) - Strong reporting quality
+- **Tesla Oracle** (teslaoracle.com) - Detailed analysis
+- **Basenor** (basenor.com) - Good technical coverage
+- **Optimusk Blog** (optimusk.blog) - Optimus-focused expertise
+- **Official Tesla** (tesla.com, ir.tesla.com) - Highest authority
+
+**Tier 2 - Supplementary Sources (Use with Caution):**
+- **Electrek** (electrek.co) - **Known anti-Tesla bias**
+  - Use ONLY for reference/confirmation
+  - NEVER as sole source of truth
+  - If conflicts with Tier 1, trust Tier 1
+
+**Specialized Sources:**
+- **Robotaxi Tracker** (robotaxitracker.com) - Fleet deployment data
+- **Official investor relations** (ir.tesla.com/press) - Quarterly reports
 
 ---
 
@@ -204,12 +213,49 @@ Search using these source domains for best results:
 ```
 
 ### Step 2: Research Updates
-For each of the 9 categories, use WebSearch to find news from the date range:
+
+**CRITICAL: Multi-Source Search Requirements**
+
+For each of the 9 categories, you MUST search multiple sources to verify information:
+
+**Tier 1 Sources (Primary - Use These First):**
+- Teslarati (teslarati.com) - Most reliable, balanced coverage
+- TeslaNorth (teslanorth.com) - Strong reporting
+- Tesla Oracle (teslaoracle.com) - Detailed analysis
+- Basenor (basenor.com) - Good technical coverage
+- Optimusk Blog (optimusk.blog) - Optimus-focused
+- Official Tesla sources (tesla.com, ir.tesla.com)
+
+**Tier 2 Sources (Supplementary - Reference Only, Known Bias):**
+- Electrek (electrek.co) - Anti-Tesla bias, use ONLY for reference/confirmation
+- NEVER use Electrek as sole source of truth
+- If Electrek contradicts Tier 1 sources, trust Tier 1
+
+**Search Protocol:**
 ```
-- Search query format: "Tesla [category] [keywords] 2026 [months]"
-- Review top 5-10 results per category
-- Identify key changes, status (positive/negative/neutral), sources
+For EACH category:
+1. Search at least 2-3 Tier 1 sources with targeted queries:
+   - "Tesla [category] [keywords] site:teslarati.com 2026 [months]"
+   - "Tesla [category] [keywords] site:teslanorth.com 2026 [months]"
+   - "Tesla [category] [keywords] site:teslaoracle.com 2026 [months]"
+
+2. Cross-reference findings:
+   - If multiple Tier 1 sources confirm: high confidence
+   - If sources conflict: investigate further, prefer official sources
+   - If only one source reports: mark as "unconfirmed" or search more
+
+3. Optional: Check Electrek for additional context (but don't rely on it alone)
+
+4. For robotaxi/deployment news: ALWAYS check robotaxitracker.com
+
+5. For launches/major announcements: Search for "launch" "active" "live" keywords
+   - Don't settle for "mapped" or "planned" - verify actual status
 ```
+
+**Red Flags (Require Extra Verification):**
+- Only Electrek reports something negative → Verify with Tier 1 sources
+- Conflicting status (one says "mapped", another says "launched") → Search for official announcement
+- Vague language ("preparing", "soon", "expected") → Search for concrete dates/numbers
 
 **IMPORTANT - Production & Delivery Data**:
 After researching the 5 news categories, ALWAYS check for new quarterly production & delivery reports:
