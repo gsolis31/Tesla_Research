@@ -11,6 +11,7 @@ import {
   Filler,
 } from 'chart.js'
 import type { TeslaData } from '../types'
+import ProductionDelivery from './ProductionDelivery'
 
 // Register ChartJS components
 ChartJS.register(
@@ -106,7 +107,7 @@ function MetricsCharts({ data }: Props) {
 
   return (
     <div className="space-y-8">
-      {/* Charts Grid */}
+      {/* Metrics Charts */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Cybercab Chart */}
         <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
@@ -131,6 +132,11 @@ function MetricsCharts({ data }: Props) {
       <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
         <h3 className="text-lg font-bold mb-4">Robotaxi Service by City</h3>
         <CityTable cities={data.metrics.robotaxiCities.cities} summary={data.metrics.robotaxiCities.summary} />
+      </div>
+
+      {/* Production & Delivery Section */}
+      <div className="border-t border-gray-700 pt-8">
+        <ProductionDelivery data={data.categories.productionDelivery} />
       </div>
     </div>
   )
