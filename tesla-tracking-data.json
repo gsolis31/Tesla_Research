@@ -1948,13 +1948,13 @@
       "cities": [
         {
           "name": "Miami",
-          "status": "mapped",
+          "status": "active",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
-          "activeVehicles": 0,
-          "launchDate": null,
-          "serviceArea": "West Miami, Doral, Sweetwater (excludes downtown, airport, Miami Beach)",
-          "notes": "Service area mapped July 2026. No launch date or fleet deployment announced. Originally targeted H1 2026."
+          "activeVehicles": 3,
+          "launchDate": "2026-07-03",
+          "serviceArea": "Western and central Miami (~10-14 sq mi) including Miami International Airport (MIA), SR 826 (Palmetto Expressway), US 41 (Tamiami Trail)",
+          "notes": "Launched July 3, 2026. Florida becomes third state with robotaxi service after Texas and California. Prioritizing high-traffic, airport-linked routes."
         },
         {
           "name": "Dallas",
@@ -2015,11 +2015,11 @@
       ],
       "summary": {
         "totalCities": 6,
-        "activeCities": 5,
+        "activeCities": 4,
         "mappedOnly": 1,
         "unsupervisedCapable": 4,
         "safetyMonitorOnly": 1,
-        "totalActiveVehicles": 34
+        "totalActiveVehicles": 37
       }
     },
     "fsdApprovals": {
