@@ -310,7 +310,31 @@ Update `categories.productionDelivery`:
 - Recalculate `totalProduction` (sum of ALL production values)
 - Recalculate `totalDeliveries` (sum of ALL delivery values)
 
-### Step 4: Sync HTML Dashboard
+### Step 4: Archive Old Data
+Run the archive script to keep file size manageable:
+
+**Process**:
+```bash
+python3 scripts/archive_old_data.py
+```
+
+**What it does**:
+- Keeps current year + previous year data in main file (e.g., 2025 + 2026 in 2026)
+- Archives older years to `archives/YEAR.json`
+- Applies to: `weeklySummaries`, `robotaxiFleet.data`, `cybercab.data`, `jobPostings.data`
+- Keeps ALL `quarterlyData` forever (only 4 entries per year, valuable for YoY comparison)
+
+**Expected output**:
+```
+Current year: 2026
+Retention policy: Keep 2025 + 2026 in main file
+Archive: 2024 and earlier
+✓ No data to archive (all data is recent)
+```
+
+**Note**: In 2026, all data is recent, so nothing gets archived. On January 1, 2027, all 2025 data will be archived automatically.
+
+### Step 5: Sync HTML Dashboard
 Update `index.html`:
 
 **Process**:
@@ -331,12 +355,12 @@ if not sync_dashboard():
 
 **Note**: This shared script (scripts/sync_dashboard.py) uses marker comments to reliably locate and replace the data object, preventing syntax errors. It's also used by auto_update.py for consistency.
 
-### Step 5: Open Dashboard
+### Step 6: Open Dashboard
 ```bash
 open index.html
 ```
 
-### Step 6: Provide Summary
+### Step 7: Provide Summary
 Output a concise summary to user:
 - Week range updated (last date → today)
 - Number of key changes found per category

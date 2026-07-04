@@ -164,13 +164,13 @@
           "evidence": {
             "positive_signals": [
               "150+ Cybercabs in Giga Texas outbound lot as of June 24 drone footage",
-              "Up from 102 on June 14, 85 on June 19 — fastest week-over-week ramp yet",
+              "Up from 102 on June 14, 85 on June 19 \u2014 fastest week-over-week ramp yet",
               "North Campus steel and floor decking work underway (Terafab site prep)",
               "Affordable $59,990 Cybertruck AWD also entering production at same facility"
             ],
             "negative_signals": [
               "Deployed fleet still frozen at ~59 total vehicles / ~20 unsupervised",
-              "Production massively outpacing deployment — vehicles accumulating in lot",
+              "Production massively outpacing deployment \u2014 vehicles accumulating in lot",
               "Scaling blocked on FSD v15 (Q4 2026/Q1 2027)"
             ],
             "key_metrics": {
@@ -181,7 +181,7 @@
           },
           "category": "Cybercab Production",
           "title": "150+ Cybercabs staged at Giga Texas, production ramp accelerating",
-          "description": "Drone footage from June 24 shows 150+ Cybercabs staged in the Giga Texas outbound lot — up from 85 on June 19 and 70+ in mid-May — confirming the fastest week-over-week production ramp yet. Despite accelerating manufacturing, the deployed robotaxi fleet remains frozen at ~59 total vehicles (~20 unsupervised) as Tesla holds back deployment pending FSD v15 software rewrite. North Campus steel and floor decking work also visible in footage, indicating early Terafab facility construction progress.",
+          "description": "Drone footage from June 24 shows 150+ Cybercabs staged in the Giga Texas outbound lot \u2014 up from 85 on June 19 and 70+ in mid-May \u2014 confirming the fastest week-over-week production ramp yet. Despite accelerating manufacturing, the deployed robotaxi fleet remains frozen at ~59 total vehicles (~20 unsupervised) as Tesla holds back deployment pending FSD v15 software rewrite. North Campus steel and floor decking work also visible in footage, indicating early Terafab facility construction progress.",
           "source": "https://www.evsoup.com/150-cybercabs-n-campus-steel-floor-decking-e-clearing-24-june-2026-giga-texas-update-815am/"
         },
         {
@@ -190,13 +190,13 @@
             "headline": "neutral",
             "reality": "negative",
             "confidence": "high",
-            "rationale": "Tesla simultaneously seeks 5,000-vehicle Las Vegas permit and faces NHTSA engineering analysis on 3.2M vehicles for camera visibility failures — the step immediately before a mandatory recall. The same camera-only FSD system that Nevada would certify as 'fully autonomous' is under federal scrutiny for failing in sun glare and dust, conditions endemic to Las Vegas."
+            "rationale": "Tesla simultaneously seeks 5,000-vehicle Las Vegas permit and faces NHTSA engineering analysis on 3.2M vehicles for camera visibility failures \u2014 the step immediately before a mandatory recall. The same camera-only FSD system that Nevada would certify as 'fully autonomous' is under federal scrutiny for failing in sun glare and dust, conditions endemic to Las Vegas."
           },
           "evidence": {
             "positive_signals": [
               "Nevada permit application covers Las Vegas, Harry Reid Airport, Henderson Executive Airport",
               "5,000-vehicle authorization would represent 85x current deployed fleet",
-              "Protest deadline July 5 — regulatory path still open"
+              "Protest deadline July 5 \u2014 regulatory path still open"
             ],
             "negative_signals": [
               "NHTSA Engineering Analysis EA26002 covers 3,203,754 vehicles (step before recall)",
@@ -208,12 +208,12 @@
             "key_metrics": {
               "actual": "5,000 vehicles requested; 3.2M vehicles under EA probe",
               "target": "Nevada permit approval by July 2026",
-              "trajectory": "Regulatory risk elevated — recall could block Las Vegas expansion"
+              "trajectory": "Regulatory risk elevated \u2014 recall could block Las Vegas expansion"
             }
           },
           "category": "Cybercab Production",
           "title": "Tesla seeks 5,000 Las Vegas robotaxi slots as NHTSA probes camera system on 3.2M vehicles",
-          "description": "Tesla filed Docket 26-05015 with the Nevada Transportation Authority on June 5, seeking authorization for up to 5,000 autonomous vehicles across Las Vegas, Harry Reid International Airport, and Henderson Executive Airport within 12 months of approval. The application faces conflict: NHTSA's Engineering Analysis EA26002 (opened March 2026) covers 3,203,754 vehicles for failures in FSD's camera degradation detection — the same camera-only system Nevada would certify. In 9 reviewed crashes, FSD failed to detect impaired vision or warn drivers in time. A June 22 fatal crash in Katy, TX renewed scrutiny. NHTSA's next step is either an influence letter (requesting voluntary recall) or mandatory recall. Protest deadline for Nevada filing: July 5, 2026.",
+          "description": "Tesla filed Docket 26-05015 with the Nevada Transportation Authority on June 5, seeking authorization for up to 5,000 autonomous vehicles across Las Vegas, Harry Reid International Airport, and Henderson Executive Airport within 12 months of approval. The application faces conflict: NHTSA's Engineering Analysis EA26002 (opened March 2026) covers 3,203,754 vehicles for failures in FSD's camera degradation detection \u2014 the same camera-only system Nevada would certify. In 9 reviewed crashes, FSD failed to detect impaired vision or warn drivers in time. A June 22 fatal crash in Katy, TX renewed scrutiny. NHTSA's next step is either an influence letter (requesting voluntary recall) or mandatory recall. Protest deadline for Nevada filing: July 5, 2026.",
           "source": "https://www.techtimes.com/articles/318498/20260616/tesla-seeks-5000-las-vegas-robotaxi-slots-camera-tech-under-federal-probe.htm"
         },
         {
@@ -222,13 +222,13 @@
             "headline": "neutral",
             "reality": "negative",
             "confidence": "high",
-            "rationale": "The June 30 EU Technical Committee on Motor Vehicles meeting is confirmed as discussion-only — no vote on FSD mutual recognition. This delays the EU-wide unlock that was widely expected in late June, pushing the next possible vote window to July or later."
+            "rationale": "The June 30 EU Technical Committee on Motor Vehicles meeting is confirmed as discussion-only \u2014 no vote on FSD mutual recognition. This delays the EU-wide unlock that was widely expected in late June, pushing the next possible vote window to July or later."
           },
           "evidence": {
             "positive_signals": [
-              "Belgium and Denmark subscriptions live (~€100/month)",
+              "Belgium and Denmark subscriptions live (~\u20ac100/month)",
               "5 EU countries now approved: Netherlands, Lithuania, Estonia, Denmark, Belgium",
-              "Discussion-only agenda means vote will come — question is timing"
+              "Discussion-only agenda means vote will come \u2014 question is timing"
             ],
             "negative_signals": [
               "June 30 TCMV meeting: FSD discussion on agenda but no vote scheduled",
@@ -243,16 +243,16 @@
             }
           },
           "category": "FSD Country Approvals",
-          "title": "EU TCMV June 30 meeting: FSD discussed but no vote — EU-wide unlock delayed",
-          "description": "The EU Technical Committee on Motor Vehicles (TCMV) June 30 meeting has confirmed FSD mutual recognition on the discussion agenda, but no vote is scheduled. This delays the expected EU-wide unlock past the late June window that had been widely anticipated. With 5 of 27 EU countries now approved (Netherlands, Lithuania, Estonia, Denmark, Belgium), the remaining 22 — including France, Germany, Spain, and Italy — are waiting for TCMV coordinated action. The committee will continue reviewing the Netherlands' technical report; the next possible vote window is the July 2026 TCMV session.",
+          "title": "EU TCMV June 30 meeting: FSD discussed but no vote \u2014 EU-wide unlock delayed",
+          "description": "The EU Technical Committee on Motor Vehicles (TCMV) June 30 meeting has confirmed FSD mutual recognition on the discussion agenda, but no vote is scheduled. This delays the expected EU-wide unlock past the late June window that had been widely anticipated. With 5 of 27 EU countries now approved (Netherlands, Lithuania, Estonia, Denmark, Belgium), the remaining 22 \u2014 including France, Germany, Spain, and Italy \u2014 are waiting for TCMV coordinated action. The committee will continue reviewing the Netherlands' technical report; the next possible vote window is the July 2026 TCMV session.",
           "source": "https://fsdtracker.eu/"
         }
       ],
       "trends": [
         "Cybercab production ramp accelerating (150+ at Giga Texas) but deployment frozen at ~59 vehicles pending FSD v15",
         "NHTSA recall risk elevated: Engineering Analysis on 3.2M vehicles for camera visibility failures conflicts with Las Vegas expansion bid",
-        "EU-wide FSD vote delayed past June 30 — 22 of 27 EU countries still waiting",
-        "Q2 2026 delivery report imminent (~July 2) — consensus 406,024 sets low bar vs Q2 2025's 410,831",
+        "EU-wide FSD vote delayed past June 30 \u2014 22 of 27 EU countries still waiting",
+        "Q2 2026 delivery report imminent (~July 2) \u2014 consensus 406,024 sets low bar vs Q2 2025's 410,831",
         "Optimus Gen 3 full-body reveal expected end of July/August 2026"
       ]
     },
@@ -373,8 +373,8 @@
           },
           "evidence": {
             "positive_signals": [
-              "Belgium subscription launched at €99/month (€49 for EAP owners)",
-              "Denmark subscription launched at 750 kr/month (~€100)",
+              "Belgium subscription launched at \u20ac99/month (\u20ac49 for EAP owners)",
+              "Denmark subscription launched at 750 kr/month (~\u20ac100)",
               "FSD rollout within days of June 9-10 regulatory approval",
               "Software version v14.2.2.6 deployed June 11 in Denmark",
               "Free 30-day trial offered in Belgium"
@@ -387,8 +387,8 @@
             "trajectory": "Accelerating - subscription launch within 48h of approval"
           },
           "category": "FSD Country Approvals",
-          "title": "Belgium & Denmark FSD subscriptions go live at ~€100/month",
-          "description": "Tesla launched FSD Supervised subscriptions in Belgium and Denmark within days of regulatory approval (June 9-10). Belgium pricing: €99/month standard, €49/month for Enhanced Autopilot owners after 30-day free trial. Denmark pricing: 750 kr/month (~€100). Software deployment (v14.2.2.6) began June 11. Both countries represent the fastest post-approval subscription rollout in Europe, with paid access available immediately after approval period.",
+          "title": "Belgium & Denmark FSD subscriptions go live at ~\u20ac100/month",
+          "description": "Tesla launched FSD Supervised subscriptions in Belgium and Denmark within days of regulatory approval (June 9-10). Belgium pricing: \u20ac99/month standard, \u20ac49/month for Enhanced Autopilot owners after 30-day free trial. Denmark pricing: 750 kr/month (~\u20ac100). Software deployment (v14.2.2.6) began June 11. Both countries represent the fastest post-approval subscription rollout in Europe, with paid access available immediately after approval period.",
           "source": "https://www.basenor.com/blogs/news/tesla-fsd-free-trial-launches-in-belgium-what-owners-need-to-know"
         },
         {
@@ -451,7 +451,7 @@
         }
       ],
       "trends": [
-        "FSD subscription momentum in Europe: Belgium and Denmark live at €100/month within days of approval",
+        "FSD subscription momentum in Europe: Belgium and Denmark live at \u20ac100/month within days of approval",
         "Terafab construction underway at Giga Texas - $3B pilot facility targeting AI5 production 2026-2027",
         "FSD v15 rewrite targeted for Q4 2026/Q1 2027 - critical dependency blocking robotaxi scaling",
         "Optimus production timeline on track for Summer 2026 Fremont start, hiring stable at 100+ roles",
@@ -484,7 +484,7 @@
             "key_metrics": {
               "actual": "59 total vehicles, ~20 active unsupervised",
               "target": "1000+ unsupervised across 7 cities by June 30, 2026",
-              "trajectory": "5.9% of target — H1 2026 goal abandoned"
+              "trajectory": "5.9% of target \u2014 H1 2026 goal abandoned"
             }
           },
           "category": "Robotaxi",
@@ -513,10 +513,10 @@
           "key_metrics": {
             "actual": "5 EU countries approved",
             "target": "EU-wide approval",
-            "trajectory": "Accelerating — 2 countries in 2 days"
+            "trajectory": "Accelerating \u2014 2 countries in 2 days"
           },
           "category": "FSD",
-          "title": "Belgium approves FSD Supervised — 5th EU country, 2nd in 48 hours",
+          "title": "Belgium approves FSD Supervised \u2014 5th EU country, 2nd in 48 hours",
           "description": "Flemish Mobility Minister Annick De Ridder signed official approval for Tesla FSD Supervised on June 10, 2026, making Belgium the fifth European country to authorize the system. The approval came just one day after Denmark granted clearance, representing the fastest back-to-back FSD expansion in Europe. Tesla completed the required 5,000 km supervised testing on Flemish public roads. The approval leverages the Dutch RDW provisional European type approval under UN Regulation 171.",
           "source": "https://www.notateslaapp.com/news/4279/teslas-european-fsd-rollout-speeds-up-with-belgium-approval"
         },
@@ -815,11 +815,11 @@
             "key_metrics": {
               "actual": "20 unsupervised, 34 total active",
               "target": "1000+ unsupervised across 7 cities by June 30, 2026",
-              "trajectory": "2% of target with 30 days remaining — abandoned"
+              "trajectory": "2% of target with 30 days remaining \u2014 abandoned"
             }
           },
           "title": "Robotaxi Fleet Contracts 49% to 20 Vehicles, H1 Target Abandoned",
-          "description": "Tesla's unsupervised robotaxi fleet experienced a sharp 49% contraction from 39 vehicles (May 24) to just 20 active vehicles (May 26-29), according to Robotaxi Tracker data. The broader ride-hailing fleet collapsed to 34 total active vehicles. City breakdown shows Austin down from 27 to 14 unsupervised vehicles, Dallas from 5-6 to 3, and Houston from 6 to 3. With 30 days until the H1 2026 deadline, the fleet represents only 2% of the stated 1000+ vehicle target across 7 cities, effectively abandoning the goal. Elon Musk indicated in April that aggressive fleet expansion is tied to FSD V15 release, pushing realistic scaling to late 2026-early 2027 at earliest. Production remains robust with 70+ Cybercabs at Giga Texas, indicating operational deployment—not manufacturing—is the constraint.",
+          "description": "Tesla's unsupervised robotaxi fleet experienced a sharp 49% contraction from 39 vehicles (May 24) to just 20 active vehicles (May 26-29), according to Robotaxi Tracker data. The broader ride-hailing fleet collapsed to 34 total active vehicles. City breakdown shows Austin down from 27 to 14 unsupervised vehicles, Dallas from 5-6 to 3, and Houston from 6 to 3. With 30 days until the H1 2026 deadline, the fleet represents only 2% of the stated 1000+ vehicle target across 7 cities, effectively abandoning the goal. Elon Musk indicated in April that aggressive fleet expansion is tied to FSD V15 release, pushing realistic scaling to late 2026-early 2027 at earliest. Production remains robust with 70+ Cybercabs at Giga Texas, indicating operational deployment\u2014not manufacturing\u2014is the constraint.",
           "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/"
         },
         {
@@ -879,7 +879,7 @@
             "key_metrics": {
               "actual": "First Giga Texas steel structure up, Fremont conversion underway",
               "target": "Fremont late July/August (1M/year), Giga Texas summer 2026 low-volume",
-              "trajectory": "On schedule — major construction milestone achieved"
+              "trajectory": "On schedule \u2014 major construction milestone achieved"
             }
           },
           "title": "First Steel Structure Erected at Giga Texas Optimus Factory",
@@ -938,11 +938,11 @@
             "key_metrics": {
               "actual": "100+ active Optimus roles",
               "target": "Baseline 100+ maintained",
-              "trajectory": "Flat — stable but no ramp-up ahead of production"
+              "trajectory": "Flat \u2014 stable but no ramp-up ahead of production"
             }
           },
           "title": "Optimus Hiring Stable at 100+ Roles, No Pre-Production Surge",
-          "description": "Tesla maintains 100+ Optimus-related job openings in late May 2026 with no change from earlier levels, despite approaching the July/August Fremont production start. Roles continue spanning robotics software, manufacturing engineering, AI development, data pipelines, and simulation across Palo Alto, Fremont, and Austin. Summer 2026 internship programs are underway. The flat hiring pattern—stable at 100+ for over 6 weeks—suggests no major pre-production hiring surge, consistent with a measured ramp rather than aggressive scaling.",
+          "description": "Tesla maintains 100+ Optimus-related job openings in late May 2026 with no change from earlier levels, despite approaching the July/August Fremont production start. Roles continue spanning robotics software, manufacturing engineering, AI development, data pipelines, and simulation across Palo Alto, Fremont, and Austin. Summer 2026 internship programs are underway. The flat hiring pattern\u2014stable at 100+ for over 6 weeks\u2014suggests no major pre-production hiring surge, consistent with a measured ramp rather than aggressive scaling.",
           "source": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/"
         }
       ],
@@ -1166,7 +1166,7 @@
             "headline": "positive",
             "reality": "neutral",
             "confidence": "high",
-            "rationale": "Production units grew to 70+ at Giga Texas (May 13), showing manufacturing ramp. However, unsupervised fleet only reached 39 vehicles—still 96% below H1 2026 target with 2 weeks remaining."
+            "rationale": "Production units grew to 70+ at Giga Texas (May 13), showing manufacturing ramp. However, unsupervised fleet only reached 39 vehicles\u2014still 96% below H1 2026 target with 2 weeks remaining."
           },
           "evidence": {
             "positive_signals": [
@@ -1181,7 +1181,7 @@
               "96% below H1 2026 target of 1000+ across 7 cities",
               "Only 2 weeks remain until end of H1 2026 (June 30)",
               "No expansion announced to remaining 4 planned cities (Phoenix, Miami, Orlando, Tampa, Las Vegas)",
-              "Production units ≠ operational fleet (70 produced, 39 operational)"
+              "Production units \u2260 operational fleet (70 produced, 39 operational)"
             ],
             "key_metrics": {
               "actual": "70+ produced, 39 operational unsupervised",
@@ -1190,7 +1190,7 @@
             }
           },
           "title": "Cybercab Production Reaches 70+, Unsupervised Fleet at 39 Vehicles",
-          "description": "Aerial footage from May 13, 2026 shows over 70 steering-wheel-free Cybercabs at Giga Texas outbound lots, up from 60 units on May 8—representing 17.5% growth in 5 days. Drone pilot Joe Tegtmeyer captured robotaxis across three parking areas, marking largest gathering to date. Meanwhile, unsupervised operational fleet reached 39 vehicles across Texas cities (27 Austin, 6 Houston, 5 Dallas) by mid-May. Austin expanded operations to include evening hours for first time. However, with only 2 weeks remaining in H1 2026, the fleet represents just 3.9% of stated 1000+ vehicle target across 7 cities.",
+          "description": "Aerial footage from May 13, 2026 shows over 70 steering-wheel-free Cybercabs at Giga Texas outbound lots, up from 60 units on May 8\u2014representing 17.5% growth in 5 days. Drone pilot Joe Tegtmeyer captured robotaxis across three parking areas, marking largest gathering to date. Meanwhile, unsupervised operational fleet reached 39 vehicles across Texas cities (27 Austin, 6 Houston, 5 Dallas) by mid-May. Austin expanded operations to include evening hours for first time. However, with only 2 weeks remaining in H1 2026, the fleet represents just 3.9% of stated 1000+ vehicle target across 7 cities.",
           "source": "https://teslanorth.com/2026/05/13/tesla-accelerates-robotaxi-production-over-70-cybercabs-seen-at-giga-texas/"
         },
         {
@@ -1291,7 +1291,7 @@
       "trends": [
         "Belgium becomes second EU country to advance FSD approval with public road testing",
         "Cybercab production units reach 70+ but unsupervised fleet deployment remains far below H1 target",
-        "Giga Texas Optimus factory construction visible progress—foundation work advancing on schedule",
+        "Giga Texas Optimus factory construction visible progress\u2014foundation work advancing on schedule",
         "AI6.5 foundry strategy reportedly under political pressure for Intel shift (unconfirmed)",
         "Optimus hiring remains stable at 100+ roles ahead of summer production start"
       ]
@@ -1729,7 +1729,7 @@
           "category": "FSD Approvals",
           "status": "positive",
           "title": "Netherlands FSD Officially Approved April 10, Subscriptions Live",
-          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at €99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
+          "description": "RDW issued formal type approval for FSD Supervised on April 10, 2026. Netherlands becomes first EU market to authorize FSD on public roads. Subscriptions launched at \u20ac99/month. EU-wide approval via mutual recognition expected summer 2026. Germany, France, Belgium, Spain, Italy rollout anticipated by summer.",
           "source": "https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/"
         },
         {
@@ -1937,7 +1937,7 @@
         {
           "date": "2026-06-29",
           "count": 59,
-          "note": "Fleet unchanged 19+ days. 150+ Cybercabs staged at Giga Texas outbound lot — production accelerating but deployment frozen on FSD v15. Nevada permit (5,000 vehicles) filed; protest deadline July 5."
+          "note": "Fleet unchanged 19+ days. 150+ Cybercabs staged at Giga Texas outbound lot \u2014 production accelerating but deployment frozen on FSD v15. Nevada permit (5,000 vehicles) filed; protest deadline July 5."
         },
         {
           "date": "2026-06-30",
@@ -2060,12 +2060,12 @@
           "name": "Netherlands",
           "status": "active",
           "date": "2026-04-10",
-          "note": "Subscriptions €99/month - First EU country approved"
+          "note": "Subscriptions \u20ac99/month - First EU country approved"
         },
         {
           "name": "Belgium",
           "status": "active",
-          "note": "Subscriptions €99/month (€49 for EAP owners)",
+          "note": "Subscriptions \u20ac99/month (\u20ac49 for EAP owners)",
           "date": "2026-06-10"
         },
         {
@@ -2361,7 +2361,7 @@
     "fsd": {
       "title": "FSD Country Approvals",
       "latestUpdate": "2026-06-26",
-      "criticalNews": "Belgium & Denmark subscriptions live at €100/month. FSD v15 architectural rewrite targeted Q4 2026/Q1 2027 - blocking robotaxi scaling.",
+      "criticalNews": "Belgium & Denmark subscriptions live at \u20ac100/month. FSD v15 architectural rewrite targeted Q4 2026/Q1 2027 - blocking robotaxi scaling.",
       "keyPoints": [
         "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
         "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
@@ -2374,7 +2374,7 @@
         "No vote scheduled for May 5 - served as informational briefing for 27 member states",
         "EU-wide vote possible at June 30 TCMV meeting for automatic approval across entire EU",
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
-        "Subscriptions launched at €99/month in Netherlands",
+        "Subscriptions launched at \u20ac99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
         "Belgium expected to be fastest EU follower - authorities signaled recognition within ~30 days (mid-May 2026)",
         "Germany (KBA) expected to move in late spring: May-June 2026, 4-8 weeks post-April 10",
@@ -2423,7 +2423,7 @@
         },
         {
           "date": "2026-04-10",
-          "event": "Subscriptions launched at €99/month"
+          "event": "Subscriptions launched at \u20ac99/month"
         },
         {
           "date": "2026-04-23",
@@ -2663,7 +2663,7 @@
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
       "latestUpdate": "2026-07-03",
-      "criticalNews": "Q2 2026 official results: 451,758 production, 480,126 deliveries—beating 22-analyst consensus of 406,024 by 18.2%. Energy storage hit record 13.5 GWh. H1 2026 total: 838,149 deliveries. Full-year 2026 consensus: ~1,654,808 (~1% YoY growth). Earnings call scheduled July 22.",
+      "criticalNews": "Q2 2026 official results: 451,758 production, 480,126 deliveries\u2014beating 22-analyst consensus of 406,024 by 18.2%. Energy storage hit record 13.5 GWh. H1 2026 total: 838,149 deliveries. Full-year 2026 consensus: ~1,654,808 (~1% YoY growth). Earnings call scheduled July 22.",
       "totalProduction": "9759880",
       "totalDeliveries": "9664074",
       "quarterlyData": [
