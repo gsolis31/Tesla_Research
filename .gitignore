@@ -1,2 +1,21 @@
 .DS_Store
 *.backup
+
+# Dependencies
+node_modules/
+
+# Build artifacts (keep dist/ since we commit it)
+dist-temp/
+
+# Development
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env files
+.env
+.env.local

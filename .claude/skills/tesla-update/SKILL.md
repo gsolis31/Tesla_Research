@@ -23,34 +23,28 @@ When invoked, this skill will:
 ## File Locations
 
 - **JSON Data**: `/Users/gonzalosolis/Research/tesla-tracking-data.json`
-- **HTML Dashboard**: `/Users/gonzalosolis/Research/index.html`
+- **React Source**: `/Users/gonzalosolis/Research/src/`
+- **Production Build**: `/Users/gonzalosolis/Research/dist/`
 - **Working Directory**: `/Users/gonzalosolis/Research`
 
 ---
 
-## One-Time Setup (Required for HTML Sync)
+## Technical Architecture
 
-**IMPORTANT**: The HTML file must have marker comments for reliable data syncing.
+The dashboard is now a **React + TypeScript** application built with Vite. Key details:
 
-If not already present, add these markers to `index.html`:
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite (modern, fast bundler)
+- **Styling**: Tailwind CSS
+- **Charts**: Chart.js with react-chartjs-2
+- **Data Import**: JSON file imported directly via ES modules
+- **Deployment**: Static files in `dist/` folder (GitHub Pages compatible)
 
-**Around line 450** (before `const data = {`):
-```html
-    <script>
-        // Embedded data - updated automatically from tesla-tracking-data.json
-        <!-- DATA_OBJECT_START -->
-        const data = {
-```
-
-**Around line 1352** (after the closing `}`):
-```html
-        };
-        <!-- DATA_OBJECT_END -->
-
-        function renderProductionDelivery() {
-```
-
-These markers ensure the update script can reliably find and replace the data object without syntax errors.
+**How Data Updates Work**:
+1. Update `tesla-tracking-data.json` with new data
+2. Run `npm run build` to rebuild the React app
+3. Updated JSON is bundled into the production build automatically
+4. Deploy the `dist/` folder (or open locally)
 
 ---
 
@@ -334,30 +328,35 @@ Archive: 2024 and earlier
 
 **Note**: In 2026, all data is recent, so nothing gets archived. On January 1, 2027, all 2025 data will be archived automatically.
 
-### Step 5: Sync HTML Dashboard
-Update `index.html`:
-
-**Process**:
-Use the shared sync script to reliably sync JSON to HTML:
+### Step 5: Build React Dashboard
+The dashboard is now a React + TypeScript application that imports the JSON data directly. After updating `tesla-tracking-data.json`, rebuild the production version:
 
 ```bash
-python scripts/sync_dashboard.py
+npm run build
 ```
 
-Or in Python:
-```python
-from scripts.sync_dashboard import sync_dashboard
+This will:
+- Bundle the React app with updated JSON data
+- Generate optimized production files in `dist/`
+- Create a deployable version ready for GitHub Pages
 
-if not sync_dashboard():
-    print("ERROR: Failed to sync dashboard")
-    exit(1)
-```
-
-**Note**: This shared script (scripts/sync_dashboard.py) uses marker comments to reliably locate and replace the data object, preventing syntax errors. It's also used by auto_update.py for consistency.
+**Note**: The React app directly imports `tesla-tracking-data.json` via Vite, so no separate sync script is needed. The build process automatically includes the updated data.
 
 ### Step 6: Open Dashboard
+Open the built dashboard in the browser:
+
 ```bash
-open index.html
+# Start a local server (required for ES modules)
+cd dist && python3 -m http.server 8080 &
+
+# Open in browser
+open http://localhost:8080
+```
+
+Or if the dev server is already running:
+```bash
+# The dev server (npm run dev) already watches for JSON changes
+# Just refresh the browser at http://localhost:5173
 ```
 
 ### Step 7: Provide Summary
@@ -369,7 +368,7 @@ Output a concise summary to user:
 
 **Troubleshooting Note**:
 If the dashboard appears blank in the browser, tell the user:
-"If you see a blank dashboard, press `Cmd+Option+I` to open the browser console and check for JavaScript errors. This usually indicates a syntax issue in the data object."
+"If you see a blank dashboard, press `Cmd+Option+I` to open the browser console and check for JavaScript errors. This could indicate a TypeScript compilation issue or a problem with the JSON data structure."
 
 ---
 
