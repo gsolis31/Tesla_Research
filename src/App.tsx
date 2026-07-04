@@ -3,7 +3,7 @@ import type { TeslaData } from './types'
 import WeeklySummary from './components/WeeklySummary'
 import MetricsCharts from './components/MetricsCharts'
 import Categories from './components/Categories'
-import TradingViewWidget from './components/TradingViewWidget'
+import StockPriceTile from './components/StockPriceTile'
 import './App.css'
 
 // Import data directly - Vite will bundle it
@@ -42,9 +42,9 @@ function App() {
       </header>
 
       <div className="px-1">
-        {/* Stock Widget */}
-        <div className="mb-8">
-          <TradingViewWidget />
+        {/* Stock Price Tile */}
+        <div className="mb-3 text-center">
+          <StockPriceTile />
         </div>
 
         {/* Navigation Tabs */}
