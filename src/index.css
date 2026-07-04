@@ -23,7 +23,23 @@ body {
 }
 
 #root {
-  max-width: 65vw;
+  max-width: 95vw; /* Mobile: use most of screen */
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  #root {
+    max-width: 80vw;
+    padding: 1rem;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  #root {
+    max-width: 65vw;
+    padding: 1rem;
+  }
 }
