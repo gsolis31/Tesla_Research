@@ -6,6 +6,7 @@ node_modules/
 
 # Build artifacts (keep dist/ since we commit it)
 dist-temp/
+*.tsbuildinfo
 
 # Development
 *.log
