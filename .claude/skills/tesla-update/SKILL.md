@@ -244,6 +244,23 @@ ALWAYS check for updated robotaxi fleet deployment numbers:
    - Basenor, Teslarati, Electrek for deployment announcements
 ```
 
+### Step 2.5: Check for Significant Changes
+Before updating the JSON file, evaluate if there are significant changes:
+
+**Skip update if ALL of these are true:**
+- ❌ No new keyChanges found (no significant news)
+- ❌ No new quarterly P&D reports
+- ❌ No new robotaxi fleet data
+- ❌ No significant metric changes (>20% change)
+
+**If skipping:**
+- Output message: "No significant updates found for [date range]. Skipping update."
+- Exit without modifying JSON, committing, or deploying
+- This prevents bloat from daily runs with no news
+
+**If there ARE significant changes:**
+- Proceed to Step 3
+
 ### Step 3: Update JSON Data
 Update `tesla-tracking-data.json`:
 
@@ -252,10 +269,27 @@ Update `tesla-tracking-data.json`:
 "lastUpdated": "YYYY-MM-DD"  // Today's date
 ```
 
-**B. Add new weekly summary** (at START of weeklySummaries array):
+**B. Add or update weekly summary** (calendar week-based):
+
+**IMPORTANT - Calendar Week Logic:**
+1. Calculate the Monday of the current week (ISO standard: Monday = start of week)
+2. Check if `weeklySummaries[0].weekOf` equals that Monday's date
+3. **IF SAME WEEK**: Append keyChanges and trends to existing entry
+4. **IF NEW WEEK**: Create new entry at START of weeklySummaries array
+5. **IF NO SIGNIFICANT NEWS**: Skip creating/updating entry entirely
+
+Example calculation (Python):
+```python
+from datetime import datetime, timedelta
+today = datetime.now()
+monday = today - timedelta(days=today.weekday())
+week_start = monday.strftime('%Y-%m-%d')
+```
+
+**New entry format** (only create if new week):
 ```json
 {
-  "weekOf": "YYYY-MM-DD",
+  "weekOf": "YYYY-MM-DD",  // Monday of the week
   "keyChanges": [
     {
       "category": "Category Name",
@@ -272,6 +306,13 @@ Update `tesla-tracking-data.json`:
     "Trend observation 4"
   ]
 }
+```
+
+**Update existing entry** (if same week):
+```python
+# Append new keyChanges to existing weeklySummaries[0].keyChanges
+# Append new trends to existing weeklySummaries[0].trends
+# Keep weekOf unchanged (still the Monday of this week)
 ```
 
 **C. Update metrics** (if applicable):

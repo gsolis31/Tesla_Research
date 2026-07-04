@@ -2,7 +2,7 @@
   "lastUpdated": "2026-07-03",
   "weeklySummaries": [
     {
-      "weekOf": "2026-07-03",
+      "weekOf": "2026-06-29",
       "keyChanges": [
         {
           "status": "positive",
@@ -97,19 +97,7 @@
           "title": "Robotaxi fleet shrinks to 34 active vehicles, down 42% from June peak",
           "description": "Tesla's active robotaxi fleet has collapsed to just 34 vehicles as of early July 2026, down 42% from the ~59 vehicle peak reported in June. The Austin unsupervised fleet specifically declined from ~25 vehicles to approximately 14 active cars. The fleet has been in steady decline since peaking in December 2025/January 2026. According to multiple sources, safety validation remains the primary limiting factor for expansion, with Tesla holding back deployment until the FSD v15 software rewrite arrives in Q4 2026 or Q1 2027. Meanwhile, Tesla mapped a small Miami service area, signaling geographic expansion intentions despite the deployment bottleneck.",
           "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/"
-        }
-      ],
-      "trends": [
-        "Q2 2026 deliveries beat analyst consensus by 18%, strongest quarterly performance in over a year",
-        "Optimus production officially starts late July 2026 at Fremont with 1M unit/year target",
-        "Robotaxi fleet in decline: 34 active vehicles (-42% from June), expansion blocked until FSD v15",
-        "FSD v15 rewrite remains on track for Q4 2026/Q1 2027, critical for robotaxi scaling",
-        "Terafab chip factory project advancing with $55-119B investment, Intel 14A process confirmed"
-      ]
-    },
-    {
-      "weekOf": "2026-06-30",
-      "keyChanges": [
+        },
         {
           "status": "positive",
           "sentiment": {
@@ -140,19 +128,7 @@
           "title": "Tesla begins testing production Cybercab (no wheel or pedals) in Austin",
           "description": "On June 30, Tesla started testing a production-version Cybercab featuring two seats and no steering wheel or pedals on roads in Austin, Texas. The test vehicle is currently operating with a safety monitor in the passenger seat, according to a video posted by Tesla. This marks the transition from prototype testing (which used temporary wheel/pedals) to validating the final control-free design. It follows last week's NHTSA update proposing removal of brake pedal requirements for ADS-only vehicles. While a major step for hardware readiness, the company continues to wait on the FSD v15 software rewrite for meaningful fleet scaling.",
           "source": "https://techcrunch.com/2026/06/30/tesla-starts-testing-cybercab-without-pedals-or-a-steering-wheel-in-austin/"
-        }
-      ],
-      "trends": [
-        "Production Cybercab without controls enters on-road testing in Austin - key hardware validation step",
-        "Robotaxi operational fleet remains small: ~19 unsupervised, 28 rider vehicles in Austin (no new city launches)",
-        "Q2 2026 official production & delivery report still pending (expected ~July 2); consensus 406k",
-        "FSD v15 rewrite remains critical gating item for robotaxi expansion (target Q4 2026/Q1 2027)",
-        "No significant updates in Optimus, AI chips, 4680, or Terafab in the past 48 hours"
-      ]
-    },
-    {
-      "weekOf": "2026-06-29",
-      "keyChanges": [
+        },
         {
           "status": "positive",
           "sentiment": {
@@ -249,6 +225,16 @@
         }
       ],
       "trends": [
+        "Q2 2026 deliveries beat analyst consensus by 18%, strongest quarterly performance in over a year",
+        "Optimus production officially starts late July 2026 at Fremont with 1M unit/year target",
+        "Robotaxi fleet in decline: 34 active vehicles (-42% from June), expansion blocked until FSD v15",
+        "FSD v15 rewrite remains on track for Q4 2026/Q1 2027, critical for robotaxi scaling",
+        "Terafab chip factory project advancing with $55-119B investment, Intel 14A process confirmed",
+        "Production Cybercab without controls enters on-road testing in Austin - key hardware validation step",
+        "Robotaxi operational fleet remains small: ~19 unsupervised, 28 rider vehicles in Austin (no new city launches)",
+        "Q2 2026 official production & delivery report still pending (expected ~July 2); consensus 406k",
+        "FSD v15 rewrite remains critical gating item for robotaxi expansion (target Q4 2026/Q1 2027)",
+        "No significant updates in Optimus, AI chips, 4680, or Terafab in the past 48 hours",
         "Cybercab production ramp accelerating (150+ at Giga Texas) but deployment frozen at ~59 vehicles pending FSD v15",
         "NHTSA recall risk elevated: Engineering Analysis on 3.2M vehicles for camera visibility failures conflicts with Las Vegas expansion bid",
         "EU-wide FSD vote delayed past June 30 \u2014 22 of 27 EU countries still waiting",
@@ -257,7 +243,7 @@
       ]
     },
     {
-      "weekOf": "2026-06-28",
+      "weekOf": "2026-06-22",
       "keyChanges": [
         {
           "status": "neutral",
@@ -350,19 +336,7 @@
           "title": "Giga Berlin to ramp 20% to 7,500 vehicles/week, add 1,000 jobs",
           "description": "Tesla announced Giga Berlin-Brandenburg will increase production output 20% to 7,500 vehicles per week starting October 2026, recruiting 1,000 additional employees. This is the second 20% production increase in 2026 (first targeted July at 6,200/week). Combined with battery cell investments, Giga Berlin plans 3,500 total new jobs. Facility recently celebrated 750,000 vehicles built and 1 million drive units produced. Supports sustained European Model Y demand ahead of potential Model Y L introduction.",
           "source": "https://www.notateslaapp.com/news/4353/tesla-ramps-up-giga-berlin-output-and-adds-1000-jobs-again"
-        }
-      ],
-      "trends": [
-        "Q2 2026 delivery report imminent (~July 2) - consensus 406,024 sets low bar",
-        "NHTSA regulatory pathway clearing for control-free Cybercab; steering wheel rule next",
-        "Robotaxi fleet frozen at ~59 vehicles for 18+ days pending FSD v15 rewrite",
-        "Giga Berlin second 20% production ramp signals sustained European demand",
-        "FSD subscriptions live in Belgium & Denmark; EU-wide TCMV vote still pending"
-      ]
-    },
-    {
-      "weekOf": "2026-06-26",
-      "keyChanges": [
+        },
         {
           "status": "positive",
           "sentiment": {
@@ -451,6 +425,11 @@
         }
       ],
       "trends": [
+        "Q2 2026 delivery report imminent (~July 2) - consensus 406,024 sets low bar",
+        "NHTSA regulatory pathway clearing for control-free Cybercab; steering wheel rule next",
+        "Robotaxi fleet frozen at ~59 vehicles for 18+ days pending FSD v15 rewrite",
+        "Giga Berlin second 20% production ramp signals sustained European demand",
+        "FSD subscriptions live in Belgium & Denmark; EU-wide TCMV vote still pending",
         "FSD subscription momentum in Europe: Belgium and Denmark live at \u20ac100/month within days of approval",
         "Terafab construction underway at Giga Texas - $3B pilot facility targeting AI5 production 2026-2027",
         "FSD v15 rewrite targeted for Q4 2026/Q1 2027 - critical dependency blocking robotaxi scaling",
