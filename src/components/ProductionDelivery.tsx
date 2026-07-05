@@ -12,6 +12,10 @@ function ProductionDelivery({ data }: Props) {
   const [selectedQuarters, setSelectedQuarters] = useState<Set<string>>(new Set(['Q1', 'Q2', 'Q3', 'Q4']))
   const [groupByYear, setGroupByYear] = useState<boolean>(false)
 
+  // Chart visibility state
+  const [showProduction, setShowProduction] = useState<boolean>(true)
+  const [showDeliveries, setShowDeliveries] = useState<boolean>(true)
+
   // Get unique years from data
   const years = useMemo(() => {
     const yearSet = new Set(data.quarterlyData.map((q) => q.quarter.split('-')[1]))
@@ -99,28 +103,38 @@ function ProductionDelivery({ data }: Props) {
     // Sort chronologically (oldest first)
     return sortQuartersChronologically(result)
   }, [filteredData, groupByYear, selectedQuarters])
+
   // Chart data (use displayData which respects filters)
-  const chartData = {
-    labels: displayData.map((q) => q.quarter),
-    datasets: [
-      {
+  const chartData = useMemo(() => {
+    const datasets = []
+
+    if (showProduction) {
+      datasets.push({
         label: 'Production',
         data: displayData.map((q) => q.production),
         backgroundColor: 'rgba(59, 130, 246, 0.2)',
         borderColor: '#3b82f6',
         borderWidth: 2,
         tension: 0.4,
-      },
-      {
+      })
+    }
+
+    if (showDeliveries) {
+      datasets.push({
         label: 'Deliveries',
         data: displayData.map((q) => q.delivery),
         backgroundColor: 'rgba(34, 197, 94, 0.2)',
         borderColor: '#22c55e',
         borderWidth: 2,
         tension: 0.4,
-      },
-    ],
-  }
+      })
+    }
+
+    return {
+      labels: displayData.map((q) => q.quarter),
+      datasets,
+    }
+  }, [displayData, showProduction, showDeliveries])
 
   const chartOptions = {
     responsive: true,
@@ -168,7 +182,7 @@ function ProductionDelivery({ data }: Props) {
       {/* Filters */}
       <div className="bg-gray-800 p-4 rounded-lg border border-gray-700 mb-6">
         <h3 className="text-sm font-semibold mb-3 text-gray-400">FILTERS & VIEW OPTIONS</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Year Filter */}
           <div>
             <label className="block text-sm font-medium mb-2 text-gray-300">Year</label>
@@ -245,6 +259,31 @@ function ProductionDelivery({ data }: Props) {
                 </div>
               </div>
             </label>
+          </div>
+
+          {/* Chart Visibility Toggles */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-300">Chart Lines</label>
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={showProduction}
+                  onChange={(e) => setShowProduction(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-2 focus:ring-blue-500"
+                />
+                <span className="text-sm text-gray-300">Production</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={showDeliveries}
+                  onChange={(e) => setShowDeliveries(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-green-500 focus:ring-2 focus:ring-green-500"
+                />
+                <span className="text-sm text-gray-300">Deliveries</span>
+              </label>
+            </div>
           </div>
         </div>
 
