@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { Line } from 'react-chartjs-2'
+import ChartDataLabels from 'chartjs-plugin-datalabels'
 import type { ProductionDeliveryCategory, QuarterlyData } from '../types'
 
 interface Props {
@@ -15,6 +16,7 @@ function ProductionDelivery({ data }: Props) {
   // Chart visibility state
   const [showProduction, setShowProduction] = useState<boolean>(true)
   const [showDeliveries, setShowDeliveries] = useState<boolean>(true)
+  const [showLabels, setShowLabels] = useState<boolean>(false)
 
   // Get unique years from data
   const years = useMemo(() => {
@@ -136,7 +138,7 @@ function ProductionDelivery({ data }: Props) {
     }
   }, [displayData, showProduction, showDeliveries])
 
-  const chartOptions = {
+  const chartOptions = useMemo(() => ({
     responsive: true,
     maintainAspectRatio: true,
     plugins: {
@@ -148,6 +150,20 @@ function ProductionDelivery({ data }: Props) {
           label: function (context: any) {
             return `${context.dataset.label}: ${context.parsed.y.toLocaleString()}`
           },
+        },
+      },
+      datalabels: {
+        display: showLabels,
+        color: '#e0e0e0',
+        anchor: 'end' as const,
+        align: 'top' as const,
+        offset: 4,
+        formatter: (value: any) => {
+          return value ? value.toLocaleString() : ''
+        },
+        font: {
+          size: 10,
+          weight: 'bold' as const,
         },
       },
     },
@@ -166,7 +182,7 @@ function ProductionDelivery({ data }: Props) {
         grid: { color: '#333' },
       },
     },
-  }
+  }), [showLabels])
 
   return (
     <div>
@@ -283,6 +299,15 @@ function ProductionDelivery({ data }: Props) {
                 />
                 <span className="text-sm text-gray-300">Deliveries</span>
               </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={showLabels}
+                  onChange={(e) => setShowLabels(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-purple-500 focus:ring-2 focus:ring-purple-500"
+                />
+                <span className="text-sm text-gray-300">Show Numbers</span>
+              </label>
             </div>
           </div>
         </div>
@@ -339,7 +364,7 @@ function ProductionDelivery({ data }: Props) {
       {/* Chart */}
       <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
         <h3 className="text-lg font-bold mb-4">Quarterly Production & Deliveries</h3>
-        <Line data={chartData} options={chartOptions} />
+        <Line data={chartData} options={chartOptions} plugins={[ChartDataLabels]} />
       </div>
 
       {/* Quarterly Data Table */}
