@@ -60,8 +60,7 @@ This skill will:
 - Update robotaxi fleet deployment data
 - Update the JSON data file
 - Rebuild the React app
-- Commit and push changes
-- Auto-deploy to GitHub Pages
+- **Note**: Currently does not auto-commit (manual git push required)
 
 ## 📁 Project Structure
 
@@ -92,7 +91,8 @@ Research/
 │       └── deploy.yml                  # Auto-deploy to GitHub Pages
 ├── scripts/
 │   ├── archive_old_data.py             # Annual data archiving
-│   └── validate.py                     # Data validation
+│   ├── validate_data.py                # Data validation (React/Vite)
+│   └── validate_legacy.py              # Old validation (HTML-based, obsolete)
 ├── package.json                        # Node dependencies & scripts
 ├── vite.config.ts                      # Vite build configuration
 ├── tailwind.config.js                  # Tailwind CSS config
@@ -210,15 +210,32 @@ git push origin main
 
 ## 🧪 Data Validation
 
-Validate JSON data structure:
+The project uses a **dual-layer validation system** to ensure data quality:
+
+### Pre-Build Validation (Python)
 ```bash
-python scripts/validate.py
+python3 scripts/validate_data.py
+```
+Validates:
+- JSON structure and required fields
+- Date formats and data types
+- Business logic invariants (chronological order, no duplicates)
+- Category names match schema
+- UI coverage (warns if data won't render)
+
+### Build-Time Validation (Zod)
+Automatic validation during `npm run build`:
+- Runtime type checking with Zod schema
+- Build fails on invalid data
+- TypeScript types generated from schema (single source of truth)
+
+### Archive Old Data
+Keeps data file manageable (current + previous year):
+```bash
+python3 scripts/archive_old_data.py
 ```
 
-Archive old data (keeps current + previous year):
-```bash
-python scripts/archive_old_data.py
-```
+**Note**: See `VALIDATION_UPGRADE.md` for full documentation on the validation system.
 
 ## 🤝 Contributing
 

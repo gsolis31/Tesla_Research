@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { TeslaData } from './types'
+import { validateTeslaData, validateDataInvariants } from './schema'
 import WeeklySummary from './components/WeeklySummary'
 import MetricsCharts from './components/MetricsCharts'
 import Categories from './components/Categories'
@@ -7,10 +7,30 @@ import StockPriceTile from './components/StockPriceTile'
 import './App.css'
 
 // Import data directly - Vite will bundle it
-import teslaData from '../tesla-tracking-data.json'
+import teslaDataRaw from '../tesla-tracking-data.json'
+
+// Validate data at build time with detailed error reporting
+const validationResult = validateTeslaData(teslaDataRaw)
+
+if (!validationResult.success) {
+  console.error('❌ Data validation failed:')
+  validationResult.errors.forEach(err => console.error(`  - ${err}`))
+  throw new Error(`Data validation failed with ${validationResult.errors.length} errors. Check console for details.`)
+}
+
+const data = validationResult.data
+
+// Check data invariants
+const invariantErrors = validateDataInvariants(data)
+if (invariantErrors.length > 0) {
+  console.error('❌ Data invariant validation failed:')
+  invariantErrors.forEach(err => console.error(`  - ${err}`))
+  throw new Error(`Data invariant validation failed with ${invariantErrors.length} errors. Check console for details.`)
+}
+
+console.log('✅ Data validation passed')
 
 function App() {
-  const data = teslaData as TeslaData
   const [activeTab, setActiveTab] = useState('summary')
 
   return (

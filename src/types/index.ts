@@ -1,142 +1,27 @@
-// Tesla tracking data types
+/**
+ * Tesla tracking data types
+ *
+ * NOTE: These types are now generated from the Zod schema in schema.ts
+ * The schema is the single source of truth for validation.
+ *
+ * If you need to add/modify types, update schema.ts first.
+ */
 
-export interface WeeklySummary {
-  weekOf: string;
-  keyChanges: KeyChange[];
-  trends: string[];
-}
+// Re-export types from schema
+export type {
+  TeslaData,
+} from '../schema'
 
-export interface KeyChange {
-  status: 'positive' | 'negative' | 'neutral';
-  sentiment?: {
-    headline: string;
-    reality: string;
-    confidence: 'high' | 'medium' | 'low';
-    rationale: string;
-  };
-  evidence?: {
-    positive_signals: string[];
-    negative_signals: string[];
-    key_metrics: {
-      actual: string;
-      target: string;
-      trajectory: string;
-    };
-  };
-  category: string;
-  title: string;
-  description: string;
-  source: string;
-}
+// Legacy exports for backward compatibility
+// These are inferred from the Zod schema
+import type { TeslaData } from '../schema'
 
-export interface QuarterlyData {
-  quarter: string;
-  production: number;
-  delivery: number;
-}
-
-export interface AnnualSummary {
-  year: string;
-  deliveries: number;
-  yoyGrowth: number;
-}
-
-export interface ProductionDeliveryCategory {
-  title: string;
-  latestUpdate: string;
-  criticalNews: string;
-  totalProduction: string;
-  totalDeliveries: string;
-  quarterlyData: QuarterlyData[];
-  annualSummary: AnnualSummary[];
-}
-
-export interface MetricDataPoint {
-  date: string;
-  count: number;
-  note: string;
-}
-
-export interface RobotaxiCity {
-  name: string;
-  status: 'active' | 'mapped';
-  serviceType: 'unsupervised' | 'mixed' | 'safety-monitor-only';
-  vehicleType: string;
-  activeVehicles: number;
-  breakdown?: {
-    unsupervised: number;
-    safetyMonitor: number;
-    cybercabTesting?: number;
-  };
-  launchDate: string | null;
-  serviceArea: string;
-  notes: string;
-}
-
-export interface Metrics {
-  cybercab: {
-    title: string;
-    data: MetricDataPoint[];
-  };
-  robotaxiFleet: {
-    title: string;
-    data: MetricDataPoint[];
-    target: string;
-    breakdown: {
-      active: number;
-      staged: number;
-      cities: string[];
-    };
-  };
-  robotaxiCities: {
-    title: string;
-    lastUpdated: string;
-    cities: RobotaxiCity[];
-    summary: {
-      totalCities: number;
-      activeCities: number;
-      mappedOnly: number;
-      unsupervisedCapable: number;
-      safetyMonitorOnly: number;
-      totalActiveVehicles: number;
-    };
-  };
-  jobPostings: {
-    title: string;
-    data: MetricDataPoint[];
-  };
-  fsdApprovals: {
-    title: string;
-    countries: Array<{
-      name: string;
-      status: string;
-      date: string;
-      note?: string;
-    }>;
-  };
-}
-
-export interface Category {
-  title: string;
-  latestUpdate: string;
-  criticalNews: string;
-  keyPoints?: string[];
-  timeline?: Array<{
-    date: string;
-    event: string;
-  }>;
-}
-
-export interface TeslaData {
-  lastUpdated: string;
-  weeklySummaries: WeeklySummary[];
-  metrics: Metrics;
-  categories: {
-    aiChip: Category;
-    cybercab: Category;
-    fsd: Category;
-    jobPostings: Category;
-    optimus: Category;
-    productionDelivery: ProductionDeliveryCategory;
-  };
-}
+export type WeeklySummary = TeslaData['weeklySummaries'][number]
+export type KeyChange = WeeklySummary['keyChanges'][number]
+export type QuarterlyData = TeslaData['categories']['productionDelivery']['quarterlyData'][number]
+export type AnnualSummary = TeslaData['categories']['productionDelivery']['annualSummary'][number]
+export type ProductionDeliveryCategory = TeslaData['categories']['productionDelivery']
+export type MetricDataPoint = TeslaData['metrics']['cybercab']['data'][number]
+export type RobotaxiCity = TeslaData['metrics']['robotaxiCities']['cities'][number]
+export type Metrics = TeslaData['metrics']
+export type Category = TeslaData['categories']['aiChip']
