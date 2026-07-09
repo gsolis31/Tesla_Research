@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-08",
+  "weekOf": "2026-07-07",
+  "findings": {
+    "keyChanges": [
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Example positive development with measurable progress"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Signal 1",
+            "Signal 2"
+          ],
+          "negative_signals": [
+            "Minor concern 1"
+          ],
+          "key_metrics": {
+            "actual": "100 units",
+            "target": "80 units",
+            "trajectory": "125% of target"
+          }
+        },
+        "category": "Cybercab Production",
+        "title": "Example: Cybercab production milestone reached",
+        "description": "This is an example findings entry showing the new lightweight format. The merge script will combine this with existing data.",
+        "source": "https://example.com/article"
+      }
+    ],
+    "trends": [
+      "Example trend observation 1",
+      "Example trend observation 2"
+    ],
+    "metrics": {
+      "robotaxiFleet": [
+        {
+          "date": "2026-07-08",
+          "count": 40,
+          "note": "Example: Fleet expanded to 40 vehicles across 4 cities"
+        }
+      ]
+    },
+    "categoryUpdates": {
+      "cybercab": {
+        "criticalNews": "Example critical news update",
+        "newKeyPoint": "Example: New key development in Cybercab production"
+      }
+    }
+  },
+  "metadata": {
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "robotaxitracker.com"
+    ],
+    "urlsSeen": [
+      "https://example.com/article"
+    ],
+    "researchDuration": "5m (example)"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tesla Research Findings",
+  "description": "Lightweight research output from /tesla-update skill. This is the intermediate artifact before merging into the main data file.",
+  "type": "object",
+  "required": ["date", "findings"],
+  "properties": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date of research (YYYY-MM-DD)"
+    },
+    "weekOf": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Monday of the week (ISO week start)"
+    },
+    "findings": {
+      "type": "object",
+      "properties": {
+        "keyChanges": {
+          "type": "array",
+          "description": "New developments found during research",
+          "items": {
+            "type": "object",
+            "required": ["category", "status", "title", "description", "source"],
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "AI Chip Production",
+                  "4680 Battery Cell Production",
+                  "Cybercab Production",
+                  "FSD Country Approvals",
+                  "FSD v15 Software",
+                  "Job Postings",
+                  "Optimus Production",
+                  "Vehicle Production & Delivery",
+                  "Terafab In-House Chip Manufacturing"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": ["positive", "negative", "neutral"]
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "description": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "format": "uri"
+              },
+              "sentiment": {
+                "type": "object",
+                "properties": {
+                  "headline": { "type": "string" },
+                  "reality": { "type": "string" },
+                  "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+                  "rationale": { "type": "string" }
+                }
+              },
+              "evidence": {
+                "type": "object",
+                "properties": {
+                  "positive_signals": { "type": "array", "items": { "type": "string" } },
+                  "negative_signals": { "type": "array", "items": { "type": "string" } },
+                  "key_metrics": {
+                    "type": "object",
+                    "properties": {
+                      "actual": { "type": "string" },
+                      "target": { "type": "string" },
+                      "trajectory": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "trends": {
+          "type": "array",
+          "description": "Overall trend observations",
+          "items": { "type": "string" }
+        },
+        "metrics": {
+          "type": "object",
+          "description": "Metric updates (append-only)",
+          "properties": {
+            "cybercab": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["date", "count", "note"],
+                "properties": {
+                  "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                  "count": { "type": "integer", "minimum": 0 },
+                  "note": { "type": "string" }
+                }
+              }
+            },
+            "robotaxiFleet": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["date", "count", "note"],
+                "properties": {
+                  "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                  "count": { "type": "integer", "minimum": 0 },
+                  "note": { "type": "string" }
+                }
+              }
+            },
+            "jobPostings": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["date", "count", "note"],
+                "properties": {
+                  "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                  "count": { "type": "integer", "minimum": 0 },
+                  "note": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "quarterlyData": {
+          "type": "array",
+          "description": "New quarterly production & delivery reports",
+          "items": {
+            "type": "object",
+            "required": ["quarter", "production", "delivery"],
+            "properties": {
+              "quarter": { "type": "string" },
+              "production": { "type": "integer", "minimum": 0 },
+              "delivery": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "categoryUpdates": {
+          "type": "object",
+          "description": "Updates to category metadata (criticalNews, new keyPoint, new timeline event)",
+          "patternProperties": {
+            "^(aiChip|battery4680|cybercab|fsd|jobPostings|optimus|terafab)$": {
+              "type": "object",
+              "properties": {
+                "criticalNews": { "type": "string" },
+                "newKeyPoint": { "type": "string" },
+                "newTimelineEvent": {
+                  "type": "object",
+                  "required": ["date", "event"],
+                  "properties": {
+                    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                    "event": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Research metadata for auditing",
+      "properties": {
+        "sourcesSearched": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "urlsSeen": {
+          "type": "array",
+          "description": "URLs discovered (for deduplication cache)",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "researchDuration": {
+          "type": "string",
+          "description": "How long research took"
+        },
+        "skipReason": {
+          "type": "string",
+          "description": "If skipped (no news), why?"
+        }
+      }
+    }
+  }
+}
