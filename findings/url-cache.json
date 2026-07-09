@@ -1,9 +1,75 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-07-08",
-  "urls": {},
+  "urls": {
+    "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
+      "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval": {
+      "originalUrl": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://teslanorth.com/2026/04/10/tesla-fsd-supervised-officially-approved-in-the-netherlands": {
+      "originalUrl": "https://teslanorth.com/2026/04/10/tesla-fsd-supervised-officially-approved-in-the-netherlands/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations": {
+      "originalUrl": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html": {
+      "originalUrl": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://teslanorth.com/2025/11/05/tesla-ai5-chip-coming-in-2027-ai6-to-follow-in-2028-musk": {
+      "originalUrl": "https://teslanorth.com/2025/11/05/tesla-ai5-chip-coming-in-2027-ai6-to-follow-in-2028-musk/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.teslarati.com/tesla-builds-50-million-4680-battery-cells-at-giga-texas": {
+      "originalUrl": "https://www.teslarati.com/tesla-builds-50-million-4680-battery-cells-at-giga-texas/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.teslarati.com/elon-musk-lanuches-terafab-tesla-spacexai-chip-factory": {
+      "originalUrl": "https://www.teslarati.com/elon-musk-lanuches-terafab-tesla-spacexai-chip-factory/",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    },
+    "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html": {
+      "originalUrl": "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-08",
+      "category": "Research",
+      "title": "July 2026 update"
+    }
+  },
   "stats": {
-    "totalUrls": 0,
-    "categoryCounts": {}
+    "totalUrls": 9,
+    "categoryCounts": {
+      "Research": 9
+    }
   }
 }

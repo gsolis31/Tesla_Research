@@ -1,6 +1,109 @@
 {
-  "lastUpdated": "2026-07-03",
+  "lastUpdated": "2026-07-08",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-07-07",
+      "keyChanges": [
+        {
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Miami robotaxi launch expands geographic footprint, though fleet size remains modest at ~50 vehicles in Austin per city officials."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Miami service launched with unsupervised vehicles on July 3, 2026",
+              "Dallas also added to robotaxi service coverage",
+              "Geographic expansion despite production bottlenecks"
+            ],
+            "negative_signals": [
+              "Austin fleet still only ~50 vehicles after a year of operation",
+              "Software remains limiting factor, not vehicle production",
+              "Service expansion limited by FSD capabilities"
+            ],
+            "key_metrics": {
+              "actual": "~50 vehicles in Austin, new Miami/Dallas launches",
+              "target": "Mass market autonomous service",
+              "trajectory": "Geographic expansion but constrained scale"
+            }
+          },
+          "category": "Cybercab Production",
+          "title": "Tesla robotaxi expands to Miami and Dallas on July 3",
+          "description": "On July 3, 2026, Tesla expanded its unsupervised robotaxi service to Miami and Dallas, marking continued geographic expansion of the Cybercab platform. City officials report Tesla's Austin fleet at approximately 50 vehicles despite a year of operation. Production is ramping exponentially toward year-end per Musk, but software limitations rather than vehicle manufacturing capacity remain the primary constraint on service scaling.",
+          "source": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/"
+        },
+        {
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Denmark approval represents fourth European country and demonstrates continued FSD expansion momentum in region."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Denmark became fourth European country with FSD approval on June 9",
+              "Lithuania activated May 20, Estonia May 29",
+              "Netherlands granted first EU approval April 10, 2026",
+              "EU-wide recognition anticipated summer 2026 via mutual recognition"
+            ],
+            "negative_signals": [
+              "EU-wide timeline is Tesla's projection, not confirmed regulatory outcome",
+              "Each country still requires individual activation despite mutual recognition pathway"
+            ],
+            "key_metrics": {
+              "actual": "4 European countries approved (NL, LT, EE, DK)",
+              "target": "EU-wide deployment via mutual recognition",
+              "trajectory": "Expanding, summer 2026 EU-wide recognition anticipated"
+            }
+          },
+          "category": "FSD Country Approvals",
+          "title": "Denmark becomes fourth European country to approve FSD on June 9",
+          "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands (April 10), Lithuania (May 20), and Estonia (May 29). The Dutch vehicle authority RDW granted the first European type approval, and Tesla anticipates EU-wide recognition during summer 2026 through mutual recognition, potentially extending access to Germany, France, and other major markets without repeating the full 18-month review process. Tesla now has FSD Supervised available in 12 countries globally.",
+          "source": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/"
+        },
+        {
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Production timeline confirmed (late July/August) which is positive, but Musk's caution on 'quite slow' initial output and 10,000 unique parts tempers expectations for near-term volume."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Concrete production start: late July or August 2026 at Fremont",
+              "Fremont converted from Model S/X to Optimus (1M units/year capacity)",
+              "Giga Texas second-gen facility targeting 10M units/year, summer 2027 start",
+              "100+ Optimus-related job openings signal serious ramp efforts"
+            ],
+            "negative_signals": [
+              "Musk warned initial output will be 'quite slow'",
+              "Production rate 'literally impossible to predict' due to 10,000 unique parts",
+              "Model S/X production ended to make room (May 2026)",
+              "No commercial customer announcements or pricing confirmed"
+            ],
+            "key_metrics": {
+              "actual": "Production starting late July/August 2026",
+              "target": "1M units/year Fremont, 10M units/year Giga Texas",
+              "trajectory": "On schedule but with slow initial ramp expected"
+            }
+          },
+          "category": "Optimus Production",
+          "title": "Optimus production confirmed for late July/August 2026 at Fremont",
+          "description": "During Tesla's Q1 2026 earnings call, Elon Musk confirmed that Optimus humanoid robot production will commence in late July or August 2026 at the Fremont factory. The facility, converted from Model S/X production (final vehicles produced May 2026), targets 1 million units annually. Musk cautioned that initial output will be 'quite slow' due to 10,000 unique parts across an entirely new production line. Tesla is simultaneously constructing a second-generation Optimus facility at Giga Texas targeting 10 million units per year, with production starting summer 2027.",
+          "source": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
+        }
+      ],
+      "trends": [
+        "Geographic expansion prioritized over fleet scaling: Miami and Dallas robotaxi launches despite modest Austin fleet size",
+        "European FSD regulatory momentum building: 4 countries approved in 3 months (Denmark most recent on June 9)",
+        "Production timelines firming: Optimus late July/August start confirmed, Q2 2026 deliveries beat by 18%",
+        "Hardware production accelerating while software remains constraint: Cybercab production ramping but limited by FSD v15 delay to Q4 2026"
+      ]
+    },
     {
       "weekOf": "2026-06-29",
       "keyChanges": [
@@ -2127,8 +2230,8 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-06-26",
-      "criticalNews": "AI6 chip remains delayed ~6 months to Q4 2027. Samsung 2nm yields improved to 60% but below TSMC 80-90%. AI6.5 allocated to TSMC Arizona.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "AI5 chip samples and small batch production expected 2026, high volume 2027. AI6 chip $16.5B Samsung deal (July 2025) for Taylor, Texas fab, targeting mid-2028 mass production.",
       "keyPoints": [
         "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 originally TSMC Arizona",
         "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
@@ -2196,25 +2299,9 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-06-30",
-      "criticalNews": "Production Cybercab (no steering wheel or pedals) begins on-road testing in Austin (June 30, safety monitor present). Fleet stable ~59 total vehicles pending FSD v15 rewrite.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
       "keyPoints": [
-        "Production Cybercab without steering wheel or pedals enters public-road testing in Austin with safety monitor (June 30, 2026)",
-        "NHTSA updated FMVSS 135 to remove brake pedal requirement for fully autonomous vehicles (June 25, 2026)",
-        "USPTO published Cybercab wheel design patent US-D1130251-S - unique FWD staggered wheel layout (June 27)",
-        "42 Cybercabs in Austin test fleet per robotaxitracker.com (June 28)",
-        "70+ Cybercabs spotted at Giga Texas on May 13, 2026 (up from 60 on May 8)",
-        "Unsupervised fleet reached 39 vehicles by mid-May (27 Austin, 6 Houston, 5 Dallas)",
-        "Austin expanded to evening unsupervised operations for first time",
-        "Only 3.9% of H1 2026 target (1000+ vehicles across 7 cities) with 2 weeks remaining",
-        "H1 2026 expansion to five additional cities (Phoenix, Miami, Orlando, Tampa, Las Vegas) delayed",
-        "Production units (70+) significantly exceed operational unsupervised fleet (39)",
-        "Unsupervised fleet reached 25 vehicles by end of April (19 Austin, 3 Dallas, 3 Houston)",
-        "Total active fleet: 165 vehicles across all cities (107 in Bay Area)",
-        "Android app launched April 27, 2026 after nearly one year iOS-exclusive",
-        "Glossy gold production units spotted at Giga Texas on April 24, 2026",
-        "CEO Elon Musk confirmed in Q1 2026 earnings call (April 22) that Cybercab production officially began",
-        "BREAKING April 18: Unsupervised Robotaxi service launched in Houston and Dallas, Texas",
         "Now operating in 3 Texas cities: Austin, Dallas, Houston - fully autonomous with no safety driver",
         "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
         "29% of Austin rides now unsupervised (20 of 69 rides in last 7 days)",
@@ -2228,7 +2315,8 @@
         "Parallel crash testing completed final validation phase",
         "SXSW showcase (March 13-14) demonstrated production-ready vehicle",
         "Production line cycle time: <10 seconds per unit",
-        "Long-term target: 2 million units/year at full capacity"
+        "Long-term target: 2 million units/year at full capacity",
+        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles"
       ],
       "timeline": [
         {
@@ -2339,18 +2427,9 @@
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-06-26",
-      "criticalNews": "Belgium & Denmark subscriptions live at \u20ac100/month. FSD v15 architectural rewrite targeted Q4 2026/Q1 2027 - blocking robotaxi scaling.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
       "keyPoints": [
-        "Belgium approved 5,000km FSD pilot test in Flanders region on May 15, 2026",
-        "Flemish Minister Annick De Ridder publicly confirmed testing authorization",
-        "Testing begins almost immediately once insurance and license plate requirements finalized",
-        "Belgium leveraging similar road systems to Netherlands for fast-track evaluation",
-        "Positive pilot results could accelerate provisional Europe-wide type approval",
-        "June 30 TCMV vote confirmed as earliest EU-wide decision point",
-        "EU Technical Committee extended session for Tesla FSD presentation on May 5, 2026",
-        "RDW presented Dutch approval under Article 39 in afternoon session starting 13:30",
-        "No vote scheduled for May 5 - served as informational briefing for 27 member states",
         "EU-wide vote possible at June 30 TCMV meeting for automatic approval across entire EU",
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
         "Subscriptions launched at \u20ac99/month in Netherlands",
@@ -2364,7 +2443,8 @@
         "Germany, France, Belgium, Spain, Italy rollout anticipated by summer 2026",
         "Japan released first public FSD demo video in Tokyo (March 6)",
         "Japan targeting end of 2026 commercial rollout",
-        "Approved under Article 39 (EU mutual recognition mechanism)"
+        "Approved under Article 39 (EU mutual recognition mechanism)",
+        "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia"
       ],
       "activeCountries": [
         "United States",
@@ -2517,8 +2597,8 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-06-26",
-      "criticalNews": "Optimus hiring stable at 100+ roles. Summer 2026 production start at Fremont on track. Cortex 2.0 Phase 1 (250 MW) online April 2026.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Optimus production confirmed for late July or August 2026 at Fremont. Initial output will be slow due to 10,000 unique parts. Giga Texas second-gen facility targets summer 2027 start.",
       "keyPoints": [
         "North Campus Optimus factory foundation actively progressing as of May 13, 2026 drone footage",
         "Geopier foundation equipment observed on site for 5.2M sq ft facility",
@@ -2548,64 +2628,12 @@
       ],
       "timeline": [
         {
-          "date": "2025-12",
-          "event": "Video released showing Optimus jogging"
-        },
-        {
-          "date": "2026-01-21",
-          "event": "Mass production commenced at Fremont (internal use)"
-        },
-        {
-          "date": "2026-01-28",
-          "event": "Model S/X ending Q2 2026 announced"
-        },
-        {
-          "date": "2026-02-03",
-          "event": "V3 production-intent prototype demo"
-        },
-        {
-          "date": "2026-03-11",
-          "event": "Digital Optimus (Macrohard) announced - Grok AI integration"
-        },
-        {
-          "date": "2026-03-12",
-          "event": "Summer 2026 production start confirmed (Abundance Summit)"
-        },
-        {
-          "date": "2026-03-13",
-          "event": "Timeline accelerated to Q2/Q3 2026"
-        },
-        {
           "date": "2026-04",
           "event": "Cortex 2.0 supercomputer Phase 1 (250MW) online"
         },
         {
           "date": "2026-04-14",
           "event": "Shanghai Gigafactory announced as key Optimus production facility"
-        },
-        {
-          "date": "2026-Mid",
-          "event": "Cortex 2.0 full capacity (500MW) expected"
-        },
-        {
-          "date": "2026-Summer",
-          "event": "Optimus 3 production begins"
-        },
-        {
-          "date": "2026-Late",
-          "event": "First external commercial customers (B2B)"
-        },
-        {
-          "date": "2026-Late",
-          "event": "Shanghai Optimus production targeted to start"
-        },
-        {
-          "date": "2027",
-          "event": "Giga Texas facility targeting 10M units/year"
-        },
-        {
-          "date": "2027-End",
-          "event": "Consumer sales target"
         },
         {
           "date": "2026-04-22",
@@ -2616,21 +2644,49 @@
           "event": "Fremont production start confirmed for late July/August 2026"
         },
         {
-          "date": "2026-05-Early",
-          "event": "Last Model S and X production - line conversion begins"
+          "date": "2026-05-09",
+          "event": "Last Model S and Model X produced at Fremont (14/11 year runs complete)"
         },
         {
           "date": "2026-05-09",
-          "event": "Last Model S and Model X produced at Fremont (14/11 year runs complete)"
+          "event": "Last Model S and Model X produced at Fremont",
+          "details": "Model S 14-year run complete, Model X 11-year run complete. Production line to be converted for Optimus Gen 3 production starting late July/August 2026."
         },
         {
           "date": "2026-05-13",
           "event": "Giga Texas North Campus foundation work visible progress (drone footage)"
         },
         {
-          "date": "2026-05-09",
-          "event": "Last Model S and Model X produced at Fremont",
-          "details": "Model S 14-year run complete, Model X 11-year run complete. Production line to be converted for Optimus Gen 3 production starting late July/August 2026."
+          "date": "2026-05-Early",
+          "event": "Last Model S and X production - line conversion begins"
+        },
+        {
+          "date": "2026-07-01",
+          "event": "Optimus production start at Fremont (late July/August 2026 confirmed)"
+        },
+        {
+          "date": "2026-Late",
+          "event": "First external commercial customers (B2B)"
+        },
+        {
+          "date": "2026-Late",
+          "event": "Shanghai Optimus production targeted to start"
+        },
+        {
+          "date": "2026-Mid",
+          "event": "Cortex 2.0 full capacity (500MW) expected"
+        },
+        {
+          "date": "2026-Summer",
+          "event": "Optimus 3 production begins"
+        },
+        {
+          "date": "2027",
+          "event": "Giga Texas facility targeting 10M units/year"
+        },
+        {
+          "date": "2027-End",
+          "event": "Consumer sales target"
         }
       ],
       "pricing": {
@@ -2641,8 +2697,8 @@
     },
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
-      "latestUpdate": "2026-07-03",
-      "criticalNews": "Q2 2026 official results: 451,758 production, 480,126 deliveries\u2014beating 22-analyst consensus of 406,024 by 18.2%. Energy storage hit record 13.5 GWh. H1 2026 total: 838,149 deliveries. Full-year 2026 consensus: ~1,654,808 (~1% YoY growth). Earnings call scheduled July 22.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
       "totalProduction": "9759880",
       "totalDeliveries": "9664074",
       "quarterlyData": [
@@ -2922,8 +2978,8 @@
     },
     "terafab": {
       "title": "Terafab In-House Chip Manufacturing",
-      "latestUpdate": "2026-06-26",
-      "criticalNews": "Construction began April 22, 2026 at Giga Texas. $3B research fab targeting AI5 small-batch production 2026, volume 2027. Intel partnership confirmed.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Terafab joint $25B Tesla-SpaceX chip fab announced March 2026 in Austin. First phase $55B, could scale to $119B. July 7, 2026 'cool news' teased by Tesla VP about Giga Texas scaling.",
       "keyPoints": [
         "Groundbreaking April 22, 2026 at Giga Texas North Campus",
         "Announced by Elon Musk March 21, 2026",
@@ -2933,7 +2989,8 @@
         "Vertically integrated facility - all chip manufacturing stages in one location",
         "Strategic goal: Reduce dependence on Samsung/TSMC external fabs",
         "Designed for rapid iteration on custom AI chips",
-        "Part of broader 1+ terawatt AI compute capacity goal"
+        "Part of broader 1+ terawatt AI compute capacity goal",
+        "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B"
       ],
       "timeline": [
         {
@@ -2961,8 +3018,8 @@
     },
     "battery4680": {
       "title": "4680 Battery Cell Production",
-      "latestUpdate": "2026-06-26",
-      "criticalNews": "Production at 15-20 GWh/year from Giga Texas with >90% yield. Lowest cost per kWh achieved. Re-integrated into 2026 Model Y refresh.",
+      "latestUpdate": "2026-07-08",
+      "criticalNews": "Giga Berlin announced $250M investment (May 12, 2026) to scale annual 4680 production from 8 GWh to 18 GWh. 100M cell milestone surpassed September 2025. Dry-electrode process confirmed for anode and cathode.",
       "keyPoints": [
         "Annual capacity: 15-20 GWh/year from Giga Texas alone",
         "Yield rate: >90% stable yield for anode and cathode",
@@ -2971,7 +3028,8 @@
         "Floor space efficiency: Reclaimed 50% of space vs wet coating process",
         "Production rate: >1 million cells per week",
         "Model Y 2026 'Juniper' refresh uses 4680 cells",
-        "Expansion: Additional lines planned for Giga Nevada"
+        "Expansion: Additional lines planned for Giga Nevada",
+        "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually"
       ],
       "timeline": [
         {
