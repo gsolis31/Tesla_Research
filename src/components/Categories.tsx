@@ -12,7 +12,6 @@ function Categories({ data }: Props) {
     { id: 'cybercab', label: 'Cybercab', data: data.categories.cybercab },
     { id: 'fsd', label: 'FSD Approvals', data: data.categories.fsd },
     { id: 'optimus', label: 'Optimus Production', data: data.categories.optimus },
-    { id: 'productionDelivery', label: 'Vehicle Production & Delivery', data: data.categories.productionDelivery },
     { id: 'aiChip', label: 'AI Chip Production', data: data.categories.aiChip },
     { id: 'battery4680', label: '4680 Battery Cell Production', data: data.categories.battery4680 },
     { id: 'terafab', label: 'Terafab Manufacturing', data: data.categories.terafab },
