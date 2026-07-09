@@ -2,7 +2,7 @@
   "lastUpdated": "2026-07-08",
   "weeklySummaries": [
     {
-      "weekOf": "2026-07-07",
+      "weekOf": "2026-07-06",
       "keyChanges": [
         {
           "status": "positive",
@@ -2302,7 +2302,6 @@
       "latestUpdate": "2026-07-08",
       "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
       "keyPoints": [
-        "Now operating in 3 Texas cities: Austin, Dallas, Houston - fully autonomous with no safety driver",
         "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
         "29% of Austin rides now unsupervised (20 of 69 rides in last 7 days)",
         "2,053 total trips recorded covering 7,271 miles (avg 3.54 miles per trip)",
@@ -2316,6 +2315,7 @@
         "SXSW showcase (March 13-14) demonstrated production-ready vehicle",
         "Production line cycle time: <10 seconds per unit",
         "Long-term target: 2 million units/year at full capacity",
+        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles"
       ],
       "timeline": [
@@ -2430,7 +2430,6 @@
       "latestUpdate": "2026-07-08",
       "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
       "keyPoints": [
-        "EU-wide vote possible at June 30 TCMV meeting for automatic approval across entire EU",
         "Netherlands officially approved FSD Supervised on April 10, 2026 - First EU country!",
         "Subscriptions launched at \u20ac99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
@@ -2444,6 +2443,7 @@
         "Japan released first public FSD demo video in Tokyo (March 6)",
         "Japan targeting end of 2026 commercial rollout",
         "Approved under Article 39 (EU mutual recognition mechanism)",
+        "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia",
         "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia"
       ],
       "activeCountries": [
@@ -2990,6 +2990,7 @@
         "Strategic goal: Reduce dependence on Samsung/TSMC external fabs",
         "Designed for rapid iteration on custom AI chips",
         "Part of broader 1+ terawatt AI compute capacity goal",
+        "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B",
         "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B"
       ],
       "timeline": [
@@ -3029,6 +3030,7 @@
         "Production rate: >1 million cells per week",
         "Model Y 2026 'Juniper' refresh uses 4680 cells",
         "Expansion: Additional lines planned for Giga Nevada",
+        "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually",
         "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually"
       ],
       "timeline": [
