@@ -15,20 +15,22 @@ const validationResult = validateTeslaData(teslaDataRaw)
 if (!validationResult.success) {
   console.error('❌ Data validation failed:')
   validationResult.errors.forEach(err => console.error(`  - ${err}`))
-  throw new Error(`Data validation failed with ${validationResult.errors.length} errors. Check console for details.`)
+  // Log errors but don't crash the app in production
+  console.warn('⚠️ Continuing with potentially invalid data')
 }
 
-const data = validationResult.data
+const data = validationResult.success ? validationResult.data : teslaDataRaw as any
 
-// Check data invariants
-const invariantErrors = validateDataInvariants(data)
-if (invariantErrors.length > 0) {
-  console.error('❌ Data invariant validation failed:')
-  invariantErrors.forEach(err => console.error(`  - ${err}`))
-  throw new Error(`Data invariant validation failed with ${invariantErrors.length} errors. Check console for details.`)
+// Check data invariants (non-blocking)
+if (validationResult.success) {
+  const invariantErrors = validateDataInvariants(data)
+  if (invariantErrors.length > 0) {
+    console.warn('⚠️ Data invariant validation warnings:')
+    invariantErrors.forEach(err => console.warn(`  - ${err}`))
+  } else {
+    console.log('✅ Data validation passed')
+  }
 }
-
-console.log('✅ Data validation passed')
 
 function App() {
   const [activeTab, setActiveTab] = useState('summary')
