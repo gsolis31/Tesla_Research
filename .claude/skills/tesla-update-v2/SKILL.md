@@ -185,6 +185,71 @@ Instead, create `findings/YYYY-MM-DD.json`:
 
 **Validation**: Findings must match `findings/schema.json`
 
+---
+
+## CRITICAL: Sentiment Analysis Guidelines
+
+**BE VERY CRITICAL. DO NOT SUGAR COAT.**
+
+When assigning `status` (positive/negative/neutral), prioritize **structural/fundamental issues** over **headline wins**:
+
+### Mark as NEGATIVE when:
+✅ **Fundamental constraints remain unsolved**
+- Example: Robotaxi expands cities but fleet stuck at 50 vehicles after a year
+- Example: Production timeline announced but "impossible to predict" and "quite slow"
+- Example: Regulatory approval but no path to actual deployment
+
+✅ **Negative signals outweigh or undermine positive signals**
+- Example: New facility announced but existing facility underperforming
+- Example: Timeline confirmed but with major caveats/delays
+- Example: Growth metrics declining despite new initiatives
+
+✅ **Progress metrics show stagnation or regression**
+- Example: Fleet growth <10% over 6+ months
+- Example: Timeline pushed right by >3 months
+- Example: Cost targets missed significantly
+
+### Mark as NEUTRAL when:
+✅ **Mixed signals with no clear winner**
+- Example: Timeline firmed up but with "slow ramp" warning
+- Example: Approval granted but deployment timeline uncertain
+
+✅ **Positive headline but concerning reality**
+- Example: Expansion announced but existing ops struggling
+- Example: Production starts but volume unclear
+
+### Mark as POSITIVE when:
+✅ **Clear progress on fundamentals**
+- Example: Fleet doubles in size with strong metrics
+- Example: Regulatory win with clear deployment path
+- Example: Production ramp on track with volume targets
+
+✅ **Milestones achieved without major caveats**
+- Example: First commercial delivery with customer confirmed
+- Example: Facility operational at target capacity
+
+### Reality Check:
+**Ask yourself**: "If I owned Tesla stock, would this news make me more or less confident in the timeline?"
+
+- More confident = positive
+- Unchanged/uncertain = neutral
+- Less confident = negative
+
+**Examples from 2026-07-08:**
+- ❌ Robotaxi expansion to Miami/Dallas - marked POSITIVE originally
+  - Reality: Fleet stuck at 50 vehicles after a year = **FAILED SCALING**
+  - Correct rating: **NEGATIVE** (fundamental constraint unsolved)
+
+- ✅ Denmark FSD approval - marked POSITIVE
+  - Reality: Regulatory progress, no major caveats
+  - Correct rating: **POSITIVE**
+
+- ✅ Optimus production timeline - marked NEUTRAL
+  - Reality: Timeline set but "quite slow" + "impossible to predict"
+  - Correct rating: **NEUTRAL** (mixed signals)
+
+---
+
 ### Step 5: Skip if No News
 
 If no keyChanges, trends, metrics, or category updates found:

@@ -4,12 +4,12 @@
   "findings": {
     "keyChanges": [
       {
-        "status": "positive",
+        "status": "negative",
         "sentiment": {
           "headline": "positive",
-          "reality": "positive",
+          "reality": "negative",
           "confidence": "high",
-          "rationale": "Miami robotaxi launch expands geographic footprint, though fleet size remains modest at ~50 vehicles in Austin per city officials."
+          "rationale": "While geographic expansion to Miami and Dallas signals continued commitment, the underlying reality is concerning: Austin fleet remains stuck at ~50 vehicles after a full year of operation, demonstrating failed scaling. Software limitations—not hardware production—remain the fundamental blocker, making city expansion premature without solving the core constraint."
         },
         "evidence": {
           "positive_signals": [
