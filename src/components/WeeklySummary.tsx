@@ -37,7 +37,7 @@ function WeeklySummary({ data }: Props) {
     )
   }
 
-  // Calculate status counts
+  // Calculate status counts and percentages
   const statusCounts = latestWeek.keyChanges.reduce(
     (acc, change) => {
       acc[change.status] = (acc[change.status] || 0) + 1
@@ -46,23 +46,49 @@ function WeeklySummary({ data }: Props) {
     { positive: 0, neutral: 0, negative: 0 } as Record<string, number>
   )
 
+  const total = latestWeek.keyChanges.length
+  const positivePercent = total > 0 ? Math.round((statusCounts.positive / total) * 100) : 0
+  const neutralPercent = total > 0 ? Math.round((statusCounts.neutral / total) * 100) : 0
+  const negativePercent = total > 0 ? Math.round((statusCounts.negative / total) * 100) : 0
+
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">Week of {latestWeek.weekOf}</h2>
 
       {/* Status Summary */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <div className="bg-green-500/10 border-2 border-green-500 rounded-lg p-4 text-center">
-          <div className="text-3xl font-bold text-green-400">{statusCounts.positive}</div>
-          <div className="text-sm text-gray-400 mt-1">Positive</div>
+      <div className="grid grid-cols-3 gap-5 mb-6">
+        <div className="bg-[#2a2a2a] p-5 rounded-md text-center">
+          <div className="text-[2.5em] font-bold mb-1" style={{ color: '#4ade80' }}>
+            {positivePercent}%
+          </div>
+          <div className="text-[#999] text-[0.95em] uppercase tracking-wider">
+            Positive
+          </div>
+          <div className="text-[#666] text-[0.8em] mt-1">
+            {statusCounts.positive} updates
+          </div>
         </div>
-        <div className="bg-yellow-500/10 border-2 border-yellow-500 rounded-lg p-4 text-center">
-          <div className="text-3xl font-bold text-yellow-400">{statusCounts.neutral}</div>
-          <div className="text-sm text-gray-400 mt-1">Neutral</div>
+        <div className="bg-[#2a2a2a] p-5 rounded-md text-center">
+          <div className="text-[2.5em] font-bold mb-1" style={{ color: '#fbbf24' }}>
+            {neutralPercent}%
+          </div>
+          <div className="text-[#999] text-[0.95em] uppercase tracking-wider">
+            Neutral
+          </div>
+          <div className="text-[#666] text-[0.8em] mt-1">
+            {statusCounts.neutral} updates
+          </div>
         </div>
-        <div className="bg-red-500/10 border-2 border-red-500 rounded-lg p-4 text-center">
-          <div className="text-3xl font-bold text-red-400">{statusCounts.negative}</div>
-          <div className="text-sm text-gray-400 mt-1">Negative</div>
+        <div className="bg-[#2a2a2a] p-5 rounded-md text-center">
+          <div className="text-[2.5em] font-bold mb-1" style={{ color: '#ef4444' }}>
+            {negativePercent}%
+          </div>
+          <div className="text-[#999] text-[0.95em] uppercase tracking-wider">
+            Negative
+          </div>
+          <div className="text-[#666] text-[0.8em] mt-1">
+            {statusCounts.negative} updates
+          </div>
         </div>
       </div>
 
