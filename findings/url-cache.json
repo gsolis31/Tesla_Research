@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-08",
+  "lastUpdated": "2026-07-10",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -64,12 +64,51 @@
       "lastSeen": "2026-07-08",
       "category": "Research",
       "title": "July 2026 update"
+    },
+    "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont": {
+      "originalUrl": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10",
+      "category": "Optimus Production",
+      "title": "Tesla completes 46-day Model S/X line teardown for Optimus at Fremont"
+    },
+    "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi": {
+      "originalUrl": "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/",
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10",
+      "category": "Cybercab Production",
+      "title": "Tesla app adds live Self-Driving indicator for robotaxi owners"
+    },
+    "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map": {
+      "originalUrl": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/",
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10",
+      "category": "FSD v15 Software",
+      "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September"
+    },
+    "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments": {
+      "originalUrl": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "Q2 2026 production deliveries (already in data)"
+    },
+    "https://www.teslarati.com/tesla-gives-biggest-signal-yet-that-cybercab-launch-imminent": {
+      "originalUrl": "https://www.teslarati.com/tesla-gives-biggest-signal-yet-that-cybercab-launch-imminent/",
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10",
+      "category": "Cybercab Production",
+      "title": "Cybercab launch imminent signal (June article reviewed)"
     }
   },
   "stats": {
-    "totalUrls": 9,
+    "totalUrls": 14,
     "categoryCounts": {
-      "Research": 9
+      "Research": 9,
+      "Optimus Production": 1,
+      "Cybercab Production": 2,
+      "FSD v15 Software": 1,
+      "Vehicle Production & Delivery": 1
     }
   }
 }

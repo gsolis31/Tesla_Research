@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08",
+  "lastUpdated": "2026-07-10",
   "weeklySummaries": [
     {
       "weekOf": "2026-07-06",
@@ -95,13 +95,104 @@
           "title": "Optimus production confirmed for late July/August 2026 at Fremont",
           "description": "During Tesla's Q1 2026 earnings call, Elon Musk confirmed that Optimus humanoid robot production will commence in late July or August 2026 at the Fremont factory. The facility, converted from Model S/X production (final vehicles produced May 2026), targets 1 million units annually. Musk cautioned that initial output will be 'quite slow' due to 10,000 unique parts across an entirely new production line. Tesla is simultaneously constructing a second-generation Optimus facility at Giga Texas targeting 10 million units per year, with production starting summer 2027.",
           "source": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
+        },
+        {
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Official Tesla Manufacturing video shows S/X line fully decommissioned in 46 days and floor cleared for Optimus \u2014 concrete execution progress toward the late July/August full-scale start already on the timeline."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Model S/X assembly line decommissioned in 46 days (Tesla Manufacturing, July 10)",
+              "Floor space cleared for dedicated Optimus line targeting 1M units/year capacity",
+              "Limited Gen 3 production already underway; full-scale output still targeted late July/August 2026"
+            ],
+            "negative_signals": [
+              "Full-scale production has not started yet \u2014 still pre-ramp",
+              "Initial output expected to be slow (10,000 unique parts caution remains)"
+            ],
+            "key_metrics": {
+              "actual": "S/X line teardown complete in 46 days; limited Gen 3 production active",
+              "target": "Full-scale Optimus production late July/August 2026 at Fremont",
+              "trajectory": "On schedule for summer production start; facility conversion complete"
+            }
+          },
+          "category": "Optimus Production",
+          "title": "Tesla completes 46-day Model S/X line teardown for Optimus at Fremont",
+          "description": "Tesla Manufacturing posted a video on July 10, 2026 showing the original Model S and Model X assembly line at Fremont decommissioned in just 46 days \u2014 concrete pits, robotic arms, and conveyors removed. The post, captioned 'End of an era,' confirms the floor is being repurposed for Optimus. Limited Gen 3 production is already underway; full-scale output on the converted line remains targeted for late July or August 2026 with a long-term capacity ambition of 1 million units per year at Fremont.",
+          "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/"
+        },
+        {
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Remote Self-Driving status in the consumer app is real product infrastructure for owner-operated robotaxi fleets, not just a cosmetic UI tweak."
+          },
+          "evidence": {
+            "positive_signals": [
+              "App 4.58.5 shows live 'Self-Driving' indicator when FSD is engaged",
+              "Works on HW3 (not only HW4); vehicle software 2026.20.6.1 ~40% fleet rollout",
+              "Directly useful for owners whose cars earn robotaxi revenue"
+            ],
+            "negative_signals": [
+              "Does not expand fleet size or unsupervised city coverage by itself",
+              "Still depends on vehicle software rollout reaching the full fleet"
+            ],
+            "key_metrics": {
+              "actual": "App 4.58.5 + vehicle SW 2026.20.6.1 (~40% of fleet)",
+              "target": "Remote fleet management for owner-operated robotaxi network",
+              "trajectory": "Infrastructure for scaled owner fleet; not yet a volume milestone"
+            }
+          },
+          "category": "Cybercab Production",
+          "title": "Tesla app adds live Self-Driving indicator for robotaxi owners",
+          "description": "Tesla app version 4.58.5 (reported July 7, 2026) displays a live blue 'Self-Driving' indicator under the speed readout when FSD is engaged, plus the glowing blue navigation path. Confirmed working on HW3 Model S. Vehicle-side software 2026.20.6.1 has reached ~40% of the fleet. For owners whose vehicles generate robotaxi revenue, this turns the app into a basic fleet monitor \u2014 especially relevant as unsupervised service runs in Miami and other cities.",
+          "source": "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/"
+        },
+        {
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Official confirmation of voice-taught contextual FSD and a September Grok\u2192planning timeline is progress, but it is a roadmap commitment \u2014 not a shipped capability yet."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Ashok Elluswamy confirmed voice-taught, remembered contextual FSD instructions (July 8)",
+              "Musk: Grok voice commands to FSD planning layer targeted by September 2026",
+              "Directly improves last-100-feet robotaxi pickup/dropoff quality at scale"
+            ],
+            "negative_signals": [
+              "Feature not shipped yet \u2014 testing burden for safety (e.g. refusing unsafe commands)",
+              "September timeline is guidance, not a release"
+            ],
+            "key_metrics": {
+              "actual": "Confirmed on roadmap; Grok in-car exists but has no FSD authority today",
+              "target": "Grok voice \u2192 FSD planning by September 2026",
+              "trajectory": "~2 months to stated integration target"
+            }
+          },
+          "category": "FSD v15 Software",
+          "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September",
+          "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
+          "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
         }
       ],
       "trends": [
         "Geographic expansion prioritized over fleet scaling: Miami and Dallas robotaxi launches despite modest Austin fleet size",
         "European FSD regulatory momentum building: 4 countries approved in 3 months (Denmark most recent on June 9)",
         "Production timelines firming: Optimus late July/August start confirmed, Q2 2026 deliveries beat by 18%",
-        "Hardware production accelerating while software remains constraint: Cybercab production ramping but limited by FSD v15 delay to Q4 2026"
+        "Hardware production accelerating while software remains constraint: Cybercab production ramping but limited by FSD v15 delay to Q4 2026",
+        "Optimus Fremont conversion is execution-complete: S/X line gone in 46 days; full-scale production window (late July/August) now imminent",
+        "Robotaxi product stack deepening (remote FSD status, voice context) while physical fleet counts remain the binding constraint",
+        "Software/UX for autonomy owners advancing faster than fleet vehicle count or FSD v15 release",
+        "No new country FSD approvals or quarterly P&D prints in this 2-day window; next major print is Q2 earnings (July 22)"
       ]
     },
     {
@@ -2233,7 +2324,6 @@
       "latestUpdate": "2026-07-08",
       "criticalNews": "AI5 chip samples and small batch production expected 2026, high volume 2027. AI6 chip $16.5B Samsung deal (July 2025) for Taylor, Texas fab, targeting mid-2028 mass production.",
       "keyPoints": [
-        "Multi-foundry strategy: AI5 split Samsung/TSMC; AI6 entirely Samsung Taylor; AI6.5 originally TSMC Arizona",
         "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
         "Foundry switch would require AI6.5 chip redesign for Intel's different 2nm process technology",
         "AI6.5 (optimized version) originally planned for TSMC Arizona on 2nm node following AI6",
@@ -2299,10 +2389,9 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-07-08",
-      "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
+      "latestUpdate": "2026-07-10",
+      "criticalNews": "App 4.58.5 adds live Self-Driving indicator for remote robotaxi monitoring (HW3+). Unsupervised service continues in Miami/Dallas/Austin; fleet scale still limited.",
       "keyPoints": [
-        "Fleet metrics (via robotaxitracker.com): 35 Cybercabs in test fleet, 13 active vehicles in last 30 days",
         "29% of Austin rides now unsupervised (20 of 69 rides in last 7 days)",
         "2,053 total trips recorded covering 7,271 miles (avg 3.54 miles per trip)",
         "H1 2026 expansion plan: 7 cities including Phoenix, Miami, Orlando, Tampa, Las Vegas",
@@ -2316,49 +2405,10 @@
         "Production line cycle time: <10 seconds per unit",
         "Long-term target: 2 million units/year at full capacity",
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
-        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles"
+        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
+        "Tesla app 4.58.5 (July 2026): live 'Self-Driving' status for owners \u2014 infrastructure for owner-operated robotaxi fleet management."
       ],
       "timeline": [
-        {
-          "date": "2024-10-23",
-          "event": "2026 production target announced"
-        },
-        {
-          "date": "2026-02-15",
-          "event": "First mass-produced unit rolls off line"
-        },
-        {
-          "date": "2026-02-17",
-          "event": "First production Cybercab rolls off Giga Texas line"
-        },
-        {
-          "date": "2026-03-03",
-          "event": "25 test units at Giga Texas"
-        },
-        {
-          "date": "2026-03-09",
-          "event": "30+ units observed"
-        },
-        {
-          "date": "2026-03-11",
-          "event": "16+ units shipped in single day"
-        },
-        {
-          "date": "2026-03-13",
-          "event": "SXSW Austin showcase with production unit"
-        },
-        {
-          "date": "2026-03-25",
-          "event": "35 units at Giga Texas, 12 in crash testing"
-        },
-        {
-          "date": "2026-04",
-          "event": "Mass production begins - target achieved"
-        },
-        {
-          "date": "2026-04-13",
-          "event": "50+ units at Giga Texas"
-        },
         {
           "date": "2026-04-17",
           "event": "60 units spotted, 14 without steering wheels"
@@ -2460,26 +2510,6 @@
         "Japan (End 2026)"
       ],
       "timeline": [
-        {
-          "date": "2026-02",
-          "event": "RDW scheduled demonstration"
-        },
-        {
-          "date": "2026-03-04",
-          "event": "Netherlands grants Extended Type Approval (early)"
-        },
-        {
-          "date": "2026-03-13",
-          "event": "Early Access invitations sent to European owners"
-        },
-        {
-          "date": "2026-03-20",
-          "event": "Original approval target date (delayed)"
-        },
-        {
-          "date": "2026-04-10",
-          "event": "Official RDW type approval issued under UN Regulation 171"
-        },
         {
           "date": "2026-04-10",
           "event": "Subscriptions launched at \u20ac99/month"
@@ -2597,20 +2627,9 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-07-08",
-      "criticalNews": "Optimus production confirmed for late July or August 2026 at Fremont. Initial output will be slow due to 10,000 unique parts. Giga Texas second-gen facility targets summer 2027 start.",
+      "latestUpdate": "2026-07-10",
+      "criticalNews": "Model S/X assembly line at Fremont decommissioned in 46 days (July 10); floor cleared for Optimus. Limited Gen 3 production active; full-scale late July/August 2026 still targeted.",
       "keyPoints": [
-        "North Campus Optimus factory foundation actively progressing as of May 13, 2026 drone footage",
-        "Geopier foundation equipment observed on site for 5.2M sq ft facility",
-        "Low-volume production targeted for summer 2026 at Giga Texas",
-        "Foundation must become functioning factory in ~6 weeks for summer 2026 target",
-        "$5-10B investment range for 10M unit/year capacity facility",
-        "Multi-site construction: chip fab + Optimus factory + test track simultaneous progress",
-        "Fremont production confirmed to start late July or August 2026 (4 months after Model S/X line ends)",
-        "Final Model S and Model X produced May 9, 2026 - line conversion underway",
-        "Q1 2026 report confirms 5.2M sq ft Optimus factory expansion at Giga Texas targeting 10M robots/year",
-        "Tesla China President announced April 14 that Giga Shanghai will play crucial role in Optimus production",
-        "Shanghai planning to ramp six new production lines in 2026: vehicles, robots, energy storage, batteries",
         "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
         "Over 1,000 Gen 3 units already deployed across Tesla's own manufacturing facilities",
         "Shanghai Gigafactory delivered 851,000 EVs in 2025 (>50% of Tesla's total global deliveries)",
@@ -2624,13 +2643,10 @@
         "First commercial customers expected late 2026 at premium pricing ($100K+)",
         "2026 production target: 50,000-100,000 units",
         "Gen 3: 22 degrees of freedom, 50 actuators in hands",
-        "Consumer sales targeted for end of 2027 (pricing below $20K requires millions of units)"
+        "Consumer sales targeted for end of 2027 (pricing below $20K requires millions of units)",
+        "Tesla Manufacturing video (July 10, 2026): original Model S/X line fully torn down in 46 days to free floor space for Optimus (1M units/year target capacity)."
       ],
       "timeline": [
-        {
-          "date": "2026-04",
-          "event": "Cortex 2.0 supercomputer Phase 1 (250MW) online"
-        },
         {
           "date": "2026-04-14",
           "event": "Shanghai Gigafactory announced as key Optimus production facility"
@@ -2663,6 +2679,10 @@
         {
           "date": "2026-07-01",
           "event": "Optimus production start at Fremont (late July/August 2026 confirmed)"
+        },
+        {
+          "date": "2026-07-10",
+          "event": "Model S/X Fremont line decommissioned in 46 days; Optimus conversion complete"
         },
         {
           "date": "2026-Late",
