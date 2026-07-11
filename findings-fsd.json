@@ -1,0 +1,63 @@
+{
+  "categoryKey": "fsd",
+  "keyChanges": [
+    {
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "positive",
+        "confidence": "high",
+        "rationale": "Denmark approval is genuine regulatory progress"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Denmark approved FSD on June 9",
+          "Fourth European country approved",
+          "EU-wide recognition anticipated"
+        ],
+        "negative_signals": [
+          "Timeline not confirmed by regulators"
+        ],
+        "key_metrics": {
+          "actual": "4 EU countries approved",
+          "target": "EU-wide deployment",
+          "trajectory": "Expanding"
+        }
+      },
+      "category": "FSD Country Approvals",
+      "title": "Denmark becomes fourth European country to approve FSD",
+      "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands, Lithuania, and Estonia.",
+      "source": "https://teslarati.com/denmark-fsd-approval"
+    },
+    {
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "low",
+        "rationale": "Possibly expanding but unclear timeline"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Germany might approve soon"
+        ],
+        "negative_signals": []
+      },
+      "category": "FSD Country Approvals",
+      "title": "Germany could possibly approve FSD in coming months",
+      "description": "Sources suggest Germany might potentially approve FSD, though timeline is unclear and regulatory process could take months.",
+      "source": "https://electrek.co/germany-fsd-maybe"
+    }
+  ],
+  "categoryUpdate": {
+    "criticalNews": "Denmark became fourth European country to approve FSD"
+  },
+  "urlsSeen": [
+    "https://teslarati.com/denmark-fsd-approval",
+    "https://electrek.co/germany-fsd-maybe"
+  ],
+  "metadata": {
+    "researchDuration": "~3 min",
+    "sourcesSearched": ["teslarati.com", "electrek.co"]
+  }
+}

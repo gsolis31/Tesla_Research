@@ -1,0 +1,25 @@
+{
+  "categoryKey": "terafab",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "Terafab joint $25B Tesla-SpaceX chip fab announced March 2026 in Austin. First phase $55B, could scale to $119B. July 7, 2026 'cool news' teased by Tesla VP about Giga Texas scaling.",
+    "recentKeyChanges": []
+  },
+  "categoryName": "Terafab Manufacturing",
+  "priority": "medium",
+  "sources": {
+    "tier1": [
+      "teslarati.com",
+      "teslanorth.com"
+    ]
+  },
+  "keywords": [
+    "Terafab",
+    "North Campus",
+    "chip fab",
+    "Taylor Texas"
+  ],
+  "metrics": []
+}

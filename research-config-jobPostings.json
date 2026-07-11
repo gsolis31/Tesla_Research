@@ -1,0 +1,32 @@
+{
+  "categoryKey": "jobPostings",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "100+ Active Optimus Roles - Stable Hiring Ahead of July/August Production",
+    "recentKeyChanges": [],
+    "latestMetric": {
+      "date": "2026-05-16",
+      "count": 100,
+      "note": "Mid-May - 100+ roles maintained"
+    }
+  },
+  "categoryName": "Job Postings",
+  "priority": "low",
+  "sources": {
+    "tier1": [
+      "optimusk.blog",
+      "linkedin.com"
+    ]
+  },
+  "keywords": [
+    "Optimus",
+    "hiring",
+    "job posting",
+    "Tesla careers"
+  ],
+  "metrics": [
+    "jobPostings"
+  ]
+}

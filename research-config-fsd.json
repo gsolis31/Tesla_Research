@@ -1,0 +1,127 @@
+{
+  "categoryKey": "fsd",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
+    "recentKeyChanges": [
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Denmark approval represents fourth European country and demonstrates continued FSD expansion momentum in region."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Denmark became fourth European country with FSD approval on June 9",
+            "Lithuania activated May 20, Estonia May 29",
+            "Netherlands granted first EU approval April 10, 2026",
+            "EU-wide recognition anticipated summer 2026 via mutual recognition"
+          ],
+          "negative_signals": [
+            "EU-wide timeline is Tesla's projection, not confirmed regulatory outcome",
+            "Each country still requires individual activation despite mutual recognition pathway"
+          ],
+          "key_metrics": {
+            "actual": "4 European countries approved (NL, LT, EE, DK)",
+            "target": "EU-wide deployment via mutual recognition",
+            "trajectory": "Expanding, summer 2026 EU-wide recognition anticipated"
+          }
+        },
+        "category": "FSD Country Approvals",
+        "title": "Denmark becomes fourth European country to approve FSD on June 9",
+        "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands (April 10), Lithuania (May 20), and Estonia (May 29). The Dutch vehicle authority RDW granted the first European type approval, and Tesla anticipates EU-wide recognition during summer 2026 through mutual recognition, potentially extending access to Germany, France, and other major markets without repeating the full 18-month review process. Tesla now has FSD Supervised available in 12 countries globally.",
+        "source": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/"
+      },
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "medium",
+          "rationale": "Official confirmation of voice-taught contextual FSD and a September Grok\u2192planning timeline is progress, but it is a roadmap commitment \u2014 not a shipped capability yet."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Ashok Elluswamy confirmed voice-taught, remembered contextual FSD instructions (July 8)",
+            "Musk: Grok voice commands to FSD planning layer targeted by September 2026",
+            "Directly improves last-100-feet robotaxi pickup/dropoff quality at scale"
+          ],
+          "negative_signals": [
+            "Feature not shipped yet \u2014 testing burden for safety (e.g. refusing unsafe commands)",
+            "September timeline is guidance, not a release"
+          ],
+          "key_metrics": {
+            "actual": "Confirmed on roadmap; Grok in-car exists but has no FSD authority today",
+            "target": "Grok voice \u2192 FSD planning by September 2026",
+            "trajectory": "~2 months to stated integration target"
+          }
+        },
+        "category": "FSD v15 Software",
+        "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September",
+        "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
+        "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
+      },
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Denmark approval represents fourth European country and demonstrates continued FSD expansion momentum in region."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Denmark became fourth European country with FSD approval on June 9",
+            "Lithuania activated May 20, Estonia May 29",
+            "Netherlands granted first EU approval April 10, 2026",
+            "EU-wide recognition anticipated summer 2026 via mutual recognition"
+          ],
+          "negative_signals": [
+            "EU-wide timeline is Tesla's projection, not confirmed regulatory outcome",
+            "Each country still requires individual activation despite mutual recognition pathway"
+          ],
+          "key_metrics": {
+            "actual": "4 European countries approved (NL, LT, EE, DK)",
+            "target": "EU-wide deployment via mutual recognition",
+            "trajectory": "Expanding, summer 2026 EU-wide recognition anticipated"
+          }
+        },
+        "category": "FSD Country Approvals",
+        "title": "Denmark becomes fourth European country to approve FSD on June 9",
+        "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands (April 10), Lithuania (May 20), and Estonia (May 29). The Dutch vehicle authority RDW granted the first European type approval, and Tesla anticipates EU-wide recognition during summer 2026 through mutual recognition, potentially extending access to Germany, France, and other major markets without repeating the full 18-month review process. Tesla now has FSD Supervised available in 12 countries globally.",
+        "source": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/"
+      }
+    ],
+    "latestMetric": {
+      "totalCountries": 6,
+      "latestCountry": {
+        "name": "Denmark",
+        "status": "active",
+        "date": "2026-06-09"
+      }
+    }
+  },
+  "categoryName": "FSD Country Approvals",
+  "priority": "high",
+  "sources": {
+    "tier1": [
+      "teslarati.com",
+      "teslanorth.com",
+      "teslaoracle.com"
+    ]
+  },
+  "keywords": [
+    "FSD",
+    "approval",
+    "country",
+    "Europe",
+    "regulatory"
+  ],
+  "metrics": [
+    "fsdApprovals"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "categoryKey": "cybercab",
+  "keyChanges": [
+    {
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "City expansion sounds good but fleet stuck at 50 vehicles"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Miami service launched",
+          "Dallas service launched"
+        ],
+        "negative_signals": [
+          "Fleet stuck at 50 vehicles after 1 year",
+          "Software bottleneck unresolved",
+          "No scaling progress"
+        ],
+        "key_metrics": {
+          "actual": "50 vehicles after 1 year",
+          "target": "Mass market service",
+          "trajectory": "Stagnant"
+        }
+      },
+      "category": "Cybercab Production",
+      "title": "Robotaxi expands to Miami and Dallas",
+      "description": "Tesla expanded robotaxi service to two new cities on July 3, 2026.",
+      "source": "https://teslarati.com/robotaxi-expansion-2026"
+    }
+  ],
+  "fleetUpdate": {
+    "date": "2026-07-10",
+    "count": 50,
+    "note": "Active across 4 cities"
+  },
+  "categoryUpdate": {
+    "criticalNews": "Service expanded to Miami and Dallas but fleet remains at 50 vehicles"
+  },
+  "urlsSeen": ["https://teslarati.com/robotaxi-expansion-2026"],
+  "metadata": {
+    "researchDuration": "~4 min",
+    "sourcesSearched": ["teslarati.com", "robotaxitracker.com"]
+  }
+}

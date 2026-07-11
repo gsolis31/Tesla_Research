@@ -120,16 +120,21 @@ def load_hot_context(category_key):
 
     # Get latest metrics
     if category_key == "cybercab" and "cybercab" in data["metrics"]:
-        if data["metrics"]["cybercab"]["data"]:
+        if data["metrics"]["cybercab"].get("data"):
             hot_context["latestMetric"] = data["metrics"]["cybercab"]["data"][-1]
-        if data["metrics"]["robotaxiFleet"]["data"]:
+        if data["metrics"]["robotaxiFleet"].get("data"):
             hot_context["latestFleet"] = data["metrics"]["robotaxiFleet"]["data"][-1]
     elif category_key == "jobPostings" and "jobPostings" in data["metrics"]:
-        if data["metrics"]["jobPostings"]["data"]:
+        if data["metrics"]["jobPostings"].get("data"):
             hot_context["latestMetric"] = data["metrics"]["jobPostings"]["data"][-1]
     elif category_key == "fsd" and "fsdApprovals" in data["metrics"]:
-        if data["metrics"]["fsdApprovals"]["data"]:
-            hot_context["latestMetric"] = data["metrics"]["fsdApprovals"]["data"][-1]
+        # fsdApprovals has "countries" array, not "data"
+        countries = data["metrics"]["fsdApprovals"].get("countries", [])
+        if countries:
+            hot_context["latestMetric"] = {
+                "totalCountries": len([c for c in countries if c.get("status") == "active"]),
+                "latestCountry": countries[-1]
+            }
 
     return hot_context
 

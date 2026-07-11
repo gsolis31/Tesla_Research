@@ -1,0 +1,33 @@
+{
+  "categoryKey": "productionDelivery",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
+    "recentKeyChanges": []
+  },
+  "categoryName": "Vehicle Production & Delivery",
+  "priority": "critical",
+  "sources": {
+    "tier1": [
+      "ir.tesla.com"
+    ],
+    "tier2": [
+      "teslarati.com",
+      "teslanorth.com"
+    ]
+  },
+  "keywords": [
+    "quarterly",
+    "production",
+    "delivery",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "metrics": [
+    "quarterlyData"
+  ]
+}

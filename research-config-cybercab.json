@@ -1,0 +1,133 @@
+{
+  "categoryKey": "cybercab",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
+    "recentKeyChanges": [
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Miami robotaxi launch expands geographic footprint, though fleet size remains modest at ~50 vehicles in Austin per city officials."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Miami service launched with unsupervised vehicles on July 3, 2026",
+            "Dallas also added to robotaxi service coverage",
+            "Geographic expansion despite production bottlenecks"
+          ],
+          "negative_signals": [
+            "Austin fleet still only ~50 vehicles after a year of operation",
+            "Software remains limiting factor, not vehicle production",
+            "Service expansion limited by FSD capabilities"
+          ],
+          "key_metrics": {
+            "actual": "~50 vehicles in Austin, new Miami/Dallas launches",
+            "target": "Mass market autonomous service",
+            "trajectory": "Geographic expansion but constrained scale"
+          }
+        },
+        "category": "Cybercab Production",
+        "title": "Tesla robotaxi expands to Miami and Dallas on July 3",
+        "description": "On July 3, 2026, Tesla expanded its unsupervised robotaxi service to Miami and Dallas, marking continued geographic expansion of the Cybercab platform. City officials report Tesla's Austin fleet at approximately 50 vehicles despite a year of operation. Production is ramping exponentially toward year-end per Musk, but software limitations rather than vehicle manufacturing capacity remain the primary constraint on service scaling.",
+        "source": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/"
+      },
+      {
+        "status": "positive",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Remote Self-Driving status in the consumer app is real product infrastructure for owner-operated robotaxi fleets, not just a cosmetic UI tweak."
+        },
+        "evidence": {
+          "positive_signals": [
+            "App 4.58.5 shows live 'Self-Driving' indicator when FSD is engaged",
+            "Works on HW3 (not only HW4); vehicle software 2026.20.6.1 ~40% fleet rollout",
+            "Directly useful for owners whose cars earn robotaxi revenue"
+          ],
+          "negative_signals": [
+            "Does not expand fleet size or unsupervised city coverage by itself",
+            "Still depends on vehicle software rollout reaching the full fleet"
+          ],
+          "key_metrics": {
+            "actual": "App 4.58.5 + vehicle SW 2026.20.6.1 (~40% of fleet)",
+            "target": "Remote fleet management for owner-operated robotaxi network",
+            "trajectory": "Infrastructure for scaled owner fleet; not yet a volume milestone"
+          }
+        },
+        "category": "Cybercab Production",
+        "title": "Tesla app adds live Self-Driving indicator for robotaxi owners",
+        "description": "Tesla app version 4.58.5 (reported July 7, 2026) displays a live blue 'Self-Driving' indicator under the speed readout when FSD is engaged, plus the glowing blue navigation path. Confirmed working on HW3 Model S. Vehicle-side software 2026.20.6.1 has reached ~40% of the fleet. For owners whose vehicles generate robotaxi revenue, this turns the app into a basic fleet monitor \u2014 especially relevant as unsupervised service runs in Miami and other cities.",
+        "source": "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/"
+      },
+      {
+        "status": "negative",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "While geographic expansion to Miami and Dallas signals continued commitment, the underlying reality is concerning: Austin fleet remains stuck at ~50 vehicles after a full year of operation, demonstrating failed scaling. Software limitations\u2014not hardware production\u2014remain the fundamental blocker, making city expansion premature without solving the core constraint."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Miami service launched with unsupervised vehicles on July 3, 2026",
+            "Dallas also added to robotaxi service coverage",
+            "Geographic expansion despite production bottlenecks"
+          ],
+          "negative_signals": [
+            "Austin fleet still only ~50 vehicles after a year of operation",
+            "Software remains limiting factor, not vehicle production",
+            "Service expansion limited by FSD capabilities"
+          ],
+          "key_metrics": {
+            "actual": "~50 vehicles in Austin, new Miami/Dallas launches",
+            "target": "Mass market autonomous service",
+            "trajectory": "Geographic expansion but constrained scale"
+          }
+        },
+        "category": "Cybercab Production",
+        "title": "Tesla robotaxi expands to Miami and Dallas on July 3",
+        "description": "On July 3, 2026, Tesla expanded its unsupervised robotaxi service to Miami and Dallas, marking continued geographic expansion of the Cybercab platform. City officials report Tesla's Austin fleet at approximately 50 vehicles despite a year of operation. Production is ramping exponentially toward year-end per Musk, but software limitations rather than vehicle manufacturing capacity remain the primary constraint on service scaling.",
+        "source": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/"
+      }
+    ],
+    "latestMetric": {
+      "date": "2026-06-15",
+      "count": 102,
+      "note": "102 Cybercabs in Giga Texas outbound lot, up 70% from ~60 in late May"
+    },
+    "latestFleet": {
+      "date": "2026-07-03",
+      "count": 34,
+      "note": "Fleet declined 42% from June peak to 34 active vehicles. Austin unsupervised fleet down to ~14 active cars (from ~25 peak). Fleet in steady decline since Dec 2025/Jan 2026. Miami service area mapped. Deployment blocked until FSD v15 (Q4 2026/Q1 2027)."
+    }
+  },
+  "categoryName": "Cybercab Production",
+  "priority": "high",
+  "sources": {
+    "tier1": [
+      "teslarati.com",
+      "teslanorth.com",
+      "teslaoracle.com"
+    ],
+    "specialized": [
+      "robotaxitracker.com"
+    ]
+  },
+  "keywords": [
+    "Cybercab",
+    "robotaxi",
+    "fleet",
+    "autonomous",
+    "unsupervised"
+  ],
+  "metrics": [
+    "cybercab",
+    "robotaxiFleet"
+  ]
+}

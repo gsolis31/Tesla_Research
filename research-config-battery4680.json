@@ -1,0 +1,27 @@
+{
+  "categoryKey": "battery4680",
+  "dateFrom": "2026-07-08",
+  "dateTo": "2026-07-10",
+  "weekOf": "2026-07-06",
+  "hotContext": {
+    "criticalNews": "Giga Berlin announced $250M investment (May 12, 2026) to scale annual 4680 production from 8 GWh to 18 GWh. 100M cell milestone surpassed September 2025. Dry-electrode process confirmed for anode and cathode.",
+    "recentKeyChanges": []
+  },
+  "categoryName": "4680 Battery Cell Production",
+  "priority": "medium",
+  "sources": {
+    "tier1": [
+      "teslarati.com",
+      "teslanorth.com",
+      "basenor.com"
+    ]
+  },
+  "keywords": [
+    "4680",
+    "battery cell",
+    "GWh",
+    "yield",
+    "dry electrode"
+  ],
+  "metrics": []
+}

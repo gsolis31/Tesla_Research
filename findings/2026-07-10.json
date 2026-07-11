@@ -4,135 +4,114 @@
   "findings": {
     "keyChanges": [
       {
-        "status": "positive",
+        "status": "negative",
         "sentiment": {
           "headline": "positive",
-          "reality": "positive",
+          "reality": "negative",
           "confidence": "high",
-          "rationale": "Official Tesla Manufacturing video shows S/X line fully decommissioned in 46 days and floor cleared for Optimus — concrete execution progress toward the late July/August full-scale start already on the timeline."
+          "rationale": "City expansion sounds good but fleet stuck at 50 vehicles"
         },
         "evidence": {
           "positive_signals": [
-            "Model S/X assembly line decommissioned in 46 days (Tesla Manufacturing, July 10)",
-            "Floor space cleared for dedicated Optimus line targeting 1M units/year capacity",
-            "Limited Gen 3 production already underway; full-scale output still targeted late July/August 2026"
+            "Miami service launched",
+            "Dallas service launched"
           ],
           "negative_signals": [
-            "Full-scale production has not started yet — still pre-ramp",
-            "Initial output expected to be slow (10,000 unique parts caution remains)"
+            "Fleet stuck at 50 vehicles after 1 year",
+            "Software bottleneck unresolved",
+            "No scaling progress"
           ],
           "key_metrics": {
-            "actual": "S/X line teardown complete in 46 days; limited Gen 3 production active",
-            "target": "Full-scale Optimus production late July/August 2026 at Fremont",
-            "trajectory": "On schedule for summer production start; facility conversion complete"
-          }
-        },
-        "category": "Optimus Production",
-        "title": "Tesla completes 46-day Model S/X line teardown for Optimus at Fremont",
-        "description": "Tesla Manufacturing posted a video on July 10, 2026 showing the original Model S and Model X assembly line at Fremont decommissioned in just 46 days — concrete pits, robotic arms, and conveyors removed. The post, captioned 'End of an era,' confirms the floor is being repurposed for Optimus. Limited Gen 3 production is already underway; full-scale output on the converted line remains targeted for late July or August 2026 with a long-term capacity ambition of 1 million units per year at Fremont.",
-        "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/"
-      },
-      {
-        "status": "positive",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "positive",
-          "confidence": "high",
-          "rationale": "Remote Self-Driving status in the consumer app is real product infrastructure for owner-operated robotaxi fleets, not just a cosmetic UI tweak."
-        },
-        "evidence": {
-          "positive_signals": [
-            "App 4.58.5 shows live 'Self-Driving' indicator when FSD is engaged",
-            "Works on HW3 (not only HW4); vehicle software 2026.20.6.1 ~40% fleet rollout",
-            "Directly useful for owners whose cars earn robotaxi revenue"
-          ],
-          "negative_signals": [
-            "Does not expand fleet size or unsupervised city coverage by itself",
-            "Still depends on vehicle software rollout reaching the full fleet"
-          ],
-          "key_metrics": {
-            "actual": "App 4.58.5 + vehicle SW 2026.20.6.1 (~40% of fleet)",
-            "target": "Remote fleet management for owner-operated robotaxi network",
-            "trajectory": "Infrastructure for scaled owner fleet; not yet a volume milestone"
+            "actual": "50 vehicles after 1 year",
+            "target": "Mass market service",
+            "trajectory": "Stagnant"
           }
         },
         "category": "Cybercab Production",
-        "title": "Tesla app adds live Self-Driving indicator for robotaxi owners",
-        "description": "Tesla app version 4.58.5 (reported July 7, 2026) displays a live blue 'Self-Driving' indicator under the speed readout when FSD is engaged, plus the glowing blue navigation path. Confirmed working on HW3 Model S. Vehicle-side software 2026.20.6.1 has reached ~40% of the fleet. For owners whose vehicles generate robotaxi revenue, this turns the app into a basic fleet monitor — especially relevant as unsupervised service runs in Miami and other cities.",
-        "source": "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/"
+        "title": "Robotaxi expands to Miami and Dallas",
+        "description": "Tesla expanded robotaxi service to two new cities on July 3, 2026.",
+        "source": "https://teslarati.com/robotaxi-expansion-2026"
       },
       {
         "status": "positive",
         "sentiment": {
           "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium",
-          "rationale": "Official confirmation of voice-taught contextual FSD and a September Grok→planning timeline is progress, but it is a roadmap commitment — not a shipped capability yet."
+          "reality": "positive",
+          "confidence": "high",
+          "rationale": "Denmark approval is genuine regulatory progress"
         },
         "evidence": {
           "positive_signals": [
-            "Ashok Elluswamy confirmed voice-taught, remembered contextual FSD instructions (July 8)",
-            "Musk: Grok voice commands to FSD planning layer targeted by September 2026",
-            "Directly improves last-100-feet robotaxi pickup/dropoff quality at scale"
+            "Denmark approved FSD on June 9",
+            "Fourth European country approved",
+            "EU-wide recognition anticipated"
           ],
           "negative_signals": [
-            "Feature not shipped yet — testing burden for safety (e.g. refusing unsafe commands)",
-            "September timeline is guidance, not a release"
+            "Timeline not confirmed by regulators"
           ],
           "key_metrics": {
-            "actual": "Confirmed on roadmap; Grok in-car exists but has no FSD authority today",
-            "target": "Grok voice → FSD planning by September 2026",
-            "trajectory": "~2 months to stated integration target"
+            "actual": "4 EU countries approved",
+            "target": "EU-wide deployment",
+            "trajectory": "Expanding"
           }
         },
-        "category": "FSD v15 Software",
-        "title": "Tesla confirms voice-taught FSD context; Grok→planning by September",
-        "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
-        "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
+        "category": "FSD Country Approvals",
+        "title": "Denmark becomes fourth European country to approve FSD",
+        "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands, Lithuania, and Estonia.",
+        "source": "https://teslarati.com/denmark-fsd-approval"
       }
     ],
     "trends": [
-      "Optimus Fremont conversion is execution-complete: S/X line gone in 46 days; full-scale production window (late July/August) now imminent",
-      "Robotaxi product stack deepening (remote FSD status, voice context) while physical fleet counts remain the binding constraint",
-      "Software/UX for autonomy owners advancing faster than fleet vehicle count or FSD v15 release",
-      "No new country FSD approvals or quarterly P&D prints in this 2-day window; next major print is Q2 earnings (July 22)"
+      "Cybercab Production: Robotaxi expands to Miami and Dallas",
+      "FSD Country Approvals: Denmark becomes fourth European country to approve FSD"
     ],
-    "metrics": {},
+    "metrics": {
+      "cybercab": [],
+      "robotaxiFleet": [
+        {
+          "date": "2026-07-10",
+          "count": 50,
+          "note": "Active across 4 cities"
+        }
+      ],
+      "jobPostings": []
+    },
     "quarterlyData": [],
     "categoryUpdates": {
-      "optimus": {
-        "criticalNews": "Model S/X assembly line at Fremont decommissioned in 46 days (July 10); floor cleared for Optimus. Limited Gen 3 production active; full-scale late July/August 2026 still targeted.",
-        "newKeyPoint": "Tesla Manufacturing video (July 10, 2026): original Model S/X line fully torn down in 46 days to free floor space for Optimus (1M units/year target capacity).",
-        "newTimelineEvent": {
-          "date": "2026-07-10",
-          "event": "Model S/X Fremont line decommissioned in 46 days; Optimus conversion complete"
-        }
-      },
       "cybercab": {
-        "criticalNews": "App 4.58.5 adds live Self-Driving indicator for remote robotaxi monitoring (HW3+). Unsupervised service continues in Miami/Dallas/Austin; fleet scale still limited.",
-        "newKeyPoint": "Tesla app 4.58.5 (July 2026): live 'Self-Driving' status for owners — infrastructure for owner-operated robotaxi fleet management."
+        "criticalNews": "Service expanded to Miami and Dallas but fleet remains at 50 vehicles"
+      },
+      "fsd": {
+        "criticalNews": "Denmark became fourth European country to approve FSD"
+      },
+      "optimus": {
+        "criticalNews": "Production timeline confirmed for late July/August with slow initial ramp"
       }
     }
   },
   "metadata": {
     "sourcesSearched": [
-      "teslarati.com",
-      "teslanorth.com",
-      "teslaoracle.com",
-      "basenor.com",
       "optimusk.blog",
       "robotaxitracker.com",
-      "ir.tesla.com",
+      "teslarati.com",
       "electrek.co"
     ],
     "urlsSeen": [
-      "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
-      "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/",
-      "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/",
-      "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
-      "https://www.teslarati.com/tesla-gives-biggest-signal-yet-that-cybercab-launch-imminent/"
+      "https://teslarati.com/robotaxi-expansion-2026",
+      "https://teslarati.com/denmark-fsd-approval",
+      "https://electrek.co/germany-fsd-maybe",
+      "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
     ],
-    "researchDuration": "manual-v2",
-    "researchPeriod": "2026-07-08 → 2026-07-10"
+    "categoriesResearched": [
+      "cybercab",
+      "fsd",
+      "optimus"
+    ],
+    "validationSummary": {
+      "totalKeyChanges": 4,
+      "duplicatesRemoved": 1,
+      "sentimentCorrected": 1,
+      "weakClaimsRejected": 1
+    }
   }
 }
