@@ -1,31 +1,21 @@
 ---
 name: tesla-update-v2
-description: Schema-bound append-only Tesla research skill (Grok #1 architecture)
+description: Parallel Tesla research using researcher + curator agents (Grok #1-3 architecture)
 user-invocable: true
-allowed-tools: WebSearch, Read, Write, Bash
+allowed-tools: Read, Write, Bash, Task
 ---
 
-# Tesla Tracker Update Skill V2 (Schema-Bound)
+# Tesla Tracker Update Skill V2 (Parallel Agent Orchestrator)
 
-## What Changed from V1
+## What This Does
 
-**Old workflow** (god-file agent loop):
-- Agent reads 167KB JSON + 670-line skill
-- Agent rewrites entire 3,008-line JSON file
-- Build + commit manually
+**Orchestrates parallel research pipeline:**
+1. Spawns 9 `tesla-researcher` agents in parallel (one per category)
+2. Spawns 1 `tesla-curator` agent to validate/merge findings
+3. Runs merge/validate/build/deploy scripts
+4. Commits and pushes to GitHub
 
-**New workflow** (schema-bound append-only):
-- Agent reads last week's summary + current metrics (~10KB)
-- Agent emits lightweight `findings/YYYY-MM-DD.json` (~5-10KB)
-- Merge script updates main file deterministically
-- Auto-validate → build → commit
-
-**Benefits**:
-- ✅ **80% less context** (10KB vs 167KB)
-- ✅ **Resumable** (research failures don't corrupt data)
-- ✅ **Auditable** (see what was found before merge)
-- ✅ **Testable** (merge logic separate from research)
-- ✅ **Caps enforced** (keyPoints/timeline limited to 15 items)
+**This skill does NOT do research itself** - it coordinates the agents.
 
 ---
 
@@ -34,16 +24,15 @@ allowed-tools: WebSearch, Read, Write, Bash
 ### Step 1: Determine Research Period
 
 ```python
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
-# Load current data to get last update date
+# Load current data
 data = json.load(open('/Users/gonzalosolis/Research/tesla-tracking-data.json'))
-last_updated = data['lastUpdated']  # e.g., "2026-07-03"
+last_updated = data['lastUpdated']
 today = datetime.now().strftime('%Y-%m-%d')
 
 # Calculate Monday of current week
-from datetime import timedelta
 now = datetime.now()
 monday = now - timedelta(days=now.weekday())
 week_of = monday.strftime('%Y-%m-%d')
@@ -52,258 +41,222 @@ print(f"Research period: {last_updated} → {today}")
 print(f"Week of: {week_of}")
 ```
 
-### Step 2: Read Hot Context Only
-
-**DO NOT** read the entire JSON file. Only read:
-
-1. **Last week's summary** (to avoid duplicate keyChanges)
-```python
-last_week = data['weeklySummaries'][0] if data['weeklySummaries'] else None
-```
-
-2. **Current metrics** (latest counts)
-```python
-cybercab_latest = data['metrics']['cybercab']['data'][-1] if data['metrics']['cybercab']['data'] else None
-robotaxi_latest = data['metrics']['robotaxiFleet']['data'][-1]
-job_postings_latest = data['metrics']['jobPostings']['data'][-1]
-```
-
-3. **Category criticalNews** (current state)
-```python
-category_news = {
-    cat: data['categories'][cat]['criticalNews']
-    for cat in data['categories']
-    if cat != 'productionDelivery'
-}
-```
-
-**Total context**: ~10KB vs 167KB in V1
-
-### Step 3: Research (Multi-Source Search)
-
-Follow the same multi-source search protocol from V1:
-
-**Tier 1 Sources** (primary - use these first):
-- Teslarati (teslarati.com)
-- TeslaNorth (teslanorth.com)
-- Tesla Oracle (teslaoracle.com)
-- Basenor (basenor.com)
-- Optimusk Blog (optimusk.blog)
-- Official Tesla (tesla.com, ir.tesla.com)
-
-**Tier 2 Sources** (supplementary - reference only):
-- Electrek (electrek.co) - known anti-Tesla bias, use ONLY for confirmation
-
-**Specialized Sources**:
-- Robotaxi Tracker (robotaxitracker.com) - fleet deployment
-- Official IR (ir.tesla.com/press) - quarterly reports
-
-**For EACH of the 9 categories**:
-1. Search 2-3 Tier 1 sources with targeted queries
-2. Cross-reference findings
-3. Check Electrek for additional context (don't rely on it alone)
-4. For robotaxi: ALWAYS check robotaxitracker.com
-5. For P&D: ALWAYS check ir.tesla.com/press
-
-**Important**: Use the URL cache to avoid re-analyzing seen articles:
-```bash
-python3 scripts/url_cache.py check "<url>"
-# Exit code 0 = seen before, 1 = new URL
-```
-
-### Step 4: Emit Findings File
-
-**DO NOT** edit `tesla-tracking-data.json` directly.
-
-Instead, create `findings/YYYY-MM-DD.json`:
-
-```json
-{
-  "date": "2026-07-08",
-  "weekOf": "2026-07-07",
-  "findings": {
-    "keyChanges": [
-      {
-        "status": "positive|negative|neutral",
-        "sentiment": {
-          "headline": "...",
-          "reality": "...",
-          "confidence": "high|medium|low",
-          "rationale": "..."
-        },
-        "evidence": {
-          "positive_signals": ["..."],
-          "negative_signals": ["..."],
-          "key_metrics": {
-            "actual": "...",
-            "target": "...",
-            "trajectory": "..."
-          }
-        },
-        "category": "Cybercab Production",
-        "title": "...",
-        "description": "...",
-        "source": "https://..."
-      }
-    ],
-    "trends": [
-      "Trend 1",
-      "Trend 2"
-    ],
-    "metrics": {
-      "cybercab": [
-        { "date": "2026-07-08", "count": 160, "note": "..." }
-      ],
-      "robotaxiFleet": [
-        { "date": "2026-07-08", "count": 40, "note": "..." }
-      ],
-      "jobPostings": [
-        { "date": "2026-07-08", "count": 120, "note": "..." }
-      ]
-    },
-    "quarterlyData": [
-      { "quarter": "Q2-26", "production": 451758, "delivery": 480126 }
-    ],
-    "categoryUpdates": {
-      "cybercab": {
-        "criticalNews": "Latest development",
-        "newKeyPoint": "New key point to add",
-        "newTimelineEvent": {
-          "date": "2026-07-01",
-          "event": "Production milestone"
-        }
-      }
-    }
-  },
-  "metadata": {
-    "sourcesSearched": ["teslarati.com", "teslanorth.com", "robotaxitracker.com"],
-    "urlsSeen": ["https://...", "https://..."],
-    "researchDuration": "12m"
-  }
-}
-```
-
-**Validation**: Findings must match `findings/schema.json`
-
----
-
-## CRITICAL: Sentiment Analysis Guidelines
-
-**BE VERY CRITICAL. DO NOT SUGAR COAT.**
-
-When assigning `status` (positive/negative/neutral), prioritize **structural/fundamental issues** over **headline wins**:
-
-### Mark as NEGATIVE when:
-✅ **Fundamental constraints remain unsolved**
-- Example: Robotaxi expands cities but fleet stuck at 50 vehicles after a year
-- Example: Production timeline announced but "impossible to predict" and "quite slow"
-- Example: Regulatory approval but no path to actual deployment
-
-✅ **Negative signals outweigh or undermine positive signals**
-- Example: New facility announced but existing facility underperforming
-- Example: Timeline confirmed but with major caveats/delays
-- Example: Growth metrics declining despite new initiatives
-
-✅ **Progress metrics show stagnation or regression**
-- Example: Fleet growth <10% over 6+ months
-- Example: Timeline pushed right by >3 months
-- Example: Cost targets missed significantly
-
-### Mark as NEUTRAL when:
-✅ **Mixed signals with no clear winner**
-- Example: Timeline firmed up but with "slow ramp" warning
-- Example: Approval granted but deployment timeline uncertain
-
-✅ **Positive headline but concerning reality**
-- Example: Expansion announced but existing ops struggling
-- Example: Production starts but volume unclear
-
-### Mark as POSITIVE when:
-✅ **Clear progress on fundamentals**
-- Example: Fleet doubles in size with strong metrics
-- Example: Regulatory win with clear deployment path
-- Example: Production ramp on track with volume targets
-
-✅ **Milestones achieved without major caveats**
-- Example: First commercial delivery with customer confirmed
-- Example: Facility operational at target capacity
-
-### Reality Check:
-**Ask yourself**: "If I owned Tesla stock, would this news make me more or less confident in the timeline?"
-
-- More confident = positive
-- Unchanged/uncertain = neutral
-- Less confident = negative
-
-**Examples from 2026-07-08:**
-- ❌ Robotaxi expansion to Miami/Dallas - marked POSITIVE originally
-  - Reality: Fleet stuck at 50 vehicles after a year = **FAILED SCALING**
-  - Correct rating: **NEGATIVE** (fundamental constraint unsolved)
-
-- ✅ Denmark FSD approval - marked POSITIVE
-  - Reality: Regulatory progress, no major caveats
-  - Correct rating: **POSITIVE**
-
-- ✅ Optimus production timeline - marked NEUTRAL
-  - Reality: Timeline set but "quite slow" + "impossible to predict"
-  - Correct rating: **NEUTRAL** (mixed signals)
-
----
-
-### Step 5: Skip if No News
-
-If no keyChanges, trends, metrics, or category updates found:
-
-```json
-{
-  "date": "2026-07-08",
-  "weekOf": "2026-07-07",
-  "findings": {
-    "keyChanges": [],
-    "trends": []
-  },
-  "metadata": {
-    "skipReason": "No significant news found for 2026-07-08",
-    "sourcesSearched": ["..."]
-  }
-}
-```
-
-**DO NOT** run merge script if findings are empty. Just commit the findings file for audit trail.
-
-### Step 6: Merge Findings
+### Step 2: Generate Research Configs
 
 ```bash
 cd /Users/gonzalosolis/Research
-python3 scripts/merge_findings.py findings/YYYY-MM-DD.json
+python3 scripts/spawn_researcher.py --all
 ```
 
-This script will:
-- ✅ Load findings + current data
-- ✅ Merge keyChanges into weekly summaries
-- ✅ Append metric data points (deduplicated)
-- ✅ Add quarterly data (deduplicated)
-- ✅ Update category metadata
-- ✅ Apply caps (keyPoints: 15, timeline: 15)
-- ✅ Validate merged result
-- ✅ Save to tesla-tracking-data.json
+This creates 9 config files:
+- `research-config-cybercab.json`
+- `research-config-fsd.json`
+- `research-config-optimus.json`
+- `research-config-aiChip.json`
+- `research-config-battery4680.json`
+- `research-config-terafab.json`
+- `research-config-jobPostings.json`
+- `research-config-productionDelivery.json`
+- `research-config-fsdv15.json`
 
-### Step 7: Update URL Cache
+### Step 3: Spawn Researcher Agents (Parallel)
+
+**IMPORTANT:** Spawn ALL 9 agents in a SINGLE message with multiple Task tool calls.
+
+Use the Task tool to spawn researchers:
+
+```python
+# Categories with priority
+categories = [
+    ('cybercab', 'high'),
+    ('fsd', 'high'),
+    ('optimus', 'high'),
+    ('fsdv15', 'high'),
+    ('productionDelivery', 'critical'),
+    ('aiChip', 'medium'),
+    ('battery4680', 'medium'),
+    ('terafab', 'medium'),
+    ('jobPostings', 'low')
+]
+
+# Spawn all researchers in parallel (SINGLE message with multiple Task calls)
+for category, priority in categories:
+    model = "sonnet" if priority in ["critical", "high"] else "haiku"
+
+    Task({
+        subagent_type: "tesla-researcher",
+        description: f"Research {category}",
+        model: model,
+        prompt: f"""
+Research the {category} category for Tesla investor tracking.
+
+Use the configuration file: research-config-{category}.json
+
+This file contains:
+- Date range to research
+- Hot context (latest metrics, recent keyChanges)
+- Sources to search (tier 1, tier 2, specialized)
+- Keywords for search queries
+- Priority level
+
+Output: findings-{category}.json
+
+Follow the critical sentiment guidelines:
+- Be VERY critical, do NOT sugar coat
+- Mark as NEGATIVE when fundamental constraints remain
+- Status must match reality, not headline
+- If fleet stuck after 1 year = NEGATIVE (failed scaling)
+        """,
+        run_in_background: true
+    })
+```
+
+**Expected outputs:** 9 `findings-{category}.json` files
+
+**Estimated time:** 5-6 minutes (parallel execution)
+
+### Step 4: Wait for Researchers to Complete
+
+Check that all findings files exist:
 
 ```bash
-# Add all URLs from findings to cache
-for url in $(cat findings/YYYY-MM-DD.json | python3 -c "
-import json, sys
-findings = json.load(sys.stdin)
-for url in findings['metadata']['urlsSeen']:
-    print(url)
-"); do
-  # Get category and title from keyChanges
-  python3 scripts/url_cache.py add "$url" "Category" "Title"
+# Wait for all researchers to complete
+while true; do
+    count=$(ls findings-*.json 2>/dev/null | wc -l)
+    if [ $count -eq 9 ]; then
+        echo "✓ All 9 researchers completed"
+        break
+    fi
+    echo "Waiting for researchers... ($count/9 complete)"
+    sleep 10
 done
 ```
 
-### Step 8: Archive Old Data
+Or manually check:
+```bash
+ls findings-*.json
+# Should see 9 files
+```
+
+### Step 5: Generate Curator Config
+
+```bash
+python3 scripts/spawn_curator.py
+```
+
+This creates `curator-config.json` with:
+- List of all findings-*.json files
+- Last week's keyChanges (for deduplication)
+- URL cache path
+- Date and weekOf
+
+### Step 6: Spawn Curator Agent
+
+Use the Task tool to spawn curator:
+
+```python
+Task({
+    subagent_type: "tesla-curator",
+    description: "Validate and merge findings",
+    model: "sonnet",  # Always use Sonnet for quality
+    prompt: """
+Curate the research findings from all categories.
+
+Use the configuration file: curator-config.json
+
+This file contains:
+- All findings-{category}.json files to merge
+- Last week's keyChanges for deduplication
+- URL cache for checking seen URLs
+
+Your tasks:
+1. Load all category findings
+2. Deduplicate vs last week + URL cache
+3. Validate sentiment (catch sugar-coating, auto-correct)
+4. Refuse weak claims (Electrek-only + low confidence)
+5. Normalize data (category names, dates, confidence)
+6. Extract trends
+7. Merge metrics and category updates
+8. Write findings/YYYY-MM-DD.json
+9. Generate validation report
+
+Be critical. Auto-fix sentiment when status=positive but reality=negative.
+    """
+})
+```
+
+**Expected outputs:**
+- `findings/YYYY-MM-DD.json` (validated findings)
+- `findings/curator-report-YYYY-MM-DD.md` (validation report)
+
+**Estimated time:** 2-3 minutes
+
+### Step 7: Wait for Curator to Complete
+
+Check that findings file exists:
+
+```bash
+# Determine date
+today=$(date +%Y-%m-%d)
+
+# Wait for curator
+while [ ! -f "findings/$today.json" ]; do
+    echo "Waiting for curator..."
+    sleep 5
+done
+
+echo "✓ Curator completed"
+```
+
+### Step 8: Review Curator Report
+
+```bash
+cat findings/curator-report-$(date +%Y-%m-%d).md
+```
+
+Check:
+- How many duplicates removed?
+- Any sentiment corrections?
+- Any weak claims rejected?
+
+### Step 9: Run Merge Script
+
+```bash
+today=$(date +%Y-%m-%d)
+python3 scripts/merge_findings.py findings/$today.json
+```
+
+This merges the validated findings into `tesla-tracking-data.json`.
+
+### Step 10: Update URL Cache
+
+```bash
+today=$(date +%Y-%m-%d)
+
+# Extract URLs from findings
+urls=$(cat findings/$today.json | python3 -c "
+import json, sys
+findings = json.load(sys.stdin)
+for url in findings['metadata'].get('urlsSeen', []):
+    print(url)
+")
+
+# Add to cache
+for url in $urls; do
+    # Extract category and title from findings
+    python3 -c "
+import json
+findings = json.load(open('findings/$today.json'))
+for kc in findings['findings']['keyChanges']:
+    if kc.get('source') == '$url':
+        import subprocess
+        subprocess.run(['python3', 'scripts/url_cache.py', 'add', '$url', kc['category'], kc['title']])
+        break
+    "
+done
+```
+
+### Step 11: Archive Old Data
 
 ```bash
 python3 scripts/archive_old_data.py
@@ -311,63 +264,162 @@ python3 scripts/archive_old_data.py
 
 Keeps current + previous year in main file, archives the rest.
 
-### Step 9: Build
+### Step 12: Validate Merged Data
+
+```bash
+python3 scripts/validate_data.py
+```
+
+This runs comprehensive validation. Must pass before proceeding.
+
+### Step 13: Build
 
 ```bash
 npm run build
 ```
 
-Build will fail if validation errors exist (Zod runtime validation).
+Build will fail if validation errors exist.
 
-### Step 10: Commit and Push
+### Step 14: Commit and Push
 
 ```bash
-git add tesla-tracking-data.json findings/YYYY-MM-DD.json findings/url-cache.json
-git commit -m "Update: Research findings for YYYY-MM-DD
+today=$(date +%Y-%m-%d)
 
-$(python3 -c "
-import json
-findings = json.load(open('findings/YYYY-MM-DD.json'))
-print(f'{len(findings[\"findings\"][\"keyChanges\"])} key changes')
-print(f'{len(findings[\"findings\"].get(\"trends\", []))} trends')
+# Get summary from findings
+summary=$(cat findings/$today.json | python3 -c "
+import json, sys
+findings = json.load(sys.stdin)
+kc_count = len(findings['findings']['keyChanges'])
+trend_count = len(findings['findings'].get('trends', []))
+print(f'{kc_count} key changes, {trend_count} trends')
 ")
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git add tesla-tracking-data.json findings/$today.json findings/url-cache.json dist/
+
+git commit -m "$(cat <<EOF
+Update: Parallel research for $today
+
+$summary
+
+Research pipeline:
+- 9 researchers (parallel): 5-6 min
+- 1 curator (validation): 2-3 min
+- Total: ~8 min
+
+Validation summary:
+$(cat findings/curator-report-$today.md | grep -A 10 "validationSummary" | head -5)
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+EOF
+)"
 
 git push origin main
 ```
 
 ---
 
-## Policy: Avoiding Repetitive Headlines
+## Error Handling
 
-**CRITICAL RULE**: Only create keyChanges for actual news, not for "no change" situations.
+**If a researcher fails:**
+- Other researchers continue (isolation)
+- Check which findings-*.json are missing
+- Re-run failed category: `python3 scripts/spawn_researcher.py <category>`
+- Then continue with curator
 
-### When TO Create a keyChange:
-✅ New developments (approvals, deployments, announcements)
-✅ Significant changes (fleet growth >20%, timeline shifts >1 month)
-✅ Major milestones (production starts, facility openings)
+**If curator fails:**
+- Findings files are preserved
+- Check curator-report for errors
+- Fix issues in findings-*.json if needed
+- Re-run curator: `python3 scripts/spawn_curator.py`
 
-### When NOT TO Create a keyChange:
-❌ Metrics that haven't changed since last update
-❌ "Still waiting" or "remains unchanged" situations
-❌ Repeating information from previous weeks
-
-**For stagnant metrics**:
-- Update the metric data point in findings.metrics.*
-- Do NOT create a keyChange unless there's new context
+**If merge fails:**
+- Findings preserved
+- Main data unchanged
+- Debug merge separately
+- Re-run after fixing
 
 ---
 
-## Caps on Category Arrays
+## Cost & Performance
 
-The merge script enforces caps to prevent unbounded growth:
+**V1 (old god-file):**
+- Time: 20-30 min
+- Cost: ~$0.15
+- Context: 167KB
 
-- **keyPoints**: Max 15 per category (FIFO, keeps most recent)
-- **timeline**: Max 15 events per category (FIFO, keeps most recent)
-- **weeklySummaries**: Max 52 weeks in main file (rest archived)
+**V2 (parallel agents):**
+- Time: 8-10 min (researchers 5-6 min, curator 2-3 min)
+- Cost: ~$0.10 (4 Sonnet × $0.02 + 5 Haiku × $0.005 + curator $0.02)
+- Context: 10KB per agent
 
-When adding `categoryUpdates.*.newKeyPoint` or `categoryUpdates.*.newTimelineEvent`, the merge script will automatically cap the arrays.
+**Trade-off:** Pay ~67% of V1 cost for 3x speed improvement.
+
+---
+
+## When to Use
+
+**Use V2 (parallel) when:**
+- ✅ Urgent update needed
+- ✅ Catching up after 2+ weeks
+- ✅ Major news events (earnings, product launch)
+- ✅ Multiple categories likely have news
+
+**Don't use V2 when:**
+- ❌ Low-news week (many categories will be empty)
+- ❌ Only 1-2 categories need update (use researcher directly)
+
+---
+
+## Monitoring Progress
+
+**During execution:**
+```bash
+# Check running agents
+/tasks
+
+# Count completed researchers
+ls findings-*.json 2>/dev/null | wc -l
+
+# Check specific category output
+cat findings-cybercab.json | python3 -c "import json,sys; print(len(json.load(sys.stdin)['keyChanges']), 'keyChanges')"
+```
+
+**After completion:**
+```bash
+# Review curator report
+cat findings/curator-report-$(date +%Y-%m-%d).md
+
+# Check final findings
+cat findings/$(date +%Y-%m-%d).json | python3 -c "
+import json, sys
+d = json.load(sys.stdin)
+print(f\"keyChanges: {len(d['findings']['keyChanges'])}\")
+print(f\"trends: {len(d['findings']['trends'])}\")
+print(f\"duplicates removed: {d['metadata']['validationSummary']['duplicatesRemoved']}\")
+print(f\"sentiment corrected: {d['metadata']['validationSummary']['sentimentCorrected']}\")
+"
+```
+
+---
+
+## Success Criteria
+
+**Research phase:**
+- ✅ 9 findings-*.json files created
+- ✅ Each has keyChanges OR skipReason
+- ✅ URLs cached
+
+**Curation phase:**
+- ✅ Duplicates removed
+- ✅ Sentiment validated (sugar-coating caught)
+- ✅ Weak claims rejected
+- ✅ findings/YYYY-MM-DD.json created
+
+**Deployment phase:**
+- ✅ Validation passes
+- ✅ Build succeeds
+- ✅ Committed and pushed
+- ✅ Live site updated
 
 ---
 
@@ -378,49 +430,52 @@ User: /tesla-update-v2
 ```
 
 Expected behavior:
-1. Read hot context only (~10KB)
-2. Research across all 9 categories
-3. Emit findings/YYYY-MM-DD.json
-4. Run merge script
-5. Update URL cache
-6. Archive old data
-7. Build
+1. Generate research configs (9 files)
+2. Spawn 9 researchers in parallel
+3. Wait 5-6 minutes
+4. Generate curator config
+5. Spawn curator
+6. Wait 2-3 minutes
+7. Run merge/validate/build/deploy
 8. Commit + push
 9. Report summary to user
 
----
-
-## Error Handling
-
-If merge fails:
-- Findings file is preserved
-- Main data file unchanged
-- Can debug merge separately
-- Can re-run merge after fixing
-
-If research fails:
-- No findings file created
-- Main data unchanged
-- Can resume research without re-doing completed categories
+Total time: ~8-10 minutes (vs 20-30 min in V1)
 
 ---
 
-## Cost Savings
+## Architecture
 
-**V1 (old)**:
-- Context: 167KB JSON + 670-line skill = ~200KB
-- Per run: ~$0.15 (rough estimate)
-
-**V2 (new)**:
-- Context: 10KB hot slice + schema = ~15KB
-- Per run: ~$0.02 (rough estimate)
-
-**Savings**: ~87% reduction in context cost
+```
+/tesla-update-v2 (orchestrator skill)
+  ↓
+Generate configs (spawn_researcher.py --all)
+  ↓
+Spawn 9 tesla-researcher agents (PARALLEL)
+  ↓ 5-6 min
+findings-{category}.json × 9
+  ↓
+Generate curator config (spawn_curator.py)
+  ↓
+Spawn 1 tesla-curator agent
+  ↓ 2-3 min
+findings/YYYY-MM-DD.json (validated)
+  ↓
+Run scripts (merge, validate, archive, build)
+  ↓
+Commit + push
+  ↓
+✅ Done
+```
 
 ---
 
-## Migration Note
+## Related Documentation
 
-This is **V2** of the skill. The old `/tesla-update` skill still exists but should be deprecated.
-
-Use `/tesla-update-v2` for new runs. The old skill will be removed after V2 is proven stable.
+- `SCHEMA_BOUND_ARCHITECTURE.md` - Grok #1 (schema-bound findings)
+- `VALIDATION_UPGRADE.md` - Grok #2 (validation system)
+- `PARALLEL_RESEARCH.md` - Grok #3 (parallel pipeline)
+- `.claude/skills/tesla-researcher/` - Category research agent
+- `.claude/skills/tesla-curator/` - Quality gate agent
+- `scripts/spawn_researcher.py` - Config generator
+- `scripts/spawn_curator.py` - Curator config generator
