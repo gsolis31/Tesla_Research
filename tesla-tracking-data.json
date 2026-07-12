@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08",
+  "lastUpdated": "2026-07-12",
   "weeklySummaries": [
     {
       "weekOf": "2026-07-06",
@@ -274,6 +274,1320 @@
           "title": "Optimus production confirmed for late July/August 2026 at Fremont",
           "description": "During Tesla's Q1 2026 earnings call, Elon Musk confirmed that Optimus humanoid robot production will commence in late July or August 2026 at the Fremont factory. The facility, converted from Model S/X production (final vehicles produced May 2026), targets 1 million units annually. Musk cautioned that initial output will be 'quite slow' due to 10,000 unique parts across an entirely new production line. Tesla is simultaneously constructing a second-generation Optimus facility at Giga Texas targeting 10 million units per year, with production starting summer 2027.",
           "source": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
+        },
+        {
+          "title": "AI5 Chip Tape-Out Complete but Production Significantly Delayed",
+          "description": "Tesla completed AI5 chip tape-out on April 15, 2026, but high-volume production has been delayed to mid-to-late 2027, representing a near 2-year delay from original timelines. While initial samples and small volumes are expected in late 2026, full production requires several hundred thousand completed boards. This means meaningful deployment in vehicles will not occur until 2028 at earliest. Cybercab robotaxi will launch on AI4 hardware instead of AI5.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "AI5 tape-out completed in April 2026",
+              "First silicon samples demonstrated by Musk in May 2026",
+              "40x performance improvement over AI4 confirmed",
+              "Dual-source manufacturing with TSMC and Samsung secured"
+            ],
+            "negative_signals": [
+              "Mass production delayed to mid-2027, nearly 2 years behind original schedule",
+              "Cybercab will launch with AI4 hardware instead of next-gen AI5",
+              "Vehicles won't receive AI5 until 2028 at earliest",
+              "AI5 now pivoting to Optimus and data centers instead of primary vehicle deployment",
+              "Extended ramp timeline creates competitive disadvantage vs NVIDIA"
+            ]
+          },
+          "source": "https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/",
+          "impact": "high",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "Samsung $16.5B AI6 Chip Deal Secured but Timeline Slipping to 2028",
+          "description": "Samsung signed an $8-year, $16.5 billion deal with Tesla in July 2025 to manufacture the AI6 chip at its Taylor, Texas facility using 2nm process. Equipment installation began April 24, 2026. However, AI6 tape-out is targeted for December 2026 with mass production pushed to mid-2028. This represents a 6-month delay from earlier 2027 estimates, indicating production challenges at the Taylor fab.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "$16.5B deal with Samsung secures long-term supply",
+              "Equipment move-in ceremony at Taylor fab completed April 24, 2026",
+              "Second 2nm-capable fab in US bolsters production capacity",
+              "Texas location provides supply chain resilience"
+            ],
+            "negative_signals": [
+              "AI6 mass production delayed to 2028, not 2027",
+              "Taylor fab previously had empty cleanrooms 18 months ago despite $44B investment",
+              "AI6 tape-out not until December 2026",
+              "Continued 2nm process delays at Samsung Taiwan impacting schedule",
+              "No customer will see AI6 until 2028+ timeframe"
+            ]
+          },
+          "source": "https://www.datacenterdynamics.com/en/news/samsung-electronics-signs-165bn-deal-with-tesla-to-manufacture-ai6-chips-at-taylor-texas-fab/",
+          "impact": "high",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "Dojo Supercomputer Project Shutdown Then Restarted; Strategic Uncertainty",
+          "description": "Tesla discontinued the Dojo supercomputer team in August 2025, with Musk stating 'Dojo2 was an evolutionary dead end' and 'all technical paths converged on AI6.' However, in January 2026, Musk restarted the project as 'Dojo3' to build an all-in-house supercomputer using AI5 chips. This reversal indicates shifting strategic priorities and suggests continued uncertainty about AI chip architectural direction.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Dojo3 restart in January 2026 shows continued AI infrastructure commitment",
+              "All-in-house design eliminates NVIDIA dependency",
+              "AI5 design progress enabled reconsideration of supercomputer architecture"
+            ],
+            "negative_signals": [
+              "Shutdown of Dojo in August 2025 represents $1B+ sunk cost waste",
+              "Flip-flop decision signals lack of strategic clarity on AI direction",
+              "Dojo2 characterized as 'evolutionary dead end' indicates bad technical planning",
+              "Personnel departures and team disruption from cancellation",
+              "Dojo3 timeline and feasibility remain unclear"
+            ]
+          },
+          "source": "https://techcrunch.com/2025/08/11/elon-musk-confirms-shutdown-of-tesla-dojo-an-evolutionary-dead-end/",
+          "impact": "medium",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "AI Chip Roadmap Acceleration Claims vs Reality: 9-Month Design Cadence Unproven",
+          "description": "Elon Musk announced an aggressive 9-month chip design cycle targeting AI6 tape-out in December 2026 and AI7 planning already underway. However, AI5 took significantly longer than planned, and AI6 is targeting tape-out only in December 2026 (8+ months away from config date). The accelerated roadmap claims should be viewed skeptically given historical delays. No evidence yet that 9-month cycle is achievable.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Ambitious 9-month design cadence announced",
+              "AI6 and AI7 already in planning stage",
+              "Design efficiency improvements claimed"
+            ],
+            "negative_signals": [
+              "AI5 took nearly 2 years longer than originally promised",
+              "AI6 tape-out still 5+ months away (from config date)",
+              "No proof yet of 9-month cycle validity",
+              "History of Musk over-promising chip timelines",
+              "Complex 2nm process technology makes rapid iteration risky",
+              "Manufacturing partners (TSMC, Samsung) have their own constraints"
+            ]
+          },
+          "source": "https://www.datacenterdynamics.com/en/news/elon-musk-says-tesla-is-aiming-for-a-nine-month-chip-design-cadence-will-resurrect-its-dojo-chip-project/",
+          "impact": "medium",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "Dual-Sourcing Strategy Confirmed for AI5 at TSMC Arizona & Samsung Texas",
+          "description": "Tesla has confirmed dual-sourcing of AI5 chips between TSMC's Arizona facility and Samsung's Taylor, Texas plant using 4nm process (not 3nm as initially claimed). Both fabs produce the same design but use different transistor libraries and routing rules. This provides supply chain resilience but adds complexity and risks yield/performance variance between fabs.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Dual sourcing reduces single-point-of-failure risk",
+              "Both US-based fabs provide supply chain security",
+              "Spreads volume across two leading foundries",
+              "Different fab implementations use optimized libraries per supplier"
+            ],
+            "negative_signals": [
+              "Dual sourcing increases complexity and coordination overhead",
+              "Risk of yield and performance differences between fabs",
+              "Both TSMC Arizona and Samsung Texas are new, unproven at scale",
+              "4nm process is mature but still faces competition from rivals",
+              "No evidence of cost advantage vs single-source strategy"
+            ]
+          },
+          "source": "https://wccftech.com/tesla-pulls-2nm-ai-chip-production-onto-us-soil-splits-ai6-ai6-5-between-samsung-tsmc/",
+          "impact": "medium",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "Terafab $25B in-house chip factory announced; Timeline unrealistic",
+          "description": "Elon Musk announced Tesla and SpaceX Terafab project, a $25B chip fabrication facility targeting 2nm and advanced nodes, claiming capability to run at '5-day cadence.' Initial site plans filed with Travis County include 2-million-square-foot facility in Taylor, Texas area. However, fab construction timelines typically span 3-5 years minimum, and Musk's '5-day' operation claim is not technically credible for advanced node fab.",
+          "date": "2026-07-08",
+          "category": "AI Chip Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "In-house fab eliminates long-term TSMC/Samsung dependency",
+              "2-million-square-foot facility shows serious commitment",
+              "Texas location aligns with other Tesla/Samsung manufacturing"
+            ],
+            "negative_signals": [
+              "Terafab timeline and feasibility heavily criticized as unrealistic",
+              "'5-day cadence' claim lacks technical credibility for advanced fabs",
+              "No advanced node in-house fab experience from Tesla/SpaceX",
+              "3-5 year typical construction timeline means earliest production 2028-2030",
+              "Project appears driven by frustration with TSMC/Samsung delays rather than sound planning",
+              "Unclear how this integrates with Samsung Taylor deal already signed"
+            ]
+          },
+          "source": "https://electrek.co/2026/03/22/tesla-spacex-terafab-chip-factory-ai-desperation/",
+          "impact": "medium",
+          "_sourceCategory": "aiChip"
+        },
+        {
+          "title": "Giga Berlin 4680 Capacity Doubled to 18 GWh with $250M Investment",
+          "description": "On May 12, 2026, Giga Berlin plant manager Andr\u00e9 Thierig announced a $250 million investment to scale the factory's annual 4680 cell production capacity from 8 GWh to 18 GWh, more than doubling the previous target set in December 2025. Battery cell production at the Gr\u00fcnheide facility is projected to begin in H1 2027. This would support approximately 200,000 Model Y vehicles annually and reduce reliance on third-party cell suppliers.",
+          "date": "2026-05-12",
+          "category": "4680 Battery Cell Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Significant $250M capital commitment demonstrates confidence",
+              "Capacity increase from 8 GWh to 18 GWh is substantial",
+              "Production timeline established (H1 2027)",
+              "1,500+ new jobs being recruited"
+            ],
+            "negative_signals": [
+              "Production start delayed to H1 2027 (over 1 year away from announcement date)",
+              "Tesla is opening a 'Cell Giga Challenge' to crowdsource solutions, indicating it lacks required manufacturing technology in-house",
+              "Previous 8 GWh target set in December 2025 was immediately superseded in May 2026, suggesting initial capacity planning was conservative",
+              "Complex scaling challenges remain in dry-electrode coating technology at industrial scale"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
+          "impact": "high",
+          "_sourceCategory": "battery4680"
+        },
+        {
+          "title": "Cell Giga Challenge Launched to Solve Manufacturing Scale Problems",
+          "description": "Tesla launched the 'JUNI x Tesla Battery Cell Giga Challenge' in July 2026 with application deadline of July 24, 2026. The program targets startups with solutions for battery cell manufacturing in five key areas: materials, production, equipment, automation, and artificial intelligence. By opening this challenge, Tesla is publicly acknowledging it lacks internal technology solutions needed to reach 18 GWh capacity at Giga Berlin. Selected startups will receive paid pilot projects working directly with Tesla's 4680 team.",
+          "date": "2026-07-06",
+          "category": "4680 Battery Cell Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "External partnerships can accelerate technology innovation",
+              "Selected startups receive hands-on access and funding",
+              "Demonstrates openness to external solutions"
+            ],
+            "negative_signals": [
+              "Tesla admits it doesn't have the technology in-house to scale 4680 to 18 GWh",
+              "Fundamental manufacturing challenges remain unsolved despite 4+ years of 4680 development",
+              "Need to crowdsource solutions for dry-coating, yield optimization, and scaling indicates serious technical deficiency",
+              "Even after solving dry-electrode process, mass production remains problematic",
+              "Timeline pressure: Giga Berlin production start is H1 2027, yet critical manufacturing solutions are not yet identified"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
+          "impact": "high",
+          "_sourceCategory": "battery4680"
+        },
+        {
+          "title": "Dry Electrode Process Now Producing Both Anode and Cathode",
+          "description": "Tesla confirmed in Q4 and FY 2025 update (reported January 28, 2026) that it is now producing 4680 cells whose anode and cathode are both manufactured using the dry electrode process. This represents a major technical achievement after years of development. Additionally, Tesla is developing four new dry-cathode 4680 variants (NC05, NC20, NC30, NC50) with the NC30 and NC50 featuring silicon-carbon anodes for increased energy density.",
+          "date": "2026-01-28",
+          "category": "4680 Battery Cell Production",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Confirmed dry electrode process for both anode and cathode in production",
+              "Multiple variant development (4 new versions in 4680D project)",
+              "Silicon-carbon anode technology addresses energy density improvements",
+              "Dry electrode reduces cost, energy use, and factory complexity",
+              "Model Y 4680 reintegration live as of January 2026"
+            ],
+            "negative_signals": [
+              "Process took 4+ years to industrialize from 2020 Battery Day announcement",
+              "Despite solving dry electrode, cannot yet scale to 18 GWh without external help"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-confirms-finally-solved-4680-battery-dry-cathode-process/",
+          "impact": "high",
+          "_sourceCategory": "battery4680"
+        },
+        {
+          "title": "Model Y 4680 Production Reintegrated; Texas Facility at 40 GWh Capacity",
+          "description": "As of January 28, 2026, Tesla recommenced building Model Y battery packs with internally produced 4680 cells. Texas 4680 production facility has 40 GWh of installed annual capacity and is in production status (not ramp). Tesla's in-house 4680 cells have achieved lowest-cost battery cell per kWh, beating suppliers like Panasonic and LG Energy Solution by end of 2024.",
+          "date": "2026-01-28",
+          "category": "4680 Battery Cell Production",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Model Y 4680 reintegration signals production confidence and reliability",
+              "40 GWh installed capacity at Texas is substantial",
+              "Cost parity achieved vs. major suppliers (Panasonic, LG Energy Solution)",
+              "Yield and reliability issues from earlier years appear resolved",
+              "Cybertruck using 4680 cells indicates production maturity"
+            ],
+            "negative_signals": [
+              "Still in 'production status' rather than expanded ramp, suggesting output not at full 40 GWh capacity",
+              "External yield data from earlier reports showed 70-80% yield, below typical battery manufacturing standards (>90%)",
+              "No publicly disclosed current yield rates for 2026"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-announces-100-millionth-4680-battery-cell-production-milestone/",
+          "impact": "medium",
+          "_sourceCategory": "battery4680"
+        },
+        {
+          "title": "100 Million 4680 Cell Milestone Achieved; Rapid Production Scaling",
+          "description": "Tesla announced it produced its 100 millionth 4680 battery cell on September 14, 2024. The company had produced 50 million cells by June 5, 2024, meaning it doubled production in just over 3 months (101 days), averaging approximately 495,000 cells per day. This demonstrates accelerating production rates and manufacturing capability maturation.",
+          "date": "2024-09-14",
+          "category": "4680 Battery Cell Production",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Doubling production in 3 months shows acceleration",
+              "495,000 cells per day average demonstrates scale achievement",
+              "Milestone posted with Optimus robot, indicating strategic importance to multiple product lines",
+              "Production across multiple facilities (Texas, potentially others)"
+            ],
+            "negative_signals": [
+              "Historical context: 100M cells over ~4+ years of production means absolute capacity remained constrained",
+              "Milestone occurred September 2024; no subsequent quarterly production data publicly disclosed as of July 2026"
+            ]
+          },
+          "source": "https://teslanorth.com/2024/09/15/tesla-produces-100-millionth-4680-battery-cell-optimus-celebrates/",
+          "impact": "medium",
+          "_sourceCategory": "battery4680"
+        },
+        {
+          "title": "Tesla announces Cybercab 'employee rides' at Giga Texas - parking lot only",
+          "description": "On July 10, 2026, Tesla's Robotaxi account posted a video of a gold Cybercab driving across the Giga Texas outbound lot, with Tesla's main account quote-tweeting: 'Cybercab employee rides at Giga Texas starting soon.' However, the announcement is deliberately vague - Tesla gave no details on route, fleet size, or whether rides occur on public roads versus private factory property. Electrek reported on July 11 that the announcement appears to be nothing more than parking-lot ferries for employees, noting 'for any other automaker, our car drove an employee across the parking lot would not be a news event.' The announcement generated 2.9 million views but no substantive progress toward commercial deployment.",
+          "date": "2026-07-10",
+          "category": "Cybercab Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Video shows Cybercab driving autonomously at Giga Texas",
+              "Vehicle operates without steering wheel or pedals",
+              "Engineering lead reported 50 rides in recent days"
+            ],
+            "negative_signals": [
+              "No route details provided - appears limited to parking lot",
+              "No fleet size disclosed",
+              "No confirmation of public road operations",
+              "Electrek calls it a non-event: just parking lot shuttle",
+              "Announcement vague and insubstantive compared to competitors",
+              "Does not address fundamental scaling issues"
+            ]
+          },
+          "source": "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+          "impact": "low",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "New Jersey bill threatens to ban Tesla's camera-only robotaxi statewide",
+          "description": "On July 9, 2026, New Jersey's S1677 bill advanced, requiring robotaxis to use cameras plus lidar and radar - effectively banning Tesla's camera-only approach in the state. The bill establishes a three-year pilot program with mandatory multi-sensor requirements and a 50,000-mile in-state supervised-testing threshold before driverless commercial operation. State Senator Andrew Zwicker (physicist at Princeton Plasma Physics Lab) sponsored the bill after riding in a Waymo, citing safety concerns. Tesla lobbied aggressively against the bill, messaging New Jersey owners to flood Zwicker's office with ~4,000 protest emails in one day. The bill only targets commercial robotaxi fleets, not consumer FSD features, but represents a significant regulatory threat to Tesla's autonomy strategy in permissive East Coast markets.",
+          "date": "2026-07-09",
+          "category": "Cybercab Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "negative",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla successfully mobilized 4,000 owner emails in protest",
+              "Bill only targets commercial fleets, not consumer FSD"
+            ],
+            "negative_signals": [
+              "New Jersey would ban Tesla robotaxi entirely if bill passes",
+              "Multi-sensor requirement contradicts Tesla's camera-only architecture",
+              "50,000-mile supervised testing threshold delays deployment",
+              "Bill sponsored by physicist with Waymo experience",
+              "Reflects growing regulatory skepticism of camera-only approach",
+              "Could set precedent for other states"
+            ]
+          },
+          "source": "https://electrek.co/2026/07/09/new-jersey-bill-tesla-camera-robotaxi/",
+          "impact": "high",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "Cybercab production ramps to 85-120+ units at Giga Texas, but deployment blocked",
+          "description": "Drone footage captured between late June and July 10, 2026 shows Tesla has ramped Cybercab production to 85+ units staged at Gigafactory Texas, with some reports claiming counts exceeding 120 units. The Cybercab entered production in mid-February 2026, ahead of the April volume-production target. However, production capacity is not the constraint - EPA certification was secured May 26, 2026, but Tesla still lacks regulatory approval for autonomous operation in any jurisdiction. The vehicles remain in staging lots rather than deployed commercially. Meanwhile, the active robotaxi fleet (Model Y vehicles) has declined to just 34 vehicles total (20 active in last 7 days), down from a peak of ~165 in Dec 2025/Jan 2026. Software limitations via FSD v15 (expected Q4 2026 or Q1 2027) remain the fundamental blocker to scaling.",
+          "date": "2026-07-10",
+          "category": "Cybercab Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "85-120+ Cybercabs visible at Giga Texas staging lots",
+              "Production started February 2026, ahead of April target",
+              "EPA certification secured May 26, 2026",
+              "Unboxed production process appears functional"
+            ],
+            "negative_signals": [
+              "No regulatory approval for autonomous operation anywhere",
+              "Vehicles remain in staging lots, not deployed commercially",
+              "Active robotaxi fleet (Model Y) declining: 34 total, 20 active last 7 days",
+              "Fleet peaked at ~165 vehicles in Dec 2025/Jan 2026 - down 79%",
+              "Software (FSD v15) remains primary constraint, not production",
+              "Deployment timeline pushed to Q4 2026 or Q1 2027",
+              "Production capacity irrelevant without autonomy approval"
+            ]
+          },
+          "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps",
+          "impact": "high",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "Tesla robotaxi fleet continues steady decline - down to 20 active vehicles",
+          "description": "Tesla's unsupervised robotaxi fleet (Model Y vehicles) has collapsed to just 20 active vehicles (seen in last 7 days) as of July 2026, with total fleet at 34 authorized vehicles. This represents a 79% decline from the peak of ~165 vehicles in December 2025/January 2026. Austin dropped from 19 unsupervised vehicles to 14 active. Bay Area fleet cratered from 107 active vehicles in April to just 9. Dallas and Houston remain stuck at 3 vehicles each - the same tiny numbers from their April launch. The decline is attributed to safety concerns - Tesla's robotaxi crash rate sits between 4-9x higher than human drivers (one crash per 57,000 miles vs. human benchmark of one per 229,000 miles). Tesla is waiting for FSD v15 (Q4 2026 or Q1 2027) before scaling aggressively. Geographic expansion to Miami adds a 4th market but does not address the fundamental scaling failure.",
+          "date": "2026-07-08",
+          "category": "Cybercab Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Miami service launched July 3 with unsupervised vehicles",
+              "FSD v15 planned for Q4 2026/Q1 2027 to address safety issues"
+            ],
+            "negative_signals": [
+              "Fleet collapsed 79% from peak: 165 vehicles \u2192 34 total, 20 active",
+              "Austin: 19 \u2192 14 active vehicles",
+              "Bay Area: 107 \u2192 9 active vehicles (91% decline)",
+              "Dallas/Houston stuck at 3 vehicles each since April launch",
+              "Crash rate 4-9x higher than human drivers",
+              "Fleet in steady decline since Dec 2025/Jan 2026",
+              "Safety bottleneck prevents scaling for 7+ months",
+              "Geographic expansion (Miami) does not solve core constraint",
+              "Waymo operates ~3,000 robotaxis vs. Tesla's 20 active"
+            ]
+          },
+          "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
+          "impact": "high",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "Morgan Stanley forecasts 1,500 robotaxis by end of 2026 - but current fleet at 20",
+          "description": "Morgan Stanley published analysis on July 6, 2026 projecting Tesla's robotaxi fleet will grow to 1,500 vehicles by year-end 2026 and 30,000 by 2030. The bank expects launches in Phoenix, Orlando, Tampa, Las Vegas, and possibly New Orleans by Q4 2026. However, this projection appears highly optimistic given the current reality: Tesla's active fleet is just 20 vehicles (34 total authorized) as of July 2026, down from 165 at peak. To reach 1,500 vehicles by December 31, 2026 would require adding ~1,480 vehicles in 6 months (~247 vehicles/month or ~8 vehicles/day) - a 75x scale-up from current levels. Tesla has explicitly stated it is waiting for FSD v15 (Q4 2026 or Q1 2027) before scaling, and safety data shows crash rates 4-9x higher than human drivers. Morgan Stanley maintains Equalweight rating and $415 price target.",
+          "date": "2026-07-06",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Wall Street firm projects aggressive growth trajectory",
+              "Geographic expansion planned for 5+ cities by Q4 2026",
+              "Long-term projection of 30,000 vehicles by 2030",
+              "Miami launch demonstrates continued commitment"
+            ],
+            "negative_signals": [
+              "Requires 75x scale-up in 6 months (20 \u2192 1,500 vehicles)",
+              "Tesla explicitly waiting for FSD v15 before scaling",
+              "Current fleet declining, not growing (down 79% from peak)",
+              "Safety data shows 4-9x higher crash rate than humans",
+              "No regulatory approval for Cybercab autonomous operation",
+              "Morgan Stanley forecast appears disconnected from operational reality",
+              "Equalweight rating suggests limited conviction"
+            ]
+          },
+          "source": "https://www.roic.ai/news/tesla-robotaxi-expansion-gains-momentum-as-morgan-stanley-flags-fleet-targets-07-06-2026",
+          "impact": "medium",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "Tesla showcases Cybercab accessibility features at National Federation of the Blind convention",
+          "description": "On July 3, 2026, Tesla brought the Cybercab to the National Federation of the Blind (NFB) Annual Convention at the JW Marriott Austin to demonstrate accessibility features for blind and visually impaired users. The vehicle includes Braille lettering on door releases and emergency stop button, dedicated space for service animals and assistive devices, wheelchair-height seating, and external microphones/speakers for audible arrival announcements and verbal destination commands. Attendees experienced the steering-wheel-free design firsthand. The demo highlights Tesla's focus on inclusive autonomous mobility for ~2.2 million blind Americans (plus millions more with vision impairment). However, the event is primarily PR-focused - the Cybercab still lacks regulatory approval for autonomous operation in any jurisdiction, and deployment remains blocked until FSD v15 in Q4 2026 or Q1 2027.",
+          "date": "2026-07-03",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Braille lettering on physical controls (door releases, emergency stop)",
+              "Dedicated space for service animals and assistive devices",
+              "Wheelchair-height seating for easier transfers",
+              "External microphones/speakers for audible arrival and voice commands",
+              "Hands-on demo for blind community at NFB Convention",
+              "Addresses mobility needs of ~2.2 million blind Americans"
+            ],
+            "negative_signals": [
+              "PR event does not address fundamental deployment constraints",
+              "No regulatory approval for autonomous operation",
+              "Deployment blocked until FSD v15 (Q4 2026 or Q1 2027)",
+              "Features irrelevant without functional autonomous service",
+              "Active robotaxi fleet declining (20 vehicles) vs. growing",
+              "Event timing suggests awareness campaign vs. product launch"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-flexes-help-blind-cybercab/",
+          "impact": "low",
+          "_sourceCategory": "cybercab"
+        },
+        {
+          "title": "NHTSA escalates FSD investigation to Engineering Analysis covering 3.2M vehicles",
+          "description": "On March 19, 2026, NHTSA upgraded its Tesla FSD probe from a Preliminary Evaluation to a formal Engineering Analysis (EA26002) covering 3.2 million vehicles across all Tesla models. The investigation found that FSD's camera-based system fails to detect common road conditions that impair visibility\u2014sun glare and fog\u2014and doesn't adequately warn drivers before crashes occur. The probe involves at least nine documented crashes, including one fatal pedestrian collision and another crash resulting in injury. This escalation is the stage that typically precedes a mandatory recall, representing significant regulatory risk.",
+          "date": "2026-03-19",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "While headlines focus on 'investigation escalation,' the reality is NHTSA moved to the pre-recall stage due to fundamental safety failures in FSD's vision system. The system's inability to detect degraded visibility from common conditions (glare, fog) and failure to warn drivers until just before impact represents a core architectural problem affecting 3.2M vehicles."
+          },
+          "evidence": {
+            "positive_signals": [],
+            "negative_signals": [
+              "Investigation escalated to Engineering Analysis (EA26002), the stage before mandatory recall",
+              "FSD's degradation detection system fails to warn drivers when cameras are blinded by sun glare and fog",
+              "Nine total incidents investigated, including one fatality and one injury",
+              "3.2 million vehicles affected across all Tesla models (2016-2026)",
+              "System failed to recognize common roadway conditions affecting camera visibility",
+              "No alerts issued when camera performance degraded until just before impact",
+              "Tesla may be under-reporting related crashes per NHTSA findings"
+            ],
+            "key_metrics": {
+              "actual": "9 crashes under investigation (1 fatality, 1 injury)",
+              "target": "Zero crashes from visibility detection failures",
+              "trajectory": "Investigation escalated to pre-recall stage March 2026"
+            }
+          },
+          "source": "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+          "impact": "high",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Sweden formally recommends EU reject FSD approval unless speed offset removed",
+          "description": "Sweden's transport authority formally recommended to the EU's Technical Committee on Motor Vehicles (TCMV) that the bloc votes against EU-wide rollout of Tesla FSD unless the Speed Offset feature is removed. The feature allows vehicles to exceed posted speed limits by a driver-defined margin. In a letter dated April 30, 2026, Sweden stated that 'allowing automated systems to systematically exceed legal speed limits risks undermining both the legal framework and the expected safety benefits of vehicle automation.' This represents a major roadblock for EU-wide approval, as the qualified majority requires 15 of 27 member states representing 65% of EU population, effectively requiring Germany, France or Italy's support.",
+          "date": "2026-04-30",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Sweden's formal objection to TCMV represents a significant regulatory barrier to EU-wide approval. Without major market support (Germany, France, Italy), Tesla faces continued fragmentation requiring country-by-country approvals rather than streamlined EU-wide access."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Finland signals potential approval despite speed offset concerns",
+              "Five European countries already approved individually (NL, LT, EE, DK, BE, DE)"
+            ],
+            "negative_signals": [
+              "Sweden's formal objection to TCMV dated April 30, 2026",
+              "Speed offset feature allows systematic violation of speed limits",
+              "EU qualified majority requires 15/27 states + 65% population (needs Germany/France/Italy)",
+              "October 2026 TCMV vote is next opportunity, but approval uncertain",
+              "Pan-EU regulatory landscape hardening into two opposing camps",
+              "Norway also rejected FSD demonstration materials in May 2026 citing insufficient safety disclosure",
+              "European Transport Safety Council raised 'substantive safety concerns' May 29, 2026"
+            ],
+            "key_metrics": {
+              "actual": "6 European countries approved (individual approvals, not EU-wide)",
+              "target": "EU-wide approval via TCMV vote (requires 15/27 states + 65% population)",
+              "trajectory": "Fragmented approval path continues; October 2026 EU vote outcome uncertain"
+            }
+          },
+          "source": "https://electrek.co/2026/06/18/sweden-tesla-fsd-speeding-eu-vote/",
+          "impact": "high",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Germany approves FSD, becomes 6th European country with rollout on May 22",
+          "description": "Germany approved FSD Supervised and began rolling it out to subscribers on May 22, 2026. The approval leveraged the Netherlands' RDW provisional EU type approval for FSD under UN Regulation 171, with Germany's federal vehicle authority (KBA) adopting that approval. The version rolling out is FSD v14 via software update 2026.8.6, supporting both Hardware 3 and Hardware 4 vehicles. Germany's approval validates the EU mutual recognition pathway as a viable fast-track mechanism, providing precedent for France, Italy, Spain, and other member states.",
+          "date": "2026-05-22",
+          "category": "FSD Country Approvals",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high",
+            "rationale": "Germany's approval represents Tesla's largest European market gaining FSD access and validates the mutual recognition pathway. However, this is still individual country approval rather than EU-wide deployment, requiring continued country-by-country activation."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Germany approved FSD on May 22, 2026",
+              "Rollout active to German subscribers",
+              "Germany is Tesla's largest European market",
+              "Validates EU mutual recognition pathway for remaining countries",
+              "FSD v14 deployed via update 2026.8.6",
+              "Supports both HW3 and HW4 vehicles"
+            ],
+            "negative_signals": [
+              "Still requires individual country activation despite mutual recognition",
+              "No EU-wide deployment achieved yet",
+              "Subject to same regulatory fragmentation affecting other markets"
+            ],
+            "key_metrics": {
+              "actual": "6 European countries with active FSD (NL, LT, EE, DK, BE, DE)",
+              "target": "EU-wide deployment across 27 member states",
+              "trajectory": "Expanding via mutual recognition, but October 2026 EU vote needed for bloc-wide access"
+            }
+          },
+          "source": "https://www.basenor.com/blogs/news/tesla-fsd-is-now-live-in-germany-what-european-owners-need-to-know",
+          "impact": "high",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Belgium approves FSD on June 10, becomes 5th European country",
+          "description": "Belgium became the 13th country globally and 5th in Europe to receive official approval for FSD Supervised on June 10, 2026. Flemish Mobility Minister Annick De Ridder signed the official approval after Tesla completed extensive supervised testing on Flemish public roads, including the required 5,000 km benchmark. The approval leverages the Dutch RDW's provisional European type approval under UN Regulation 171. Initial rollout is exclusive to Hardware 4 vehicles, featuring FSD v14 tailored for European roads. Pricing is set at \u20ac99/month, with a reduced \u20ac49/month rate for Enhanced Autopilot owners.",
+          "date": "2026-06-10",
+          "category": "FSD Country Approvals",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Belgium's approval demonstrates continued European expansion momentum, but the approval came just one day after Denmark, highlighting the country-by-country fragmentation. The pattern shows Tesla making progress but still far from streamlined EU-wide deployment."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Belgium approved FSD June 10, 2026",
+              "Completed required 5,000 km supervised testing benchmark",
+              "13th country globally to approve FSD",
+              "Approval came one day after Denmark (June 9)",
+              "Leverages Dutch RDW approval for faster process"
+            ],
+            "negative_signals": [
+              "HW4-only rollout initially (HW3 excluded)",
+              "Still requires country-by-country activation",
+              "Approximately 6 months after first Dutch approval, only 5 EU countries activated",
+              "EU-wide vote delayed to October 2026 at earliest"
+            ],
+            "key_metrics": {
+              "actual": "5 European countries approved by June 10 (NL, LT, EE, DK, BE)",
+              "target": "EU-wide deployment across 27 member states",
+              "trajectory": "Adding ~1 country per month since April Dutch approval"
+            }
+          },
+          "source": "https://www.teslarati.com/tesla-stuns-another-fsd-approval-in-europe-belgium/",
+          "impact": "medium",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Tesla FSD v14 Lite rollout begins for HW3 vehicles starting July 1",
+          "description": "Tesla began rolling out FSD v14 Lite (software update 2026.20.5.1) to Hardware 3 (HW3) vehicles starting July 1, 2026, initially to Early Access Group members. This represents the first FSD v14 deployment to the installed base of approximately 4 million older Tesla vehicles that cannot run full FSD v14. The 'Lite' version includes Start Self-Driving from Park, Arrival Options (parking lot, street, driveway, curbside), Speed Profiles, and UI improvements. By July 10, Tesla AI confirmed v14 Lite rollout to early access HW3 owners in South Korea, marking the first HW3 FSD deployment outside North America. Current FSD v14 updates in July include v14.3.3 (2026.14.6.x) with improvements to responsiveness across navigation, merges, pedestrians, traffic lights, and smoother steering.",
+          "date": "2026-07-01",
+          "category": "FSD v14 Software",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "FSD v14 Lite rollout to HW3 addresses a large installed base (~4M vehicles) that was excluded from v14. However, this is a reduced-capability 'Lite' version, and the rollout started over 6 months after v14 launched on HW4. The fact Tesla needed to create a separate 'Lite' version underscores HW3's computational limitations and Tesla's April 2026 confirmation that HW3 cannot achieve unsupervised FSD."
+          },
+          "evidence": {
+            "positive_signals": [
+              "FSD v14 Lite rollout began July 1, 2026 for HW3 vehicles",
+              "Approximately 4 million HW3 vehicles can now access FSD v14 (Lite version)",
+              "First HW3 FSD deployment outside North America (South Korea, July 10)",
+              "Includes parking/unparking, Arrival Options, Speed Profiles",
+              "Continuous v14 improvements: v14.3.3 with better navigation, merges, pedestrian handling"
+            ],
+            "negative_signals": [
+              "HW3 receives reduced-capability 'Lite' version, not full v14",
+              "Rollout began 6+ months after HW4 received v14",
+              "HW3 confirmed unable to achieve unsupervised FSD (April 2026 earnings call)",
+              "Early Access only as of July 1, broader rollout timeline unclear",
+              "~4M HW3 owners face hardware upgrade requirement for unsupervised FSD"
+            ],
+            "key_metrics": {
+              "actual": "FSD v14 Lite in Early Access rollout for HW3; v14.3.3 on HW4",
+              "target": "FSD v15 end-to-end architecture targeted end 2026/early 2027",
+              "trajectory": "v14 iterating, but v15 delayed to late 2026 at earliest"
+            }
+          },
+          "source": "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+          "impact": "medium",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Finland signals potential FSD approval before October EU vote",
+          "description": "Finland's transport authority Traficom indicated it may approve Tesla FSD Supervised before the EU-wide decision expected at the October 2026 TCMV meeting. Traficom stated FSD has 'strong safety potential' and is prepared to move forward after summer 2026, contingent on Tesla providing additional information in three areas: driver retake time (how quickly a driver can reassume control), overtaking performance, and the speed-offset feature. Notably, Finnish regulators stated that speeding is already common in Finland and the speed offset is 'justified on the grounds that the driver must be given sufficient flexibility,' contrasting sharply with Sweden's opposition. Approximately 6,500 Finnish vehicles are already equipped with FSD hardware (~0.24% of Finland's 2.7M passenger vehicles).",
+          "date": "2026-07-08",
+          "category": "FSD Country Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium",
+            "rationale": "Finland's positive assessment and willingness to approve before October represents regulatory progress. However, the approval is conditional on Tesla answering outstanding technical questions, and Finland's position on speed offset contrasts with Sweden's formal objection, highlighting continued EU regulatory fragmentation."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Traficom says FSD has 'strong safety potential'",
+              "Finland prepared to approve after summer 2026",
+              "Finnish regulators justify speed offset feature (contrast to Sweden)",
+              "~6,500 Finnish vehicles already equipped with FSD hardware",
+              "Potential 7th European country approval"
+            ],
+            "negative_signals": [
+              "Approval conditional on Tesla answering three technical questions (driver retake time, overtaking, speed offset)",
+              "Timeline is 'after summer 2026' with no firm date",
+              "Contrasts with Sweden's formal objection, highlighting EU fragmentation",
+              "Only 0.24% of Finnish vehicles have FSD hardware (limited market impact)",
+              "No indication Finland's approval would influence October EU-wide vote"
+            ],
+            "key_metrics": {
+              "actual": "6 European countries approved as of July 8 (NL, LT, EE, DK, BE, DE)",
+              "target": "Finland potentially 7th; EU-wide approval (27 countries) targeted October 2026",
+              "trajectory": "Country-by-country expansion continues; EU-wide vote outcome uncertain"
+            }
+          },
+          "source": "https://www.basenor.com/blogs/news/finland-may-approve-tesla-fsd-before-eus-october-decision",
+          "impact": "low",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Tesla Model Y first vehicle to pass NHTSA's new ADAS safety tests",
+          "description": "The 2026 Tesla Model Y became the first vehicle to pass NHTSA's new benchmark for vehicles equipped with advanced driver assistance systems (ADAS), announced May 7, 2026. Model Y units manufactured on or after November 12, 2025, successfully met criteria for four newly integrated ADAS tests: pedestrian automatic emergency braking, lane keeping assistance, blind spot warning, and blind spot intervention, plus four original ADAS criteria (forward collision warning, crash imminent braking, dynamic brake support, lane departure warning). However, this achievement for basic ADAS features comes amid NHTSA's escalated Engineering Analysis investigation (EA26002) into Tesla's 'Full Self-Driving' system covering 3.2 million vehicles\u2014the stage that typically precedes a recall.",
+          "date": "2026-05-07",
+          "category": "FSD Country Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high",
+            "rationale": "Headlines celebrate Model Y passing ADAS tests, but the reality is this achievement covers basic driver assistance features while NHTSA simultaneously investigates FSD for fundamental safety failures in reduced visibility. The contrast highlights the gap between Tesla's basic ADAS capabilities (which passed) and FSD Supervised (which is under pre-recall investigation)."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Model Y first vehicle to pass NHTSA's new ADAS benchmark (May 7, 2026)",
+              "Passed all 8 ADAS tests (4 new + 4 original criteria)",
+              "Applies to 2026 Model Y manufactured after Nov 12, 2025"
+            ],
+            "negative_signals": [
+              "Achievement covers basic ADAS only, not FSD Supervised",
+              "Concurrent with NHTSA's escalated FSD investigation (EA26002) covering 3.2M vehicles",
+              "FSD investigation involves 9 crashes, 1 fatality, 1 injury from visibility detection failures",
+              "Investigation found FSD fails to detect sun glare and fog\u2014common conditions",
+              "EA26002 is pre-recall stage investigation",
+              "Tests passed are for standard ADAS, not the advanced FSD system under scrutiny"
+            ],
+            "key_metrics": {
+              "actual": "Model Y passed 8 ADAS tests; FSD under pre-recall investigation for 9 crashes",
+              "target": "FSD achieving safety validation for unsupervised operation",
+              "trajectory": "Basic ADAS validated; FSD safety under regulatory challenge"
+            }
+          },
+          "source": "https://www.kbb.com/car-news/tesla-model-y-first-to-pass-nhtsas-new-safety-testing/",
+          "impact": "low",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "California DMV confirms Tesla compliance after Autopilot branding dropped",
+          "description": "The California DMV confirmed Tesla's 'corrective action' on February 17, 2026, after Tesla stopped using the term 'Autopilot' in its marketing. In December 2025, a California judge ruled that Tesla's use of 'Autopilot' to describe ADAS features is misleading and violates state law, finding that the naming 'follows a long but unlawful tradition of intentionally using ambiguity to mislead consumers.' Tesla renamed Autopilot to 'Traffic Aware Cruise Control' and consistently uses 'Full Self-Driving (Supervised)' even when abbreviating to FSD. This compliance avoided a 30-day suspension of Tesla's dealer and manufacturer licenses in California.",
+          "date": "2026-02-17",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "While headlines frame this as compliance and avoiding a ban, the reality is a California judge ruled Tesla's marketing was intentionally misleading and violated state law. Tesla was forced to rebrand core features to avoid license suspension\u2014a significant regulatory and reputational setback confirming years of misleading marketing practices."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla complied with DMV order February 17, 2026",
+              "Avoided 30-day California sales suspension",
+              "Rebranded to clearer terms: 'Traffic Aware Cruise Control' and 'FSD (Supervised)'"
+            ],
+            "negative_signals": [
+              "California judge ruled in December 2025 that 'Autopilot' marketing is misleading and violates state law",
+              "Ruling found Tesla followed 'a long but unlawful tradition of intentionally using ambiguity to mislead consumers'",
+              "DMV investigation started in 2021 (5 years of alleged misleading marketing)",
+              "Tesla forced to rebrand under threat of 30-day license suspension",
+              "Confirms regulatory scrutiny of Tesla's FSD/Autopilot marketing claims",
+              "Reputational damage from judicial finding of intentional consumer deception"
+            ],
+            "key_metrics": {
+              "actual": "Forced rebranding to avoid California sales ban",
+              "target": "Transparent, legally compliant marketing across all jurisdictions",
+              "trajectory": "Regulatory compliance forced by litigation; marketing practices under continued scrutiny"
+            }
+          },
+          "source": "https://electrek.co/2026/02/18/tesla-avoids-30-day-california-sales-suspension-after-dropping-misleading-autopilot-marketing/",
+          "impact": "medium",
+          "_sourceCategory": "fsd"
+        },
+        {
+          "title": "Tesla confirms FSD v15 delayed to end-2026/early-2027; robotaxi scale blocked until release",
+          "description": "During the Q1 2026 earnings call (April 22, 2026), Tesla confirmed FSD v15 will not ship until late 2026 or early 2027, representing a delay of the 10x parameter model upgrade that was originally planned for v14 in late 2025. CEO Elon Musk explicitly stated large-scale robotaxi expansion will NOT proceed until v15 is released, citing the need for 'major architectural improvements' to reach required safety levels. This confirms v15 is the critical blocker for both unsupervised FSD and robotaxi commercialization. The 10-billion-parameter model is described as a 'total architectural overhaul' designed to achieve 'orders of magnitude beyond human capability' safety. While v15 will run on Hardware 4 (no upgrade needed), the ~9-12 month delay from original v14 timeline pushes Tesla's autonomy roadmap into 2027.",
+          "date": "2026-04-22",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Headlines emphasize HW4 compatibility (positive framing), but reality is a 9-12 month delay of the critical model upgrade, pushing robotaxi scale and unsupervised FSD into 2027. This is the second major delay (originally v14 late-2025, now v15 end-2026/early-2027). Robotaxi expansion explicitly blocked until v15 ships."
+          },
+          "evidence": {
+            "positive_signals": [
+              "FSD v15 will run on Hardware 4 (no expensive upgrade required)",
+              "Tesla confirms 10x parameter upgrade (1B to 10B parameters) still planned",
+              "HW4 getting RAM upgrade to 32GB (from 16GB) for better performance"
+            ],
+            "negative_signals": [
+              "FSD v15 pushed to late-2026/early-2027 (originally expected in v14 late-2025)",
+              "Large-scale robotaxi expansion explicitly blocked until v15 release",
+              "Unsupervised FSD for consumers delayed to Q4 2026 earliest (geography-limited)",
+              "Musk admitted current v14 not safe enough for scale: needs 'major architectural improvements'",
+              "Timeline is 'targeted' with no firm commitment (history of delays: promised autonomy 2018, 1M robotaxis 2020, unsupervised June 2025)"
+            ],
+            "key_metrics": {
+              "actual": "v14 in production; v15 in development with late-2026/early-2027 target",
+              "target": "v15 release by end-2026 or early-2027; 10B parameter model",
+              "trajectory": "6-9 months to stated target; represents 9-12 month delay from original v14 timeline"
+            }
+          },
+          "source": "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
+          "impact": "high",
+          "_sourceCategory": "fsdv15"
+        },
+        {
+          "title": "Tesla confirms Hardware 3 cannot support unsupervised FSD or v15; 4M vehicles left behind",
+          "description": "On April 22-23, 2026 (Q1 earnings call), Tesla officially confirmed that Hardware 3 (HW3) vehicles\u2014approximately 4 million globally\u2014cannot and will not support unsupervised Full Self-Driving or FSD v15. Elon Musk cited hardware limitations: HW3 has 'only one eighth of the memory bandwidth of Hardware 4' and lacks the compute/memory capacity for the 10-billion-parameter v15 model. FSD v14 Lite is confirmed as the 'ultimate ceiling version' for HW3 hardware. This directly contradicts Tesla's 2016-2019 promises that HW3 would support full autonomy. Tesla is offering affected customers (many who paid $8,000-15,000 for FSD) either: (1) discounted trade-in to HW4 vehicle, or (2) paid hardware upgrade requiring replacement of computer AND all cameras. This represents a broken promise to millions of early FSD adopters and a material limitation on Tesla's addressable autonomy market.",
+          "date": "2026-04-22",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Official confirmation that 4 million HW3 customers cannot access unsupervised FSD or v15 despite paying for 'Full Self-Driving' with promises of future autonomy. This is a broken commitment and requires expensive upgrades. Headlines frame it as 'upgrade path offered' but reality is customers must pay more after already purchasing FSD."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla offering discounted trade-in path for HW3 owners",
+              "Hardware upgrade option available (computer + cameras)",
+              "FSD v14 Lite released for HW3 in late June 2026"
+            ],
+            "negative_signals": [
+              "4 million HW3 vehicles globally cannot support unsupervised FSD",
+              "HW3 memory bandwidth is 1/8th of HW4 (fundamental hardware limit)",
+              "FSD v15 will not run on HW3 (10B parameter model too large)",
+              "Breaks 2016-2019 Tesla promises that HW3 would support full autonomy",
+              "Customers who paid $8K-15K for FSD must now pay more for hardware upgrade",
+              "v14 Lite confirmed as 'ultimate ceiling' for HW3 (no unsupervised capability)"
+            ],
+            "key_metrics": {
+              "actual": "4 million HW3 vehicles left behind; v14 Lite only",
+              "target": "Hardware upgrade required for unsupervised FSD",
+              "trajectory": "Permanent hardware limitation; no software solution possible"
+            }
+          },
+          "source": "https://www.basenor.com/blogs/news/tesla-update-v15-1",
+          "impact": "high",
+          "_sourceCategory": "fsdv15"
+        },
+        {
+          "title": "Tesla robotaxi fleet stagnates at 20-25 vehicles after 1 year; scaling failure evident as expansion blocked until v15",
+          "description": "As of June-July 2026, Tesla's unsupervised robotaxi fleet remains stuck at approximately 20-25 active vehicles across Austin, Dallas, and Houston\u2014one full year after the June 2025 Austin launch. Multiple reports indicate the fleet has actually shrunk from 25 vehicles in April 2026 to 20 vehicles by June 2026. The service area expanded to entire Austin metro in June, but vehicle count did not scale. This represents a clear scaling failure: after 12 months of operation, Tesla cannot grow the fleet beyond ~25 vehicles. Safety concerns are evident: the Austin fleet logged 14 crashes in first 7 months (~800K miles), a rate 4x worse than average US driver per Tesla's own benchmarks (1 crash per 57K miles vs 1 per 229K miles). Elon Musk confirmed on Q1 call that large-scale expansion is blocked until FSD v15 (late-2026/early-2027), effectively admitting current v14 is not safe enough to scale. Preparations for Phoenix, Miami, Orlando, Tampa, Las Vegas remain in 'preparation' stage with no active deployments.",
+          "date": "2026-06-03",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Headlines tout 'expansion to entire Austin metro' and 'preparations for new cities,' but reality is fleet stuck/shrinking at 20-25 vehicles after 1 full year. This is a failed scaling attempt. Tesla is blocking expansion due to safety concerns (4x crash rate vs human drivers) and admitting v14 inadequate. One year with no meaningful fleet growth = negative."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Service area expanded to entire Austin metro (June 2026)",
+              "Cities in 'preparation' stage: Phoenix, Miami, Orlando, Tampa, Las Vegas",
+              "Tesla targets 'a dozen states by year-end' per Q1 call"
+            ],
+            "negative_signals": [
+              "Fleet stuck at 20-25 vehicles for 12+ months (June 2025 to June 2026)",
+              "Fleet reportedly shrinking: 25 vehicles (April) to 20 vehicles (June)",
+              "14 crashes in first 7 months: 1 per 57K miles (4x worse than human average)",
+              "Musk blocked large-scale expansion until v15: 'not safe enough' admission",
+              "No new city launches despite 'preparation' claims for 5+ cities",
+              "Waymo operates 577 vehicles in Austin vs Tesla's 20-25",
+              "Service area expansion without fleet growth = coverage dilution, not scale"
+            ],
+            "key_metrics": {
+              "actual": "20-25 active robotaxi vehicles (June 2026); 14 crashes in 7 months",
+              "target": "Large-scale expansion blocked until v15 (late-2026/early-2027)",
+              "trajectory": "Flat to negative fleet growth; 12 months with no scaling progress"
+            }
+          },
+          "source": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+          "impact": "high",
+          "_sourceCategory": "fsdv15"
+        },
+        {
+          "title": "Tesla rolls out FSD v14 Lite to Hardware 3 vehicles in late June; international expansion underway",
+          "description": "Starting June 29, 2026, Tesla began rolling out FSD v14 Lite (firmware 2026.20.5.1) to Hardware 3 vehicles, ending a 16-month wait for 4 million HW3 owners since v13 was the last major update they received. The v14 Lite update uses 'distillation' technology to compress HW4's v14 capabilities onto HW3's limited hardware, bringing improvements to navigation, merges, pedestrian interactions, traffic lights, parking/unparking, and arrival options. Tesla's AI chief Ashok Elluswamy confirmed rollout started with early access drivers, with wider release planned 'over the next few weeks.' International rollout also began, with South Korea becoming the first non-US market to receive FSD v14 Lite. However, v14 Lite remains Level 2 supervised (hands-on required) and is confirmed as the 'ultimate ceiling version' for HW3\u2014unsupervised FSD will never come to HW3 hardware. While this is a functional improvement for HW3 owners, it does not change the fundamental limitation: HW3 is excluded from Tesla's autonomy roadmap (unsupervised FSD, v15, robotaxi).",
+          "date": "2026-06-29",
+          "category": "FSD v15 Software",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high",
+            "rationale": "Headlines celebrate 'FSD v14 finally arrives for HW3' after 16-month wait, but reality is more nuanced: v14 Lite is a downscaled version (not full v14), remains supervised Level 2, and is the ceiling for HW3 (no unsupervised future). It's a functional improvement but confirms HW3's permanent exclusion from autonomy. Mixed signals: progress for near-term, dead-end for long-term."
+          },
+          "evidence": {
+            "positive_signals": [
+              "FSD v14 Lite rollout began June 29 for 4M HW3 vehicles",
+              "Improvements to navigation, pedestrian handling, parking, arrival options",
+              "International expansion: South Korea first non-US market",
+              "Uses AI 'distillation' to compress HW4 v14 intelligence onto HW3",
+              "Rollout expanding 'over next few weeks' from early access to wider fleet"
+            ],
+            "negative_signals": [
+              "v14 Lite is 'ultimate ceiling' for HW3 (official statement)",
+              "Remains Level 2 supervised (hands-on required; not unsupervised)",
+              "16-month gap since last major HW3 update (v13)",
+              "HW3 permanently excluded from unsupervised FSD and v15",
+              "International rollout subject to 'regulatory approvals' with no firm dates"
+            ],
+            "key_metrics": {
+              "actual": "FSD v14 Lite (2026.20.5.1) rolling out to HW3 starting June 29",
+              "target": "Wider HW3 fleet rollout 'over next few weeks'; international expansion ongoing",
+              "trajectory": "Incremental improvement for HW3, but permanent exclusion from autonomy roadmap"
+            }
+          },
+          "source": "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+          "impact": "medium",
+          "_sourceCategory": "fsdv15"
+        },
+        {
+          "title": "110+ Optimus Job Postings Signal Production Ramp - But No Current Reality Proof",
+          "description": "Tesla maintains 110+ open job listings dedicated to Optimus across U.S. facilities (Austin, Fremont, Palo Alto, Sparks NV, Draper UT). Roles span AI/ML engineering, manufacturing, mechanical design, and production line automation. Positions target production-intent prototype in early 2026 and 'end of 2026' production start. CRITICAL CAVEAT: This is standard pre-production hiring. No actual unit production figures released. The 100-110 job posting count matches or slightly exceeds May 2026 baseline (100+ roles). No significant increase in hiring velocity detected week-over-week.",
+          "date": "2026-07-10",
+          "category": "Job Postings",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "110+ dedicated Optimus job openings across multiple facilities",
+              "Roles span full product lifecycle: software, manufacturing, AI, mechanical engineering",
+              "Geographic distribution shows serious multi-facility commitment (Austin, Fremont, Palo Alto, Sparks, Draper)",
+              "Hiring includes internships for Summer 2026, suggesting near-term production ramp",
+              "Production timeline announced for late July/August 2026 at Fremont"
+            ],
+            "negative_signals": [
+              "Job posting count stable at 100-110 range - no acceleration detected in last 2 months",
+              "No published production unit numbers to validate hiring is translating to output",
+              "End-of-2026 production start still 5+ months away at research date",
+              "Model S/X production lines being repurposed indicates reconfiguration complexity",
+              "1 million unit annual target is aspirational claim with no production reality yet"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-optimus-job-listings/",
+          "impact": "medium",
+          "_sourceCategory": "jobPostings"
+        },
+        {
+          "title": "Optimus Hiring Remains Steady but Shows No Growth Acceleration",
+          "description": "Tesla's Optimus job posting count remains at 100-110 roles as of July 2026, matching the baseline from May 2026 (100+ roles mentioned in hot context). This indicates STABLE but NOT accelerating hiring. Given the announced production start in late July 2026, would expect significant hiring ramp pre-launch, but data shows plateau. This suggests either: (1) hiring targets already met, (2) production delay risk, or (3) automated/outsourced manufacturing reducing direct hiring needs.",
+          "date": "2026-07-12",
+          "category": "Job Postings",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Consistent 100-110 job opening count demonstrates maintained commitment",
+              "Diverse role categories suggest building complete product teams",
+              "Multiple facility locations show geographic scaling"
+            ],
+            "negative_signals": [
+              "No measurable growth from May 2026 (100+ roles) to July 2026 (110 roles) - only 10 role increase or flat",
+              "Typical pre-production ramp should show 2-3x hiring acceleration 2-3 months before launch",
+              "Production announcement for late July 2026 yet hiring shows no corresponding velocity increase",
+              "Stalled growth trajectory suggests scaling challenges or revised production targets",
+              "No indication of manufacturing partner hiring or secondary labor force expansion"
+            ]
+          },
+          "source": "https://robohorizon.com/en-us/news/2025/12/tesla-optimus-hiring-spree-hits-110-jobs/",
+          "impact": "medium",
+          "_sourceCategory": "jobPostings"
+        },
+        {
+          "title": "Musk warns Optimus production will be 'extremely slow' as July start approaches",
+          "description": "On July 1, 2026, Elon Musk visited the Optimus production line at Fremont and shared a team photo, responding to speculation by stating 'Optimus production will be extremely slow at first because everything is new.' This directly contradicts earlier optimism and occurs just weeks before the planned late July/August production start. Musk emphasized 'this is not like making a car' due to 10,000 unique parts. Production is expected to ramp from dozens per week in June to 100-150 per week in July, 300 per week in August, and a target of 1,000 units per week by September 2026 according to supplier reports. However, all 2026 units will be for internal testing only, not commercial customers.",
+          "date": "2026-07-01",
+          "category": "Optimus Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Musk's 'extremely slow' warning just weeks before production start signals significant challenges. Despite supplier targets of 1,000 units/week by September, Musk's public caution indicates these are aspirational. The reality is Tesla missed 2025 targets entirely (aimed for ~10,000 units, delivered zero commercial units), and current deployed units do no productive work. 'Everything is new' admission shows unproven production process at scale."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Production line operational at Fremont (Musk visited July 1, 2026)",
+              "Supplier orders suggest 1,000 units/week target by September 2026",
+              "Ramp plan outlined: 100-150/week July, 300/week August, 1,000/week September"
+            ],
+            "negative_signals": [
+              "Musk publicly warns 'extremely slow' production just weeks before start",
+              "Admission 'everything is new' signals unproven manufacturing process",
+              "All 2026 production for internal testing only - no commercial revenue",
+              "Missed 2025 targets entirely (aimed ~10,000 units, delivered zero productive robots)",
+              "Current 'several hundred' deployed units doing 'no useful work' (Q4 2025 call)",
+              "Build cost $50,000-$100,000 per unit vs $20,000-$30,000 target price",
+              "10,000 unique parts makes production 'literally impossible to predict' (Q1 2026 call)"
+            ],
+            "key_metrics": {
+              "actual": "Production line ready but not yet started; 'extremely slow' output expected",
+              "target": "1,000 units/week by September 2026 (supplier reports, unconfirmed by Tesla)",
+              "trajectory": "Behind schedule - production start imminent but Musk lowering expectations publicly"
+            }
+          },
+          "source": "https://www.trendforce.com/news/2026/07/03/news-musk-shares-tesla-optimus-production-team-photo-says-initial-robot-output-will-be-extremely-slow/",
+          "impact": "high",
+          "_sourceCategory": "optimus"
+        },
+        {
+          "title": "Optimus Gen 3 remains unrevealed as production deadline arrives",
+          "description": "As of July 10, 2026, Tesla has not publicly revealed the Optimus Gen 3 design despite production targeted to begin in late July or August 2026. The reveal was originally targeted for Q1 2026 (missed on March 31), then pushed to 'mid-year' (April announcement), and now remains hidden with production supposedly starting within 2-3 weeks. Musk stated Tesla is deliberately delaying the reveal to prevent competitors from copying the design, but the pattern of repeated delays (Q1 \u2192 mid-year \u2192 late July) raises concerns about production readiness. This marks the third major postponement of the Gen 3 unveiling.",
+          "date": "2026-07-10",
+          "category": "Optimus Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high",
+            "rationale": "Unrevealed product 2-3 weeks before production start is a red flag. Tesla's stated reason (preventing copycats) is undermined by the pattern of repeated delays: Q1 2026 target missed, April push to 'mid-year' missed, now July 10 and still no reveal with late July production deadline. Legitimate product launches reveal before production starts for validation and pre-orders. The opacity suggests design is not finalized or production timeline will slip again."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Musk says Gen 3 is 'walking around' and in 'final stages' (March 2026)",
+              "Strategic rationale provided: prevent competitors from copying design"
+            ],
+            "negative_signals": [
+              "Gen 3 reveal missed Q1 2026 target (March 31 delay announcement)",
+              "Second delay: pushed to 'mid-year' in April, now mid-July and still unrevealed",
+              "Production supposedly starts late July/August but no public reveal as of July 10",
+              "Third postponement in 6 months suggests design/production not ready",
+              "Pattern of delays mirrors broader Tesla robotics timeline slippage",
+              "No pre-orders, no pricing, no commercial customer announcements"
+            ],
+            "key_metrics": {
+              "actual": "Gen 3 unrevealed as of July 10, 2026",
+              "target": "Public reveal expected 'around production start' (late July/August 2026)",
+              "trajectory": "Delayed 3 times; production deadline approaching with no public unveiling"
+            }
+          },
+          "source": "https://blog.robozaps.com/b/tesla-optimus-gen-3",
+          "impact": "medium",
+          "_sourceCategory": "optimus"
+        },
+        {
+          "title": "Supplier reports suggest aggressive 1,000 units/week September target",
+          "description": "Reports emerged in early July 2026 that Tesla issued procurement guidelines to Optimus Gen 3 suppliers requiring production capacity of 1,000 units per week by September 2026, scaling to 2,000-2,500 units per week by year-end. The ramp plan calls for dozens per week in June, 100-150 per week in July, 300 per week in August, and 1,000 per week by September. However, these are supplier-side targets and have not been confirmed by Tesla official sources. Given Musk's July 1 warning that production will be 'extremely slow' and 'literally impossible to predict,' these aggressive targets appear aspirational rather than achievable.",
+          "date": "2026-07-08",
+          "category": "Optimus Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "low",
+            "rationale": "Supplier reports are not official Tesla guidance. The 1,000 units/week target contradicts Musk's July 1 'extremely slow' warning. These appear to be supply chain capability targets rather than actual production commitments. Without Tesla confirmation and given the pattern of missed targets (2025 goal of ~10,000 units resulted in zero commercial units), these should be treated as aspirational. Low confidence due to lack of Tier 1 source verification."
+          },
+          "evidence": {
+            "positive_signals": [
+              "Supply chain being ramped to support 1,000 units/week by September",
+              "Detailed ramp plan: 100-150/week July, 300/week August, 1,000/week September",
+              "Year-end target of 2,000-2,500 units/week shows ambition"
+            ],
+            "negative_signals": [
+              "Not confirmed by Tesla or official sources - supplier reports only",
+              "Contradicts Musk's July 1 'extremely slow' warning",
+              "Tesla missed entire 2025 production target (~10,000 units aimed, zero commercial units delivered)",
+              "All 2026 units for internal testing - no commercial sales",
+              "Build cost ($50K-$100K) far exceeds target price ($20K-$30K)",
+              "Musk said production rate 'literally impossible to predict' (Q1 2026)"
+            ],
+            "key_metrics": {
+              "actual": "Supplier orders issued; no Tesla confirmation of achievability",
+              "target": "1,000 units/week by September 2026 (supplier reports)",
+              "trajectory": "Aspirational targets; actual output likely far lower based on Musk warnings"
+            }
+          },
+          "source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262020147-tsla-musk-optimus-gen3-ai-tradingkey",
+          "impact": "medium",
+          "_sourceCategory": "optimus"
+        },
+        {
+          "title": "Model S/X Production Line Decommissioned in 46 Days at Fremont",
+          "description": "Tesla completed teardown of original Model S and Model X assembly line at Fremont Factory in just 46 days, involving removal of robotic arms, conveyors, and concrete pits. The space will be repurposed for Optimus humanoid robot production targeting 1M units/year capacity. Final S/X vehicles rolled off the line in early May 2026, with Optimus production on the converted line expected to begin in late July or August 2026. This represents Tesla's strategic pivot away from low-volume luxury sedans (<3% of 2025 deliveries) toward high-volume robotics manufacturing.",
+          "date": "2026-07-10",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Rapid 46-day factory conversion demonstrates operational efficiency",
+              "Strategic reallocation of factory space to higher-volume Optimus production (1M target vs <20K S/X annual)",
+              "Fremont Optimus production starting late July/August 2026"
+            ],
+            "negative_signals": [
+              "Elimination of flagship Model S/X vehicles after 14+ years of production",
+              "Loss of premium vehicle segment revenue (though <3% of total deliveries)",
+              "Temporary production capacity reduction during transition period"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
+          "impact": "medium",
+          "_sourceCategory": "productionDelivery"
+        },
+        {
+          "title": "Modest Full-Year 2026 Growth Despite Strong Q2 Performance",
+          "description": "While Tesla crushed Q2 2026 delivery expectations with 480,126 vehicles delivered (+25% YoY, beating consensus of 406K by 18%), full-year 2026 guidance remains concerning at only 1.69M units (~3-5% growth vs 1.64M in 2025). This represents a significant moderation from historical Tesla growth rates and analyst expectations have been downgraded by 35K vehicles since March 2026. The modest guidance persists despite Q2's strong performance and successful inventory drawdown of 28,368 units.",
+          "date": "2026-07-02",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Q2 2026: 480,126 deliveries beat consensus by 18% (vs 406K expected)",
+              "Successfully cleared Q1 inventory backlog of 50K+ units",
+              "Strong 25% YoY growth in Q2 vs 2025",
+              "Energy storage deployment at 13.5 GWh (2nd best quarter ever, +40% YoY)"
+            ],
+            "negative_signals": [
+              "Full-year 2026 forecast downgraded from 1.69M to 1.65M (35K reduction since March)",
+              "Only 3-5% annual growth projected vs historical 50%+ CAGR target",
+              "Q1 2026 missed expectations (358K vs 365K consensus)",
+              "Capital expenditure increased to $25B+ with negative free cash flow projected for Q2-Q4",
+              "Production (451,758) significantly trails delivery capacity, indicating conservative manufacturing outlook"
+            ]
+          },
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm",
+          "impact": "high",
+          "_sourceCategory": "productionDelivery"
+        },
+        {
+          "title": "Giga Berlin 20% Production Increase to 73K Units/Quarter",
+          "description": "Tesla announced a 20% production boost at Gigafactory Berlin starting July 2026, targeting 73,000 Model Y units per quarter (up from record 61,000 in Q1 2026). The facility will hire 1,000 new employees (onboarding began in May) and convert 500 temporary workers to permanent positions. This expansion follows strong European demand recovery with Germany registrations quadrupling to 9,252 units in March 2026 and overall March registrations up 117% YoY. However, Berlin still operates below theoretical capacity despite this increase.",
+          "date": "2026-06-25",
+          "category": "Vehicle Production & Delivery",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "20% production increase to 73K Model Y/quarter starting July 2026",
+              "1,000 new hires plus 500 temp-to-permanent conversions",
+              "European demand recovery: Germany registrations up 4x in March 2026",
+              "Q1 2026 record 61,000 vehicles produced at Berlin",
+              "Management confidence in sustained European demand"
+            ],
+            "negative_signals": [
+              "Still operating below factory's theoretical maximum capacity",
+              "Expansion only returns Berlin to mid-2023 production rates",
+              "Requires significant hiring/training period (May-July) before full ramp"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-plans-production-boost-giga-berlin-following-rebound-europe/",
+          "impact": "medium",
+          "_sourceCategory": "productionDelivery"
+        },
+        {
+          "title": "Terafab July 7 Giga Texas Announcement Delayed, Turned Out to Be Cybercab Employee Rides",
+          "description": "Tesla VP Lars Moravy teased 'cool news' about Giga Texas scaling for July 7, 2026. The announcement slipped from July 7 to July 10, and when it came, it was employee Cybercab rides at Giga Texas\u2014not a Terafab North Campus construction milestone or AI5 production update. This represents a significant mismatch between the scaling efforts expected (Terafab, Optimus factory, Roadster production) and what was actually announced (limited internal employee rides at factory).",
+          "date": "2026-07-10",
+          "category": "Terafab Manufacturing",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Announcement confirmed for early July",
+              "Employee rides show Cybercab engineering progress"
+            ],
+            "negative_signals": [
+              "Announcement slipped from teased July 7 date to July 10",
+              "Expected Terafab construction milestone did not materialize",
+              "No new Optimus factory scaling update",
+              "No concrete AI5 production timeline update",
+              "Announcement limited to internal factory parking lot rides, not public robotaxi expansion",
+              "Vague messaging ('cool news') does not clarify actual production readiness"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-cybercab-ride-giga-texas/",
+          "impact": "medium",
+          "_sourceCategory": "terafab"
+        },
+        {
+          "title": "AI5 Chip Production Delayed to Mid-2027, Missing Original 2026 Volume Target",
+          "description": "Tesla's AI5 chip, central to Terafab's planned output, has been delayed significantly. Original timeline promised volume production in 2026, but current guidance places high-volume manufacturing at mid-2027. Small-batch production is now expected in late 2026, but this represents a major slip from initial plans. The delay is primarily driven by Samsung's 2nm process maturation challenges at its Texas foundry. This directly impacts Tesla's AI roadmap and vehicle production scaling.",
+          "date": "2026-07-08",
+          "category": "Terafab Manufacturing",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "AI5 taped out on April 15, 2026 (design complete)",
+              "Dual-sourcing at TSMC Arizona and Samsung Texas reduces single-point failure",
+              "Small-batch production expected late 2026"
+            ],
+            "negative_signals": [
+              "Volume production pushed from 2026 to mid-2027",
+              "Samsung's 2nm process slipping by 6+ months",
+              "AI6 chip delayed approximately 6 months due to Samsung delays",
+              "Multiple chip projects advancing simultaneously creates resource constraints",
+              "Process technology transition to GAAFET at 2nm requires new materials and equipment"
+            ]
+          },
+          "source": "https://www.automotiveworld.com/news/tesla-delays-ai5-chip-production-until-mid-2027/",
+          "impact": "high",
+          "_sourceCategory": "terafab"
+        },
+        {
+          "title": "Terafab Execution Risks: Semiconductor Inexperience, Talent Shortage, and Yield Challenges",
+          "description": "Critical analysis reveals Terafab faces severe execution risks that threaten the $25B+ investment. Tesla has no semiconductor manufacturing experience. The company is advancing 6+ simultaneous chip projects (AI-related, Dojo-related, SpaceX satellites) while attempting vertical integration across mask design, logic, memory, and advanced packaging. Analysts cite lack of talent and time as primary constraints. The biggest technical challenge is controlling yields at advanced 2nm nodes\u2014transistor architecture has shifted to GAAFET, requiring significant upgrades to materials, equipment, and process modules. Even minor deviations could cause sharp yield drops.",
+          "date": "2026-07-08",
+          "category": "Terafab Manufacturing",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Intel partnership provides semiconductor expertise",
+              "SpaceX and xAI co-investment spreads risk",
+              "Vertical integration vision is ambitious"
+            ],
+            "negative_signals": [
+              "Tesla has zero semiconductor manufacturing experience",
+              "6+ simultaneous chip projects stretching resources thin",
+              "GAAFET transition at 2nm requires new materials, equipment, and processes",
+              "Yield control at advanced nodes is industry's hardest problem",
+              "Talent shortage in semiconductor industry makes recruitment difficult",
+              "Pilot line production may not begin until 2029-2030 (not 2027-2028 as hoped)",
+              "Full facility buildout could take 10+ years based on historical chip fab construction"
+            ]
+          },
+          "source": "https://www.tipranks.com/news/teslas-terafab-chip-project-hampered-by-a-lack-of-talent-and-time-claims-analyst",
+          "impact": "high",
+          "_sourceCategory": "terafab"
+        },
+        {
+          "title": "Terafab North Campus Construction Update: 5.2M Sq Ft Expansion Underway at Giga Texas",
+          "description": "Tesla filed detailed site plans in March 2026 showing a massive Terafab North Campus expansion including a dedicated 2-million-square-foot AI chip research and production facility, plus an additional 5.2 million square feet of construction across multiple phases. Ground clearing, soil reclamation, and infill operations are visible north of the existing facility. However, no specific construction milestones or timelines have been disclosed. The July 7 'cool news' tease failed to deliver details on this critical facility.",
+          "date": "2026-07-08",
+          "category": "Terafab Manufacturing",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Detailed site plans filed with Travis County",
+              "Ground preparation underway with visible earth-moving activity",
+              "5.2M sq ft total expansion committed",
+              "Co-located with Optimus factory and Giga Texas operations"
+            ],
+            "negative_signals": [
+              "No specific construction completion dates disclosed",
+              "July 7 announcement did not include Terafab North Campus milestone",
+              "Timeline remains vague ('first phase' language common in Tesla announcements)",
+              "Regulatory and permitting challenges not addressed",
+              "No public updates since initial March filing"
+            ]
+          },
+          "source": "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
+          "impact": "medium",
+          "_sourceCategory": "terafab"
         }
       ],
       "trends": [
@@ -288,7 +1602,11 @@
         "Geographic expansion prioritized over fleet scaling: Miami and Dallas robotaxi launches despite modest Austin fleet size",
         "European FSD regulatory momentum building: 4 countries approved in 3 months (Denmark most recent on June 9)",
         "Production timelines firming: Optimus late July/August start confirmed, Q2 2026 deliveries beat by 18%",
-        "Hardware production accelerating while software remains constraint: Cybercab production ramping but limited by FSD v15 delay to Q4 2026"
+        "Hardware production accelerating while software remains constraint: Cybercab production ramping but limited by FSD v15 delay to Q4 2026",
+        "AI Chip Production: Mixed signals with concerning developments",
+        "4680 Battery Cell Production: Progress across multiple fronts",
+        "Cybercab Production: Mixed signals with concerning developments",
+        "FSD Country Approvals: Mixed signals with concerning developments"
       ]
     },
     {
@@ -2091,6 +3409,12 @@
           "date": "2026-06-15",
           "count": 102,
           "note": "102 Cybercabs in Giga Texas outbound lot, up 70% from ~60 in late May"
+        },
+        {
+          "date": "2026-07-10",
+          "count": 120,
+          "note": "Estimated 120+ Cybercabs visible at Giga Texas staging lots per drone footage and social media reports. Production ramping since February 2026 start, but vehicles remain in staging - not deployed commercially due to lack of regulatory approval for autonomous operation.",
+          "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps"
         }
       ],
       "target": "Hundreds per week by April 2026, 2M/year at full capacity"
@@ -2132,6 +3456,12 @@
           "date": "2026-05-16",
           "count": 100,
           "note": "Mid-May - 100+ roles maintained"
+        },
+        {
+          "date": "2026-07-12",
+          "count": 110,
+          "note": "110 active Optimus job postings across U.S. facilities as of July 2026. Represents stable hiring at same level as May 2026 baseline (100+ roles). Roles span AI/ML, manufacturing engineering, mechanical design, production automation, and data pipeline development.",
+          "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
         }
       ]
     },
@@ -2217,6 +3547,25 @@
           "date": "2026-07-03",
           "count": 34,
           "note": "Fleet declined 42% from June peak to 34 active vehicles. Austin unsupervised fleet down to ~14 active cars (from ~25 peak). Fleet in steady decline since Dec 2025/Jan 2026. Miami service area mapped. Deployment blocked until FSD v15 (Q4 2026/Q1 2027)."
+        },
+        {
+          "city": "Austin, Dallas, Houston, Miami",
+          "country": "USA",
+          "status": "declining",
+          "vehicleCount": 20,
+          "totalAuthorized": 34,
+          "breakdown": {
+            "austin": 14,
+            "dallas": 3,
+            "houston": 3,
+            "miami": "undisclosed",
+            "bayArea": 9
+          },
+          "lastUpdate": "2026-07-08",
+          "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
+          "date": "2026-07-08",
+          "count": 20,
+          "note": "Fleet at 20 vehicles (34 authorized). Status: declining. Breakdown: austin: 14, dallas: 3, houston: 3, miami: undisclosed, bayArea: 9"
         }
       ],
       "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
@@ -2417,7 +3766,7 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "AI5 chip samples and small batch production expected 2026, high volume 2027. AI6 chip $16.5B Samsung deal (July 2025) for Taylor, Texas fab, targeting mid-2028 mass production.",
       "keyPoints": [
         "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
@@ -2485,7 +3834,7 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
       "keyPoints": [
         "2,053 total trips recorded covering 7,271 miles (avg 3.54 miles per trip)",
@@ -2573,7 +3922,7 @@
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
       "keyPoints": [
         "Subscriptions launched at \u20ac99/month in Netherlands",
@@ -2696,7 +4045,7 @@
     },
     "jobPostings": {
       "title": "Job Postings",
-      "latestUpdate": "2026-05-24",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "100+ Active Optimus Roles - Stable Hiring Ahead of July/August Production",
       "keyPoints": [
         "100+ Optimus-related job openings maintained in mid-May 2026",
@@ -2723,7 +4072,7 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Optimus production confirmed for late July or August 2026 at Fremont. Initial output will be slow due to 10,000 unique parts. Giga Texas second-gen facility targets summer 2027 start.",
       "keyPoints": [
         "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
@@ -2813,10 +4162,10 @@
     },
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
-      "totalProduction": "9759880",
-      "totalDeliveries": "9664074",
+      "totalProduction": "10,211,638",
+      "totalDeliveries": "10,144,200",
       "quarterlyData": [
         {
           "quarter": "Q1-15",
@@ -3047,6 +4396,23 @@
           "quarter": "Q2-26",
           "production": 451758,
           "delivery": 480126
+        },
+        {
+          "quarter": "Q2 2026",
+          "production": {
+            "total": 451758,
+            "model3Y": 442936,
+            "otherModels": 8822
+          },
+          "deliveries": {
+            "total": 480126,
+            "model3Y": 467762,
+            "otherModels": 12364
+          },
+          "energyStorage": {
+            "deployed_gwh": 13.5,
+            "note": "2nd best quarter ever, +40% YoY vs 9.6 GWh in Q2 2025"
+          }
         }
       ],
       "annualSummary": [
@@ -3094,7 +4460,7 @@
     },
     "terafab": {
       "title": "Terafab In-House Chip Manufacturing",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Terafab joint $25B Tesla-SpaceX chip fab announced March 2026 in Austin. First phase $55B, could scale to $119B. July 7, 2026 'cool news' teased by Tesla VP about Giga Texas scaling.",
       "keyPoints": [
         "Groundbreaking April 22, 2026 at Giga Texas North Campus",
@@ -3136,7 +4502,7 @@
     },
     "battery4680": {
       "title": "4680 Battery Cell Production",
-      "latestUpdate": "2026-07-08",
+      "latestUpdate": "2026-07-12",
       "criticalNews": "Giga Berlin announced $250M investment (May 12, 2026) to scale annual 4680 production from 8 GWh to 18 GWh. 100M cell milestone surpassed September 2025. Dry-electrode process confirmed for anode and cathode.",
       "keyPoints": [
         "Annual capacity: 15-20 GWh/year from Giga Texas alone",

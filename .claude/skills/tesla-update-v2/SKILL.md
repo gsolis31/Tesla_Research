@@ -5,17 +5,19 @@ user-invocable: true
 allowed-tools: Read, Write, Bash, Task
 ---
 
-# Tesla Tracker Update Skill V2 (Parallel Agent Orchestrator)
+# Tesla Tracker Update Skill V2 (Batched Agent Orchestrator)
 
 ## What This Does
 
-**Orchestrates parallel research pipeline:**
-1. Spawns 9 `tesla-researcher` agents in parallel (one per category)
+**Orchestrates batched research pipeline:**
+1. Spawns 9 `tesla-researcher` agents in 3 batches of 3 (one per category)
 2. Spawns 1 `tesla-curator` agent to validate/merge findings
 3. Runs merge/validate/build/deploy scripts
 4. Commits and pushes to GitHub
 
 **This skill does NOT do research itself** - it coordinates the agents.
+
+**Why batched?** Prevents WebSearch rate limit exhaustion (9 agents × 10 searches = 90 calls).
 
 ---
 
@@ -59,80 +61,117 @@ This creates 9 config files:
 - `research-config-productionDelivery.json`
 - `research-config-fsdv15.json`
 
-### Step 3: Spawn Researcher Agents (Parallel)
+### Step 3: Spawn Researcher Agents (Batched)
 
-**IMPORTANT:** Spawn ALL 9 agents in a SINGLE message with multiple Task tool calls.
+**IMPORTANT:** Spawn agents in 3 batches of 3 to avoid hitting WebSearch rate limits.
 
-Use the Task tool to spawn researchers:
-
+**Batch 1 (Critical + High Priority):**
 ```python
-# Categories with priority
-categories = [
-    ('cybercab', 'high'),
-    ('fsd', 'high'),
-    ('optimus', 'high'),
-    ('fsdv15', 'high'),
-    ('productionDelivery', 'critical'),
-    ('aiChip', 'medium'),
-    ('battery4680', 'medium'),
-    ('terafab', 'medium'),
-    ('jobPostings', 'low')
-]
-
-# Spawn all researchers in parallel (SINGLE message with multiple Task calls)
-for category, priority in categories:
-    model = "sonnet" if priority in ["critical", "high"] else "haiku"
-
-    Task({
-        subagent_type: "tesla-researcher",
-        description: f"Research {category}",
-        model: model,
-        prompt: f"""
-Research the {category} category for Tesla investor tracking.
-
-Use the configuration file: research-config-{category}.json
-
-This file contains:
-- Date range to research
-- Hot context (latest metrics, recent keyChanges)
-- Sources to search (tier 1, tier 2, specialized)
-- Keywords for search queries
-- Priority level
-
-Output: findings-{category}.json
-
-Follow the critical sentiment guidelines:
-- Be VERY critical, do NOT sugar coat
-- Mark as NEGATIVE when fundamental constraints remain
-- Status must match reality, not headline
-- If fleet stuck after 1 year = NEGATIVE (failed scaling)
-        """,
-        run_in_background: true
-    })
+# Spawn 3 high-priority agents in parallel
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research productionDelivery",
+    model: "sonnet",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research cybercab",
+    model: "sonnet",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research fsd",
+    model: "sonnet",
+    prompt: "...",
+    run_in_background: true
+})
 ```
+
+Wait for batch 1 to complete (check for 3 findings-*.json files).
+
+**Batch 2 (High Priority):**
+```python
+# Spawn next 3 high-priority agents
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research optimus",
+    model: "sonnet",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research fsdv15",
+    model: "sonnet",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research aiChip",
+    model: "haiku",
+    prompt: "...",
+    run_in_background: true
+})
+```
+
+Wait for batch 2 to complete (check for 6 findings-*.json files total).
+
+**Batch 3 (Medium + Low Priority):**
+```python
+# Spawn final 3 agents
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research battery4680",
+    model: "haiku",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research terafab",
+    model: "haiku",
+    prompt: "...",
+    run_in_background: true
+})
+Task({
+    subagent_type: "tesla-researcher",
+    description: "Research jobPostings",
+    model: "haiku",
+    prompt: "...",
+    run_in_background: true
+})
+```
+
+Wait for batch 3 to complete (check for 9 findings-*.json files total).
 
 **Expected outputs:** 9 `findings-{category}.json` files
 
-**Estimated time:** 5-6 minutes (parallel execution)
+**Estimated time:** 8-12 minutes (batched execution with rate limit protection)
 
-### Step 4: Wait for Researchers to Complete
+### Step 4: Wait Between Batches
 
-Check that all findings files exist:
+**After each batch, wait for completion:**
 
 ```bash
-# Wait for all researchers to complete
+# Wait for batch to complete
+expected_count=3  # or 6 for batch 2, or 9 for batch 3
 while true; do
-    count=$(ls findings-*.json 2>/dev/null | wc -l)
-    if [ $count -eq 9 ]; then
-        echo "✓ All 9 researchers completed"
+    count=$(ls findings-*.json 2>/dev/null | wc -l | tr -d ' ')
+    if [ "$count" -ge $expected_count ]; then
+        echo "✓ Batch completed ($count/$expected_count files)"
         break
     fi
-    echo "Waiting for researchers... ($count/9 complete)"
-    sleep 10
+    echo "Waiting for batch... ($count/$expected_count complete)"
+    sleep 15
 done
 ```
 
-Or manually check:
+**Check final completion:**
 ```bash
 ls findings-*.json
 # Should see 9 files
@@ -297,14 +336,14 @@ print(f'{kc_count} key changes, {trend_count} trends')
 git add tesla-tracking-data.json findings/$today.json findings/url-cache.json dist/
 
 git commit -m "$(cat <<EOF
-Update: Parallel research for $today
+Update: Batched research for $today
 
 $summary
 
 Research pipeline:
-- 9 researchers (parallel): 5-6 min
+- 9 researchers (3 batches): 9-12 min
 - 1 curator (validation): 2-3 min
-- Total: ~8 min
+- Total: ~12-15 min
 
 Validation summary:
 $(cat findings/curator-report-$today.md | grep -A 10 "validationSummary" | head -5)
@@ -347,18 +386,19 @@ git push origin main
 - Cost: ~$0.15
 - Context: 167KB
 
-**V2 (parallel agents):**
-- Time: 8-10 min (researchers 5-6 min, curator 2-3 min)
-- Cost: ~$0.10 (4 Sonnet × $0.02 + 5 Haiku × $0.005 + curator $0.02)
+**V2 (batched agents):**
+- Time: 12-15 min (3 batches × 3-4 min each + curator 2-3 min)
+- Cost: ~$0.10 (5 Sonnet × $0.02 + 4 Haiku × $0.005 + curator $0.02)
 - Context: 10KB per agent
+- Rate limits: Safe (spreads WebSearch calls across batches)
 
-**Trade-off:** Pay ~67% of V1 cost for 3x speed improvement.
+**Trade-off:** Pay ~67% of V1 cost for 2x speed improvement + rate limit safety.
 
 ---
 
 ## When to Use
 
-**Use V2 (parallel) when:**
+**Use V2 (batched) when:**
 - ✅ Urgent update needed
 - ✅ Catching up after 2+ weeks
 - ✅ Major news events (earnings, product launch)
@@ -367,6 +407,11 @@ git push origin main
 **Don't use V2 when:**
 - ❌ Low-news week (many categories will be empty)
 - ❌ Only 1-2 categories need update (use researcher directly)
+
+**Why batched execution?**
+- Prevents hitting WebSearch rate limits
+- 9 agents × 10 searches = 90 WebSearch calls
+- Batching spreads calls over time (30 searches per batch)
 
 ---
 
@@ -431,16 +476,16 @@ User: /tesla-update-v2
 
 Expected behavior:
 1. Generate research configs (9 files)
-2. Spawn 9 researchers in parallel
-3. Wait 5-6 minutes
-4. Generate curator config
-5. Spawn curator
-6. Wait 2-3 minutes
+2. Spawn batch 1 (3 researchers) - Wait 3-4 min
+3. Spawn batch 2 (3 researchers) - Wait 3-4 min
+4. Spawn batch 3 (3 researchers) - Wait 3-4 min
+5. Generate curator config
+6. Spawn curator - Wait 2-3 minutes
 7. Run merge/validate/build/deploy
 8. Commit + push
 9. Report summary to user
 
-Total time: ~8-10 minutes (vs 20-30 min in V1)
+Total time: ~12-15 minutes (vs 20-30 min in V1, avoids rate limits)
 
 ---
 
@@ -451,9 +496,17 @@ Total time: ~8-10 minutes (vs 20-30 min in V1)
   ↓
 Generate configs (spawn_researcher.py --all)
   ↓
-Spawn 9 tesla-researcher agents (PARALLEL)
-  ↓ 5-6 min
-findings-{category}.json × 9
+Batch 1: Spawn 3 tesla-researcher agents
+  ↓ 3-4 min
+findings-*.json × 3
+  ↓
+Batch 2: Spawn 3 tesla-researcher agents
+  ↓ 3-4 min
+findings-*.json × 6 total
+  ↓
+Batch 3: Spawn 3 tesla-researcher agents
+  ↓ 3-4 min
+findings-*.json × 9 total
   ↓
 Generate curator config (spawn_curator.py)
   ↓

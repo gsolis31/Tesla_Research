@@ -209,9 +209,11 @@ def validate_data_invariants(data: dict) -> Tuple[List[str], List[Tuple[str, str
         'Cybercab': 'Cybercab Production',
         'FSD': 'FSD Country Approvals',
         'FSD Approvals': 'FSD Country Approvals',
+        'FSD v14 Software': 'FSD v15 Software',
         'Optimus': 'Optimus Production',
         'Production & Delivery': 'Vehicle Production & Delivery',
         'Robotaxi': 'Cybercab Production',
+        'Terafab Manufacturing': 'Terafab In-House Chip Manufacturing',
     }
 
     valid_category_names = canonical_category_names | set(legacy_category_names.keys())

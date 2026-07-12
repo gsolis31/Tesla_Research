@@ -112,20 +112,25 @@ def merge_metrics(main_data: dict, findings: dict) -> dict:
             continue
 
         # Get existing dates to prevent duplicates
+        # Get date field (handle both 'date' and 'lastUpdate')
+        def get_date(point):
+            return point.get('date') or point.get('lastUpdate')
+
         existing_dates = {
-            point['date']
+            get_date(point)
             for point in main_data['metrics'][metric_name]['data']
         }
 
         # Only add new data points
         added = 0
         for point in new_points:
-            if point['date'] not in existing_dates:
+            point_date = get_date(point)
+            if point_date and point_date not in existing_dates:
                 main_data['metrics'][metric_name]['data'].append(point)
                 added += 1
 
         # Sort by date (chronological)
-        main_data['metrics'][metric_name]['data'].sort(key=lambda x: x['date'])
+        main_data['metrics'][metric_name]['data'].sort(key=lambda x: get_date(x) or '')
 
         if added > 0:
             print(f"✓ Added {added} new {metric_name} data points")
@@ -154,9 +159,14 @@ def merge_quarterly_data(main_data: dict, findings: dict) -> dict:
     if added > 0:
         print(f"✓ Added {added} new quarterly data entries")
 
-        # Recalculate totals
-        total_production = sum(q.get('production', 0) for q in main_data['categories']['productionDelivery']['quarterlyData'])
-        total_deliveries = sum(q['delivery'] for q in main_data['categories']['productionDelivery']['quarterlyData'])
+        # Recalculate totals (handle both old format and new format with breakdown)
+        def get_number(value):
+            if isinstance(value, dict):
+                return value.get('total', 0)
+            return value or 0
+
+        total_production = sum(get_number(q.get('production')) for q in main_data['categories']['productionDelivery']['quarterlyData'])
+        total_deliveries = sum(get_number(q.get('delivery') or q.get('deliveries')) for q in main_data['categories']['productionDelivery']['quarterlyData'])
 
         main_data['categories']['productionDelivery']['totalProduction'] = f"{total_production:,}"
         main_data['categories']['productionDelivery']['totalDeliveries'] = f"{total_deliveries:,}"
