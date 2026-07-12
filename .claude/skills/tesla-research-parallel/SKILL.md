@@ -1,15 +1,21 @@
 ---
 name: tesla-research-parallel
-description: Parallel multi-category Tesla research using subagents (Grok #3)
-user-invocable: true
+description: "[DEPRECATED] Use tesla-update-v2 instead - this hits rate limits"
+user-invocable: false
 allowed-tools: WebSearch, Read, Write, Bash, Task
 ---
 
-# Tesla Parallel Research Skill (Grok #3)
+# ⚠️ DEPRECATED: Tesla Parallel Research Skill
 
-## What This Does
+**Status:** DEPRECATED as of July 12, 2026
+**Reason:** Hits WebSearch rate limits due to unbatched parallel execution
+**Replacement:** Use `/tesla-update-v2` instead (batched execution prevents rate limits)
 
-Researches multiple Tesla categories **in parallel** using subagents, then merges findings.
+---
+
+## What This Did
+
+Researched multiple Tesla categories **in parallel** using subagents, then merged findings.
 
 **Before** (sequential):
 ```

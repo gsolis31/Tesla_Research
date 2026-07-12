@@ -1,11 +1,26 @@
 ---
 name: tesla-update-v2
-description: Parallel Tesla research using researcher + curator agents (Grok #1-3 architecture)
+description: Fast batched Tesla research with agents - 2x faster than V1 (12-15 min vs 20-30 min)
 user-invocable: true
 allowed-tools: Read, Write, Bash, Task
 ---
 
 # Tesla Tracker Update Skill V2 (Batched Agent Orchestrator)
+
+## ⚠️ When to Use This vs V1
+
+**Use this (V2) when:**
+- ✅ Urgent update needed (2x faster than V1)
+- ✅ Catching up after 2+ weeks
+- ✅ Major news events (earnings, product launch)
+- ✅ Multiple categories likely have news
+
+**Use /tesla-update (V1) when:**
+- ✅ Low-news week (only 1-2 categories need updates)
+- ✅ Small update (catching up 1-3 days)
+- ✅ You prefer simplicity over speed
+
+---
 
 ## What This Does
 
@@ -14,6 +29,8 @@ allowed-tools: Read, Write, Bash, Task
 2. Spawns 1 `tesla-curator` agent to validate/merge findings
 3. Runs merge/validate/build/deploy scripts
 4. Commits and pushes to GitHub
+
+**Time:** 12-15 minutes (2x faster than V1)
 
 **This skill does NOT do research itself** - it coordinates the agents.
 

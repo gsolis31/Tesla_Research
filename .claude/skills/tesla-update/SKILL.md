@@ -1,22 +1,39 @@
 ---
 name: tesla-update
-description: Automatically research and update the Tesla investor tracking dashboard with the latest news across all categories plus quarterly production & delivery data
+description: Sequential Tesla research - slower but simpler than V2 (20-30 min vs 12-15 min)
 user-invocable: true
 allowed-tools: WebSearch, Read, Edit, Write, Bash
 ---
 
-# Tesla Tracker Update Skill
+# Tesla Tracker Update Skill (V1 - Sequential)
+
+## ⚠️ When to Use This vs V2
+
+**Use this (V1) when:**
+- ✅ Low-news week (only 1-2 categories need updates)
+- ✅ You've hit rate limits elsewhere (V1 spreads searches over time)
+- ✅ You prefer simplicity over speed
+- ✅ Small update (catching up 1-3 days)
+
+**Use /tesla-update-v2 when:**
+- ✅ Urgent update needed (2x faster)
+- ✅ Catching up after 2+ weeks
+- ✅ Major news events (earnings, product launch)
+- ✅ Multiple categories likely have news
+
+---
 
 ## What This Skill Does
 
 When invoked, this skill will:
 1. Read the current `tesla-tracking-data.json` to get the last update date
-2. Research latest news for all 5 news categories from the last update date until today
+2. Research latest news for all categories **sequentially** (one at a time)
 3. Check for new quarterly production & delivery reports from ir.tesla.com/press
 4. Update `tesla-tracking-data.json` with new weekly summary, metrics, and P&D data
-5. Sync the embedded data in `index.html`
-6. Open the dashboard in the browser
-7. Provide a summary of key updates
+5. Run validation and build
+6. Provide a summary of key updates
+
+**Time:** 20-30 minutes (slower but avoids rate limits naturally)
 
 ---
 
