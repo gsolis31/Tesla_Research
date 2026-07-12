@@ -1,0 +1,142 @@
+{
+  "categoryKey": "productionDelivery",
+  "keyChanges": [
+    {
+      "title": "Model S/X Production Line Decommissioned in 46 Days at Fremont",
+      "description": "Tesla completed teardown of original Model S and Model X assembly line at Fremont Factory in just 46 days, involving removal of robotic arms, conveyors, and concrete pits. The space will be repurposed for Optimus humanoid robot production targeting 1M units/year capacity. Final S/X vehicles rolled off the line in early May 2026, with Optimus production on the converted line expected to begin in late July or August 2026. This represents Tesla's strategic pivot away from low-volume luxury sedans (<3% of 2025 deliveries) toward high-volume robotics manufacturing.",
+      "date": "2026-07-10",
+      "category": "Vehicle Production & Delivery",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Rapid 46-day factory conversion demonstrates operational efficiency",
+          "Strategic reallocation of factory space to higher-volume Optimus production (1M target vs <20K S/X annual)",
+          "Fremont Optimus production starting late July/August 2026"
+        ],
+        "negative_signals": [
+          "Elimination of flagship Model S/X vehicles after 14+ years of production",
+          "Loss of premium vehicle segment revenue (though <3% of total deliveries)",
+          "Temporary production capacity reduction during transition period"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
+      "impact": "medium"
+    },
+    {
+      "title": "Modest Full-Year 2026 Growth Despite Strong Q2 Performance",
+      "description": "While Tesla crushed Q2 2026 delivery expectations with 480,126 vehicles delivered (+25% YoY, beating consensus of 406K by 18%), full-year 2026 guidance remains concerning at only 1.69M units (~3-5% growth vs 1.64M in 2025). This represents a significant moderation from historical Tesla growth rates and analyst expectations have been downgraded by 35K vehicles since March 2026. The modest guidance persists despite Q2's strong performance and successful inventory drawdown of 28,368 units.",
+      "date": "2026-07-02",
+      "category": "Vehicle Production & Delivery",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Q2 2026: 480,126 deliveries beat consensus by 18% (vs 406K expected)",
+          "Successfully cleared Q1 inventory backlog of 50K+ units",
+          "Strong 25% YoY growth in Q2 vs 2025",
+          "Energy storage deployment at 13.5 GWh (2nd best quarter ever, +40% YoY)"
+        ],
+        "negative_signals": [
+          "Full-year 2026 forecast downgraded from 1.69M to 1.65M (35K reduction since March)",
+          "Only 3-5% annual growth projected vs historical 50%+ CAGR target",
+          "Q1 2026 missed expectations (358K vs 365K consensus)",
+          "Capital expenditure increased to $25B+ with negative free cash flow projected for Q2-Q4",
+          "Production (451,758) significantly trails delivery capacity, indicating conservative manufacturing outlook"
+        ]
+      },
+      "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm",
+      "impact": "high"
+    },
+    {
+      "title": "Giga Berlin 20% Production Increase to 73K Units/Quarter",
+      "description": "Tesla announced a 20% production boost at Gigafactory Berlin starting July 2026, targeting 73,000 Model Y units per quarter (up from record 61,000 in Q1 2026). The facility will hire 1,000 new employees (onboarding began in May) and convert 500 temporary workers to permanent positions. This expansion follows strong European demand recovery with Germany registrations quadrupling to 9,252 units in March 2026 and overall March registrations up 117% YoY. However, Berlin still operates below theoretical capacity despite this increase.",
+      "date": "2026-06-25",
+      "category": "Vehicle Production & Delivery",
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "positive",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "20% production increase to 73K Model Y/quarter starting July 2026",
+          "1,000 new hires plus 500 temp-to-permanent conversions",
+          "European demand recovery: Germany registrations up 4x in March 2026",
+          "Q1 2026 record 61,000 vehicles produced at Berlin",
+          "Management confidence in sustained European demand"
+        ],
+        "negative_signals": [
+          "Still operating below factory's theoretical maximum capacity",
+          "Expansion only returns Berlin to mid-2023 production rates",
+          "Requires significant hiring/training period (May-July) before full ramp"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-plans-production-boost-giga-berlin-following-rebound-europe/",
+      "impact": "medium"
+    }
+  ],
+  "metricUpdate": {
+    "date": "2026-07-02",
+    "quarterlyData": {
+      "quarter": "Q2 2026",
+      "production": {
+        "total": 451758,
+        "model3Y": 442936,
+        "otherModels": 8822
+      },
+      "deliveries": {
+        "total": 480126,
+        "model3Y": 467762,
+        "otherModels": 12364
+      },
+      "energyStorage": {
+        "deployed_gwh": 13.5,
+        "note": "2nd best quarter ever, +40% YoY vs 9.6 GWh in Q2 2025"
+      }
+    },
+    "note": "Q2 2026 deliveries beat consensus by 18% (480K vs 406K expected), cleared 28K units of inventory backlog from Q1",
+    "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm"
+  },
+  "categoryUpdate": {
+    "latestStatus": "Q2 2026 delivered strong 18% beat vs consensus (480K vs 406K), but full-year guidance remains modest at ~3-5% growth to 1.69M units. Model S/X production ended Q2, Fremont line converted for Optimus. Giga Berlin ramping to 73K/qtr in July.",
+    "nextMilestone": "Q2 2026 earnings call July 22 will provide forward guidance; Optimus production at Fremont starts late July/August 2026",
+    "concerns": [
+      "Full-year 2026 growth only 3-5% vs historical 50%+ targets - significant deceleration",
+      "Analyst forecasts downgraded by 35K units since March 2026",
+      "Capital expenditure increased to $25B+ with negative FCF projected for Q2-Q4 2026",
+      "Production (452K) trails deliveries (480K) by 28K units - conservative manufacturing outlook suggests demand uncertainty",
+      "Q1 2026 missed expectations, Q2 beat partially due to inventory drawdown rather than pure demand strength"
+    ]
+  },
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
+    "https://www.teslarati.com/tesla-plans-production-boost-giga-berlin-following-rebound-europe/",
+    "https://www.teslarati.com/tesla-analyst-breaks-down-delivery-report-step-right-direction-wedbush/",
+    "https://www.teslarati.com/tesla-tsla-deliveries-big-boost-in-expectations-wall-street/",
+    "https://www.teslarati.com/tesla-strong-q2-deliveries-four-key-drivers-behind-the-surprise/",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm",
+    "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
+    "https://teslanorth.com/2026/07/02/tesla-delivers-over-480000-vehicles-in-q2-2026-as-storage-hits-13-5-gwh/"
+  ],
+  "metadata": {
+    "sourcesSearched": [
+      "ir.tesla.com",
+      "sec.gov",
+      "teslarati.com",
+      "teslanorth.com"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null,
+    "researchNotes": "Primary finding within date range: July 10 Model S/X line decommissioning article. Q2 delivery data (July 2) provides crucial context for understanding production trajectory. Critical analysis: while Q2 beat expectations, reality shows only 3-5% full-year growth with downgraded forecasts, indicating fundamental growth constraints despite positive headlines."
+  }
+}

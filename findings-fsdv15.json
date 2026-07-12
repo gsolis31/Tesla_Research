@@ -1,0 +1,184 @@
+{
+  "categoryKey": "fsdv15",
+  "keyChanges": [
+    {
+      "title": "Tesla confirms FSD v15 delayed to end-2026/early-2027; robotaxi scale blocked until release",
+      "description": "During the Q1 2026 earnings call (April 22, 2026), Tesla confirmed FSD v15 will not ship until late 2026 or early 2027, representing a delay of the 10x parameter model upgrade that was originally planned for v14 in late 2025. CEO Elon Musk explicitly stated large-scale robotaxi expansion will NOT proceed until v15 is released, citing the need for 'major architectural improvements' to reach required safety levels. This confirms v15 is the critical blocker for both unsupervised FSD and robotaxi commercialization. The 10-billion-parameter model is described as a 'total architectural overhaul' designed to achieve 'orders of magnitude beyond human capability' safety. While v15 will run on Hardware 4 (no upgrade needed), the ~9-12 month delay from original v14 timeline pushes Tesla's autonomy roadmap into 2027.",
+      "date": "2026-04-22",
+      "category": "FSD v15 Software",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Headlines emphasize HW4 compatibility (positive framing), but reality is a 9-12 month delay of the critical model upgrade, pushing robotaxi scale and unsupervised FSD into 2027. This is the second major delay (originally v14 late-2025, now v15 end-2026/early-2027). Robotaxi expansion explicitly blocked until v15 ships."
+      },
+      "evidence": {
+        "positive_signals": [
+          "FSD v15 will run on Hardware 4 (no expensive upgrade required)",
+          "Tesla confirms 10x parameter upgrade (1B to 10B parameters) still planned",
+          "HW4 getting RAM upgrade to 32GB (from 16GB) for better performance"
+        ],
+        "negative_signals": [
+          "FSD v15 pushed to late-2026/early-2027 (originally expected in v14 late-2025)",
+          "Large-scale robotaxi expansion explicitly blocked until v15 release",
+          "Unsupervised FSD for consumers delayed to Q4 2026 earliest (geography-limited)",
+          "Musk admitted current v14 not safe enough for scale: needs 'major architectural improvements'",
+          "Timeline is 'targeted' with no firm commitment (history of delays: promised autonomy 2018, 1M robotaxis 2020, unsupervised June 2025)"
+        ],
+        "key_metrics": {
+          "actual": "v14 in production; v15 in development with late-2026/early-2027 target",
+          "target": "v15 release by end-2026 or early-2027; 10B parameter model",
+          "trajectory": "6-9 months to stated target; represents 9-12 month delay from original v14 timeline"
+        }
+      },
+      "source": "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
+      "impact": "high"
+    },
+    {
+      "title": "Tesla confirms Hardware 3 cannot support unsupervised FSD or v15; 4M vehicles left behind",
+      "description": "On April 22-23, 2026 (Q1 earnings call), Tesla officially confirmed that Hardware 3 (HW3) vehicles—approximately 4 million globally—cannot and will not support unsupervised Full Self-Driving or FSD v15. Elon Musk cited hardware limitations: HW3 has 'only one eighth of the memory bandwidth of Hardware 4' and lacks the compute/memory capacity for the 10-billion-parameter v15 model. FSD v14 Lite is confirmed as the 'ultimate ceiling version' for HW3 hardware. This directly contradicts Tesla's 2016-2019 promises that HW3 would support full autonomy. Tesla is offering affected customers (many who paid $8,000-15,000 for FSD) either: (1) discounted trade-in to HW4 vehicle, or (2) paid hardware upgrade requiring replacement of computer AND all cameras. This represents a broken promise to millions of early FSD adopters and a material limitation on Tesla's addressable autonomy market.",
+      "date": "2026-04-22",
+      "category": "FSD v15 Software",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Official confirmation that 4 million HW3 customers cannot access unsupervised FSD or v15 despite paying for 'Full Self-Driving' with promises of future autonomy. This is a broken commitment and requires expensive upgrades. Headlines frame it as 'upgrade path offered' but reality is customers must pay more after already purchasing FSD."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Tesla offering discounted trade-in path for HW3 owners",
+          "Hardware upgrade option available (computer + cameras)",
+          "FSD v14 Lite released for HW3 in late June 2026"
+        ],
+        "negative_signals": [
+          "4 million HW3 vehicles globally cannot support unsupervised FSD",
+          "HW3 memory bandwidth is 1/8th of HW4 (fundamental hardware limit)",
+          "FSD v15 will not run on HW3 (10B parameter model too large)",
+          "Breaks 2016-2019 Tesla promises that HW3 would support full autonomy",
+          "Customers who paid $8K-15K for FSD must now pay more for hardware upgrade",
+          "v14 Lite confirmed as 'ultimate ceiling' for HW3 (no unsupervised capability)"
+        ],
+        "key_metrics": {
+          "actual": "4 million HW3 vehicles left behind; v14 Lite only",
+          "target": "Hardware upgrade required for unsupervised FSD",
+          "trajectory": "Permanent hardware limitation; no software solution possible"
+        }
+      },
+      "source": "https://www.basenor.com/blogs/news/tesla-update-v15-1",
+      "impact": "high"
+    },
+    {
+      "title": "Tesla robotaxi fleet stagnates at 20-25 vehicles after 1 year; scaling failure evident as expansion blocked until v15",
+      "description": "As of June-July 2026, Tesla's unsupervised robotaxi fleet remains stuck at approximately 20-25 active vehicles across Austin, Dallas, and Houston—one full year after the June 2025 Austin launch. Multiple reports indicate the fleet has actually shrunk from 25 vehicles in April 2026 to 20 vehicles by June 2026. The service area expanded to entire Austin metro in June, but vehicle count did not scale. This represents a clear scaling failure: after 12 months of operation, Tesla cannot grow the fleet beyond ~25 vehicles. Safety concerns are evident: the Austin fleet logged 14 crashes in first 7 months (~800K miles), a rate 4x worse than average US driver per Tesla's own benchmarks (1 crash per 57K miles vs 1 per 229K miles). Elon Musk confirmed on Q1 call that large-scale expansion is blocked until FSD v15 (late-2026/early-2027), effectively admitting current v14 is not safe enough to scale. Preparations for Phoenix, Miami, Orlando, Tampa, Las Vegas remain in 'preparation' stage with no active deployments.",
+      "date": "2026-06-03",
+      "category": "FSD v15 Software",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Headlines tout 'expansion to entire Austin metro' and 'preparations for new cities,' but reality is fleet stuck/shrinking at 20-25 vehicles after 1 full year. This is a failed scaling attempt. Tesla is blocking expansion due to safety concerns (4x crash rate vs human drivers) and admitting v14 inadequate. One year with no meaningful fleet growth = negative."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Service area expanded to entire Austin metro (June 2026)",
+          "Cities in 'preparation' stage: Phoenix, Miami, Orlando, Tampa, Las Vegas",
+          "Tesla targets 'a dozen states by year-end' per Q1 call"
+        ],
+        "negative_signals": [
+          "Fleet stuck at 20-25 vehicles for 12+ months (June 2025 to June 2026)",
+          "Fleet reportedly shrinking: 25 vehicles (April) to 20 vehicles (June)",
+          "14 crashes in first 7 months: 1 per 57K miles (4x worse than human average)",
+          "Musk blocked large-scale expansion until v15: 'not safe enough' admission",
+          "No new city launches despite 'preparation' claims for 5+ cities",
+          "Waymo operates 577 vehicles in Austin vs Tesla's 20-25",
+          "Service area expansion without fleet growth = coverage dilution, not scale"
+        ],
+        "key_metrics": {
+          "actual": "20-25 active robotaxi vehicles (June 2026); 14 crashes in 7 months",
+          "target": "Large-scale expansion blocked until v15 (late-2026/early-2027)",
+          "trajectory": "Flat to negative fleet growth; 12 months with no scaling progress"
+        }
+      },
+      "source": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+      "impact": "high"
+    },
+    {
+      "title": "Tesla rolls out FSD v14 Lite to Hardware 3 vehicles in late June; international expansion underway",
+      "description": "Starting June 29, 2026, Tesla began rolling out FSD v14 Lite (firmware 2026.20.5.1) to Hardware 3 vehicles, ending a 16-month wait for 4 million HW3 owners since v13 was the last major update they received. The v14 Lite update uses 'distillation' technology to compress HW4's v14 capabilities onto HW3's limited hardware, bringing improvements to navigation, merges, pedestrian interactions, traffic lights, parking/unparking, and arrival options. Tesla's AI chief Ashok Elluswamy confirmed rollout started with early access drivers, with wider release planned 'over the next few weeks.' International rollout also began, with South Korea becoming the first non-US market to receive FSD v14 Lite. However, v14 Lite remains Level 2 supervised (hands-on required) and is confirmed as the 'ultimate ceiling version' for HW3—unsupervised FSD will never come to HW3 hardware. While this is a functional improvement for HW3 owners, it does not change the fundamental limitation: HW3 is excluded from Tesla's autonomy roadmap (unsupervised FSD, v15, robotaxi).",
+      "date": "2026-06-29",
+      "category": "FSD v15 Software",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high",
+        "rationale": "Headlines celebrate 'FSD v14 finally arrives for HW3' after 16-month wait, but reality is more nuanced: v14 Lite is a downscaled version (not full v14), remains supervised Level 2, and is the ceiling for HW3 (no unsupervised future). It's a functional improvement but confirms HW3's permanent exclusion from autonomy. Mixed signals: progress for near-term, dead-end for long-term."
+      },
+      "evidence": {
+        "positive_signals": [
+          "FSD v14 Lite rollout began June 29 for 4M HW3 vehicles",
+          "Improvements to navigation, pedestrian handling, parking, arrival options",
+          "International expansion: South Korea first non-US market",
+          "Uses AI 'distillation' to compress HW4 v14 intelligence onto HW3",
+          "Rollout expanding 'over next few weeks' from early access to wider fleet"
+        ],
+        "negative_signals": [
+          "v14 Lite is 'ultimate ceiling' for HW3 (official statement)",
+          "Remains Level 2 supervised (hands-on required; not unsupervised)",
+          "16-month gap since last major HW3 update (v13)",
+          "HW3 permanently excluded from unsupervised FSD and v15",
+          "International rollout subject to 'regulatory approvals' with no firm dates"
+        ],
+        "key_metrics": {
+          "actual": "FSD v14 Lite (2026.20.5.1) rolling out to HW3 starting June 29",
+          "target": "Wider HW3 fleet rollout 'over next few weeks'; international expansion ongoing",
+          "trajectory": "Incremental improvement for HW3, but permanent exclusion from autonomy roadmap"
+        }
+      },
+      "source": "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+      "impact": "medium"
+    }
+  ],
+  "metricUpdate": null,
+  "fleetUpdate": null,
+  "categoryUpdate": {
+    "latestStatus": "FSD v15 delayed to late-2026/early-2027; robotaxi fleet stagnant at ~20-25 vehicles; HW3 left behind",
+    "nextMilestone": "v15 release (end-2026/early-2027); unsupervised FSD for consumers (Q4 2026 earliest, geography-limited)",
+    "concerns": [
+      "FSD v15 delayed 9-12 months from original timeline (v14 late-2025 to v15 late-2026/early-2027)",
+      "Large-scale robotaxi expansion explicitly blocked until v15 due to safety concerns",
+      "Robotaxi fleet stuck at 20-25 vehicles for 12 months = scaling failure",
+      "Fleet crash rate 4x worse than human drivers (1 per 57K miles vs 1 per 229K miles)",
+      "4 million HW3 vehicles permanently excluded from unsupervised FSD and v15",
+      "Pattern of delayed timelines: promised autonomy 2018, 1M robotaxis 2020, unsupervised June 2025, now Q4 2026+",
+      "Unsupervised FSD pushed to Q4 2026 earliest (geography-limited rollout)"
+    ]
+  },
+  "urlsSeen": [
+    "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
+    "https://teslanorth.com/2026/04/22/tesla-aims-for-q4-unsupervised-fsd-release-to-customers/",
+    "https://www.notateslaapp.com/news/4039/tesla-to-wait-for-fsd-v15-before-launching-robotaxi-at-scale-lists-next-cities",
+    "https://www.basenor.com/blogs/news/tesla-update-v15-1",
+    "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+    "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+    "https://teslanorth.com/2026/04/22/tesla-to-delay-large-scale-robotaxi-expansion-until-fsd-15-software-release/",
+    "https://electrek.co/2026/04/22/tesla-elon-musk-unsupervised-fsd-consumer-cars-q4-delay-again/",
+    "https://www.automotiveworld.com/news/tesla-robotaxi-fleet-hits-25-as-musk-defers-scale-to-fsd-v15/"
+  ],
+  "metadata": {
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "notateslaapp.com",
+      "basenor.com",
+      "teslaoracle.com"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null,
+    "researchNotes": "Primary findings from Q1 2026 earnings call (April 22) where Tesla confirmed v15 timeline, HW3 limitations, and robotaxi scaling block. Additional data from June-July fleet tracking showing stagnation. FSD v14 Lite rollout (June 29) is incremental progress but confirms HW3 ceiling. Critical sentiment analysis: multiple negative signals (delays, broken promises, scaling failure, safety concerns) outweigh positive signals (HW4 compatibility, v14 Lite release). Status marked NEGATIVE for key changes due to: (1) 9-12 month delay, (2) 4M customers left behind, (3) 12-month fleet stagnation = failed scaling."
+  }
+}

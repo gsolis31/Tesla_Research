@@ -1,0 +1,104 @@
+{
+  "categoryKey": "jobPostings",
+  "keyChanges": [
+    {
+      "title": "110+ Optimus Job Postings Signal Production Ramp - But No Current Reality Proof",
+      "description": "Tesla maintains 110+ open job listings dedicated to Optimus across U.S. facilities (Austin, Fremont, Palo Alto, Sparks NV, Draper UT). Roles span AI/ML engineering, manufacturing, mechanical design, and production line automation. Positions target production-intent prototype in early 2026 and 'end of 2026' production start. CRITICAL CAVEAT: This is standard pre-production hiring. No actual unit production figures released. The 100-110 job posting count matches or slightly exceeds May 2026 baseline (100+ roles). No significant increase in hiring velocity detected week-over-week.",
+      "date": "2026-07-10",
+      "category": "Optimus Job Postings",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "110+ dedicated Optimus job openings across multiple facilities",
+          "Roles span full product lifecycle: software, manufacturing, AI, mechanical engineering",
+          "Geographic distribution shows serious multi-facility commitment (Austin, Fremont, Palo Alto, Sparks, Draper)",
+          "Hiring includes internships for Summer 2026, suggesting near-term production ramp",
+          "Production timeline announced for late July/August 2026 at Fremont"
+        ],
+        "negative_signals": [
+          "Job posting count stable at 100-110 range - no acceleration detected in last 2 months",
+          "No published production unit numbers to validate hiring is translating to output",
+          "End-of-2026 production start still 5+ months away at research date",
+          "Model S/X production lines being repurposed indicates reconfiguration complexity",
+          "1 million unit annual target is aspirational claim with no production reality yet"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-optimus-job-listings/",
+      "impact": "medium"
+    },
+    {
+      "title": "Optimus Hiring Remains Steady but Shows No Growth Acceleration",
+      "description": "Tesla's Optimus job posting count remains at 100-110 roles as of July 2026, matching the baseline from May 2026 (100+ roles mentioned in hot context). This indicates STABLE but NOT accelerating hiring. Given the announced production start in late July 2026, would expect significant hiring ramp pre-launch, but data shows plateau. This suggests either: (1) hiring targets already met, (2) production delay risk, or (3) automated/outsourced manufacturing reducing direct hiring needs.",
+      "date": "2026-07-12",
+      "category": "Optimus Hiring Velocity",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Consistent 100-110 job opening count demonstrates maintained commitment",
+          "Diverse role categories suggest building complete product teams",
+          "Multiple facility locations show geographic scaling"
+        ],
+        "negative_signals": [
+          "No measurable growth from May 2026 (100+ roles) to July 2026 (110 roles) - only 10 role increase or flat",
+          "Typical pre-production ramp should show 2-3x hiring acceleration 2-3 months before launch",
+          "Production announcement for late July 2026 yet hiring shows no corresponding velocity increase",
+          "Stalled growth trajectory suggests scaling challenges or revised production targets",
+          "No indication of manufacturing partner hiring or secondary labor force expansion"
+        ]
+      },
+      "source": "https://robohorizon.com/en-us/news/2025/12/tesla-optimus-hiring-spree-hits-110-jobs/",
+      "impact": "medium"
+    }
+  ],
+  "metricUpdate": {
+    "date": "2026-07-12",
+    "count": 110,
+    "note": "110 active Optimus job postings across U.S. facilities as of July 2026. Represents stable hiring at same level as May 2026 baseline (100+ roles). Roles span AI/ML, manufacturing engineering, mechanical design, production automation, and data pipeline development.",
+    "source": "https://www.teslarati.com/tesla-optimus-job-listings/"
+  },
+  "categoryUpdate": {
+    "latestStatus": "Tesla maintaining 100-110 Optimus job postings focused on production readiness. Production start announced for late July/August 2026 at Fremont facility. Hiring velocity flat despite imminent production launch - no acceleration detected vs. May 2026 baseline.",
+    "nextMilestone": "Late July/August 2026: Optimus production start at Fremont facility (previously Model S/X line repurposing)",
+    "concerns": [
+      "Hiring plateau despite imminent production launch suggests slower-than-expected ramp-up",
+      "1 million unit annual production target remains unverified claim with zero production units publicly reported",
+      "No acceleration in hiring velocity 2-3 months before announced production start",
+      "Manufacturing complexity of repurposed lines may be understated",
+      "No third-party validation of hiring or production readiness"
+    ]
+  },
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-optimus-job-listings/",
+    "https://robohorizon.com/en-us/news/2025/12/tesla-optimus-hiring-spree-hits-110-jobs/",
+    "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/",
+    "https://teslanorth.com/2025/12/27/tesla-ramps-up-optimus-hiring-ahead-of-v3-reveal/",
+    "https://blog.mean.ceo/optimus-news-july-2026/",
+    "https://www.tesla.com/careers/search/?site=US&query=optimus",
+    "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026",
+    "https://af.net/realtime/tesla-optimus-production-begins-at-fremont-assembly-plant-in-july-2026/"
+  ],
+  "metadata": {
+    "sourcesSearched": [
+      "teslarati.com",
+      "optimusk.blog",
+      "tesla.com/careers",
+      "linkedin.com",
+      "robohorizon.com",
+      "ilovetesla.com",
+      "teslanorth.com",
+      "blog.mean.ceo"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null
+  }
+}

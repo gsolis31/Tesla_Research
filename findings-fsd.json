@@ -2,62 +2,437 @@
   "categoryKey": "fsd",
   "keyChanges": [
     {
+      "title": "NHTSA escalates FSD investigation to Engineering Analysis covering 3.2M vehicles",
+      "description": "On March 19, 2026, NHTSA upgraded its Tesla FSD probe from a Preliminary Evaluation to a formal Engineering Analysis (EA26002) covering 3.2 million vehicles across all Tesla models. The investigation found that FSD's camera-based system fails to detect common road conditions that impair visibility—sun glare and fog—and doesn't adequately warn drivers before crashes occur. The probe involves at least nine documented crashes, including one fatal pedestrian collision and another crash resulting in injury. This escalation is the stage that typically precedes a mandatory recall, representing significant regulatory risk.",
+      "date": "2026-03-19",
+      "category": "FSD Safety & Regulation",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "While headlines focus on 'investigation escalation,' the reality is NHTSA moved to the pre-recall stage due to fundamental safety failures in FSD's vision system. The system's inability to detect degraded visibility from common conditions (glare, fog) and failure to warn drivers until just before impact represents a core architectural problem affecting 3.2M vehicles."
+      },
+      "evidence": {
+        "positive_signals": [],
+        "negative_signals": [
+          "Investigation escalated to Engineering Analysis (EA26002), the stage before mandatory recall",
+          "FSD's degradation detection system fails to warn drivers when cameras are blinded by sun glare and fog",
+          "Nine total incidents investigated, including one fatality and one injury",
+          "3.2 million vehicles affected across all Tesla models (2016-2026)",
+          "System failed to recognize common roadway conditions affecting camera visibility",
+          "No alerts issued when camera performance degraded until just before impact",
+          "Tesla may be under-reporting related crashes per NHTSA findings"
+        ],
+        "key_metrics": {
+          "actual": "9 crashes under investigation (1 fatality, 1 injury)",
+          "target": "Zero crashes from visibility detection failures",
+          "trajectory": "Investigation escalated to pre-recall stage March 2026"
+        }
+      },
+      "source": "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+      "impact": "high"
+    },
+    {
+      "title": "Sweden formally recommends EU reject FSD approval unless speed offset removed",
+      "description": "Sweden's transport authority formally recommended to the EU's Technical Committee on Motor Vehicles (TCMV) that the bloc votes against EU-wide rollout of Tesla FSD unless the Speed Offset feature is removed. The feature allows vehicles to exceed posted speed limits by a driver-defined margin. In a letter dated April 30, 2026, Sweden stated that 'allowing automated systems to systematically exceed legal speed limits risks undermining both the legal framework and the expected safety benefits of vehicle automation.' This represents a major roadblock for EU-wide approval, as the qualified majority requires 15 of 27 member states representing 65% of EU population, effectively requiring Germany, France or Italy's support.",
+      "date": "2026-04-30",
+      "category": "FSD Country Approvals",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Sweden's formal objection to TCMV represents a significant regulatory barrier to EU-wide approval. Without major market support (Germany, France, Italy), Tesla faces continued fragmentation requiring country-by-country approvals rather than streamlined EU-wide access."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Finland signals potential approval despite speed offset concerns",
+          "Five European countries already approved individually (NL, LT, EE, DK, BE, DE)"
+        ],
+        "negative_signals": [
+          "Sweden's formal objection to TCMV dated April 30, 2026",
+          "Speed offset feature allows systematic violation of speed limits",
+          "EU qualified majority requires 15/27 states + 65% population (needs Germany/France/Italy)",
+          "October 2026 TCMV vote is next opportunity, but approval uncertain",
+          "Pan-EU regulatory landscape hardening into two opposing camps",
+          "Norway also rejected FSD demonstration materials in May 2026 citing insufficient safety disclosure",
+          "European Transport Safety Council raised 'substantive safety concerns' May 29, 2026"
+        ],
+        "key_metrics": {
+          "actual": "6 European countries approved (individual approvals, not EU-wide)",
+          "target": "EU-wide approval via TCMV vote (requires 15/27 states + 65% population)",
+          "trajectory": "Fragmented approval path continues; October 2026 EU vote outcome uncertain"
+        }
+      },
+      "source": "https://electrek.co/2026/06/18/sweden-tesla-fsd-speeding-eu-vote/",
+      "impact": "high"
+    },
+    {
+      "title": "Germany approves FSD, becomes 6th European country with rollout on May 22",
+      "description": "Germany approved FSD Supervised and began rolling it out to subscribers on May 22, 2026. The approval leveraged the Netherlands' RDW provisional EU type approval for FSD under UN Regulation 171, with Germany's federal vehicle authority (KBA) adopting that approval. The version rolling out is FSD v14 via software update 2026.8.6, supporting both Hardware 3 and Hardware 4 vehicles. Germany's approval validates the EU mutual recognition pathway as a viable fast-track mechanism, providing precedent for France, Italy, Spain, and other member states.",
+      "date": "2026-05-22",
+      "category": "FSD Country Approvals",
       "status": "positive",
       "sentiment": {
         "headline": "positive",
         "reality": "positive",
         "confidence": "high",
-        "rationale": "Denmark approval is genuine regulatory progress"
+        "rationale": "Germany's approval represents Tesla's largest European market gaining FSD access and validates the mutual recognition pathway. However, this is still individual country approval rather than EU-wide deployment, requiring continued country-by-country activation."
       },
       "evidence": {
         "positive_signals": [
-          "Denmark approved FSD on June 9",
-          "Fourth European country approved",
-          "EU-wide recognition anticipated"
+          "Germany approved FSD on May 22, 2026",
+          "Rollout active to German subscribers",
+          "Germany is Tesla's largest European market",
+          "Validates EU mutual recognition pathway for remaining countries",
+          "FSD v14 deployed via update 2026.8.6",
+          "Supports both HW3 and HW4 vehicles"
         ],
         "negative_signals": [
-          "Timeline not confirmed by regulators"
+          "Still requires individual country activation despite mutual recognition",
+          "No EU-wide deployment achieved yet",
+          "Subject to same regulatory fragmentation affecting other markets"
         ],
         "key_metrics": {
-          "actual": "4 EU countries approved",
-          "target": "EU-wide deployment",
-          "trajectory": "Expanding"
+          "actual": "6 European countries with active FSD (NL, LT, EE, DK, BE, DE)",
+          "target": "EU-wide deployment across 27 member states",
+          "trajectory": "Expanding via mutual recognition, but October 2026 EU vote needed for bloc-wide access"
         }
       },
-      "category": "FSD Country Approvals",
-      "title": "Denmark becomes fourth European country to approve FSD",
-      "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands, Lithuania, and Estonia.",
-      "source": "https://teslarati.com/denmark-fsd-approval"
+      "source": "https://www.basenor.com/blogs/news/tesla-fsd-is-now-live-in-germany-what-european-owners-need-to-know",
+      "impact": "high"
     },
     {
+      "title": "Belgium approves FSD on June 10, becomes 5th European country",
+      "description": "Belgium became the 13th country globally and 5th in Europe to receive official approval for FSD Supervised on June 10, 2026. Flemish Mobility Minister Annick De Ridder signed the official approval after Tesla completed extensive supervised testing on Flemish public roads, including the required 5,000 km benchmark. The approval leverages the Dutch RDW's provisional European type approval under UN Regulation 171. Initial rollout is exclusive to Hardware 4 vehicles, featuring FSD v14 tailored for European roads. Pricing is set at €99/month, with a reduced €49/month rate for Enhanced Autopilot owners.",
+      "date": "2026-06-10",
+      "category": "FSD Country Approvals",
       "status": "positive",
       "sentiment": {
         "headline": "positive",
         "reality": "neutral",
-        "confidence": "low",
-        "rationale": "Possibly expanding but unclear timeline"
+        "confidence": "medium",
+        "rationale": "Belgium's approval demonstrates continued European expansion momentum, but the approval came just one day after Denmark, highlighting the country-by-country fragmentation. The pattern shows Tesla making progress but still far from streamlined EU-wide deployment."
       },
       "evidence": {
         "positive_signals": [
-          "Germany might approve soon"
+          "Belgium approved FSD June 10, 2026",
+          "Completed required 5,000 km supervised testing benchmark",
+          "13th country globally to approve FSD",
+          "Approval came one day after Denmark (June 9)",
+          "Leverages Dutch RDW approval for faster process"
         ],
-        "negative_signals": []
+        "negative_signals": [
+          "HW4-only rollout initially (HW3 excluded)",
+          "Still requires country-by-country activation",
+          "Approximately 6 months after first Dutch approval, only 5 EU countries activated",
+          "EU-wide vote delayed to October 2026 at earliest"
+        ],
+        "key_metrics": {
+          "actual": "5 European countries approved by June 10 (NL, LT, EE, DK, BE)",
+          "target": "EU-wide deployment across 27 member states",
+          "trajectory": "Adding ~1 country per month since April Dutch approval"
+        }
       },
+      "source": "https://www.teslarati.com/tesla-stuns-another-fsd-approval-in-europe-belgium/",
+      "impact": "medium"
+    },
+    {
+      "title": "Tesla FSD v14 Lite rollout begins for HW3 vehicles starting July 1",
+      "description": "Tesla began rolling out FSD v14 Lite (software update 2026.20.5.1) to Hardware 3 (HW3) vehicles starting July 1, 2026, initially to Early Access Group members. This represents the first FSD v14 deployment to the installed base of approximately 4 million older Tesla vehicles that cannot run full FSD v14. The 'Lite' version includes Start Self-Driving from Park, Arrival Options (parking lot, street, driveway, curbside), Speed Profiles, and UI improvements. By July 10, Tesla AI confirmed v14 Lite rollout to early access HW3 owners in South Korea, marking the first HW3 FSD deployment outside North America. Current FSD v14 updates in July include v14.3.3 (2026.14.6.x) with improvements to responsiveness across navigation, merges, pedestrians, traffic lights, and smoother steering.",
+      "date": "2026-07-01",
+      "category": "FSD v14 Software",
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium",
+        "rationale": "FSD v14 Lite rollout to HW3 addresses a large installed base (~4M vehicles) that was excluded from v14. However, this is a reduced-capability 'Lite' version, and the rollout started over 6 months after v14 launched on HW4. The fact Tesla needed to create a separate 'Lite' version underscores HW3's computational limitations and Tesla's April 2026 confirmation that HW3 cannot achieve unsupervised FSD."
+      },
+      "evidence": {
+        "positive_signals": [
+          "FSD v14 Lite rollout began July 1, 2026 for HW3 vehicles",
+          "Approximately 4 million HW3 vehicles can now access FSD v14 (Lite version)",
+          "First HW3 FSD deployment outside North America (South Korea, July 10)",
+          "Includes parking/unparking, Arrival Options, Speed Profiles",
+          "Continuous v14 improvements: v14.3.3 with better navigation, merges, pedestrian handling"
+        ],
+        "negative_signals": [
+          "HW3 receives reduced-capability 'Lite' version, not full v14",
+          "Rollout began 6+ months after HW4 received v14",
+          "HW3 confirmed unable to achieve unsupervised FSD (April 2026 earnings call)",
+          "Early Access only as of July 1, broader rollout timeline unclear",
+          "~4M HW3 owners face hardware upgrade requirement for unsupervised FSD"
+        ],
+        "key_metrics": {
+          "actual": "FSD v14 Lite in Early Access rollout for HW3; v14.3.3 on HW4",
+          "target": "FSD v15 end-to-end architecture targeted end 2026/early 2027",
+          "trajectory": "v14 iterating, but v15 delayed to late 2026 at earliest"
+        }
+      },
+      "source": "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+      "impact": "medium"
+    },
+    {
+      "title": "Finland signals potential FSD approval before October EU vote",
+      "description": "Finland's transport authority Traficom indicated it may approve Tesla FSD Supervised before the EU-wide decision expected at the October 2026 TCMV meeting. Traficom stated FSD has 'strong safety potential' and is prepared to move forward after summer 2026, contingent on Tesla providing additional information in three areas: driver retake time (how quickly a driver can reassume control), overtaking performance, and the speed-offset feature. Notably, Finnish regulators stated that speeding is already common in Finland and the speed offset is 'justified on the grounds that the driver must be given sufficient flexibility,' contrasting sharply with Sweden's opposition. Approximately 6,500 Finnish vehicles are already equipped with FSD hardware (~0.24% of Finland's 2.7M passenger vehicles).",
+      "date": "2026-07-08",
       "category": "FSD Country Approvals",
-      "title": "Germany could possibly approve FSD in coming months",
-      "description": "Sources suggest Germany might potentially approve FSD, though timeline is unclear and regulatory process could take months.",
-      "source": "https://electrek.co/germany-fsd-maybe"
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium",
+        "rationale": "Finland's positive assessment and willingness to approve before October represents regulatory progress. However, the approval is conditional on Tesla answering outstanding technical questions, and Finland's position on speed offset contrasts with Sweden's formal objection, highlighting continued EU regulatory fragmentation."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Traficom says FSD has 'strong safety potential'",
+          "Finland prepared to approve after summer 2026",
+          "Finnish regulators justify speed offset feature (contrast to Sweden)",
+          "~6,500 Finnish vehicles already equipped with FSD hardware",
+          "Potential 7th European country approval"
+        ],
+        "negative_signals": [
+          "Approval conditional on Tesla answering three technical questions (driver retake time, overtaking, speed offset)",
+          "Timeline is 'after summer 2026' with no firm date",
+          "Contrasts with Sweden's formal objection, highlighting EU fragmentation",
+          "Only 0.24% of Finnish vehicles have FSD hardware (limited market impact)",
+          "No indication Finland's approval would influence October EU-wide vote"
+        ],
+        "key_metrics": {
+          "actual": "6 European countries approved as of July 8 (NL, LT, EE, DK, BE, DE)",
+          "target": "Finland potentially 7th; EU-wide approval (27 countries) targeted October 2026",
+          "trajectory": "Country-by-country expansion continues; EU-wide vote outcome uncertain"
+        }
+      },
+      "source": "https://www.basenor.com/blogs/news/finland-may-approve-tesla-fsd-before-eus-october-decision",
+      "impact": "low"
+    },
+    {
+      "title": "Tesla Model Y first vehicle to pass NHTSA's new ADAS safety tests",
+      "description": "The 2026 Tesla Model Y became the first vehicle to pass NHTSA's new benchmark for vehicles equipped with advanced driver assistance systems (ADAS), announced May 7, 2026. Model Y units manufactured on or after November 12, 2025, successfully met criteria for four newly integrated ADAS tests: pedestrian automatic emergency braking, lane keeping assistance, blind spot warning, and blind spot intervention, plus four original ADAS criteria (forward collision warning, crash imminent braking, dynamic brake support, lane departure warning). However, this achievement for basic ADAS features comes amid NHTSA's escalated Engineering Analysis investigation (EA26002) into Tesla's 'Full Self-Driving' system covering 3.2 million vehicles—the stage that typically precedes a recall.",
+      "date": "2026-05-07",
+      "category": "FSD Safety & Regulation",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high",
+        "rationale": "Headlines celebrate Model Y passing ADAS tests, but the reality is this achievement covers basic driver assistance features while NHTSA simultaneously investigates FSD for fundamental safety failures in reduced visibility. The contrast highlights the gap between Tesla's basic ADAS capabilities (which passed) and FSD Supervised (which is under pre-recall investigation)."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Model Y first vehicle to pass NHTSA's new ADAS benchmark (May 7, 2026)",
+          "Passed all 8 ADAS tests (4 new + 4 original criteria)",
+          "Applies to 2026 Model Y manufactured after Nov 12, 2025"
+        ],
+        "negative_signals": [
+          "Achievement covers basic ADAS only, not FSD Supervised",
+          "Concurrent with NHTSA's escalated FSD investigation (EA26002) covering 3.2M vehicles",
+          "FSD investigation involves 9 crashes, 1 fatality, 1 injury from visibility detection failures",
+          "Investigation found FSD fails to detect sun glare and fog—common conditions",
+          "EA26002 is pre-recall stage investigation",
+          "Tests passed are for standard ADAS, not the advanced FSD system under scrutiny"
+        ],
+        "key_metrics": {
+          "actual": "Model Y passed 8 ADAS tests; FSD under pre-recall investigation for 9 crashes",
+          "target": "FSD achieving safety validation for unsupervised operation",
+          "trajectory": "Basic ADAS validated; FSD safety under regulatory challenge"
+        }
+      },
+      "source": "https://www.kbb.com/car-news/tesla-model-y-first-to-pass-nhtsas-new-safety-testing/",
+      "impact": "low"
+    },
+    {
+      "title": "California DMV confirms Tesla compliance after Autopilot branding dropped",
+      "description": "The California DMV confirmed Tesla's 'corrective action' on February 17, 2026, after Tesla stopped using the term 'Autopilot' in its marketing. In December 2025, a California judge ruled that Tesla's use of 'Autopilot' to describe ADAS features is misleading and violates state law, finding that the naming 'follows a long but unlawful tradition of intentionally using ambiguity to mislead consumers.' Tesla renamed Autopilot to 'Traffic Aware Cruise Control' and consistently uses 'Full Self-Driving (Supervised)' even when abbreviating to FSD. This compliance avoided a 30-day suspension of Tesla's dealer and manufacturer licenses in California.",
+      "date": "2026-02-17",
+      "category": "FSD Safety & Regulation",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "While headlines frame this as compliance and avoiding a ban, the reality is a California judge ruled Tesla's marketing was intentionally misleading and violated state law. Tesla was forced to rebrand core features to avoid license suspension—a significant regulatory and reputational setback confirming years of misleading marketing practices."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Tesla complied with DMV order February 17, 2026",
+          "Avoided 30-day California sales suspension",
+          "Rebranded to clearer terms: 'Traffic Aware Cruise Control' and 'FSD (Supervised)'"
+        ],
+        "negative_signals": [
+          "California judge ruled in December 2025 that 'Autopilot' marketing is misleading and violates state law",
+          "Ruling found Tesla followed 'a long but unlawful tradition of intentionally using ambiguity to mislead consumers'",
+          "DMV investigation started in 2021 (5 years of alleged misleading marketing)",
+          "Tesla forced to rebrand under threat of 30-day license suspension",
+          "Confirms regulatory scrutiny of Tesla's FSD/Autopilot marketing claims",
+          "Reputational damage from judicial finding of intentional consumer deception"
+        ],
+        "key_metrics": {
+          "actual": "Forced rebranding to avoid California sales ban",
+          "target": "Transparent, legally compliant marketing across all jurisdictions",
+          "trajectory": "Regulatory compliance forced by litigation; marketing practices under continued scrutiny"
+        }
+      },
+      "source": "https://electrek.co/2026/02/18/tesla-avoids-30-day-california-sales-suspension-after-dropping-misleading-autopilot-marketing/",
+      "impact": "medium"
     }
   ],
+  "metricUpdate": {
+    "totalCountries": 13,
+    "europeanCountries": 6,
+    "latestCountry": {
+      "name": "Germany",
+      "region": "Europe",
+      "status": "active",
+      "date": "2026-05-22"
+    },
+    "europeanApprovals": [
+      {
+        "country": "Netherlands",
+        "date": "2026-04-10",
+        "status": "active",
+        "note": "First EU approval via RDW type approval"
+      },
+      {
+        "country": "Lithuania",
+        "date": "2026-05-20",
+        "status": "active"
+      },
+      {
+        "country": "Estonia",
+        "date": "2026-05-29",
+        "status": "active"
+      },
+      {
+        "country": "Denmark",
+        "date": "2026-06-09",
+        "status": "active"
+      },
+      {
+        "country": "Belgium",
+        "date": "2026-06-10",
+        "status": "active"
+      },
+      {
+        "country": "Germany",
+        "date": "2026-05-22",
+        "status": "active",
+        "note": "Largest European market"
+      }
+    ],
+    "pendingApprovals": [
+      {
+        "country": "Finland",
+        "status": "conditional_approval_signaled",
+        "expectedDate": "After summer 2026",
+        "note": "Traficom indicates approval pending Tesla responses on driver retake time, overtaking, speed offset"
+      },
+      {
+        "country": "Norway",
+        "status": "rejected_demo_materials",
+        "note": "Rejected customer demonstration materials May 2026; Tesla has not resubmitted"
+      },
+      {
+        "country": "Sweden",
+        "status": "formal_objection",
+        "note": "Formally recommended EU reject approval unless speed offset removed (April 30, 2026)"
+      }
+    ],
+    "euWideStatus": {
+      "status": "not_approved",
+      "nextVoteDate": "October 2026 TCMV meeting",
+      "votingRequirement": "15 of 27 member states + 65% EU population",
+      "concerns": [
+        "Sweden's formal objection to speed offset feature",
+        "Norway's rejection of demonstration materials",
+        "European Transport Safety Council raised substantive safety concerns May 29, 2026",
+        "EU regulatory landscape fragmented into two camps: smaller states approving vs Nordic authorities demanding system-level legal compliance"
+      ]
+    },
+    "regulatoryRisks": {
+      "nhtsa": {
+        "investigation": "EA26002 Engineering Analysis",
+        "vehiclesAffected": 3200000,
+        "status": "pre_recall_stage",
+        "incidentsInvestigated": 9,
+        "fatalities": 1,
+        "injuries": 1,
+        "coreIssue": "FSD camera system fails to detect degraded visibility from sun glare and fog; no driver warnings until just before impact",
+        "dateEscalated": "2026-03-19"
+      },
+      "california": {
+        "status": "compliance_forced",
+        "action": "Rebranded Autopilot to Traffic Aware Cruise Control",
+        "finding": "Judge ruled Autopilot marketing intentionally misleading and violates state law",
+        "complianceDate": "2026-02-17"
+      }
+    },
+    "note": "FSD approved in 6 European countries via mutual recognition of Dutch RDW approval. EU-wide approval uncertain due to Sweden's objection and pending October 2026 TCMV vote. NHTSA investigation escalated to pre-recall stage covering 3.2M vehicles for visibility detection failures.",
+    "source": "https://www.basenor.com/blogs/news/tesla-fsd-is-now-live-in-germany-what-european-owners-need-to-know"
+  },
   "categoryUpdate": {
-    "criticalNews": "Denmark became fourth European country to approve FSD"
+    "latestStatus": "FSD expanding in Europe via country-by-country approvals (6 countries active) but faces significant regulatory headwinds: NHTSA pre-recall investigation covering 3.2M vehicles for visibility failures, Sweden's formal EU objection to speed offset feature, and uncertain October 2026 EU-wide vote. FSD v14 Lite rollout to HW3 vehicles started July 2026. FSD v15 targeted end 2026/early 2027.",
+    "nextMilestones": [
+      "Finland potential approval after summer 2026 (conditional)",
+      "October 2026 EU TCMV vote for EU-wide FSD approval (outcome uncertain due to Sweden objection)",
+      "NHTSA Engineering Analysis EA26002 resolution (pre-recall stage)",
+      "FSD v15 release targeted end 2026 or start 2027 (complete architectural overhaul)"
+    ],
+    "concerns": [
+      "NHTSA pre-recall investigation (EA26002) covering 3.2M vehicles for FSD camera failures in reduced visibility (sun glare, fog)",
+      "9 crashes under investigation including 1 fatality and 1 injury from visibility detection failures",
+      "Sweden formally objected to EU approval unless speed offset feature removed (April 30, 2026)",
+      "Norway rejected FSD demonstration materials May 2026 citing insufficient safety disclosure",
+      "European Transport Safety Council raised substantive safety concerns May 29, 2026",
+      "EU-wide vote delayed to October 2026; qualified majority requires 15/27 states + 65% population (needs Germany/France/Italy support)",
+      "EU regulatory landscape fragmented: smaller states approving vs Nordic authorities demanding legal compliance",
+      "California judge ruled Tesla's Autopilot marketing intentionally misleading (forced rebranding February 2026)",
+      "FSD v15 delayed to end 2026/early 2027 (originally expected mid-2026)",
+      "HW3 vehicles (~4M units) confirmed unable to achieve unsupervised FSD; receive limited 'Lite' version only"
+    ]
   },
   "urlsSeen": [
-    "https://teslarati.com/denmark-fsd-approval",
-    "https://electrek.co/germany-fsd-maybe"
+    "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+    "https://electrek.co/2026/06/18/sweden-tesla-fsd-speeding-eu-vote/",
+    "https://www.basenor.com/blogs/news/tesla-fsd-is-now-live-in-germany-what-european-owners-need-to-know",
+    "https://www.teslarati.com/tesla-stuns-another-fsd-approval-in-europe-belgium/",
+    "https://www.teslaoracle.com/2026/06/29/tesla-starts-the-rollout-of-fsd-v14-lite-2026-20-5-1-for-hw3-owners-official-release-notes-rollout-status/",
+    "https://www.basenor.com/blogs/news/finland-may-approve-tesla-fsd-before-eus-october-decision",
+    "https://www.kbb.com/car-news/tesla-model-y-first-to-pass-nhtsas-new-safety-testing/",
+    "https://electrek.co/2026/02/18/tesla-avoids-30-day-california-sales-suspension-after-dropping-misleading-autopilot-marketing/",
+    "https://fsdtracker.eu/",
+    "https://notanfsdtracker.com/sweden-tcmv-fsd-speed-offset-objection-2026",
+    "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
+    "https://driveteslacanada.ca/news/tesla-fsd-finland-approval-review/",
+    "https://www.cnbc.com/2026/03/19/tesla-nhtsa-full-self-driving-fsd-reduced-visibility.html"
   ],
   "metadata": {
-    "researchDuration": "~3 min",
-    "sourcesSearched": ["teslarati.com", "electrek.co"]
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "teslaoracle.com",
+      "basenor.com",
+      "fsdtracker.eu",
+      "notanfsdtracker.com",
+      "electrek.co",
+      "notateslaapp.com",
+      "kbb.com",
+      "cnbc.com",
+      "driveteslacanada.ca"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "searchKeywords": [
+      "FSD approval country Europe",
+      "FSD regulatory",
+      "FSD v14 update",
+      "NHTSA investigation",
+      "EU TCMV vote"
+    ],
+    "skipReason": null,
+    "researchNotes": "Comprehensive research conducted across Tier 1 sources (Tesla Oracle, Teslarati, TeslaNorth, Basenor) and specialized trackers (FSD Tracker EU, Not an FSD Tracker). Key findings: 6 European countries now have FSD approval (NL, LT, EE, DK, BE, DE) via mutual recognition of Dutch RDW type approval, but EU-wide deployment faces significant barriers including Sweden's formal objection to speed offset feature and uncertain October 2026 TCMV vote. Major regulatory risk: NHTSA escalated investigation to Engineering Analysis (EA26002) covering 3.2M vehicles for FSD camera failures in reduced visibility—this is the pre-recall stage. FSD v14 Lite rollout to HW3 vehicles began July 2026, but v15 delayed to end 2026/early 2027. Applied critical sentiment analysis per guidelines—marking NHTSA investigation and Sweden objection as NEGATIVE despite neutral headlines, as they represent fundamental safety concerns and regulatory barriers to scaling."
   }
 }

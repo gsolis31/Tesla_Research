@@ -1,0 +1,165 @@
+{
+  "categoryKey": "terafab",
+  "keyChanges": [
+    {
+      "title": "Terafab July 7 Giga Texas Announcement Delayed, Turned Out to Be Cybercab Employee Rides",
+      "description": "Tesla VP Lars Moravy teased 'cool news' about Giga Texas scaling for July 7, 2026. The announcement slipped from July 7 to July 10, and when it came, it was employee Cybercab rides at Giga Texas—not a Terafab North Campus construction milestone or AI5 production update. This represents a significant mismatch between the scaling efforts expected (Terafab, Optimus factory, Roadster production) and what was actually announced (limited internal employee rides at factory).",
+      "date": "2026-07-10",
+      "category": "Terafab Announcement",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Announcement confirmed for early July",
+          "Employee rides show Cybercab engineering progress"
+        ],
+        "negative_signals": [
+          "Announcement slipped from teased July 7 date to July 10",
+          "Expected Terafab construction milestone did not materialize",
+          "No new Optimus factory scaling update",
+          "No concrete AI5 production timeline update",
+          "Announcement limited to internal factory parking lot rides, not public robotaxi expansion",
+          "Vague messaging ('cool news') does not clarify actual production readiness"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-cybercab-ride-giga-texas/",
+      "impact": "medium"
+    },
+    {
+      "title": "AI5 Chip Production Delayed to Mid-2027, Missing Original 2026 Volume Target",
+      "description": "Tesla's AI5 chip, central to Terafab's planned output, has been delayed significantly. Original timeline promised volume production in 2026, but current guidance places high-volume manufacturing at mid-2027. Small-batch production is now expected in late 2026, but this represents a major slip from initial plans. The delay is primarily driven by Samsung's 2nm process maturation challenges at its Texas foundry. This directly impacts Tesla's AI roadmap and vehicle production scaling.",
+      "date": "2026-07-08",
+      "category": "Terafab Chip Production",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "AI5 taped out on April 15, 2026 (design complete)",
+          "Dual-sourcing at TSMC Arizona and Samsung Texas reduces single-point failure",
+          "Small-batch production expected late 2026"
+        ],
+        "negative_signals": [
+          "Volume production pushed from 2026 to mid-2027",
+          "Samsung's 2nm process slipping by 6+ months",
+          "AI6 chip delayed approximately 6 months due to Samsung delays",
+          "Multiple chip projects advancing simultaneously creates resource constraints",
+          "Process technology transition to GAAFET at 2nm requires new materials and equipment"
+        ]
+      },
+      "source": "https://www.automotiveworld.com/news/tesla-delays-ai5-chip-production-until-mid-2027/",
+      "impact": "high"
+    },
+    {
+      "title": "Terafab Execution Risks: Semiconductor Inexperience, Talent Shortage, and Yield Challenges",
+      "description": "Critical analysis reveals Terafab faces severe execution risks that threaten the $25B+ investment. Tesla has no semiconductor manufacturing experience. The company is advancing 6+ simultaneous chip projects (AI-related, Dojo-related, SpaceX satellites) while attempting vertical integration across mask design, logic, memory, and advanced packaging. Analysts cite lack of talent and time as primary constraints. The biggest technical challenge is controlling yields at advanced 2nm nodes—transistor architecture has shifted to GAAFET, requiring significant upgrades to materials, equipment, and process modules. Even minor deviations could cause sharp yield drops.",
+      "date": "2026-07-08",
+      "category": "Terafab Execution Risk",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Intel partnership provides semiconductor expertise",
+          "SpaceX and xAI co-investment spreads risk",
+          "Vertical integration vision is ambitious"
+        ],
+        "negative_signals": [
+          "Tesla has zero semiconductor manufacturing experience",
+          "6+ simultaneous chip projects stretching resources thin",
+          "GAAFET transition at 2nm requires new materials, equipment, and processes",
+          "Yield control at advanced nodes is industry's hardest problem",
+          "Talent shortage in semiconductor industry makes recruitment difficult",
+          "Pilot line production may not begin until 2029-2030 (not 2027-2028 as hoped)",
+          "Full facility buildout could take 10+ years based on historical chip fab construction"
+        ]
+      },
+      "source": "https://www.tipranks.com/news/teslas-terafab-chip-project-hampered-by-a-lack-of-talent-and-time-claims-analyst",
+      "impact": "high"
+    },
+    {
+      "title": "Terafab North Campus Construction Update: 5.2M Sq Ft Expansion Underway at Giga Texas",
+      "description": "Tesla filed detailed site plans in March 2026 showing a massive Terafab North Campus expansion including a dedicated 2-million-square-foot AI chip research and production facility, plus an additional 5.2 million square feet of construction across multiple phases. Ground clearing, soil reclamation, and infill operations are visible north of the existing facility. However, no specific construction milestones or timelines have been disclosed. The July 7 'cool news' tease failed to deliver details on this critical facility.",
+      "date": "2026-07-08",
+      "category": "Terafab North Campus",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Detailed site plans filed with Travis County",
+          "Ground preparation underway with visible earth-moving activity",
+          "5.2M sq ft total expansion committed",
+          "Co-located with Optimus factory and Giga Texas operations"
+        ],
+        "negative_signals": [
+          "No specific construction completion dates disclosed",
+          "July 7 announcement did not include Terafab North Campus milestone",
+          "Timeline remains vague ('first phase' language common in Tesla announcements)",
+          "Regulatory and permitting challenges not addressed",
+          "No public updates since initial March filing"
+        ]
+      },
+      "source": "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
+      "impact": "medium"
+    }
+  ],
+  "metricUpdate": null,
+  "fleetUpdate": null,
+  "categoryUpdate": {
+    "latestStatus": "Terafab project announced March 2026 as $25B Tesla-SpaceX-Intel joint venture targeting 1 terawatt annual AI chip output. AI5 chip delayed to mid-2027 volume production. North Campus construction underway at Giga Texas but no major milestones announced in July 2026. Execution risks significant: zero semiconductor experience, talent shortage, challenging 2nm yield control.",
+    "nextMilestone": "AI5 small-batch production late 2026; Volume production mid-2027; Terafab North Campus completion timeline unknown; Pilot line production possibly 2029-2030",
+    "concerns": [
+      "AI5 volume production delayed 12+ months from original 2026 target",
+      "Samsung 2nm process maturation delayed, impacting AI6 timeline by 6+ months",
+      "Tesla lacks semiconductor manufacturing expertise; relying heavily on Intel partnership",
+      "Multiple concurrent chip projects (6+) stretching limited engineering resources",
+      "GAAFET technology transition at 2nm requires unproven process changes",
+      "Yield control at advanced nodes represents industry's most difficult technical challenge",
+      "Pilot line production may not begin until 2029-2030, significantly later than initial hopes",
+      "No concrete updates on Terafab North Campus construction despite being part of July 7 tease",
+      "Financial risk: $119B total build-out cost represents massive capital commitment"
+    ]
+  },
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-cybercab-ride-giga-texas/",
+    "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+    "https://www.automotiveworld.com/news/tesla-delays-ai5-chip-production-until-mid-2027/",
+    "https://www.tipranks.com/news/teslas-terafab-chip-project-hampered-by-a-lack-of-talent-and-time-claims-analyst",
+    "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
+    "https://www.notateslaapp.com/news/4373/tesla-exec-says-big-giga-texas-announcement-coming-next-week",
+    "https://teslanorth.com/2026/06/29/tesla-vp-teases-cool-news-regarding-giga-texas-expansion-on-july-7/",
+    "https://x.com/herbertong/status/2071624087303229645",
+    "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
+    "https://www.basenor.com/blogs/news/tesla-spacex-launch-terafab-119b-chip-megafactory",
+    "https://electrek.co/2026/03/22/tesla-spacex-terafab-chip-factory-ai-desperation/",
+    "https://electrek.co/2026/03/16/teslas-terafab-chip-ambitions-ignore-its-total-lack-of-semiconductor-experience/"
+  ],
+  "metadata": {
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "basenor.com",
+      "electrek.co",
+      "cnbc.com",
+      "automotiveworld.com",
+      "tipranks.com"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null,
+    "researchNotes": "Research focused on July 2026 period within specified date range. Found significant news about July 7 announcement (which slipped to July 10) and critical challenges facing the Terafab project. Primary findings: (1) Announcement failed to deliver on expectations for major Terafab construction milestone; (2) AI5 volume production significantly delayed to mid-2027; (3) Major execution risks identified by analysts including Tesla's lack of semiconductor experience, talent shortage, and 2nm process yield challenges. Hot context from config noting March 2026 announcement and July 7 tease was accurately reflected in search results."
+  }
+}

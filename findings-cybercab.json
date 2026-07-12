@@ -2,46 +2,249 @@
   "categoryKey": "cybercab",
   "keyChanges": [
     {
-      "status": "positive",
+      "title": "Tesla announces Cybercab 'employee rides' at Giga Texas - parking lot only",
+      "description": "On July 10, 2026, Tesla's Robotaxi account posted a video of a gold Cybercab driving across the Giga Texas outbound lot, with Tesla's main account quote-tweeting: 'Cybercab employee rides at Giga Texas starting soon.' However, the announcement is deliberately vague - Tesla gave no details on route, fleet size, or whether rides occur on public roads versus private factory property. Electrek reported on July 11 that the announcement appears to be nothing more than parking-lot ferries for employees, noting 'for any other automaker, our car drove an employee across the parking lot would not be a news event.' The announcement generated 2.9 million views but no substantive progress toward commercial deployment.",
+      "date": "2026-07-10",
+      "category": "Cybercab Production",
+      "status": "negative",
       "sentiment": {
         "headline": "positive",
         "reality": "negative",
-        "confidence": "high",
-        "rationale": "City expansion sounds good but fleet stuck at 50 vehicles"
+        "confidence": "high"
       },
       "evidence": {
         "positive_signals": [
-          "Miami service launched",
-          "Dallas service launched"
+          "Video shows Cybercab driving autonomously at Giga Texas",
+          "Vehicle operates without steering wheel or pedals",
+          "Engineering lead reported 50 rides in recent days"
         ],
         "negative_signals": [
-          "Fleet stuck at 50 vehicles after 1 year",
-          "Software bottleneck unresolved",
-          "No scaling progress"
-        ],
-        "key_metrics": {
-          "actual": "50 vehicles after 1 year",
-          "target": "Mass market service",
-          "trajectory": "Stagnant"
-        }
+          "No route details provided - appears limited to parking lot",
+          "No fleet size disclosed",
+          "No confirmation of public road operations",
+          "Electrek calls it a non-event: just parking lot shuttle",
+          "Announcement vague and insubstantive compared to competitors",
+          "Does not address fundamental scaling issues"
+        ]
       },
+      "source": "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+      "impact": "low"
+    },
+    {
+      "title": "New Jersey bill threatens to ban Tesla's camera-only robotaxi statewide",
+      "description": "On July 9, 2026, New Jersey's S1677 bill advanced, requiring robotaxis to use cameras plus lidar and radar - effectively banning Tesla's camera-only approach in the state. The bill establishes a three-year pilot program with mandatory multi-sensor requirements and a 50,000-mile in-state supervised-testing threshold before driverless commercial operation. State Senator Andrew Zwicker (physicist at Princeton Plasma Physics Lab) sponsored the bill after riding in a Waymo, citing safety concerns. Tesla lobbied aggressively against the bill, messaging New Jersey owners to flood Zwicker's office with ~4,000 protest emails in one day. The bill only targets commercial robotaxi fleets, not consumer FSD features, but represents a significant regulatory threat to Tesla's autonomy strategy in permissive East Coast markets.",
+      "date": "2026-07-09",
       "category": "Cybercab Production",
-      "title": "Robotaxi expands to Miami and Dallas",
-      "description": "Tesla expanded robotaxi service to two new cities on July 3, 2026.",
-      "source": "https://teslarati.com/robotaxi-expansion-2026"
+      "status": "negative",
+      "sentiment": {
+        "headline": "negative",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Tesla successfully mobilized 4,000 owner emails in protest",
+          "Bill only targets commercial fleets, not consumer FSD"
+        ],
+        "negative_signals": [
+          "New Jersey would ban Tesla robotaxi entirely if bill passes",
+          "Multi-sensor requirement contradicts Tesla's camera-only architecture",
+          "50,000-mile supervised testing threshold delays deployment",
+          "Bill sponsored by physicist with Waymo experience",
+          "Reflects growing regulatory skepticism of camera-only approach",
+          "Could set precedent for other states"
+        ]
+      },
+      "source": "https://electrek.co/2026/07/09/new-jersey-bill-tesla-camera-robotaxi/",
+      "impact": "high"
+    },
+    {
+      "title": "Cybercab production ramps to 85-120+ units at Giga Texas, but deployment blocked",
+      "description": "Drone footage captured between late June and July 10, 2026 shows Tesla has ramped Cybercab production to 85+ units staged at Gigafactory Texas, with some reports claiming counts exceeding 120 units. The Cybercab entered production in mid-February 2026, ahead of the April volume-production target. However, production capacity is not the constraint - EPA certification was secured May 26, 2026, but Tesla still lacks regulatory approval for autonomous operation in any jurisdiction. The vehicles remain in staging lots rather than deployed commercially. Meanwhile, the active robotaxi fleet (Model Y vehicles) has declined to just 34 vehicles total (20 active in last 7 days), down from a peak of ~165 in Dec 2025/Jan 2026. Software limitations via FSD v15 (expected Q4 2026 or Q1 2027) remain the fundamental blocker to scaling.",
+      "date": "2026-07-10",
+      "category": "Cybercab Production",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "85-120+ Cybercabs visible at Giga Texas staging lots",
+          "Production started February 2026, ahead of April target",
+          "EPA certification secured May 26, 2026",
+          "Unboxed production process appears functional"
+        ],
+        "negative_signals": [
+          "No regulatory approval for autonomous operation anywhere",
+          "Vehicles remain in staging lots, not deployed commercially",
+          "Active robotaxi fleet (Model Y) declining: 34 total, 20 active last 7 days",
+          "Fleet peaked at ~165 vehicles in Dec 2025/Jan 2026 - down 79%",
+          "Software (FSD v15) remains primary constraint, not production",
+          "Deployment timeline pushed to Q4 2026 or Q1 2027",
+          "Production capacity irrelevant without autonomy approval"
+        ]
+      },
+      "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps",
+      "impact": "high"
+    },
+    {
+      "title": "Tesla robotaxi fleet continues steady decline - down to 20 active vehicles",
+      "description": "Tesla's unsupervised robotaxi fleet (Model Y vehicles) has collapsed to just 20 active vehicles (seen in last 7 days) as of July 2026, with total fleet at 34 authorized vehicles. This represents a 79% decline from the peak of ~165 vehicles in December 2025/January 2026. Austin dropped from 19 unsupervised vehicles to 14 active. Bay Area fleet cratered from 107 active vehicles in April to just 9. Dallas and Houston remain stuck at 3 vehicles each - the same tiny numbers from their April launch. The decline is attributed to safety concerns - Tesla's robotaxi crash rate sits between 4-9x higher than human drivers (one crash per 57,000 miles vs. human benchmark of one per 229,000 miles). Tesla is waiting for FSD v15 (Q4 2026 or Q1 2027) before scaling aggressively. Geographic expansion to Miami adds a 4th market but does not address the fundamental scaling failure.",
+      "date": "2026-07-08",
+      "category": "Cybercab Production",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Miami service launched July 3 with unsupervised vehicles",
+          "FSD v15 planned for Q4 2026/Q1 2027 to address safety issues"
+        ],
+        "negative_signals": [
+          "Fleet collapsed 79% from peak: 165 vehicles → 34 total, 20 active",
+          "Austin: 19 → 14 active vehicles",
+          "Bay Area: 107 → 9 active vehicles (91% decline)",
+          "Dallas/Houston stuck at 3 vehicles each since April launch",
+          "Crash rate 4-9x higher than human drivers",
+          "Fleet in steady decline since Dec 2025/Jan 2026",
+          "Safety bottleneck prevents scaling for 7+ months",
+          "Geographic expansion (Miami) does not solve core constraint",
+          "Waymo operates ~3,000 robotaxis vs. Tesla's 20 active"
+        ]
+      },
+      "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
+      "impact": "high"
+    },
+    {
+      "title": "Morgan Stanley forecasts 1,500 robotaxis by end of 2026 - but current fleet at 20",
+      "description": "Morgan Stanley published analysis on July 6, 2026 projecting Tesla's robotaxi fleet will grow to 1,500 vehicles by year-end 2026 and 30,000 by 2030. The bank expects launches in Phoenix, Orlando, Tampa, Las Vegas, and possibly New Orleans by Q4 2026. However, this projection appears highly optimistic given the current reality: Tesla's active fleet is just 20 vehicles (34 total authorized) as of July 2026, down from 165 at peak. To reach 1,500 vehicles by December 31, 2026 would require adding ~1,480 vehicles in 6 months (~247 vehicles/month or ~8 vehicles/day) - a 75x scale-up from current levels. Tesla has explicitly stated it is waiting for FSD v15 (Q4 2026 or Q1 2027) before scaling, and safety data shows crash rates 4-9x higher than human drivers. Morgan Stanley maintains Equalweight rating and $415 price target.",
+      "date": "2026-07-06",
+      "category": "Cybercab Production",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Wall Street firm projects aggressive growth trajectory",
+          "Geographic expansion planned for 5+ cities by Q4 2026",
+          "Long-term projection of 30,000 vehicles by 2030",
+          "Miami launch demonstrates continued commitment"
+        ],
+        "negative_signals": [
+          "Requires 75x scale-up in 6 months (20 → 1,500 vehicles)",
+          "Tesla explicitly waiting for FSD v15 before scaling",
+          "Current fleet declining, not growing (down 79% from peak)",
+          "Safety data shows 4-9x higher crash rate than humans",
+          "No regulatory approval for Cybercab autonomous operation",
+          "Morgan Stanley forecast appears disconnected from operational reality",
+          "Equalweight rating suggests limited conviction"
+        ]
+      },
+      "source": "https://www.roic.ai/news/tesla-robotaxi-expansion-gains-momentum-as-morgan-stanley-flags-fleet-targets-07-06-2026",
+      "impact": "medium"
+    },
+    {
+      "title": "Tesla showcases Cybercab accessibility features at National Federation of the Blind convention",
+      "description": "On July 3, 2026, Tesla brought the Cybercab to the National Federation of the Blind (NFB) Annual Convention at the JW Marriott Austin to demonstrate accessibility features for blind and visually impaired users. The vehicle includes Braille lettering on door releases and emergency stop button, dedicated space for service animals and assistive devices, wheelchair-height seating, and external microphones/speakers for audible arrival announcements and verbal destination commands. Attendees experienced the steering-wheel-free design firsthand. The demo highlights Tesla's focus on inclusive autonomous mobility for ~2.2 million blind Americans (plus millions more with vision impairment). However, the event is primarily PR-focused - the Cybercab still lacks regulatory approval for autonomous operation in any jurisdiction, and deployment remains blocked until FSD v15 in Q4 2026 or Q1 2027.",
+      "date": "2026-07-03",
+      "category": "Cybercab Production",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Braille lettering on physical controls (door releases, emergency stop)",
+          "Dedicated space for service animals and assistive devices",
+          "Wheelchair-height seating for easier transfers",
+          "External microphones/speakers for audible arrival and voice commands",
+          "Hands-on demo for blind community at NFB Convention",
+          "Addresses mobility needs of ~2.2 million blind Americans"
+        ],
+        "negative_signals": [
+          "PR event does not address fundamental deployment constraints",
+          "No regulatory approval for autonomous operation",
+          "Deployment blocked until FSD v15 (Q4 2026 or Q1 2027)",
+          "Features irrelevant without functional autonomous service",
+          "Active robotaxi fleet declining (20 vehicles) vs. growing",
+          "Event timing suggests awareness campaign vs. product launch"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-flexes-help-blind-cybercab/",
+      "impact": "low"
     }
   ],
-  "fleetUpdate": {
+  "metricUpdate": {
     "date": "2026-07-10",
-    "count": 50,
-    "note": "Active across 4 cities"
+    "count": 120,
+    "note": "Estimated 120+ Cybercabs visible at Giga Texas staging lots per drone footage and social media reports. Production ramping since February 2026 start, but vehicles remain in staging - not deployed commercially due to lack of regulatory approval for autonomous operation.",
+    "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps"
+  },
+  "fleetUpdate": {
+    "city": "Austin, Dallas, Houston, Miami",
+    "country": "USA",
+    "status": "declining",
+    "vehicleCount": 20,
+    "totalAuthorized": 34,
+    "breakdown": {
+      "austin": 14,
+      "dallas": 3,
+      "houston": 3,
+      "miami": "undisclosed",
+      "bayArea": 9
+    },
+    "lastUpdate": "2026-07-08",
+    "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/"
   },
   "categoryUpdate": {
-    "criticalNews": "Service expanded to Miami and Dallas but fleet remains at 50 vehicles"
+    "latestStatus": "Cybercab production ramping (120+ units at Giga Texas) but deployment blocked. Active robotaxi fleet (Model Y) continues steady decline to 20 vehicles (down 79% from Dec 2025 peak of 165). EPA certification secured but no regulatory approval for autonomous operation. Software limitations (FSD v15) remain primary constraint. Deployment timeline pushed to Q4 2026 or Q1 2027.",
+    "nextMilestone": "FSD v15 release (Q4 2026 or Q1 2027) required before commercial scaling. Regulatory approval for Cybercab autonomous operation in any jurisdiction.",
+    "concerns": [
+      "Active fleet declining for 7+ months (79% drop from peak)",
+      "Crash rate 4-9x higher than human drivers",
+      "No regulatory approval for Cybercab autonomous operation anywhere",
+      "Production capacity irrelevant without software/regulatory approval",
+      "New Jersey bill threatens to ban camera-only approach",
+      "FSD v15 timeline slipped to Q4 2026/Q1 2027",
+      "Geographic expansion (Miami) does not address core scaling constraint",
+      "Morgan Stanley forecast (1,500 by year-end) requires 75x scale-up in 6 months - disconnected from operational reality"
+    ]
   },
-  "urlsSeen": ["https://teslarati.com/robotaxi-expansion-2026"],
+  "urlsSeen": [
+    "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+    "https://electrek.co/2026/07/09/new-jersey-bill-tesla-camera-robotaxi/",
+    "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps",
+    "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
+    "https://www.roic.ai/news/tesla-robotaxi-expansion-gains-momentum-as-morgan-stanley-flags-fleet-targets-07-06-2026",
+    "https://www.teslarati.com/tesla-flexes-help-blind-cybercab/",
+    "https://www.notateslaapp.com/news/4422/tesla-to-start-fully-autonomous-cybercab-employee-rides-soon",
+    "https://www.teslarati.com/tesla-cybercab-snags-huge-regulatory-green-light-readies-public-roads/",
+    "https://www.basenor.com/pages/tesla-robotaxi-tracker",
+    "https://www.notateslaapp.com/news/4373/tesla-exec-says-big-giga-texas-announcement-coming-next-week",
+    "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
+    "https://www.notateslaapp.com/news/4039/tesla-to-wait-for-fsd-v15-before-launching-robotaxi-at-scale-lists-next-cities"
+  ],
   "metadata": {
-    "researchDuration": "~4 min",
-    "sourcesSearched": ["teslarati.com", "robotaxitracker.com"]
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "teslaoracle.com",
+      "basenor.com",
+      "notateslaapp.com",
+      "electrek.co"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null,
+    "researchNotes": "Critical sentiment analysis applied per guidelines. Headlines suggest progress (production ramping, employee rides, accessibility features) but reality is negative: fleet declining 79% from peak, only 20 active vehicles, no regulatory approval for Cybercab, deployment blocked until FSD v15 (Q4 2026/Q1 2027), and New Jersey regulatory threat. Production capacity is NOT the constraint - software safety and regulatory approval are fundamental blockers. Geographic expansion (Miami) does not address core scaling failure."
   }
 }

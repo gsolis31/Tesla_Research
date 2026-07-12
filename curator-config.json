@@ -1,10 +1,16 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-12",
   "weekOf": "2026-07-06",
   "findingsFiles": [
+    "findings-aiChip.json",
+    "findings-battery4680.json",
     "findings-cybercab.json",
     "findings-fsd.json",
-    "findings-optimus.json"
+    "findings-fsdv15.json",
+    "findings-jobPostings.json",
+    "findings-optimus.json",
+    "findings-productionDelivery.json",
+    "findings-terafab.json"
   ],
   "hotContext": {
     "lastWeekKeyChanges": [

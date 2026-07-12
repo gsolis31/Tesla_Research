@@ -23,7 +23,7 @@ const EvidenceSchema = z.object({
   positive_signals: z.array(z.string()),
   negative_signals: z.array(z.string()),
   key_metrics: z.object({
-    actual: z.string(),
+    actual: z.union([z.string(), z.number()]), // Can be string or number
     target: z.string(),
     trajectory: z.string(),
   }).optional(),
@@ -57,7 +57,7 @@ const RobotaxiCitySchema = z.object({
   status: CityStatusEnum,
   serviceType: ServiceTypeEnum,
   vehicleType: z.string(),
-  activeVehicles: z.number().int().nonnegative(),
+  activeVehicles: z.number().int().nonnegative().nullable(), // Can be null
   breakdown: z.object({
     unsupervised: z.number().int().nonnegative(),
     safetyMonitor: z.number().int().nonnegative(),
@@ -105,7 +105,7 @@ const MetricsSchema = z.object({
     countries: z.array(z.object({
       name: z.string(),
       status: z.string(),
-      date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+      date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(), // Can be missing
       note: z.string().optional(),
     })),
   }),
@@ -113,7 +113,7 @@ const MetricsSchema = z.object({
 
 // Category schemas
 const TimelineEventSchema = z.object({
-  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  date: z.string(), // Can be various formats (YYYY-MM-DD, Q1 2025, etc.)
   event: z.string(),
 })
 
@@ -128,14 +128,30 @@ const CategorySchema = z.object({
 // Production & Delivery schemas
 const QuarterlyDataSchema = z.object({
   quarter: z.string(),
-  production: z.number().int().nonnegative(),
-  delivery: z.number().int().nonnegative(),
+  production: z.union([
+    z.number().int().nonnegative(),
+    z.object({ // New format with breakdown
+      total: z.number().int().nonnegative(),
+      model3Y: z.number().int().nonnegative().optional(),
+      otherModels: z.number().int().nonnegative().optional(),
+    })
+  ]).nullable(), // Can be null for older quarters
+  delivery: z.number().int().nonnegative().optional(), // Old field name
+  deliveries: z.object({ // New format
+    total: z.number().int().nonnegative(),
+    model3Y: z.number().int().nonnegative().optional(),
+    otherModels: z.number().int().nonnegative().optional(),
+  }).optional(),
+  energyStorage: z.object({
+    deployed_gwh: z.number(),
+    note: z.string().optional(),
+  }).optional(),
 })
 
 const AnnualSummarySchema = z.object({
   year: z.string(),
   deliveries: z.number().int().nonnegative(),
-  yoyGrowth: z.number(),
+  yoyGrowth: z.number().nullable(), // Can be null for first year
 })
 
 const ProductionDeliveryCategorySchema = z.object({

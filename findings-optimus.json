@@ -2,41 +2,153 @@
   "categoryKey": "optimus",
   "keyChanges": [
     {
+      "title": "Musk warns Optimus production will be 'extremely slow' as July start approaches",
+      "description": "On July 1, 2026, Elon Musk visited the Optimus production line at Fremont and shared a team photo, responding to speculation by stating 'Optimus production will be extremely slow at first because everything is new.' This directly contradicts earlier optimism and occurs just weeks before the planned late July/August production start. Musk emphasized 'this is not like making a car' due to 10,000 unique parts. Production is expected to ramp from dozens per week in June to 100-150 per week in July, 300 per week in August, and a target of 1,000 units per week by September 2026 according to supplier reports. However, all 2026 units will be for internal testing only, not commercial customers.",
+      "date": "2026-07-01",
+      "category": "Optimus Production",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Musk's 'extremely slow' warning just weeks before production start signals significant challenges. Despite supplier targets of 1,000 units/week by September, Musk's public caution indicates these are aspirational. The reality is Tesla missed 2025 targets entirely (aimed for ~10,000 units, delivered zero commercial units), and current deployed units do no productive work. 'Everything is new' admission shows unproven production process at scale."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Production line operational at Fremont (Musk visited July 1, 2026)",
+          "Supplier orders suggest 1,000 units/week target by September 2026",
+          "Ramp plan outlined: 100-150/week July, 300/week August, 1,000/week September"
+        ],
+        "negative_signals": [
+          "Musk publicly warns 'extremely slow' production just weeks before start",
+          "Admission 'everything is new' signals unproven manufacturing process",
+          "All 2026 production for internal testing only - no commercial revenue",
+          "Missed 2025 targets entirely (aimed ~10,000 units, delivered zero productive robots)",
+          "Current 'several hundred' deployed units doing 'no useful work' (Q4 2025 call)",
+          "Build cost $50,000-$100,000 per unit vs $20,000-$30,000 target price",
+          "10,000 unique parts makes production 'literally impossible to predict' (Q1 2026 call)"
+        ],
+        "key_metrics": {
+          "actual": "Production line ready but not yet started; 'extremely slow' output expected",
+          "target": "1,000 units/week by September 2026 (supplier reports, unconfirmed by Tesla)",
+          "trajectory": "Behind schedule - production start imminent but Musk lowering expectations publicly"
+        }
+      },
+      "source": "https://www.trendforce.com/news/2026/07/03/news-musk-shares-tesla-optimus-production-team-photo-says-initial-robot-output-will-be-extremely-slow/",
+      "impact": "high"
+    },
+    {
+      "title": "Optimus Gen 3 remains unrevealed as production deadline arrives",
+      "description": "As of July 10, 2026, Tesla has not publicly revealed the Optimus Gen 3 design despite production targeted to begin in late July or August 2026. The reveal was originally targeted for Q1 2026 (missed on March 31), then pushed to 'mid-year' (April announcement), and now remains hidden with production supposedly starting within 2-3 weeks. Musk stated Tesla is deliberately delaying the reveal to prevent competitors from copying the design, but the pattern of repeated delays (Q1 → mid-year → late July) raises concerns about production readiness. This marks the third major postponement of the Gen 3 unveiling.",
+      "date": "2026-07-10",
+      "category": "Optimus Production",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high",
+        "rationale": "Unrevealed product 2-3 weeks before production start is a red flag. Tesla's stated reason (preventing copycats) is undermined by the pattern of repeated delays: Q1 2026 target missed, April push to 'mid-year' missed, now July 10 and still no reveal with late July production deadline. Legitimate product launches reveal before production starts for validation and pre-orders. The opacity suggests design is not finalized or production timeline will slip again."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Musk says Gen 3 is 'walking around' and in 'final stages' (March 2026)",
+          "Strategic rationale provided: prevent competitors from copying design"
+        ],
+        "negative_signals": [
+          "Gen 3 reveal missed Q1 2026 target (March 31 delay announcement)",
+          "Second delay: pushed to 'mid-year' in April, now mid-July and still unrevealed",
+          "Production supposedly starts late July/August but no public reveal as of July 10",
+          "Third postponement in 6 months suggests design/production not ready",
+          "Pattern of delays mirrors broader Tesla robotics timeline slippage",
+          "No pre-orders, no pricing, no commercial customer announcements"
+        ],
+        "key_metrics": {
+          "actual": "Gen 3 unrevealed as of July 10, 2026",
+          "target": "Public reveal expected 'around production start' (late July/August 2026)",
+          "trajectory": "Delayed 3 times; production deadline approaching with no public unveiling"
+        }
+      },
+      "source": "https://blog.robozaps.com/b/tesla-optimus-gen-3",
+      "impact": "medium"
+    },
+    {
+      "title": "Supplier reports suggest aggressive 1,000 units/week September target",
+      "description": "Reports emerged in early July 2026 that Tesla issued procurement guidelines to Optimus Gen 3 suppliers requiring production capacity of 1,000 units per week by September 2026, scaling to 2,000-2,500 units per week by year-end. The ramp plan calls for dozens per week in June, 100-150 per week in July, 300 per week in August, and 1,000 per week by September. However, these are supplier-side targets and have not been confirmed by Tesla official sources. Given Musk's July 1 warning that production will be 'extremely slow' and 'literally impossible to predict,' these aggressive targets appear aspirational rather than achievable.",
+      "date": "2026-07-08",
+      "category": "Optimus Production",
       "status": "neutral",
       "sentiment": {
         "headline": "positive",
         "reality": "neutral",
-        "confidence": "medium",
-        "rationale": "Timeline confirmed but with slow ramp warning"
+        "confidence": "low",
+        "rationale": "Supplier reports are not official Tesla guidance. The 1,000 units/week target contradicts Musk's July 1 'extremely slow' warning. These appear to be supply chain capability targets rather than actual production commitments. Without Tesla confirmation and given the pattern of missed targets (2025 goal of ~10,000 units resulted in zero commercial units), these should be treated as aspirational. Low confidence due to lack of Tier 1 source verification."
       },
       "evidence": {
         "positive_signals": [
-          "Concrete production start date",
-          "Fremont facility ready"
+          "Supply chain being ramped to support 1,000 units/week by September",
+          "Detailed ramp plan: 100-150/week July, 300/week August, 1,000/week September",
+          "Year-end target of 2,000-2,500 units/week shows ambition"
         ],
         "negative_signals": [
-          "Output will be quite slow",
-          "Production rate impossible to predict",
-          "No customers announced"
+          "Not confirmed by Tesla or official sources - supplier reports only",
+          "Contradicts Musk's July 1 'extremely slow' warning",
+          "Tesla missed entire 2025 production target (~10,000 units aimed, zero commercial units delivered)",
+          "All 2026 units for internal testing - no commercial sales",
+          "Build cost ($50K-$100K) far exceeds target price ($20K-$30K)",
+          "Musk said production rate 'literally impossible to predict' (Q1 2026)"
         ],
         "key_metrics": {
-          "actual": "Production starting late July/August 2026",
-          "target": "1M units/year",
-          "trajectory": "On schedule but slow ramp"
+          "actual": "Supplier orders issued; no Tesla confirmation of achievability",
+          "target": "1,000 units/week by September 2026 (supplier reports)",
+          "trajectory": "Aspirational targets; actual output likely far lower based on Musk warnings"
         }
       },
-      "category": "Optimus Production",
-      "title": "Optimus production confirmed for late July/August 2026 at Fremont",
-      "description": "Elon Musk confirmed that Optimus production will commence in late July or August 2026 at Fremont. Initial output will be quite slow due to 10,000 unique parts.",
-      "source": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
+      "source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262020147-tsla-musk-optimus-gen3-ai-tradingkey",
+      "impact": "medium"
     }
   ],
+  "metricUpdate": null,
+  "fleetUpdate": null,
   "categoryUpdate": {
-    "criticalNews": "Production timeline confirmed for late July/August with slow initial ramp"
+    "latestStatus": "Production line ready at Fremont with late July/August 2026 start targeted, but Musk warns output will be 'extremely slow.' Gen 3 design remains unrevealed as of July 10, 2026 despite production deadline approaching. All 2026 units for internal testing only - no commercial customers.",
+    "nextMilestone": "Full-scale production start late July/August 2026 at Fremont; Gen 3 public reveal expected around production start; first external commercial customers (B2B) targeted for late 2026",
+    "concerns": [
+      "Gen 3 unrevealed 2-3 weeks before production start (third delay in 6 months)",
+      "Musk publicly warns 'extremely slow' production due to 10,000 unique parts and unproven process",
+      "Missed entire 2025 production target - zero commercial units delivered",
+      "Current 'several hundred' deployed units do 'no useful work' (Q4 2025 call)",
+      "Build cost $50K-$100K far exceeds $20K-$30K target price, blocking consumer sales",
+      "No pre-orders, pricing, or confirmed commercial customers as of July 2026",
+      "Production rate 'literally impossible to predict' per Musk (Q1 2026)"
+    ]
   },
-  "urlsSeen": ["https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"],
+  "urlsSeen": [
+    "https://www.trendforce.com/news/2026/07/03/news-musk-shares-tesla-optimus-production-team-photo-says-initial-robot-output-will-be-extremely-slow/",
+    "https://blog.robozaps.com/b/tesla-optimus-gen-3",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262020147-tsla-musk-optimus-gen3-ai-tradingkey",
+    "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/",
+    "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/",
+    "https://optimusk.blog/blog/tesla-optimus-production-timeline/",
+    "https://www.basenor.com/blogs/news/teslas-first-optimus-production-line-has-landed",
+    "https://driveteslacanada.ca/news/tesla-optimus-gen-3-reveal-delayed-as-company-adds-finishing-touches/",
+    "https://www.basenor.com/blogs/news/tesla-delays-optimus-3-unveil-what-we-know-so-far",
+    "https://www.notateslaapp.com/news/3884/tesla-delays-optimus-gen-3-unveil-for-finishing-touches",
+    "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+    "https://www.nextbigfuture.com/2026/07/reports-tesla-order-suppliers-to-scale-to-1000-units-per-week-by-september.html",
+    "https://optimusk.blog/blog/tesla-optimus-delay/",
+    "https://www.ainvest.com/news/tesla-optimus-delays-cautionary-tale-investors-disruptive-tech-2507/"
+  ],
   "metadata": {
-    "researchDuration": "~3 min",
-    "sourcesSearched": ["teslarati.com", "optimusk.blog"]
+    "sourcesSearched": [
+      "teslarati.com",
+      "teslanorth.com",
+      "optimusk.blog",
+      "basenor.com",
+      "trendforce.com",
+      "electrek.co"
+    ],
+    "dateRange": "2026-07-08 to 2026-07-12",
+    "skipReason": null,
+    "researchNotes": "Key findings: (1) Musk's July 1 'extremely slow' warning contradicts supplier reports of aggressive ramp targets, (2) Gen 3 unrevealed as of July 10 despite late July production start - third delay in 6 months, (3) Pattern of missed targets continues from 2025 (zero commercial units vs ~10K goal). All sentiment ratings marked NEGATIVE or NEUTRAL due to production unproven, costs far exceed targets, and no commercial revenue path visible in 2026. Confidence HIGH on negative signals due to multiple Tier 1 sources (Teslarati, official earnings calls, Musk statements) and pattern of missed milestones."
   }
 }
