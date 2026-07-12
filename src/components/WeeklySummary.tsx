@@ -139,9 +139,11 @@ function WeeklySummary({ data }: Props) {
                     <span className="text-gray-500">Confidence:</span>
                     <span className="ml-2 capitalize">{change.sentiment.confidence}</span>
                   </div>
-                  <div className="md:col-span-2">
-                    <p className="text-gray-300 italic">{change.sentiment.rationale}</p>
-                  </div>
+                  {change.sentiment.rationale && (
+                    <div className="md:col-span-2">
+                      <p className="text-gray-300 italic">{change.sentiment.rationale}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
@@ -175,22 +177,24 @@ function WeeklySummary({ data }: Props) {
                   </div>
                 )}
 
-                <div className="p-3 bg-gray-800/50 rounded text-sm">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                    <div>
-                      <span className="text-gray-500">Actual:</span>
-                      <span className="ml-2">{change.evidence.key_metrics.actual}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">Target:</span>
-                      <span className="ml-2">{change.evidence.key_metrics.target}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">Trajectory:</span>
-                      <span className="ml-2">{change.evidence.key_metrics.trajectory}</span>
+                {change.evidence.key_metrics && (
+                  <div className="p-3 bg-gray-800/50 rounded text-sm">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                      <div>
+                        <span className="text-gray-500">Actual:</span>
+                        <span className="ml-2">{change.evidence.key_metrics.actual}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-500">Target:</span>
+                        <span className="ml-2">{change.evidence.key_metrics.target}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-500">Trajectory:</span>
+                        <span className="ml-2">{change.evidence.key_metrics.trajectory}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             )}
 

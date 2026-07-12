@@ -16,7 +16,7 @@ const SentimentSchema = z.object({
   headline: z.string(),
   reality: z.string(),
   confidence: ConfidenceEnum,
-  rationale: z.string(),
+  rationale: z.string().optional(),
 })
 
 const EvidenceSchema = z.object({
@@ -26,7 +26,7 @@ const EvidenceSchema = z.object({
     actual: z.string(),
     target: z.string(),
     trajectory: z.string(),
-  }),
+  }).optional(),
 })
 
 const KeyChangeSchema = z.object({
