@@ -50,6 +50,39 @@ def get_monday_of_week(date_str: str) -> str:
     return monday.strftime('%Y-%m-%d')
 
 
+def deduplicate_key_changes(key_changes: List[dict]) -> List[dict]:
+    """
+    Deduplicate keyChanges by (title, category).
+    When duplicates exist, keep the one with more complete data (prefers non-empty sentiment/evidence).
+    """
+    seen = {}
+    for kc in key_changes:
+        key = (kc.get('title', '').strip(), kc.get('category', '').strip())
+
+        if key not in seen:
+            seen[key] = kc
+        else:
+            # Keep the one with more complete data
+            existing = seen[key]
+            existing_score = (
+                (1 if existing.get('sentiment', {}).get('rationale') else 0) +
+                (1 if existing.get('evidence', {}).get('key_metrics') else 0) +
+                len(existing.get('evidence', {}).get('positive_signals', [])) +
+                len(existing.get('evidence', {}).get('negative_signals', []))
+            )
+            new_score = (
+                (1 if kc.get('sentiment', {}).get('rationale') else 0) +
+                (1 if kc.get('evidence', {}).get('key_metrics') else 0) +
+                len(kc.get('evidence', {}).get('positive_signals', [])) +
+                len(kc.get('evidence', {}).get('negative_signals', []))
+            )
+
+            if new_score > existing_score:
+                seen[key] = kc
+
+    return list(seen.values())
+
+
 def merge_weekly_summary(main_data: dict, findings: dict) -> dict:
     """
     Merge keyChanges and trends into weekly summaries
@@ -75,9 +108,32 @@ def merge_weekly_summary(main_data: dict, findings: dict) -> dict:
             break
 
     if existing_week_idx is not None:
-        # Append to existing week
+        # Append to existing week with deduplication
         print(f"✓ Appending to existing week {week_of}")
-        main_data['weeklySummaries'][existing_week_idx]['keyChanges'].extend(key_changes)
+        existing_kcs = main_data['weeklySummaries'][existing_week_idx]['keyChanges']
+        before_count = len(existing_kcs)
+
+        # Combine and deduplicate
+        combined = existing_kcs + key_changes
+        deduplicated = deduplicate_key_changes(combined)
+
+        main_data['weeklySummaries'][existing_week_idx]['keyChanges'] = deduplicated
+        after_count = len(deduplicated)
+
+        new_added = after_count - before_count
+        total_duplicates = before_count + len(key_changes) - after_count
+
+        if new_added > 0:
+            print(f"  ✓ Added {new_added} new keyChange(s)")
+        if total_duplicates > 0:
+            duplicates_from_existing = before_count - len(deduplicate_key_changes(existing_kcs))
+            duplicates_from_incoming = total_duplicates - duplicates_from_existing
+            if duplicates_from_existing > 0:
+                print(f"  ⚠ Cleaned {duplicates_from_existing} duplicate(s) from existing week")
+            if duplicates_from_incoming > 0:
+                print(f"  ⚠ Skipped {duplicates_from_incoming} duplicate(s) from incoming findings")
+        print(f"  ✓ Week now has {after_count} keyChange(s)")
+
         main_data['weeklySummaries'][existing_week_idx]['trends'].extend(trends)
     else:
         # Create new week entry

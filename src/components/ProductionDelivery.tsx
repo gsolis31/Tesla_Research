@@ -7,6 +7,19 @@ interface Props {
   data: ProductionDeliveryCategory
 }
 
+// Helper to extract number from production field (can be number, object, or null)
+function getProductionNumber(production: number | { total: number } | null): number {
+  if (production === null) return 0
+  if (typeof production === 'number') return production
+  return production.total
+}
+
+// Helper to extract number from delivery/deliveries field
+function getDeliveryNumber(q: QuarterlyData): number {
+  if (q.deliveries) return q.deliveries.total
+  return q.delivery ?? 0
+}
+
 function ProductionDelivery({ data }: Props) {
   // Filter state
   const [yearFilter, setYearFilter] = useState<string>('all')
@@ -87,8 +100,8 @@ function ProductionDelivery({ data }: Props) {
 
     Object.entries(grouped).forEach(([year, quarters]) => {
       if (quarters.length > 0) {
-        const totalProd = quarters.reduce((sum, q) => sum + (q.production || 0), 0)
-        const totalDel = quarters.reduce((sum, q) => sum + q.delivery, 0)
+        const totalProd = quarters.reduce((sum, q) => sum + getProductionNumber(q.production), 0)
+        const totalDel = quarters.reduce((sum, q) => sum + getDeliveryNumber(q), 0)
 
         // Create label showing which quarters are included
         const quarterLabels = Array.from(selectedQuarters).sort().join('+')
@@ -113,7 +126,7 @@ function ProductionDelivery({ data }: Props) {
     if (showProduction) {
       datasets.push({
         label: 'Production',
-        data: displayData.map((q) => q.production),
+        data: displayData.map((q) => getProductionNumber(q.production)),
         backgroundColor: 'rgba(59, 130, 246, 0.2)',
         borderColor: '#3b82f6',
         borderWidth: 2,
@@ -124,7 +137,7 @@ function ProductionDelivery({ data }: Props) {
     if (showDeliveries) {
       datasets.push({
         label: 'Deliveries',
-        data: displayData.map((q) => q.delivery),
+        data: displayData.map((q) => getDeliveryNumber(q)),
         backgroundColor: 'rgba(34, 197, 94, 0.2)',
         borderColor: '#22c55e',
         borderWidth: 2,
@@ -391,11 +404,11 @@ function ProductionDelivery({ data }: Props) {
                       {q.production?.toLocaleString() || '-'}
                     </td>
                     <td className="p-3 text-right text-green-400">
-                      {q.delivery.toLocaleString()}
+                      {getDeliveryNumber(q).toLocaleString()}
                     </td>
                     <td className="p-3 text-right text-gray-400">
                       {q.production
-                        ? (q.delivery - q.production).toLocaleString()
+                        ? (getDeliveryNumber(q) - getProductionNumber(q.production)).toLocaleString()
                         : '-'}
                     </td>
                   </tr>

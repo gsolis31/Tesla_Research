@@ -234,7 +234,7 @@ export function validateDataInvariants(data: TeslaData): string[] {
 
   // Check robotaxi breakdown consistency
   const cities = data.metrics.robotaxiCities
-  const totalActiveVehicles = cities.cities.reduce((sum, city) => sum + city.activeVehicles, 0)
+  const totalActiveVehicles = cities.cities.reduce((sum, city) => sum + (city.activeVehicles ?? 0), 0)
   if (totalActiveVehicles !== cities.summary.totalActiveVehicles) {
     errors.push(`RobotaxiCities summary mismatch: sum of city vehicles (${totalActiveVehicles}) != summary total (${cities.summary.totalActiveVehicles})`)
   }
