@@ -4829,8 +4829,8 @@
       "title": "Vehicle Production & Delivery",
       "latestUpdate": "2026-07-17",
       "criticalNews": "Post-Q2 delivery beat hangover week: no new production/delivery print. Street consensus for July 22 earnings embeds thin 5.4% op margin and -$3.25B FCF despite 480k deliveries. Full-year volume still only ~1.73M (~5% growth). CA rebate and Latvia/Uruguay entries are incremental demand/footprint positives with limited near-term volume impact.",
-      "totalProduction": "10,211,638",
-      "totalDeliveries": "10,144,200",
+      "totalProduction": "9,759,880",
+      "totalDeliveries": "9,664,074",
       "quarterlyData": [
         {
           "quarter": "Q1-15",
@@ -5059,11 +5059,6 @@
         },
         {
           "quarter": "Q2-26",
-          "production": 451758,
-          "delivery": 480126
-        },
-        {
-          "quarter": "Q2 2026",
           "production": {
             "total": 451758,
             "model3Y": 442936,

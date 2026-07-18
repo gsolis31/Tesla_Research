@@ -266,40 +266,64 @@ def merge_metrics(main_data: dict, findings: dict) -> dict:
     return main_data
 
 
+def _normalize_quarter_key(qstr: str) -> str:
+    """Q2 2026 / Q2-2026 / Q2-26 → Q2-26 so we never double-count the same quarter."""
+    s = str(qstr).strip().replace(' ', '-')
+    parts = s.split('-')
+    if len(parts) == 2 and parts[0].startswith('Q') and len(parts[1]) == 4 and parts[1].isdigit():
+        return f"{parts[0]}-{parts[1][2:]}"
+    return s
+
+
+def _quarter_number(value) -> int:
+    if value is None:
+        return 0
+    if isinstance(value, dict):
+        return int(value.get('total') or 0)
+    return int(value or 0)
+
+
+def _recalculate_pd_totals(main_data: dict) -> None:
+    pd = main_data['categories']['productionDelivery']
+    total_production = sum(_quarter_number(q.get('production')) for q in pd['quarterlyData'])
+    total_deliveries = sum(
+        _quarter_number(q.get('deliveries') if q.get('deliveries') is not None else q.get('delivery'))
+        for q in pd['quarterlyData']
+    )
+    pd['totalProduction'] = f"{total_production:,}"
+    pd['totalDeliveries'] = f"{total_deliveries:,}"
+    print(f"✓ Recalculated P&D totals: {total_production:,} production, {total_deliveries:,} deliveries")
+
+
 def merge_quarterly_data(main_data: dict, findings: dict) -> dict:
     """
-    Merge quarterly production & delivery data (append-only, no duplicates)
+    Merge quarterly production & delivery data (append-only, no duplicates).
+    Normalizes quarter labels so "Q2 2026" and "Q2-26" cannot both be stored.
     """
     new_quarters = findings['findings'].get('quarterlyData', [])
     if not new_quarters:
         return main_data
 
-    # Get existing quarters
-    existing_quarters = {q['quarter'] for q in main_data['categories']['productionDelivery']['quarterlyData']}
+    existing = {
+        _normalize_quarter_key(q['quarter']): q
+        for q in main_data['categories']['productionDelivery']['quarterlyData']
+    }
 
-    # Add new quarters
     added = 0
     for quarter_data in new_quarters:
-        if quarter_data['quarter'] not in existing_quarters:
-            main_data['categories']['productionDelivery']['quarterlyData'].append(quarter_data)
+        key = _normalize_quarter_key(quarter_data['quarter'])
+        if key not in existing:
+            entry = dict(quarter_data)
+            entry['quarter'] = key
+            main_data['categories']['productionDelivery']['quarterlyData'].append(entry)
+            existing[key] = entry
             added += 1
+        else:
+            print(f"  ⚠ Skipped duplicate quarter {quarter_data.get('quarter')} (key {key})")
 
     if added > 0:
         print(f"✓ Added {added} new quarterly data entries")
-
-        # Recalculate totals (handle both old format and new format with breakdown)
-        def get_number(value):
-            if isinstance(value, dict):
-                return value.get('total', 0)
-            return value or 0
-
-        total_production = sum(get_number(q.get('production')) for q in main_data['categories']['productionDelivery']['quarterlyData'])
-        total_deliveries = sum(get_number(q.get('delivery') or q.get('deliveries')) for q in main_data['categories']['productionDelivery']['quarterlyData'])
-
-        main_data['categories']['productionDelivery']['totalProduction'] = f"{total_production:,}"
-        main_data['categories']['productionDelivery']['totalDeliveries'] = f"{total_deliveries:,}"
-
-        print(f"✓ Recalculated totals: {total_production:,} production, {total_deliveries:,} deliveries")
+        _recalculate_pd_totals(main_data)
 
     return main_data
 

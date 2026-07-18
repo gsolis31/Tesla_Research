@@ -209,6 +209,82 @@ def validate_data_invariants(data: dict) -> Tuple[List[str], List[Tuple[str, str
                     f"(count={point.get('count')}) — use robotaxiRegistered instead"
                 )
 
+    # Production & delivery totals must match quarterly sum; catch comma-format / duplicates
+    pd = data.get('categories', {}).get('productionDelivery')
+    if pd and isinstance(pd.get('quarterlyData'), list):
+        def _prod(p):
+            if p is None:
+                return 0
+            if isinstance(p, dict):
+                return int(p.get('total') or 0)
+            return int(p or 0)
+
+        def _deliv(q):
+            if isinstance(q.get('deliveries'), dict):
+                return int(q['deliveries'].get('total') or 0)
+            return int(q.get('delivery') or 0)
+
+        def _norm_quarter(qstr: str) -> str:
+            s = str(qstr).strip().replace(' ', '-')
+            parts = s.split('-')
+            if len(parts) == 2 and parts[0].startswith('Q') and len(parts[1]) == 4 and parts[1].isdigit():
+                return f"{parts[0]}-{parts[1][2:]}"
+            return s
+
+        quarters = pd['quarterlyData']
+        seen_keys = {}
+        for i, q in enumerate(quarters):
+            key = _norm_quarter(q.get('quarter', ''))
+            if key in seen_keys:
+                errors.append(
+                    f"productionDelivery duplicate quarter key '{key}' "
+                    f"(rows {seen_keys[key]} and {i}: '{quarters[seen_keys[key]].get('quarter')}' vs '{q.get('quarter')}')"
+                )
+            else:
+                seen_keys[key] = i
+
+        sum_prod = sum(_prod(q.get('production')) for q in quarters)
+        sum_del = sum(_deliv(q) for q in quarters)
+
+        def _parse_total(val) -> int:
+            if val is None:
+                return 0
+            if isinstance(val, (int, float)):
+                return int(val)
+            # Comma-formatted strings: "10,211,638" — naive parseInt would yield 10 in JS
+            return int(str(val).replace(',', '').strip() or 0)
+
+        stored_prod = _parse_total(pd.get('totalProduction'))
+        stored_del = _parse_total(pd.get('totalDeliveries'))
+
+        # Catch the classic JS bug: total stored with commas but UI used parseInt
+        for label, raw in [('totalProduction', pd.get('totalProduction')),
+                           ('totalDeliveries', pd.get('totalDeliveries'))]:
+            if isinstance(raw, str) and ',' in raw:
+                naive = int(raw.split(',')[0]) if raw.split(',')[0].isdigit() else None
+                if naive is not None and naive < 1000 and _parse_total(raw) >= 1000:
+                    # Informational only if we also check sum match — still warn that string is comma-formatted
+                    # (UI must strip commas). Error only if sum mismatch below.
+                    pass
+
+        if sum_prod > 0 and abs(stored_prod - sum_prod) > 1:
+            errors.append(
+                f"productionDelivery.totalProduction ({pd.get('totalProduction')}) != "
+                f"sum of quarterly production ({sum_prod:,})"
+            )
+        if sum_del > 0 and abs(stored_del - sum_del) > 1:
+            errors.append(
+                f"productionDelivery.totalDeliveries ({pd.get('totalDeliveries')}) != "
+                f"sum of quarterly deliveries ({sum_del:,})"
+            )
+
+        # Totals under 1000 when we have many quarters of vehicle data is always wrong
+        if len(quarters) >= 4 and (stored_prod < 1000 or stored_del < 1000):
+            errors.append(
+                f"productionDelivery all-time totals look impossibly small "
+                f"(prod={stored_prod}, del={stored_del}) for {len(quarters)} quarters"
+            )
+
     # Validate keyChange categories match known categories
     # These are the canonical category names (full versions)
     canonical_category_names = {

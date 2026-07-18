@@ -8,16 +8,24 @@ interface Props {
 }
 
 // Helper to extract number from production field (can be number, object, or null)
-function getProductionNumber(production: number | { total: number } | null): number {
-  if (production === null) return 0
+function getProductionNumber(production: number | { total: number } | null | undefined): number {
+  if (production === null || production === undefined) return 0
   if (typeof production === 'number') return production
-  return production.total
+  return production.total ?? 0
 }
 
 // Helper to extract number from delivery/deliveries field
 function getDeliveryNumber(q: QuarterlyData): number {
   if (q.deliveries) return q.deliveries.total
   return q.delivery ?? 0
+}
+
+/** parseInt("10,211,638") === 10 — never parse totals without stripping commas */
+function parseFormattedInt(value: string | number | undefined | null): number {
+  if (value === null || value === undefined) return 0
+  if (typeof value === 'number') return value
+  const n = parseInt(String(value).replace(/,/g, ''), 10)
+  return Number.isFinite(n) ? n : 0
 }
 
 function ProductionDelivery({ data }: Props) {
@@ -33,6 +41,20 @@ function ProductionDelivery({ data }: Props) {
 
   // Full quarterly table is long — collapsed by default
   const [quarterlyTableOpen, setQuarterlyTableOpen] = useState<boolean>(false)
+
+  // All-time totals: prefer sum of quarterly rows (source of truth), not parseInt on "10,211,638"
+  const allTimeTotals = useMemo(() => {
+    const production = data.quarterlyData.reduce(
+      (sum, q) => sum + getProductionNumber(q.production),
+      0
+    )
+    const deliveries = data.quarterlyData.reduce((sum, q) => sum + getDeliveryNumber(q), 0)
+    // Fallback to stored strings only if quarterly sum is empty
+    return {
+      production: production > 0 ? production : parseFormattedInt(data.totalProduction),
+      deliveries: deliveries > 0 ? deliveries : parseFormattedInt(data.totalDeliveries),
+    }
+  }, [data.quarterlyData, data.totalProduction, data.totalDeliveries])
 
   // Get unique years from data
   const years = useMemo(() => {
@@ -366,21 +388,21 @@ function ProductionDelivery({ data }: Props) {
         <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
           <div className="text-gray-400 text-sm mb-1">Total Production (All Time)</div>
           <div className="text-2xl font-bold text-blue-400">
-            {parseInt(data.totalProduction).toLocaleString()}
+            {allTimeTotals.production.toLocaleString()}
           </div>
         </div>
         <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
           <div className="text-gray-400 text-sm mb-1">Total Deliveries (All Time)</div>
           <div className="text-2xl font-bold text-green-400">
-            {parseInt(data.totalDeliveries).toLocaleString()}
+            {allTimeTotals.deliveries.toLocaleString()}
           </div>
         </div>
       </div>
 
-      {/* Chart */}
+      {/* Chart — taller than metric sparklines; many quarters need space */}
       <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
         <h3 className="text-lg font-bold mb-4">Quarterly Production & Deliveries</h3>
-        <div className="h-80 md:h-96">
+        <div className="h-[28rem] md:h-[36rem]">
           <Line
             data={chartData}
             options={{ ...chartOptions, maintainAspectRatio: false }}
