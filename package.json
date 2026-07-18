@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "python3 -m pytest",
+    "test:merge": "python3 -m pytest tests/test_merge_findings.py"
   },
   "dependencies": {
     "chart.js": "^4.4.1",

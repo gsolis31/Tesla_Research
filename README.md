@@ -191,6 +191,10 @@ python3 scripts/validate_data.py
 # Zod schema (same as CI)
 npx tsx scripts/validate-zod-schema.ts
 
+# Unit tests (merge logic regressions — no network)
+python3 -m pytest
+# or: npm test
+
 # Keep only current + previous year in main file
 python3 scripts/archive_old_data.py
 
