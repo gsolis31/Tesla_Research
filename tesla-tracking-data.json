@@ -4448,9 +4448,8 @@
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "AI5 chip samples and small batch production expected 2026, high volume 2027. AI6 chip $16.5B Samsung deal (July 2025) for Taylor, Texas fab, targeting mid-2028 mass production.",
+      "criticalNews": "Samsung completed foundry-side AI5 tape-out for Taylor 2nm production (July 13). TSMC AI5 version already ahead. Volume production still H2 2027; vehicle deployment 2028+.",
       "keyPoints": [
-        "Unconfirmed reports: AI6.5 may move from TSMC to Intel under Trump administration pressure (not officially confirmed)",
         "Foundry switch would require AI6.5 chip redesign for Intel's different 2nm process technology",
         "AI6.5 (optimized version) originally planned for TSMC Arizona on 2nm node following AI6",
         "AI5 chip taped out on April 15, 2026 - final design sent to foundry for fabrication",
@@ -4464,7 +4463,8 @@
         "AI6 mass production delayed to Q4 2027 due to earlier Samsung 2nm yield challenges",
         "Tesla planning to double AI6 orders to 40,000 wafers/month (from 16,000)",
         "Terafab: $25B joint chip factory announced (Tesla/SpaceX/xAI) in Austin",
-        "Dual-foundry strategy: AI5 split between Samsung and TSMC; AI6 entirely at Samsung Taylor"
+        "Dual-foundry strategy: AI5 split between Samsung and TSMC; AI6 entirely at Samsung Taylor",
+        "Next milestone: Taylor fab initial operations late 2026; AI5 engineering samples/qualification from Taylor line; AI6 tape-out targeted December 2026"
       ],
       "timeline": [
         {
@@ -4516,9 +4516,8 @@
     "cybercab": {
       "title": "Cybercab Production",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
+      "criticalNews": "Texas registration pipeline jumped ~50% in one day to 175 Model Y robotaxis, but commercial service remains Model Y\u2013based, Cybercab is still not in paid unsupervised fleets, Miami ops show tiny geofence and reliability quirks, and accessibility is a lobbying claim without a product date.",
       "keyPoints": [
-        "2,053 total trips recorded covering 7,271 miles (avg 3.54 miles per trip)",
         "H1 2026 expansion plan: 7 cities including Phoenix, Miami, Orlando, Tampa, Las Vegas",
         "60 Cybercab units spotted at Giga Texas on April 13-17, 2026 (up from 50+ earlier)",
         "14 units spotted on April 17 without steering wheels - regulatory-ready production models",
@@ -4532,7 +4531,8 @@
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
         "Tesla app 4.58.5 (July 2026): live 'Self-Driving' status for owners \u2014 infrastructure for owner-operated robotaxi fleet management.",
-        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles"
+        "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
+        "Next milestone: Q2 earnings call July 22 (shareholders pressing missed robotaxi city guidance); conversion of newly registered Model Ys into active unsupervised rides; any public Cybercab commercial launch (still framed late-2026/early-2027); wheelchair-accessible AV product definition beyond policy statements."
       ],
       "timeline": [
         {
@@ -4604,9 +4604,8 @@
     "fsd": {
       "title": "FSD Country Approvals",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
+      "criticalNews": "Europe: FSD Supervised live in 5 small markets (NL/LT/EE/DK/BE) with 50M km driven; Italy application under review; Germany KBA test-vehicle trials expected to start. US: NTSB prelim clears software in Katy crash (driver override) but NHTSA EA26002 on 3.2M vehicles and Special Crash Investigation remain open. No new unsupervised FSD regulatory approvals this week. Tesla summer-2026 EU-wide mutual recognition still not delivered for major markets.",
       "keyPoints": [
-        "Subscriptions launched at \u20ac99/month in Netherlands",
         "RDW issued formal type approval under UN Regulation 171 (Level 2 vehicle automation)",
         "Belgium expected to be fastest EU follower - authorities signaled recognition within ~30 days (mid-May 2026)",
         "Germany (KBA) expected to move in late spring: May-June 2026, 4-8 weeks post-April 10",
@@ -4620,7 +4619,8 @@
         "Approved under Article 39 (EU mutual recognition mechanism)",
         "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia",
         "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia",
-        "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia"
+        "June 9: Denmark approves FSD Supervised, becoming fourth European country after Netherlands, Lithuania, Estonia",
+        "Next milestone: Italy approval decision; Germany KBA independent trial results / approval path; any EU mutual-recognition wave into DE/FR/ES; NHTSA EA26002 outcome (recall vs closure); unsupervised FSD regulatory filings in US states"
       ],
       "activeCountries": [
         "United States",
@@ -4754,9 +4754,8 @@
     "optimus": {
       "title": "Optimus Production",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Optimus production confirmed for late July or August 2026 at Fremont. Initial output will be slow due to 10,000 unique parts. Giga Texas second-gen facility targets summer 2027 start.",
+      "criticalNews": "Fremont S/X line teardown complete and leadership projecting confidence, but full-scale Optimus production has still not been confirmed as started as the late-July/August window opens. Shareholders are demanding ramp status, factory deployment plans, and 2027 external sales numbers ahead of the July 22 earnings call. Competitors (Agility Digit, Xpeng Iron) are commercializing or targeting commercial timelines while Tesla remains pre-revenue on Optimus.",
       "keyPoints": [
-        "Production targeted before end of 2026 with eventual capacity of 1 million robots/year at Shanghai",
         "Over 1,000 Gen 3 units already deployed across Tesla's own manufacturing facilities",
         "Shanghai Gigafactory delivered 851,000 EVs in 2025 (>50% of Tesla's total global deliveries)",
         "Multi-factory strategy emerging: Fremont (1M/year) + Shanghai (1M/year) + Giga Texas (10M/year by 2027)",
@@ -4770,7 +4769,8 @@
         "2026 production target: 50,000-100,000 units",
         "Gen 3: 22 degrees of freedom, 50 actuators in hands",
         "Consumer sales targeted for end of 2027 (pricing below $20K requires millions of units)",
-        "Tesla Manufacturing video (July 10, 2026): original Model S/X line fully torn down in 46 days to free floor space for Optimus (1M units/year target capacity)."
+        "Tesla Manufacturing video (July 10, 2026): original Model S/X line fully torn down in 46 days to free floor space for Optimus (1M units/year target capacity).",
+        "Next milestone: Late July / August 2026 full-scale Fremont production start; Q2 2026 earnings call July 22 for any official ramp/sales guidance"
       ],
       "timeline": [
         {
@@ -4844,7 +4844,7 @@
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
+      "criticalNews": "Post-Q2 delivery beat hangover week: no new production/delivery print. Street consensus for July 22 earnings embeds thin 5.4% op margin and -$3.25B FCF despite 480k deliveries. Full-year volume still only ~1.73M (~5% growth). CA rebate and Latvia/Uruguay entries are incremental demand/footprint positives with limited near-term volume impact.",
       "totalProduction": "10,211,638",
       "totalDeliveries": "10,144,200",
       "quarterlyData": [
@@ -5142,7 +5142,7 @@
     "terafab": {
       "title": "Terafab In-House Chip Manufacturing",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Terafab joint $25B Tesla-SpaceX chip fab announced March 2026 in Austin. First phase $55B, could scale to $119B. July 7, 2026 'cool news' teased by Tesla VP about Giga Texas scaling.",
+      "criticalNews": "Political/tax track advanced but not closed: Grimes County school boards approved eight SpaceX Terafab JETI deals (5-2 each) on July 14; Governor Abbott\u2019s required decision was still unannounced after the July 15 deadline as of July 16 reporting. Separately, Samsung disclosed (via deleted LinkedIn post) AI5 process tape-out for 2nm at Taylor, with volume still mid/H2 2027\u2014not a Terafab self-fab milestone.",
       "keyPoints": [
         "Groundbreaking April 22, 2026 at Giga Texas North Campus",
         "Announced by Elon Musk March 21, 2026",
@@ -5155,7 +5155,8 @@
         "Part of broader 1+ terawatt AI compute capacity goal",
         "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B",
         "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B",
-        "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B"
+        "March 2026: Terafab announced - $25B Tesla-SpaceX chip fabrication facility in Austin, first phase $55B",
+        "Next milestone: Public confirmation of Governor Abbott\u2019s JETI yes/no and formal three-party signing; any Phase 1 construction permits/groundbreaking in Grimes County before year-end 2026; Samsung Taylor engineering samples / qualification progress toward 2027 volume AI5."
       ],
       "timeline": [
         {
@@ -5184,7 +5185,7 @@
     "battery4680": {
       "title": "4680 Battery Cell Production",
       "latestUpdate": "2026-07-17",
-      "criticalNews": "Giga Berlin announced $250M investment (May 12, 2026) to scale annual 4680 production from 8 GWh to 18 GWh. 100M cell milestone surpassed September 2025. Dry-electrode process confirmed for anode and cathode.",
+      "criticalNews": "Giga Berlin 4680 line is in early production (from May 12, 2026) with PR video on July 16; expanded 18 GWh full-scale still H1 2027. Texas dry-electrode 4680 for some Model Y packs already previously confirmed. No new yield or actual GWh metrics this week.",
       "keyPoints": [
         "Annual capacity: 15-20 GWh/year from Giga Texas alone",
         "Yield rate: >90% stable yield for anode and cathode",
@@ -5196,7 +5197,8 @@
         "Expansion: Additional lines planned for Giga Nevada",
         "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually",
         "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually",
-        "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually"
+        "May 12, 2026: Giga Berlin announces $250M investment to scale 4680 production from 8 GWh to 18 GWh annually",
+        "Next milestone: Cell Giga Challenge application close July 24 / program start ~Aug 20; potential Berlin-built Model Y with local 4680 late Q3 2026 (unverified); full-scale Berlin expansion H1 2027"
       ],
       "timeline": [
         {
@@ -5229,6 +5231,37 @@
           "Giga Nevada (expansion)"
         ]
       }
+    },
+    "fsdv15": {
+      "title": "FSD v15 Software",
+      "latestUpdate": "2026-07-17",
+      "criticalNews": "Production FSD remains on Supervised v14.3.5 (2026.20.6.6, HW4) with incremental RL/vision/compiler polish. No public v15 builds, betas, or timeline updates this week. HW4 reportedly runs distilled Cybercab models (unconfirmed exclusive). HW3 still capped at v14 Lite (coast-to-coast demo claimed). v15 end-2026/early-2027 target and robotaxi-scale blocker unchanged.",
+      "keyPoints": [
+        "Target release: Q4 2026 / Q1 2027 (status: In development)",
+        "Robotaxi fleet scaling blocked until v15 release",
+        "Hardware: HW4 (no upgrade required)",
+        "Complete neural network architecture overhaul",
+        "10x parameter increase (originally planned for v14, pushed to v15)",
+        "Orders of magnitude safety improvement target",
+        "Next milestone: FSD v15 (10B-param architectural overhaul) targeted late-2026/early-2027; Grok\u2192FSD planning layer targeted September 2026; expand reasoning beyond destination handling and pothole avoidance listed as upcoming on v14.x",
+        "No v15 public progress this week \u2014 still ~5\u20138 months from stated target with history of multi-year autonomy delays",
+        "v14.3.5 is still Supervised L2; large-scale robotaxi expansion remains blocked until v15",
+        "Early v14.3.5 parking regressions reported by multiple testers undermine 'polish' narrative"
+      ],
+      "timeline": [
+        {
+          "date": "2026-04-22",
+          "event": "Q1 earnings: v15 delayed to late-2026/early-2027; robotaxi scale blocked until release"
+        },
+        {
+          "date": "2026-07-12",
+          "event": "Production FSD still on supervised v14.x; no public v15 builds"
+        },
+        {
+          "date": "2026-07-17",
+          "event": "Production FSD remains on Supervised v14.3.5 (2026.20.6.6, HW4) with incremental RL/vision/compiler polish. No public v15 builds, betas, or timeline updates this week. HW4 reportedly runs distilled Cy"
+        }
+      ]
     }
   }
 }

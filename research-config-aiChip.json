@@ -1,98 +1,43 @@
 {
   "categoryKey": "aiChip",
-  "dateFrom": "2026-07-12",
+  "dateFrom": "2026-07-17",
   "dateTo": "2026-07-17",
   "weekOf": "2026-07-13",
   "hotContext": {
-    "criticalNews": "AI5 chip samples and small batch production expected 2026, high volume 2027. AI6 chip $16.5B Samsung deal (July 2025) for Taylor, Texas fab, targeting mid-2028 mass production.",
+    "criticalNews": "Samsung completed foundry-side AI5 tape-out for Taylor 2nm production (July 13). TSMC AI5 version already ahead. Volume production still H2 2027; vehicle deployment 2028+.",
     "recentKeyChanges": [
       {
-        "title": "AI5 Chip Tape-Out Complete but Production Significantly Delayed",
-        "description": "Tesla completed AI5 chip tape-out on April 15, 2026, but high-volume production has been delayed to mid-to-late 2027, representing a near 2-year delay from original timelines. While initial samples and small volumes are expected in late 2026, full production requires several hundred thousand completed boards. This means meaningful deployment in vehicles will not occur until 2028 at earliest. Cybercab robotaxi will launch on AI4 hardware instead of AI5.",
-        "date": "2026-07-08",
+        "title": "Samsung Completes AI5 Foundry Tape-Out for Taylor 2nm; Mass Production Still 2027",
+        "description": "A Samsung Foundry principal engineer (James Kim) disclosed on LinkedIn that the Tesla-Samsung AI5 chip has reached foundry tape-out and is scheduled for manufacturing at Samsung's Taylor, Texas fab on Samsung's 2nm process. Yonhap, ET News, TrendForce, Tom's Hardware, and Electrek all covered the disclosure (the LinkedIn post was later deleted). This is a foundry-side tape-out \u2014 distinct from Tesla's April 2026 design tape-out that Musk announced \u2014 and is the first concrete Samsung production timeline public detail for AI5. Key new details: (1) AI5 will run on 2nm at Taylor, not a more mature node as previously assumed (2nm was expected for AI6); (2) AI5 volume is split between Samsung and TSMC, with TSMC's AI5 version having taped out months earlier; (3) Samsung will fully handle AI6 while TSMC handles AI6.5; (4) Taylor targets initial operations late 2026 and volume production in H2 2027. Critical reality check: tape-out is not production. Musk has said Tesla needs several hundred thousand completed AI5 boards before vehicle line switchover \u2014 still expected mid-to-late 2027. AI5 remains nearly two years behind original timelines, Cybercab launches on AI4, and Samsung Foundry continues operating at a loss (~KRW 600B estimated in non-memory for Q2).",
+        "date": "2026-07-13",
         "category": "AI Chip Production",
-        "status": "negative",
+        "status": "neutral",
         "sentiment": {
           "headline": "positive",
-          "reality": "negative",
+          "reality": "neutral",
           "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "AI5 tape-out completed in April 2026",
-            "First silicon samples demonstrated by Musk in May 2026",
-            "40x performance improvement over AI4 confirmed",
-            "Dual-source manufacturing with TSMC and Samsung secured"
+            "Samsung foundry-side AI5 tape-out completed \u2014 design locked for Taylor 2nm manufacturing",
+            "AI5 confirmed dual-sourced: Samsung (Taylor 2nm) + TSMC (version taped out months earlier)",
+            "Putting AI5 on 2nm (not just AI6) signals Samsung 2nm yield may have crossed viability threshold (~60% assumed)",
+            "Taylor fab equipment move-in since April 2026; initial ops targeted late 2026, volume H2 2027",
+            "AI6 exclusive to Samsung under $16.5B deal; AI6.5 assigned to TSMC \u2014 clearer supply allocation",
+            "Korean engineering samples (KR 2613 marking) already demonstrated by Musk in May 2026"
           ],
           "negative_signals": [
-            "Mass production delayed to mid-2027, nearly 2 years behind original schedule",
-            "Cybercab will launch with AI4 hardware instead of next-gen AI5",
-            "Vehicles won't receive AI5 until 2028 at earliest",
-            "AI5 now pivoting to Optimus and data centers instead of primary vehicle deployment",
-            "Extended ramp timeline creates competitive disadvantage vs NVIDIA"
+            "Tape-out is NOT production \u2014 engineering samples and qualification still required before mass production",
+            "High-volume AI5 still mid-to-late 2027; vehicles won't get meaningful AI5 until 2028 at earliest",
+            "AI5 nearly 2 years behind original schedule; Cybercab still launching on outdated AI4 hardware",
+            "TSMC AI5 version taped out months ahead of Samsung \u2014 Samsung remains the lagging foundry partner",
+            "Samsung Foundry still loss-making (~KRW 600B non-memory operating loss estimated Q2 2026); recovery depends on unproven 2nm yields at Taylor",
+            "No confirmed yield data published; 2nm process risk remains the gating item for both AI5 volume and AI6 (already slipped to mid-2028)",
+            "LinkedIn disclosure was unofficial and deleted \u2014 not a formal Samsung or Tesla production announcement"
           ]
         },
-        "source": "https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/",
+        "source": "https://www.yna.co.kr/view/AKR20260713062900003",
         "impact": "high",
-        "_sourceCategory": "aiChip"
-      },
-      {
-        "title": "Samsung $16.5B AI6 Chip Deal Secured but Timeline Slipping to 2028",
-        "description": "Samsung signed an $8-year, $16.5 billion deal with Tesla in July 2025 to manufacture the AI6 chip at its Taylor, Texas facility using 2nm process. Equipment installation began April 24, 2026. However, AI6 tape-out is targeted for December 2026 with mass production pushed to mid-2028. This represents a 6-month delay from earlier 2027 estimates, indicating production challenges at the Taylor fab.",
-        "date": "2026-07-08",
-        "category": "AI Chip Production",
-        "status": "negative",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "negative",
-          "confidence": "high"
-        },
-        "evidence": {
-          "positive_signals": [
-            "$16.5B deal with Samsung secures long-term supply",
-            "Equipment move-in ceremony at Taylor fab completed April 24, 2026",
-            "Second 2nm-capable fab in US bolsters production capacity",
-            "Texas location provides supply chain resilience"
-          ],
-          "negative_signals": [
-            "AI6 mass production delayed to 2028, not 2027",
-            "Taylor fab previously had empty cleanrooms 18 months ago despite $44B investment",
-            "AI6 tape-out not until December 2026",
-            "Continued 2nm process delays at Samsung Taiwan impacting schedule",
-            "No customer will see AI6 until 2028+ timeframe"
-          ]
-        },
-        "source": "https://www.datacenterdynamics.com/en/news/samsung-electronics-signs-165bn-deal-with-tesla-to-manufacture-ai6-chips-at-taylor-texas-fab/",
-        "impact": "high",
-        "_sourceCategory": "aiChip"
-      },
-      {
-        "title": "Dojo Supercomputer Project Shutdown Then Restarted; Strategic Uncertainty",
-        "description": "Tesla discontinued the Dojo supercomputer team in August 2025, with Musk stating 'Dojo2 was an evolutionary dead end' and 'all technical paths converged on AI6.' However, in January 2026, Musk restarted the project as 'Dojo3' to build an all-in-house supercomputer using AI5 chips. This reversal indicates shifting strategic priorities and suggests continued uncertainty about AI chip architectural direction.",
-        "date": "2026-07-08",
-        "category": "AI Chip Production",
-        "status": "negative",
-        "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high"
-        },
-        "evidence": {
-          "positive_signals": [
-            "Dojo3 restart in January 2026 shows continued AI infrastructure commitment",
-            "All-in-house design eliminates NVIDIA dependency",
-            "AI5 design progress enabled reconsideration of supercomputer architecture"
-          ],
-          "negative_signals": [
-            "Shutdown of Dojo in August 2025 represents $1B+ sunk cost waste",
-            "Flip-flop decision signals lack of strategic clarity on AI direction",
-            "Dojo2 characterized as 'evolutionary dead end' indicates bad technical planning",
-            "Personnel departures and team disruption from cancellation",
-            "Dojo3 timeline and feasibility remain unclear"
-          ]
-        },
-        "source": "https://techcrunch.com/2025/08/11/elon-musk-confirms-shutdown-of-tesla-dojo-an-evolutionary-dead-end/",
-        "impact": "medium",
         "_sourceCategory": "aiChip"
       }
     ]
@@ -114,5 +59,18 @@
     "2nm",
     "Dojo"
   ],
-  "metrics": []
+  "metrics": [],
+  "ownership": {
+    "owns": [
+      "AI5/AI6/AI4 chip design and foundry process tape-outs",
+      "Samsung/TSMC wafer deals, node (2nm), yields for Tesla inference chips",
+      "Dojo training-chip architecture and program status",
+      "Chip volume/sample timelines for vehicle AI computers"
+    ],
+    "doesNotOwn": [
+      "Terafab construction, tax deals, school boards, Abbott politics \u2192 terafab",
+      "Site selection / JETI abatements \u2192 terafab",
+      "FSD software versions \u2192 fsdv15"
+    ]
+  }
 }

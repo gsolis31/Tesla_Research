@@ -1,11 +1,100 @@
 {
   "categoryKey": "productionDelivery",
-  "dateFrom": "2026-07-12",
+  "dateFrom": "2026-07-17",
   "dateTo": "2026-07-17",
   "weekOf": "2026-07-13",
   "hotContext": {
-    "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
-    "recentKeyChanges": []
+    "criticalNews": "Post-Q2 delivery beat hangover week: no new production/delivery print. Street consensus for July 22 earnings embeds thin 5.4% op margin and -$3.25B FCF despite 480k deliveries. Full-year volume still only ~1.73M (~5% growth). CA rebate and Latvia/Uruguay entries are incremental demand/footprint positives with limited near-term volume impact.",
+    "recentKeyChanges": [
+      {
+        "title": "Tesla IR posts Q2 2026 earnings consensus: $27.6B revenue, 1.73M full-year deliveries, -$3.25B FCF",
+        "description": "Ahead of the July 22 earnings call, Tesla published company-compiled Wall Street consensus from 23 sell-side firms (Barclays, BofA, Goldman, Morgan Stanley, etc.). Street expects Q2 total revenue of $27.58B (auto $20.05B, energy $3.77B, services $3.76B), adjusted non-GAAP EPS $0.55 / GAAP EPS $0.36, gross margin 19.5%, and operating margin only 5.4%. CapEx is pegged at $6.7B with expected free cash flow of -$3.25B for the quarter. Full-year vehicle delivery consensus sits at ~1.73M units \u2014 roughly 5\u20136% growth vs ~1.64M in 2025. That is modest given the Q2 delivery beat (480,126 vs ~406k consensus already reported July 2). H1 deliveries (~838k combining Q1 358,023 + Q2 480,126) imply Tesla needs ~892k H2 deliveries to hit the 1.73M full-year print. Negative FCF and sub-6% operating margin undercut the 'strong auto quarter' narrative: volume beat inventory, not a structural margin or cash-flow re-acceleration.",
+        "date": "2026-07-17",
+        "category": "Vehicle Production & Delivery",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Q2 delivery beat already printed: 480,126 deliveries vs ~406k consensus (+18%)",
+            "Auto revenue expected at $20.05B of $27.58B total",
+            "Energy storage contribution expected at $3.77B, supporting diversified revenue",
+            "Full-year delivery consensus at 1.73M implies sequential H2 strength needed and assumed by Street"
+          ],
+          "negative_signals": [
+            "Street expects -$3.25B free cash flow for Q2 despite delivery beat",
+            "Operating margin consensus only 5.4% \u2014 thin for a supposed volume recovery quarter",
+            "Full-year 1.73M deliveries is only ~5\u20136% YoY growth vs 1.64M in 2025 \u2014 not a re-acceleration",
+            "Q2 production (451,758) trailed deliveries (480,126) by ~28k \u2014 beat was inventory drawdown, not production ramp",
+            "Model S/X sunset leaves 'Other' at just 12,364 deliveries / 8,822 produced \u2014 Cybertruck still immaterial",
+            "CapEx $6.7B expected \u2014 heavy spend with negative FCF before Cybercab/Optimus scale"
+          ]
+        },
+        "source": "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts/",
+        "impact": "high",
+        "_sourceCategory": "productionDelivery"
+      },
+      {
+        "title": "Jefferies raises TSLA PT to $400 (from $375) but keeps Hold after Q2 delivery beat",
+        "description": "Jefferies lifted Tesla's price target to $400 from $375 while maintaining a Hold rating, citing the Q2 automotive delivery surprise (480k vs ~400k Street). Analysts also flagged Robotaxi expansion (Austin\u2192Houston/Dallas/Bay Area/Miami) and SpaceX-merger speculation as catalysts \u2014 but warned Optimus and Robotaxi will take years to become meaningful P&L contributors and may carry initial losses. Critical read: a Hold after a >15% delivery beat signals the Street still does not trust sustained auto growth or near-term AI/robot monetization. Delivery strength is being treated as a one-quarter inventory/demand bounce, not a structural re-rating of the car business.",
+        "date": "2026-07-13",
+        "category": "Vehicle Production & Delivery",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "medium"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Price target raised $25 to $400 on Q2 delivery outperformance",
+            "Q2 deliveries sold through more inventory than produced \u2014 demand absorbed available stock",
+            "Robotaxi geographic footprint expanding (multi-city) as a longer-term narrative support"
+          ],
+          "negative_signals": [
+            "Hold rating retained \u2014 not an upgrade to Buy despite 15%+ delivery beat",
+            "Jefferies flags Optimus/Robotaxi profitability as multi-year and potentially loss-making initially",
+            "Merger-speculation risk: TSLA may trade as SpaceX proxy, disconnecting from auto fundamentals",
+            "Auto demand case still relies on post-$7,500 federal EV tax credit environment \u2014 structural headwind remains"
+          ]
+        },
+        "source": "https://www.teslarati.com/tesla-tsla-price-target-upgrade-heels-crazy-successful-auto-quarter/",
+        "impact": "medium",
+        "_sourceCategory": "productionDelivery"
+      },
+      {
+        "title": "California $270M MyFirstEV rebate starts; Model 3/Y qualify but Tesla disadvantaged vs CA-based rivals",
+        "description": "Gov. Newsom signed SB 168 creating a $270M point-of-sale EV rebate (MyFirstEV), split $135.5M state / $135.5M automaker-funded, to partially replace the expired $7,500 federal EV tax credit. First-time EV buyers get $3,500 off new BEVs with MSRP \u2264$50,000; used EVs \u2264$25,000 get $1,750. Tesla Model 3 RWD ($42,490), Model 3 LR ($47,490), and base Model Y ($44,990) all qualify. Model S/X/Cybertruck do not. Critical catch: California-based automakers (Rivian, Lucid) are carved out of the $50k price cap entirely \u2014 Tesla, headquartered in Texas since 2021, is not. Program goes live later this summer via CARB. Net: modest positive for base 3/Y CA demand, but structural disadvantage vs in-state competitors and only a partial patch for lost federal incentive in Tesla's largest US state market (~1/3 of US EV sales).",
+        "date": "2026-07-13",
+        "category": "Vehicle Production & Delivery",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "medium"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Point-of-sale $3,500 rebate on Model 3 and base Model Y improves CA affordability for first-time buyers",
+            "California is ~1/3 of US EV sales \u2014 any state incentive has non-trivial volume leverage",
+            "Replaces some of the demand hole left by expired $7,500 federal EV tax credit"
+          ],
+          "negative_signals": [
+            "Only $3,500 vs prior $7,500 federal credit \u2014 net incentive still much weaker than 2024\u20132025",
+            "Rivian/Lucid exempt from $50k MSRP cap as CA-based makers; Tesla is not \u2014 competitive disadvantage",
+            "Model S/X/Cybertruck excluded entirely; higher-ASP mix gets zero help",
+            "Program not live yet (later this summer); near-term Q3 delivery impact limited until CARB rules finalize",
+            "Funded partly by automakers \u2014 Tesla will share cost of its own demand subsidy"
+          ]
+        },
+        "source": "https://www.teslarati.com/tesla-makes-the-cut-on-californias-newest-ev-rebate-program/",
+        "impact": "medium",
+        "_sourceCategory": "productionDelivery"
+      }
+    ]
   },
   "categoryName": "Vehicle Production & Delivery",
   "priority": "critical",
@@ -29,5 +118,18 @@
   ],
   "metrics": [
     "quarterlyData"
-  ]
+  ],
+  "ownership": {
+    "owns": [
+      "Quarterly production and delivery numbers",
+      "IR earnings consensus, auto revenue/margin guidance tied to volume",
+      "New vehicle market entries (country sales launches)",
+      "Semi / vehicle product pilots as volume-adjacent auto news"
+    ],
+    "doesNotOwn": [
+      "Cybercab unit production \u2192 cybercab",
+      "4680 cell manufacturing \u2192 battery4680",
+      "Optimus unit production \u2192 optimus"
+    ]
+  }
 }

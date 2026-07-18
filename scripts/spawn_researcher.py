@@ -12,7 +12,20 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
-# Category configurations
+# Canonical display names used in keyChanges.category (for hot-context matching)
+CATEGORY_DISPLAY_NAMES = {
+    "cybercab": "Cybercab Production",
+    "fsd": "FSD Country Approvals",
+    "optimus": "Optimus Production",
+    "fsdv15": "FSD v15 Software",
+    "productionDelivery": "Vehicle Production & Delivery",
+    "aiChip": "AI Chip Production",
+    "battery4680": "4680 Battery Cell Production",
+    "terafab": "Terafab Manufacturing",
+    "jobPostings": "Job Postings",
+}
+
+# Category configurations with ownership boundaries (cuts cross-researcher dups)
 CATEGORIES = {
     "cybercab": {
         "categoryName": "Cybercab Production",
@@ -22,7 +35,21 @@ CATEGORIES = {
             "specialized": ["robotaxitracker.com"]
         },
         "keywords": ["Cybercab", "robotaxi", "fleet", "autonomous", "unsupervised"],
-        "metrics": ["cybercab", "robotaxiFleet"]
+        "metrics": ["cybercab", "robotaxiFleet"],
+        "ownership": {
+            "owns": [
+                "Cybercab vehicle production, staging, EPA/certification",
+                "Robotaxi fleet size, city launches, geofence, ops quality",
+                "Unsupervised ride service expansion (cities, vehicle counts)",
+                "Owner-operated robotaxi / app fleet-management features",
+            ],
+            "doesNotOwn": [
+                "Country FSD regulatory approvals → fsd",
+                "FSD software version releases (v14.x/v15) → fsdv15",
+                "NHTSA/NTSB crash investigations → fsd",
+                "Optimus factory/robotics → optimus",
+            ],
+        },
     },
     "fsd": {
         "categoryName": "FSD Country Approvals",
@@ -31,7 +58,21 @@ CATEGORIES = {
             "tier1": ["teslarati.com", "teslanorth.com", "teslaoracle.com"]
         },
         "keywords": ["FSD", "approval", "country", "Europe", "regulatory"],
-        "metrics": ["fsdApprovals"]
+        "metrics": ["fsdApprovals"],
+        "ownership": {
+            "owns": [
+                "Country/region regulatory approvals for FSD Supervised or unsupervised",
+                "EU homologation, mutual recognition, KBA/RDW/DMV decisions",
+                "NHTSA, NTSB, civil crash investigations and safety probes",
+                "Pending applications (e.g. Italy under review) as regulatory status",
+            ],
+            "doesNotOwn": [
+                "FSD software version OTA releases / changelogs → fsdv15",
+                "Cumulative FSD miles as training-data/software milestone → fsdv15",
+                "HW3/HW4 software capability ceilings → fsdv15",
+                "Robotaxi city ops / fleet counts → cybercab",
+            ],
+        },
     },
     "optimus": {
         "categoryName": "Optimus Production",
@@ -40,7 +81,19 @@ CATEGORIES = {
             "tier1": ["optimusk.blog", "teslarati.com", "teslanorth.com"]
         },
         "keywords": ["Optimus", "humanoid", "robot", "Fremont", "Giga Texas"],
-        "metrics": []
+        "metrics": [],
+        "ownership": {
+            "owns": [
+                "Optimus hardware design, production ramp, factory deployment",
+                "Internal vs external sales timeline for humanoid robots",
+                "Competitor humanoid context only when it directly contrasts Optimus",
+            ],
+            "doesNotOwn": [
+                "Optimus job posting counts → jobPostings",
+                "AI inference chips for robots → aiChip",
+                "Vehicle production/delivery → productionDelivery",
+            ],
+        },
     },
     "fsdv15": {
         "categoryName": "FSD v15 Software",
@@ -49,7 +102,21 @@ CATEGORIES = {
             "tier1": ["teslarati.com", "teslanorth.com", "notateslaapp.com"]
         },
         "keywords": ["FSD v15", "FSD 15", "supervised", "end-to-end"],
-        "metrics": []
+        "metrics": [],
+        "ownership": {
+            "owns": [
+                "FSD software version releases and OTA changelogs (v14.x, v15)",
+                "HW3/HW4 software capability ceilings and Lite builds",
+                "Cumulative FSD miles / training-data milestones",
+                "Architecture roadmap (end-to-end, Grok→planning, parameter scale)",
+                "v15 timeline as software ship date (not country approval)",
+            ],
+            "doesNotOwn": [
+                "Country approvals / EU homologation → fsd",
+                "NHTSA/NTSB crash reports → fsd",
+                "Robotaxi fleet ops / city launches → cybercab",
+            ],
+        },
     },
     "productionDelivery": {
         "categoryName": "Vehicle Production & Delivery",
@@ -59,7 +126,20 @@ CATEGORIES = {
             "tier2": ["teslarati.com", "teslanorth.com"]
         },
         "keywords": ["quarterly", "production", "delivery", "Q1", "Q2", "Q3", "Q4"],
-        "metrics": ["quarterlyData"]
+        "metrics": ["quarterlyData"],
+        "ownership": {
+            "owns": [
+                "Quarterly production and delivery numbers",
+                "IR earnings consensus, auto revenue/margin guidance tied to volume",
+                "New vehicle market entries (country sales launches)",
+                "Semi / vehicle product pilots as volume-adjacent auto news",
+            ],
+            "doesNotOwn": [
+                "Cybercab unit production → cybercab",
+                "4680 cell manufacturing → battery4680",
+                "Optimus unit production → optimus",
+            ],
+        },
     },
     "aiChip": {
         "categoryName": "AI Chip Production",
@@ -68,7 +148,20 @@ CATEGORIES = {
             "tier1": ["teslarati.com", "teslanorth.com", "teslaoracle.com"]
         },
         "keywords": ["AI5", "AI6", "Samsung", "TSMC", "2nm", "Dojo"],
-        "metrics": []
+        "metrics": [],
+        "ownership": {
+            "owns": [
+                "AI5/AI6/AI4 chip design and foundry process tape-outs",
+                "Samsung/TSMC wafer deals, node (2nm), yields for Tesla inference chips",
+                "Dojo training-chip architecture and program status",
+                "Chip volume/sample timelines for vehicle AI computers",
+            ],
+            "doesNotOwn": [
+                "Terafab construction, tax deals, school boards, Abbott politics → terafab",
+                "Site selection / JETI abatements → terafab",
+                "FSD software versions → fsdv15",
+            ],
+        },
     },
     "battery4680": {
         "categoryName": "4680 Battery Cell Production",
@@ -77,7 +170,17 @@ CATEGORIES = {
             "tier1": ["teslarati.com", "teslanorth.com", "basenor.com"]
         },
         "keywords": ["4680", "battery cell", "GWh", "yield", "dry electrode"],
-        "metrics": []
+        "metrics": [],
+        "ownership": {
+            "owns": [
+                "4680 cell production, yield, dry electrode, GWh capacity",
+                "Berlin/Texas cell lines and Cell Giga Challenge",
+            ],
+            "doesNotOwn": [
+                "Vehicle delivery volumes → productionDelivery",
+                "Energy storage deployment GWh (Megapack) → productionDelivery if quarterly",
+            ],
+        },
     },
     "terafab": {
         "categoryName": "Terafab Manufacturing",
@@ -86,7 +189,19 @@ CATEGORIES = {
             "tier1": ["teslarati.com", "teslanorth.com"]
         },
         "keywords": ["Terafab", "North Campus", "chip fab", "Taylor Texas"],
-        "metrics": []
+        "metrics": [],
+        "ownership": {
+            "owns": [
+                "Terafab / North Campus construction and permits",
+                "JETI tax abatements, school board votes, Abbott decisions",
+                "Fab site politics and local opposition (water, identity)",
+            ],
+            "doesNotOwn": [
+                "AI5/AI6 design or foundry process tape-out → aiChip",
+                "Chip performance specs and volume silicon dates → aiChip",
+                "Samsung Taylor wafer deals for AI5 (chip story) → aiChip",
+            ],
+        },
     },
     "jobPostings": {
         "categoryName": "Job Postings",
@@ -95,9 +210,24 @@ CATEGORIES = {
             "tier1": ["optimusk.blog", "linkedin.com"]
         },
         "keywords": ["Optimus", "hiring", "job posting", "Tesla careers"],
-        "metrics": ["jobPostings"]
-    }
+        "metrics": ["jobPostings"],
+        "ownership": {
+            "owns": [
+                "AI/robotics/FSD/Optimus job posting counts and hiring signals",
+                "LinkedIn/careers headcount trends for AI orgs",
+            ],
+            "doesNotOwn": [
+                "Service-center / retail / sales hiring → skip (out of scope)",
+                "Factory conversion narratives without hiring metrics → optimus",
+            ],
+        },
+    },
 }
+
+
+def _normalize_label(s: str) -> str:
+    return s.lower().replace(" ", "").replace("&", "").replace("-", "").replace("/", "")
+
 
 def load_hot_context(category_key):
     """Extract hot context for a category from main data file."""
@@ -105,18 +235,27 @@ def load_hot_context(category_key):
     with open(data_path) as f:
         data = json.load(f)
 
+    display_name = CATEGORY_DISPLAY_NAMES.get(category_key, category_key)
+    cat_data = data["categories"].get(category_key, {})
+
     hot_context = {
-        "criticalNews": data["categories"].get(category_key, {}).get("criticalNews", ""),
+        "criticalNews": cat_data.get("criticalNews", ""),
         "recentKeyChanges": []
     }
 
-    # Get recent keyChanges for this category
+    # Match keyChanges by exact display name, or normalized startswith fallback
     if data["weeklySummaries"]:
         latest_week = data["weeklySummaries"][0]
-        hot_context["recentKeyChanges"] = [
-            kc for kc in latest_week.get("keyChanges", [])
-            if kc.get("category", "").lower().replace(" ", "").replace("&", "").startswith(category_key.lower())
-        ][:3]  # Last 3
+        matched = []
+        for kc in latest_week.get("keyChanges", []):
+            kc_cat = kc.get("category", "")
+            if kc_cat == display_name:
+                matched.append(kc)
+            elif _normalize_label(kc_cat).startswith(_normalize_label(category_key)):
+                matched.append(kc)
+            elif _normalize_label(kc_cat).startswith(_normalize_label(display_name)):
+                matched.append(kc)
+        hot_context["recentKeyChanges"] = matched[:3]
 
     # Get latest metrics
     if category_key == "cybercab" and "cybercab" in data["metrics"]:
@@ -128,7 +267,6 @@ def load_hot_context(category_key):
         if data["metrics"]["jobPostings"].get("data"):
             hot_context["latestMetric"] = data["metrics"]["jobPostings"]["data"][-1]
     elif category_key == "fsd" and "fsdApprovals" in data["metrics"]:
-        # fsdApprovals has "countries" array, not "data"
         countries = data["metrics"]["fsdApprovals"].get("countries", [])
         if countries:
             hot_context["latestMetric"] = {
@@ -137,6 +275,7 @@ def load_hot_context(category_key):
             }
 
     return hot_context
+
 
 def create_config(category_key, date_from, date_to, week_of):
     """Create research config for a category."""
@@ -153,6 +292,7 @@ def create_config(category_key, date_from, date_to, week_of):
     }
 
     return config
+
 
 def main():
     if len(sys.argv) < 2:
@@ -222,7 +362,11 @@ def main():
         print(f"  Week of: {week_of}")
         print(f"  Sources: {', '.join(config['sources']['tier1'])}")
         print(f"  Keywords: {', '.join(config['keywords'][:3])}...")
+        owns = config.get("ownership", {}).get("owns", [])
+        if owns:
+            print(f"  Owns: {owns[0][:60]}...")
         print(f"\nNext: Spawn tesla-researcher agent with this config")
+
 
 if __name__ == "__main__":
     main()

@@ -195,6 +195,22 @@ for kc in deduplicated:
         filtered.append(kc)
 ```
 
+### Step 5b: Enforce Category Ownership
+
+When the same story appears under two categories (same/similar title or same source URL), keep the **owner** and drop the trespasser.
+
+| Story type | Owner category |
+|------------|----------------|
+| AI5/AI6 design or foundry process tape-out, chip yields, wafer deals | AI Chip Production |
+| Terafab construction, JETI, school boards, Abbott politics | Terafab Manufacturing |
+| Country approvals, EU homologation, NHTSA/NTSB | FSD Country Approvals |
+| FSD OTA versions (v14.x/v15), cumulative miles, HW3/HW4 software ceiling | FSD v15 Software |
+| Robotaxi fleet/cities/ops | Cybercab Production |
+
+Also drop same-URL duplicates across categories (keep higher-quality description / correct owner).
+
+**metadata.urlsSeen:** Keep only canonical article URLs from accepted keyChanges `source` fields (plus at most 1–2 corroborating article URLs). Strip search/feed/homepage noise before writing findings/YYYY-MM-DD.json.
+
 ### Step 6: Normalize Data
 
 ```python

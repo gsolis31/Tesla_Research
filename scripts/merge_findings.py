@@ -21,7 +21,7 @@ import sys
 import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 
 # Configuration
@@ -232,6 +232,24 @@ def merge_quarterly_data(main_data: dict, findings: dict) -> dict:
     return main_data
 
 
+# Researcher categoryKey → main-data key when they differ (identity for most).
+# fsdv15 is a first-class category; keep this map for legacy aliases only.
+CATEGORY_KEY_ALIASES = {
+    'fsdV15': 'fsdv15',
+    'fsd_v15': 'fsdv15',
+}
+
+
+def resolve_category_key(cat_key: str, main_data: dict) -> Optional[str]:
+    """Map findings category key onto a key present in main_data['categories']."""
+    if cat_key in main_data['categories']:
+        return cat_key
+    aliased = CATEGORY_KEY_ALIASES.get(cat_key)
+    if aliased and aliased in main_data['categories']:
+        return aliased
+    return None
+
+
 def merge_category_updates(main_data: dict, findings: dict) -> dict:
     """
     Merge category updates with caps on keyPoints and timeline
@@ -239,58 +257,76 @@ def merge_category_updates(main_data: dict, findings: dict) -> dict:
     Caps prevent unbounded growth:
     - keyPoints: Keep most recent MAX_KEY_POINTS (FIFO)
     - timeline: Keep most recent MAX_TIMELINE_EVENTS (FIFO)
+
+    Accepts both merge-schema fields (criticalNews, newKeyPoint, newTimelineEvent)
+    and curator-schema fields (latestStatus, nextMilestone, concerns).
     """
     category_updates = findings['findings'].get('categoryUpdates', {})
 
     for cat_key, updates in category_updates.items():
-        if cat_key not in main_data['categories']:
+        if not updates:
+            continue
+
+        resolved = resolve_category_key(cat_key, main_data)
+        if not resolved:
             print(f"⚠ Category {cat_key} not in main data, skipping")
             continue
 
-        category = main_data['categories'][cat_key]
+        if resolved != cat_key:
+            print(f"  → Mapped {cat_key} → {resolved}")
 
-        # Update criticalNews
-        if 'criticalNews' in updates:
-            category['criticalNews'] = updates['criticalNews']
-            print(f"✓ Updated {cat_key}.criticalNews")
+        category = main_data['categories'][resolved]
 
-        # Add new keyPoint (with cap)
-        if 'newKeyPoint' in updates:
-            if 'keyPoints' not in category:
-                category['keyPoints'] = []
+        # criticalNews: prefer explicit field, else curator latestStatus
+        critical = updates.get('criticalNews') or updates.get('latestStatus')
+        if critical:
+            category['criticalNews'] = critical
+            print(f"✓ Updated {resolved}.criticalNews")
 
-            category['keyPoints'].append(updates['newKeyPoint'])
+        # productionDelivery uses quarterlyData structure — no keyPoints/timeline
+        supports_points = resolved != 'productionDelivery'
 
-            # Apply cap (keep most recent)
-            if len(category['keyPoints']) > MAX_KEY_POINTS:
-                removed = len(category['keyPoints']) - MAX_KEY_POINTS
-                category['keyPoints'] = category['keyPoints'][-MAX_KEY_POINTS:]
-                print(f"✓ Added keyPoint to {cat_key}, capped (removed {removed} old entries)")
-            else:
-                print(f"✓ Added keyPoint to {cat_key} ({len(category['keyPoints'])}/{MAX_KEY_POINTS})")
+        if supports_points:
+            # Add new keyPoint (with cap) — explicit and/or nextMilestone
+            new_points = []
+            if 'newKeyPoint' in updates and updates['newKeyPoint']:
+                new_points.append(updates['newKeyPoint'])
+            if updates.get('nextMilestone'):
+                new_points.append(f"Next milestone: {updates['nextMilestone']}")
 
-        # Add new timeline event (with cap)
-        if 'newTimelineEvent' in updates:
-            if 'timeline' not in category:
-                category['timeline'] = []
+            if new_points:
+                if 'keyPoints' not in category:
+                    category['keyPoints'] = []
 
-            new_event = updates['newTimelineEvent']
+                for point in new_points:
+                    if point in category['keyPoints']:
+                        continue
+                    category['keyPoints'].append(point)
 
-            # Check for duplicate dates
-            existing_dates = {evt['date'] for evt in category['timeline']}
-            if new_event['date'] not in existing_dates:
-                category['timeline'].append(new_event)
-
-                # Sort by date (chronological)
-                category['timeline'].sort(key=lambda x: x['date'])
-
-                # Apply cap (keep most recent)
-                if len(category['timeline']) > MAX_TIMELINE_EVENTS:
-                    removed = len(category['timeline']) - MAX_TIMELINE_EVENTS
-                    category['timeline'] = category['timeline'][-MAX_TIMELINE_EVENTS:]
-                    print(f"✓ Added timeline event to {cat_key}, capped (removed {removed} old entries)")
+                if len(category['keyPoints']) > MAX_KEY_POINTS:
+                    removed = len(category['keyPoints']) - MAX_KEY_POINTS
+                    category['keyPoints'] = category['keyPoints'][-MAX_KEY_POINTS:]
+                    print(f"✓ Added keyPoint(s) to {resolved}, capped (removed {removed} old entries)")
                 else:
-                    print(f"✓ Added timeline event to {cat_key} ({len(category['timeline'])}/{MAX_TIMELINE_EVENTS})")
+                    print(f"✓ Added keyPoint(s) to {resolved} ({len(category['keyPoints'])}/{MAX_KEY_POINTS})")
+
+            # Add new timeline event (with cap)
+            if 'newTimelineEvent' in updates and updates['newTimelineEvent']:
+                if 'timeline' not in category:
+                    category['timeline'] = []
+
+                new_event = updates['newTimelineEvent']
+                existing_dates = {evt['date'] for evt in category['timeline']}
+                if new_event['date'] not in existing_dates:
+                    category['timeline'].append(new_event)
+                    category['timeline'].sort(key=lambda x: x['date'])
+
+                    if len(category['timeline']) > MAX_TIMELINE_EVENTS:
+                        removed = len(category['timeline']) - MAX_TIMELINE_EVENTS
+                        category['timeline'] = category['timeline'][-MAX_TIMELINE_EVENTS:]
+                        print(f"✓ Added timeline event to {resolved}, capped (removed {removed} old entries)")
+                    else:
+                        print(f"✓ Added timeline event to {resolved} ({len(category['timeline'])}/{MAX_TIMELINE_EVENTS})")
 
         # Update latestUpdate date
         category['latestUpdate'] = findings['date']

@@ -174,6 +174,7 @@ export const TeslaDataSchema = z.object({
     battery4680: CategorySchema,
     cybercab: CategorySchema,
     fsd: CategorySchema,
+    fsdv15: CategorySchema,
     jobPostings: CategorySchema,
     optimus: CategorySchema,
     productionDelivery: ProductionDeliveryCategorySchema,

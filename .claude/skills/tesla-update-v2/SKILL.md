@@ -286,30 +286,16 @@ This merges the validated findings into `tesla-tracking-data.json`.
 
 ### Step 10: Update URL Cache
 
+Cache **canonical article source URLs only** (from accepted keyChanges). Do not dump search/feed/homepage URLs.
+
 ```bash
 today=$(date +%Y-%m-%d)
+python3 scripts/update_url_cache.py findings/$today.json
+```
 
-# Extract URLs from findings
-urls=$(cat findings/$today.json | python3 -c "
-import json, sys
-findings = json.load(sys.stdin)
-for url in findings['metadata'].get('urlsSeen', []):
-    print(url)
-")
-
-# Add to cache
-for url in $urls; do
-    # Extract category and title from findings
-    python3 -c "
-import json
-findings = json.load(open('findings/$today.json'))
-for kc in findings['findings']['keyChanges']:
-    if kc.get('source') == '$url':
-        import subprocess
-        subprocess.run(['python3', 'scripts/url_cache.py', 'add', '$url', kc['category'], kc['title']])
-        break
-    "
-done
+Optional cleanup if noise leaked into the cache:
+```bash
+python3 scripts/update_url_cache.py --prune
 ```
 
 ### Step 11: Archive Old Data

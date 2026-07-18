@@ -1,11 +1,44 @@
 {
   "categoryKey": "battery4680",
-  "dateFrom": "2026-07-12",
+  "dateFrom": "2026-07-17",
   "dateTo": "2026-07-17",
   "weekOf": "2026-07-13",
   "hotContext": {
-    "criticalNews": "Giga Berlin announced $250M investment (May 12, 2026) to scale annual 4680 production from 8 GWh to 18 GWh. 100M cell milestone surpassed September 2025. Dry-electrode process confirmed for anode and cathode.",
-    "recentKeyChanges": []
+    "criticalNews": "Giga Berlin 4680 line is in early production (from May 12, 2026) with PR video on July 16; expanded 18 GWh full-scale still H1 2027. Texas dry-electrode 4680 for some Model Y packs already previously confirmed. No new yield or actual GWh metrics this week.",
+    "recentKeyChanges": [
+      {
+        "title": "Giga Berlin 4680 production video drops \u2014 early ramp PR, full scale still H1 2027",
+        "description": "On July 16, 2026, BASENOR reported Tesla released a short video of the 4680 cell line at Gigafactory Berlin (circulated via Sawyer Merritt on X the same day). The piece frames production as having begun May 12, 2026 \u2014 under ten weeks before the video \u2014 with full-scale expanded output still targeted only for H1 2027. Capacity narrative is unchanged: +$250M to raise the Berlin annual target from 8 GWh to 18 GWh (~$1.45B cumulative battery investment at the site). Dry Battery Electrode (DBE) for anode and cathode is restated as the manufacturing story, not a new process milestone. BASENOR also cites autoevolution that 'Made in Germany' Model Ys with locally produced 4680 cells are expected late Q3 2026 \u2014 a consumer timeline that remains single-source and unverified by Teslarati/TeslaNorth/Tesla IR this week. Applications for the JUNI x Tesla Battery Cell Giga Challenge (launched July 6) remain open through July 24, underscoring that manufacturing bottlenecks are still being crowdsourced. No new yield %, actual GWh output, or cost-per-kWh figures were published with the video.",
+        "date": "2026-07-16",
+        "category": "4680 Battery Cell Production",
+        "status": "negative",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "negative",
+          "confidence": "medium"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Tesla publicly showed live 4680 cell-line footage from Giga Berlin (~10 weeks after May 12 production start)",
+            "Capacity target still stated at 18 GWh/year after the May $250M add-on (~200k\u2013350k vehicles/year at pack-level estimates)",
+            "Dry electrode process for both anode and cathode continues to be presented as in use on the Berlin line",
+            "Near-term Model Y-with-Berlin-4680 claim (late Q3 2026) would be a real product milestone if it lands"
+          ],
+          "negative_signals": [
+            "Line is still in an early, accelerating phase \u2014 not a finished high-volume factory; full-scale expanded production only H1 2027",
+            "Video and recap recycle May 12 investment / 8\u219218 GWh targets; no verified yield, scrap rate, or actual GWh shipped this week",
+            "Cell Giga Challenge applications still open until July 24 \u2014 Tesla is still soliciting external fixes for materials, equipment, ops, automation, and AI bottlenecks",
+            "Electrek (July 7, corroboration): 4680 remains Tesla's most troubled manufacturing effort; opening the line to startups is a tacit admission of in-house gaps",
+            "Capacity target was doubled before cost-competitive, high-yield production has been publicly proven at Berlin scale",
+            "Original 2020 Berlin cell ambition was up to ~250 GWh; 18 GWh is a fraction of that vision after multi-year delay and IRA-driven US pivot",
+            "Model Y late-Q3 4680 claim rests on secondary reporting (autoevolution via BASENOR), not multi-source or official confirmation"
+          ]
+        },
+        "source": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
+        "impact": "medium",
+        "_sourceCategory": "battery4680"
+      }
+    ]
   },
   "categoryName": "4680 Battery Cell Production",
   "priority": "medium",
@@ -23,5 +56,15 @@
     "yield",
     "dry electrode"
   ],
-  "metrics": []
+  "metrics": [],
+  "ownership": {
+    "owns": [
+      "4680 cell production, yield, dry electrode, GWh capacity",
+      "Berlin/Texas cell lines and Cell Giga Challenge"
+    ],
+    "doesNotOwn": [
+      "Vehicle delivery volumes \u2192 productionDelivery",
+      "Energy storage deployment GWh (Megapack) \u2192 productionDelivery if quarterly"
+    ]
+  }
 }

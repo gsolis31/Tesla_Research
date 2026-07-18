@@ -1,109 +1,100 @@
 {
   "categoryKey": "fsdv15",
-  "dateFrom": "2026-07-12",
+  "dateFrom": "2026-07-17",
   "dateTo": "2026-07-17",
   "weekOf": "2026-07-13",
   "hotContext": {
-    "criticalNews": "",
+    "criticalNews": "Production FSD remains on Supervised v14.3.5 (2026.20.6.6, HW4) with incremental RL/vision/compiler polish. No public v15 builds, betas, or timeline updates this week. HW4 reportedly runs distilled Cybercab models (unconfirmed exclusive). HW3 still capped at v14 Lite (coast-to-coast demo claimed). v15 end-2026/early-2027 target and robotaxi-scale blocker unchanged.",
     "recentKeyChanges": [
       {
-        "status": "positive",
+        "title": "FSD fleet hits 12 billion cumulative supervised miles; training data grows, software still on v14",
+        "description": "As of ~July 17, 2026 Tesla FSD (Supervised) fleet miles surpassed 12 billion globally, roughly one month after the 11 billion mark (June 9). Community tracking cited by TeslaNorth estimates 26\u201330 million new miles per day, with >4.5 billion of the total on city streets. Europe contributed 50M+ km across five small approved markets. Critical framing for the software roadmap: data volume continues to accelerate and feeds RL hard-example mining (explicitly referenced in v14.3.5 release notes for traffic lights, rare objects, animals). But cumulative miles are not a substitute for the delayed v15 10B-parameter architectural overhaul. Tesla has already stated current v14 is not safe enough for large-scale robotaxi expansion without 'major architectural improvements' \u2014 more supervised miles improve the current model but do not ship the next architecture. Metric is community-tracked, not an official Tesla IR disclosure.",
+        "date": "2026-07-17",
+        "category": "FSD v15 Software",
+        "status": "neutral",
         "sentiment": {
           "headline": "positive",
           "reality": "neutral",
-          "confidence": "medium",
-          "rationale": "Official confirmation of voice-taught contextual FSD and a September Grok\u2192planning timeline is progress, but it is a roadmap commitment \u2014 not a shipped capability yet."
+          "confidence": "medium"
         },
         "evidence": {
           "positive_signals": [
-            "Ashok Elluswamy confirmed voice-taught, remembered contextual FSD instructions (July 8)",
-            "Musk: Grok voice commands to FSD planning layer targeted by September 2026",
-            "Directly improves last-100-feet robotaxi pickup/dropoff quality at scale"
+            "12B cumulative FSD Supervised miles (~1B added in ~5 weeks from 11B on June 9)",
+            "Daily accumulation estimated at 26\u201330M miles/day \u2014 rapid data flywheel",
+            ">4.5B miles on city streets \u2014 hardest domain for end-to-end driving",
+            "v14.3.5 release notes explicitly credit fleet-sourced hard RL examples for traffic lights, rare objects, animals"
           ],
           "negative_signals": [
-            "Feature not shipped yet \u2014 testing burden for safety (e.g. refusing unsafe commands)",
-            "September timeline is guidance, not a release"
-          ],
-          "key_metrics": {
-            "actual": "Confirmed on roadmap; Grok in-car exists but has no FSD authority today",
-            "target": "Grok voice \u2192 FSD planning by September 2026",
-            "trajectory": "~2 months to stated integration target"
-          }
+            "All 12B miles are Supervised (L2) \u2014 not unsupervised robotaxi miles",
+            "More data does not ship v15; architecture delay to late-2026/early-2027 remains the blocker",
+            "Community-tracked metric, not official Tesla IR audited disclosure",
+            "Musk previously admitted current stack needs major architectural improvements for scale safety",
+            "Europe's contribution (~50M km \u2248 31M miles) is a rounding error vs global total"
+          ]
         },
-        "category": "FSD v15 Software",
-        "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September",
-        "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
-        "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
-      },
-      {
-        "title": "Tesla confirms FSD v15 delayed to end-2026/early-2027; robotaxi scale blocked until release",
-        "description": "During the Q1 2026 earnings call (April 22, 2026), Tesla confirmed FSD v15 will not ship until late 2026 or early 2027, representing a delay of the 10x parameter model upgrade that was originally planned for v14 in late 2025. CEO Elon Musk explicitly stated large-scale robotaxi expansion will NOT proceed until v15 is released, citing the need for 'major architectural improvements' to reach required safety levels. This confirms v15 is the critical blocker for both unsupervised FSD and robotaxi commercialization. The 10-billion-parameter model is described as a 'total architectural overhaul' designed to achieve 'orders of magnitude beyond human capability' safety. While v15 will run on Hardware 4 (no upgrade needed), the ~9-12 month delay from original v14 timeline pushes Tesla's autonomy roadmap into 2027.",
-        "date": "2026-04-22",
-        "category": "FSD v15 Software",
-        "status": "negative",
-        "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high",
-          "rationale": "Headlines emphasize HW4 compatibility (positive framing), but reality is a 9-12 month delay of the critical model upgrade, pushing robotaxi scale and unsupervised FSD into 2027. This is the second major delay (originally v14 late-2025, now v15 end-2026/early-2027). Robotaxi expansion explicitly blocked until v15 ships."
-        },
-        "evidence": {
-          "positive_signals": [
-            "FSD v15 will run on Hardware 4 (no expensive upgrade required)",
-            "Tesla confirms 10x parameter upgrade (1B to 10B parameters) still planned",
-            "HW4 getting RAM upgrade to 32GB (from 16GB) for better performance"
-          ],
-          "negative_signals": [
-            "FSD v15 pushed to late-2026/early-2027 (originally expected in v14 late-2025)",
-            "Large-scale robotaxi expansion explicitly blocked until v15 release",
-            "Unsupervised FSD for consumers delayed to Q4 2026 earliest (geography-limited)",
-            "Musk admitted current v14 not safe enough for scale: needs 'major architectural improvements'",
-            "Timeline is 'targeted' with no firm commitment (history of delays: promised autonomy 2018, 1M robotaxis 2020, unsupervised June 2025)"
-          ],
-          "key_metrics": {
-            "actual": "v14 in production; v15 in development with late-2026/early-2027 target",
-            "target": "v15 release by end-2026 or early-2027; 10B parameter model",
-            "trajectory": "6-9 months to stated target; represents 9-12 month delay from original v14 timeline"
-          }
-        },
-        "source": "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
-        "impact": "high",
+        "source": "https://teslanorth.com/2026/07/17/tesla-fsd-fleet-hits-massive-12-billion-mile-milestone-as-training-speeds-up/",
+        "impact": "medium",
         "_sourceCategory": "fsdv15"
       },
       {
-        "title": "Tesla confirms Hardware 3 cannot support unsupervised FSD or v15; 4M vehicles left behind",
-        "description": "On April 22-23, 2026 (Q1 earnings call), Tesla officially confirmed that Hardware 3 (HW3) vehicles\u2014approximately 4 million globally\u2014cannot and will not support unsupervised Full Self-Driving or FSD v15. Elon Musk cited hardware limitations: HW3 has 'only one eighth of the memory bandwidth of Hardware 4' and lacks the compute/memory capacity for the 10-billion-parameter v15 model. FSD v14 Lite is confirmed as the 'ultimate ceiling version' for HW3 hardware. This directly contradicts Tesla's 2016-2019 promises that HW3 would support full autonomy. Tesla is offering affected customers (many who paid $8,000-15,000 for FSD) either: (1) discounted trade-in to HW4 vehicle, or (2) paid hardware upgrade requiring replacement of computer AND all cameras. This represents a broken promise to millions of early FSD adopters and a material limitation on Tesla's addressable autonomy market.",
-        "date": "2026-04-22",
+        "title": "FSD v14.3.5 rolls out: incremental RL polish, still no v15 path visible",
+        "description": "On July 13, 2026 Tesla began rolling out software update 2026.20.6.6 with FSD (Supervised) v14.3.5 for HW4/AI4 vehicles (S/3/X/Y/Cybertruck). Official release notes claim: upgraded RL training stage, upgraded neural network vision encoder (rare/low-visibility, 3D geometry, traffic signs), AI compiler/runtime rewrite with MLIR claiming 20% faster reaction time, mitigated lane-biasing/tailgating, more decisive parking, better emergency-vehicle/school-bus/animal/traffic-light handling, improved temporary degradation recovery, and unified model between Actually Smart Summon, FSD, and Robotaxi. QoL features include Camera Preview while driving, FSD live indicator in the Tesla app, intervention-free distance tracking, and parking options on the map. Critical reality: this is another point-release on the v14.3.x branch \u2014 still fully Supervised (SAE L2), still requiring driver attention. TeslaFi stats at release showed only ~243 cars / ~1.9% of tracked fleet on 2026.20.6.6. Early impressions are mixed: NotATeslaApp/Zack reported fixed turn-lane twitch and better parking, while Teslarati and high-mileage tester David Moss reported 'horrible' parking (3 bad jobs in 23 min) and inconsistent speed profiles. Most importantly, there is zero public evidence of FSD v15 (the delayed 10B-parameter architectural overhaul) shipping, testing publicly, or advancing its end-2026/early-2027 target. Robotaxi scale remains explicitly blocked until v15 per Q1 2026 guidance. v14.3.5 is incremental supervised polish, not the unsupervised unlock.",
+        "date": "2026-07-13",
         "category": "FSD v15 Software",
-        "status": "negative",
+        "status": "neutral",
         "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high",
-          "rationale": "Official confirmation that 4 million HW3 customers cannot access unsupervised FSD or v15 despite paying for 'Full Self-Driving' with promises of future autonomy. This is a broken commitment and requires expensive upgrades. Headlines frame it as 'upgrade path offered' but reality is customers must pay more after already purchasing FSD."
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Tesla offering discounted trade-in path for HW3 owners",
-            "Hardware upgrade option available (computer + cameras)",
-            "FSD v14 Lite released for HW3 in late June 2026"
+            "Official OTA 2026.20.6.6 with FSD v14.3.5 confirmed across NotATeslaApp, TeslaNorth, and Teslarati",
+            "Release notes claim real stack work: RL upgrade, vision encoder upgrade, MLIR compiler rewrite (20% faster reaction)",
+            "Unified model between ASS, FSD, and Robotaxi \u2014 architectural consolidation progress",
+            "QoL: Camera Preview while driving, app FSD indicator, intervention-free distance tracking",
+            "Some early testers report fixed turn-lane steering twitch and smoother parking approaches"
           ],
           "negative_signals": [
-            "4 million HW3 vehicles globally cannot support unsupervised FSD",
-            "HW3 memory bandwidth is 1/8th of HW4 (fundamental hardware limit)",
-            "FSD v15 will not run on HW3 (10B parameter model too large)",
-            "Breaks 2016-2019 Tesla promises that HW3 would support full autonomy",
-            "Customers who paid $8K-15K for FSD must now pay more for hardware upgrade",
-            "v14 Lite confirmed as 'ultimate ceiling' for HW3 (no unsupervised capability)"
-          ],
-          "key_metrics": {
-            "actual": "4 million HW3 vehicles left behind; v14 Lite only",
-            "target": "Hardware upgrade required for unsupervised FSD",
-            "trajectory": "Permanent hardware limitation; no software solution possible"
-          }
+            "Still FSD Supervised only \u2014 no unsupervised capability, no v15, no robotaxi-grade autonomy",
+            "v15 (10B-param architectural overhaul) remains delayed to late-2026/early-2027 with no public milestone this week",
+            "Early rollout tiny: ~243 cars / ~1.9% of TeslaFi-tracked fleet at release",
+            "Mixed/regressive early feedback: Teslarati and David Moss report terrible parking jobs; speed profiles still inconsistent",
+            "Release notes list 'Upcoming Improvements' still pending (expand reasoning beyond destination handling; pothole avoidance) \u2014 core gaps acknowledged unfixed",
+            "v14.3.x is still the production ceiling while large-scale robotaxi expansion remains blocked until v15 ships"
+          ]
         },
-        "source": "https://www.basenor.com/blogs/news/tesla-update-v15-1",
-        "impact": "high",
+        "source": "https://www.notateslaapp.com/software-updates/version/2026.20.6.6/release-notes",
+        "impact": "medium",
+        "_sourceCategory": "fsdv15"
+      },
+      {
+        "title": "Report: HW4 consumer FSD runs distilled Cybercab models \u2014 hardware tiering confirmed",
+        "description": "On July 14, 2026 NotATeslaApp published an exclusive claiming Tesla develops FSD models first for Cybercab's more powerful FSD hardware, then distills them into smaller 'student' models for consumer HW4/AI4 vehicles \u2014 analogous to how FSD v14 Lite is a distilled v14 for HW3. The report argues this is good news for HW4 unsupervised hopes (HW4 still in the running, unlike HW3 which is permanently capped), because consumer cars receive optimized versions of the same robotaxi stack. Critical read: this is a single-source exclusive citing an unnamed source \u2014 confidence is low until corroborated. If true, it confirms a multi-tier capability hierarchy (Cybercab native > HW4 distilled > HW3 Lite ceiling) and implies consumer HW4 may never run the full-weight teacher model that Cybercab gets. Combined with the confirmed v15 delay and Cybercab-first development, it reinforces that unsupervised consumer FSD depends on distillation quality, not parity with robotaxi hardware. No official Tesla confirmation.",
+        "date": "2026-07-14",
+        "category": "FSD v15 Software",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "low"
+        },
+        "evidence": {
+          "positive_signals": [
+            "If accurate, HW4 remains on the unsupervised path (unlike HW3, which Tesla confirmed cannot do unsupervised FSD)",
+            "Cybercab-first development with distillation is a rational engineering path for multi-hardware fleets",
+            "Consistent with known v14 Lite distillation pattern for HW3"
+          ],
+          "negative_signals": [
+            "Single-source exclusive (NotATeslaApp) with unnamed source \u2014 no Tesla confirmation, no Teslarati/TeslaNorth corroboration",
+            "Implies consumer HW4 gets second-class/lighter models vs Cybercab native stack",
+            "Does not advance v15 ship date; distillation is process, not a capability milestone",
+            "Reinforces hardware tiering: Cybercab > HW4 distilled > HW3 Lite (permanent unsupervised exclusion for ~4M HW3 vehicles)",
+            "Vague on how much capability is lost in distillation \u2014 no metrics on student vs teacher performance gap"
+          ]
+        },
+        "source": "https://www.notateslaapp.com/news/4435/exclusive-tesla-hw4-vehicles-also-run-distilled-fsd-models",
+        "impact": "medium",
         "_sourceCategory": "fsdv15"
       }
     ]
@@ -123,5 +114,19 @@
     "supervised",
     "end-to-end"
   ],
-  "metrics": []
+  "metrics": [],
+  "ownership": {
+    "owns": [
+      "FSD software version releases and OTA changelogs (v14.x, v15)",
+      "HW3/HW4 software capability ceilings and Lite builds",
+      "Cumulative FSD miles / training-data milestones",
+      "Architecture roadmap (end-to-end, Grok\u2192planning, parameter scale)",
+      "v15 timeline as software ship date (not country approval)"
+    ],
+    "doesNotOwn": [
+      "Country approvals / EU homologation \u2192 fsd",
+      "NHTSA/NTSB crash reports \u2192 fsd",
+      "Robotaxi fleet ops / city launches \u2192 cybercab"
+    ]
+  }
 }

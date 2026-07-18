@@ -158,6 +158,43 @@ If NO news found, write:
 - Deployment success: "expanded to 5 cities"
 - Verified metrics: "1000 units delivered"
 
+## Category Ownership (CRITICAL — prevents cross-category duplicates)
+
+Your config may include an `ownership` block:
+
+```json
+"ownership": {
+  "owns": ["..."],
+  "doesNotOwn": ["... → otherCategory"]
+}
+```
+
+**Rules:**
+1. Only write keyChanges that fall under `owns`.
+2. If a story is listed under `doesNotOwn`, **do not** file it — the owning category will cover it.
+3. Borderline stories: pick the single best-fit owner; never dual-file the same URL/story.
+4. Classic ownership splits (always honor):
+   - **Chip tape-out / foundry process / AI5–AI6 specs** → `aiChip` (NOT terafab)
+   - **Terafab construction / JETI / school boards / Abbott** → `terafab` (NOT aiChip)
+   - **Country approvals / NHTSA / NTSB** → `fsd` (NOT fsdv15)
+   - **FSD software versions / OTA / cumulative miles / HW3 ceiling** → `fsdv15` (NOT fsd)
+   - **Robotaxi fleet/cities/ops** → `cybercab` (NOT fsd)
+
+## urlsSeen discipline
+
+`urlsSeen` must list **canonical article URLs only** (the sources you would cite).
+
+**Include:** article pages with a distinct path (`/2026/07/...`, `/tesla-.../`, press releases).
+
+**Do NOT include:**
+- Search pages (`?s=`, `/search/`, Google/Bing result URLs)
+- RSS/Atom feeds (`/feed`, `/rss`)
+- Homepages or section roots (`/blog/`, site root)
+- Careers/job search listing pages
+- LinkedIn jobs search URLs (specific posting `/view/` OK if relevant)
+
+Prefer fewer high-quality article URLs over dumping every URL you visited.
+
 ## Quality Standards
 
 - Minimum 2 sources for high confidence
@@ -166,6 +203,7 @@ If NO news found, write:
 - Official numbers only for metrics
 - Always include source URLs
 - Date every finding
+- Respect category ownership (see above)
 
 ## Error Handling
 

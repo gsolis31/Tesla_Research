@@ -11,6 +11,7 @@ function Categories({ data }: Props) {
   const categories = [
     { id: 'cybercab', label: 'Cybercab', data: data.categories.cybercab },
     { id: 'fsd', label: 'FSD Approvals', data: data.categories.fsd },
+    { id: 'fsdv15', label: 'FSD v15 Software', data: data.categories.fsdv15 },
     { id: 'optimus', label: 'Optimus Production', data: data.categories.optimus },
     { id: 'aiChip', label: 'AI Chip Production', data: data.categories.aiChip },
     { id: 'battery4680', label: '4680 Battery Cell Production', data: data.categories.battery4680 },

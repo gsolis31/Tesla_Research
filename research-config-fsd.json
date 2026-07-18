@@ -1,102 +1,100 @@
 {
   "categoryKey": "fsd",
-  "dateFrom": "2026-07-12",
+  "dateFrom": "2026-07-17",
   "dateTo": "2026-07-17",
   "weekOf": "2026-07-13",
   "hotContext": {
-    "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
+    "criticalNews": "Europe: FSD Supervised live in 5 small markets (NL/LT/EE/DK/BE) with 50M km driven; Italy application under review; Germany KBA test-vehicle trials expected to start. US: NTSB prelim clears software in Katy crash (driver override) but NHTSA EA26002 on 3.2M vehicles and Special Crash Investigation remain open. No new unsupervised FSD regulatory approvals this week. Tesla summer-2026 EU-wide mutual recognition still not delivered for major markets.",
     "recentKeyChanges": [
       {
-        "status": "positive",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "positive",
-          "confidence": "high",
-          "rationale": "Denmark approval represents fourth European country and demonstrates continued FSD expansion momentum in region."
-        },
-        "evidence": {
-          "positive_signals": [
-            "Denmark became fourth European country with FSD approval on June 9",
-            "Lithuania activated May 20, Estonia May 29",
-            "Netherlands granted first EU approval April 10, 2026",
-            "EU-wide recognition anticipated summer 2026 via mutual recognition"
-          ],
-          "negative_signals": [
-            "EU-wide timeline is Tesla's projection, not confirmed regulatory outcome",
-            "Each country still requires individual activation despite mutual recognition pathway"
-          ],
-          "key_metrics": {
-            "actual": "4 European countries approved (NL, LT, EE, DK)",
-            "target": "EU-wide deployment via mutual recognition",
-            "trajectory": "Expanding, summer 2026 EU-wide recognition anticipated"
-          }
-        },
+        "title": "Italy confirms Tesla FSD application under review via Dutch homologation recognition",
+        "description": "On or around July 13, 2026, Servedio Gaetano, General Director at Italy's Ministry of Infrastructure and Transport, confirmed on LinkedIn that Tesla 'only recently' submitted an application requesting recognition of the Dutch FSD homologation, and that the matter is 'in the analysis phase also based on the indications from the European community.' An Italian senator had previously urged prioritization after Netherlands approval. Critical read: this is an application receipt, not an approval. No timeline was given. Italy would be a major EU volume market if approved, but the fact that a large member state is still running a national analysis months after Dutch type approval undercuts Tesla's earlier claim that EU-wide mutual recognition would deliver broad summer-2026 access without repeating review. As of this week FSD Supervised remains live only in five EU countries: Netherlands, Lithuania, Estonia, Denmark, and Belgium \u2014 none of which are top-tier European auto markets by volume.",
+        "date": "2026-07-13",
         "category": "FSD Country Approvals",
-        "title": "Denmark becomes fourth European country to approve FSD on June 9",
-        "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands (April 10), Lithuania (May 20), and Estonia (May 29). The Dutch vehicle authority RDW granted the first European type approval, and Tesla anticipates EU-wide recognition during summer 2026 through mutual recognition, potentially extending access to Germany, France, and other major markets without repeating the full 18-month review process. Tesla now has FSD Supervised available in 12 countries globally.",
-        "source": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/"
-      },
-      {
-        "status": "positive",
+        "status": "neutral",
         "sentiment": {
           "headline": "positive",
           "reality": "neutral",
-          "confidence": "medium",
-          "rationale": "Official confirmation of voice-taught contextual FSD and a September Grok\u2192planning timeline is progress, but it is a roadmap commitment \u2014 not a shipped capability yet."
+          "confidence": "medium"
         },
         "evidence": {
           "positive_signals": [
-            "Ashok Elluswamy confirmed voice-taught, remembered contextual FSD instructions (July 8)",
-            "Musk: Grok voice commands to FSD planning layer targeted by September 2026",
-            "Directly improves last-100-feet robotaxi pickup/dropoff quality at scale"
+            "Italian Ministry General Director publicly confirmed application received and under analysis",
+            "Path is mutual recognition of Dutch homologation \u2014 faster than a full de novo type approval",
+            "Review explicitly references European Community guidance, consistent with EU mutual-recognition framework",
+            "Italy would be the first large-population EU market if approved"
           ],
           "negative_signals": [
-            "Feature not shipped yet \u2014 testing burden for safety (e.g. refusing unsafe commands)",
-            "September timeline is guidance, not a release"
-          ],
-          "key_metrics": {
-            "actual": "Confirmed on roadmap; Grok in-car exists but has no FSD authority today",
-            "target": "Grok voice \u2192 FSD planning by September 2026",
-            "trajectory": "~2 months to stated integration target"
-          }
+            "Application only \u2014 no approval, no OTA activation, no go-live date",
+            "Still in 'analysis phase'; duration unknown",
+            "Confirms country-by-country process is still required despite mutual-recognition narrative",
+            "Tesla's anticipated summer 2026 EU-wide recognition has not delivered Italy (or Germany/France/Spain/UK)",
+            "Primary report is a LinkedIn exchange via Drive Tesla Canada; not yet corroborated by Teslarati/TeslaNorth/official Tesla IR"
+          ]
         },
-        "category": "FSD v15 Software",
-        "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September",
-        "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
-        "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
-      },
-      {
-        "title": "NHTSA escalates FSD investigation to Engineering Analysis covering 3.2M vehicles",
-        "description": "On March 19, 2026, NHTSA upgraded its Tesla FSD probe from a Preliminary Evaluation to a formal Engineering Analysis (EA26002) covering 3.2 million vehicles across all Tesla models. The investigation found that FSD's camera-based system fails to detect common road conditions that impair visibility\u2014sun glare and fog\u2014and doesn't adequately warn drivers before crashes occur. The probe involves at least nine documented crashes, including one fatal pedestrian collision and another crash resulting in injury. This escalation is the stage that typically precedes a mandatory recall, representing significant regulatory risk.",
-        "date": "2026-03-19",
-        "category": "FSD Country Approvals",
-        "status": "negative",
-        "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high",
-          "rationale": "While headlines focus on 'investigation escalation,' the reality is NHTSA moved to the pre-recall stage due to fundamental safety failures in FSD's vision system. The system's inability to detect degraded visibility from common conditions (glare, fog) and failure to warn drivers until just before impact represents a core architectural problem affecting 3.2M vehicles."
-        },
-        "evidence": {
-          "positive_signals": [],
-          "negative_signals": [
-            "Investigation escalated to Engineering Analysis (EA26002), the stage before mandatory recall",
-            "FSD's degradation detection system fails to warn drivers when cameras are blinded by sun glare and fog",
-            "Nine total incidents investigated, including one fatality and one injury",
-            "3.2 million vehicles affected across all Tesla models (2016-2026)",
-            "System failed to recognize common roadway conditions affecting camera visibility",
-            "No alerts issued when camera performance degraded until just before impact",
-            "Tesla may be under-reporting related crashes per NHTSA findings"
-          ],
-          "key_metrics": {
-            "actual": "9 crashes under investigation (1 fatality, 1 injury)",
-            "target": "Zero crashes from visibility detection failures",
-            "trajectory": "Investigation escalated to pre-recall stage March 2026"
-          }
-        },
-        "source": "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+        "source": "https://driveteslacanada.ca/news/tesla-fsd-italy-application-under-review/",
         "impact": "high",
         "_sourceCategory": "fsd"
+      },
+      {
+        "title": "FSD Supervised hits 50M km in Europe across five small markets; major markets still closed",
+        "description": "Tesla announced that owners in the Netherlands, Estonia, Belgium, Lithuania, and Denmark have surpassed 50 million kilometres (~31 million miles) of FSD Supervised driving as of July 14, 2026 \u2014 roughly three months after the first EU approval (Netherlands, April 10). Uptake in approved markets is real and fast. Critical reality check: Europe's 50M km is ~0.26% of Tesla's ~12B global FSD miles, and the five live countries are small Baltic/Nordic/Benelux markets. Germany, France, Italy, Spain, and the UK \u2014 the volume markets that matter for Robotaxi economics and FSD attach rates \u2014 still have no consumer FSD Supervised. Belgium (approved ~June 10) is now confirmed as the fifth European country, updating the prior 'Denmark = fourth' count. Mutual recognition is expanding, but slowly and only into secondary markets so far.",
+        "date": "2026-07-14",
+        "category": "FSD Country Approvals",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "50 million km driven in ~3 months since first EU approval \u2014 strong early adoption where legal",
+            "Five European countries now confirmed live: NL, LT, EE, DK, BE",
+            "Belgium activation completes fifth-country footprint via mutual recognition pathway",
+            "Company-announced milestone with multi-source coverage (TeslaNorth; referenced in 12B-mile follow-up)"
+          ],
+          "negative_signals": [
+            "50M km is trivial vs ~12B global FSD miles \u2014 Europe remains a data rounding error",
+            "No major EU market (DE/FR/IT/ES) or UK has consumer FSD Supervised yet",
+            "Still Supervised Level 2 only \u2014 not unsupervised, not robotaxi-grade autonomy",
+            "Summer 2026 EU-wide recognition timeline from Tesla remains unproven as of mid-July",
+            "Country-by-country activation friction persists even after Dutch type approval"
+          ]
+        },
+        "source": "https://teslanorth.com/2026/07/14/tesla-fsd-supervised-hits-50-million-kilometres-in-europe/",
+        "impact": "medium",
+        "_sourceCategory": "fsd"
+      },
+      {
+        "title": "FSD fleet hits 12 billion cumulative supervised miles; training data grows, software still on v14",
+        "description": "As of ~July 17, 2026 Tesla FSD (Supervised) fleet miles surpassed 12 billion globally, roughly one month after the 11 billion mark (June 9). Community tracking cited by TeslaNorth estimates 26\u201330 million new miles per day, with >4.5 billion of the total on city streets. Europe contributed 50M+ km across five small approved markets. Critical framing for the software roadmap: data volume continues to accelerate and feeds RL hard-example mining (explicitly referenced in v14.3.5 release notes for traffic lights, rare objects, animals). But cumulative miles are not a substitute for the delayed v15 10B-parameter architectural overhaul. Tesla has already stated current v14 is not safe enough for large-scale robotaxi expansion without 'major architectural improvements' \u2014 more supervised miles improve the current model but do not ship the next architecture. Metric is community-tracked, not an official Tesla IR disclosure.",
+        "date": "2026-07-17",
+        "category": "FSD v15 Software",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "medium"
+        },
+        "evidence": {
+          "positive_signals": [
+            "12B cumulative FSD Supervised miles (~1B added in ~5 weeks from 11B on June 9)",
+            "Daily accumulation estimated at 26\u201330M miles/day \u2014 rapid data flywheel",
+            ">4.5B miles on city streets \u2014 hardest domain for end-to-end driving",
+            "v14.3.5 release notes explicitly credit fleet-sourced hard RL examples for traffic lights, rare objects, animals"
+          ],
+          "negative_signals": [
+            "All 12B miles are Supervised (L2) \u2014 not unsupervised robotaxi miles",
+            "More data does not ship v15; architecture delay to late-2026/early-2027 remains the blocker",
+            "Community-tracked metric, not official Tesla IR audited disclosure",
+            "Musk previously admitted current stack needs major architectural improvements for scale safety",
+            "Europe's contribution (~50M km \u2248 31M miles) is a rounding error vs global total"
+          ]
+        },
+        "source": "https://teslanorth.com/2026/07/17/tesla-fsd-fleet-hits-massive-12-billion-mile-milestone-as-training-speeds-up/",
+        "impact": "medium",
+        "_sourceCategory": "fsdv15"
       }
     ],
     "latestMetric": {
@@ -126,5 +124,19 @@
   ],
   "metrics": [
     "fsdApprovals"
-  ]
+  ],
+  "ownership": {
+    "owns": [
+      "Country/region regulatory approvals for FSD Supervised or unsupervised",
+      "EU homologation, mutual recognition, KBA/RDW/DMV decisions",
+      "NHTSA, NTSB, civil crash investigations and safety probes",
+      "Pending applications (e.g. Italy under review) as regulatory status"
+    ],
+    "doesNotOwn": [
+      "FSD software version OTA releases / changelogs \u2192 fsdv15",
+      "Cumulative FSD miles as training-data/software milestone \u2192 fsdv15",
+      "HW3/HW4 software capability ceilings \u2192 fsdv15",
+      "Robotaxi city ops / fleet counts \u2192 cybercab"
+    ]
+  }
 }

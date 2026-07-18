@@ -7,11 +7,14 @@ Tracks all URLs seen across research runs to avoid:
 - Duplicate keyChanges
 - Wasted LLM tokens
 
+Only canonical article URLs should be cached. Search pages, RSS feeds,
+homepages, and careers listings are rejected by default.
+
 Usage:
     # Check if URL seen before
     python3 scripts/url_cache.py check "https://electrek.co/..."
 
-    # Add URL to cache
+    # Add URL to cache (rejects non-canonical unless --force)
     python3 scripts/url_cache.py add "https://electrek.co/..." "Cybercab Production" "Title"
 
     # List recent URLs
@@ -19,17 +22,46 @@ Usage:
 
     # Stats
     python3 scripts/url_cache.py stats
+
+Prefer bulk update from findings:
+    python3 scripts/update_url_cache.py findings/YYYY-MM-DD.json
+    python3 scripts/update_url_cache.py --prune
 """
 
 import json
+import re
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Optional, Dict, List
+from typing import Optional, Dict
 from urllib.parse import urlparse
 
-
 CACHE_FILE = Path('findings/url-cache.json')
+
+# Paths that are research noise, not article sources
+_NOISE_PATH_PATTERNS = [
+    re.compile(r'/feed/?$', re.I),
+    re.compile(r'/rss/?$', re.I),
+    re.compile(r'/feed/rss', re.I),
+    re.compile(r'/search/?$', re.I),
+    re.compile(r'/search/', re.I),
+    re.compile(r'/careers/search', re.I),
+    re.compile(r'/jobs/search', re.I),
+    re.compile(r'^/?$', re.I),  # bare homepage
+]
+
+_NOISE_HOST_PATTERNS = [
+    re.compile(r'(^|\.)news\.google\.com$', re.I),
+    re.compile(r'(^|\.)google\.[a-z.]+$', re.I),
+    re.compile(r'(^|\.)bing\.com$', re.I),
+]
+
+_NOISE_QUERY_KEYS = {'s', 'q', 'query', 'keywords'}
+
+_SECTION_ROOTS = {
+    'blog', 'news', 'newsroom', 'press', 'category', 'tag', 'tags',
+    'author', 'page', 'videos', 'about', 'search'
+}
 
 
 def load_cache() -> dict:
@@ -74,6 +106,70 @@ def normalize_url(url: str) -> str:
     return normalized
 
 
+def non_canonical_reason(url: str) -> Optional[str]:
+    """
+    Return a short reason if URL is not a cacheable article source, else None.
+
+    Rejects search pages, RSS/feeds, Google News queries, careers/job search
+    listings, bare homepages, and other research-navigation noise.
+    """
+    if not url or not isinstance(url, str):
+        return "empty"
+
+    url = url.strip()
+    try:
+        parsed = urlparse(url)
+    except Exception:
+        return "unparseable"
+
+    if parsed.scheme not in ('http', 'https'):
+        return "non-http scheme"
+
+    host = (parsed.netloc or '').lower()
+    if host.startswith('www.'):
+        host = host[4:]
+    if not host:
+        return "no host"
+
+    path = parsed.path or '/'
+    query = parsed.query or ''
+
+    for pat in _NOISE_HOST_PATTERNS:
+        if pat.search(host):
+            return f"noise host ({host})"
+
+    for pat in _NOISE_PATH_PATTERNS:
+        if pat.search(path):
+            return f"noise path ({path})"
+
+    # Query-string search endpoints: ?s=AI5, ?q=..., ?query=optimus
+    if query:
+        for part in query.split('&'):
+            key = part.split('=', 1)[0].lower()
+            if key in _NOISE_QUERY_KEYS:
+                return f"search query (?{key}=...)"
+
+    # LinkedIn / careers listing roots (not a specific posting article)
+    if 'linkedin.com' in host and '/jobs' in path and '/view' not in path:
+        return "linkedin jobs listing"
+    if 'tesla.com' in host and '/careers' in path and path.rstrip('/').count('/') <= 1:
+        return "careers index"
+
+    # Require a real article-like path (not just / or /blog)
+    segments = [s for s in path.split('/') if s]
+    if len(segments) < 1:
+        return "homepage / no article path"
+    if len(segments) == 1 and segments[0].lower() in _SECTION_ROOTS:
+        return f"section root (/{segments[0]})"
+
+    return None
+
+
+def is_canonical_article_url(url: str) -> bool:
+    """True if URL looks like a specific article worth caching for dedup."""
+    return non_canonical_reason(url) is None
+
+
 def check_url(url: str) -> Optional[Dict]:
     """Check if URL has been seen before"""
     cache = load_cache()
@@ -85,8 +181,18 @@ def check_url(url: str) -> Optional[Dict]:
     return None
 
 
-def add_url(url: str, category: str, title: str = ""):
-    """Add URL to cache"""
+def add_url(url: str, category: str, title: str = "", force: bool = False) -> bool:
+    """
+    Add URL to cache.
+
+    By default rejects non-canonical (search/feed/homepage) URLs.
+    Returns True if cached (new or refreshed), False if rejected.
+    """
+    if not force and not is_canonical_article_url(url):
+        reason = non_canonical_reason(url)
+        print(f"✗ Skipped non-canonical URL ({reason}): {url[:80]}")
+        return False
+
     cache = load_cache()
     normalized = normalize_url(url)
     today = datetime.now().strftime('%Y-%m-%d')
@@ -112,6 +218,7 @@ def add_url(url: str, category: str, title: str = ""):
 
     save_cache(cache)
     print(f"✓ Added to cache: {url[:80]}...")
+    return True
 
 
 def list_urls(days: int = 7):
@@ -199,14 +306,19 @@ def main():
 
     elif command == 'add':
         if len(sys.argv) < 4:
-            print("Usage: python3 scripts/url_cache.py add <url> <category> [title]")
+            print("Usage: python3 scripts/url_cache.py add <url> <category> [title] [--force]")
             sys.exit(1)
 
         url = sys.argv[2]
         category = sys.argv[3]
-        title = sys.argv[4] if len(sys.argv) > 4 else ""
+        # title is optional positional; --force may appear anywhere after
+        force = '--force' in sys.argv
+        title_parts = [a for a in sys.argv[4:] if a != '--force']
+        title = title_parts[0] if title_parts else ""
 
-        add_url(url, category, title)
+        ok = add_url(url, category, title, force=force)
+        if not ok:
+            sys.exit(2)
 
     elif command == 'list':
         days = 7
