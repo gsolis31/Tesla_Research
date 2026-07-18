@@ -1,68 +1,67 @@
 # Tesla Investor Tracking Dashboard
 
-An automated tracking system for monitoring Tesla's key development milestones across AI chips, autonomous vehicles, robotics, and regulatory approvals. Built with React + TypeScript and powered by a custom Claude AI skill that automatically researches and updates the dashboard weekly.
+An automated tracking system for Tesla's key milestones across AI chips, autonomy, robotics, batteries, and production. Built with React + TypeScript; researched and updated via Claude skills (`/tesla-update-v2` preferred).
 
 ![Dashboard Preview](https://img.shields.io/badge/Status-Active-success)
-![Last Updated](https://img.shields.io/badge/Updated-2026--07--03-blue)
+![Last Updated](https://img.shields.io/badge/Updated-2026--07--17-blue)
 [![Deployed](https://img.shields.io/badge/Live-GitHub%20Pages-brightgreen)](https://gsolis31.github.io/Tesla_Research/)
 
-## 🎯 What This Tracks
+## What This Tracks
 
-**9 Key Categories:**
-1. **AI Chip Production** - AI5/AI6 development at Samsung/TSMC, Terafab progress
-2. **Cybercab Production** - Autonomous robotaxi manufacturing and testing
-3. **FSD Country Approvals** - Full Self-Driving regulatory progress worldwide
-4. **FSD v15 Software** - Major software rewrite timeline and development
-5. **Job Postings** - Optimus robotics hiring trends
-6. **Optimus Production** - Humanoid robot manufacturing timeline
-7. **Terafab In-House Chip Manufacturing** - Tesla's chip fabrication facility
-8. **4680 Battery Cell Production** - Battery cell manufacturing progress
-9. **Vehicle Production & Delivery** - Quarterly production and delivery data
+**9 categories** (dashboard tabs + weekly keyChanges):
 
-**Plus:**
-- Robotaxi fleet deployment by city
-- Historical trends and year-over-year growth analysis
-- Interactive charts and metrics visualization
-- Real-time Tesla stock chart (TradingView)
+1. **Cybercab Production** — robotaxi fleet, city launches, Cybercab manufacturing
+2. **FSD Country Approvals** — regulatory approvals, NHTSA/NTSB, EU homologation
+3. **FSD v15 Software** — OTA versions, HW3/HW4 ceilings, training-mile milestones
+4. **Optimus Production** — humanoid ramp, factory deployment
+5. **AI Chip Production** — AI5/AI6, Samsung/TSMC, Dojo (chip design/foundry — not fab politics)
+6. **4680 Battery Cell Production** — cell lines, yield, dry electrode, GWh
+7. **Terafab Manufacturing** — fab site, JETI tax deals, permits (not chip tape-outs)
+8. **Job Postings** — AI/robotics/Optimus hiring signals
+9. **Vehicle Production & Delivery** — quarterly P&D, IR consensus, market entries
 
-## 🚀 Quick Start
+**Also:**
+- Robotaxi fleet metrics and city breakdown
+- Weekly summaries with headline vs reality sentiment
+- Interactive charts + TradingView TSLA widget
 
-### View Live Dashboard
+## Quick Start
 
-Visit the live dashboard at: **https://gsolis31.github.io/Tesla_Research/**
+### Live dashboard
 
-### Local Development
+**https://gsolis31.github.io/Tesla_Research/**
+
+### Local development
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-# Opens at http://localhost:5173
-
-# Build for production
-npm run build
-# Creates dist/ folder with optimized build
+npm run dev          # http://localhost:5173
+npm run build        # production → dist/
 ```
 
-### Automated Updates (Claude Code Required)
+### Research update (Claude Code)
 
-If you have [Claude Code](https://claude.ai/code) installed:
+**Preferred (batched, ~12–15 min):**
+
+```bash
+/tesla-update-v2
+```
+
+**Simpler sequential (low-news weeks):**
 
 ```bash
 /tesla-update
 ```
 
-This skill will:
-- Research latest news across all 9 categories
-- Check for new quarterly production & delivery reports
-- Update robotaxi fleet deployment data
-- Update the JSON data file
-- Rebuild the React app
-- **Note**: Currently does not auto-commit (manual git push required)
+V2 pipeline:
+1. Generates configs under `research/configs/`
+2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json`
+3. Curator validates/dedupes/sentiment-corrects → `research/findings/YYYY-MM-DD.json`
+4. Merges into `data/tesla-tracking-data.json`
+5. Updates URL cache (canonical article URLs only)
+6. Archives old years, validates, builds, **commits and pushes**
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Research/
@@ -73,183 +72,159 @@ Research/
 │   └── archives/                # Year archives of old metrics/summaries
 ├── research/
 │   ├── configs/                 # Generated research-config-*.json + curator-config
-│   ├── raw/                     # Per-category findings-{category}.json (pipeline stage)
+│   ├── raw/                     # Per-category findings-{category}.json
 │   └── findings/                # Curated YYYY-MM-DD.json, reports, url-cache, schema
-├── scripts/                     # Pipeline tooling (see scripts/paths.py for layout)
-│   ├── paths.py                 # Canonical paths for all scripts
-│   ├── spawn_researcher.py      # Generate research configs
-│   ├── spawn_curator.py         # Generate curator config
-│   ├── merge_findings.py        # Merge curated findings → data/
-│   ├── validate_data.py         # Python validation
-│   ├── update_url_cache.py      # Canonical URL cache updates
-│   └── archive_old_data.py
-├── docs/                        # Architecture & design notes
+├── scripts/
+│   ├── paths.py                 # Canonical paths (import this; don't hardcode)
+│   ├── spawn_researcher.py      # → research/configs/
+│   ├── spawn_curator.py         # → research/configs/curator-config.json
+│   ├── merge_findings.py        # curated findings → data/
+│   ├── validate_data.py         # Python structure + invariants
+│   ├── validate-zod-schema.ts   # CI Zod check
+│   ├── update_url_cache.py      # Canonical article URLs only
+│   ├── url_cache.py             # Cache primitives + noise filters
+│   └── archive_old_data.py      # → data/archives/
+├── docs/                        # Architecture notes (see below)
 ├── .claude/
 │   ├── agents/                  # tesla-researcher, tesla-curator
-│   └── skills/                  # /tesla-update-v2 (preferred), /tesla-update
-├── .github/workflows/deploy.yml
+│   └── skills/                  # tesla-update-v2 (preferred), tesla-update, …
+├── .github/workflows/deploy.yml # Validate → build → GitHub Pages
 ├── package.json
 └── README.md
 ```
 
-## 🔄 How Updates Work
+All script paths go through `scripts/paths.py` so layout stays consistent.
 
-The `/tesla-update` skill automates the entire research and update process:
+## How Updates Work (V2)
 
-1. **Research** - Searches preferred news sources (Electrek, Teslarati, robotaxitracker.com, etc.)
-2. **Extract** - Pulls key developments with dates and sources
-3. **Update JSON** - Adds new weekly summary, metrics, and P&D data
-4. **Archive** - Archives old data (keeps current + previous year)
-5. **Rebuild** - Runs `npm run build` to create production build
-6. **Deploy** - Commits and pushes; GitHub Actions auto-deploys
-
-## 🛠️ Technical Stack
-
-**Frontend:**
-- **React 18** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool (fast HMR, optimized builds)
-- **Tailwind CSS** - Utility-first styling
-- **Chart.js** - Data visualization
-- **react-chartjs-2** - React wrapper for Chart.js
-- **TradingView Widget** - Live stock chart
-
-**Deployment:**
-- **GitHub Actions** - Automated CI/CD
-- **GitHub Pages** - Static site hosting
-- **Auto-deploy** - Every push to main triggers rebuild and deployment
-
-**Data Management:**
-- **JSON** - Single source of truth
-- **Direct import** - Vite bundles JSON with app (no sync script needed)
-- **Time-based archiving** - Keeps data file size manageable
-
-**Development:**
-- **Node.js 20** - Runtime
-- **npm** - Package manager
-- **ESLint** - Code linting
-- **Hot Module Replacement** - Instant updates during development
-
-## 📊 Dashboard Features
-
-### Charts & Metrics Tab
-- **Production & Delivery Charts** - Advanced filtering by year/quarter with grouping options
-- **Cybercab Production** - Production count over time
-- **Robotaxi Fleet** - Total fleet size tracking
-- **Job Postings** - Optimus hiring trends
-- **City-by-City Breakdown** - Robotaxi service status by location
-
-### Weekly Summary Tab
-- Latest developments with sentiment analysis
-- Evidence-based reality checks (headline vs actual metrics)
-- Status indicators: 🟢 Positive, 🔴 Negative, 🟡 Neutral
-- Source links for verification
-
-### Categories Tab
-- **AI Chip Production** - Timeline, key points, latest updates
-- **Cybercab** - Development milestones
-- **FSD Approvals** - Country-by-country progress
-- **Optimus Production** - Manufacturing timeline
-
-## 📈 Data Sources
-
-**Preferred News Sources:**
-- [Electrek](https://electrek.co) - Tesla news and analysis
-- [Teslarati](https://teslarati.com) - Tesla community news
-- [TeslaNorth](https://teslanorth.com) - Tesla updates
-- [Tesla Oracle](https://teslaoracle.com) - Tesla insights
-- [Basenor](https://basenor.com) - Tesla analysis
-- [Optimusk Blog](https://optimusk.blog) - Optimus updates
-- [Robotaxi Tracker](https://robotaxitracker.com) - Fleet deployment data
-
-**Official Data:**
-- [Tesla Investor Relations](https://ir.tesla.com/press) - Quarterly production & delivery reports
-
-## 🚢 Deployment
-
-### Automatic Deployment (GitHub Actions)
-
-Every push to `main` triggers:
 ```
-Push to main
-  ↓
-GitHub Actions workflow runs
-  ↓
-npm ci (install dependencies)
-  ↓
-npm run build (create production build)
-  ↓
-Deploy dist/ to GitHub Pages
-  ↓
-Live at https://gsolis31.github.io/Tesla_Research/
+spawn_researcher.py --all
+        ↓
+research/configs/research-config-*.json
+        ↓
+9× tesla-researcher (3 batches of 3)
+        ↓
+research/raw/findings-{category}.json
+        ↓
+spawn_curator.py + tesla-curator
+        ↓
+research/findings/YYYY-MM-DD.json
+        ↓
+merge_findings.py → data/tesla-tracking-data.json
+        ↓
+update_url_cache.py · archive_old_data.py · validate · npm run build
+        ↓
+git commit + push → GitHub Actions deploys Pages
 ```
 
-View workflow runs: [Actions Tab](https://github.com/gsolis31/Tesla_Research/actions)
+### Quality gates built into the pipeline
 
-### Manual Deployment
+| Gate | What it does |
+|------|----------------|
+| **Category ownership** | Each researcher has `owns` / `doesNotOwn` (e.g. AI5 tape-out → aiChip, not terafab; FSD OTA → fsdv15, not fsd) |
+| **Curator** | Dedupes vs last week + URL cache; auto-corrects sugar-coated sentiment; rejects weak Electrek-only claims |
+| **Canonical URL cache** | Only article source URLs are cached (no search pages, RSS, homepages) |
+| **Dual validation** | Python `validate_data.py` + Zod `src/schema.ts` (CI + build) |
+
+## Technical Stack
+
+**Frontend:** React 18, TypeScript, Vite, Tailwind, Chart.js, TradingView  
+**Data:** JSON source of truth (`data/tesla-tracking-data.json`), imported directly by Vite  
+**Research:** Claude agents + Python merge/validate scripts  
+**Deploy:** GitHub Actions → GitHub Pages on every push to `main`
+
+## Dashboard Features
+
+### Charts & Metrics
+- Production & delivery (filter by year/quarter)
+- Cybercab production and robotaxi fleet series
+- Job postings trend
+- City-by-city robotaxi status
+
+### Weekly Summary
+- Key changes with status (positive / negative / neutral)
+- Headline vs reality sentiment + evidence signals
+- Source links
+
+### Categories
+Tabs for all nine categories (including **FSD v15 Software**): critical news, key points, timeline where applicable.
+
+## Data Sources
+
+**Tier 1 (primary):**
+- [Tesla IR](https://ir.tesla.com) — official production/delivery
+- [Teslarati](https://teslarati.com), [TeslaNorth](https://teslanorth.com), [Tesla Oracle](https://teslaoracle.com)
+- [Basenor](https://basenor.com), [Optimusk Blog](https://optimusk.blog), [Not a Tesla App](https://www.notateslaapp.com)
+- [Robotaxi Tracker](https://robotaxitracker.com) — fleet deployment
+
+**Tier 2 (corroboration only — never sole source):**
+- [Electrek](https://electrek.co), InsideEVs, etc.
+
+## Deployment
+
+Every push to `main`:
+
+```
+push main
+  → python3 scripts/validate_data.py
+  → npx tsx scripts/validate-zod-schema.ts
+  → npm ci && npm run build
+  → deploy dist/ to GitHub Pages
+```
+
+Live: https://gsolis31.github.io/Tesla_Research/  
+Actions: https://github.com/gsolis31/Tesla_Research/actions
 
 ```bash
-# Build locally
 npm run build
-
-# Commit and push
-git add .
-git commit -m "Update dashboard"
+git add data/ research/ dist/   # typical research update paths
+git commit -m "Update: …"
 git push origin main
-
-# GitHub Actions handles the rest!
 ```
 
-## 🧪 Data Validation
+## Validation & Maintenance
 
-The project uses a **dual-layer validation system** to ensure data quality:
-
-### Pre-Build Validation (Python)
 ```bash
+# Structure + invariants + UI coverage
 python3 scripts/validate_data.py
-```
-Validates:
-- JSON structure and required fields
-- Date formats and data types
-- Business logic invariants (chronological order, no duplicates)
-- Category names match schema
-- UI coverage (warns if data won't render)
 
-### Build-Time Validation (Zod)
-Automatic validation during `npm run build`:
-- Runtime type checking with Zod schema
-- Build fails on invalid data
-- TypeScript types generated from schema (single source of truth)
+# Zod schema (same as CI)
+npx tsx scripts/validate-zod-schema.ts
 
-### Archive Old Data
-Keeps data file manageable (current + previous year):
-```bash
+# Keep only current + previous year in main file
 python3 scripts/archive_old_data.py
+
+# Cache article URLs from a curated findings file
+python3 scripts/update_url_cache.py research/findings/YYYY-MM-DD.json
+
+# Optional: strip non-canonical URLs from cache
+python3 scripts/update_url_cache.py --prune
 ```
 
-**Note**: See `VALIDATION_UPGRADE.md` for full documentation on the validation system.
+## Docs
 
-## 🤝 Contributing
+| Doc | Topic |
+|-----|--------|
+| [docs/SCHEMA_BOUND_ARCHITECTURE.md](docs/SCHEMA_BOUND_ARCHITECTURE.md) | Findings → merge → main data |
+| [docs/VALIDATION_UPGRADE.md](docs/VALIDATION_UPGRADE.md) | Python + Zod validation |
+| [docs/PARALLEL_RESEARCH.md](docs/PARALLEL_RESEARCH.md) | Parallel / batched research design |
+| [research/README.md](research/README.md) | Pipeline folder layout |
+| [docs/DEAD_FILES.md](docs/DEAD_FILES.md) | Obsolete workflows / cleanup notes |
 
-This is a personal research project, but suggestions are welcome! Feel free to:
-- Open issues for data corrections
-- Suggest additional tracking categories
-- Report bugs in the dashboard
-- Submit pull requests for features
+## Contributing
 
-## 📝 License
+Personal research project; issues and corrections welcome (data fixes, bugs, category ideas).
 
-Personal research project for educational and investment tracking purposes.
+## License
 
-## 🙏 Credits
+Personal research project for educational and investment tracking. Not financial advice — verify with official sources.
 
-- **Research & Updates**: Automated via Claude Sonnet 4.5
-- **Dashboard Design**: React + TypeScript + Tailwind CSS
-- **Data Curation**: Ongoing weekly updates
-- **Deployment**: GitHub Actions + GitHub Pages
+## Credits
+
+- **Research pipeline:** Claude agents (tesla-researcher / tesla-curator) + `/tesla-update-v2`
+- **Dashboard:** React + TypeScript + Tailwind
+- **Deploy:** GitHub Actions + GitHub Pages
 
 ---
 
-**Note**: This project tracks publicly available information for research purposes. Not financial advice. Always verify information with official sources before making investment decisions.
-
-**Last Updated**: July 3, 2026 | [View Live Dashboard](https://gsolis31.github.io/Tesla_Research/)
+**Last data update:** 2026-07-17 · [Live dashboard](https://gsolis31.github.io/Tesla_Research/)
