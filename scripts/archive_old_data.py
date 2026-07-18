@@ -7,31 +7,37 @@ Archive everything older by year.
 
 Example (in 2026):
 - Keep: 2025 + 2026 data
-- Archive: 2024 and earlier → archives/2024.json, archives/2023.json, etc.
+- Archive: 2024 and earlier → data/archives/2024.json, etc.
 """
 
 import json
-import os
+import sys
 from datetime import datetime
 from collections import defaultdict
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from paths import TRACKING_DATA, ARCHIVES_DIR  # noqa: E402
 
 
-def load_data(filepath='tesla-tracking-data.json'):
+def load_data(filepath=None):
     """Load the main data file."""
+    filepath = filepath or TRACKING_DATA
     with open(filepath, 'r') as f:
         return json.load(f)
 
 
-def save_data(data, filepath='tesla-tracking-data.json'):
+def save_data(data, filepath=None):
     """Save the main data file."""
+    filepath = filepath or TRACKING_DATA
     with open(filepath, 'w') as f:
         json.dump(data, f, indent=2)
 
 
 def save_archive(archive_data, year):
-    """Save archived data to archives/YEAR.json."""
-    os.makedirs('archives', exist_ok=True)
-    filepath = f'archives/{year}.json'
+    """Save archived data to data/archives/YEAR.json."""
+    ARCHIVES_DIR.mkdir(parents=True, exist_ok=True)
+    filepath = ARCHIVES_DIR / f'{year}.json'
 
     with open(filepath, 'w') as f:
         json.dump(archive_data, f, indent=2)
@@ -132,7 +138,7 @@ def main():
     print(f"Archive: {cutoff_year - 1} and earlier\n")
 
     # Load data
-    print("[1/4] Loading tesla-tracking-data.json...")
+    print(f"[1/4] Loading {TRACKING_DATA}...")
     data = load_data()
 
     # Count current data

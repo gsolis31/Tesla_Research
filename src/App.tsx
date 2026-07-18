@@ -7,7 +7,7 @@ import StockPriceTile from './components/StockPriceTile'
 import './App.css'
 
 // Import data directly - Vite will bundle it
-import teslaDataRaw from '../tesla-tracking-data.json'
+import teslaDataRaw from '../data/tesla-tracking-data.json'
 
 // Validate data at build time with detailed error reporting
 const validationResult = validateTeslaData(teslaDataRaw)

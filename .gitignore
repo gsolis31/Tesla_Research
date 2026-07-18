@@ -20,3 +20,10 @@ dist-temp/
 # Env files
 .env
 .env.local
+
+# TypeScript incremental
+*.tsbuildinfo
+
+# Optional: uncomment to keep generated pipeline configs out of git
+# research/configs/
+# research/raw/

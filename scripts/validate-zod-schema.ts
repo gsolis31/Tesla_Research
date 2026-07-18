@@ -8,7 +8,7 @@
 import { readFileSync } from 'fs'
 import { validateTeslaData, validateDataInvariants } from '../src/schema'
 
-const data = JSON.parse(readFileSync('tesla-tracking-data.json', 'utf-8'))
+const data = JSON.parse(readFileSync('data/tesla-tracking-data.json', 'utf-8'))
 
 console.log('======================================================================')
 console.log('Validating data against Zod schema (Frontend validation)')

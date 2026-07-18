@@ -8,7 +8,7 @@ This directory contains historical data that has been archived to keep the main 
 
 **Example (in 2026):**
 - Main file: Contains 2025 + 2026 data
-- Archives: 2024 and earlier → `archives/2024.json`, `archives/2023.json`, etc.
+- Archives: 2024 and earlier → `data/archives/2024.json`, `data/archives/2023.json`, etc.
 
 **What Gets Archived:**
 - ✅ `weeklySummaries` older than previous year
@@ -38,7 +38,7 @@ The archiving process runs automatically during `/tesla-update`:
 
 1. **Check current year:** Determine cutoff (e.g., 2025 in 2026)
 2. **Identify old data:** Find entries older than cutoff year
-3. **Archive by year:** Move to `archives/YEAR.json`
+3. **Archive by year:** Move to `data/archives/YEAR.json`
 4. **Update main file:** Remove archived data
 
 ## Manual Archiving

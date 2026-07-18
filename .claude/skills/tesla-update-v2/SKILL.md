@@ -47,7 +47,7 @@ from datetime import datetime, timedelta
 import json
 
 # Load current data
-data = json.load(open('/Users/gonzalosolis/Research/tesla-tracking-data.json'))
+data = json.load(open('/Users/gonzalosolis/Research/data/tesla-tracking-data.json'))
 last_updated = data['lastUpdated']
 today = datetime.now().strftime('%Y-%m-%d')
 
@@ -68,15 +68,15 @@ python3 scripts/spawn_researcher.py --all
 ```
 
 This creates 9 config files:
-- `research-config-cybercab.json`
-- `research-config-fsd.json`
-- `research-config-optimus.json`
-- `research-config-aiChip.json`
-- `research-config-battery4680.json`
-- `research-config-terafab.json`
-- `research-config-jobPostings.json`
-- `research-config-productionDelivery.json`
-- `research-config-fsdv15.json`
+- `research/configs/research-config-cybercab.json`
+- `research/configs/research-config-fsd.json`
+- `research/configs/research-config-optimus.json`
+- `research/configs/research-config-aiChip.json`
+- `research/configs/research-config-battery4680.json`
+- `research/configs/research-config-terafab.json`
+- `research/configs/research-config-jobPostings.json`
+- `research/configs/research-config-productionDelivery.json`
+- `research/configs/research-config-fsdv15.json`
 
 ### Step 3: Spawn Researcher Agents (Batched)
 
@@ -108,7 +108,7 @@ Task({
 })
 ```
 
-Wait for batch 1 to complete (check for 3 findings-*.json files).
+Wait for batch 1 to complete (check for 3 research/raw/findings-*.json files).
 
 **Batch 2 (High Priority):**
 ```python
@@ -136,7 +136,7 @@ Task({
 })
 ```
 
-Wait for batch 2 to complete (check for 6 findings-*.json files total).
+Wait for batch 2 to complete (check for 6 research/raw/findings-*.json files total).
 
 **Batch 3 (Medium + Low Priority):**
 ```python
@@ -164,7 +164,7 @@ Task({
 })
 ```
 
-Wait for batch 3 to complete (check for 9 findings-*.json files total).
+Wait for batch 3 to complete (check for 9 research/raw/findings-*.json files total).
 
 **Expected outputs:** 9 `findings-{category}.json` files
 
@@ -178,7 +178,7 @@ Wait for batch 3 to complete (check for 9 findings-*.json files total).
 # Wait for batch to complete
 expected_count=3  # or 6 for batch 2, or 9 for batch 3
 while true; do
-    count=$(ls findings-*.json 2>/dev/null | wc -l | tr -d ' ')
+    count=$(ls research/raw/findings-*.json 2>/dev/null | wc -l | tr -d ' ')
     if [ "$count" -ge $expected_count ]; then
         echo "✓ Batch completed ($count/$expected_count files)"
         break
@@ -190,7 +190,7 @@ done
 
 **Check final completion:**
 ```bash
-ls findings-*.json
+ls research/raw/findings-*.json
 # Should see 9 files
 ```
 
@@ -201,7 +201,7 @@ python3 scripts/spawn_curator.py
 ```
 
 This creates `curator-config.json` with:
-- List of all findings-*.json files
+- List of all research/raw/findings-*.json files
 - Last week's keyChanges (for deduplication)
 - URL cache path
 - Date and weekOf
@@ -218,7 +218,7 @@ Task({
     prompt: """
 Curate the research findings from all categories.
 
-Use the configuration file: curator-config.json
+Use the configuration file: research/configs/curator-config.json
 
 This file contains:
 - All findings-{category}.json files to merge
@@ -233,7 +233,7 @@ Your tasks:
 5. Normalize data (category names, dates, confidence)
 6. Extract trends
 7. Merge metrics and category updates
-8. Write findings/YYYY-MM-DD.json
+8. Write research/findings/YYYY-MM-DD.json
 9. Generate validation report
 
 Be critical. Auto-fix sentiment when status=positive but reality=negative.
@@ -242,8 +242,8 @@ Be critical. Auto-fix sentiment when status=positive but reality=negative.
 ```
 
 **Expected outputs:**
-- `findings/YYYY-MM-DD.json` (validated findings)
-- `findings/curator-report-YYYY-MM-DD.md` (validation report)
+- `research/findings/YYYY-MM-DD.json` (validated findings)
+- `research/findings/curator-report-YYYY-MM-DD.md` (validation report)
 
 **Estimated time:** 2-3 minutes
 
@@ -256,7 +256,7 @@ Check that findings file exists:
 today=$(date +%Y-%m-%d)
 
 # Wait for curator
-while [ ! -f "findings/$today.json" ]; do
+while [ ! -f "research/findings/$today.json" ]; do
     echo "Waiting for curator..."
     sleep 5
 done
@@ -267,7 +267,7 @@ echo "✓ Curator completed"
 ### Step 8: Review Curator Report
 
 ```bash
-cat findings/curator-report-$(date +%Y-%m-%d).md
+cat research/findings/curator-report-$(date +%Y-%m-%d).md
 ```
 
 Check:
@@ -279,7 +279,7 @@ Check:
 
 ```bash
 today=$(date +%Y-%m-%d)
-python3 scripts/merge_findings.py findings/$today.json
+python3 scripts/merge_findings.py research/findings/$today.json
 ```
 
 This merges the validated findings into `tesla-tracking-data.json`.
@@ -290,7 +290,7 @@ Cache **canonical article source URLs only** (from accepted keyChanges). Do not 
 
 ```bash
 today=$(date +%Y-%m-%d)
-python3 scripts/update_url_cache.py findings/$today.json
+python3 scripts/update_url_cache.py research/findings/$today.json
 ```
 
 Optional cleanup if noise leaked into the cache:
@@ -328,7 +328,7 @@ Build will fail if validation errors exist.
 today=$(date +%Y-%m-%d)
 
 # Get summary from findings
-summary=$(cat findings/$today.json | python3 -c "
+summary=$(cat research/findings/$today.json | python3 -c "
 import json, sys
 findings = json.load(sys.stdin)
 kc_count = len(findings['findings']['keyChanges'])
@@ -336,7 +336,7 @@ trend_count = len(findings['findings'].get('trends', []))
 print(f'{kc_count} key changes, {trend_count} trends')
 ")
 
-git add tesla-tracking-data.json findings/$today.json findings/url-cache.json dist/
+git add data/tesla-tracking-data.json research/findings/$today.json research/findings/url-cache.json dist/
 
 git commit -m "$(cat <<EOF
 Update: Batched research for $today
@@ -349,7 +349,7 @@ Research pipeline:
 - Total: ~12-15 min
 
 Validation summary:
-$(cat findings/curator-report-$today.md | grep -A 10 "validationSummary" | head -5)
+$(cat research/findings/curator-report-$today.md | grep -A 10 "validationSummary" | head -5)
 
 Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 EOF
@@ -364,14 +364,14 @@ git push origin main
 
 **If a researcher fails:**
 - Other researchers continue (isolation)
-- Check which findings-*.json are missing
+- Check which research/raw/findings-*.json are missing
 - Re-run failed category: `python3 scripts/spawn_researcher.py <category>`
 - Then continue with curator
 
 **If curator fails:**
 - Findings files are preserved
 - Check curator-report for errors
-- Fix issues in findings-*.json if needed
+- Fix issues in research/raw/findings-*.json if needed
 - Re-run curator: `python3 scripts/spawn_curator.py`
 
 **If merge fails:**
@@ -426,19 +426,19 @@ git push origin main
 /tasks
 
 # Count completed researchers
-ls findings-*.json 2>/dev/null | wc -l
+ls research/raw/findings-*.json 2>/dev/null | wc -l
 
 # Check specific category output
-cat findings-cybercab.json | python3 -c "import json,sys; print(len(json.load(sys.stdin)['keyChanges']), 'keyChanges')"
+cat research/raw/findings-cybercab.json | python3 -c "import json,sys; print(len(json.load(sys.stdin)['keyChanges']), 'keyChanges')"
 ```
 
 **After completion:**
 ```bash
 # Review curator report
-cat findings/curator-report-$(date +%Y-%m-%d).md
+cat research/findings/curator-report-$(date +%Y-%m-%d).md
 
 # Check final findings
-cat findings/$(date +%Y-%m-%d).json | python3 -c "
+cat research/findings/$(date +%Y-%m-%d).json | python3 -c "
 import json, sys
 d = json.load(sys.stdin)
 print(f\"keyChanges: {len(d['findings']['keyChanges'])}\")
@@ -453,7 +453,7 @@ print(f\"sentiment corrected: {d['metadata']['validationSummary']['sentimentCorr
 ## Success Criteria
 
 **Research phase:**
-- ✅ 9 findings-*.json files created
+- ✅ 9 research/raw/findings-*.json files created
 - ✅ Each has keyChanges OR skipReason
 - ✅ URLs cached
 
@@ -461,7 +461,7 @@ print(f\"sentiment corrected: {d['metadata']['validationSummary']['sentimentCorr
 - ✅ Duplicates removed
 - ✅ Sentiment validated (sugar-coating caught)
 - ✅ Weak claims rejected
-- ✅ findings/YYYY-MM-DD.json created
+- ✅ research/findings/YYYY-MM-DD.json created
 
 **Deployment phase:**
 - ✅ Validation passes
@@ -501,21 +501,21 @@ Generate configs (spawn_researcher.py --all)
   ↓
 Batch 1: Spawn 3 tesla-researcher agents
   ↓ 3-4 min
-findings-*.json × 3
+research/raw/findings-*.json × 3
   ↓
 Batch 2: Spawn 3 tesla-researcher agents
   ↓ 3-4 min
-findings-*.json × 6 total
+research/raw/findings-*.json × 6 total
   ↓
 Batch 3: Spawn 3 tesla-researcher agents
   ↓ 3-4 min
-findings-*.json × 9 total
+research/raw/findings-*.json × 9 total
   ↓
 Generate curator config (spawn_curator.py)
   ↓
 Spawn 1 tesla-curator agent
   ↓ 2-3 min
-findings/YYYY-MM-DD.json (validated)
+research/findings/YYYY-MM-DD.json (validated)
   ↓
 Run scripts (merge, validate, archive, build)
   ↓

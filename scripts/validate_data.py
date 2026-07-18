@@ -270,7 +270,9 @@ def main():
     print("Tesla Dashboard Data Validation (React/Vite)")
     print("=" * 70)
 
-    json_path = Path(__file__).parent.parent / 'tesla-tracking-data.json'
+    sys.path.insert(0, str(Path(__file__).parent))
+    from paths import TRACKING_DATA  # noqa: E402
+    json_path = TRACKING_DATA
 
     all_errors = []
     all_warnings = []

@@ -51,7 +51,7 @@ VAGUE_WORDS = ['possible', 'maybe', 'could', 'might', 'potentially', 'reportedly
 
 def load_config():
     """Load curator configuration"""
-    config_path = Path('/Users/gonzalosolis/Research/curator-config.json')
+    config_path = Path('/Users/gonzalosolis/Research/research/configs/curator-config.json')
     with open(config_path) as f:
         return json.load(f)
 
@@ -334,7 +334,7 @@ def write_final_findings(config: Dict, filtered: List[Dict], trends: List[str],
         }
 
     # Write output
-    output_path = Path('/Users/gonzalosolis/Research/findings') / f'{date}.json'
+    output_path = Path('/Users/gonzalosolis/Research/research/findings') / f'{date}.json'
     output_path.parent.mkdir(exist_ok=True)
 
     with open(output_path, 'w') as f:
@@ -453,7 +453,7 @@ def main():
         filtered, corrected_count, rejected, trends
     )
 
-    report_path = Path('/Users/gonzalosolis/Research/findings') / f'curator-report-{config["date"]}.md'
+    report_path = Path('/Users/gonzalosolis/Research/research/findings') / f'curator-report-{config["date"]}.md'
     with open(report_path, 'w') as f:
         f.write(report)
 

@@ -24,7 +24,7 @@ Usage:
     python3 scripts/url_cache.py stats
 
 Prefer bulk update from findings:
-    python3 scripts/update_url_cache.py findings/YYYY-MM-DD.json
+    python3 scripts/update_url_cache.py research/findings/YYYY-MM-DD.json
     python3 scripts/update_url_cache.py --prune
 """
 
@@ -36,7 +36,10 @@ from pathlib import Path
 from typing import Optional, Dict
 from urllib.parse import urlparse
 
-CACHE_FILE = Path('findings/url-cache.json')
+sys.path.insert(0, str(Path(__file__).parent))
+from paths import URL_CACHE  # noqa: E402
+
+CACHE_FILE = URL_CACHE
 
 # Paths that are research noise, not article sources
 _NOISE_PATH_PATTERNS = [

@@ -12,6 +12,15 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+# Allow running as scripts/spawn_researcher.py from repo root
+sys.path.insert(0, str(Path(__file__).parent))
+from paths import (  # noqa: E402
+    TRACKING_DATA,
+    RAW_DIR,
+    ensure_research_dirs,
+    research_config_path,
+)
+
 # Canonical display names used in keyChanges.category (for hot-context matching)
 CATEGORY_DISPLAY_NAMES = {
     "cybercab": "Cybercab Production",
@@ -231,8 +240,7 @@ def _normalize_label(s: str) -> str:
 
 def load_hot_context(category_key):
     """Extract hot context for a category from main data file."""
-    data_path = Path(__file__).parent.parent / "tesla-tracking-data.json"
-    with open(data_path) as f:
+    with open(TRACKING_DATA) as f:
         data = json.load(f)
 
     display_name = CATEGORY_DISPLAY_NAMES.get(category_key, category_key)
@@ -243,7 +251,6 @@ def load_hot_context(category_key):
         "recentKeyChanges": []
     }
 
-    # Match keyChanges by exact display name, or normalized startswith fallback
     if data["weeklySummaries"]:
         latest_week = data["weeklySummaries"][0]
         matched = []
@@ -257,7 +264,6 @@ def load_hot_context(category_key):
                 matched.append(kc)
         hot_context["recentKeyChanges"] = matched[:3]
 
-    # Get latest metrics
     if category_key == "cybercab" and "cybercab" in data["metrics"]:
         if data["metrics"]["cybercab"].get("data"):
             hot_context["latestMetric"] = data["metrics"]["cybercab"]["data"][-1]
@@ -287,6 +293,7 @@ def create_config(category_key, date_from, date_to, week_of):
         "dateFrom": date_from,
         "dateTo": date_to,
         "weekOf": week_of,
+        "outputPath": str(RAW_DIR / f"findings-{category_key}.json"),
         "hotContext": load_hot_context(category_key),
         **CATEGORIES[category_key]
     }
@@ -301,39 +308,35 @@ def main():
         print(f"\nAvailable categories: {', '.join(CATEGORIES.keys())}")
         sys.exit(1)
 
-    # Load main data to get date range
-    data_path = Path(__file__).parent.parent / "tesla-tracking-data.json"
-    with open(data_path) as f:
+    ensure_research_dirs()
+
+    with open(TRACKING_DATA) as f:
         data = json.load(f)
 
     date_from = data["lastUpdated"]
     date_to = datetime.now().strftime("%Y-%m-%d")
 
-    # Calculate Monday of current week
     now = datetime.now()
     monday = now - timedelta(days=now.weekday())
     week_of = monday.strftime("%Y-%m-%d")
 
     if sys.argv[1] == "--all":
-        # Create configs for all categories
         print(f"Creating configs for all 9 categories...")
         print(f"Research period: {date_from} → {date_to}")
         print(f"Week of: {week_of}\n")
 
         for category_key in CATEGORIES.keys():
             config = create_config(category_key, date_from, date_to, week_of)
-
-            # Write config file
-            config_path = Path(__file__).parent.parent / f"research-config-{category_key}.json"
+            config_path = research_config_path(category_key)
             with open(config_path, 'w') as f:
                 json.dump(config, f, indent=2)
 
             priority = config["priority"]
             model = "sonnet" if priority in ["critical", "high"] else "haiku"
+            print(f"✓ {category_key:20} priority={priority:8} model={model:6} → {config_path.relative_to(config_path.parents[1])}")
 
-            print(f"✓ {category_key:20} priority={priority:8} model={model:6} → research-config-{category_key}.json")
-
-        print(f"\n✅ Created 9 config files")
+        print(f"\n✅ Created 9 config files in research/configs/")
+        print(f"   Researchers write to research/raw/findings-{{category}}.json")
         print(f"\nNext steps:")
         print(f"1. Spawn researchers in parallel (via Task tool or manually)")
         print(f"2. Wait for all to complete")
@@ -348,18 +351,17 @@ def main():
             sys.exit(1)
 
         config = create_config(category_key, date_from, date_to, week_of)
-
-        # Write config file
-        config_path = Path(__file__).parent.parent / f"research-config-{category_key}.json"
+        config_path = research_config_path(category_key)
         with open(config_path, 'w') as f:
             json.dump(config, f, indent=2)
 
-        print(f"✅ Created research config: research-config-{category_key}.json")
+        print(f"✅ Created research config: {config_path}")
         print(f"\nConfig summary:")
         print(f"  Category: {config['categoryName']}")
         print(f"  Priority: {config['priority']}")
         print(f"  Period: {date_from} → {date_to}")
         print(f"  Week of: {week_of}")
+        print(f"  Output: {config['outputPath']}")
         print(f"  Sources: {', '.join(config['sources']['tier1'])}")
         print(f"  Keywords: {', '.join(config['keywords'][:3])}...")
         owns = config.get("ownership", {}).get("owns", [])

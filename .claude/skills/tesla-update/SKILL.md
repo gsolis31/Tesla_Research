@@ -26,10 +26,10 @@ allowed-tools: WebSearch, Read, Edit, Write, Bash
 ## What This Skill Does
 
 When invoked, this skill will:
-1. Read the current `tesla-tracking-data.json` to get the last update date
+1. Read the current `data/tesla-tracking-data.json` to get the last update date
 2. Research latest news for all categories **sequentially** (one at a time)
 3. Check for new quarterly production & delivery reports from ir.tesla.com/press
-4. Update `tesla-tracking-data.json` with new weekly summary, metrics, and P&D data
+4. Update `data/tesla-tracking-data.json` with new weekly summary, metrics, and P&D data
 5. Run validation and build
 6. Provide a summary of key updates
 
@@ -39,7 +39,7 @@ When invoked, this skill will:
 
 ## File Locations
 
-- **JSON Data**: `/Users/gonzalosolis/Research/tesla-tracking-data.json`
+- **JSON Data**: `/Users/gonzalosolis/Research/data/tesla-tracking-data.json`
 - **React Source**: `/Users/gonzalosolis/Research/src/`
 - **Production Build**: `/Users/gonzalosolis/Research/dist/`
 - **Working Directory**: `/Users/gonzalosolis/Research`
@@ -58,7 +58,7 @@ The dashboard is now a **React + TypeScript** application built with Vite. Key d
 - **Deployment**: Static files in `dist/` folder (GitHub Pages compatible)
 
 **How Data Updates Work**:
-1. Update `tesla-tracking-data.json` with new data
+1. Update `data/tesla-tracking-data.json` with new data
 2. Run `npm run build` to rebuild the React app
 3. Updated JSON is bundled into the production build automatically
 4. Deploy the `dist/` folder (or open locally)
@@ -224,7 +224,7 @@ The dashboard is now a **React + TypeScript** application built with Vite. Key d
 
 ### Step 1: Read Current State
 ```
-1. Read tesla-tracking-data.json
+1. Read data/tesla-tracking-data.json
 2. Extract lastUpdated date
 3. Calculate date range: lastUpdated → today
 ```
@@ -325,7 +325,7 @@ Before updating the JSON file, evaluate if there are significant changes:
 - Proceed to Step 3
 
 ### Step 3: Update JSON Data
-Update `tesla-tracking-data.json`:
+Update `data/tesla-tracking-data.json`:
 
 **A. Update lastUpdated**:
 ```json
@@ -433,7 +433,7 @@ Archive: 2024 and earlier
 **Note**: In 2026, all data is recent, so nothing gets archived. On January 1, 2027, all 2025 data will be archived automatically.
 
 ### Step 5: Build React Dashboard
-The dashboard is now a React + TypeScript application that imports the JSON data directly. After updating `tesla-tracking-data.json`, rebuild the production version:
+The dashboard is now a React + TypeScript application that imports the JSON data directly. After updating `data/tesla-tracking-data.json`, rebuild the production version:
 
 ```bash
 npm run build
@@ -444,7 +444,7 @@ This will:
 - Generate optimized production files in `dist/`
 - Create a deployable version ready for GitHub Pages
 
-**Note**: The React app directly imports `tesla-tracking-data.json` via Vite, so no separate sync script is needed. The build process automatically includes the updated data.
+**Note**: The React app directly imports `data/tesla-tracking-data.json` via Vite, so no separate sync script is needed. The build process automatically includes the updated data.
 
 ### Step 6: Open Dashboard
 Open the built dashboard in the browser:

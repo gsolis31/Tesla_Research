@@ -6,8 +6,8 @@ Only caches canonical article source URLs from accepted keyChanges.
 Search pages, RSS feeds, homepage queries, and careers listings are rejected.
 
 Usage:
-    python3 scripts/update_url_cache.py findings/2026-07-17.json
-    python3 scripts/update_url_cache.py findings/2026-07-17.json --dry-run
+    python3 scripts/update_url_cache.py research/findings/2026-07-17.json
+    python3 scripts/update_url_cache.py research/findings/2026-07-17.json --dry-run
     python3 scripts/update_url_cache.py --prune  # remove non-canonical URLs already in cache
 """
 

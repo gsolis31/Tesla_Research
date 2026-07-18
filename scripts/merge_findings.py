@@ -2,7 +2,7 @@
 """
 Deterministic merge script for Tesla research findings
 
-Takes findings/YYYY-MM-DD.json + tesla-tracking-data.json → updated data
+Takes research/findings/YYYY-MM-DD.json + data/tesla-tracking-data.json → updated data
 This is the only script that writes to the main data file.
 
 Features:
@@ -13,7 +13,7 @@ Features:
 - Validates before and after merge
 
 Usage:
-    python3 scripts/merge_findings.py findings/2026-07-08.json
+    python3 scripts/merge_findings.py research/findings/2026-07-08.json
 """
 
 import json
@@ -22,6 +22,9 @@ import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Any, Optional
+
+sys.path.insert(0, str(Path(__file__).parent))
+from paths import TRACKING_DATA, ROOT  # noqa: E402
 
 
 # Configuration
@@ -408,9 +411,10 @@ def merge_findings(findings_path: Path, data_path: Path, apply_caps: bool = Fals
     # Validate
     print(f"\n[7/7] Validating merged data...")
     result = subprocess.run(
-        ['python3', 'scripts/validate_data.py'],
+        ['python3', str(ROOT / 'scripts' / 'validate_data.py')],
         capture_output=True,
-        text=True
+        text=True,
+        cwd=str(ROOT),
     )
 
     if result.returncode == 0:
@@ -430,21 +434,21 @@ def merge_findings(findings_path: Path, data_path: Path, apply_caps: bool = Fals
 def main():
     """CLI entry point"""
     if len(sys.argv) < 2:
-        print("Usage: python3 scripts/merge_findings.py findings/YYYY-MM-DD.json [--apply-caps]")
+        print("Usage: python3 scripts/merge_findings.py research/findings/YYYY-MM-DD.json [--apply-caps]")
         print("\nOptions:")
         print("  --apply-caps    Apply caps to existing data (one-time cleanup)")
         sys.exit(1)
 
     findings_path = Path(sys.argv[1])
+    if not findings_path.is_absolute():
+        findings_path = ROOT / findings_path
     apply_caps = '--apply-caps' in sys.argv
 
     if not findings_path.exists():
         print(f"Error: {findings_path} not found")
         sys.exit(1)
 
-    data_path = Path('tesla-tracking-data.json')
-
-    merge_findings(findings_path, data_path, apply_caps=apply_caps)
+    merge_findings(findings_path, TRACKING_DATA, apply_caps=apply_caps)
 
 
 if __name__ == '__main__':

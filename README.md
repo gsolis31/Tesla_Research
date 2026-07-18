@@ -66,38 +66,30 @@ This skill will:
 
 ```
 Research/
-├── src/                                # React source code
-│   ├── components/                     # React components
-│   │   ├── WeeklySummary.tsx          # Latest updates display
-│   │   ├── MetricsCharts.tsx          # Charts + city table + P&D
-│   │   ├── Categories.tsx             # Category information tabs
-│   │   ├── ProductionDelivery.tsx     # P&D with advanced filtering
-│   │   └── TradingViewWidget.tsx      # Tesla stock chart
-│   ├── types/                          # TypeScript type definitions
-│   │   └── index.ts
-│   ├── App.tsx                         # Main app component
-│   ├── App.css                         # App-specific styles
-│   ├── index.css                       # Global styles + Tailwind
-│   └── main.tsx                        # React entry point
-├── dist/                               # Production build output (auto-deployed)
-├── tesla-tracking-data.json            # All tracking data (source of truth)
-├── archives/                           # Archived data by year
+├── src/                         # React dashboard (Vite + TypeScript)
+├── dist/                        # Production build (GitHub Pages)
+├── data/
+│   ├── tesla-tracking-data.json # Live tracking data (source of truth)
+│   └── archives/                # Year archives of old metrics/summaries
+├── research/
+│   ├── configs/                 # Generated research-config-*.json + curator-config
+│   ├── raw/                     # Per-category findings-{category}.json (pipeline stage)
+│   └── findings/                # Curated YYYY-MM-DD.json, reports, url-cache, schema
+├── scripts/                     # Pipeline tooling (see scripts/paths.py for layout)
+│   ├── paths.py                 # Canonical paths for all scripts
+│   ├── spawn_researcher.py      # Generate research configs
+│   ├── spawn_curator.py         # Generate curator config
+│   ├── merge_findings.py        # Merge curated findings → data/
+│   ├── validate_data.py         # Python validation
+│   ├── update_url_cache.py      # Canonical URL cache updates
+│   └── archive_old_data.py
+├── docs/                        # Architecture & design notes
 ├── .claude/
-│   └── skills/
-│       └── tesla-update/
-│           └── SKILL.md                # Automated update skill
-├── .github/
-│   └── workflows/
-│       └── deploy.yml                  # Auto-deploy to GitHub Pages
-├── scripts/
-│   ├── archive_old_data.py             # Annual data archiving
-│   ├── validate_data.py                # Data validation (React/Vite)
-│   └── validate_legacy.py              # Old validation (HTML-based, obsolete)
-├── package.json                        # Node dependencies & scripts
-├── vite.config.ts                      # Vite build configuration
-├── tailwind.config.js                  # Tailwind CSS config
-├── tsconfig.json                       # TypeScript config
-└── README.md                           # This file
+│   ├── agents/                  # tesla-researcher, tesla-curator
+│   └── skills/                  # /tesla-update-v2 (preferred), /tesla-update
+├── .github/workflows/deploy.yml
+├── package.json
+└── README.md
 ```
 
 ## 🔄 How Updates Work
