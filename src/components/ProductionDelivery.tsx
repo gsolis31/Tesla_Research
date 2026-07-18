@@ -31,6 +31,9 @@ function ProductionDelivery({ data }: Props) {
   const [showDeliveries, setShowDeliveries] = useState<boolean>(true)
   const [showLabels, setShowLabels] = useState<boolean>(false)
 
+  // Full quarterly table is long — collapsed by default
+  const [quarterlyTableOpen, setQuarterlyTableOpen] = useState<boolean>(false)
+
   // Get unique years from data
   const years = useMemo(() => {
     const yearSet = new Set(data.quarterlyData.map((q) => q.quarter.split('-')[1]))
@@ -377,53 +380,18 @@ function ProductionDelivery({ data }: Props) {
       {/* Chart */}
       <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
         <h3 className="text-lg font-bold mb-4">Quarterly Production & Deliveries</h3>
-        <Line data={chartData} options={chartOptions} plugins={[ChartDataLabels]} />
-      </div>
-
-      {/* Quarterly Data Table */}
-      <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
-        <h3 className="text-lg font-bold mb-4">Quarterly Data</h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b-2 border-gray-700">
-                <th className="text-left p-3 text-gray-300">Quarter</th>
-                <th className="text-right p-3 text-gray-300">Production</th>
-                <th className="text-right p-3 text-gray-300">Deliveries</th>
-                <th className="text-right p-3 text-gray-300">Difference</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayData.map((q, index) => (
-                  <tr
-                    key={q.quarter}
-                    className={index % 2 === 0 ? 'bg-gray-900/50' : 'bg-gray-800/50'}
-                  >
-                    <td className="p-3 font-semibold">{q.quarter}</td>
-                    <td className="p-3 text-right text-blue-400">
-                      {q.production?.toLocaleString() || '-'}
-                    </td>
-                    <td className="p-3 text-right text-green-400">
-                      {getDeliveryNumber(q).toLocaleString()}
-                    </td>
-                    <td className="p-3 text-right text-gray-400">
-                      {q.production
-                        ? (getDeliveryNumber(q) - getProductionNumber(q.production)).toLocaleString()
-                        : '-'}
-                    </td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="text-xs text-gray-500 mt-3">
-          Showing {displayData.length} {groupByYear ? 'years' : 'quarters'} • {data.quarterlyData.length} total quarters in dataset
+        <div className="h-80 md:h-96">
+          <Line
+            data={chartData}
+            options={{ ...chartOptions, maintainAspectRatio: false }}
+            plugins={[ChartDataLabels]}
+          />
         </div>
       </div>
 
-      {/* Annual Summary */}
+      {/* Annual Summary — high-level view first */}
       {data.annualSummary && data.annualSummary.length > 0 && (
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
+        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
           <h3 className="text-lg font-bold mb-4">Annual Summary</h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -449,7 +417,11 @@ function ProductionDelivery({ data }: Props) {
                       </td>
                       <td
                         className={`p-3 text-right font-semibold ${
-                          year.yoyGrowth != null && year.yoyGrowth >= 0 ? 'text-green-400' : year.yoyGrowth != null ? 'text-red-400' : 'text-gray-500'
+                          year.yoyGrowth != null && year.yoyGrowth >= 0
+                            ? 'text-green-400'
+                            : year.yoyGrowth != null
+                              ? 'text-red-400'
+                              : 'text-gray-500'
                         }`}
                       >
                         {year.yoyGrowth != null ? (
@@ -468,6 +440,82 @@ function ProductionDelivery({ data }: Props) {
           </div>
         </div>
       )}
+
+      {/* Quarterly Data Table — collapsed by default (long history) */}
+      <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6">
+        <button
+          type="button"
+          onClick={() => setQuarterlyTableOpen((open) => !open)}
+          className="w-full flex items-center justify-between gap-4 text-left group"
+          aria-expanded={quarterlyTableOpen}
+        >
+          <div>
+            <h3 className="text-lg font-bold group-hover:text-blue-400 transition-colors">
+              Quarterly Data
+            </h3>
+            <p className="text-xs text-gray-500 mt-1">
+              {displayData.length} {groupByYear ? 'years' : 'quarters'} shown
+              {' · '}
+              {data.quarterlyData.length} total in dataset
+              {!quarterlyTableOpen && ' · click to expand'}
+            </p>
+          </div>
+          <span
+            className={`text-gray-400 text-xl shrink-0 transition-transform ${
+              quarterlyTableOpen ? 'rotate-180' : ''
+            }`}
+            aria-hidden
+          >
+            ▾
+          </span>
+        </button>
+
+        {quarterlyTableOpen && (
+          <div className="mt-4">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-gray-700">
+                    <th className="text-left p-3 text-gray-300">Quarter</th>
+                    <th className="text-right p-3 text-gray-300">Production</th>
+                    <th className="text-right p-3 text-gray-300">Deliveries</th>
+                    <th className="text-right p-3 text-gray-300">Difference</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {displayData.map((q, index) => (
+                    <tr
+                      key={q.quarter}
+                      className={index % 2 === 0 ? 'bg-gray-900/50' : 'bg-gray-800/50'}
+                    >
+                      <td className="p-3 font-semibold">{q.quarter}</td>
+                      <td className="p-3 text-right text-blue-400">
+                        {typeof q.production === 'object' && q.production !== null
+                          ? q.production.total?.toLocaleString()
+                          : q.production?.toLocaleString() || '-'}
+                      </td>
+                      <td className="p-3 text-right text-green-400">
+                        {getDeliveryNumber(q).toLocaleString()}
+                      </td>
+                      <td className="p-3 text-right text-gray-400">
+                        {q.production
+                          ? (
+                              getDeliveryNumber(q) - getProductionNumber(q.production)
+                            ).toLocaleString()
+                          : '-'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="text-xs text-gray-500 mt-3">
+              Showing {displayData.length} {groupByYear ? 'years' : 'quarters'} filtered by the
+              controls above
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

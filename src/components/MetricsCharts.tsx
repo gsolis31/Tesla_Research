@@ -152,68 +152,75 @@ function MetricsCharts({ data }: Props) {
       ? registered.data[registered.data.length - 1]
       : null
 
+  // Same plot height for all four charts (and fixed header band so cards align)
+  const chartPlotClass = 'h-80 md:h-96'
+  const chartHeaderClass = 'min-h-[4.5rem] mb-3'
+
   return (
     <div className="space-y-8">
-      {/* Metrics Charts — taller panels so axes are readable */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* Metrics Charts — equal dimensions */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         {/* Cybercab Chart */}
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-lg font-bold mb-1">Cybercab Production</h3>
-          <p className="text-xs text-gray-500 mb-3">Production / staged unit counts over time</p>
-          <div className="h-80 md:h-96">
+        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 flex flex-col">
+          <div className={chartHeaderClass}>
+            <h3 className="text-lg font-bold mb-1">Cybercab Production</h3>
+            <p className="text-xs text-gray-500">Production / staged unit counts over time</p>
+          </div>
+          <div className={chartPlotClass}>
             <Line data={cybercabChartData} options={chartOptions} />
           </div>
         </div>
 
         {/* Job Postings Chart */}
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-lg font-bold mb-1">Optimus Job Postings</h3>
-          <p className="text-xs text-gray-500 mb-3">Open AI / robotics roles (when counted)</p>
-          <div className="h-80 md:h-96">
+        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 flex flex-col">
+          <div className={chartHeaderClass}>
+            <h3 className="text-lg font-bold mb-1">Optimus Job Postings</h3>
+            <p className="text-xs text-gray-500">Open AI / robotics roles (when counted)</p>
+          </div>
+          <div className={chartPlotClass}>
             <Line data={jobPostingsChartData} options={chartOptions} />
           </div>
         </div>
 
-        {/* Active Robotaxi Fleet — full width on large screens when paired with registered */}
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-lg font-bold mb-1">Active Robotaxi Fleet</h3>
-          <p className="text-xs text-gray-400 mb-1">
-            Vehicles reported <strong className="text-gray-300">in service</strong> (rides / online
-            fleet) — not DMV registrations
-          </p>
-          {latestActive && (
-            <p className="text-sm text-green-400/90 mb-3">
-              Latest: <strong>{latestActive.count}</strong> active
-              <span className="text-gray-500"> as of {latestActive.date}</span>
+        {/* Active Robotaxi Fleet */}
+        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 flex flex-col">
+          <div className={chartHeaderClass}>
+            <h3 className="text-lg font-bold mb-1">Active Robotaxi Fleet</h3>
+            <p className="text-xs text-gray-400">
+              In service (rides / online) — not DMV registrations
+              {latestActive && (
+                <span className="text-green-400/90">
+                  {' '}
+                  · Latest: <strong>{latestActive.count}</strong>
+                  <span className="text-gray-500"> ({latestActive.date})</span>
+                </span>
+              )}
             </p>
-          )}
-          <div className="h-80 md:h-[28rem]">
+          </div>
+          <div className={chartPlotClass}>
             <Line data={robotaxiFleetChartData} options={fleetOptions} />
           </div>
         </div>
 
-        {/* TX Registrations — separate chart so 175 never distorts active series */}
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-lg font-bold mb-1">Texas Robotaxi Registrations</h3>
-          <p className="text-xs text-gray-400 mb-1">
-            Texas DMV automated-vehicle <strong className="text-gray-300">registry</strong> (pipeline
-            / permitted cars) — not the same as active rides
-          </p>
-          {latestReg ? (
-            <p className="text-sm text-orange-400/90 mb-3">
-              Latest: <strong>{latestReg.count}</strong> registered
-              <span className="text-gray-500"> as of {latestReg.date}</span>
-              {latestActive && (
-                <span className="text-gray-500">
+        {/* TX Registrations */}
+        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 flex flex-col">
+          <div className={chartHeaderClass}>
+            <h3 className="text-lg font-bold mb-1">Texas Robotaxi Registrations</h3>
+            <p className="text-xs text-gray-400">
+              TX DMV registry (pipeline) — not active rides
+              {latestReg ? (
+                <span className="text-orange-400/90">
                   {' '}
-                  · active fleet still ~{latestActive.count}
+                  · Latest: <strong>{latestReg.count}</strong>
+                  <span className="text-gray-500"> ({latestReg.date})</span>
+                  {latestActive && (
+                    <span className="text-gray-500"> · active ~{latestActive.count}</span>
+                  )}
                 </span>
-              )}
+              ) : null}
             </p>
-          ) : (
-            <p className="text-sm text-gray-500 mb-3">No registration series yet</p>
-          )}
-          <div className="h-80 md:h-[28rem]">
+          </div>
+          <div className={chartPlotClass}>
             {robotaxiRegisteredChartData ? (
               <Line data={robotaxiRegisteredChartData} options={fleetOptions} />
             ) : (
