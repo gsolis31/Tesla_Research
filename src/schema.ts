@@ -83,6 +83,13 @@ const MetricsSchema = z.object({
       cities: z.array(z.string()),
     }),
   }),
+  // Texas DMV (or similar) registrations — NOT the same as active in-service fleet
+  robotaxiRegistered: z.object({
+    title: z.string(),
+    region: z.string().optional(),
+    definition: z.string().optional(),
+    data: z.array(MetricDataPointSchema),
+  }).optional(),
   robotaxiCities: z.object({
     title: z.string(),
     lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -94,6 +101,7 @@ const MetricsSchema = z.object({
       unsupervisedCapable: z.number().int().nonnegative(),
       safetyMonitorOnly: z.number().int().nonnegative(),
       totalActiveVehicles: z.number().int().nonnegative(),
+      definition: z.string().optional(),
     }),
   }),
   jobPostings: z.object({
@@ -232,25 +240,46 @@ export function validateDataInvariants(data: TeslaData): string[] {
   checkMetricDates(data.metrics.cybercab.data, 'Cybercab')
   checkMetricDates(data.metrics.robotaxiFleet.data, 'RobotaxiFleet')
   checkMetricDates(data.metrics.jobPostings.data, 'JobPostings')
+  if (data.metrics.robotaxiRegistered?.data?.length) {
+    checkMetricDates(data.metrics.robotaxiRegistered.data, 'RobotaxiRegistered')
+  }
 
-  // Check robotaxi breakdown consistency
+  // Check robotaxi city summary consistency (active = status active AND vehicles > 0)
   const cities = data.metrics.robotaxiCities
-  const totalActiveVehicles = cities.cities.reduce((sum, city) => sum + (city.activeVehicles ?? 0), 0)
+  const totalActiveVehicles = cities.cities
+    .filter((city) => city.status === 'active')
+    .reduce((sum, city) => sum + (city.activeVehicles ?? 0), 0)
   if (totalActiveVehicles !== cities.summary.totalActiveVehicles) {
-    errors.push(`RobotaxiCities summary mismatch: sum of city vehicles (${totalActiveVehicles}) != summary total (${cities.summary.totalActiveVehicles})`)
+    errors.push(`RobotaxiCities summary mismatch: sum of active city vehicles (${totalActiveVehicles}) != summary total (${cities.summary.totalActiveVehicles})`)
+  }
+  const activeCityCount = cities.cities.filter(
+    (city) => city.status === 'active' && (city.activeVehicles ?? 0) > 0
+  ).length
+  if (activeCityCount !== cities.summary.activeCities) {
+    errors.push(`RobotaxiCities summary mismatch: active cities with vehicles (${activeCityCount}) != summary.activeCities (${cities.summary.activeCities})`)
   }
 
   // Check category keys match keyChanges
+  // Canonical + common aliases (historical keyChanges used short names)
   const validCategories = new Set([
     'AI Chip Production',
+    'AI Chip',
     'Cybercab Production',
+    'Cybercab',
+    'Robotaxi',
     'FSD Country Approvals',
+    'FSD Approvals',
+    'FSD',
+    'FSD v15 Software',
+    'FSD v14 Software',
     'Job Postings',
     'Optimus Production',
+    'Optimus',
     'Vehicle Production & Delivery',
+    'Production & Delivery',
     'Terafab In-House Chip Manufacturing',
+    'Terafab Manufacturing',
     '4680 Battery Cell Production',
-    'FSD v15 Software'
   ])
 
   data.weeklySummaries.forEach((week, idx) => {

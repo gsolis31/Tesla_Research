@@ -158,11 +158,79 @@ def merge_weekly_summary(main_data: dict, findings: dict) -> dict:
 
 def merge_metrics(main_data: dict, findings: dict) -> dict:
     """
-    Merge metric data points (append-only, no duplicates)
+    Merge metric data points (append-only, no duplicates).
+
+    robotaxiFleet = active in-service vehicles only.
+    robotaxiRegistered = DMV/registry counts (never mixed into active series).
     """
     metrics_updates = findings['findings'].get('metrics', {})
 
-    for metric_name in ['cybercab', 'robotaxiFleet', 'jobPostings']:
+    def get_date(point):
+        return point.get('date') or point.get('lastUpdate')
+
+    def looks_like_registration(point) -> bool:
+        note = (point.get('note') or '').lower()
+        bd = point.get('breakdown') or {}
+        if isinstance(bd, dict) and bd.get('texasRegistered'):
+            return True
+        if 'texas-registered' in note or 'texas registered' in note:
+            return True
+        if 'dmv' in note and 'registr' in note:
+            return True
+        if 'registration basis' in note or 'registry count' in note:
+            return True
+        if 'automated-vehicle registry' in note or 'automated vehicle registry' in note:
+            return True
+        return False
+
+    def normalize_metric_point(point: dict) -> dict:
+        out = {
+            'date': get_date(point),
+            'count': int(
+                point.get('count')
+                if point.get('count') is not None
+                else point.get('vehicleCount') or 0
+            ),
+            'note': point.get('note') or '',
+        }
+        if point.get('source'):
+            out['source'] = point['source']
+        return out
+
+    def ensure_registered_metric():
+        if 'robotaxiRegistered' not in main_data['metrics']:
+            main_data['metrics']['robotaxiRegistered'] = {
+                'title': 'Texas Robotaxi Registrations (DMV)',
+                'region': 'Texas',
+                'definition': 'DMV automated-vehicle registry counts — not active in-service fleet',
+                'data': [],
+            }
+
+    def append_points(metric_name: str, points: list) -> int:
+        if metric_name not in main_data['metrics']:
+            if metric_name == 'robotaxiRegistered':
+                ensure_registered_metric()
+            else:
+                print(f"⚠ Metric {metric_name} not in main data, skipping")
+                return 0
+
+        existing_dates = {
+            get_date(point)
+            for point in main_data['metrics'][metric_name]['data']
+        }
+        added = 0
+        for point in points:
+            point = normalize_metric_point(point)
+            point_date = get_date(point)
+            if point_date and point_date not in existing_dates:
+                main_data['metrics'][metric_name]['data'].append(point)
+                existing_dates.add(point_date)
+                added += 1
+
+        main_data['metrics'][metric_name]['data'].sort(key=lambda x: get_date(x) or '')
+        return added
+
+    for metric_name in ['cybercab', 'robotaxiFleet', 'robotaxiRegistered', 'jobPostings']:
         if metric_name not in metrics_updates:
             continue
 
@@ -170,29 +238,30 @@ def merge_metrics(main_data: dict, findings: dict) -> dict:
         if not new_points:
             continue
 
-        # Get existing dates to prevent duplicates
-        # Get date field (handle both 'date' and 'lastUpdate')
-        def get_date(point):
-            return point.get('date') or point.get('lastUpdate')
+        if metric_name == 'robotaxiFleet':
+            active_pts = []
+            reg_pts = []
+            for point in new_points:
+                if looks_like_registration(point):
+                    reg_pts.append(point)
+                else:
+                    active_pts.append(point)
+            if reg_pts:
+                print(f"⚠ Re-routed {len(reg_pts)} registration point(s) → robotaxiRegistered")
+                n = append_points('robotaxiRegistered', reg_pts)
+                if n:
+                    print(f"✓ Added {n} new robotaxiRegistered data points")
+            new_points = active_pts
+            if not new_points:
+                continue
 
-        existing_dates = {
-            get_date(point)
-            for point in main_data['metrics'][metric_name]['data']
-        }
-
-        # Only add new data points
-        added = 0
-        for point in new_points:
-            point_date = get_date(point)
-            if point_date and point_date not in existing_dates:
-                main_data['metrics'][metric_name]['data'].append(point)
-                added += 1
-
-        # Sort by date (chronological)
-        main_data['metrics'][metric_name]['data'].sort(key=lambda x: get_date(x) or '')
-
+        added = append_points(metric_name, new_points)
         if added > 0:
             print(f"✓ Added {added} new {metric_name} data points")
+            if metric_name == 'robotaxiFleet' and main_data['metrics']['robotaxiFleet']['data']:
+                latest = main_data['metrics']['robotaxiFleet']['data'][-1]
+                main_data['metrics']['robotaxiFleet'].setdefault('breakdown', {})
+                main_data['metrics']['robotaxiFleet']['breakdown']['active'] = latest['count']
 
     return main_data
 

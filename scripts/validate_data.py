@@ -115,8 +115,8 @@ def validate_json_structure(data: dict) -> List[str]:
             if metric not in data['metrics']:
                 errors.append(f"Missing metric: {metric}")
 
-        # Validate metric data arrays
-        for metric_name in ['cybercab', 'jobPostings', 'robotaxiFleet']:
+        # Validate metric data arrays (robotaxiRegistered optional but same shape when present)
+        for metric_name in ['cybercab', 'jobPostings', 'robotaxiFleet', 'robotaxiRegistered']:
             if metric_name in data['metrics'] and 'data' in data['metrics'][metric_name]:
                 metric_data = data['metrics'][metric_name]['data']
                 if not isinstance(metric_data, list):
@@ -168,27 +168,46 @@ def validate_data_invariants(data: dict) -> Tuple[List[str], List[Tuple[str, str
     if 'jobPostings' in metrics and 'data' in metrics['jobPostings']:
         check_metric_dates('jobPostings', metrics['jobPostings']['data'])
 
-    # Check robotaxi cities summary consistency
+    # Check robotaxi cities summary consistency (hard error — dashboard depends on this)
     if 'robotaxiCities' in metrics:
         cities = metrics['robotaxiCities']
         if 'cities' in cities and 'summary' in cities:
-            actual_total = sum(c.get('activeVehicles') or 0 for c in cities['cities'])
+            # Active fleet total: status=active only
+            actual_total = sum(
+                (c.get('activeVehicles') or 0)
+                for c in cities['cities']
+                if c.get('status') == 'active'
+            )
             expected_total = cities['summary'].get('totalActiveVehicles', 0)
             if actual_total != expected_total:
-                warnings.append((
-                    'summary_mismatch',
-                    f"RobotaxiCities summary mismatch: sum of city vehicles ({actual_total}) != "
+                errors.append(
+                    f"RobotaxiCities summary mismatch: sum of active city vehicles ({actual_total}) != "
                     f"summary.totalActiveVehicles ({expected_total})"
-                ))
+                )
 
-            actual_active_cities = len([c for c in cities['cities'] if c.get('status') == 'active'])
+            # Active city = status active AND has vehicles > 0
+            actual_active_cities = len([
+                c for c in cities['cities']
+                if c.get('status') == 'active' and (c.get('activeVehicles') or 0) > 0
+            ])
             expected_active_cities = cities['summary'].get('activeCities', 0)
             if actual_active_cities != expected_active_cities:
-                warnings.append((
-                    'summary_mismatch',
-                    f"RobotaxiCities summary mismatch: active cities count ({actual_active_cities}) != "
+                errors.append(
+                    f"RobotaxiCities summary mismatch: active cities with vehicles ({actual_active_cities}) != "
                     f"summary.activeCities ({expected_active_cities})"
-                ))
+                )
+
+    # Active fleet series must not contain registration-scale TX DMV dumps
+    if 'robotaxiFleet' in metrics:
+        for i, point in enumerate(metrics['robotaxiFleet'].get('data', [])):
+            note = (point.get('note') or '').lower()
+            if point.get('count', 0) >= 100 and (
+                'registr' in note or 'dmv' in note or 'texas-registered' in note
+            ):
+                errors.append(
+                    f"metrics.robotaxiFleet.data[{i}] looks like a registration count "
+                    f"(count={point.get('count')}) — use robotaxiRegistered instead"
+                )
 
     # Validate keyChange categories match known categories
     # These are the canonical category names (full versions)

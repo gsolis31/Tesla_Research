@@ -4127,7 +4127,7 @@
       ]
     },
     "robotaxiFleet": {
-      "title": "Total Robotaxi Fleet (All Cities)",
+      "title": "Active Robotaxi Fleet (in service)",
       "data": [
         {
           "date": "2026-04-18",
@@ -4210,65 +4210,27 @@
           "note": "Fleet declined 42% from June peak to 34 active vehicles. Austin unsupervised fleet down to ~14 active cars (from ~25 peak). Fleet in steady decline since Dec 2025/Jan 2026. Miami service area mapped. Deployment blocked until FSD v15 (Q4 2026/Q1 2027)."
         },
         {
-          "city": "Austin, Dallas, Houston, Miami",
-          "country": "USA",
-          "status": "declining",
-          "vehicleCount": 20,
-          "totalAuthorized": 34,
-          "breakdown": {
-            "austin": 14,
-            "dallas": 3,
-            "houston": 3,
-            "miami": "undisclosed",
-            "bayArea": 9
-          },
-          "lastUpdate": "2026-07-08",
-          "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
           "date": "2026-07-08",
           "count": 20,
           "note": "Fleet at 20 vehicles (34 authorized). Status: declining. Breakdown: austin: 14, dallas: 3, houston: 3, miami: undisclosed, bayArea: 9"
-        },
-        {
-          "city": "Austin, Dallas, Houston, Miami (Texas-registered pool statewide)",
-          "country": "USA",
-          "status": "expanding",
-          "vehicleCount": 175,
-          "totalAuthorized": 175,
-          "breakdown": {
-            "texasRegistered": 175,
-            "texasRegisteredPriorDay": 117,
-            "addedJuly15": 58,
-            "vehicleType": "Model Y (commercial robotaxi); Cybercab not yet commercial",
-            "waymoTexasRegistered": 642,
-            "avrideTexasRegistered": 317,
-            "zooxTexasRegistered": 44,
-            "miami": "active unsupervised, ~10-20 sq mi geofence, fleet size undisclosed",
-            "note": "175 is Texas DMV automated-vehicle registry count, not confirmed simultaneous active rider-serving cars"
-          },
-          "launchDate": "2025-06",
-          "lastUpdate": "2026-07-15",
-          "source": "https://evxl.co/2026/07/15/tesla-adds-58-texas-robotaxis-one-day/",
-          "date": "2026-07-15",
-          "count": 175,
-          "note": "Texas-registered Tesla robotaxi fleet jumped 117\u2192175 (+58 Model Y) on July 15. Status upgraded from prior 'declining/~20 active' narrative on registration basis; active utilization still unproven at this scale."
         }
       ],
-      "target": "Multi-city deployment scaling to 1,000+ vehicles across 7+ cities in H1 2026",
+      "target": "Large-scale unsupervised robotaxi network (blocked until FSD v15 late-2026/early-2027)",
       "breakdown": {
-        "active": 400,
-        "staged": 173,
+        "active": 20,
+        "staged": 0,
         "cities": [
-          "Bay Area (leading)",
           "Austin",
-          "Phoenix",
           "Dallas",
-          "Houston"
+          "Houston",
+          "Miami",
+          "Bay Area"
         ]
       }
     },
     "robotaxiCities": {
       "title": "Robotaxi Service by City",
-      "lastUpdated": "2026-07-03",
+      "lastUpdated": "2026-07-15",
       "cities": [
         {
           "name": "Miami",
@@ -4278,7 +4240,7 @@
           "activeVehicles": 3,
           "launchDate": "2026-07-03",
           "serviceArea": "Western and central Miami (~10-14 sq mi) including Miami International Airport (MIA), SR 826 (Palmetto Expressway), US 41 (Tamiami Trail)",
-          "notes": "Launched July 3, 2026. Florida becomes third state with robotaxi service after Texas and California. Prioritizing high-traffic, airport-linked routes."
+          "notes": "Launched July 3, 2026 unsupervised. Fleet size not fully disclosed; early reports imply a small starter fleet (~3 placeholder until better counts). Tiny geofence (~10\u201320 sq mi), reliability issues reported mid-July."
         },
         {
           "name": "Dallas",
@@ -4288,62 +4250,63 @@
           "activeVehicles": 3,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Unsupervised Model Y rides only. Part of initial Texas expansion."
+          "notes": "Small unsupervised Model Y footprint; stable ~3 vehicles in mid-2026 reporting."
         },
         {
           "name": "Houston",
           "status": "active",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
-          "activeVehicles": 5,
+          "activeVehicles": 3,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Unsupervised Model Y rides only. Part of initial Texas expansion."
+          "notes": "Small unsupervised Model Y footprint; ~3 vehicles in mid-2026 reporting."
         },
         {
           "name": "Austin",
           "status": "active",
           "serviceType": "mixed",
           "vehicleType": "Model Y + Cybercab",
-          "activeVehicles": 47,
+          "activeVehicles": 14,
           "breakdown": {
             "unsupervised": 14,
-            "safetyMonitor": 33,
+            "safetyMonitor": 0,
             "cybercabTesting": 42
           },
           "launchDate": "2025",
           "serviceArea": "Broader city coverage",
-          "notes": "Mix of unsupervised & safety monitor Model Y rides. Production Cybercab testing ongoing (no steering wheel/pedals). Primary testing and deployment hub."
+          "notes": "Primary hub. ~14 unsupervised Model Y in active service (July 2026 reporting). ~42 Cybercabs in test fleet at Giga/local testing (not counted in active fleet). Safety-monitor and rider-pool counts fluctuate; chart uses unsupervised active."
         },
         {
           "name": "Bay Area",
           "status": "active",
           "serviceType": "safety-monitor-only",
           "vehicleType": "Model Y",
-          "activeVehicles": 0,
+          "activeVehicles": 9,
           "unsupervisedVehicles": 0,
           "launchDate": "2024",
           "serviceArea": "San Francisco Bay Area",
-          "notes": "Safety monitor required for all rides. No unsupervised operation. Originally led deployment but now behind Texas cities."
+          "notes": "Safety monitor required. ~9 vehicles in July 8 active-fleet breakdown. No unsupervised commercial operation."
         },
         {
           "name": "Phoenix",
-          "status": "active",
+          "status": "mapped",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
           "activeVehicles": null,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Unsupervised Model Y rides. Limited deployment information available."
+          "notes": "Unsupervised capability claimed historically; current active fleet size unconfirmed \u2014 excluded from active vehicle totals."
         }
       ],
       "summary": {
         "totalCities": 6,
-        "activeCities": 4,
+        "activeCities": 5,
         "mappedOnly": 1,
         "unsupervisedCapable": 4,
         "safetyMonitorOnly": 1,
-        "totalActiveVehicles": 37
+        "totalActiveVehicles": 32,
+        "definition": "activeCities = status active AND activeVehicles > 0; totalActiveVehicles sums activeVehicles on active cities only"
       }
     },
     "fsdApprovals": {
@@ -4446,6 +4409,23 @@
         }
       ],
       "target": "Expand to 100+ GWh/year across Giga Texas and Nevada"
+    },
+    "robotaxiRegistered": {
+      "title": "Texas Robotaxi Registrations (DMV)",
+      "region": "Texas",
+      "definition": "Vehicles on the Texas automated-vehicle registry for Tesla robotaxi use \u2014 pipeline/permit count, not active rides",
+      "data": [
+        {
+          "date": "2026-07-14",
+          "count": 117,
+          "note": "Texas DMV automated-vehicle registry: 117 Tesla robotaxi Model Y vehicles (day before +58 batch). Distinct from active in-service fleet."
+        },
+        {
+          "date": "2026-07-15",
+          "count": 175,
+          "note": "Texas DMV automated-vehicle registry: 175 Tesla robotaxi Model Y (+58 in one day). Not confirmed simultaneous active rider-serving cars. Waymo TX 642, Avride 317 for comparison."
+        }
+      ]
     }
   },
   "categories": {
