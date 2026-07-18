@@ -1,8 +1,8 @@
 {
   "categoryKey": "fsd",
-  "dateFrom": "2026-07-08",
-  "dateTo": "2026-07-12",
-  "weekOf": "2026-07-06",
+  "dateFrom": "2026-07-12",
+  "dateTo": "2026-07-17",
+  "weekOf": "2026-07-13",
   "hotContext": {
     "criticalNews": "Denmark became fourth European country to approve FSD on June 9, 2026. EU-wide recognition anticipated summer 2026 via mutual recognition process.",
     "recentKeyChanges": [
@@ -66,34 +66,37 @@
         "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
       },
       {
-        "status": "positive",
+        "title": "NHTSA escalates FSD investigation to Engineering Analysis covering 3.2M vehicles",
+        "description": "On March 19, 2026, NHTSA upgraded its Tesla FSD probe from a Preliminary Evaluation to a formal Engineering Analysis (EA26002) covering 3.2 million vehicles across all Tesla models. The investigation found that FSD's camera-based system fails to detect common road conditions that impair visibility\u2014sun glare and fog\u2014and doesn't adequately warn drivers before crashes occur. The probe involves at least nine documented crashes, including one fatal pedestrian collision and another crash resulting in injury. This escalation is the stage that typically precedes a mandatory recall, representing significant regulatory risk.",
+        "date": "2026-03-19",
+        "category": "FSD Country Approvals",
+        "status": "negative",
         "sentiment": {
-          "headline": "positive",
-          "reality": "positive",
+          "headline": "neutral",
+          "reality": "negative",
           "confidence": "high",
-          "rationale": "Denmark approval represents fourth European country and demonstrates continued FSD expansion momentum in region."
+          "rationale": "While headlines focus on 'investigation escalation,' the reality is NHTSA moved to the pre-recall stage due to fundamental safety failures in FSD's vision system. The system's inability to detect degraded visibility from common conditions (glare, fog) and failure to warn drivers until just before impact represents a core architectural problem affecting 3.2M vehicles."
         },
         "evidence": {
-          "positive_signals": [
-            "Denmark became fourth European country with FSD approval on June 9",
-            "Lithuania activated May 20, Estonia May 29",
-            "Netherlands granted first EU approval April 10, 2026",
-            "EU-wide recognition anticipated summer 2026 via mutual recognition"
-          ],
+          "positive_signals": [],
           "negative_signals": [
-            "EU-wide timeline is Tesla's projection, not confirmed regulatory outcome",
-            "Each country still requires individual activation despite mutual recognition pathway"
+            "Investigation escalated to Engineering Analysis (EA26002), the stage before mandatory recall",
+            "FSD's degradation detection system fails to warn drivers when cameras are blinded by sun glare and fog",
+            "Nine total incidents investigated, including one fatality and one injury",
+            "3.2 million vehicles affected across all Tesla models (2016-2026)",
+            "System failed to recognize common roadway conditions affecting camera visibility",
+            "No alerts issued when camera performance degraded until just before impact",
+            "Tesla may be under-reporting related crashes per NHTSA findings"
           ],
           "key_metrics": {
-            "actual": "4 European countries approved (NL, LT, EE, DK)",
-            "target": "EU-wide deployment via mutual recognition",
-            "trajectory": "Expanding, summer 2026 EU-wide recognition anticipated"
+            "actual": "9 crashes under investigation (1 fatality, 1 injury)",
+            "target": "Zero crashes from visibility detection failures",
+            "trajectory": "Investigation escalated to pre-recall stage March 2026"
           }
         },
-        "category": "FSD Country Approvals",
-        "title": "Denmark becomes fourth European country to approve FSD on June 9",
-        "description": "Denmark greenlit Tesla FSD Supervised on June 9, 2026, following Netherlands (April 10), Lithuania (May 20), and Estonia (May 29). The Dutch vehicle authority RDW granted the first European type approval, and Tesla anticipates EU-wide recognition during summer 2026 through mutual recognition, potentially extending access to Germany, France, and other major markets without repeating the full 18-month review process. Tesla now has FSD Supervised available in 12 countries globally.",
-        "source": "https://www.teslarati.com/tesla-full-self-driving-taking-over-europe-fourth-country-gets-fsd-approval/"
+        "source": "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+        "impact": "high",
+        "_sourceCategory": "fsd"
       }
     ],
     "latestMetric": {

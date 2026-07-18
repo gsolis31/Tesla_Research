@@ -1,8 +1,8 @@
 {
   "categoryKey": "cybercab",
-  "dateFrom": "2026-07-08",
-  "dateTo": "2026-07-12",
-  "weekOf": "2026-07-06",
+  "dateFrom": "2026-07-12",
+  "dateTo": "2026-07-17",
+  "weekOf": "2026-07-13",
   "hotContext": {
     "criticalNews": "Robotaxi service expanded to Miami and Dallas on July 3, 2026, with unsupervised vehicles. Production ramping exponentially but software remains primary constraint.",
     "recentKeyChanges": [
@@ -66,45 +66,60 @@
         "source": "https://www.teslarati.com/tesla-app-update-sefl-driving-robotaxi/"
       },
       {
+        "title": "Tesla announces Cybercab 'employee rides' at Giga Texas - parking lot only",
+        "description": "On July 10, 2026, Tesla's Robotaxi account posted a video of a gold Cybercab driving across the Giga Texas outbound lot, with Tesla's main account quote-tweeting: 'Cybercab employee rides at Giga Texas starting soon.' However, the announcement is deliberately vague - Tesla gave no details on route, fleet size, or whether rides occur on public roads versus private factory property. Electrek reported on July 11 that the announcement appears to be nothing more than parking-lot ferries for employees, noting 'for any other automaker, our car drove an employee across the parking lot would not be a news event.' The announcement generated 2.9 million views but no substantive progress toward commercial deployment.",
+        "date": "2026-07-10",
+        "category": "Cybercab Production",
         "status": "negative",
         "sentiment": {
           "headline": "positive",
           "reality": "negative",
-          "confidence": "high",
-          "rationale": "While geographic expansion to Miami and Dallas signals continued commitment, the underlying reality is concerning: Austin fleet remains stuck at ~50 vehicles after a full year of operation, demonstrating failed scaling. Software limitations\u2014not hardware production\u2014remain the fundamental blocker, making city expansion premature without solving the core constraint."
+          "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Miami service launched with unsupervised vehicles on July 3, 2026",
-            "Dallas also added to robotaxi service coverage",
-            "Geographic expansion despite production bottlenecks"
+            "Video shows Cybercab driving autonomously at Giga Texas",
+            "Vehicle operates without steering wheel or pedals",
+            "Engineering lead reported 50 rides in recent days"
           ],
           "negative_signals": [
-            "Austin fleet still only ~50 vehicles after a year of operation",
-            "Software remains limiting factor, not vehicle production",
-            "Service expansion limited by FSD capabilities"
-          ],
-          "key_metrics": {
-            "actual": "~50 vehicles in Austin, new Miami/Dallas launches",
-            "target": "Mass market autonomous service",
-            "trajectory": "Geographic expansion but constrained scale"
-          }
+            "No route details provided - appears limited to parking lot",
+            "No fleet size disclosed",
+            "No confirmation of public road operations",
+            "Electrek calls it a non-event: just parking lot shuttle",
+            "Announcement vague and insubstantive compared to competitors",
+            "Does not address fundamental scaling issues"
+          ]
         },
-        "category": "Cybercab Production",
-        "title": "Tesla robotaxi expands to Miami and Dallas on July 3",
-        "description": "On July 3, 2026, Tesla expanded its unsupervised robotaxi service to Miami and Dallas, marking continued geographic expansion of the Cybercab platform. City officials report Tesla's Austin fleet at approximately 50 vehicles despite a year of operation. Production is ramping exponentially toward year-end per Musk, but software limitations rather than vehicle manufacturing capacity remain the primary constraint on service scaling.",
-        "source": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/"
+        "source": "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+        "impact": "low",
+        "_sourceCategory": "cybercab"
       }
     ],
     "latestMetric": {
-      "date": "2026-06-15",
-      "count": 102,
-      "note": "102 Cybercabs in Giga Texas outbound lot, up 70% from ~60 in late May"
+      "date": "2026-07-10",
+      "count": 120,
+      "note": "Estimated 120+ Cybercabs visible at Giga Texas staging lots per drone footage and social media reports. Production ramping since February 2026 start, but vehicles remain in staging - not deployed commercially due to lack of regulatory approval for autonomous operation.",
+      "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps"
     },
     "latestFleet": {
-      "date": "2026-07-03",
-      "count": 34,
-      "note": "Fleet declined 42% from June peak to 34 active vehicles. Austin unsupervised fleet down to ~14 active cars (from ~25 peak). Fleet in steady decline since Dec 2025/Jan 2026. Miami service area mapped. Deployment blocked until FSD v15 (Q4 2026/Q1 2027)."
+      "city": "Austin, Dallas, Houston, Miami",
+      "country": "USA",
+      "status": "declining",
+      "vehicleCount": 20,
+      "totalAuthorized": 34,
+      "breakdown": {
+        "austin": 14,
+        "dallas": 3,
+        "houston": 3,
+        "miami": "undisclosed",
+        "bayArea": 9
+      },
+      "lastUpdate": "2026-07-08",
+      "source": "https://electrek.co/2026/05/26/tesla-robotaxi-fleet-shrinking-not-growing/",
+      "date": "2026-07-08",
+      "count": 20,
+      "note": "Fleet at 20 vehicles (34 authorized). Status: declining. Breakdown: austin: 14, dallas: 3, houston: 3, miami: undisclosed, bayArea: 9"
     }
   },
   "categoryName": "Cybercab Production",

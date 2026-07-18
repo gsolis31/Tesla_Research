@@ -2,194 +2,79 @@
   "categoryKey": "battery4680",
   "keyChanges": [
     {
-      "title": "Giga Berlin 4680 Capacity Doubled to 18 GWh with $250M Investment",
-      "description": "On May 12, 2026, Giga Berlin plant manager André Thierig announced a $250 million investment to scale the factory's annual 4680 cell production capacity from 8 GWh to 18 GWh, more than doubling the previous target set in December 2025. Battery cell production at the Grünheide facility is projected to begin in H1 2027. This would support approximately 200,000 Model Y vehicles annually and reduce reliance on third-party cell suppliers.",
-      "date": "2026-05-12",
-      "category": "4680 Production Capacity",
+      "title": "Giga Berlin 4680 production video drops — early ramp PR, full scale still H1 2027",
+      "description": "On July 16, 2026, BASENOR reported Tesla released a short video of the 4680 cell line at Gigafactory Berlin (circulated via Sawyer Merritt on X the same day). The piece frames production as having begun May 12, 2026 — under ten weeks before the video — with full-scale expanded output still targeted only for H1 2027. Capacity narrative is unchanged: +$250M to raise the Berlin annual target from 8 GWh to 18 GWh (~$1.45B cumulative battery investment at the site). Dry Battery Electrode (DBE) for anode and cathode is restated as the manufacturing story, not a new process milestone. BASENOR also cites autoevolution that 'Made in Germany' Model Ys with locally produced 4680 cells are expected late Q3 2026 — a consumer timeline that remains single-source and unverified by Teslarati/TeslaNorth/Tesla IR this week. Applications for the JUNI x Tesla Battery Cell Giga Challenge (launched July 6) remain open through July 24, underscoring that manufacturing bottlenecks are still being crowdsourced. No new yield %, actual GWh output, or cost-per-kWh figures were published with the video.",
+      "date": "2026-07-16",
+      "category": "4680 Production",
       "status": "neutral",
       "sentiment": {
         "headline": "positive",
-        "reality": "neutral",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Significant $250M capital commitment demonstrates confidence",
-          "Capacity increase from 8 GWh to 18 GWh is substantial",
-          "Production timeline established (H1 2027)",
-          "1,500+ new jobs being recruited"
-        ],
-        "negative_signals": [
-          "Production start delayed to H1 2027 (over 1 year away from announcement date)",
-          "Tesla is opening a 'Cell Giga Challenge' to crowdsource solutions, indicating it lacks required manufacturing technology in-house",
-          "Previous 8 GWh target set in December 2025 was immediately superseded in May 2026, suggesting initial capacity planning was conservative",
-          "Complex scaling challenges remain in dry-electrode coating technology at industrial scale"
-        ]
-      },
-      "source": "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
-      "impact": "high"
-    },
-    {
-      "title": "Cell Giga Challenge Launched to Solve Manufacturing Scale Problems",
-      "description": "Tesla launched the 'JUNI x Tesla Battery Cell Giga Challenge' in July 2026 with application deadline of July 24, 2026. The program targets startups with solutions for battery cell manufacturing in five key areas: materials, production, equipment, automation, and artificial intelligence. By opening this challenge, Tesla is publicly acknowledging it lacks internal technology solutions needed to reach 18 GWh capacity at Giga Berlin. Selected startups will receive paid pilot projects working directly with Tesla's 4680 team.",
-      "date": "2026-07-06",
-      "category": "4680 Manufacturing Technology",
-      "status": "negative",
-      "sentiment": {
-        "headline": "positive",
         "reality": "negative",
-        "confidence": "high"
+        "confidence": "medium"
       },
       "evidence": {
         "positive_signals": [
-          "External partnerships can accelerate technology innovation",
-          "Selected startups receive hands-on access and funding",
-          "Demonstrates openness to external solutions"
+          "Tesla publicly showed live 4680 cell-line footage from Giga Berlin (~10 weeks after May 12 production start)",
+          "Capacity target still stated at 18 GWh/year after the May $250M add-on (~200k–350k vehicles/year at pack-level estimates)",
+          "Dry electrode process for both anode and cathode continues to be presented as in use on the Berlin line",
+          "Near-term Model Y-with-Berlin-4680 claim (late Q3 2026) would be a real product milestone if it lands"
         ],
         "negative_signals": [
-          "Tesla admits it doesn't have the technology in-house to scale 4680 to 18 GWh",
-          "Fundamental manufacturing challenges remain unsolved despite 4+ years of 4680 development",
-          "Need to crowdsource solutions for dry-coating, yield optimization, and scaling indicates serious technical deficiency",
-          "Even after solving dry-electrode process, mass production remains problematic",
-          "Timeline pressure: Giga Berlin production start is H1 2027, yet critical manufacturing solutions are not yet identified"
+          "Line is still in an early, accelerating phase — not a finished high-volume factory; full-scale expanded production only H1 2027",
+          "Video and recap recycle May 12 investment / 8→18 GWh targets; no verified yield, scrap rate, or actual GWh shipped this week",
+          "Cell Giga Challenge applications still open until July 24 — Tesla is still soliciting external fixes for materials, equipment, ops, automation, and AI bottlenecks",
+          "Electrek (July 7, corroboration): 4680 remains Tesla's most troubled manufacturing effort; opening the line to startups is a tacit admission of in-house gaps",
+          "Capacity target was doubled before cost-competitive, high-yield production has been publicly proven at Berlin scale",
+          "Original 2020 Berlin cell ambition was up to ~250 GWh; 18 GWh is a fraction of that vision after multi-year delay and IRA-driven US pivot",
+          "Model Y late-Q3 4680 claim rests on secondary reporting (autoevolution via BASENOR), not multi-source or official confirmation"
         ]
       },
-      "source": "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
-      "impact": "high"
-    },
-    {
-      "title": "Dry Electrode Process Now Producing Both Anode and Cathode",
-      "description": "Tesla confirmed in Q4 and FY 2025 update (reported January 28, 2026) that it is now producing 4680 cells whose anode and cathode are both manufactured using the dry electrode process. This represents a major technical achievement after years of development. Additionally, Tesla is developing four new dry-cathode 4680 variants (NC05, NC20, NC30, NC50) with the NC30 and NC50 featuring silicon-carbon anodes for increased energy density.",
-      "date": "2026-01-28",
-      "category": "4680 Technology Development",
-      "status": "positive",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "positive",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Confirmed dry electrode process for both anode and cathode in production",
-          "Multiple variant development (4 new versions in 4680D project)",
-          "Silicon-carbon anode technology addresses energy density improvements",
-          "Dry electrode reduces cost, energy use, and factory complexity",
-          "Model Y 4680 reintegration live as of January 2026"
-        ],
-        "negative_signals": [
-          "Process took 4+ years to industrialize from 2020 Battery Day announcement",
-          "Despite solving dry electrode, cannot yet scale to 18 GWh without external help"
-        ]
-      },
-      "source": "https://www.teslarati.com/tesla-confirms-finally-solved-4680-battery-dry-cathode-process/",
-      "impact": "high"
-    },
-    {
-      "title": "Model Y 4680 Production Reintegrated; Texas Facility at 40 GWh Capacity",
-      "description": "As of January 28, 2026, Tesla recommenced building Model Y battery packs with internally produced 4680 cells. Texas 4680 production facility has 40 GWh of installed annual capacity and is in production status (not ramp). Tesla's in-house 4680 cells have achieved lowest-cost battery cell per kWh, beating suppliers like Panasonic and LG Energy Solution by end of 2024.",
-      "date": "2026-01-28",
-      "category": "4680 Production & Cost",
-      "status": "positive",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "positive",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Model Y 4680 reintegration signals production confidence and reliability",
-          "40 GWh installed capacity at Texas is substantial",
-          "Cost parity achieved vs. major suppliers (Panasonic, LG Energy Solution)",
-          "Yield and reliability issues from earlier years appear resolved",
-          "Cybertruck using 4680 cells indicates production maturity"
-        ],
-        "negative_signals": [
-          "Still in 'production status' rather than expanded ramp, suggesting output not at full 40 GWh capacity",
-          "External yield data from earlier reports showed 70-80% yield, below typical battery manufacturing standards (>90%)",
-          "No publicly disclosed current yield rates for 2026"
-        ]
-      },
-      "source": "https://www.teslarati.com/tesla-announces-100-millionth-4680-battery-cell-production-milestone/",
-      "impact": "medium"
-    },
-    {
-      "title": "100 Million 4680 Cell Milestone Achieved; Rapid Production Scaling",
-      "description": "Tesla announced it produced its 100 millionth 4680 battery cell on September 14, 2024. The company had produced 50 million cells by June 5, 2024, meaning it doubled production in just over 3 months (101 days), averaging approximately 495,000 cells per day. This demonstrates accelerating production rates and manufacturing capability maturation.",
-      "date": "2024-09-14",
-      "category": "4680 Production Milestone",
-      "status": "positive",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "positive",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Doubling production in 3 months shows acceleration",
-          "495,000 cells per day average demonstrates scale achievement",
-          "Milestone posted with Optimus robot, indicating strategic importance to multiple product lines",
-          "Production across multiple facilities (Texas, potentially others)"
-        ],
-        "negative_signals": [
-          "Historical context: 100M cells over ~4+ years of production means absolute capacity remained constrained",
-          "Milestone occurred September 2024; no subsequent quarterly production data publicly disclosed as of July 2026"
-        ]
-      },
-      "source": "https://teslanorth.com/2024/09/15/tesla-produces-100-millionth-4680-battery-cell-optimus-celebrates/",
+      "source": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
       "impact": "medium"
     }
   ],
-  "metricUpdate": {
-    "date": "2026-05-12",
-    "capacity_gwh": 18,
-    "capacity_previous_gwh": 8,
-    "location": "Giga Berlin",
-    "note": "Announced $250M investment to scale annual 4680 production capacity from 8 GWh to 18 GWh by H1 2027",
-    "source": "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/"
-  },
-  "productionUpdate": {
-    "facility": "Giga Texas",
-    "capacity_gwh": 40,
-    "status": "production",
-    "date": "2026-01-28",
-    "note": "Texas 4680 production facility at full installed capacity, production status active. Model Y 4680 reintegration live.",
-    "source": "https://www.teslarati.com/tesla-announces-100-millionth-4680-battery-cell-production-milestone/"
-  },
+  "metricUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Tesla has resolved the dry electrode manufacturing process for both anode and cathode of 4680 cells and reintegrated them into Model Y production. Texas facility operates at 40 GWh capacity in production status. However, critical scaling challenges remain: Giga Berlin's planned 18 GWh facility lacks proven manufacturing solutions and Tesla launched a public 'Cell Giga Challenge' to crowdsource technology, indicating gaps in internal capability.",
-    "nextMilestone": "Giga Berlin 4680 cell production to begin H1 2027. Cell Giga Challenge application deadline July 24, 2026.",
+    "latestStatus": "Giga Berlin 4680 line is in early production (from May 12, 2026) with PR video on July 16; expanded 18 GWh full-scale still H1 2027. Texas dry-electrode 4680 for some Model Y packs already previously confirmed. No new yield or actual GWh metrics this week.",
+    "nextMilestone": "Cell Giga Challenge application close July 24 / program start ~Aug 20; potential Berlin-built Model Y with local 4680 late Q3 2026 (unverified); full-scale Berlin expansion H1 2027",
     "concerns": [
-      "Fundamental manufacturing scaling challenges persist despite 4+ years of 4680 development and claimed technology breakthroughs",
-      "Tesla lacks in-house solutions for scaling 4680 to 18 GWh at Giga Berlin, requiring external startup partnerships",
-      "Yield rates historically 70-80%, below industry standards; current 2026 yields unknown",
-      "Aggressive H1 2027 production start at Giga Berlin depends on identifying and implementing solutions from challenge participants in just 6-9 months",
-      "Previous capacity targets at Giga Berlin (8 GWh in Dec 2025) immediately superseded by higher target (18 GWh in May 2026), suggesting initial planning was conservative or execution was falling behind",
-      "No public disclosure of actual current production rates at Texas facility despite 40 GWh installed capacity"
+      "No independent verification of Berlin 4680 yield, cost/kWh, or actual weekly/monthly GWh output",
+      "Crowdsourcing manufacturing fixes via open startup challenge while ramping capacity targets signals unresolved scale problems",
+      "Model Y Europe 4680 timeline (late Q3 2026) is single-source and may slip",
+      "18 GWh target still far below historical Berlin cell ambition; multi-year program continues to under-deliver vs Battery Day narrative"
     ]
   },
   "urlsSeen": [
-    "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
+    "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
+    "https://www.basenor.com/blogs/news/5-things-to-know-about-teslas-dry-electrode-battery-breakthrough",
+    "https://www.basenor.com/blogs/news/tesla-lithium-plant-lays-down-roads-as-ramp-up-continues",
+    "https://www.basenor.com/blogs/news/chinas-new-battery-tax-what-it-means-for-ev-makers",
     "https://www.teslarati.com/tesla-battery-challenge/",
-    "https://www.basenor.com/blogs/news/giga-berlin-targets-18-gwh-of-4680-cell-output-and-wants-startup-help",
+    "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
     "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
-    "https://www.basenor.com/blogs/news/tesla-doubles-4680-capacity-at-giga-berlin-with-250m-investment",
-    "https://www.teslarati.com/tesla-4680-battery-production-hell-details/",
-    "https://www.teslarati.com/tesla-4680-battery-production-ramp-challenges-explained/",
-    "https://www.basenor.com/blogs/news/tesla-4680-battery-cell-production-is-getting-good-what-it-means",
-    "https://www.teslarati.com/tesla-confirms-finally-solved-4680-battery-dry-cathode-process/",
-    "https://www.teslarati.com/tesla-announces-100-millionth-4680-battery-cell-production-milestone/",
-    "https://teslanorth.com/2024/09/15/tesla-produces-100-millionth-4680-battery-cell-optimus-celebrates/",
-    "https://www.teslarati.com/tesla-builds-50-million-4680-battery-cells-at-giga-texas/",
-    "https://www.teslarati.com/tesla-milestone-4680-battery-cell/"
+    "https://electrek.co/2026/07/07/tesla-giga-berlin-cell-giga-challenge/",
+    "https://www.teslarati.com/search/4680/feed/rss2/",
+    "https://teslanorth.com/search/4680/feed/rss2/",
+    "https://www.basenor.com/blogs/news/tagged/energy-battery"
   ],
   "metadata": {
     "sourcesSearched": [
       "teslarati.com",
       "teslanorth.com",
-      "basenor.com"
+      "basenor.com",
+      "electrek.co",
+      "news.google.com",
+      "teslaoracle.com",
+      "ir.tesla.com"
     ],
-    "dateRange": "2026-07-08 to 2026-07-12",
+    "dateRange": "2026-07-12 to 2026-07-17",
     "skipReason": null,
-    "researchNotes": "Hot context updated: Giga Berlin $250M investment (May 12, 2026) confirmed with 8 GWh to 18 GWh scaling. 100M cell milestone (Sept 2024) confirmed. Dry-electrode process for both anode and cathode confirmed in production. CRITICAL NEW FINDING: Tesla launched 'Cell Giga Challenge' on July 6, 2026, publicly admitting it lacks manufacturing solutions to scale 4680 to 18 GWh. This is a NEGATIVE sentiment reality finding despite positive headline framing. Fundamental scaling constraints remain unresolved."
+    "dedupNotes": [
+      "SKIPPED as already covered: May 12 $250M / 8→18 GWh investment (hotContext + archive)",
+      "SKIPPED as already covered: July 6 JUNI x Tesla Cell Giga Challenge launch (archive; outside this date range)",
+      "SKIPPED as already covered: dry electrode anode+cathode confirmation (hotContext + archive; BASENOR July 7 recap outside range)",
+      "EXCLUDED: Corpus Christi lithium plant road paving (July 17 BASENOR) — supply-chain infrastructure, not 4680 cell production",
+      "EXCLUDED: China Li-ion consumption tax (July 17 BASENOR) — broad chemistry policy, not 4680-specific"
+    ]
   }
 }

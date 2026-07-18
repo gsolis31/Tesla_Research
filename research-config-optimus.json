@@ -1,8 +1,8 @@
 {
   "categoryKey": "optimus",
-  "dateFrom": "2026-07-08",
-  "dateTo": "2026-07-12",
-  "weekOf": "2026-07-06",
+  "dateFrom": "2026-07-12",
+  "dateTo": "2026-07-17",
+  "weekOf": "2026-07-13",
   "hotContext": {
     "criticalNews": "Optimus production confirmed for late July or August 2026 at Fremont. Initial output will be slow due to 10,000 unique parts. Giga Texas second-gen facility targets summer 2027 start.",
     "recentKeyChanges": [
@@ -68,36 +68,41 @@
         "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/"
       },
       {
-        "status": "neutral",
+        "title": "Musk warns Optimus production will be 'extremely slow' as July start approaches",
+        "description": "On July 1, 2026, Elon Musk visited the Optimus production line at Fremont and shared a team photo, responding to speculation by stating 'Optimus production will be extremely slow at first because everything is new.' This directly contradicts earlier optimism and occurs just weeks before the planned late July/August production start. Musk emphasized 'this is not like making a car' due to 10,000 unique parts. Production is expected to ramp from dozens per week in June to 100-150 per week in July, 300 per week in August, and a target of 1,000 units per week by September 2026 according to supplier reports. However, all 2026 units will be for internal testing only, not commercial customers.",
+        "date": "2026-07-01",
+        "category": "Optimus Production",
+        "status": "negative",
         "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium",
-          "rationale": "Production timeline confirmed (late July/August) which is positive, but Musk's caution on 'quite slow' initial output and 10,000 unique parts tempers expectations for near-term volume."
+          "headline": "neutral",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "Musk's 'extremely slow' warning just weeks before production start signals significant challenges. Despite supplier targets of 1,000 units/week by September, Musk's public caution indicates these are aspirational. The reality is Tesla missed 2025 targets entirely (aimed for ~10,000 units, delivered zero commercial units), and current deployed units do no productive work. 'Everything is new' admission shows unproven production process at scale."
         },
         "evidence": {
           "positive_signals": [
-            "Concrete production start: late July or August 2026 at Fremont",
-            "Fremont converted from Model S/X to Optimus (1M units/year capacity)",
-            "Giga Texas second-gen facility targeting 10M units/year, summer 2027 start",
-            "100+ Optimus-related job openings signal serious ramp efforts"
+            "Production line operational at Fremont (Musk visited July 1, 2026)",
+            "Supplier orders suggest 1,000 units/week target by September 2026",
+            "Ramp plan outlined: 100-150/week July, 300/week August, 1,000/week September"
           ],
           "negative_signals": [
-            "Musk warned initial output will be 'quite slow'",
-            "Production rate 'literally impossible to predict' due to 10,000 unique parts",
-            "Model S/X production ended to make room (May 2026)",
-            "No commercial customer announcements or pricing confirmed"
+            "Musk publicly warns 'extremely slow' production just weeks before start",
+            "Admission 'everything is new' signals unproven manufacturing process",
+            "All 2026 production for internal testing only - no commercial revenue",
+            "Missed 2025 targets entirely (aimed ~10,000 units, delivered zero productive robots)",
+            "Current 'several hundred' deployed units doing 'no useful work' (Q4 2025 call)",
+            "Build cost $50,000-$100,000 per unit vs $20,000-$30,000 target price",
+            "10,000 unique parts makes production 'literally impossible to predict' (Q1 2026 call)"
           ],
           "key_metrics": {
-            "actual": "Production starting late July/August 2026",
-            "target": "1M units/year Fremont, 10M units/year Giga Texas",
-            "trajectory": "On schedule but with slow initial ramp expected"
+            "actual": "Production line ready but not yet started; 'extremely slow' output expected",
+            "target": "1,000 units/week by September 2026 (supplier reports, unconfirmed by Tesla)",
+            "trajectory": "Behind schedule - production start imminent but Musk lowering expectations publicly"
           }
         },
-        "category": "Optimus Production",
-        "title": "Optimus production confirmed for late July/August 2026 at Fremont",
-        "description": "During Tesla's Q1 2026 earnings call, Elon Musk confirmed that Optimus humanoid robot production will commence in late July or August 2026 at the Fremont factory. The facility, converted from Model S/X production (final vehicles produced May 2026), targets 1 million units annually. Musk cautioned that initial output will be 'quite slow' due to 10,000 unique parts across an entirely new production line. Tesla is simultaneously constructing a second-generation Optimus facility at Giga Texas targeting 10 million units per year, with production starting summer 2027.",
-        "source": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/"
+        "source": "https://www.trendforce.com/news/2026/07/03/news-musk-shares-tesla-optimus-production-team-photo-says-initial-robot-output-will-be-extremely-slow/",
+        "impact": "high",
+        "_sourceCategory": "optimus"
       }
     ]
   },

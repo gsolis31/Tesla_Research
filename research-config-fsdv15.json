@@ -1,8 +1,8 @@
 {
   "categoryKey": "fsdv15",
-  "dateFrom": "2026-07-08",
-  "dateTo": "2026-07-12",
-  "weekOf": "2026-07-06",
+  "dateFrom": "2026-07-12",
+  "dateTo": "2026-07-17",
+  "weekOf": "2026-07-13",
   "hotContext": {
     "criticalNews": "",
     "recentKeyChanges": [
@@ -34,6 +34,77 @@
         "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September",
         "description": "On July 8, 2026, Tesla VP of AI Software Ashok Elluswamy confirmed Tesla is building a feature that lets drivers teach the car hyper-local context in plain language (e.g. which driveway) with the instruction remembered for future trips. Elon Musk separately confirmed Grok voice commands will pass into FSD's planning layer by September 2026. This is infrastructure for both consumer FSD and robotaxi last-mile pickup quality, but remains unreleased pending safety testing.",
         "source": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/"
+      },
+      {
+        "title": "Tesla confirms FSD v15 delayed to end-2026/early-2027; robotaxi scale blocked until release",
+        "description": "During the Q1 2026 earnings call (April 22, 2026), Tesla confirmed FSD v15 will not ship until late 2026 or early 2027, representing a delay of the 10x parameter model upgrade that was originally planned for v14 in late 2025. CEO Elon Musk explicitly stated large-scale robotaxi expansion will NOT proceed until v15 is released, citing the need for 'major architectural improvements' to reach required safety levels. This confirms v15 is the critical blocker for both unsupervised FSD and robotaxi commercialization. The 10-billion-parameter model is described as a 'total architectural overhaul' designed to achieve 'orders of magnitude beyond human capability' safety. While v15 will run on Hardware 4 (no upgrade needed), the ~9-12 month delay from original v14 timeline pushes Tesla's autonomy roadmap into 2027.",
+        "date": "2026-04-22",
+        "category": "FSD v15 Software",
+        "status": "negative",
+        "sentiment": {
+          "headline": "neutral",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "Headlines emphasize HW4 compatibility (positive framing), but reality is a 9-12 month delay of the critical model upgrade, pushing robotaxi scale and unsupervised FSD into 2027. This is the second major delay (originally v14 late-2025, now v15 end-2026/early-2027). Robotaxi expansion explicitly blocked until v15 ships."
+        },
+        "evidence": {
+          "positive_signals": [
+            "FSD v15 will run on Hardware 4 (no expensive upgrade required)",
+            "Tesla confirms 10x parameter upgrade (1B to 10B parameters) still planned",
+            "HW4 getting RAM upgrade to 32GB (from 16GB) for better performance"
+          ],
+          "negative_signals": [
+            "FSD v15 pushed to late-2026/early-2027 (originally expected in v14 late-2025)",
+            "Large-scale robotaxi expansion explicitly blocked until v15 release",
+            "Unsupervised FSD for consumers delayed to Q4 2026 earliest (geography-limited)",
+            "Musk admitted current v14 not safe enough for scale: needs 'major architectural improvements'",
+            "Timeline is 'targeted' with no firm commitment (history of delays: promised autonomy 2018, 1M robotaxis 2020, unsupervised June 2025)"
+          ],
+          "key_metrics": {
+            "actual": "v14 in production; v15 in development with late-2026/early-2027 target",
+            "target": "v15 release by end-2026 or early-2027; 10B parameter model",
+            "trajectory": "6-9 months to stated target; represents 9-12 month delay from original v14 timeline"
+          }
+        },
+        "source": "https://www.notateslaapp.com/news/4035/tesla-confirms-fsd-v15-will-run-on-hw4-shares-release-date",
+        "impact": "high",
+        "_sourceCategory": "fsdv15"
+      },
+      {
+        "title": "Tesla confirms Hardware 3 cannot support unsupervised FSD or v15; 4M vehicles left behind",
+        "description": "On April 22-23, 2026 (Q1 earnings call), Tesla officially confirmed that Hardware 3 (HW3) vehicles\u2014approximately 4 million globally\u2014cannot and will not support unsupervised Full Self-Driving or FSD v15. Elon Musk cited hardware limitations: HW3 has 'only one eighth of the memory bandwidth of Hardware 4' and lacks the compute/memory capacity for the 10-billion-parameter v15 model. FSD v14 Lite is confirmed as the 'ultimate ceiling version' for HW3 hardware. This directly contradicts Tesla's 2016-2019 promises that HW3 would support full autonomy. Tesla is offering affected customers (many who paid $8,000-15,000 for FSD) either: (1) discounted trade-in to HW4 vehicle, or (2) paid hardware upgrade requiring replacement of computer AND all cameras. This represents a broken promise to millions of early FSD adopters and a material limitation on Tesla's addressable autonomy market.",
+        "date": "2026-04-22",
+        "category": "FSD v15 Software",
+        "status": "negative",
+        "sentiment": {
+          "headline": "neutral",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "Official confirmation that 4 million HW3 customers cannot access unsupervised FSD or v15 despite paying for 'Full Self-Driving' with promises of future autonomy. This is a broken commitment and requires expensive upgrades. Headlines frame it as 'upgrade path offered' but reality is customers must pay more after already purchasing FSD."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Tesla offering discounted trade-in path for HW3 owners",
+            "Hardware upgrade option available (computer + cameras)",
+            "FSD v14 Lite released for HW3 in late June 2026"
+          ],
+          "negative_signals": [
+            "4 million HW3 vehicles globally cannot support unsupervised FSD",
+            "HW3 memory bandwidth is 1/8th of HW4 (fundamental hardware limit)",
+            "FSD v15 will not run on HW3 (10B parameter model too large)",
+            "Breaks 2016-2019 Tesla promises that HW3 would support full autonomy",
+            "Customers who paid $8K-15K for FSD must now pay more for hardware upgrade",
+            "v14 Lite confirmed as 'ultimate ceiling' for HW3 (no unsupervised capability)"
+          ],
+          "key_metrics": {
+            "actual": "4 million HW3 vehicles left behind; v14 Lite only",
+            "target": "Hardware upgrade required for unsupervised FSD",
+            "trajectory": "Permanent hardware limitation; no software solution possible"
+          }
+        },
+        "source": "https://www.basenor.com/blogs/news/tesla-update-v15-1",
+        "impact": "high",
+        "_sourceCategory": "fsdv15"
       }
     ]
   },

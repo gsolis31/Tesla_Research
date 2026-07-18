@@ -1,8 +1,8 @@
 {
   "categoryKey": "productionDelivery",
-  "dateFrom": "2026-07-08",
-  "dateTo": "2026-07-12",
-  "weekOf": "2026-07-06",
+  "dateFrom": "2026-07-12",
+  "dateTo": "2026-07-17",
+  "weekOf": "2026-07-13",
   "hotContext": {
     "criticalNews": "Q2 2026: 480,126 deliveries (+18% vs 406,024 consensus), 451,758 production. 13.5 GWh energy storage deployed. Strong performance despite modest full-year guidance.",
     "recentKeyChanges": []

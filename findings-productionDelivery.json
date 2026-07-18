@@ -2,9 +2,9 @@
   "categoryKey": "productionDelivery",
   "keyChanges": [
     {
-      "title": "Model S/X Production Line Decommissioned in 46 Days at Fremont",
-      "description": "Tesla completed teardown of original Model S and Model X assembly line at Fremont Factory in just 46 days, involving removal of robotic arms, conveyors, and concrete pits. The space will be repurposed for Optimus humanoid robot production targeting 1M units/year capacity. Final S/X vehicles rolled off the line in early May 2026, with Optimus production on the converted line expected to begin in late July or August 2026. This represents Tesla's strategic pivot away from low-volume luxury sedans (<3% of 2025 deliveries) toward high-volume robotics manufacturing.",
-      "date": "2026-07-10",
+      "title": "Tesla IR posts Q2 2026 earnings consensus: $27.6B revenue, 1.73M full-year deliveries, -$3.25B FCF",
+      "description": "Ahead of the July 22 earnings call, Tesla published company-compiled Wall Street consensus from 23 sell-side firms (Barclays, BofA, Goldman, Morgan Stanley, etc.). Street expects Q2 total revenue of $27.58B (auto $20.05B, energy $3.77B, services $3.76B), adjusted non-GAAP EPS $0.55 / GAAP EPS $0.36, gross margin 19.5%, and operating margin only 5.4%. CapEx is pegged at $6.7B with expected free cash flow of -$3.25B for the quarter. Full-year vehicle delivery consensus sits at ~1.73M units — roughly 5–6% growth vs ~1.64M in 2025. That is modest given the Q2 delivery beat (480,126 vs ~406k consensus already reported July 2). H1 deliveries (~838k combining Q1 358,023 + Q2 480,126) imply Tesla needs ~892k H2 deliveries to hit the 1.73M full-year print. Negative FCF and sub-6% operating margin undercut the 'strong auto quarter' narrative: volume beat inventory, not a structural margin or cash-flow re-acceleration.",
+      "date": "2026-07-17",
       "category": "Vehicle Production & Delivery",
       "status": "neutral",
       "sentiment": {
@@ -14,129 +14,205 @@
       },
       "evidence": {
         "positive_signals": [
-          "Rapid 46-day factory conversion demonstrates operational efficiency",
-          "Strategic reallocation of factory space to higher-volume Optimus production (1M target vs <20K S/X annual)",
-          "Fremont Optimus production starting late July/August 2026"
+          "Q2 delivery beat already printed: 480,126 deliveries vs ~406k consensus (+18%)",
+          "Auto revenue expected at $20.05B of $27.58B total",
+          "Energy storage contribution expected at $3.77B, supporting diversified revenue",
+          "Full-year delivery consensus at 1.73M implies sequential H2 strength needed and assumed by Street"
         ],
         "negative_signals": [
-          "Elimination of flagship Model S/X vehicles after 14+ years of production",
-          "Loss of premium vehicle segment revenue (though <3% of total deliveries)",
-          "Temporary production capacity reduction during transition period"
+          "Street expects -$3.25B free cash flow for Q2 despite delivery beat",
+          "Operating margin consensus only 5.4% — thin for a supposed volume recovery quarter",
+          "Full-year 1.73M deliveries is only ~5–6% YoY growth vs 1.64M in 2025 — not a re-acceleration",
+          "Q2 production (451,758) trailed deliveries (480,126) by ~28k — beat was inventory drawdown, not production ramp",
+          "Model S/X sunset leaves 'Other' at just 12,364 deliveries / 8,822 produced — Cybertruck still immaterial",
+          "CapEx $6.7B expected — heavy spend with negative FCF before Cybercab/Optimus scale"
         ]
       },
-      "source": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
-      "impact": "medium"
-    },
-    {
-      "title": "Modest Full-Year 2026 Growth Despite Strong Q2 Performance",
-      "description": "While Tesla crushed Q2 2026 delivery expectations with 480,126 vehicles delivered (+25% YoY, beating consensus of 406K by 18%), full-year 2026 guidance remains concerning at only 1.69M units (~3-5% growth vs 1.64M in 2025). This represents a significant moderation from historical Tesla growth rates and analyst expectations have been downgraded by 35K vehicles since March 2026. The modest guidance persists despite Q2's strong performance and successful inventory drawdown of 28,368 units.",
-      "date": "2026-07-02",
-      "category": "Vehicle Production & Delivery",
-      "status": "negative",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Q2 2026: 480,126 deliveries beat consensus by 18% (vs 406K expected)",
-          "Successfully cleared Q1 inventory backlog of 50K+ units",
-          "Strong 25% YoY growth in Q2 vs 2025",
-          "Energy storage deployment at 13.5 GWh (2nd best quarter ever, +40% YoY)"
-        ],
-        "negative_signals": [
-          "Full-year 2026 forecast downgraded from 1.69M to 1.65M (35K reduction since March)",
-          "Only 3-5% annual growth projected vs historical 50%+ CAGR target",
-          "Q1 2026 missed expectations (358K vs 365K consensus)",
-          "Capital expenditure increased to $25B+ with negative free cash flow projected for Q2-Q4",
-          "Production (451,758) significantly trails delivery capacity, indicating conservative manufacturing outlook"
-        ]
-      },
-      "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm",
+      "source": "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts/",
       "impact": "high"
     },
     {
-      "title": "Giga Berlin 20% Production Increase to 73K Units/Quarter",
-      "description": "Tesla announced a 20% production boost at Gigafactory Berlin starting July 2026, targeting 73,000 Model Y units per quarter (up from record 61,000 in Q1 2026). The facility will hire 1,000 new employees (onboarding began in May) and convert 500 temporary workers to permanent positions. This expansion follows strong European demand recovery with Germany registrations quadrupling to 9,252 units in March 2026 and overall March registrations up 117% YoY. However, Berlin still operates below theoretical capacity despite this increase.",
-      "date": "2026-06-25",
+      "title": "Jefferies raises TSLA PT to $400 (from $375) but keeps Hold after Q2 delivery beat",
+      "description": "Jefferies lifted Tesla's price target to $400 from $375 while maintaining a Hold rating, citing the Q2 automotive delivery surprise (480k vs ~400k Street). Analysts also flagged Robotaxi expansion (Austin→Houston/Dallas/Bay Area/Miami) and SpaceX-merger speculation as catalysts — but warned Optimus and Robotaxi will take years to become meaningful P&L contributors and may carry initial losses. Critical read: a Hold after a >15% delivery beat signals the Street still does not trust sustained auto growth or near-term AI/robot monetization. Delivery strength is being treated as a one-quarter inventory/demand bounce, not a structural re-rating of the car business.",
+      "date": "2026-07-13",
+      "category": "Vehicle Production & Delivery",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Price target raised $25 to $400 on Q2 delivery outperformance",
+          "Q2 deliveries sold through more inventory than produced — demand absorbed available stock",
+          "Robotaxi geographic footprint expanding (multi-city) as a longer-term narrative support"
+        ],
+        "negative_signals": [
+          "Hold rating retained — not an upgrade to Buy despite 15%+ delivery beat",
+          "Jefferies flags Optimus/Robotaxi profitability as multi-year and potentially loss-making initially",
+          "Merger-speculation risk: TSLA may trade as SpaceX proxy, disconnecting from auto fundamentals",
+          "Auto demand case still relies on post-$7,500 federal EV tax credit environment — structural headwind remains"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-tsla-price-target-upgrade-heels-crazy-successful-auto-quarter/",
+      "impact": "medium"
+    },
+    {
+      "title": "California $270M MyFirstEV rebate starts; Model 3/Y qualify but Tesla disadvantaged vs CA-based rivals",
+      "description": "Gov. Newsom signed SB 168 creating a $270M point-of-sale EV rebate (MyFirstEV), split $135.5M state / $135.5M automaker-funded, to partially replace the expired $7,500 federal EV tax credit. First-time EV buyers get $3,500 off new BEVs with MSRP ≤$50,000; used EVs ≤$25,000 get $1,750. Tesla Model 3 RWD ($42,490), Model 3 LR ($47,490), and base Model Y ($44,990) all qualify. Model S/X/Cybertruck do not. Critical catch: California-based automakers (Rivian, Lucid) are carved out of the $50k price cap entirely — Tesla, headquartered in Texas since 2021, is not. Program goes live later this summer via CARB. Net: modest positive for base 3/Y CA demand, but structural disadvantage vs in-state competitors and only a partial patch for lost federal incentive in Tesla's largest US state market (~1/3 of US EV sales).",
+      "date": "2026-07-13",
+      "category": "Vehicle Production & Delivery",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Point-of-sale $3,500 rebate on Model 3 and base Model Y improves CA affordability for first-time buyers",
+          "California is ~1/3 of US EV sales — any state incentive has non-trivial volume leverage",
+          "Replaces some of the demand hole left by expired $7,500 federal EV tax credit"
+        ],
+        "negative_signals": [
+          "Only $3,500 vs prior $7,500 federal credit — net incentive still much weaker than 2024–2025",
+          "Rivian/Lucid exempt from $50k MSRP cap as CA-based makers; Tesla is not — competitive disadvantage",
+          "Model S/X/Cybertruck excluded entirely; higher-ASP mix gets zero help",
+          "Program not live yet (later this summer); near-term Q3 delivery impact limited until CARB rules finalize",
+          "Funded partly by automakers — Tesla will share cost of its own demand subsidy"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-makes-the-cut-on-californias-newest-ev-rebate-program/",
+      "impact": "medium"
+    },
+    {
+      "title": "Tesla enters Latvia and Uruguay — dual-continent sales expansion, low near-term volume",
+      "description": "Tesla advanced Latvia operations (Tesla Latvia SIA, service-center hiring in Riga; Tesla Europe confirmed 'Coming to Latvia' July 17) and officially launched Uruguay (Tesla Uruguay SAS; Model 3/Y homologated; third South American market after Chile and Colombia). Vehicles for Latvia likely from Giga Berlin or Shanghai; Uruguay imports from Shanghai. Uruguay has high EV penetration (>20% BEV share) and near-100% renewable grid; Latvia BEV share ~7%. These are real market-entry milestones that expand the delivery footprint, but absolute volume contribution will be tiny vs Tesla's ~1.7M annual run-rate. Useful for long-tail growth and Shanghai export utilization, not a fix for modest full-year growth guidance.",
+      "date": "2026-07-17",
       "category": "Vehicle Production & Delivery",
       "status": "positive",
       "sentiment": {
         "headline": "positive",
-        "reality": "positive",
+        "reality": "neutral",
         "confidence": "high"
       },
       "evidence": {
         "positive_signals": [
-          "20% production increase to 73K Model Y/quarter starting July 2026",
-          "1,000 new hires plus 500 temp-to-permanent conversions",
-          "European demand recovery: Germany registrations up 4x in March 2026",
-          "Q1 2026 record 61,000 vehicles produced at Berlin",
-          "Management confidence in sustained European demand"
+          "Official dual-continent market entries confirmed by Tesla Europe and Tesla LatAm social channels",
+          "Uruguay third official South American market after Chile and Colombia — sequential LatAm push",
+          "Shanghai export channel gains additional destinations (Uruguay); Berlin/Shanghai for Latvia",
+          "Uruguay >20% BEV share and green grid are favorable structural demand conditions"
         ],
         "negative_signals": [
-          "Still operating below factory's theoretical maximum capacity",
-          "Expansion only returns Berlin to mid-2023 production rates",
-          "Requires significant hiring/training period (May-July) before full ramp"
+          "Latvia new-car market only ~22.5k units/year total — Tesla volume ceiling is de minimis",
+          "Uruguay already had hundreds of grey-import Teslas — official launch captures warranty/service more than massive incremental demand",
+          "Does not move the needle on 1.73M full-year delivery consensus or modest ~5% YoY growth",
+          "Still no material new product (affordable mass-market / high-volume Cybercab retail) driving volume"
         ]
       },
-      "source": "https://www.teslarati.com/tesla-plans-production-boost-giga-berlin-following-rebound-europe/",
-      "impact": "medium"
+      "source": "https://www.teslarati.com/tesla-enters-two-new-markets-on-different-continents-one-week/",
+      "impact": "low"
+    },
+    {
+      "title": "Tesla Semi Long Range enters Chicago pilot with Paper Transport (PTI)",
+      "description": "Wisconsin-based Paper Transport (PTI) will pilot Tesla Semi Long Range (~500 mi, $290k, three-motor, ~1.7 kWh/mi) in dedicated Chicago-market operations — a colder-weather logistics test after prior Alaska/Northern California winter testing. PTI frames it as Scope 3 emissions reduction alongside RNG and intermodal. Continues the pattern of small fleet pilots (PepsiCo/Frito-Lay California, etc.) rather than high-volume Semi production/delivery. Positive incremental fleet validation; still not evidence of Semi scaling into a meaningful 'Other models' contributor after Model S/X sunset.",
+      "date": "2026-07-13",
+      "category": "Vehicle Production & Delivery",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "New commercial fleet pilot expands Semi real-world operating data into Midwest winter conditions",
+          "Long Range trim specs publicly referenced ($290k, ~500 mi) — product commercialization progressing beyond prototype",
+          "Follows prior PepsiCo/Frito-Lay pilot pathway — multi-fleet validation strategy continuing"
+        ],
+        "negative_signals": [
+          "Still pilot-scale, not high-volume production deliveries",
+          "Q2 'Other models' production only 8,822 / deliveries 12,364 — Semi not yet a material volume driver",
+          "No disclosed multi-hundred unit order; validation ≠ ramp",
+          "Cold-weather performance remains a stated test objective — operational risk not yet retired at scale"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-semi-enters-new-pilot-program-interesting-challenge/",
+      "impact": "low"
     }
   ],
   "metricUpdate": {
-    "date": "2026-07-02",
+    "date": "2026-07-17",
     "quarterlyData": {
-      "quarter": "Q2 2026",
-      "production": {
-        "total": 451758,
-        "model3Y": 442936,
-        "otherModels": 8822
+      "q2_2026_reported": {
+        "deliveries": 480126,
+        "production": 451758,
+        "model3y_deliveries": 467762,
+        "other_deliveries": 12364,
+        "model3y_production": 442936,
+        "other_production": 8822,
+        "energy_storage_gwh": 13.5,
+        "note": "Official Q2 figures reported July 2 (outside this week's date range; retained as baseline). Deliveries beat production by ~28k (inventory drawdown). Model S/X sunset this quarter.",
+        "source": "https://www.teslarati.com/tesla-tsla-annihilates-wall-street-expectations-strong-q2-delivery-showing/"
       },
-      "deliveries": {
-        "total": 480126,
-        "model3Y": 467762,
-        "otherModels": 12364
+      "q2_2026_earnings_consensus": {
+        "total_revenue_b": 27.58,
+        "auto_revenue_b": 20.05,
+        "energy_revenue_b": 3.77,
+        "services_revenue_b": 3.76,
+        "adj_eps": 0.55,
+        "gaap_eps": 0.36,
+        "gross_margin_pct": 19.5,
+        "operating_margin_pct": 5.4,
+        "capex_b": 6.7,
+        "free_cash_flow_b": -3.25,
+        "full_year_2026_delivery_consensus": 1730000,
+        "analyst_count": 23,
+        "earnings_call": "2026-07-22",
+        "note": "Tesla IR company-compiled consensus published week of July 13–17. Negative FCF and 5.4% op margin are the critical tells despite volume beat.",
+        "source": "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts/"
       },
-      "energyStorage": {
-        "deployed_gwh": 13.5,
-        "note": "2nd best quarter ever, +40% YoY vs 9.6 GWh in Q2 2025"
+      "h1_2026_implied": {
+        "deliveries": 838149,
+        "note": "Q1 358,023 + Q2 480,126. Implies ~892k H2 deliveries needed to hit 1.73M full-year consensus.",
+        "source": "https://www.teslarati.com/tesla-tsla-annihilates-wall-street-expectations-strong-q2-delivery-showing/"
       }
-    },
-    "note": "Q2 2026 deliveries beat consensus by 18% (480K vs 406K expected), cleared 28K units of inventory backlog from Q1",
-    "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm"
+    }
   },
   "categoryUpdate": {
-    "latestStatus": "Q2 2026 delivered strong 18% beat vs consensus (480K vs 406K), but full-year guidance remains modest at ~3-5% growth to 1.69M units. Model S/X production ended Q2, Fremont line converted for Optimus. Giga Berlin ramping to 73K/qtr in July.",
-    "nextMilestone": "Q2 2026 earnings call July 22 will provide forward guidance; Optimus production at Fremont starts late July/August 2026",
+    "latestStatus": "Post-Q2 delivery beat hangover week: no new production/delivery print. Street consensus for July 22 earnings embeds thin 5.4% op margin and -$3.25B FCF despite 480k deliveries. Full-year volume still only ~1.73M (~5% growth). CA rebate and Latvia/Uruguay entries are incremental demand/footprint positives with limited near-term volume impact.",
+    "nextMilestone": "Q2 2026 earnings call July 22 — watch auto gross margin, ASP, inventory commentary, H2 delivery trajectory, and any update to full-year volume/guidance after Model S/X sunset.",
     "concerns": [
-      "Full-year 2026 growth only 3-5% vs historical 50%+ targets - significant deceleration",
-      "Analyst forecasts downgraded by 35K units since March 2026",
-      "Capital expenditure increased to $25B+ with negative FCF projected for Q2-Q4 2026",
-      "Production (452K) trails deliveries (480K) by 28K units - conservative manufacturing outlook suggests demand uncertainty",
-      "Q1 2026 missed expectations, Q2 beat partially due to inventory drawdown rather than pure demand strength"
+      "Q2 beat was inventory drawdown (prod 451k < del 480k), not a production capacity breakthrough",
+      "Full-year 1.73M consensus = low-single-digit growth — not a return to high-growth auto era",
+      "Street expects -$3.25B Q2 FCF and only 5.4% operating margin — volume without cash/margin recovery",
+      "Model S/X gone; 'Other' (Cybertruck/Semi) still ~12k deliveries/quarter — product gap at high end",
+      "Federal $7,500 EV credit gone; CA MyFirstEV only partially backfills and disadvantages Tesla vs Rivian/Lucid",
+      "Jefferies Hold after 15%+ delivery beat shows Street skepticism on sustained auto re-rating"
     ]
   },
   "urlsSeen": [
-    "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
-    "https://www.teslarati.com/tesla-plans-production-boost-giga-berlin-following-rebound-europe/",
-    "https://www.teslarati.com/tesla-analyst-breaks-down-delivery-report-step-right-direction-wedbush/",
-    "https://www.teslarati.com/tesla-tsla-deliveries-big-boost-in-expectations-wall-street/",
-    "https://www.teslarati.com/tesla-strong-q2-deliveries-four-key-drivers-behind-the-surprise/",
-    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/exhibit99111111.htm",
-    "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
-    "https://teslanorth.com/2026/07/02/tesla-delivers-over-480000-vehicles-in-q2-2026-as-storage-hits-13-5-gwh/"
+    "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts/",
+    "https://www.teslarati.com/tesla-tsla-price-target-upgrade-heels-crazy-successful-auto-quarter/",
+    "https://www.teslarati.com/tesla-makes-the-cut-on-californias-newest-ev-rebate-program/",
+    "https://www.teslarati.com/tesla-enters-two-new-markets-on-different-continents-one-week/",
+    "https://www.teslarati.com/tesla-semi-enters-new-pilot-program-interesting-challenge/",
+    "https://www.teslarati.com/tesla-tsla-annihilates-wall-street-expectations-strong-q2-delivery-showing/",
+    "https://electrek.co/2026/07/16/tesla-shareholder-questions-q2-2026-earnings/",
+    "https://electrek.co/2026/07/17/tesla-latvia-uruguay-launch/",
+    "https://ir.tesla.com/press-release/earnings-consensus-second-quarter-2026",
+    "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments"
   ],
   "metadata": {
     "sourcesSearched": [
       "ir.tesla.com",
-      "sec.gov",
       "teslarati.com",
-      "teslanorth.com"
+      "teslanorth.com",
+      "electrek.co (corroboration only)"
     ],
-    "dateRange": "2026-07-08 to 2026-07-12",
+    "dateRange": "2026-07-12 to 2026-07-17",
     "skipReason": null,
-    "researchNotes": "Primary finding within date range: July 10 Model S/X line decommissioning article. Q2 delivery data (July 2) provides crucial context for understanding production trajectory. Critical analysis: while Q2 beat expectations, reality shows only 3-5% full-year growth with downgraded forecasts, indicating fundamental growth constraints despite positive headlines."
+    "deduplicationNotes": "Q2 delivery/production print (480,126 / 451,758 / 13.5 GWh) already in hotContext from July 2 report — not re-listed as a new keyChange. Used only as metric baseline. No prior recentKeyChanges to dedupe against."
   }
 }

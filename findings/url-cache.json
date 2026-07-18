@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-10",
+  "lastUpdated": "2026-07-17",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -26,7 +26,7 @@
     "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations": {
       "originalUrl": "https://www.teslarati.com/elon-musk-outlines-tesla-optimus-production-expectations/",
       "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08",
+      "lastSeen": "2026-07-17",
       "category": "Research",
       "title": "July 2026 update"
     },
@@ -68,7 +68,7 @@
     "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont": {
       "originalUrl": "https://www.teslarati.com/tesla-shows-rapid-teardown-model-s-and-x-lines-paving-way-optimus-fremont/",
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-10",
+      "lastSeen": "2026-07-17",
       "category": "Optimus Production",
       "title": "Tesla completes 46-day Model S/X line teardown for Optimus at Fremont"
     },
@@ -82,14 +82,14 @@
     "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map": {
       "originalUrl": "https://www.teslarati.com/tesla-fsd-is-about-to-know-your-specific-house-and-neighborhood-better-than-any-map/",
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-10",
+      "lastSeen": "2026-07-17",
       "category": "FSD v15 Software",
       "title": "Tesla confirms voice-taught FSD context; Grok\u2192planning by September"
     },
     "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments": {
       "originalUrl": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-10",
+      "lastSeen": "2026-07-17",
       "category": "Vehicle Production & Delivery",
       "title": "Q2 2026 production deliveries (already in data)"
     },
@@ -99,16 +99,672 @@
       "lastSeen": "2026-07-10",
       "category": "Cybercab Production",
       "title": "Cybercab launch imminent signal (June article reviewed)"
+    },
+    "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026": {
+      "originalUrl": "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://blog.mean.ceo/optimus-news-july-2026": {
+      "originalUrl": "https://blog.mean.ceo/optimus-news-july-2026/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://driveteslacanada.ca/news/ntsb-preliminary-report-texas-tesla-crash": {
+      "originalUrl": "https://driveteslacanada.ca/news/ntsb-preliminary-report-texas-tesla-crash/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://driveteslacanada.ca/news/tesla-driver-reading-documents-west-kelowna-bc": {
+      "originalUrl": "https://driveteslacanada.ca/news/tesla-driver-reading-documents-west-kelowna-bc/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://driveteslacanada.ca/news/tesla-fsd-italy-application-under-review": {
+      "originalUrl": "https://driveteslacanada.ca/news/tesla-fsd-italy-application-under-review/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD Country Approvals",
+      "title": "Italy confirms Tesla FSD application under review via Dutch homologation recogni"
+    },
+    "https://electrek.co/2026/07/03/tesla-fsd-driver-manslaughter-katy-crash": {
+      "originalUrl": "https://electrek.co/2026/07/03/tesla-fsd-driver-manslaughter-katy-crash/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/07/tesla-giga-berlin-cell-giga-challenge": {
+      "originalUrl": "https://electrek.co/2026/07/07/tesla-giga-berlin-cell-giga-challenge/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/09/new-jersey-bill-tesla-camera-robotaxi": {
+      "originalUrl": "https://electrek.co/2026/07/09/new-jersey-bill-tesla-camera-robotaxi/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot": {
+      "originalUrl": "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm": {
+      "originalUrl": "https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/13/tesla-wheelchair-accessible-robotaxi": {
+      "originalUrl": "https://electrek.co/2026/07/13/tesla-wheelchair-accessible-robotaxi/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/16/tesla-shareholder-questions-q2-2026-earnings": {
+      "originalUrl": "https://electrek.co/2026/07/16/tesla-shareholder-questions-q2-2026-earnings/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co/2026/07/17/tesla-latvia-uruguay-launch": {
+      "originalUrl": "https://electrek.co/2026/07/17/tesla-latvia-uruguay-launch/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://electrek.co": {
+      "originalUrl": "https://electrek.co/?s=AI5",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://evxl.co/2026/07/15/tesla-adds-58-texas-robotaxis-one-day": {
+      "originalUrl": "https://evxl.co/2026/07/15/tesla-adds-58-texas-robotaxis-one-day/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026": {
+      "originalUrl": "https://ilovetesla.com/teslas-optimus-awakening-100-job-openings-herald-the-shift-to-mass-production-in-2026/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://ir.tesla.com/press-release/earnings-consensus-second-quarter-2026": {
+      "originalUrl": "https://ir.tesla.com/press-release/earnings-consensus-second-quarter-2026",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://news.google.com/rss/search": {
+      "originalUrl": "https://news.google.com/rss/search?q=Terafab+OR+%22Tesla+chip+fab%22+OR+%22Tesla+AI5%22+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://optimusk.blog": {
+      "originalUrl": "https://optimusk.blog/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://optimusk.blog/blog": {
+      "originalUrl": "https://optimusk.blog/blog/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://optimusk.blog/blog/tesla-optimus-news": {
+      "originalUrl": "https://optimusk.blog/blog/tesla-optimus-news/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://robohorizon.com/en-us/news/2025/12/tesla-optimus-hiring-spree-hits-110-jobs": {
+      "originalUrl": "https://robohorizon.com/en-us/news/2025/12/tesla-optimus-hiring-spree-hits-110-jobs/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://robotaxitracker.com": {
+      "originalUrl": "https://robotaxitracker.com/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard": {
+      "originalUrl": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Optimus Production",
+      "title": "Agility Robotics opens Fremont training hub as Digit already earns revenue \u2014 Opt"
+    },
+    "https://teslanorth.com/2025/12/27/tesla-ramps-up-optimus-hiring-ahead-of-v3-reveal": {
+      "originalUrl": "https://teslanorth.com/2025/12/27/tesla-ramps-up-optimus-hiring-ahead-of-v3-reveal/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production": {
+      "originalUrl": "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin": {
+      "originalUrl": "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/2026/07/13/tesla-2026-20-6-6-release-notes-fsd-supervised-14-3-5-is-here": {
+      "originalUrl": "https://teslanorth.com/2026/07/13/tesla-2026-20-6-6-release-notes-fsd-supervised-14-3-5-is-here/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/2026/07/14/tesla-fsd-supervised-hits-50-million-kilometres-in-europe": {
+      "originalUrl": "https://teslanorth.com/2026/07/14/tesla-fsd-supervised-hits-50-million-kilometres-in-europe/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD Country Approvals",
+      "title": "FSD Supervised hits 50M km in Europe across five small markets; major markets st"
+    },
+    "https://teslanorth.com/2026/07/15/tesla-robotaxi-fleet-surges-50-with-expansion-in-texas": {
+      "originalUrl": "https://teslanorth.com/2026/07/15/tesla-robotaxi-fleet-surges-50-with-expansion-in-texas/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Cybercab Production",
+      "title": "Tesla registers 58 more Model Y robotaxis in Texas \u2014 fleet to 175 in one day"
+    },
+    "https://teslanorth.com/2026/07/16/ntsb-report-backs-tesla-driver-overrode-fsd-before-fatal-texas-crash": {
+      "originalUrl": "https://teslanorth.com/2026/07/16/ntsb-report-backs-tesla-driver-overrode-fsd-before-fatal-texas-crash/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/2026/07/17/tesla-fsd-fleet-hits-massive-12-billion-mile-milestone-as-training-speeds-up": {
+      "originalUrl": "https://teslanorth.com/2026/07/17/tesla-fsd-fleet-hits-massive-12-billion-mile-milestone-as-training-speeds-up/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD v15 Software",
+      "title": "FSD fleet hits 12 billion cumulative supervised miles; training data grows, soft"
+    },
+    "https://teslanorth.com/2026/07/17/tesla-model-3-completes-coast-to-coast-drive-on-fsd-v14-lite": {
+      "originalUrl": "https://teslanorth.com/2026/07/17/tesla-model-3-completes-coast-to-coast-drive-on-fsd-v14-lite/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD v15 Software",
+      "title": "HW3 FSD v14 Lite completes claimed 4,255-mile zero-intervention coast-to-coast d"
+    },
+    "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts": {
+      "originalUrl": "https://teslanorth.com/2026/07/17/tesla-shares-q2-earnings-expectations-from-major-wall-street-analysts/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla IR posts Q2 2026 earnings consensus: $27.6B revenue, 1.73M full-year deliv"
+    },
+    "https://teslanorth.com": {
+      "originalUrl": "https://teslanorth.com/?s=AI5",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/feed": {
+      "originalUrl": "https://teslanorth.com/feed/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslanorth.com/search/4680/feed/rss2": {
+      "originalUrl": "https://teslanorth.com/search/4680/feed/rss2/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://teslaoracle.com": {
+      "originalUrl": "https://teslaoracle.com/?s=AI5",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://texasavtracker.com": {
+      "originalUrl": "https://texasavtracker.com/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/5-things-to-know-about-teslas-dry-electrode-battery-breakthrough": {
+      "originalUrl": "https://www.basenor.com/blogs/news/5-things-to-know-about-teslas-dry-electrode-battery-breakthrough",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/chinas-new-battery-tax-what-it-means-for-ev-makers": {
+      "originalUrl": "https://www.basenor.com/blogs/news/chinas-new-battery-tax-what-it-means-for-ev-makers",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter": {
+      "originalUrl": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "4680 Battery Cell Production",
+      "title": "Giga Berlin 4680 production video drops \u2014 early ramp PR, full scale still H1 202"
+    },
+    "https://www.basenor.com/blogs/news/tagged/energy-battery": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tagged/energy-battery",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/tesla-lithium-plant-lays-down-roads-as-ramp-up-continues": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-lithium-plant-lays-down-roads-as-ramp-up-continues",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/tesla-optimus-5-details-that-matter-behind-elluswamys-confidence": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-optimus-5-details-that-matter-behind-elluswamys-confidence",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/tesla-registers-58-more-model-ys-for-texas-robotaxi-fleet": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-registers-58-more-model-ys-for-texas-robotaxi-fleet",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/blogs/news/tesla-samsung-ai5-chip-hits-tape-out-at-taylor-fab-on-2nm-process": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-samsung-ai5-chip-hits-tape-out-at-taylor-fab-on-2nm-process",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.basenor.com/pages/tesla-optimus-tracker": {
+      "originalUrl": "https://www.basenor.com/pages/tesla-optimus-tracker",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.benzinga.com/markets/tech/26/07/60325289/this-former-tesla-scientist-is-developing-a-rival-to-elon-musks-optimus-as-humanoid-robot-race-heats-up": {
+      "originalUrl": "https://www.benzinga.com/markets/tech/26/07/60325289/this-former-tesla-scientist-is-developing-a-rival-to-elon-musks-optimus-as-humanoid-robot-race-heats-up",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.benzinga.com/markets/tech/26/07/60407992/tesla-ai-chief-ashok-elluswamy-says-optimus-has-big-shoes-to-fill-after-model-s-x-production-line-closure": {
+      "originalUrl": "https://www.benzinga.com/markets/tech/26/07/60407992/tesla-ai-chief-ashok-elluswamy-says-optimus-has-big-shoes-to-fill-after-model-s-x-production-line-closure",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Optimus Production",
+      "title": "Elluswamy hails Optimus after S/X line teardown \u2014 confidence messaging, zero new"
+    },
+    "https://www.benzinga.com/markets/tech/26/07/60488913/tesla-q2-earnings-elon-musks-pay-package-cybercab-and-optimus-lead-top-investor-questions": {
+      "originalUrl": "https://www.benzinga.com/markets/tech/26/07/60488913/tesla-q2-earnings-elon-musks-pay-package-cybercab-and-optimus-lead-top-investor-questions",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Optimus Production",
+      "title": "Shareholders put Optimus production ramp under Q2 earnings spotlight \u2014 no commer"
+    },
+    "https://www.etnews.com/20260713000364": {
+      "originalUrl": "https://www.etnews.com/20260713000364",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.kbtx.com/2026/06/09/what-documents-filed-with-local-school-districts-reveal-about-spacexs-terafab-project": {
+      "originalUrl": "https://www.kbtx.com/2026/06/09/what-documents-filed-with-local-school-districts-reveal-about-spacexs-terafab-project/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements": {
+      "originalUrl": "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Terafab Manufacturing",
+      "title": "Grimes County School Boards Approve $119B Terafab JETI Tax Deals 5-2 Amid Local "
+    },
+    "https://www.kbtx.com/2026/07/15/iola-isd-school-board-approves-jeti-agreements-spacex-terafab-project": {
+      "originalUrl": "https://www.kbtx.com/2026/07/15/iola-isd-school-board-approves-jeti-agreements-spacex-terafab-project/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.kbtx.com/2026/07/16/grimes-county-hits-pause-terafab-accountability-resolution": {
+      "originalUrl": "https://www.kbtx.com/2026/07/16/grimes-county-hits-pause-terafab-accountability-resolution/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted": {
+      "originalUrl": "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Terafab Manufacturing",
+      "title": "Gov. Abbott Terafab JETI Decision Deadline Passes With No Public Yes/No; Deal St"
+    },
+    "https://www.linkedin.com/jobs/search": {
+      "originalUrl": "https://www.linkedin.com/jobs/search/?keywords=Optimus&f_C=2497&location=United%20States",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.notateslaapp.com/news/4430/tesla-fsd-inches-closer-to-regulatory-approval-in-italy": {
+      "originalUrl": "https://www.notateslaapp.com/news/4430/tesla-fsd-inches-closer-to-regulatory-approval-in-italy",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.notateslaapp.com/news/4434/tesla-rolls-out-fsd-v1435-whats-new": {
+      "originalUrl": "https://www.notateslaapp.com/news/4434/tesla-rolls-out-fsd-v1435-whats-new",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.notateslaapp.com/news/4435/exclusive-tesla-hw4-vehicles-also-run-distilled-fsd-models": {
+      "originalUrl": "https://www.notateslaapp.com/news/4435/exclusive-tesla-hw4-vehicles-also-run-distilled-fsd-models",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD v15 Software",
+      "title": "Report: HW4 consumer FSD runs distilled Cybercab models \u2014 hardware tiering confi"
+    },
+    "https://www.notateslaapp.com/news/4452/ntsb-confirms-driver-overrode-fsd-in-house-crash-investigation": {
+      "originalUrl": "https://www.notateslaapp.com/news/4452/ntsb-confirms-driver-overrode-fsd-in-house-crash-investigation",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.20.6.6/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.20.6.6/release-notes",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.5 rolls out: incremental RL polish, still no v15 path visible"
+    },
+    "https://www.technetbooks.com/2026/07/samsung-foundry-commences-2nm-tesla-ai5.html": {
+      "originalUrl": "https://www.technetbooks.com/2026/07/samsung-foundry-commences-2nm-tesla-ai5.html",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.tesla.com/careers/search": {
+      "originalUrl": "https://www.tesla.com/careers/search/?query=optimus&site=US",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslaoracle.com/2026/07/14/tesla-expands-robotaxi-service-to-miami-watch-the-first-impressions-of-users": {
+      "originalUrl": "https://www.teslaoracle.com/2026/07/14/tesla-expands-robotaxi-service-to-miami-watch-the-first-impressions-of-users/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Cybercab Production",
+      "title": "Miami robotaxi first rides expose tiny geofence, cancellations, and support inte"
+    },
+    "https://www.teslaoracle.com/2026/07/16/tesla-adds-camera-preview-in-fsd-v14-3-5-2026-20-6-6-official-release-notes-rollout-status": {
+      "originalUrl": "https://www.teslaoracle.com/2026/07/16/tesla-adds-camera-preview-in-fsd-v14-3-5-2026-20-6-6-official-release-notes-rollout-status/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslaoracle.com/feed": {
+      "originalUrl": "https://www.teslaoracle.com/feed/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslaoracle.com/search/cybercab/feed/rss2": {
+      "originalUrl": "https://www.teslaoracle.com/search/cybercab/feed/rss2/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com": {
+      "originalUrl": "https://www.teslarati.com/?s=AI5",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/ntsb-findings-on-fatal-tesla-crash-tell-a-very-different-story": {
+      "originalUrl": "https://www.teslarati.com/ntsb-findings-on-fatal-tesla-crash-tell-a-very-different-story/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "FSD Country Approvals",
+      "title": "NTSB preliminary report: driver overrode FSD at 100% accelerator in fatal Katy, "
+    },
+    "https://www.teslarati.com/search/4680/feed/rss2": {
+      "originalUrl": "https://www.teslarati.com/search/4680/feed/rss2/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/search/Optimus/feed/rss2": {
+      "originalUrl": "https://www.teslarati.com/search/Optimus/feed/rss2/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/search/cybercab/feed/rss2": {
+      "originalUrl": "https://www.teslarati.com/search/cybercab/feed/rss2/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-battery-challenge": {
+      "originalUrl": "https://www.teslarati.com/tesla-battery-challenge/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-cleaning-robot-cybercab-robotaxi-service": {
+      "originalUrl": "https://www.teslarati.com/tesla-cleaning-robot-cybercab-robotaxi-service/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Cybercab Production",
+      "title": "Texas permit lists Cleaning Robot at Austin Robotaxi hub (Ben White Blvd)"
+    },
+    "https://www.teslarati.com/tesla-enters-two-new-markets-on-different-continents-one-week": {
+      "originalUrl": "https://www.teslarati.com/tesla-enters-two-new-markets-on-different-continents-one-week/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla enters Latvia and Uruguay \u2014 dual-continent sales expansion, low near-term "
+    },
+    "https://www.teslarati.com/tesla-faces-full-self-driving-pushback-eu-over-speeding": {
+      "originalUrl": "https://www.teslarati.com/tesla-faces-full-self-driving-pushback-eu-over-speeding/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-fix-big-problem-old-headlights-nhtsa-says": {
+      "originalUrl": "https://www.teslarati.com/tesla-fix-big-problem-old-headlights-nhtsa-says/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-full-self-driving-v14-3-5-early-impressions-new-features-early-performance": {
+      "originalUrl": "https://www.teslarati.com/tesla-full-self-driving-v14-3-5-early-impressions-new-features-early-performance/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-makes-the-cut-on-californias-newest-ev-rebate-program": {
+      "originalUrl": "https://www.teslarati.com/tesla-makes-the-cut-on-californias-newest-ev-rebate-program/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Vehicle Production & Delivery",
+      "title": "California $270M MyFirstEV rebate starts; Model 3/Y qualify but Tesla disadvanta"
+    },
+    "https://www.teslarati.com/tesla-optimus-job-listings": {
+      "originalUrl": "https://www.teslarati.com/tesla-optimus-job-listings/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-reveals-development-wheelchair-accessible-autonomous-vehicle": {
+      "originalUrl": "https://www.teslarati.com/tesla-reveals-development-wheelchair-accessible-autonomous-vehicle/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Cybercab Production",
+      "title": "Tesla claims wheelchair-accessible robotaxi 'active product' in Texas \u2014 no timel"
+    },
+    "https://www.teslarati.com/tesla-semi-enters-new-pilot-program-interesting-challenge": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-enters-new-pilot-program-interesting-challenge/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Semi Long Range enters Chicago pilot with Paper Transport (PTI)"
+    },
+    "https://www.teslarati.com/tesla-stuns-another-fsd-approval-in-europe-belgium": {
+      "originalUrl": "https://www.teslarati.com/tesla-stuns-another-fsd-approval-in-europe-belgium/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-tsla-annihilates-wall-street-expectations-strong-q2-delivery-showing": {
+      "originalUrl": "https://www.teslarati.com/tesla-tsla-annihilates-wall-street-expectations-strong-q2-delivery-showing/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.teslarati.com/tesla-tsla-price-target-upgrade-heels-crazy-successful-auto-quarter": {
+      "originalUrl": "https://www.teslarati.com/tesla-tsla-price-target-upgrade-heels-crazy-successful-auto-quarter/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "Vehicle Production & Delivery",
+      "title": "Jefferies raises TSLA PT to $400 (from $375) but keeps Hold after Q2 delivery be"
+    },
+    "https://www.teslarati.com/tesla-weirdly-confirms-cybercab-employees-rides-a-huge-milestone": {
+      "originalUrl": "https://www.teslarati.com/tesla-weirdly-confirms-cybercab-employees-rides-a-huge-milestone/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/teslas-ai5-with-2nm-class-node-tapes-out-at-samsung-foundry-production-starts-soon-months-after-tsmc-tape-out": {
+      "originalUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/teslas-ai5-with-2nm-class-node-tapes-out-at-samsung-foundry-production-starts-soon-months-after-tsmc-tape-out",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab": {
+      "originalUrl": "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.wired.com/story/tesla-says-its-building-a-wheelchair-accessible-robotaxi": {
+      "originalUrl": "https://www.wired.com/story/tesla-says-its-building-a-wheelchair-accessible-robotaxi/",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.yna.co.kr/amp/view/AKR20260713062900003": {
+      "originalUrl": "https://www.yna.co.kr/amp/view/AKR20260713062900003",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "unknown",
+      "title": ""
+    },
+    "https://www.yna.co.kr/view/AKR20260713062900003": {
+      "originalUrl": "https://www.yna.co.kr/view/AKR20260713062900003",
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-17",
+      "category": "AI Chip Production",
+      "title": "Samsung Completes AI5 Foundry Tape-Out for Taylor 2nm; Mass Production Still 202"
     }
   },
   "stats": {
-    "totalUrls": 14,
+    "totalUrls": 107,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 1,
-      "Cybercab Production": 2,
-      "FSD v15 Software": 1,
-      "Vehicle Production & Delivery": 1
+      "Optimus Production": 4,
+      "Cybercab Production": 6,
+      "FSD v15 Software": 5,
+      "Vehicle Production & Delivery": 6,
+      "unknown": 70,
+      "FSD Country Approvals": 3,
+      "4680 Battery Cell Production": 1,
+      "Terafab Manufacturing": 2,
+      "AI Chip Production": 1
     }
   }
 }

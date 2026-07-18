@@ -2,96 +2,10 @@
   "categoryKey": "terafab",
   "keyChanges": [
     {
-      "title": "Terafab July 7 Giga Texas Announcement Delayed, Turned Out to Be Cybercab Employee Rides",
-      "description": "Tesla VP Lars Moravy teased 'cool news' about Giga Texas scaling for July 7, 2026. The announcement slipped from July 7 to July 10, and when it came, it was employee Cybercab rides at Giga Texas—not a Terafab North Campus construction milestone or AI5 production update. This represents a significant mismatch between the scaling efforts expected (Terafab, Optimus factory, Roadster production) and what was actually announced (limited internal employee rides at factory).",
-      "date": "2026-07-10",
-      "category": "Terafab Announcement",
-      "status": "negative",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Announcement confirmed for early July",
-          "Employee rides show Cybercab engineering progress"
-        ],
-        "negative_signals": [
-          "Announcement slipped from teased July 7 date to July 10",
-          "Expected Terafab construction milestone did not materialize",
-          "No new Optimus factory scaling update",
-          "No concrete AI5 production timeline update",
-          "Announcement limited to internal factory parking lot rides, not public robotaxi expansion",
-          "Vague messaging ('cool news') does not clarify actual production readiness"
-        ]
-      },
-      "source": "https://www.teslarati.com/tesla-cybercab-ride-giga-texas/",
-      "impact": "medium"
-    },
-    {
-      "title": "AI5 Chip Production Delayed to Mid-2027, Missing Original 2026 Volume Target",
-      "description": "Tesla's AI5 chip, central to Terafab's planned output, has been delayed significantly. Original timeline promised volume production in 2026, but current guidance places high-volume manufacturing at mid-2027. Small-batch production is now expected in late 2026, but this represents a major slip from initial plans. The delay is primarily driven by Samsung's 2nm process maturation challenges at its Texas foundry. This directly impacts Tesla's AI roadmap and vehicle production scaling.",
-      "date": "2026-07-08",
-      "category": "Terafab Chip Production",
-      "status": "negative",
-      "sentiment": {
-        "headline": "neutral",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "AI5 taped out on April 15, 2026 (design complete)",
-          "Dual-sourcing at TSMC Arizona and Samsung Texas reduces single-point failure",
-          "Small-batch production expected late 2026"
-        ],
-        "negative_signals": [
-          "Volume production pushed from 2026 to mid-2027",
-          "Samsung's 2nm process slipping by 6+ months",
-          "AI6 chip delayed approximately 6 months due to Samsung delays",
-          "Multiple chip projects advancing simultaneously creates resource constraints",
-          "Process technology transition to GAAFET at 2nm requires new materials and equipment"
-        ]
-      },
-      "source": "https://www.automotiveworld.com/news/tesla-delays-ai5-chip-production-until-mid-2027/",
-      "impact": "high"
-    },
-    {
-      "title": "Terafab Execution Risks: Semiconductor Inexperience, Talent Shortage, and Yield Challenges",
-      "description": "Critical analysis reveals Terafab faces severe execution risks that threaten the $25B+ investment. Tesla has no semiconductor manufacturing experience. The company is advancing 6+ simultaneous chip projects (AI-related, Dojo-related, SpaceX satellites) while attempting vertical integration across mask design, logic, memory, and advanced packaging. Analysts cite lack of talent and time as primary constraints. The biggest technical challenge is controlling yields at advanced 2nm nodes—transistor architecture has shifted to GAAFET, requiring significant upgrades to materials, equipment, and process modules. Even minor deviations could cause sharp yield drops.",
-      "date": "2026-07-08",
-      "category": "Terafab Execution Risk",
-      "status": "negative",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Intel partnership provides semiconductor expertise",
-          "SpaceX and xAI co-investment spreads risk",
-          "Vertical integration vision is ambitious"
-        ],
-        "negative_signals": [
-          "Tesla has zero semiconductor manufacturing experience",
-          "6+ simultaneous chip projects stretching resources thin",
-          "GAAFET transition at 2nm requires new materials, equipment, and processes",
-          "Yield control at advanced nodes is industry's hardest problem",
-          "Talent shortage in semiconductor industry makes recruitment difficult",
-          "Pilot line production may not begin until 2029-2030 (not 2027-2028 as hoped)",
-          "Full facility buildout could take 10+ years based on historical chip fab construction"
-        ]
-      },
-      "source": "https://www.tipranks.com/news/teslas-terafab-chip-project-hampered-by-a-lack-of-talent-and-time-claims-analyst",
-      "impact": "high"
-    },
-    {
-      "title": "Terafab North Campus Construction Update: 5.2M Sq Ft Expansion Underway at Giga Texas",
-      "description": "Tesla filed detailed site plans in March 2026 showing a massive Terafab North Campus expansion including a dedicated 2-million-square-foot AI chip research and production facility, plus an additional 5.2 million square feet of construction across multiple phases. Ground clearing, soil reclamation, and infill operations are visible north of the existing facility. However, no specific construction milestones or timelines have been disclosed. The July 7 'cool news' tease failed to deliver details on this critical facility.",
-      "date": "2026-07-08",
-      "category": "Terafab North Campus",
+      "title": "Grimes County School Boards Approve $119B Terafab JETI Tax Deals 5-2 Amid Local Opposition",
+      "description": "On July 14, 2026, Iola ISD and Anderson-Shiro CISD each voted 5-2 to approve all eight JETI school-property-tax agreements for TeraFab AI, LLC (SpaceX special-purpose entity) covering the proposed Terafab semiconductor complex near Gibbons Creek in Grimes County. Agreements grant a 10-year school M&O tax reduction per phase (freeze at ~50% of appraised value) in exchange for claims of up to $119B total investment across four phases, 4,234+ direct jobs, and ~22,000 acres. Phase 1 alone was previously filed at ~$10.37B; media also cite a ~$55B first-phase scale. SpaceX told districts that without the deals the project would likely relocate out of Texas (Arizona cited). Community opposition was strong over water use, noise/lighting, and loss of small-town character (Iola population ~300). School boards framed approvals as keeping the process alive, not final endorsement. Construction still needs Governor Abbott approval, three-party signing, and Comptroller filing—no permits or groundwater apps were on file as of mid-June reporting. SpaceX wants Phase 1 construction before year-end 2026.",
+      "date": "2026-07-14",
+      "category": "Terafab Manufacturing",
       "status": "neutral",
       "sentiment": {
         "headline": "positive",
@@ -100,66 +14,125 @@
       },
       "evidence": {
         "positive_signals": [
-          "Detailed site plans filed with Travis County",
-          "Ground preparation underway with visible earth-moving activity",
-          "5.2M sq ft total expansion committed",
-          "Co-located with Optimus factory and Giga Texas operations"
+          "Both Iola ISD and Anderson-Shiro CISD approved all eight JETI agreements (required school-district step)",
+          "Applications claim up to $119B investment and 4,234+ jobs across four phases",
+          "SpaceX stated intent to begin Phase 1 construction before end of 2026 if deals close",
+          "District leaders argue residual tax revenue still funds teachers and programs even with abatements"
         ],
         "negative_signals": [
-          "No specific construction completion dates disclosed",
-          "July 7 announcement did not include Terafab North Campus milestone",
-          "Timeline remains vague ('first phase' language common in Tesla announcements)",
-          "Regulatory and permitting challenges not addressed",
-          "No public updates since initial March filing"
+          "Votes were only 5-2—not consensus; public comment was largely opposed (water, identity, trust)",
+          "Deal is not final: still requires Governor Abbott approval and three-party execution before construction",
+          "SpaceX openly threatened to leave Texas without tax breaks—leverage, not manufacturing progress",
+          "As of June document reporting: no building permits, no groundwater applications filed despite 2026 construction claims",
+          "Project entity is TeraFab AI, LLC under SpaceX filings—not a proven Tesla-operated fab with semiconductor experience",
+          "Tax abatements transfer cost to state/local taxpayers; they do not solve talent, yield, or process-node execution risk",
+          "Geographic focus is Grimes County (Gibbons Creek), not demonstrated North Campus Austin fab groundbreaking"
         ]
       },
-      "source": "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
-      "impact": "medium"
+      "source": "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements/",
+      "impact": "high"
+    },
+    {
+      "title": "Gov. Abbott Terafab JETI Decision Deadline Passes With No Public Yes/No; Deal Still Not Locked",
+      "description": "Under Texas JETI rules, Governor Greg Abbott shared the same 30-day window as the school districts after Comptroller acceptance on June 15, 2026—closing July 15. After the July 14 school-board approvals, KBTX reported on July 16 that Abbott’s decision remained unknown past the deadline. Law allows up to seven additional days to formally notify parties, so an answer could slip into the following week. If Abbott votes no, the school approvals are void and the deal dies; SpaceX filings state the project could leave Texas without the agreements. If yes, parties must still formally sign and file with the Comptroller before Phase 1 construction can start. Separately on July 16, Grimes County commissioners tabled a local ‘accountability’ resolution meant to set clearer industrial-project standards (water, lighting, noise, transparency)—signaling unresolved community and governance friction even as tax deals advance.",
+      "date": "2026-07-16",
+      "category": "Terafab Manufacturing",
+      "status": "negative",
+      "sentiment": {
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "School-district approvals cleared one of two required political gates",
+          "Governor has a short additional notification window rather than an automatic rejection",
+          "County pause on accountability resolution was framed as allowing more public input, not killing the project"
+        ],
+        "negative_signals": [
+          "Abbott decision unknown after statutory July 15 deadline—project remains in limbo",
+          "A single gubernatorial no kills all eight school agreements regardless of 5-2 board votes",
+          "SpaceX has conditioned Texas siting on tax breaks; failure risk is explicit in filings",
+          "No public confirmation of Abbott yes by July 17 coverage—timeline for year-end construction already under pressure",
+          "Grimes County tabled manufacturer accountability resolution amid damaged public trust and water/noise concerns",
+          "Political process progress is not equivalent to fab equipment, process qualification, or first wafer"
+        ]
+      },
+      "source": "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted/",
+      "impact": "high"
+    },
+    {
+      "title": "Samsung Process Tape-Out of Tesla AI5 on 2nm at Taylor Fab; Volume Still Mid/H2 2027",
+      "description": "On/around July 13, 2026, multiple semiconductor and EV outlets reported that a Samsung Foundry principal engineer (James Kim) posted on LinkedIn that the Tesla–Samsung AI5 design reached process tape-out and is scheduled for manufacture at Samsung’s Taylor, Texas fab on Samsung’s latest 2nm node—then deleted the post after Korean media pickup. TrendForce, citing Yonhap, said this was the first concrete Samsung Foundry production-timeline disclosure for AI5; AI5 will be dual-sourced with TSMC, while Samsung is reported to take full AI6 and TSMC AI6.5. Samsung has been installing front-end/back-end tools at Taylor since late April and reaffirmed ramp production in 2027. Electrek and others note AI5 on 2nm (previously assumed more for AI6) implies improved 2nm yields, but volume vehicle-board supply is still guided mid-2027 / H2 2027—not 2026. Critical context: April 2026 already saw Musk claim AI5 design tape-out to both foundries; this week is Samsung process-specific readiness, not mass production. Cybercab and current vehicles still depend on older AI4/AI4.5 hardware while AI5 remains multi-year late vs original promises.",
+      "date": "2026-07-13",
+      "category": "Terafab Manufacturing",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Samsung Foundry engineer disclosed AI5 process tape-out targeted for Taylor 2nm production",
+          "Dual-sourcing AI5 at Samsung and TSMC reduces single-foundry failure risk",
+          "Taylor fab equipment install and engineer deployment reported underway since late April 2026",
+          "AI5 on 2nm (vs prior assumption of only AI6 on 2nm) suggests Samsung yield story may be improving"
+        ],
+        "negative_signals": [
+          "Tape-out is not volume production—qualification wafers and customer sign-off still required",
+          "Samsung volume production of Tesla AI chips at Taylor still guided to H2 2027 / mid-2027, matching prior delay narrative",
+          "Disclosure came via a LinkedIn post that was deleted—not a formal Samsung customer press release",
+          "AI5 remains roughly two years late vs Musk’s earlier vehicle-integration promises; Cybercab launching on AI4",
+          "Prior reporting already tied AI6 slip (~6 months) to Samsung 2nm yield issues—2nm risk not retired",
+          "Musk has said Tesla needs several hundred thousand completed AI5 boards line-side before vehicle switchover—still distant",
+          "This is foundry outsourcing progress, not Terafab vertical-integration proof of Tesla/SpaceX making advanced logic themselves"
+        ]
+      },
+      "source": "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
+      "impact": "high"
     }
   ],
   "metricUpdate": null,
-  "fleetUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Terafab project announced March 2026 as $25B Tesla-SpaceX-Intel joint venture targeting 1 terawatt annual AI chip output. AI5 chip delayed to mid-2027 volume production. North Campus construction underway at Giga Texas but no major milestones announced in July 2026. Execution risks significant: zero semiconductor experience, talent shortage, challenging 2nm yield control.",
-    "nextMilestone": "AI5 small-batch production late 2026; Volume production mid-2027; Terafab North Campus completion timeline unknown; Pilot line production possibly 2029-2030",
+    "latestStatus": "Political/tax track advanced but not closed: Grimes County school boards approved eight SpaceX Terafab JETI deals (5-2 each) on July 14; Governor Abbott’s required decision was still unannounced after the July 15 deadline as of July 16 reporting. Separately, Samsung disclosed (via deleted LinkedIn post) AI5 process tape-out for 2nm at Taylor, with volume still mid/H2 2027—not a Terafab self-fab milestone.",
+    "nextMilestone": "Public confirmation of Governor Abbott’s JETI yes/no and formal three-party signing; any Phase 1 construction permits/groundbreaking in Grimes County before year-end 2026; Samsung Taylor engineering samples / qualification progress toward 2027 volume AI5.",
     "concerns": [
-      "AI5 volume production delayed 12+ months from original 2026 target",
-      "Samsung 2nm process maturation delayed, impacting AI6 timeline by 6+ months",
-      "Tesla lacks semiconductor manufacturing expertise; relying heavily on Intel partnership",
-      "Multiple concurrent chip projects (6+) stretching limited engineering resources",
-      "GAAFET technology transition at 2nm requires unproven process changes",
-      "Yield control at advanced nodes represents industry's most difficult technical challenge",
-      "Pilot line production may not begin until 2029-2030, significantly later than initial hopes",
-      "No concrete updates on Terafab North Campus construction despite being part of July 7 tease",
-      "Financial risk: $119B total build-out cost represents massive capital commitment"
+      "Abbott veto risk or delayed notification keeps $119B project in limbo despite school votes",
+      "No verified construction permits/groundwater filings as of last detailed document dump—2026 Phase 1 start is at risk",
+      "Community opposition and paused county accountability measures signal local friction",
+      "AI5 volume still mid-2027; tape-out headlines overstate near-term silicon supply",
+      "Terafab remains execution-heavy: tax incentives and foundry outsourcing do not prove Tesla/SpaceX can run advanced semiconductor manufacturing",
+      "Tier 1 Tesla outlets (Teslarati, TeslaNorth) had no substantive new Terafab coverage this week—story driven by local TX and Korean semi press"
     ]
   },
   "urlsSeen": [
-    "https://www.teslarati.com/tesla-cybercab-ride-giga-texas/",
-    "https://electrek.co/2026/07/11/tesla-cybercab-giga-texas-parking-lot/",
-    "https://www.automotiveworld.com/news/tesla-delays-ai5-chip-production-until-mid-2027/",
-    "https://www.tipranks.com/news/teslas-terafab-chip-project-hampered-by-a-lack-of-talent-and-time-claims-analyst",
-    "https://www.basenor.com/blogs/news/tesla-vp-teases-giga-texas-scaling-news-for-july-7",
-    "https://www.notateslaapp.com/news/4373/tesla-exec-says-big-giga-texas-announcement-coming-next-week",
-    "https://teslanorth.com/2026/06/29/tesla-vp-teases-cool-news-regarding-giga-texas-expansion-on-july-7/",
-    "https://x.com/herbertong/status/2071624087303229645",
-    "https://www.cnbc.com/2026/05/06/elon-musks-spacex-chip-fab-in-texas-to-cost-up-to-119-billion.html",
-    "https://www.basenor.com/blogs/news/tesla-spacex-launch-terafab-119b-chip-megafactory",
-    "https://electrek.co/2026/03/22/tesla-spacex-terafab-chip-factory-ai-desperation/",
-    "https://electrek.co/2026/03/16/teslas-terafab-chip-ambitions-ignore-its-total-lack-of-semiconductor-experience/"
+    "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements/",
+    "https://www.kbtx.com/2026/07/15/iola-isd-school-board-approves-jeti-agreements-spacex-terafab-project/",
+    "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted/",
+    "https://www.kbtx.com/2026/07/16/grimes-county-hits-pause-terafab-accountability-resolution/",
+    "https://www.kbtx.com/2026/06/09/what-documents-filed-with-local-school-districts-reveal-about-spacexs-terafab-project/",
+    "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
+    "https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm/",
+    "https://www.teslarati.com/?s=Terafab",
+    "https://teslanorth.com/feed/",
+    "https://news.google.com/rss/search?q=Terafab+OR+%22Tesla+chip+fab%22+OR+%22Tesla+AI5%22+when:7d&hl=en-US&gl=US&ceid=US:en"
   ],
   "metadata": {
     "sourcesSearched": [
       "teslarati.com",
       "teslanorth.com",
-      "basenor.com",
+      "kbtx.com",
+      "trendforce.com",
       "electrek.co",
-      "cnbc.com",
-      "automotiveworld.com",
-      "tipranks.com"
+      "news.google.com",
+      "kcentv.com",
+      "houstonchronicle.com",
+      "statesman.com",
+      "reuters.com"
     ],
-    "dateRange": "2026-07-08 to 2026-07-12",
+    "dateRange": "2026-07-12 to 2026-07-17",
     "skipReason": null,
-    "researchNotes": "Research focused on July 2026 period within specified date range. Found significant news about July 7 announcement (which slipped to July 10) and critical challenges facing the Terafab project. Primary findings: (1) Announcement failed to deliver on expectations for major Terafab construction milestone; (2) AI5 volume production significantly delayed to mid-2027; (3) Major execution risks identified by analysts including Tesla's lack of semiconductor experience, talent shortage, and 2nm process yield challenges. Hot context from config noting March 2026 announcement and July 7 tease was accurately reflected in search results."
+    "notes": "Deduped vs hot context: skipped July 7 'cool news'/Cybercab rides mismatch, prior AI5 mid-2027 delay analysis as standalone item, and generic execution-risk essay. Included NEW school JETI votes, Abbott silence, and Samsung process tape-out (distinct from April design tape-out already noted). Tier 1 Tesla media had no new Terafab articles in range; primary sourcing from KBTX local reporting and TrendForce/Yonhap semiconductor coverage with Electrek corroboration only."
   }
 }
