@@ -166,9 +166,11 @@ Every push to `main`:
 
 ```
 push main
+  → pip install -r requirements-dev.txt && python3 -m pytest
   → python3 scripts/validate_data.py
+  → npm ci
   → npx tsx scripts/validate-zod-schema.ts
-  → npm ci && npm run build
+  → npm run build
   → deploy dist/ to GitHub Pages
 ```
 

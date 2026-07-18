@@ -29,6 +29,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Python test deps
+        run: pip install -r requirements-dev.txt
+
+      - name: Unit tests (merge pipeline)
+        run: |
+          python3 -m pytest
+          echo "✅ Unit tests passed"
+
       - name: Validate data
         run: |
           python3 scripts/validate_data.py
