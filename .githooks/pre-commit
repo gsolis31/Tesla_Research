@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Slim pre-commit: live data validation + unit tests (no ESLint, no full build).
+# Install once: npm run hooks:install   (or: bash scripts/install_hooks.sh)
+# Bypass in an emergency: git commit --no-verify
+
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+echo "→ pre-commit: validate_data.py"
+python3 scripts/validate_data.py
+
+if python3 -c "import pytest" 2>/dev/null; then
+  echo "→ pre-commit: pytest"
+  python3 -m pytest -q
+else
+  echo "⚠ pytest not installed — skipping unit tests"
+  echo "  Install with: pip3 install -r requirements-dev.txt"
+fi
+
+echo "✓ pre-commit checks passed"

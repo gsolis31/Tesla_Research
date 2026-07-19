@@ -8,7 +8,9 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "python3 -m pytest",
-    "test:merge": "python3 -m pytest tests/test_merge_findings.py"
+    "test:merge": "python3 -m pytest tests/test_merge_findings.py",
+    "hooks:install": "bash scripts/install_hooks.sh",
+    "prepare": "bash scripts/install_hooks.sh || true"
   },
   "dependencies": {
     "chart.js": "^4.4.1",

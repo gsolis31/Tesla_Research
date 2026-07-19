@@ -186,6 +186,24 @@ git push origin main
 
 ## Validation & Maintenance
 
+### Local pre-commit (slim)
+
+One-time per clone (also runs on `npm install` via `prepare`):
+
+```bash
+npm run hooks:install
+# or: bash scripts/install_hooks.sh
+```
+
+Every `git commit` then runs:
+
+1. `python3 scripts/validate_data.py`
+2. `python3 -m pytest` (if pytest is installed)
+
+No ESLint, no full build — fast fail before push. Bypass: `git commit --no-verify`.
+
+### Manual checks
+
 ```bash
 # Structure + invariants + UI coverage
 python3 scripts/validate_data.py
