@@ -1,8 +1,9 @@
 {
   "categoryKey": "aiChip",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
+  "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
   "hotContext": {
     "criticalNews": "Samsung completed foundry-side AI5 tape-out for Taylor 2nm production (July 13). TSMC AI5 version already ahead. Volume production still H2 2027; vehicle deployment 2028+.",
     "recentKeyChanges": [

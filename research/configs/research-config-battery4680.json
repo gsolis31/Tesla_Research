@@ -1,8 +1,9 @@
 {
   "categoryKey": "battery4680",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
+  "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
   "hotContext": {
     "criticalNews": "Giga Berlin 4680 line is in early production (from May 12, 2026) with PR video on July 16; expanded 18 GWh full-scale still H1 2027. Texas dry-electrode 4680 for some Model Y packs already previously confirmed. No new yield or actual GWh metrics this week.",
     "recentKeyChanges": [

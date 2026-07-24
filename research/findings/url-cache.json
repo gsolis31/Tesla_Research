@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-23",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -624,21 +624,127 @@
       "lastSeen": "2026-07-17",
       "category": "AI Chip Production",
       "title": "Samsung Completes AI5 Foundry Tape-Out for Taylor 2nm; Mass Production Still 202"
+    },
+    "https://www.notateslaapp.com/news/4481/summary-of-teslas-2026-q2-earnings-call-cybercab-fsd-ai4-and-more": {
+      "originalUrl": "https://www.notateslaapp.com/news/4481/summary-of-teslas-2026-q2-earnings-call-cybercab-fsd-ai4-and-more",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "AI Chip Production",
+      "title": "Q2 Call: AI5 Volume Still 'Hopefully 2027'; Samsung/TSMC/Micron Named; AI6 Boast Unbacked"
+    },
+    "https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply": {
+      "originalUrl": "https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "AI Chip Production",
+      "title": "Micron Multi-Year Memory Allocation Highlighted; AI Board BOM Still Supply-Risk Bound"
+    },
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf": {
+      "originalUrl": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "4680 Battery Cell Production",
+      "title": "Q2 IR: battery pack capacity is the global vehicle bottleneck; 4680 ramp for Cybercab/Semi/MY"
+    },
+    "https://teslanorth.com/2026/07/21/teslas-robotaxi-network-adds-orlando-and-tampa-in-massive-push": {
+      "originalUrl": "https://teslanorth.com/2026/07/21/teslas-robotaxi-network-adds-orlando-and-tampa-in-massive-push/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Cybercab Production",
+      "title": "Tesla adds unsupervised Robotaxi in Orlando and Tampa \u2014 7 metros, still tiny fleets"
+    },
+    "https://teslanorth.com/2026/07/22/tesla-hits-28-2-billion-revenue-in-q2-as-production-begins-for-cybercab": {
+      "originalUrl": "https://teslanorth.com/2026/07/22/tesla-hits-28-2-billion-revenue-in-q2-as-production-begins-for-cybercab/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Cybercab Production",
+      "title": "Cybercab: Giga Texas production + 125k capacity claim; Moravy says no more federal approvals needed"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-slow-rollout-explanation-elon-musk": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-slow-rollout-explanation-elon-musk/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Cybercab Production",
+      "title": "Q2 Robotaxi data: 2.4M paid miles but QoQ flat; Musk blames safety, fleet still not scaling"
+    },
+    "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe": {
+      "originalUrl": "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "FSD Country Approvals",
+      "title": "NHTSA EA26002 escalates: demands Tesla 'Radar Saves Us' internal docs and marketing justification"
+    },
+    "https://teslanorth.com/2026/07/22/france-just-rejected-teslas-full-self-driving-regulators-say-it-isnt-safe-enough-yet": {
+      "originalUrl": "https://teslanorth.com/2026/07/22/france-just-rejected-teslas-full-self-driving-regulators-say-it-isnt-safe-enough-yet/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "FSD Country Approvals",
+      "title": "France rejects FSD Supervised: Transport Minister cites speeding and driver-monitoring gaps"
+    },
+    "https://www.notateslaapp.com/news/4468/tesla-fsd-v14-lite-starts-rolling-out-publicly": {
+      "originalUrl": "https://www.notateslaapp.com/news/4468/tesla-fsd-v14-lite-starts-rolling-out-publicly",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "FSD v15 Software",
+      "title": "FSD v14 Lite goes public for HW3 (2026.20.6.10/.11); HW4 gets point-release v14.3.6 \u2014 still Supervised only"
+    },
+    "https://www.notateslaapp.com/news/4484/tesla-robotaxis-are-already-running-fsd-v15": {
+      "originalUrl": "https://www.notateslaapp.com/news/4484/tesla-robotaxis-are-already-running-fsd-v15",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "FSD v15 Software",
+      "title": "Ashok: Robotaxi fleet already running early FSD v15 builds \u2014 only ~40% of planned improvements, consumer still on v14"
+    },
+    "https://www.linkedin.com/jobs/view/manufacturing-test-engineer-optimus-at-tesla-4444745128": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/manufacturing-test-engineer-optimus-at-tesla-4444745128",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Job Postings",
+      "title": "Optimus hiring pulse continues \u2014 manufacturing/test/production roles, but still no fill-rate or headcount proof"
+    },
+    "https://teslanorth.com/2026/07/23/musk-says-tesla-buyers-want-fsd-first-car-second-on-q2-earnings-call": {
+      "originalUrl": "https://teslanorth.com/2026/07/23/musk-says-tesla-buyers-want-fsd-first-car-second-on-q2-earnings-call/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Optimus Production",
+      "title": "Q2 earnings: Musk confirms Optimus has no supply chain and a 'flat and long' ramp"
+    },
+    "https://www.teslarati.com/tesla-starts-preparing-optimus-smartphone-app": {
+      "originalUrl": "https://www.teslarati.com/tesla-starts-preparing-optimus-smartphone-app/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Optimus Production",
+      "title": "Tesla app quietly builds Optimus phone-key and in-home data consent \u2014 software shell years ahead of product"
+    },
+    "https://www.teslarati.com/tesla-tsla-tumbles-after-earnings-one-of-its-sharpest-single-day-declines": {
+      "originalUrl": "https://www.teslarati.com/tesla-tsla-tumbles-after-earnings-one-of-its-sharpest-single-day-declines/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Vehicle Production & Delivery",
+      "title": "TSLA drops ~14.5% post-earnings as Street digests profit miss and $25B+ CapEx path"
+    },
+    "https://www.kbtx.com/2026/07/21/gov-abbott-signals-approval-spacexs-terafab-jeti-tax-agreements": {
+      "originalUrl": "https://www.kbtx.com/2026/07/21/gov-abbott-signals-approval-spacexs-terafab-jeti-tax-agreements/",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23",
+      "category": "Terafab Manufacturing",
+      "title": "Gov. Abbott Submits Positive JETI Determinations for SpaceX Terafab; Deal Still Needs Formal Signing"
     }
   },
   "stats": {
-    "totalUrls": 89,
+    "totalUrls": 104,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 4,
-      "Cybercab Production": 6,
-      "FSD v15 Software": 5,
-      "Vehicle Production & Delivery": 6,
+      "Optimus Production": 6,
+      "Cybercab Production": 9,
+      "FSD v15 Software": 7,
+      "Vehicle Production & Delivery": 7,
       "unknown": 52,
-      "FSD Country Approvals": 3,
-      "4680 Battery Cell Production": 1,
-      "Terafab Manufacturing": 2,
-      "AI Chip Production": 1
+      "FSD Country Approvals": 5,
+      "4680 Battery Cell Production": 2,
+      "Terafab Manufacturing": 3,
+      "AI Chip Production": 3,
+      "Job Postings": 1
     }
   }
 }

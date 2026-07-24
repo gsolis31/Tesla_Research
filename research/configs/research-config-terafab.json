@@ -1,8 +1,9 @@
 {
   "categoryKey": "terafab",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
+  "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
   "hotContext": {
     "criticalNews": "Political/tax track advanced but not closed: Grimes County school boards approved eight SpaceX Terafab JETI deals (5-2 each) on July 14; Governor Abbott\u2019s required decision was still unannounced after the July 15 deadline as of July 16 reporting. Separately, Samsung disclosed (via deleted LinkedIn post) AI5 process tape-out for 2nm at Taylor, with volume still mid/H2 2027\u2014not a Terafab self-fab milestone.",
     "recentKeyChanges": [

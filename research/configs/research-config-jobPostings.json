@@ -1,8 +1,9 @@
 {
   "categoryKey": "jobPostings",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
+  "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
   "hotContext": {
     "criticalNews": "100+ Active Optimus Roles - Stable Hiring Ahead of July/August Production",
     "recentKeyChanges": [],

@@ -1,8 +1,9 @@
 {
   "categoryKey": "fsdv15",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
+  "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
   "hotContext": {
     "criticalNews": "Production FSD remains on Supervised v14.3.5 (2026.20.6.6, HW4) with incremental RL/vision/compiler polish. No public v15 builds, betas, or timeline updates this week. HW4 reportedly runs distilled Cybercab models (unconfirmed exclusive). HW3 still capped at v14 Lite (coast-to-coast demo claimed). v15 end-2026/early-2027 target and robotaxi-scale blocker unchanged.",
     "recentKeyChanges": [

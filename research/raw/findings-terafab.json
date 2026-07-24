@@ -2,9 +2,40 @@
   "categoryKey": "terafab",
   "keyChanges": [
     {
-      "title": "Grimes County School Boards Approve $119B Terafab JETI Tax Deals 5-2 Amid Local Opposition",
-      "description": "On July 14, 2026, Iola ISD and Anderson-Shiro CISD each voted 5-2 to approve all eight JETI school-property-tax agreements for TeraFab AI, LLC (SpaceX special-purpose entity) covering the proposed Terafab semiconductor complex near Gibbons Creek in Grimes County. Agreements grant a 10-year school M&O tax reduction per phase (freeze at ~50% of appraised value) in exchange for claims of up to $119B total investment across four phases, 4,234+ direct jobs, and ~22,000 acres. Phase 1 alone was previously filed at ~$10.37B; media also cite a ~$55B first-phase scale. SpaceX told districts that without the deals the project would likely relocate out of Texas (Arizona cited). Community opposition was strong over water use, noise/lighting, and loss of small-town character (Iola population ~300). School boards framed approvals as keeping the process alive, not final endorsement. Construction still needs Governor Abbott approval, three-party signing, and Comptroller filing—no permits or groundwater apps were on file as of mid-June reporting. SpaceX wants Phase 1 construction before year-end 2026.",
-      "date": "2026-07-14",
+      "title": "Gov. Abbott Submits Positive JETI Determinations for SpaceX Terafab; Deal Still Needs Formal Signing",
+      "description": "On July 21, 2026, KBTX confirmed with the Texas Comptroller’s office that Governor Greg Abbott and both Grimes County school districts (Iola ISD and Anderson-Shiro CISD) have submitted positive determinations on all eight SpaceX Terafab JETI school-property-tax agreements—clearing the discretionary political gates that had left the project in limbo after the July 15 statutory decision deadline. Official verification letters were not yet posted to the Comptroller’s website at the time of reporting, and the Governor’s office did not respond to KBTX comment requests. With positive determinations from all three required parties, the remaining step is formal three-party execution of the agreements and filing with the Comptroller before Phase 1 construction can begin under the JETI framework. SpaceX still targets Phase 1 construction before year-end 2026 on the ~22,000-acre Grimes County site near Gibbons Creek; building permits and groundwater applications were not on file as of prior mid-June document reporting. Political/tax track advanced, but dirt has not moved and the abatements remain unsigned.",
+      "date": "2026-07-21",
+      "category": "Terafab Manufacturing",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Texas Comptroller’s office confirmed to KBTX that Abbott submitted positive JETI determinations",
+          "Both Grimes County school districts and the Governor have now submitted positive determinations—all three required political parties aligned",
+          "Clears the discretionary gubernatorial gate that could have voided the July 14 school-board 5-2 approvals",
+          "Final remaining JETI step is formal three-party signing and Comptroller filing rather than another discretionary no-vote window"
+        ],
+        "negative_signals": [
+          "Official verification letters still not posted on Comptroller website as of July 21 reporting—public record incomplete",
+          "Agreements are not yet formally executed or filed; construction cannot start under JETI until signing/filing complete",
+          "No confirmation of building permits or groundwater applications for the Grimes County megasite",
+          "Year-end 2026 Phase 1 construction target remains aspirational with mid/late July and unsigned deals",
+          "Governor’s office gave no on-record statement; process opacity continues after missed public July 15 decision visibility",
+          "Tax abatements do not equal fab equipment, process qualification, talent, or first wafer—political progress ≠ manufacturing progress",
+          "Project entity remains TeraFab AI, LLC (SpaceX SPE); community water/noise/identity opposition unresolved"
+        ]
+      },
+      "source": "https://www.kbtx.com/2026/07/21/gov-abbott-signals-approval-spacexs-terafab-jeti-tax-agreements/",
+      "impact": "high"
+    },
+    {
+      "title": "Tesla Q2 Update: Early-Stage Austin Semiconductor Fab Construction and Equipment Procurement Underway",
+      "description": "In its Q2 2026 shareholder update (released with July 22 earnings), Tesla stated it is making progress on construction and equipment procurement for a semiconductor fab in Austin, while labeling the project 'still in its early stages' and critical for long-term logic/memory supply. Highlights also said site selection, preparation, construction, and equipment procurement progressed in the quarter for solar and semiconductor manufacturing, with multi-year semiconductor manufacturing capacity build-out 'underway.' On the earnings call, Musk called Terafab an 'amazing initiative' and a 'high-risk, high-payoff bet on AI chips,' confirmed equipment orders for a development fab in Austin, and described an integrated stack (lithography mask production, logic, memory, packaging, and chip testing under one roof) for faster iteration—framing it as necessary to scale Optimus. Capex more than doubled to $5.8B in Q2 with free cash flow of negative $1.1B and full-year spend guided above $25B. This is an early development-fab signal in Austin, not proof of Grimes County megafab groundbreaking or volume wafer production; dual tracks (Tesla Austin development fab vs. SpaceX Grimes JETI megasite) remain only partially closed politically and still early operationally.",
+      "date": "2026-07-22",
       "category": "Terafab Manufacturing",
       "status": "neutral",
       "sentiment": {
@@ -14,125 +45,58 @@
       },
       "evidence": {
         "positive_signals": [
-          "Both Iola ISD and Anderson-Shiro CISD approved all eight JETI agreements (required school-district step)",
-          "Applications claim up to $119B investment and 4,234+ jobs across four phases",
-          "SpaceX stated intent to begin Phase 1 construction before end of 2026 if deals close",
-          "District leaders argue residual tax revenue still funds teachers and programs even with abatements"
+          "Official Q2 update: construction and equipment procurement progressing for semiconductor fab in Austin",
+          "Musk confirmed equipment orders placed for development fab (earnings call, reported by The Register and others)",
+          "Company frames fab as critical to long-term logic/memory supply and Optimus scale",
+          "Capex surge ($5.8B Q2; >$25B full-year guide) shows real cash commitment to multi-year infrastructure including semiconductor manufacturing"
         ],
         "negative_signals": [
-          "Votes were only 5-2—not consensus; public comment was largely opposed (water, identity, trust)",
-          "Deal is not final: still requires Governor Abbott approval and three-party execution before construction",
-          "SpaceX openly threatened to leave Texas without tax breaks—leverage, not manufacturing progress",
-          "As of June document reporting: no building permits, no groundwater applications filed despite 2026 construction claims",
-          "Project entity is TeraFab AI, LLC under SpaceX filings—not a proven Tesla-operated fab with semiconductor experience",
-          "Tax abatements transfer cost to state/local taxpayers; they do not solve talent, yield, or process-node execution risk",
-          "Geographic focus is Grimes County (Gibbons Creek), not demonstrated North Campus Austin fab groundbreaking"
+          "Tesla itself labels Austin fab 'still in its early stages'—not a production ramp milestone",
+          "Musk/Register framing is a development fab, not demonstrated high-volume manufacturing",
+          "No public permit/groundbreaking package for Grimes County megasite; JETI deals still need formal signing after Abbott determination",
+          "Musk explicitly called Terafab a high-risk, high-payoff bet—execution risk acknowledged by management",
+          "Negative free cash flow (−$1.1B) and margin compression show investment cost before any fab revenue or wafer output",
+          "Little operational detail on tool install schedule, process node, yield path, or first-silicon date for self-fab",
+          "Austin development-fab progress does not by itself de-risk the separate SpaceX Grimes County $10B–$119B multi-phase claim set"
         ]
       },
-      "source": "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements/",
-      "impact": "high"
-    },
-    {
-      "title": "Gov. Abbott Terafab JETI Decision Deadline Passes With No Public Yes/No; Deal Still Not Locked",
-      "description": "Under Texas JETI rules, Governor Greg Abbott shared the same 30-day window as the school districts after Comptroller acceptance on June 15, 2026—closing July 15. After the July 14 school-board approvals, KBTX reported on July 16 that Abbott’s decision remained unknown past the deadline. Law allows up to seven additional days to formally notify parties, so an answer could slip into the following week. If Abbott votes no, the school approvals are void and the deal dies; SpaceX filings state the project could leave Texas without the agreements. If yes, parties must still formally sign and file with the Comptroller before Phase 1 construction can start. Separately on July 16, Grimes County commissioners tabled a local ‘accountability’ resolution meant to set clearer industrial-project standards (water, lighting, noise, transparency)—signaling unresolved community and governance friction even as tax deals advance.",
-      "date": "2026-07-16",
-      "category": "Terafab Manufacturing",
-      "status": "negative",
-      "sentiment": {
-        "headline": "neutral",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "School-district approvals cleared one of two required political gates",
-          "Governor has a short additional notification window rather than an automatic rejection",
-          "County pause on accountability resolution was framed as allowing more public input, not killing the project"
-        ],
-        "negative_signals": [
-          "Abbott decision unknown after statutory July 15 deadline—project remains in limbo",
-          "A single gubernatorial no kills all eight school agreements regardless of 5-2 board votes",
-          "SpaceX has conditioned Texas siting on tax breaks; failure risk is explicit in filings",
-          "No public confirmation of Abbott yes by July 17 coverage—timeline for year-end construction already under pressure",
-          "Grimes County tabled manufacturer accountability resolution amid damaged public trust and water/noise concerns",
-          "Political process progress is not equivalent to fab equipment, process qualification, or first wafer"
-        ]
-      },
-      "source": "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted/",
-      "impact": "high"
-    },
-    {
-      "title": "Samsung Process Tape-Out of Tesla AI5 on 2nm at Taylor Fab; Volume Still Mid/H2 2027",
-      "description": "On/around July 13, 2026, multiple semiconductor and EV outlets reported that a Samsung Foundry principal engineer (James Kim) posted on LinkedIn that the Tesla–Samsung AI5 design reached process tape-out and is scheduled for manufacture at Samsung’s Taylor, Texas fab on Samsung’s latest 2nm node—then deleted the post after Korean media pickup. TrendForce, citing Yonhap, said this was the first concrete Samsung Foundry production-timeline disclosure for AI5; AI5 will be dual-sourced with TSMC, while Samsung is reported to take full AI6 and TSMC AI6.5. Samsung has been installing front-end/back-end tools at Taylor since late April and reaffirmed ramp production in 2027. Electrek and others note AI5 on 2nm (previously assumed more for AI6) implies improved 2nm yields, but volume vehicle-board supply is still guided mid-2027 / H2 2027—not 2026. Critical context: April 2026 already saw Musk claim AI5 design tape-out to both foundries; this week is Samsung process-specific readiness, not mass production. Cybercab and current vehicles still depend on older AI4/AI4.5 hardware while AI5 remains multi-year late vs original promises.",
-      "date": "2026-07-13",
-      "category": "Terafab Manufacturing",
-      "status": "neutral",
-      "sentiment": {
-        "headline": "positive",
-        "reality": "neutral",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Samsung Foundry engineer disclosed AI5 process tape-out targeted for Taylor 2nm production",
-          "Dual-sourcing AI5 at Samsung and TSMC reduces single-foundry failure risk",
-          "Taylor fab equipment install and engineer deployment reported underway since late April 2026",
-          "AI5 on 2nm (vs prior assumption of only AI6 on 2nm) suggests Samsung yield story may be improving"
-        ],
-        "negative_signals": [
-          "Tape-out is not volume production—qualification wafers and customer sign-off still required",
-          "Samsung volume production of Tesla AI chips at Taylor still guided to H2 2027 / mid-2027, matching prior delay narrative",
-          "Disclosure came via a LinkedIn post that was deleted—not a formal Samsung customer press release",
-          "AI5 remains roughly two years late vs Musk’s earlier vehicle-integration promises; Cybercab launching on AI4",
-          "Prior reporting already tied AI6 slip (~6 months) to Samsung 2nm yield issues—2nm risk not retired",
-          "Musk has said Tesla needs several hundred thousand completed AI5 boards line-side before vehicle switchover—still distant",
-          "This is foundry outsourcing progress, not Terafab vertical-integration proof of Tesla/SpaceX making advanced logic themselves"
-        ]
-      },
-      "source": "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
+      "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
       "impact": "high"
     }
   ],
   "metricUpdate": null,
+  "fleetUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Political/tax track advanced but not closed: Grimes County school boards approved eight SpaceX Terafab JETI deals (5-2 each) on July 14; Governor Abbott’s required decision was still unannounced after the July 15 deadline as of July 16 reporting. Separately, Samsung disclosed (via deleted LinkedIn post) AI5 process tape-out for 2nm at Taylor, with volume still mid/H2 2027—not a Terafab self-fab milestone.",
-    "nextMilestone": "Public confirmation of Governor Abbott’s JETI yes/no and formal three-party signing; any Phase 1 construction permits/groundbreaking in Grimes County before year-end 2026; Samsung Taylor engineering samples / qualification progress toward 2027 volume AI5.",
+    "latestStatus": "Political track for Grimes County SpaceX Terafab JETI advanced on July 21: Abbott and both school districts submitted positive determinations (per KBTX/Comptroller confirmation), but agreements still require formal three-party signing and Comptroller filing—no verified groundbreaking. Separately, Tesla’s Q2 update and earnings call confirmed early-stage construction and equipment procurement for an Austin semiconductor/development fab, with Musk calling it high-risk/high-payoff and necessary for Optimus chip supply.",
+    "nextMilestone": "Formal JETI agreement execution and Comptroller filing for Grimes County; visible site work/permits for Phase 1; clearer timeline from Austin development-fab equipment install to first process qualification",
     "concerns": [
-      "Abbott veto risk or delayed notification keeps $119B project in limbo despite school votes",
-      "No verified construction permits/groundwater filings as of last detailed document dump—2026 Phase 1 start is at risk",
-      "Community opposition and paused county accountability measures signal local friction",
-      "AI5 volume still mid-2027; tape-out headlines overstate near-term silicon supply",
-      "Terafab remains execution-heavy: tax incentives and foundry outsourcing do not prove Tesla/SpaceX can run advanced semiconductor manufacturing",
-      "Tier 1 Tesla outlets (Teslarati, TeslaNorth) had no substantive new Terafab coverage this week—story driven by local TX and Korean semi press"
+      "JETI deals still unsigned/unfiled despite Abbott positive determination—year-end 2026 Phase 1 construction under time pressure",
+      "No public building permits or groundwater applications reported for Grimes megasite",
+      "Austin work is early-stage development fab only; volume self-fab and Grimes multi-phase claims remain unproven",
+      "Community opposition (water, noise, identity) and SPE structure (TeraFab AI, LLC / SpaceX) leave execution and Tesla-vs-SpaceX ownership optics messy",
+      "Capex binge and negative FCF fund ambition, not demonstrated wafer output"
     ]
   },
   "urlsSeen": [
-    "https://www.kbtx.com/2026/07/15/anderson-shiro-cisd-votes-approve-terafab-jeti-tax-agreements/",
-    "https://www.kbtx.com/2026/07/15/iola-isd-school-board-approves-jeti-agreements-spacex-terafab-project/",
+    "https://www.kbtx.com/2026/07/21/gov-abbott-signals-approval-spacexs-terafab-jeti-tax-agreements/",
     "https://www.kbtx.com/2026/07/16/terafab-jeti-decision-deadline-has-passed-we-still-dont-know-how-abbott-voted/",
-    "https://www.kbtx.com/2026/07/16/grimes-county-hits-pause-terafab-accountability-resolution/",
-    "https://www.kbtx.com/2026/06/09/what-documents-filed-with-local-school-districts-reveal-about-spacexs-terafab-project/",
-    "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
-    "https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm/",
-    "https://www.teslarati.com/?s=Terafab",
-    "https://teslanorth.com/feed/",
-    "https://news.google.com/rss/search?q=Terafab+OR+%22Tesla+chip+fab%22+OR+%22Tesla+AI5%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+    "https://www.theregister.com/offbeat/2026/07/23/tesla-burns-through-a-billion-as-musk-bets-the-farm-on-chips-and-bots/5276944",
+    "https://www.texastribune.org/2026/07/20/texas-semiconductor-chips-texas-instruments-nvidia-elon-musk/"
   ],
   "metadata": {
     "sourcesSearched": [
+      "kbtx.com",
       "teslarati.com",
       "teslanorth.com",
-      "kbtx.com",
-      "trendforce.com",
       "electrek.co",
-      "news.google.com",
-      "kcentv.com",
-      "houstonchronicle.com",
-      "statesman.com",
-      "reuters.com"
+      "texastribune.org",
+      "assets-ir.tesla.com",
+      "theregister.com",
+      "digitimes.com",
+      "gov.texas.gov (JETI public listing PDF)"
     ],
-    "dateRange": "2026-07-12 to 2026-07-17",
-    "skipReason": null,
-    "notes": "Deduped vs hot context: skipped July 7 'cool news'/Cybercab rides mismatch, prior AI5 mid-2027 delay analysis as standalone item, and generic execution-risk essay. Included NEW school JETI votes, Abbott silence, and Samsung process tape-out (distinct from April design tape-out already noted). Tier 1 Tesla media had no new Terafab articles in range; primary sourcing from KBTX local reporting and TrendForce/Yonhap semiconductor coverage with Electrek corroboration only."
+    "dateRange": "2026-07-17 to 2026-07-23",
+    "skipReason": null
   }
 }

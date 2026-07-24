@@ -1,8 +1,8 @@
 {
   "categoryKey": "cybercab",
   "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-17",
-  "weekOf": "2026-07-13",
+  "dateTo": "2026-07-23",
+  "weekOf": "2026-07-20",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
   "hotContext": {
     "criticalNews": "Texas registration pipeline jumped ~50% in one day to 175 Model Y robotaxis, but commercial service remains Model Y\u2013based, Cybercab is still not in paid unsupervised fleets, Miami ops show tiny geofence and reliability quirks, and accessibility is a lobbying claim without a product date.",
@@ -120,28 +120,9 @@
       "source": "https://www.basenor.com/blogs/news/85-cybercabs-spotted-at-giga-texas-as-production-ramps"
     },
     "latestFleet": {
-      "city": "Austin, Dallas, Houston, Miami (Texas-registered pool statewide)",
-      "country": "USA",
-      "status": "expanding",
-      "vehicleCount": 175,
-      "totalAuthorized": 175,
-      "breakdown": {
-        "texasRegistered": 175,
-        "texasRegisteredPriorDay": 117,
-        "addedJuly15": 58,
-        "vehicleType": "Model Y (commercial robotaxi); Cybercab not yet commercial",
-        "waymoTexasRegistered": 642,
-        "avrideTexasRegistered": 317,
-        "zooxTexasRegistered": 44,
-        "miami": "active unsupervised, ~10-20 sq mi geofence, fleet size undisclosed",
-        "note": "175 is Texas DMV automated-vehicle registry count, not confirmed simultaneous active rider-serving cars"
-      },
-      "launchDate": "2025-06",
-      "lastUpdate": "2026-07-15",
-      "source": "https://evxl.co/2026/07/15/tesla-adds-58-texas-robotaxis-one-day/",
-      "date": "2026-07-15",
-      "count": 175,
-      "note": "Texas-registered Tesla robotaxi fleet jumped 117\u2192175 (+58 Model Y) on July 15. Status upgraded from prior 'declining/~20 active' narrative on registration basis; active utilization still unproven at this scale."
+      "date": "2026-07-08",
+      "count": 20,
+      "note": "Fleet at 20 vehicles (34 authorized). Status: declining. Breakdown: austin: 14, dallas: 3, houston: 3, miami: undisclosed, bayArea: 9"
     }
   },
   "categoryName": "Cybercab Production",

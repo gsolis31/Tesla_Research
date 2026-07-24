@@ -2,81 +2,111 @@
   "categoryKey": "aiChip",
   "keyChanges": [
     {
-      "title": "Samsung Completes AI5 Foundry Tape-Out for Taylor 2nm; Mass Production Still 2027",
-      "description": "A Samsung Foundry principal engineer (James Kim) disclosed on LinkedIn that the Tesla-Samsung AI5 chip has reached foundry tape-out and is scheduled for manufacturing at Samsung's Taylor, Texas fab on Samsung's 2nm process. Yonhap, ET News, TrendForce, Tom's Hardware, and Electrek all covered the disclosure (the LinkedIn post was later deleted). This is a foundry-side tape-out — distinct from Tesla's April 2026 design tape-out that Musk announced — and is the first concrete Samsung production timeline public detail for AI5. Key new details: (1) AI5 will run on 2nm at Taylor, not a more mature node as previously assumed (2nm was expected for AI6); (2) AI5 volume is split between Samsung and TSMC, with TSMC's AI5 version having taped out months earlier; (3) Samsung will fully handle AI6 while TSMC handles AI6.5; (4) Taylor targets initial operations late 2026 and volume production in H2 2027. Critical reality check: tape-out is not production. Musk has said Tesla needs several hundred thousand completed AI5 boards before vehicle line switchover — still expected mid-to-late 2027. AI5 remains nearly two years behind original timelines, Cybercab launches on AI4, and Samsung Foundry continues operating at a loss (~KRW 600B estimated in non-memory for Q2).",
-      "date": "2026-07-13",
+      "title": "Q2 Call: AI5 Volume Still 'Hopefully 2027'; Samsung/TSMC/Micron Named; AI6 Boast Unbacked",
+      "description": "On Tesla's July 22, 2026 Q2 earnings call, Musk reaffirmed that AI5 is expected in volume production 'hopefully next year' (2027), saying the chip design team 'exceeded expectations' — a design-quality compliment, not a production pull-forward. He publicly thanked Samsung and TSMC for major compute-capacity investments supporting Optimus (and robotaxi) silicon, and thanked Micron for a 'significant' multi-year memory allocation at 'reasonable' terms amid what he called 'pretty insane' memory prices (a 'hundred-year flood' / biggest price jump he has seen). Nikkei and TrendForce quote Musk claiming AI6 will be 'the best edge computing chip in the world' while development continues; no AI6 tape-out or production date was advanced beyond prior mid-2028 framing. Official Q2 shareholder deck quantifies Cortex training clusters (Cortex 1 >90 MW, Cortex 2 >115 MW in production; onsite Texas MW more than doubled in H1 2026) but contains no AI5 wafer starts, yield figures, or board-volume milestones. Reality check: Samsung foundry-side AI5 tape-out (July 13) already filed last week; volume AI5 remains H2 2027 / vehicle meaningful deployment 2028+; Cybercab and current fleets still ship on AI4; memory allocation is necessary insurance in a shortage, not proof of inference-chip ramp.",
+      "date": "2026-07-22",
       "category": "AI Chip Production",
       "status": "neutral",
       "sentiment": {
         "headline": "positive",
         "reality": "neutral",
-        "confidence": "high"
+        "confidence": "high",
+        "rationale": "Named foundry/memory partners and 'design exceeded expectations' sound bullish, but AI5 volume date is unchanged at 2027, AI6 claim is unbacked marketing, and no new wafer/yield/board metrics were disclosed."
       },
       "evidence": {
         "positive_signals": [
-          "Samsung foundry-side AI5 tape-out completed — design locked for Taylor 2nm manufacturing",
-          "AI5 confirmed dual-sourced: Samsung (Taylor 2nm) + TSMC (version taped out months earlier)",
-          "Putting AI5 on 2nm (not just AI6) signals Samsung 2nm yield may have crossed viability threshold (~60% assumed)",
-          "Taylor fab equipment move-in since April 2026; initial ops targeted late 2026, volume H2 2027",
-          "AI6 exclusive to Samsung under $16.5B deal; AI6.5 assigned to TSMC — clearer supply allocation",
-          "Korean engineering samples (KR 2613 marking) already demonstrated by Musk in May 2026"
+          "Musk: AI5 chip design team 'exceeded expectations'; volume production 'hopefully next year' (2027) reiterated on official call",
+          "Samsung and TSMC explicitly credited for major compute investments tied to Optimus/robotaxi silicon scale-up",
+          "Micron allocated significant multi-year memory supply on 'reasonable' terms despite industry DRAM crunch (TrendForce, Wccftech, earnings transcript quotes)",
+          "Cortex 1 >90 MW and Cortex 2 >115 MW both in production; Tesla onsite Texas training compute (MW) more than doubled in H1 2026 (Q2 shareholder update)",
+          "Dual-source AI5 path (Samsung Taylor 2nm + TSMC) still intact after July 13 foundry tape-out context"
         ],
         "negative_signals": [
-          "Tape-out is NOT production — engineering samples and qualification still required before mass production",
-          "High-volume AI5 still mid-to-late 2027; vehicles won't get meaningful AI5 until 2028 at earliest",
-          "AI5 nearly 2 years behind original schedule; Cybercab still launching on outdated AI4 hardware",
-          "TSMC AI5 version taped out months ahead of Samsung — Samsung remains the lagging foundry partner",
-          "Samsung Foundry still loss-making (~KRW 600B non-memory operating loss estimated Q2 2026); recovery depends on unproven 2nm yields at Taylor",
-          "No confirmed yield data published; 2nm process risk remains the gating item for both AI5 volume and AI6 (already slipped to mid-2028)",
-          "LinkedIn disclosure was unofficial and deleted — not a formal Samsung or Tesla production announcement"
-        ]
+          "AI5 volume still 2027 — no acceleration vs prior mid/late-2027 guidance; nearly ~2 years behind original timelines",
+          "No disclosed AI5 wafer starts, yield %, engineering-sample qualification status, or completed board counts toward the 'hundreds of thousands of boards' line-switchover bar",
+          "AI6 'best edge chip in the world' is aspirational PR with no new tape-out/date; AI6 previously slipped toward mid-2028 on Samsung 2nm risk",
+          "Vehicles, Robotaxi Model Ys, and Cybercab still launching/shipping on AI4 (or AI4.x) — AI5 not in commercial hardware yet",
+          "Memory 'win' is defensive amid industry-wide DRAM shortage (Cook/Musk 'hundred-year flood'); does not prove inference-chip manufacturing readiness",
+          "Q2 deck's only AI Inference Compute paragraph focuses on early-stage Austin semiconductor fab (Terafab path) — foundry partners still carry near-term volume risk",
+          "Not a Tesla App / call summary: vehicle production also described as electronics/chip constrained alongside batteries — supply tightness, not abundance"
+        ],
+        "key_metrics": {
+          "actual": "AI5 volume target still 2027; Cortex 1 >90 MW + Cortex 2 >115 MW training; no public AI5 unit production count",
+          "target": "High-volume AI5 boards for vehicle line switchover mid/late 2027; AI6 thereafter",
+          "trajectory": "Design milestones (April design tape-out; July Samsung foundry tape-out) progressing; manufacturing volume still ~12+ months out with no yield proof"
+        }
       },
-      "source": "https://www.yna.co.kr/view/AKR20260713062900003",
+      "source": "https://www.notateslaapp.com/news/4481/summary-of-teslas-2026-q2-earnings-call-cybercab-fsd-ai4-and-more",
       "impact": "high"
+    },
+    {
+      "title": "Micron Multi-Year Memory Allocation Highlighted; AI Board BOM Still Supply-Risk Bound",
+      "description": "Coverage of the July 22 earnings call (TrendForce 2026-07-23, Wccftech 2026-07-22, Bloomberg headline) centers on Musk thanking Micron for making 'room for Tesla in the years to come' with significant memory allocation at non-panic pricing. TrendForce frames this against Micron's Strategic Customer Agreements (3–5 year price+volume locks; 16 SCAs covering ~20% DRAM / ~1/3 NAND at Micron's prior call) and notes auto OEMs already face multi-billion DRAM inflation. For Tesla AI computers, high unified memory (Electronics Weekly's July 13 A15/AI5 writeup cited up to 144GB-class configs in secondary coverage — treat as unverified spec chatter) makes DRAM a first-class BOM risk alongside Samsung/TSMC logic wafers. Positive for de-risking Optimus/Robotaxi board builds if allocation is real; critical caveat: allocation ≠ free capacity, terms are undisclosed, and logic foundry 2nm yield at Taylor remains the gating item for AI5 volume — memory thanks do not move the AI5 production clock.",
+      "date": "2026-07-23",
+      "category": "AI Chip Production",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium",
+        "rationale": "Multiple outlets quote Musk on Micron allocation, but contract size/price/duration are undisclosed and memory relief does not resolve 2nm AI5 manufacturing risk."
+      },
+      "evidence": {
+        "positive_signals": [
+          "Musk on-call thanks to Micron for significant multi-year memory allocation at 'reasonable' prices (transcript quotes via TrendForce/Investing.com)",
+          "Public signal that Tesla secured DRAM amid industry shortage while peers (e.g., Apple/GM) warn of price shock",
+          "Aligns with Optimus scale-up narrative naming TSMC, Samsung, and Micron as key silicon partners (Digitimes/Nikkei secondary)"
+        ],
+        "negative_signals": [
+          "No disclosed volume, ASP, or SCA contract details — cannot verify 'significant' or 'reasonable'",
+          "Industry DRAM shortage ongoing; allocation can be re-prioritized if hyperscalers bid higher",
+          "Does not address Samsung Taylor 2nm yield or AI5 wafer start schedule — still the primary production gate",
+          "AI5 board volume for vehicles still not expected until 2027+; memory reservation is pre-positioning, not shipment evidence"
+        ],
+        "key_metrics": {
+          "actual": "Qualitative Micron allocation only; no public unit or $ figure",
+          "target": "Secure DRAM/HBM-class supply for AI5/AI6 boards and Optimus at scale",
+          "trajectory": "Supply-chain de-risking messaging; manufacturing proof still missing"
+        }
+      },
+      "source": "https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply/",
+      "impact": "medium"
     }
   ],
   "metricUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Samsung completed foundry-side AI5 tape-out for Taylor 2nm production (July 13). TSMC AI5 version already ahead. Volume production still H2 2027; vehicle deployment 2028+.",
-    "nextMilestone": "Taylor fab initial operations late 2026; AI5 engineering samples/qualification from Taylor line; AI6 tape-out targeted December 2026",
+    "latestStatus": "Post-Q2: AI5 volume production still guided to 2027 ('hopefully next year'); Samsung/TSMC credited for Optimus compute investment and Micron for multi-year memory allocation. AI6 remains aspirational ('best edge chip') with no new tape-out date. Training compute (Cortex 1/2) >200 MW combined in Texas. No public AI5 wafer/yield/board metrics.",
+    "nextMilestone": "AI5 engineering samples qualification and first meaningful wafer/board volumes; any official yield or H2 2027 ramp confirmation from Samsung Taylor 2nm / TSMC",
     "concerns": [
-      "Tape-out ≠ production — volume AI5 boards still 12+ months away",
-      "Samsung 2nm yields at Taylor remain unproven at high volume",
-      "AI5 nearly 2 years late; Cybercab and current fleet stuck on AI4/AI4.5",
-      "AI6 mass production still slipped to mid-2028 on same 2nm node",
-      "Samsung Foundry still unprofitable; dual-source strategy depends on both foundries ramping on time"
+      "AI5 still ~2 years late; commercial vehicles/Cybercab remain on AI4",
+      "2nm yield risk at Samsung Taylor is still unproven publicly",
+      "AI6 marketing claims without production schedule credibility",
+      "Memory allocation is opaque; industry DRAM crunch can still bite BOM cost",
+      "Austin semiconductor fab (Terafab path) still early-stage — near-term volume depends entirely on external foundries"
     ]
   },
   "urlsSeen": [
-    "https://www.yna.co.kr/view/AKR20260713062900003",
-    "https://www.yna.co.kr/amp/view/AKR20260713062900003",
-    "https://www.etnews.com/20260713000364",
-    "https://www.trendforce.com/news/2026/07/13/news-samsung-reportedly-completes-tesla-ai5-tape-out-paving-the-way-for-2nm-ramp-at-taylor-fab/",
-    "https://www.tomshardware.com/tech-industry/artificial-intelligence/teslas-ai5-with-2nm-class-node-tapes-out-at-samsung-foundry-production-starts-soon-months-after-tsmc-tape-out",
-    "https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm/",
-    "https://www.technetbooks.com/2026/07/samsung-foundry-commences-2nm-tesla-ai5.html",
-    "https://www.basenor.com/blogs/news/tesla-samsung-ai5-chip-hits-tape-out-at-taylor-fab-on-2nm-process",
-    "https://www.teslarati.com/?s=AI5",
-    "https://www.teslarati.com/?s=AI6",
-    "https://www.teslarati.com/?s=Dojo",
-    "https://teslanorth.com/?s=AI5",
-    "https://teslaoracle.com/?s=AI5",
-    "https://electrek.co/?s=AI5"
+    "https://www.notateslaapp.com/news/4481/summary-of-teslas-2026-q2-earnings-call-cybercab-fsd-ai4-and-more",
+    "https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply/",
+    "https://wccftech.com/elon-musk-thanks-micron-for-allocating-memory-to-tesla-and-possibly-spacexai-at-reasonable-prices/",
+    "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/",
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+    "https://www.electronicsweekly.com/news/business/tesla-a15-chip-to-be-fabbed-at-samsung-and-tsmv-2026-07/"
   ],
   "metadata": {
     "sourcesSearched": [
       "teslarati.com",
       "teslanorth.com",
-      "teslaoracle.com",
-      "basenor.com",
-      "electrek.co",
-      "yna.co.kr",
-      "etnews.com",
+      "notateslaapp.com",
       "trendforce.com",
-      "tomshardware.com",
-      "news.google.com"
+      "wccftech.com",
+      "electrek.co",
+      "electronicsweekly.com",
+      "assets-ir.tesla.com (Q2 2026 Update PDF)",
+      "news.google.com RSS"
     ],
-    "dateRange": "2026-07-12 to 2026-07-17",
-    "skipReason": null
+    "dateRange": "2026-07-17 to 2026-07-23",
+    "skipReason": null,
+    "notes": "Skipped July 13 Samsung AI5 foundry tape-out rehashes (already in hotContext). Skipped Austin Terafab construction/site narrative → terafab ownership. Electronics Weekly AI5/A15 dual-fab piece dated 2026-07-13 (outside range; URL listed for context only)."
   }
 }
