@@ -2,9 +2,9 @@
   "categoryKey": "fsd",
   "keyChanges": [
     {
-      "title": "France rejects FSD Supervised: Transport Minister cites speeding and driver-monitoring gaps",
-      "description": "On or around July 22, 2026, French Transport Minister Philippe Tabarot publicly stated that France will not authorize Tesla Full Self-Driving (Supervised) 'as it currently stands,' saying 'the safety trade-offs are not yet sufficient.' Specific objections: (1) FSD can exceed posted limits to match traffic — Tabarot cited up to ~70 km/h in a 50 km/h zone (~40% over); (2) driver monitoring does not guarantee adequate attention in complex urban maneuvers (lane changes, intersections, roundabouts); (3) French guidelines still expect hands on the wheel. France is refusing to rubber-stamp Dutch RDW national homologation and wants a harmonized EU-wide framework; technical talks with Tesla, the Netherlands, and other member states continue, with a Ministry rep having visited NL data recently and ecosystem meetings planned for autumn. EU-wide mutual-recognition vote still needs 15 member states representing ≥65% of EU population; next potential vote flagged for October. Musk replied on X: 'Delaying the approval of FSD in France will cost lives.' Critical reality: France is a top-tier EU volume market. Consumer FSD Supervised remains live only in five small markets (NL/LT/EE/DK/BE). Germany, France, Italy, Spain, and UK still closed. Tesla's summer-2026 EU-wide mutual-recognition narrative has failed for major markets; France's public rejection plus Sweden's earlier speeding-based opposition raise the bar for October.",
-      "date": "2026-07-22",
+      "title": "Reuters: Tesla pressured EU regulators to seal FSD safety data before October bloc-wide vote",
+      "description": "A Reuters investigation published August 6, 2026, based on emails obtained via Dutch public-records request, reveals that Tesla conditioned its cooperation with the Netherlands' RDW type-approval process on guarantees that safety evaluation documents would never be released publicly. The emails show Tesla began pressing RDW to keep FSD review documentation permanently sealed as early as late 2024. The Dutch regulator honored the demand: it will not disclose how it evaluated the technology, what test protocols were used, or what performance thresholds were required, despite RDW's subsequent push for EU-wide recognition of that same sealed approval. Separately, regulators in six EU countries including Germany, Norway, and Denmark told Reuters they cannot release FSD testing or performance data either, citing Tesla's trade-secret claims. A prior Reuters investigation in May 2026 found that Tesla's own published FSD safety statistics are significantly inflated — the company counted only severe crashes for its own fleet while using broader figures for overall crash rates, and assumed 100% fleet replacement by FSD-equipped Teslas to inflate lives-saved projections. The October 6 TCMV vote would authorize a type approval for all 27 EU member states based on a safety case that no member of the European public — and no non-approving regulator — has been permitted to see. The European Transport Safety Council (ETSC), which wrote to EU transport ministers on June 30, 2026 following a fatal Texas FSD crash, has urged ministers to withhold recognition until safety data is independently verified publicly.",
+      "date": "2026-08-06",
       "category": "FSD Country Approvals",
       "status": "negative",
       "sentiment": {
@@ -14,87 +14,121 @@
       },
       "evidence": {
         "positive_signals": [
-          "France framed this as a delay with fixable conditions, not a permanent ban — technical discussions with Tesla/NL/other states continue",
-          "Tabarot said France 'supports these technologies' and is ready to engage if safety bar is met",
-          "Specific, addressable issues (speed offset, driver monitoring) rather than blanket opposition to autonomy",
-          "Five smaller EU markets (NL/LT/EE/DK/BE) remain live with 50M+ km driven"
+          "RDW states it ran its own closed-track and public-road testing and did not rely solely on Tesla's inflated statistics",
+          "October 6 TCMV vote is now scheduled — a formal path to EU-wide recognition exists"
         ],
         "negative_signals": [
-          "Official rejection of current FSD Supervised by a major EU auto market's Transport Minister",
-          "Concrete safety defects cited: speeding up to ~40% over limit and insufficient urban driver attention",
-          "France will not inherit Dutch RDW national approval — undercuts Tesla mutual-recognition shortcut narrative",
-          "Germany/France/Italy/Spain/UK still have no consumer FSD Supervised; live footprint remains five small markets",
-          "Summer 2026 EU-wide recognition target not delivered; next vote only October and needs 15 states / 65% population",
-          "Sweden already urged EU rejection over speeding; France adds a large-population no vote risk for October",
-          "Musk 'cost lives' response does not resolve regulatory technical objections"
+          "Tesla emails show the company conditioned RDW cooperation on permanent confidentiality guarantees since late 2024",
+          "Six EU regulators (Germany, Norway, Denmark, and others) cannot release FSD testing data due to Tesla trade-secret claims",
+          "October 6 TCMV vote would ratify a safety case with no public transparency — no independent verification published",
+          "Reuters May 2026 investigation found Tesla's published FSD safety statistics are materially inflated (cherry-picked crash metrics, 100% fleet-replacement assumption)",
+          "RDW's own stated confidence already retreated from 'safer than other ADAS' (April) to 'at least as safe' (June)",
+          "ETSC urging EU ministers to block recognition until safety data is verified — adds political friction ahead of October vote",
+          "France and Sweden are known TCMV opponents; data-secrecy revelations increase the chance other states join opposition"
         ]
       },
-      "source": "https://teslanorth.com/2026/07/22/france-just-rejected-teslas-full-self-driving-regulators-say-it-isnt-safe-enough-yet/",
+      "source": "https://www.claimsjournal.com/news/national/2026/08/06/339341.htm",
       "impact": "high"
     },
     {
-      "title": "NHTSA EA26002 escalates: demands Tesla 'Radar Saves Us' internal docs and marketing justification",
-      "description": "NHTSA's Office of Defects Investigation (Director Tanya Topka) sent Tesla a 24-part information request under Engineering Analysis EA26002 (low-visibility FSD crashes), dated July 2 and reported July 21, 2026. Request No. 4 specifically demands all communications, technical docs, test records, and underlying data tied to an internal Tesla document titled 'Radar Saves Us' that Tesla previously submitted during PE24031-01. ODI states the document appears relevant to degradation-detection design and Tesla's understanding of vision-only OEDR limits in the reduced-visibility conditions of nine countable crashes (including one fatality and one injury) across ~3.2 million FSD-capable US vehicles. Other IRs probe 15 marketing statements for overclaiming automation level, the 2024 'FSD Degraded' alert change from red to yellow with chime removed, 'Direct Photon-Count Capability,' Vision Failsafe Ranker, and internal regression metrics. Tesla response deadline: August 12, 2026; civil penalties up to ~$27,874/day for incomplete answers (capped near $139M). Critical framing: EA is the last step before close or recall push. An internal memo named 'Radar Saves Us' implies Tesla analyzed camera-only failure modes that match the crash pattern after removing radar in 2021 — elevating knowledge-of-defect risk. NHTSA EA26002 and Special Crash Investigation remain open; this is escalation of the probe already noted in prior weeks, not a new investigation.",
-      "date": "2026-07-21",
+      "title": "TCMV October 6 EU-wide FSD vote confirmed via German Ministry email; outcome far from certain",
+      "description": "An official email from Germany's Federal Ministry of Transport, shared publicly around late July 2026, confirmed that the Technical Committee on Motor Vehicles (TCMV) has a session scheduled for October 6, 2026, at which a vote on EU-wide approval of FSD (Supervised) is planned. If the vote achieves a qualified majority — at least 15 of 27 member states representing at least 65% of EU population — the European Commission would issue an implementing act authorizing the Dutch RDW approval to extend across all member states simultaneously. However, the outcome is highly uncertain: France's Transport Minister publicly rejected current FSD Supervised in late July, Sweden's transport authority has raised formal speed-offset objections to the TCMV, and the August 6 Reuters investigation into sealed safety data adds further political risk. Germany's KBA, which received a dedicated Tesla vehicle for independent evaluation in July 2026, has not reached a position. The ETSC has formally urged EU transport ministers to block recognition without public safety verification. A December vote or 2027 slip is explicitly flagged by multiple trackers if October fails. No new national approvals were granted in the July 23 - August 6 window; total consumer markets remain 6 (US + NL/LT/EE/DK/BE).",
+      "date": "2026-07-29",
       "category": "FSD Country Approvals",
-      "status": "negative",
+      "status": "neutral",
       "sentiment": {
-        "headline": "negative",
-        "reality": "negative",
+        "headline": "positive",
+        "reality": "neutral",
         "confidence": "high"
       },
       "evidence": {
         "positive_signals": [
-          "Not a recall order yet — still an information demand within open EA",
-          "Tesla has until August 12 to respond and can produce technical rebuttal",
-          "NTSB prelim on separate Katy crash previously attributed override to driver (software not primary cause in that case)"
+          "October 6 TCMV vote date now confirmed from official German Federal Ministry of Transport communication — formal EU-wide approval pathway is live",
+          "If passed, a single implementing act would unlock FSD across all 27 EU member states simultaneously",
+          "Germany is actively reviewing (test vehicle received July 2026) rather than flatly opposing",
+          "Finland's Traficom signaling possible pre-October national approval — could add a 7th consumer market"
         ],
         "negative_signals": [
-          "Federal IR names internal 'Radar Saves Us' document — implies manufacturer knew vision-only limits relevant to crash conditions",
-          "EA26002 covers ~3.2M vehicles, nine reduced-visibility crashes including fatality — last step before possible recall",
-          "NHTSA also building marketing overclaim paper trail (15 statements including whiteout/all-conditions claims)",
-          "Softened FSD Degraded alert (red→yellow, chime removed) under scrutiny as potential safety-warning defect",
-          "Daily civil penalties for incomplete answers; probe not closing",
-          "Vision-only stack remains the design under investigation years after radar removal"
+          "France officially rejected current FSD Supervised configuration (speeding + driver monitoring gaps) — a large-population no vote risk",
+          "Sweden raised formal TCMV objections over speed offset; Finland, Norway, Denmark also have outstanding speed/icy-road questions",
+          "Reuters data-secrecy revelations raise political barrier for ministers who have not yet seen safety evidence",
+          "Qualified majority threshold (15 states + 65% population) is high — France alone accounts for ~15% EU population",
+          "October slot could slip to December or 2027 if any procedural objection delays the TCMV agenda",
+          "Major markets (Germany, France, Italy, Spain, UK) all still closed; 5 small-country footprint unchanged"
         ]
       },
-      "source": "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/",
+      "source": "https://x.com/TeslaNewswire/status/2079299547705102771",
       "impact": "high"
+    },
+    {
+      "title": "Finland Traficom opens formal FSD review, signals possible approval before October EU vote",
+      "description": "Finland's Transport and Communications Agency Traficom publicly stated it is assessing Tesla FSD (Supervised) for national type-approval recognition and is engaging directly with Tesla and other EU member state authorities. Traficom signaled it is prepared to move faster than the October 6 TCMV bloc-wide decision, provided Tesla resolves a handful of outstanding technical questions specific to Finnish operating conditions: (1) driver retake-of-control speed — how quickly drivers can assume control when FSD exits; (2) overtaking behavior in low-visibility conditions typical on Finnish rural roads; (3) the speed-offset feature that allows FSD to exceed posted limits to match traffic flow — the same issue Sweden and Norway have raised at TCMV level. If Traficom grants national recognition before October 6, Finland would become the 7th consumer market globally (6th in EU) for FSD Supervised. However, Traficom has not issued approval and all three technical questions remain open. Given Sweden's parallel TCMV objection on the same speed-offset issue, it is not clear Tesla has resolved the underlying regulatory concern that is also blocking the EU-wide vote.",
+      "date": "2026-07-28",
+      "category": "FSD Country Approvals",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Traficom officially opened formal review and is engaging with Tesla — Finland is on an active approval track, not a wait-and-see posture",
+          "Possibility of a 7th consumer market (6th EU) before October if Tesla answers technical questions",
+          "Traficom framed this as a technical gap-closing exercise, not a political rejection",
+          "Finland would add a Nordic market, expanding EU footprint beyond current Baltic/Benelux cluster"
+        ],
+        "negative_signals": [
+          "No approval granted yet — all three technical questions (retake speed, overtaking, speed offset) still open",
+          "Speed-offset concern mirrors Sweden's formal TCMV objection — Tesla has not publicly resolved this regulatory sticking point",
+          "Finland is a relatively small market (~5.5M population); approval here does not meaningfully advance the October EU vote math",
+          "Traficom has not committed to a timeline; 'ahead of October' is aspirational, not a deadline"
+        ]
+      },
+      "source": "https://traficom.fi/en/news/traficom-assesses-approval-teslas-fsd-supervised-system-finland",
+      "impact": "medium"
     }
   ],
-  "metricUpdate": null,
-  "fleetUpdate": null,
+  "metricUpdate": {
+    "date": "2026-08-06",
+    "count": 6,
+    "note": "No new country approvals granted July 23 - August 6. Total consumer markets remain 6: US + NL/LT/EE/DK/BE. Finland under Traficom review (potential 7th, not yet approved). Germany KBA review ongoing, not approved.",
+    "source": "https://fsd-eu-tracker.de/en/"
+  },
   "categoryUpdate": {
-    "latestStatus": "France Transport Minister rejected FSD Supervised as currently configured (speeding + driver monitoring). Consumer FSD Supervised still live only in NL/LT/EE/DK/BE. US NHTSA EA26002 escalated with 'Radar Saves Us' IR (response due Aug 12). No new country approvals this week; total approved consumer markets unchanged at 6 (US + 5 small EU).",
-    "nextMilestone": "EU-wide mutual-recognition vote potentially October 2026 (needs 15 member states / ≥65% population); Tesla Aug 12 NHTSA EA26002 response deadline",
+    "latestStatus": "FSD consumer markets unchanged at 6 (US + 5 small EU). October 6 TCMV EU-wide vote now officially scheduled but faces France opposition and data-secrecy political headwinds following Reuters investigation. Finland potentially becoming 7th market pre-October if speed-offset questions resolved.",
+    "nextMilestone": "NHTSA EA26002 Tesla response deadline August 12, 2026; TCMV EU-wide vote October 6, 2026",
     "concerns": [
-      "France (major EU volume market) publicly rejected current FSD Supervised — undercuts summer-2026 EU-wide narrative",
-      "Germany/France/Italy/Spain/UK still closed; live EU footprint remains five secondary markets",
-      "Speeding (Speed Offset) and driver-monitoring objections shared across France and Sweden — structural EU barrier",
-      "NHTSA EA26002 Engineering Analysis on 3.2M vehicles escalated with internal radar memo demand — recall pathway still open",
-      "No new unsupervised FSD regulatory approvals"
+      "Reuters revealed Tesla pressured Dutch RDW to seal FSD safety evaluation data — October EU vote would ratify a safety case no public or non-approving regulator has seen",
+      "NHTSA EA26002 August 12 response deadline: Tesla's handling of 'Radar Saves Us' document will determine whether probe escalates toward recall of 3.2M vehicles",
+      "France's official rejection of current FSD Supervised configuration removes a 15%-population bloc vote from October TCMV qualified majority",
+      "Germany KBA still reviewing; no approval; holding for coordinated EU decision rather than national clearance",
+      "Speed-offset concern (FSD exceeding limits up to 40%) unresolved and blocking both Sweden at TCMV and Finland national review",
+      "ETSC urging all EU ministers to withhold recognition until public safety verification — adds political opposition across multiple member states"
     ]
   },
   "urlsSeen": [
-    "https://teslanorth.com/2026/07/22/france-just-rejected-teslas-full-self-driving-regulators-say-it-isnt-safe-enough-yet/",
-    "https://www.teslarati.com/elon-musk-claps-back-france-tesla-full-self-driving-approval-delay/",
-    "https://electrek.co/2026/07/22/france-tesla-fsd-approval-tabarot-speeding/",
-    "https://www.notateslaapp.com/news/4480/france-says-tesla-fsd-isnt-safe-enough-requires-changes",
-    "https://driveteslacanada.ca/news/france-rejects-tesla-fsd-supervised-safety-concerns/",
-    "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/",
-    "https://driveteslacanada.ca/news/tesla-radar-saves-us-nhtsa-investigation/"
+    "https://www.claimsjournal.com/news/national/2026/08/06/339341.htm",
+    "https://www.techtimes.com/articles/323433/20260806/tesla-emails-reveal-fsd-safety-case-sealed-before-october-eu-wide-vote.htm",
+    "https://traficom.fi/en/news/traficom-assesses-approval-teslas-fsd-supervised-system-finland",
+    "https://fsd-eu-tracker.de/en/",
+    "https://etsc.eu/etsc-writes-to-eu-transport-ministers-on-tesla-fsd-as-us-crash-highlights-european-oversight-gap/",
+    "https://www.basenor.com/blogs/news/tesla-fsd-in-germany-what-the-kba-review-actually-means",
+    "https://www.basenor.com/blogs/news/finland-may-approve-tesla-fsd-before-eus-october-decision"
   ],
   "metadata": {
     "sourcesSearched": [
       "teslarati.com",
       "teslanorth.com",
-      "teslaoracle.com",
-      "electrek.co",
-      "notateslaapp.com",
-      "driveteslacanada.ca",
-      "reuters.com (via Google News)"
+      "basenor.com",
+      "traficom.fi",
+      "fsd-eu-tracker.de",
+      "etsc.eu",
+      "claimsjournal.com",
+      "techtimes.com",
+      "static.nhtsa.gov"
     ],
-    "dateRange": "2026-07-17 to 2026-07-23",
+    "dateRange": "2026-07-23 to 2026-08-06",
     "skipReason": null
   }
 }

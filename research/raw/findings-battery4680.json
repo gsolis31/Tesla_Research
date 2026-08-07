@@ -1,73 +1,30 @@
 {
   "categoryKey": "battery4680",
-  "keyChanges": [
-    {
-      "title": "Q2 IR: battery pack capacity is the global vehicle bottleneck; 4680 ramp for Cybercab/Semi/MY — Berlin 4680 still Construction",
-      "description": "Tesla’s Q2 2026 Update (July 22) is the first IR-level admission this cycle that battery pack capacity is “the main limiting factor to near-term vehicle production volume increase” and “remains the limiting factor on ramping our vehicle production globally.” Management says it is “increasing production of 4680 cells to support production ramps of both Cybercab and Tesla Semi and increased production of Model Y,” alongside vehicle pack capacity work in Berlin, cathode materials and lithium refining in Texas, and LFP cells in Nevada for energy storage. The installed-capacity table is the hard data: Texas 4680 is listed at >40 GWh under “Production,” while Berlin 4680 still shows no capacity figure and status “Construction” — a stark contrast to May 12 “production start” / July 16 cell-line video PR that framed Berlin as already making cells. Footnotes restate that installed capacity ≠ current production rate. Teslarati and TechCrunch corroborate that Musk/letter language ties 4680 cell output to Cybercab and Semi scale, and that prior “volume production this year” framing for those programs was softened; Outlook only commits Semi to “production starting in 2026,” not volume. No yield %, scrap rate, cost/kWh, or actual GWh of 4680 cells shipped was disclosed. Cell Giga Challenge applications still ran through July 24, underscoring ongoing external solicitation for manufacturing fixes.",
-      "date": "2026-07-22",
-      "category": "4680 Battery Cell Production",
-      "status": "negative",
-      "sentiment": {
-        "headline": "neutral",
-        "reality": "negative",
-        "confidence": "high"
-      },
-      "evidence": {
-        "positive_signals": [
-          "Official IR: Tesla is increasing 4680 cell production specifically to support Cybercab, Semi, and Model Y ramps",
-          "Texas 4680 listed at >40 GWh installed annual capacity with status Production (capacity table, Q2 2026 Update)",
-          "Supporting materials: cathode materials 10 GWh Early Ramp and lithium refining 30 GWh Early Ramp in Texas; Nevada LFP 7 GWh Early Ramp for energy storage",
-          "Company continues pack-capacity work at Berlin and names pack expansion as a capital/engineering priority"
-        ],
-        "negative_signals": [
-          "IR twice states battery pack capacity is THE limiting factor on near-term / global vehicle production volume — cells/packs, not demand or vehicle lines, set the ceiling",
-          "Berlin 4680 still status Construction with blank capacity in the same table that lists Texas 4680 at >40 GWh Production — early May PR / July video do not equal installed capacity or volume",
-          "No yield %, scrap, cost/kWh, or actual GWh of 4680 cells produced/shipped disclosed with earnings",
-          "Installed capacity ≠ production rate disclaimer remains; >40 GWh Texas is capacity, not proven high-yield output",
-          "Teslarati: Musk pointed to 4680 cell output as near-term constraint on Semi and Cybercab; Q2 letter dropped prior volume-production-this-year language for Semi",
-          "TechCrunch: company is trying to increase 4680 production to build Cybercab and Semi at scale after volume-production 2026 framing slipped for those programs",
-          "BASENOR (capacity chart via Sawyer Merritt): Semi Nevada still Commissioning with no capacity figure; co-located 4680 does not remove the pack/cell ceiling",
-          "Cell Giga Challenge applications remained open through July 24 — Tesla still crowdsourcing fixes for materials, equipment, ops, automation, and AI bottlenecks on the cell path"
-        ]
-      },
-      "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
-      "impact": "high"
-    }
-  ],
-  "metricUpdate": {
-    "date": "2026-07-22",
-    "count": 40,
-    "note": "Texas 4680 installed annual capacity listed as >40 GWh, status Production (not actual GWh output or yield). Berlin 4680: capacity blank, status Construction. Nevada LFP: 7 GWh Early Ramp. Cathode materials TX: 10 GWh Early Ramp. Lithium refining TX: 30 GWh Early Ramp.",
-    "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf"
-  },
-  "categoryUpdate": {
-    "latestStatus": "Q2 2026 IR: battery pack capacity is the official global vehicle production bottleneck; Tesla says it is increasing 4680 output for Cybercab, Semi, and Model Y. Texas 4680 >40 GWh Production on paper; Berlin 4680 still Construction with no capacity figure. No yield or actual GWh disclosed.",
-    "nextMilestone": "Demonstrated Berlin 4680 installed capacity / status upgrade from Construction; verified high-yield 4680 GWh output (not just installed capacity); cost-competitive cells enabling Cybercab and Semi volume production",
-    "concerns": [
-      "Battery pack capacity remains the stated ceiling on vehicle volume — 4680 ramp is still a constraint, not a solved capability",
-      "Berlin 4680 IR status Construction undercuts May–July production PR as scale milestone",
-      "Zero public yield / scrap / cost-per-kWh metrics after multi-year 4680 effort",
-      "Product volume timelines that depend on 4680 (Cybercab, Semi) already softened vs prior 2026 volume language"
-    ]
-  },
+  "keyChanges": [],
+  "metricUpdate": null,
+  "categoryUpdate": null,
+  "fleetUpdate": null,
   "urlsSeen": [
-    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
-    "https://www.teslarati.com/tesla-semi-fsd-self-driving/",
-    "https://www.basenor.com/blogs/news/tesla-semi-on-track-for-2026-battery-capacity-still-the-bottleneck",
-    "https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips/",
+    "https://www.teslarati.com/tesla-announces-100-millionth-4680-battery-cell-production-milestone/",
+    "https://www.basenor.com/blogs/news/tesla-4680-battery-cell-production-is-getting-good-what-it-means/",
+    "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter/",
+    "https://teslanorth.com/2026/07/06/tesla-launches-cell-giga-challenge-to-scale-4680-production-at-giga-berlin/",
+    "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
     "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results/",
-    "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/"
+    "https://www.basenor.com/blogs/news/tesla-semi-on-track-for-2026-battery-capacity-still-the-bottleneck/",
+    "https://teslanorth.com/2026/07/22/tesla-hits-28-2-billion-revenue-in-q2-as-production-begins-for-cybercab/",
+    "https://www.basenor.com/blogs/news/teslas-q2-2026-earnings-explained-in-5-points/",
+    "https://www.teslarati.com/tesla-4680-battery-production-hell-details/",
+    "https://www.basenor.com/blogs/news/5-things-to-know-about-teslas-dry-electrode-battery-breakthrough/",
+    "https://www.basenor.com/blogs/news/giga-berlin-targets-18-gwh-of-4680-cell-output-and-wants-startup-help/"
   ],
   "metadata": {
     "sourcesSearched": [
-      "tesla.com/ir (Q2 2026 Update PDF)",
       "teslarati.com",
-      "basenor.com",
       "teslanorth.com",
-      "electrek.co",
-      "techcrunch.com"
+      "basenor.com"
     ],
-    "dateRange": "2026-07-17 to 2026-07-23",
-    "skipReason": null
+    "dateRange": "2026-07-23 to 2026-08-06",
+    "skipReason": "No significant new developments in 4680 battery cell production during research period. Q2 2026 IR disclosure (July 22) already captured in hot context as definitive battery capacity constraint disclosure. Cell Giga Challenge (July 6 closing) already documented. No new yield data, GWh targets, production milestones, or dry electrode process updates found during July 23 - August 6 window. The category remains constrained by: (1) Berlin 4680 still in Construction status with no capacity figure despite May 12 production claim; (2) Texas 4680 >40 GWh capacity is theoretical, not proven production rate; (3) No actual GWh shipped or yield % disclosed. Fundamental issues from Q2 IR remain unresolved."
   }
 }

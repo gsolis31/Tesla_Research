@@ -1,86 +1,57 @@
 {
   "categoryKey": "optimus",
-  "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-23",
-  "weekOf": "2026-07-20",
+  "dateFrom": "2026-07-23",
+  "dateTo": "2026-08-06",
+  "weekOf": "2026-08-03",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
   "hotContext": {
-    "criticalNews": "Fremont S/X line teardown complete and leadership projecting confidence, but full-scale Optimus production has still not been confirmed as started as the late-July/August window opens. Shareholders are demanding ramp status, factory deployment plans, and 2027 external sales numbers ahead of the July 22 earnings call. Competitors (Agility Digit, Xpeng Iron) are commercializing or targeting commercial timelines while Tesla remains pre-revenue on Optimus.",
+    "criticalNews": "Q2 shareholder letter: Fremont first-gen Optimus lines installing after S/X teardown; production 'soon'/later 2026; first builds go to Optimus Academy for training data only. Musk on earnings call: no Optimus supply chain, hardest manufacturing scale-up in Tesla history, initial S-curve 'flat and long.' Zero disclosed unit counts, commercial sales, or factory task deployments. Giga Texas Optimus construction in full swing. App adding Robot phone-key / home data consent \u2014 software shell only.",
     "recentKeyChanges": [
       {
-        "title": "Shareholders put Optimus production ramp under Q2 earnings spotlight \u2014 no commercial path yet",
-        "description": "Ahead of Tesla's July 22, 2026 Q2 earnings call, shareholder questions submitted via Say Technologies put Optimus Gen 3 at the center of investor scrutiny. The top question (by share-weighted votes) asks for the 'current status of Optimus Gen 3 production ramp,' tasks the robot will perform by end of 2027, and 'initial deployment in factories, and external sales timeline/volume for 2027.' Benzinga and Electrek both report Optimus among the most-upvoted topics. Electrek notes the soft production-status questions were whale-boosted (~4.8M shares each) while harder accountability questions on missed short-term goals dominate the rest of the top 20. Reality check: full-scale Fremont production is still only targeted for late July/August 2026; Musk already warned output will be 'extremely slow'; all 2026 units remain for internal testing with no commercial customers or pricing; and Tesla's $1T Musk pay package still hinges on 1M Optimus units among other milestones. Investors are asking for a production and sales roadmap Tesla has not delivered.",
-        "date": "2026-07-16",
+        "title": "Q2 earnings: Musk confirms Optimus has no supply chain and a 'flat and long' ramp",
+        "description": "On Tesla's July 22, 2026 Q2 earnings call and in the Q2 shareholder update, management finally answered the production-ramp questions investors had queued \u2014 and the answers lowered expectations. Official letter language: Fremont Model S/X lines are decommissioned; Tesla is 'installing the first-generation lines for Optimus, where we expect to start production soon' / 'anticipated production later this year.' Initial builds 'will be used in our Optimus Academy for training data collection and further functionality development.' Giga Texas Optimus site development is 'in full swing' but still construction, not output. Musk on the call: Optimus is 'the hardest product to scale manufacturing that we've ever made at Tesla because everything on the robot is new'; 'with Optimus, there is no supply chain' so Tesla must build it from scratch or insource; the manufacturing S-curve's 'initial portion\u2026 will be quite flat and long'; reliability fear framed as a 70 kg robot that can 'flop over' if it goes haywire. He still called Optimus Tesla's 'biggest product ever' and floated aspirational Optimus 4 at Austin targeting '10 million units a year versus 1 million units a year of Optimus 3' \u2014 with heavy caveats. Capex is >$25B for the year; Q2 free cash flow was \u2212$1.09B on $5.8B capex as AI/robotics spend accelerated. Stock fell ~12\u201314.5% the next day (~$140B market cap), with coverage citing limited new Optimus milestones. Reality: late-July/August full-scale start window is not confirmed as met; letter still says 'soon'/'later this year'; zero disclosed unit counts, yield, takt time, factory deployment tasks, 2027 external sales volume, or pricing; all near-term robots remain internal Academy training units. Competitors (Agility Digit) already generate warehouse revenue while Tesla remains pre-revenue on Optimus.",
+        "date": "2026-07-22",
         "category": "Optimus Production",
         "status": "negative",
         "sentiment": {
-          "headline": "neutral",
+          "headline": "positive",
           "reality": "negative",
           "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Optimus Gen 3 remains top investor focus \u2014 capital markets still price robotics as core Tesla thesis",
-            "Fremont S/X line already decommissioned and first production line reported set up (prior weeks)",
-            "Shareholders explicitly asking about factory deployment and 2027 external sales (implies expectation of near-term ramp)"
+            "Official confirmation Fremont first-gen Optimus production lines are being installed after S/X decommission",
+            "Giga Texas dedicated Optimus building construction 'in full swing' \u2014 multi-site manufacturing path intact",
+            "Supply-chain VP Karen Cattan: Tesla will insource parts when partners fall short; Micron memory allocation, TSMC/Samsung fab investments named as enablers",
+            "Elluswamy: Optimus can learn factory tasks by observing Tesla workers \u2014 data flywheel thesis restated",
+            "Musk still frames Optimus as 'biggest product ever' and aspirational Gen 3 1M/yr / Gen 4 10M/yr manufacturing scale"
           ],
           "negative_signals": [
-            "No verified full-scale production start yet despite late-July/August target now days away",
-            "Investors must ask for production ramp status, factory deployment, and 2027 external sales timeline \u2014 none publicly confirmed",
-            "All 2026 Optimus units still internal-only; no commercial revenue path disclosed",
-            "Musk already pre-announced 'extremely slow' initial output and 'literally impossible to predict' rates (10,000 unique parts)",
-            "Electrek: retail tone shifted from vision questions to why short-term goals keep being missed",
-            "Softball Optimus questions appear share-weighted to the top while accountability questions dominate true retail interest",
-            "1M Optimus units remain a Musk pay-package milestone with zero commercial units delivered"
+            "No verified full-scale production start, unit count, yield, or takt time disclosed despite late-July/August target window opening",
+            "Shareholder letter only: 'expect to start production soon' / 'anticipated production later this year' \u2014 softer than a firm start confirmation",
+            "Musk: no existing Optimus supply chain; hardest manufacturing scale-up in Tesla history; initial S-curve 'quite flat and long'",
+            "First builds explicitly for Optimus Academy internal training/data only \u2014 not factory labor replacement or external sales",
+            "No 2027 external sales volume, pricing, commercial customers, or factory deployment task list answered despite top investor question",
+            "Reliability framed as unsolved (70 kg robot that can flop over) \u2014 not ready for unsupervised field work",
+            "Aspirational Optimus 4 10M/yr is far-future messaging, not near-term capacity",
+            "Capex >$25B and \u2212$1.09B FCF; market erased ~$140B as AI/robotics 'just trust me' narrative failed to deliver milestones",
+            "Electrek/critical coverage: generalized-task claim is industry-wide pitch, not Tesla-proven advantage; mass production still 'somewhere down the road'",
+            "Competitors already commercializing small-scale warehouse robots while Optimus remains pre-revenue"
           ],
           "key_metrics": {
-            "actual": "Pre-ramp / limited Gen 3; full-scale Fremont start still targeted late July\u2013August 2026; no commercial sales",
-            "target": "Investor-requested: factory deployment + 2027 external sales volume; pay package implies 1M Optimus units",
-            "trajectory": "Facility conversion done; production start imminent but management already lowering ramp expectations; commercialization still 2027+"
+            "actual": "First-gen Fremont lines installing; production 'soon'/later 2026; initial units \u2192 Optimus Academy only; 0 commercial units; 0 disclosed production rate",
+            "target": "Prior: full-scale Fremont late July\u2013August 2026; investor ask: factory deployment + 2027 external sales volume; pay package still implies 1M Optimus units",
+            "trajectory": "Facility conversion progressing but management officially telegraphing flat, long, supply-chain-constrained ramp; commercialization still 2027+ with no roadmap numbers"
           }
         },
-        "source": "https://www.benzinga.com/markets/tech/26/07/60488913/tesla-q2-earnings-elon-musks-pay-package-cybercab-and-optimus-lead-top-investor-questions",
+        "source": "https://teslanorth.com/2026/07/23/musk-says-tesla-buyers-want-fsd-first-car-second-on-q2-earnings-call/",
         "impact": "high",
         "_sourceCategory": "optimus"
       },
       {
-        "title": "Agility Robotics opens Fremont training hub as Digit already earns revenue \u2014 Optimus still pre-commercial",
-        "description": "On July 17, 2026, TechCrunch reported Agility Robotics is opening a 60,000-square-foot humanoid training facility in Fremont, California \u2014 just up the highway from Tesla's Fremont plant where Optimus full-scale production is expected this summer. Agility's Digit robot is already generating revenue moving totes/bins for Amazon, GXO, Schaeffler, and Toyota Motor Manufacturing Canada, with ~$300M in contract orders. Agility is pursuing a reverse-merger expected to make it the first pure-play public humanoid company later in 2026. CEO Peggy Johnson emphasized Agility has already commercialized: safety/regulatory compliance, IT integration, and warehouse management system plug-in. Outside estimates put Digit deployments in the dozens (not thousands), but the competitive contrast is stark: Digit does paid warehouse work today while Tesla's deployed Optimus units still do no useful commercial work, and 2026 Optimus output is internal-only. Combined with Xpeng targeting 2027 global launch of its Iron robot (SCMP, July 16), the humanoid race is no longer Tesla-only narrative.",
-        "date": "2026-07-17",
-        "category": "Optimus Production",
-        "status": "negative",
-        "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high"
-        },
-        "evidence": {
-          "positive_signals": [
-            "Competitor presence near Fremont validates humanoid market seriousness and local robotics cluster",
-            "Tesla still has unmatched capital and manufacturing scale ambition (1M/yr Fremont, 10M/yr Giga Texas targets)"
-          ],
-          "negative_signals": [
-            "Agility Digit already in paid multi-customer warehouse deployments; Optimus has zero commercial customers",
-            "Agility claims ~$300M contract orders; Tesla has no Optimus order book or pricing for external sales",
-            "Agility training facility opens in Tesla's backyard as Optimus full-scale production has not yet started",
-            "Agility advancing toward public markets as pure-play humanoid; Tesla Optimus still pre-revenue robotics story",
-            "Xpeng separately eyes 2027 global Iron robot launch \u2014 Chinese competitors also racing Tesla",
-            "Musk's own framing: Optimus useful 'outside of Tesla sometime next year' (2027) \u2014 admits no external usefulness yet"
-          ],
-          "key_metrics": {
-            "actual": "Optimus: pre-commercial, internal testing only; Agility Digit: multi-customer revenue, ~$300M orders",
-            "target": "Tesla: public Optimus sales end-2027 at $20\u201330k (Musk WEF claim); useful outside Tesla 'sometime next year'",
-            "trajectory": "Competitors commercializing first at small scale while Tesla bets on delayed high-volume manufacturing"
-          }
-        },
-        "source": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
-        "impact": "medium",
-        "_sourceCategory": "optimus"
-      },
-      {
-        "title": "Elluswamy hails Optimus after S/X line teardown \u2014 confidence messaging, zero new production data",
-        "description": "On or around July 13, 2026, Tesla AI chief Ashok Elluswamy responded to Tesla Manufacturing's Model S/X decommissioning video (already covered July 10) with: 'Big shoes to fill, but I'm confident Optimus will not disappoint!!' Covered by Benzinga, Yahoo Finance, and others. VP of Vehicle Engineering Lars Moravy has said the facility could see up to ~40 production lines due to Optimus's complex design. This is leadership morale/PR on a facility conversion already in the tracker \u2014 not a production-start confirmation, yield figure, unit count, or capability demo. Full-scale output remains targeted late July/August with Musk's 'extremely slow' caveat intact.",
-        "date": "2026-07-13",
+        "title": "Tesla app quietly builds Optimus phone-key and in-home data consent \u2014 software shell years ahead of product",
+        "description": "Code analysis of Tesla iOS app v4.59.0 (reported July 22, 2026 by Teslarati and TeslaNorth via @Tesla_App_iOS) shows groundwork for Optimus in the consumer app: a dedicated Bluetooth Low Energy 'Robot' phone-key authentication stack (also likely shared with Cybercab), a home data-collection consent screen for video/spatial data while Optimus performs in-home tasks, and robot system alerts (low battery, mechanical issues). This is product-software plumbing, not a production or capability milestone. Combined with earnings confirmation that 2026 units go to Optimus Academy for training only, the app work is a multi-year consumer-path placeholder \u2014 useful signal that Tesla is designing a home-robot control surface, but it does not move unit output, factory deployment, or 2027 external sales readiness.",
+        "date": "2026-07-22",
         "category": "Optimus Production",
         "status": "neutral",
         "sentiment": {
@@ -90,24 +61,18 @@
         },
         "evidence": {
           "positive_signals": [
-            "AI lead publicly committing confidence as Fremont converts to Optimus",
-            "Prior: first Optimus production line reported set up; S/X teardown complete in 46 days",
-            "Moravy comment implies multi-line ambition (~40 lines) for complex robot manufacturing"
+            "App-level Robot phone key + home consent UI implies long-term productization planning beyond factory demos",
+            "In-home video/spatial data consent aligns with vision-learning thesis for household tasks",
+            "Corroborated by both Teslarati and TeslaNorth from same app reverse-engineering source"
           ],
           "negative_signals": [
-            "No new unit counts, yield, takt time, or production-start confirmation",
-            "Statement is pure confidence PR on already-reported facility teardown",
-            "Full-scale production still not running; late July/August target not yet met as of mid-July",
-            "Does not address Musk's 'extremely slow' ramp warning or 10,000 unique parts constraint",
-            "Does not address commercial capability \u2014 robots still not doing useful external work"
-          ],
-          "key_metrics": {
-            "actual": "Facility conversion complete; limited Gen 3; no full-scale rate disclosed",
-            "target": "Full-scale Optimus production late July/August 2026 at Fremont",
-            "trajectory": "On facility timeline; production rate and usefulness still unproven"
-          }
+            "Strings/code only \u2014 no live Optimus consumer feature, no pre-orders, no pricing",
+            "Earnings same day confirmed 2026 builds are internal Academy training units, not home robots",
+            "Does not address manufacturing ramp, supply chain, yield, or commercial timeline gaps",
+            "Consumer Optimus still targeted end-2027 at earliest; app prep can sit idle for 18+ months"
+          ]
         },
-        "source": "https://www.benzinga.com/markets/tech/26/07/60407992/tesla-ai-chief-ashok-elluswamy-says-optimus-has-big-shoes-to-fill-after-model-s-x-production-line-closure",
+        "source": "https://www.teslarati.com/tesla-starts-preparing-optimus-smartphone-app/",
         "impact": "low",
         "_sourceCategory": "optimus"
       }

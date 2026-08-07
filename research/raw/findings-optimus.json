@@ -2,9 +2,9 @@
   "categoryKey": "optimus",
   "keyChanges": [
     {
-      "title": "Q2 earnings: Musk confirms Optimus has no supply chain and a 'flat and long' ramp — still no production units or commercial path",
-      "description": "On Tesla's July 22, 2026 Q2 earnings call and in the Q2 shareholder update, management finally answered the production-ramp questions investors had queued — and the answers lowered expectations. Official letter language: Fremont Model S/X lines are decommissioned; Tesla is 'installing the first-generation lines for Optimus, where we expect to start production soon' / 'anticipated production later this year.' Initial builds 'will be used in our Optimus Academy for training data collection and further functionality development.' Giga Texas Optimus site development is 'in full swing' but still construction, not output. Musk on the call: Optimus is 'the hardest product to scale manufacturing that we've ever made at Tesla because everything on the robot is new'; 'with Optimus, there is no supply chain' so Tesla must build it from scratch or insource; the manufacturing S-curve's 'initial portion… will be quite flat and long'; reliability fear framed as a 70 kg robot that can 'flop over' if it goes haywire. He still called Optimus Tesla's 'biggest product ever' and floated aspirational Optimus 4 at Austin targeting '10 million units a year versus 1 million units a year of Optimus 3' — with heavy caveats. Capex is >$25B for the year; Q2 free cash flow was −$1.09B on $5.8B capex as AI/robotics spend accelerated. Stock fell ~12–14.5% the next day (~$140B market cap), with coverage citing limited new Optimus milestones. Reality: late-July/August full-scale start window is not confirmed as met; letter still says 'soon'/'later this year'; zero disclosed unit counts, yield, takt time, factory deployment tasks, 2027 external sales volume, or pricing; all near-term robots remain internal Academy training units. Competitors (Agility Digit) already generate warehouse revenue while Tesla remains pre-revenue on Optimus.",
-      "date": "2026-07-22",
+      "title": "Elluswamy posts '10 million robots' correction as Giga Texas factory rises — no production numbers disclosed",
+      "description": "On July 31, 2026, Tesla Optimus chief Ashok Elluswamy posted a terse 'Correction, 10 million robots' on X, clarifying the long-term annual capacity target for the dedicated Optimus factory under construction at Giga Texas (not the Fremont pilot line, which targets 1M/yr). The post was covered by Teslarati and Basenor. Separately, Basenor published a Giga Texas construction update covering drone footage through July 27, 2026: a multi-story steel superstructure is rising across the 5.2M sq-ft site, seven large cranes operating simultaneously, and floor decking installation is underway — construction pace described as accelerated, not standard commercial build. The Fremont footprint had grown to ~360 ft north-to-south by July 13. Context that makes these headlines misleading: (1) Elluswamy's '10M robots' post adds zero new information — Musk cited this figure repeatedly since at least mid-2025; it is a long-term aspirational target for a factory that does not produce a single unit yet; (2) The Giga Texas construction milestone (Volume production target: Summer 2027) is a facility update, not a production start; (3) No Optimus unit count, production rate, takt time, yield, or Academy delivery total has been disclosed by Tesla since the Q2 earnings call on July 22; (4) The Fremont line status as of week ending Aug 6 remains: 'installing first-generation lines' per Q2 letter language — no official correction to 'production started.' The late-July/August window Musk set on Q1 earnings as the production start target has now elapsed or is elapsing with no official confirmation of first robot output.",
+      "date": "2026-07-31",
       "category": "Optimus Production",
       "status": "negative",
       "sentiment": {
@@ -14,98 +14,96 @@
       },
       "evidence": {
         "positive_signals": [
-          "Official confirmation Fremont first-gen Optimus production lines are being installed after S/X decommission",
-          "Giga Texas dedicated Optimus building construction 'in full swing' — multi-site manufacturing path intact",
-          "Supply-chain VP Karen Cattan: Tesla will insource parts when partners fall short; Micron memory allocation, TSMC/Samsung fab investments named as enablers",
-          "Elluswamy: Optimus can learn factory tasks by observing Tesla workers — data flywheel thesis restated",
-          "Musk still frames Optimus as 'biggest product ever' and aspirational Gen 3 1M/yr / Gen 4 10M/yr manufacturing scale"
+          "Giga Texas Optimus factory construction visibly accelerating: 7 simultaneous cranes, floor decking in, multi-story steel structure through July 27",
+          "Elluswamy's correction reconfirms 10M/yr long-term Texas capacity target, signaling program is intact",
+          "Two-site manufacturing strategy (Fremont 1M + Texas 10M) structurally on track from a facilities standpoint"
         ],
         "negative_signals": [
-          "No verified full-scale production start, unit count, yield, or takt time disclosed despite late-July/August target window opening",
-          "Shareholder letter only: 'expect to start production soon' / 'anticipated production later this year' — softer than a firm start confirmation",
-          "Musk: no existing Optimus supply chain; hardest manufacturing scale-up in Tesla history; initial S-curve 'quite flat and long'",
-          "First builds explicitly for Optimus Academy internal training/data only — not factory labor replacement or external sales",
-          "No 2027 external sales volume, pricing, commercial customers, or factory deployment task list answered despite top investor question",
-          "Reliability framed as unsolved (70 kg robot that can flop over) — not ready for unsupervised field work",
-          "Aspirational Optimus 4 10M/yr is far-future messaging, not near-term capacity",
-          "Capex >$25B and −$1.09B FCF; market erased ~$140B as AI/robotics 'just trust me' narrative failed to deliver milestones",
-          "Electrek/critical coverage: generalized-task claim is industry-wide pitch, not Tesla-proven advantage; mass production still 'somewhere down the road'",
-          "Competitors already commercializing small-scale warehouse robots while Optimus remains pre-revenue"
+          "No Optimus unit count, production rate, or takt time disclosed in period — production count remains effectively zero from an external verifiable standpoint",
+          "Fremont late-July/August production start window per Q1 earnings has elapsed with no official 'production started' announcement from Tesla",
+          "Elluswamy's '10M robots' post is a restatement of a previously known aspirational target, not a new milestone",
+          "Giga Texas produces zero robots; earliest volume production still Summer 2027",
+          "V3 (Gen 3) Optimus still unrevealed publicly — no design finalization confirmation for volume production",
+          "Q2 letter language ('installing first-generation lines,' 'production soon/later this year') has not been upgraded to a start confirmation",
+          "No Optimus Academy unit count, task performance data, or training data collection metrics released"
         ],
         "key_metrics": {
-          "actual": "First-gen Fremont lines installing; production 'soon'/later 2026; initial units → Optimus Academy only; 0 commercial units; 0 disclosed production rate",
-          "target": "Prior: full-scale Fremont late July–August 2026; investor ask: factory deployment + 2027 external sales volume; pay package still implies 1M Optimus units",
-          "trajectory": "Facility conversion progressing but management officially telegraphing flat, long, supply-chain-constrained ramp; commercialization still 2027+ with no roadmap numbers"
+          "actual": "0 confirmed units produced from Fremont first-gen line; Giga Texas in construction (7 cranes, floor decking installed as of July 27)",
+          "target": "Fremont: production start late July–August 2026 (Q1 guidance, now elapsed); Giga Texas: volume production Summer 2027; long-term: 1M/yr Fremont + 10M/yr Texas",
+          "trajectory": "Construction infrastructure progressing on schedule but production line commissioning at Fremont unconfirmed; ramp still 'flat and long' per Musk"
         }
       },
-      "source": "https://teslanorth.com/2026/07/23/musk-says-tesla-buyers-want-fsd-first-car-second-on-q2-earnings-call/",
-      "impact": "high"
+      "source": "https://www.teslarati.com/tesla-ai-boss-reveals-how-big-optimus-is-going-to-get/",
+      "impact": "medium"
     },
     {
-      "title": "Tesla app quietly builds Optimus phone-key and in-home data consent — software shell years ahead of product",
-      "description": "Code analysis of Tesla iOS app v4.59.0 (reported July 22, 2026 by Teslarati and TeslaNorth via @Tesla_App_iOS) shows groundwork for Optimus in the consumer app: a dedicated Bluetooth Low Energy 'Robot' phone-key authentication stack (also likely shared with Cybercab), a home data-collection consent screen for video/spatial data while Optimus performs in-home tasks, and robot system alerts (low battery, mechanical issues). This is product-software plumbing, not a production or capability milestone. Combined with earnings confirmation that 2026 units go to Optimus Academy for training only, the app work is a multi-year consumer-path placeholder — useful signal that Tesla is designing a home-robot control surface, but it does not move unit output, factory deployment, or 2027 external sales readiness.",
-      "date": "2026-07-22",
+      "title": "BYD debuts Xiao Di humanoid robot in August — direct Optimus competitor now commercially deployed while Tesla still pre-production",
+      "description": "BYD confirmed and deployed its first humanoid robot, Xiao Di, at its 'Di Space' showroom in Zhengzhou in early August 2026. Multiple sources corroborate the announcement and deployment: TechNode (July 27), kr-asia, The Next Web, Notebookcheck, and Stuff South Africa (August 5 teaser update). Key details: Xiao Di stands 1.61m tall, weighs 58.5kg, has 31 degrees of freedom, and features real-time multilingual translation (6 Chinese dialects + 6 foreign languages), 360-degree vision, and an onboard AI model for object/facial recognition. BYD's plan is to deploy 2-3 units per BYD dealership, with the robot greeting customers and explaining vehicles. BYD made clear this is a fully functional prototype, not a concept. US government is reportedly blocking BYD's access to the US market before the debut. The competitive significance for Optimus: BYD — a company with supply chain scale, actuator sourcing, and manufacturing depth that Tesla explicitly lacks for Optimus — is now commercially deploying a humanoid robot while Tesla cannot confirm a single Fremont Optimus unit has come off the line. Chinese competitors (Unitree G1 at $17,990 on Amazon; BYD Xiao Di for dealerships) are advancing commercial use cases while Tesla is still in 'installing lines' and 'Optimus Academy training data collection' phases. This directly validates the competitive risk flagged in last week's earnings context and worsens the timeline gap between Tesla's promises and commercial reality.",
+      "date": "2026-08-05",
       "category": "Optimus Production",
-      "status": "neutral",
+      "status": "negative",
       "sentiment": {
-        "headline": "positive",
-        "reality": "neutral",
-        "confidence": "medium"
+        "headline": "neutral",
+        "reality": "negative",
+        "confidence": "high"
       },
       "evidence": {
         "positive_signals": [
-          "App-level Robot phone key + home consent UI implies long-term productization planning beyond factory demos",
-          "In-home video/spatial data consent aligns with vision-learning thesis for household tasks",
-          "Corroborated by both Teslarati and TeslaNorth from same app reverse-engineering source"
+          "BYD's entry validates the humanoid robot market opportunity Tesla is targeting",
+          "Xiao Di is a limited-use dealership greeter, not a general-purpose factory robot — different use case than Optimus's industrial/household target",
+          "US market access reportedly blocked for BYD robot, reducing direct near-term competition on Tesla's home turf"
         ],
         "negative_signals": [
-          "Strings/code only — no live Optimus consumer feature, no pre-orders, no pricing",
-          "Earnings same day confirmed 2026 builds are internal Academy training units, not home robots",
-          "Does not address manufacturing ramp, supply chain, yield, or commercial timeline gaps",
-          "Consumer Optimus still targeted end-2027 at earliest; app prep can sit idle for 18+ months"
+          "BYD — still behind Tesla in AI but far ahead in supply chain depth and actuator sourcing — is now commercially deploying a humanoid robot while Tesla cannot confirm Fremont production has started",
+          "Xiao Di is already working in BYD showrooms; Optimus first builds are still destined for internal Optimus Academy training data collection",
+          "Chinese manufacturers (BYD, Unitree, Xpeng Iron, Chery Aimoga) are collectively advancing the sector with commercial revenue while Tesla remains pre-revenue on Optimus",
+          "Unitree G1 listed at $17,990 on Amazon — if Chinese price competition scales, Tesla's $20,000-$25,000 cost floor at 1M/yr is already at parity or worse with a shipping product",
+          "Supply chain decoupling risk: Tesla's Optimus BOM could rise from ~$46k to ~$131k if forced off Chinese component suppliers (actuators, reducers, batteries)",
+          "BYD's deployment pace (2-3 units per dealership chain-wide) implies meaningful scale faster than Tesla's Academy-first approach"
         ]
       },
-      "source": "https://www.teslarati.com/tesla-starts-preparing-optimus-smartphone-app/",
-      "impact": "low"
+      "source": "https://technode.com/2026/07/27/byd-to-unveil-first-humanoid-robot-in-early-august/",
+      "impact": "high"
     }
   ],
   "metricUpdate": null,
   "fleetUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Q2 shareholder letter: Fremont first-gen Optimus lines installing after S/X teardown; production 'soon'/later 2026; first builds go to Optimus Academy for training data only. Musk on earnings call: no Optimus supply chain, hardest manufacturing scale-up in Tesla history, initial S-curve 'flat and long.' Zero disclosed unit counts, commercial sales, or factory task deployments. Giga Texas Optimus construction in full swing. App adding Robot phone-key / home data consent — software shell only.",
-    "nextMilestone": "Confirmed Fremont production start with disclosed unit/rate figures; first useful internal factory task demos beyond Academy training; any 2027 external sales volume or pricing",
+    "latestStatus": "Fremont first-gen Optimus production lines still being installed as of late July 2026; no official production start confirmed despite late-July/August target window from Q1 earnings having elapsed. Giga Texas dedicated factory construction accelerating (7 cranes, multi-story steel, floor decking through July 27). No unit counts, yield, takt time, or Academy delivery numbers disclosed. V3/Gen 3 still unrevealed. BYD Xiao Di commercially deployed in August while Tesla remains pre-revenue.",
+    "nextMilestone": "Official confirmation of first Fremont line robot output and Optimus Academy unit delivery; V3 public reveal (no date set); Giga Texas volume production (Summer 2027 target)",
     "concerns": [
-      "Late-July/August full-scale start window not confirmed as met — letter still says 'soon'/'later this year'",
-      "Musk openly telegraphing flat, long ramp and total supply-chain rebuild — rate risk extreme",
-      "All 2026 output internal Academy training; no commercial revenue path or 2027 volume commitment",
-      "Reliability still framed as unsolved (flop-over risk) for field deployment",
-      "Heavy AI/robotics capex (> $25B FY, −$1.09B Q2 FCF) without Optimus production proof — market already punished stock ~12–14%",
-      "Competitors commercializing small-scale warehouse robots while Optimus remains pre-revenue"
+      "Late-July/August production start window from Q1 earnings has elapsed with no official start confirmation — silent slip pattern identical to Q2 letter dropping 'volume production in 2026' language",
+      "Zero unit counts or production rate disclosures; no third-party verification of any Fremont first-gen output",
+      "BYD and Chinese competitors (Unitree, Xpeng) are commercially deploying humanoid robots while Tesla remains in training-data-collection phase",
+      "Supply chain remains Tesla's self-described 'hardest challenge' — no updates on progress insourcing critical actuator/reducer components since Q2 call",
+      "Chinese supply chain decoupling risk: BOM could increase 2-3x if US-China trade restrictions tighten further",
+      "V3 still unrevealed — no confirmation that volume production design is finalized"
     ]
   },
   "urlsSeen": [
-    "https://teslanorth.com/2026/07/23/musk-says-tesla-buyers-want-fsd-first-car-second-on-q2-earnings-call/",
-    "https://teslanorth.com/2026/07/22/tesla-hits-28-2-billion-revenue-in-q2-as-production-begins-for-cybercab/",
-    "https://www.teslarati.com/tesla-starts-preparing-optimus-smartphone-app/",
-    "https://teslanorth.com/2026/07/22/tesla-wants-your-home-data-to-train-optimus-its-buried-in-the-latest-app-update/",
-    "https://www.inc.com/georgia-fearn/elon-musk-says-this-will-be-teslas-biggest-product-ever-if-it-can-solve-the-supply-chain-issue/91378137",
-    "https://www.pymnts.com/earnings/2026/tesla-says-optimus-is-the-first-robot-that-learns-by-watching/",
-    "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/",
-    "https://electrek.co/2026/07/23/tesla-tsla-crashes-12-q2-2026-earnings-miss/",
-    "https://www.teslarati.com/tesla-tsla-tumbles-after-earnings-one-of-its-sharpest-single-day-declines/",
-    "https://electrek.co/wp-content/uploads/sites/3/2026/07/TSLA-Q2-2026-Update.pdf"
+    "https://www.teslarati.com/tesla-ai-boss-reveals-how-big-optimus-is-going-to-get/",
+    "https://www.basenor.com/blogs/news/tesla-optimus-factory-at-giga-texas-4-months-of-rapid-progress",
+    "https://www.basenor.com/blogs/news/teslas-optimus-chief-confirms-staggering-10-million-robot-target",
+    "https://technode.com/2026/07/27/byd-to-unveil-first-humanoid-robot-in-early-august/",
+    "https://stuff.co.za/2026/08/05/byds-xiao-di-humanoid-robot-arrives-this-month-according-to-company-teaser/",
+    "https://kr-asia.com/byds-humanoid-robot-to-begin-work-at-d-space-facility-in-august",
+    "https://thenextweb.com/news/byd-humanoid-robot-xiao-di-di-space-showrooms-august",
+    "https://www.notebookcheck.net/BYD-confirms-AI-robot-Xiao-Di-as-US-hits-the-brakes-immediately.1359680.0.html"
   ],
   "metadata": {
     "sourcesSearched": [
       "teslarati.com",
       "teslanorth.com",
+      "basenor.com",
       "optimusk.blog",
-      "electrek.co",
-      "inc.com",
-      "pymnts.com",
-      "TSLA Q2 2026 shareholder update PDF"
+      "technode.com",
+      "kr-asia.com",
+      "thenextweb.com",
+      "notebookcheck.net",
+      "stuff.co.za",
+      "benzinga.com"
     ],
-    "dateRange": "2026-07-17 to 2026-07-23",
+    "dateRange": "2026-07-23 to 2026-08-06",
     "skipReason": null
   }
 }

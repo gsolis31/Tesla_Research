@@ -1,42 +1,43 @@
 {
   "categoryKey": "battery4680",
-  "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-23",
-  "weekOf": "2026-07-20",
+  "dateFrom": "2026-07-23",
+  "dateTo": "2026-08-06",
+  "weekOf": "2026-08-03",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
   "hotContext": {
-    "criticalNews": "Giga Berlin 4680 line is in early production (from May 12, 2026) with PR video on July 16; expanded 18 GWh full-scale still H1 2027. Texas dry-electrode 4680 for some Model Y packs already previously confirmed. No new yield or actual GWh metrics this week.",
+    "criticalNews": "Q2 2026 IR: battery pack capacity is the official global vehicle production bottleneck; Tesla says it is increasing 4680 output for Cybercab, Semi, and Model Y. Texas 4680 >40 GWh Production on paper; Berlin 4680 still Construction with no capacity figure. No yield or actual GWh disclosed.",
     "recentKeyChanges": [
       {
-        "title": "Giga Berlin 4680 production video drops \u2014 early ramp PR, full scale still H1 2027",
-        "description": "On July 16, 2026, BASENOR reported Tesla released a short video of the 4680 cell line at Gigafactory Berlin (circulated via Sawyer Merritt on X the same day). The piece frames production as having begun May 12, 2026 \u2014 under ten weeks before the video \u2014 with full-scale expanded output still targeted only for H1 2027. Capacity narrative is unchanged: +$250M to raise the Berlin annual target from 8 GWh to 18 GWh (~$1.45B cumulative battery investment at the site). Dry Battery Electrode (DBE) for anode and cathode is restated as the manufacturing story, not a new process milestone. BASENOR also cites autoevolution that 'Made in Germany' Model Ys with locally produced 4680 cells are expected late Q3 2026 \u2014 a consumer timeline that remains single-source and unverified by Teslarati/TeslaNorth/Tesla IR this week. Applications for the JUNI x Tesla Battery Cell Giga Challenge (launched July 6) remain open through July 24, underscoring that manufacturing bottlenecks are still being crowdsourced. No new yield %, actual GWh output, or cost-per-kWh figures were published with the video.",
-        "date": "2026-07-16",
+        "title": "Q2 IR: battery pack capacity is the global vehicle bottleneck; 4680 ramp for Cybercab/Semi/MY",
+        "description": "Tesla\u2019s Q2 2026 Update (July 22) is the first IR-level admission this cycle that battery pack capacity is \u201cthe main limiting factor to near-term vehicle production volume increase\u201d and \u201cremains the limiting factor on ramping our vehicle production globally.\u201d Management says it is \u201cincreasing production of 4680 cells to support production ramps of both Cybercab and Tesla Semi and increased production of Model Y,\u201d alongside vehicle pack capacity work in Berlin, cathode materials and lithium refining in Texas, and LFP cells in Nevada for energy storage. The installed-capacity table is the hard data: Texas 4680 is listed at >40 GWh under \u201cProduction,\u201d while Berlin 4680 still shows no capacity figure and status \u201cConstruction\u201d \u2014 a stark contrast to May 12 \u201cproduction start\u201d / July 16 cell-line video PR that framed Berlin as already making cells. Footnotes restate that installed capacity \u2260 current production rate. Teslarati and TechCrunch corroborate that Musk/letter language ties 4680 cell output to Cybercab and Semi scale, and that prior \u201cvolume production this year\u201d framing for those programs was softened; Outlook only commits Semi to \u201cproduction starting in 2026,\u201d not volume. No yield %, scrap rate, cost/kWh, or actual GWh of 4680 cells shipped was disclosed. Cell Giga Challenge applications still ran through July 24, underscoring ongoing external solicitation for manufacturing fixes.",
+        "date": "2026-07-22",
         "category": "4680 Battery Cell Production",
         "status": "negative",
         "sentiment": {
-          "headline": "positive",
+          "headline": "neutral",
           "reality": "negative",
-          "confidence": "medium"
+          "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Tesla publicly showed live 4680 cell-line footage from Giga Berlin (~10 weeks after May 12 production start)",
-            "Capacity target still stated at 18 GWh/year after the May $250M add-on (~200k\u2013350k vehicles/year at pack-level estimates)",
-            "Dry electrode process for both anode and cathode continues to be presented as in use on the Berlin line",
-            "Near-term Model Y-with-Berlin-4680 claim (late Q3 2026) would be a real product milestone if it lands"
+            "Official IR: Tesla is increasing 4680 cell production specifically to support Cybercab, Semi, and Model Y ramps",
+            "Texas 4680 listed at >40 GWh installed annual capacity with status Production (capacity table, Q2 2026 Update)",
+            "Supporting materials: cathode materials 10 GWh Early Ramp and lithium refining 30 GWh Early Ramp in Texas; Nevada LFP 7 GWh Early Ramp for energy storage",
+            "Company continues pack-capacity work at Berlin and names pack expansion as a capital/engineering priority"
           ],
           "negative_signals": [
-            "Line is still in an early, accelerating phase \u2014 not a finished high-volume factory; full-scale expanded production only H1 2027",
-            "Video and recap recycle May 12 investment / 8\u219218 GWh targets; no verified yield, scrap rate, or actual GWh shipped this week",
-            "Cell Giga Challenge applications still open until July 24 \u2014 Tesla is still soliciting external fixes for materials, equipment, ops, automation, and AI bottlenecks",
-            "Electrek (July 7, corroboration): 4680 remains Tesla's most troubled manufacturing effort; opening the line to startups is a tacit admission of in-house gaps",
-            "Capacity target was doubled before cost-competitive, high-yield production has been publicly proven at Berlin scale",
-            "Original 2020 Berlin cell ambition was up to ~250 GWh; 18 GWh is a fraction of that vision after multi-year delay and IRA-driven US pivot",
-            "Model Y late-Q3 4680 claim rests on secondary reporting (autoevolution via BASENOR), not multi-source or official confirmation"
+            "IR twice states battery pack capacity is THE limiting factor on near-term / global vehicle production volume \u2014 cells/packs, not demand or vehicle lines, set the ceiling",
+            "Berlin 4680 still status Construction with blank capacity in the same table that lists Texas 4680 at >40 GWh Production \u2014 early May PR / July video do not equal installed capacity or volume",
+            "No yield %, scrap, cost/kWh, or actual GWh of 4680 cells produced/shipped disclosed with earnings",
+            "Installed capacity \u2260 production rate disclaimer remains; >40 GWh Texas is capacity, not proven high-yield output",
+            "Teslarati: Musk pointed to 4680 cell output as near-term constraint on Semi and Cybercab; Q2 letter dropped prior volume-production-this-year language for Semi",
+            "TechCrunch: company is trying to increase 4680 production to build Cybercab and Semi at scale after volume-production 2026 framing slipped for those programs",
+            "BASENOR (capacity chart via Sawyer Merritt): Semi Nevada still Commissioning with no capacity figure; co-located 4680 does not remove the pack/cell ceiling",
+            "Cell Giga Challenge applications remained open through July 24 \u2014 Tesla still crowdsourcing fixes for materials, equipment, ops, automation, and AI bottlenecks on the cell path"
           ]
         },
-        "source": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
-        "impact": "medium",
+        "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+        "impact": "high",
         "_sourceCategory": "battery4680"
       }
     ]

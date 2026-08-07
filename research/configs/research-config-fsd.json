@@ -1,47 +1,79 @@
 {
   "categoryKey": "fsd",
-  "dateFrom": "2026-07-17",
-  "dateTo": "2026-07-23",
-  "weekOf": "2026-07-20",
+  "dateFrom": "2026-07-23",
+  "dateTo": "2026-08-06",
+  "weekOf": "2026-08-03",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
   "hotContext": {
-    "criticalNews": "Europe: FSD Supervised live in 5 small markets (NL/LT/EE/DK/BE) with 50M km driven; Italy application under review; Germany KBA test-vehicle trials expected to start. US: NTSB prelim clears software in Katy crash (driver override) but NHTSA EA26002 on 3.2M vehicles and Special Crash Investigation remain open. No new unsupervised FSD regulatory approvals this week. Tesla summer-2026 EU-wide mutual recognition still not delivered for major markets.",
+    "criticalNews": "France Transport Minister rejected FSD Supervised as currently configured (speeding + driver monitoring). Consumer FSD Supervised still live only in NL/LT/EE/DK/BE. US NHTSA EA26002 escalated with 'Radar Saves Us' IR (response due Aug 12). No new country approvals this week; total approved consumer markets unchanged at 6 (US + 5 small EU).",
     "recentKeyChanges": [
       {
-        "title": "Italy confirms Tesla FSD application under review via Dutch homologation recognition",
-        "description": "On or around July 13, 2026, Servedio Gaetano, General Director at Italy's Ministry of Infrastructure and Transport, confirmed on LinkedIn that Tesla 'only recently' submitted an application requesting recognition of the Dutch FSD homologation, and that the matter is 'in the analysis phase also based on the indications from the European community.' An Italian senator had previously urged prioritization after Netherlands approval. Critical read: this is an application receipt, not an approval. No timeline was given. Italy would be a major EU volume market if approved, but the fact that a large member state is still running a national analysis months after Dutch type approval undercuts Tesla's earlier claim that EU-wide mutual recognition would deliver broad summer-2026 access without repeating review. As of this week FSD Supervised remains live only in five EU countries: Netherlands, Lithuania, Estonia, Denmark, and Belgium \u2014 none of which are top-tier European auto markets by volume.",
-        "date": "2026-07-13",
+        "title": "NHTSA EA26002 escalates: demands Tesla 'Radar Saves Us' internal docs and marketing justification",
+        "description": "NHTSA's Office of Defects Investigation (Director Tanya Topka) sent Tesla a 24-part information request under Engineering Analysis EA26002 (low-visibility FSD crashes), dated July 2 and reported July 21, 2026. Request No. 4 specifically demands all communications, technical docs, test records, and underlying data tied to an internal Tesla document titled 'Radar Saves Us' that Tesla previously submitted during PE24031-01. ODI states the document appears relevant to degradation-detection design and Tesla's understanding of vision-only OEDR limits in the reduced-visibility conditions of nine countable crashes (including one fatality and one injury) across ~3.2 million FSD-capable US vehicles. Other IRs probe 15 marketing statements for overclaiming automation level, the 2024 'FSD Degraded' alert change from red to yellow with chime removed, 'Direct Photon-Count Capability,' Vision Failsafe Ranker, and internal regression metrics. Tesla response deadline: August 12, 2026; civil penalties up to ~$27,874/day for incomplete answers (capped near $139M). Critical framing: EA is the last step before close or recall push. An internal memo named 'Radar Saves Us' implies Tesla analyzed camera-only failure modes that match the crash pattern after removing radar in 2021 \u2014 elevating knowledge-of-defect risk. NHTSA EA26002 and Special Crash Investigation remain open; this is escalation of the probe already noted in prior weeks, not a new investigation.",
+        "date": "2026-07-21",
         "category": "FSD Country Approvals",
-        "status": "neutral",
+        "status": "negative",
         "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium"
+          "headline": "negative",
+          "reality": "negative",
+          "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Italian Ministry General Director publicly confirmed application received and under analysis",
-            "Path is mutual recognition of Dutch homologation \u2014 faster than a full de novo type approval",
-            "Review explicitly references European Community guidance, consistent with EU mutual-recognition framework",
-            "Italy would be the first large-population EU market if approved"
+            "Not a recall order yet \u2014 still an information demand within open EA",
+            "Tesla has until August 12 to respond and can produce technical rebuttal",
+            "NTSB prelim on separate Katy crash previously attributed override to driver (software not primary cause in that case)"
           ],
           "negative_signals": [
-            "Application only \u2014 no approval, no OTA activation, no go-live date",
-            "Still in 'analysis phase'; duration unknown",
-            "Confirms country-by-country process is still required despite mutual-recognition narrative",
-            "Tesla's anticipated summer 2026 EU-wide recognition has not delivered Italy (or Germany/France/Spain/UK)",
-            "Primary report is a LinkedIn exchange via Drive Tesla Canada; not yet corroborated by Teslarati/TeslaNorth/official Tesla IR"
+            "Federal IR names internal 'Radar Saves Us' document \u2014 implies manufacturer knew vision-only limits relevant to crash conditions",
+            "EA26002 covers ~3.2M vehicles, nine reduced-visibility crashes including fatality \u2014 last step before possible recall",
+            "NHTSA also building marketing overclaim paper trail (15 statements including whiteout/all-conditions claims)",
+            "Softened FSD Degraded alert (red\u2192yellow, chime removed) under scrutiny as potential safety-warning defect",
+            "Daily civil penalties for incomplete answers; probe not closing",
+            "Vision-only stack remains the design under investigation years after radar removal"
           ]
         },
-        "source": "https://driveteslacanada.ca/news/tesla-fsd-italy-application-under-review/",
+        "source": "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/",
         "impact": "high",
         "_sourceCategory": "fsd"
       },
       {
-        "title": "FSD Supervised hits 50M km in Europe across five small markets; major markets still closed",
-        "description": "Tesla announced that owners in the Netherlands, Estonia, Belgium, Lithuania, and Denmark have surpassed 50 million kilometres (~31 million miles) of FSD Supervised driving as of July 14, 2026 \u2014 roughly three months after the first EU approval (Netherlands, April 10). Uptake in approved markets is real and fast. Critical reality check: Europe's 50M km is ~0.26% of Tesla's ~12B global FSD miles, and the five live countries are small Baltic/Nordic/Benelux markets. Germany, France, Italy, Spain, and the UK \u2014 the volume markets that matter for Robotaxi economics and FSD attach rates \u2014 still have no consumer FSD Supervised. Belgium (approved ~June 10) is now confirmed as the fifth European country, updating the prior 'Denmark = fourth' count. Mutual recognition is expanding, but slowly and only into secondary markets so far.",
-        "date": "2026-07-14",
+        "title": "France rejects FSD Supervised: Transport Minister cites speeding and driver-monitoring gaps",
+        "description": "On or around July 22, 2026, French Transport Minister Philippe Tabarot publicly stated that France will not authorize Tesla Full Self-Driving (Supervised) 'as it currently stands,' saying 'the safety trade-offs are not yet sufficient.' Specific objections: (1) FSD can exceed posted limits to match traffic \u2014 Tabarot cited up to ~70 km/h in a 50 km/h zone (~40% over); (2) driver monitoring does not guarantee adequate attention in complex urban maneuvers (lane changes, intersections, roundabouts); (3) French guidelines still expect hands on the wheel. France is refusing to rubber-stamp Dutch RDW national homologation and wants a harmonized EU-wide framework; technical talks with Tesla, the Netherlands, and other member states continue, with a Ministry rep having visited NL data recently and ecosystem meetings planned for autumn. EU-wide mutual-recognition vote still needs 15 member states representing \u226565% of EU population; next potential vote flagged for October. Musk replied on X: 'Delaying the approval of FSD in France will cost lives.' Critical reality: France is a top-tier EU volume market. Consumer FSD Supervised remains live only in five small markets (NL/LT/EE/DK/BE). Germany, France, Italy, Spain, and UK still closed. Tesla's summer-2026 EU-wide mutual-recognition narrative has failed for major markets; France's public rejection plus Sweden's earlier speeding-based opposition raise the bar for October.",
+        "date": "2026-07-22",
         "category": "FSD Country Approvals",
+        "status": "negative",
+        "sentiment": {
+          "headline": "negative",
+          "reality": "negative",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "France framed this as a delay with fixable conditions, not a permanent ban \u2014 technical discussions with Tesla/NL/other states continue",
+            "Tabarot said France 'supports these technologies' and is ready to engage if safety bar is met",
+            "Specific, addressable issues (speed offset, driver monitoring) rather than blanket opposition to autonomy",
+            "Five smaller EU markets (NL/LT/EE/DK/BE) remain live with 50M+ km driven"
+          ],
+          "negative_signals": [
+            "Official rejection of current FSD Supervised by a major EU auto market's Transport Minister",
+            "Concrete safety defects cited: speeding up to ~40% over limit and insufficient urban driver attention",
+            "France will not inherit Dutch RDW national approval \u2014 undercuts Tesla mutual-recognition shortcut narrative",
+            "Germany/France/Italy/Spain/UK still have no consumer FSD Supervised; live footprint remains five small markets",
+            "Summer 2026 EU-wide recognition target not delivered; next vote only October and needs 15 states / 65% population",
+            "Sweden already urged EU rejection over speeding; France adds a large-population no vote risk for October",
+            "Musk 'cost lives' response does not resolve regulatory technical objections"
+          ]
+        },
+        "source": "https://teslanorth.com/2026/07/22/france-just-rejected-teslas-full-self-driving-regulators-say-it-isnt-safe-enough-yet/",
+        "impact": "high",
+        "_sourceCategory": "fsd"
+      },
+      {
+        "title": "FSD v14 Lite goes public for HW3 (2026.20.6.10/.11); HW4 gets point-release v14.3.6 \u2014 still Supervised only",
+        "description": "Tesla restarted and then publicly expanded FSD (Supervised) v14 Lite for HW3/AI3 vehicles with software 2026.20.6.10 (July 20\u201321), after Ashok Elluswamy said the updated Lite build was 'likely the version that goes to wide release.' NotATeslaApp and TeslaNorth report regular US/Canada HW3 owners beyond early access receiving the OTA; IR shareholder letter confirms v14 Lite delivery began for AI3 customers in the US and South Korea. Official notes: distilled HW4 v14 intelligence into HW3 (RL + offline models), parking/unparking/reversing, Arrival Options, Speed Profiles including SLOTH, optional brake-confirm, Self-Driving app, and streak tracking. Concurrently, 2026.20.6.11 ships FSD Supervised v14.3.6 for HW4 \u2014 release notes largely restate the v14.3.5 RL/vision-encoder/MLIR stack with TeslaFi showing ~1.5k cars / ~12% of tracked fleet mid-rollout. Critical reality: this is supervised feature parity and legacy-fleet catch-up, not autonomy progress. Lite is explicitly a distilled student model (slower decision-making than full HW4 v14); HW3 remains permanently capped below unsupervised FSD and is not expected to get v15. Consumer production ceiling is still the v14.3.x branch while robotaxi early-v15 work continues in parallel.",
+        "date": "2026-07-21",
+        "category": "FSD v15 Software",
         "status": "neutral",
         "sentiment": {
           "headline": "positive",
@@ -50,50 +82,20 @@
         },
         "evidence": {
           "positive_signals": [
-            "50 million km driven in ~3 months since first EU approval \u2014 strong early adoption where legal",
-            "Five European countries now confirmed live: NL, LT, EE, DK, BE",
-            "Belgium activation completes fifth-country footprint via mutual recognition pathway",
-            "Company-announced milestone with multi-source coverage (TeslaNorth; referenced in 12B-mile follow-up)"
+            "Public HW3 rollout of v14 Lite confirmed by NotATeslaApp, TeslaNorth (US + Canada), and Tesla Q2 IR letter (US + South Korea)",
+            "Ashok said updated Lite build is likely the wide-release candidate \u2014 rollout advanced beyond early access within ~24 hours",
+            "Feature parity gains vs prior HW3: Start from Park, Arrival Options, Speed Profiles, Self-Driving app, streaks, optional brake confirm",
+            "HW4 v14.3.6 continuing broader rollout (~11.9% TeslaFi-tracked fleet on 2026.20.6.11)"
           ],
           "negative_signals": [
-            "50M km is trivial vs ~12B global FSD miles \u2014 Europe remains a data rounding error",
-            "No major EU market (DE/FR/IT/ES) or UK has consumer FSD Supervised yet",
-            "Still Supervised Level 2 only \u2014 not unsupervised, not robotaxi-grade autonomy",
-            "Summer 2026 EU-wide recognition timeline from Tesla remains unproven as of mid-July",
-            "Country-by-country activation friction persists even after Dutch type approval"
+            "Still FSD Supervised (SAE L2) only \u2014 no unsupervised capability for consumer HW3 or HW4 production software",
+            "v14 Lite is a distilled/shrunk model; decision-making slower than full HW4 v14 by design",
+            "HW3 permanently excluded from unsupervised FSD and not expected to receive v15 \u2014 Lite is effectively the software ceiling until paid hardware upgrades",
+            "v14.3.6 is incremental point polish on the same v14.3.x branch covered last week (v14.3.5), not the architectural v15 overhaul",
+            "Upcoming Improvements still listed unfixed on v14.3.x notes (expand reasoning beyond destination; pothole avoidance)"
           ]
         },
-        "source": "https://teslanorth.com/2026/07/14/tesla-fsd-supervised-hits-50-million-kilometres-in-europe/",
-        "impact": "medium",
-        "_sourceCategory": "fsd"
-      },
-      {
-        "title": "FSD fleet hits 12 billion cumulative supervised miles; training data grows, software still on v14",
-        "description": "As of ~July 17, 2026 Tesla FSD (Supervised) fleet miles surpassed 12 billion globally, roughly one month after the 11 billion mark (June 9). Community tracking cited by TeslaNorth estimates 26\u201330 million new miles per day, with >4.5 billion of the total on city streets. Europe contributed 50M+ km across five small approved markets. Critical framing for the software roadmap: data volume continues to accelerate and feeds RL hard-example mining (explicitly referenced in v14.3.5 release notes for traffic lights, rare objects, animals). But cumulative miles are not a substitute for the delayed v15 10B-parameter architectural overhaul. Tesla has already stated current v14 is not safe enough for large-scale robotaxi expansion without 'major architectural improvements' \u2014 more supervised miles improve the current model but do not ship the next architecture. Metric is community-tracked, not an official Tesla IR disclosure.",
-        "date": "2026-07-17",
-        "category": "FSD v15 Software",
-        "status": "neutral",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium"
-        },
-        "evidence": {
-          "positive_signals": [
-            "12B cumulative FSD Supervised miles (~1B added in ~5 weeks from 11B on June 9)",
-            "Daily accumulation estimated at 26\u201330M miles/day \u2014 rapid data flywheel",
-            ">4.5B miles on city streets \u2014 hardest domain for end-to-end driving",
-            "v14.3.5 release notes explicitly credit fleet-sourced hard RL examples for traffic lights, rare objects, animals"
-          ],
-          "negative_signals": [
-            "All 12B miles are Supervised (L2) \u2014 not unsupervised robotaxi miles",
-            "More data does not ship v15; architecture delay to late-2026/early-2027 remains the blocker",
-            "Community-tracked metric, not official Tesla IR audited disclosure",
-            "Musk previously admitted current stack needs major architectural improvements for scale safety",
-            "Europe's contribution (~50M km \u2248 31M miles) is a rounding error vs global total"
-          ]
-        },
-        "source": "https://teslanorth.com/2026/07/17/tesla-fsd-fleet-hits-massive-12-billion-mile-milestone-as-training-speeds-up/",
+        "source": "https://www.notateslaapp.com/news/4468/tesla-fsd-v14-lite-starts-rolling-out-publicly",
         "impact": "medium",
         "_sourceCategory": "fsdv15"
       }

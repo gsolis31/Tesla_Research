@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-23",
+  "lastUpdated": "2026-08-06",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -729,20 +729,125 @@
       "lastSeen": "2026-07-23",
       "category": "Terafab Manufacturing",
       "title": "Gov. Abbott Submits Positive JETI Determinations for SpaceX Terafab; Deal Still Needs Formal Signing"
+    },
+    "https://techcrunch.com/2026/07/23/teslas-robotaxis-are-moving-in-reverse": {
+      "originalUrl": "https://techcrunch.com/2026/07/23/teslas-robotaxis-are-moving-in-reverse/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Cybercab Production",
+      "title": "Q2 paid miles actually fell 36% QoQ \u2014 hot context understated the decline"
+    },
+    "https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips": {
+      "originalUrl": "https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Cybercab Production",
+      "title": "Tesla quietly removes 'volume production in 2026' language for Cybercab from Q2 shareholder letter"
+    },
+    "https://www.axios.com/local/charlotte/2026/07/27/tesla-cybercabs-robotaxis-waymo": {
+      "originalUrl": "https://www.axios.com/local/charlotte/2026/07/27/tesla-cybercabs-robotaxis-waymo",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Cybercab Production",
+      "title": "Cybercabs appear in Charlotte, NC \u2014 14 units with Texas plates, AI Safety Operator job posted"
+    },
+    "https://www.claimsjournal.com/news/national/2026/08/06/339341.htm": {
+      "originalUrl": "https://www.claimsjournal.com/news/national/2026/08/06/339341.htm",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "FSD Country Approvals",
+      "title": "Reuters: Tesla pressured EU regulators to seal FSD safety data before October bloc-wide vote"
+    },
+    "https://x.com/TeslaNewswire/status/2079299547705102771": {
+      "originalUrl": "https://x.com/TeslaNewswire/status/2079299547705102771",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "FSD Country Approvals",
+      "title": "TCMV October 6 EU-wide FSD vote confirmed via German Ministry email; outcome far from certain"
+    },
+    "https://traficom.fi/en/news/traficom-assesses-approval-teslas-fsd-supervised-system-finland": {
+      "originalUrl": "https://traficom.fi/en/news/traficom-assesses-approval-teslas-fsd-supervised-system-finland",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "FSD Country Approvals",
+      "title": "Finland Traficom opens formal FSD review, signals possible approval before October EU vote"
+    },
+    "https://teslanorth.com/2026/08/03/tesla-2026-21-5-release-notes-fsd-supervised-14-3-7-is-here": {
+      "originalUrl": "https://teslanorth.com/2026/08/03/tesla-2026-21-5-release-notes-fsd-supervised-14-3-7-is-here/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.6 regressions reported widely; Tesla responds with v14.3.7 (2026.21.5) OTA fix"
+    },
+    "https://www.notateslaapp.com/news/4534/tesla-wont-bring-back-fsd-max-speed-option-speed-selection-improvements-coming": {
+      "originalUrl": "https://www.notateslaapp.com/news/4534/tesla-wont-bring-back-fsd-max-speed-option-speed-selection-improvements-coming",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "FSD v15 Software",
+      "title": "Ashok: Tesla permanently removing FSD max-speed offset; will learn implied speed preferences instead"
+    },
+    "https://www.teslarati.com/tesla-ai-boss-reveals-how-big-optimus-is-going-to-get": {
+      "originalUrl": "https://www.teslarati.com/tesla-ai-boss-reveals-how-big-optimus-is-going-to-get/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Optimus Production",
+      "title": "Elluswamy posts '10 million robots' correction as Giga Texas factory rises \u2014 no production numbers disclosed"
+    },
+    "https://technode.com/2026/07/27/byd-to-unveil-first-humanoid-robot-in-early-august": {
+      "originalUrl": "https://technode.com/2026/07/27/byd-to-unveil-first-humanoid-robot-in-early-august/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Optimus Production",
+      "title": "BYD debuts Xiao Di humanoid robot \u2014 Optimus competitor commercially deployed while Tesla is still pre-production"
+    },
+    "https://teslanorth.com/2026/08/06/spacex-tesla-break-ground-on-massive-16-8b-terafab-in-texas": {
+      "originalUrl": "https://teslanorth.com/2026/08/06/spacex-tesla-break-ground-on-massive-16-8b-terafab-in-texas/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Terafab Manufacturing",
+      "title": "Tesla, SpaceX Confirm Terafab Groundbreaking: $16.8B First Phase, 100M Sq Ft, Civil Work Underway"
+    },
+    "https://www.fool.com/investing/2026/08/06/why-tesla-stock-plunged-26-in-july": {
+      "originalUrl": "https://www.fool.com/investing/2026/08/06/why-tesla-stock-plunged-26-in-july/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "TSLA -26% in July \u2014 worst month since December 2022"
+    },
+    "https://www.cnbc.com/2026/07/23/tesla-gets-price-target-cuts-from-analysts-on-earnings-miss-what-theyre-saying.html": {
+      "originalUrl": "https://www.cnbc.com/2026/07/23/tesla-gets-price-target-cuts-from-analysts-on-earnings-miss-what-theyre-saying.html",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "Broad analyst price target cuts post-earnings \u2014 Hold cluster at $375-400 now institutional consensus"
+    },
+    "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results": {
+      "originalUrl": "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "Full-year 2026 delivery consensus revised to ~1.65M \u2014 barely 1% growth vs 2025"
+    },
+    "https://www.teslarati.com/tesla-semi-fsd-self-driving": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-fsd-self-driving/",
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-08-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Semi FSD timeline: 'end of year or early 2027' \u2014 explicitly sequenced behind Cybercab"
     }
   },
   "stats": {
-    "totalUrls": 104,
+    "totalUrls": 119,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 6,
-      "Cybercab Production": 9,
-      "FSD v15 Software": 7,
-      "Vehicle Production & Delivery": 7,
+      "Optimus Production": 8,
+      "Cybercab Production": 12,
+      "FSD v15 Software": 9,
+      "Vehicle Production & Delivery": 11,
       "unknown": 52,
-      "FSD Country Approvals": 5,
+      "FSD Country Approvals": 8,
       "4680 Battery Cell Production": 2,
-      "Terafab Manufacturing": 3,
+      "Terafab Manufacturing": 4,
       "AI Chip Production": 3,
       "Job Postings": 1
     }
