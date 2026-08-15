@@ -2,9 +2,9 @@
   "categoryKey": "fsdv15",
   "keyChanges": [
     {
-      "title": "FSD v14.3.6 regressions reported widely; Tesla responds with v14.3.7 (2026.21.5) OTA fix",
-      "description": "Two distinct events bookend this research window. First, around July 28, Tesla Oracle and Teslarati documented owner reports of significant regressions in FSD v14.3.6 (2026.20.6.11): brake-stuttering / shadow-braking returned, with owners reporting unnecessary brake tapping, a blue tentacle constantly extending and retracting when confused by stationary pedestrians, left-lane camping, and highway-exit misses. The issues were notable enough to generate media coverage from multiple outlets even as Tesla continued widening the v14.3.6 rollout. Tesla responded by shipping FSD v14.3.7 in software package 2026.21.5, beginning rollout August 1. As of August 6, v14.3.7 was still in limited early-access distribution (less than 1% of HW4 fleet per TeslaFi). Release notes for v14.3.7 are nearly identical to v14.3.6 (same RL/MLIR/vision-encoder stack), but user reviews confirm the brake-stuttering regression is resolved; a highway-exit miss issue reportedly persists. Critical reality: Tesla shipping a regression-fix point-release within two weeks of a prior point-release is normal product cadence but signals ongoing instability in the v14.3.x branch at the very moment v15 robotaxi builds (still at ~40% completion) carry growing investor expectations. Consumer HW4 production software has now cycled v14.3.4 → v14.3.5 → v14.3.6 (regression) → v14.3.7 in roughly six weeks — incremental polish, not the architectural leap v15 represents.",
-      "date": "2026-08-03",
+      "title": "HW3 ECU thermal failures from FSD v14 Lite prompt emergency v14.1 Lite release (2026.21.6)",
+      "description": "The most significant FSD software story of this research window is a hardware-level safety failure caused by the software stack. After Tesla pushed FSD v14 Lite wide-release (2026.20.6.11) to HW3 vehicles on July 21, a growing wave of owners reported Autopilot ECU overheating faults beginning in early August. Service-mode screenshots circulated on Tesla Motors Club and NotATeslaApp showing the APP_w141_ECU_Thermal_Issue fault triggering when board temperatures exceeded 90°C — the rated ceiling. Multiple owners documented temperatures of 96°C, some as high as 99–102°C. At 102°C, at least one owner reported the 'Start Self-Driving' button disappeared entirely, indicating the ECU had throttled out of FSD mode to protect itself. In the most severe cases, boards failed outright. The root cause is structural: the HW3 AI3 chip has 8GB of RAM and approximately one-eighth the memory bandwidth of HW4's AI4. FSD v14 Lite — a distilled version of the HW4 v14 neural net — pushes the AI3 chip harder than prior software generations, and the HW3 ECU sits at the top of the vehicle's coolant loop (farthest from the radiator), making it the most thermally vulnerable component. Tesla initially did not publicly acknowledge the issue. After approximately six weeks of internal testing, Tesla responded on August 8–9 by beginning rollout of FSD v14.1 Lite within software package 2026.21.6 — a revised build intended to reduce ECU thermal load on HW3 hardware. By August 15, the 2026.21.6 rollout had completed its 8th wave, reaching approximately 6,160+ additional vehicles. Critical reality: Tesla's first attempt at pushing a full-capability FSD model to HW3 hardware caused documented ECU thermal failures in the wild, requiring a same-cycle regression release. This is a hardware-ceiling problem that FSD v14.1 Lite partially addresses but does not eliminate. HW3 owners who suffered board failures face ambiguous warranty coverage, as Tesla had not acknowledged the software causation at time of reporting.",
+      "date": "2026-08-11",
       "category": "FSD v15 Software",
       "status": "negative",
       "sentiment": {
@@ -14,77 +14,112 @@
       },
       "evidence": {
         "positive_signals": [
-          "Tesla responded quickly — v14.3.7 regression fix shipped approximately 10 days after v14.3.6 regressions were widely reported",
-          "v14.3.7 early-access users confirm brake-stuttering fixed; one reviewer noted zero instances of brake-stabbing, wheel-jerking, or unconfident movements",
-          "Rollout to early-access and influencer pool demonstrates active monitoring and fast iteration on v14.3.x branch"
+          "Tesla responded within approximately 6 weeks with v14.1 Lite (2026.21.6) specifically to address HW3 thermal load",
+          "2026.21.6 rollout was multi-wave and reached 6,160+ vehicles by August 15, showing active distribution",
+          "Tesla Oracle, NotATeslaApp, and TeslaNorth all corroborate the fix deployment timeline"
         ],
         "negative_signals": [
-          "v14.3.6 introduced brake-stuttering / shadow-braking regression affecting multiple owners; Tesla Oracle and Teslarati documented complaints with video evidence",
-          "v14.3.7 release notes are nearly identical to v14.3.6 — no new capability, only regression patch; highway-exit miss reportedly still present",
-          "v14.3.7 still under 1% fleet rollout as of August 6 — most consumer HW4 owners remain on the regressed v14.3.6 build",
-          "Consumer production software remains on the v14.3.x branch — no v15 path visible in consumer OTA; v15 is fleet-only (robotaxi) at ~40% completion",
-          "Regression-then-patch cycle in v14.3.5→v14.3.6→v14.3.7 within six weeks signals instability as branch approaches its development ceiling"
+          "FSD v14 Lite caused Autopilot ECU board temperatures to reach 96–102°C on HW3 vehicles, above the 90°C ceiling — documented by multiple owners with service-mode screenshots",
+          "At least some HW3 boards failed outright, leaving owners without FSD and facing potentially uncovered repair costs since Tesla had not acknowledged software causation",
+          "Tesla did not proactively acknowledge the thermal issue publicly before shipping the fix — affected owners were left to discover the fault themselves",
+          "v14.1 Lite is a downgraded capability build relative to v14 Lite; HW3 owners received a capability reduction as the 'fix' for a failure Tesla's own OTA caused",
+          "HW3 architecture (8GB RAM, one-eighth memory bandwidth of HW4, worst thermal position in coolant loop) makes it fundamentally unsuitable for the full v14 model — this is a structural ceiling problem, not a tuning issue"
         ]
       },
-      "source": "https://teslanorth.com/2026/08/03/tesla-2026-21-5-release-notes-fsd-supervised-14-3-7-is-here/",
-      "impact": "medium"
+      "source": "https://www.teslaoracle.com/2026/08/11/tesla-rolls-out-fsd-v14-1-lite-after-hw3-ecu-overheating-issues-in-fsd-v14-lite/",
+      "impact": "high"
     },
     {
-      "title": "Ashok: Tesla permanently removing FSD max-speed offset; will learn implied speed preferences instead",
-      "description": "During the research window, Tesla AI chief Ashok Elluswamy publicly confirmed that the manually configurable 'Max Speed' offset for FSD — which allowed drivers to set FSD to drive above posted speed limits — will not be reinstated. Ashok stated: 'Max speed control is an anti pattern' and confirmed Tesla is instead building systems that learn implied driver speed preferences from real behavior (e.g., when a driver taps the accelerator because FSD is too slow, the system logs and adapts). This was corroborated by Teslarati and NotATeslaApp. Context: Sweden and other EU regulators explicitly cited the manual speed offset toggle as a safety and compliance concern when urging rejection of FSD homologation. The permanent removal is simultaneously a regulatory concession and an architectural pivot toward behavior-inference. Critical framing: removing manual speed controls removes a disengagement trigger (owners frustrated by overly cautious speed) but also removes user agency over a core FSD behavior, generating community confusion. This is a software behavior decision — not a v15 milestone — but it affects how all current v14.x and future v15 builds interact with speed compliance.",
-      "date": "2026-07-30",
+      "title": "2026.21.6 unified rollout delivers FSD v14.3.7 (HW4) + FSD v14.1 Lite (HW3) simultaneously",
+      "description": "Software package 2026.21.6 began rolling out on August 8–9 as a unified dual-track release: FSD v14.3.7 for AI4/HW4 vehicles alongside FSD v14.1 Lite for AI3/HW3 vehicles. This is the first time Tesla has bundled separate HW3 and HW4 FSD builds into a single software package, signaling a more deliberate fleet-management approach to the capability ceiling divergence. For HW4 owners, v14.3.7 carries the same RL/MLIR/vision-encoder improvements documented in 2026.21.5 — brake-stutter regression fixed, highway-exit miss persisting, 20% faster reaction time from MLIR compiler rewrite. For HW3 owners, v14.1 Lite is a downscaled build that reduces ECU thermal load. Rollout statistics from NotATeslaApp show 803 cars (6.4% of FSD-enrolled fleet) on 2026.21.6 as of August 9, climbing with each wave. By August 15, an 8th wave had pushed to approximately 6,160 additional vehicles in a single window. At this pace, full HW4 fleet saturation of v14.3.7 remains weeks away. The 2026.26 Summer Update branch (non-FSD) rolled out separately; FSD-merged 2026.26.x waves are estimated for late August to early September. Critical reality: the dual-track distribution in 2026.21.6 confirms the permanent software divergence between HW3 and HW4 fleets — HW3 owners receive a capability-capped lite build, not the full production stack. The v14.3.7 branch itself represents point-release polish, not the architectural leap that v15 represents. Consumer v15 OTA remains a Q4 2026 / Q1 2027 target with no confirmed date.",
+      "date": "2026-08-10",
       "category": "FSD v15 Software",
       "status": "neutral",
       "sentiment": {
-        "headline": "neutral",
+        "headline": "positive",
         "reality": "neutral",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "evidence": {
         "positive_signals": [
-          "Removing hard-coded speed offsets addresses a specific regulatory objection raised by Sweden and the EU — may unblock or accelerate EU homologation path",
-          "Behavior-inference approach (learning from accelerator taps) is architecturally more sophisticated than manual sliders and aligns with v15 AI-native design philosophy",
-          "NotATeslaApp and Teslarati both corroborate Ashok's statement"
+          "2026.21.6 unified rollout confirms Tesla actively managing HW3/HW4 software divergence in a coordinated single package",
+          "v14.3.7 brings confirmed brake-stutter fix from v14.3.6 regression plus MLIR compiler rewrite (20% faster reaction time)",
+          "Multi-wave rollout (8 waves by Aug 15) shows structured, monitored OTA distribution per notateslaapp.com statistics"
         ],
         "negative_signals": [
-          "Decision removes driver control over speed — generates significant owner confusion and frustration per community feedback covered by Teslarati",
-          "Incorrect speed-zone data is a documented source of FSD disengagements in many regions; removing user override could increase disengagements until inference model matures",
-          "No timeline given for when implied-preference speed learning ships; current v14.3.7 still uses fixed speed behavior"
+          "HW3 owners receive v14.1 Lite — a capability reduction relative to v14 Lite, forced by thermal hardware constraints; this is a ceiling, not progress",
+          "v14.3.7 is a regression-patch point release; highway-exit miss from v14.3.6 reportedly still present",
+          "Fleet saturation still weeks away as of Aug 15; most consumers remain on the regressed v14.3.6 build",
+          "FSD-merged 2026.26 Summer Update (with any incremental FSD improvements) not expected until late August / early September at earliest",
+          "Consumer v15 OTA remains a Q4 2026 / Q1 2027 target — this research window produced zero new evidence of v15 progress or timeline pull-forward"
         ]
       },
-      "source": "https://www.notateslaapp.com/news/4534/tesla-wont-bring-back-fsd-max-speed-option-speed-selection-improvements-coming",
+      "source": "https://teslanorth.com/2026/08/10/tesla-expands-unified-fsd-v14-rollout-in-2026-21-6-update/",
       "impact": "medium"
+    },
+    {
+      "title": "FSD fleet crosses 13 billion cumulative miles; 1.5 million active users at 33M miles/day pace",
+      "description": "Tesla's FSD (Supervised) fleet crossed 13 billion cumulative miles around August 3–4, 2026, per Basenor and an X.com data tracker. The most recent billion miles — from 12B to 13B — took approximately 17 days, reflecting a fleet-level cadence of roughly 33 million miles per day and approximately 1 billion miles every three weeks. The 12 billion milestone was reported July 17 (per TeslaNorth), making the 13B milestone a clean within-window development. Of the 13 billion total miles, 5 billion have been logged in urban environments — a key data quality metric for neural network training, since urban driving (intersections, pedestrians, cut-ins, construction) generates the dense edge-case scenarios most critical for FSD safety improvement. Active user count grew 56% year-over-year to 1.5 million monthly active users, consistent with FSD v14's broadly improved quality driving higher engagement per drive. Critical context: the accelerating mileage rate is a genuine positive for training data volume. However, Musk's own cited threshold of 10 billion miles for unsupervised readiness was crossed in May 2026 — and four months later, consumer unsupervised FSD remains a Q4 2026 target with no confirmed date. Raw mileage accumulation has clearly not been the sole binding constraint; software architecture (v15), regulatory approval, and liability framework remain the actual gatekeepers. The 13B milestone is a training-data input metric, not a readiness output metric.",
+      "date": "2026-08-04",
+      "category": "FSD v15 Software",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "Fleet logging 33 million miles/day — approximately 1 billion miles every three weeks — demonstrating accelerating data flywheel",
+          "5 billion of 13 billion total miles in urban environments, the highest-value training scenarios for edge-case safety",
+          "1.5 million active users (56% YoY growth) confirms FSD v14 quality improvements driving higher engagement and longer per-drive activation"
+        ],
+        "negative_signals": [
+          "Musk's 10 billion mile threshold for unsupervised readiness was crossed in May 2026 — three months later consumer unsupervised FSD is still Q4 2026 target at best, exposing the threshold as a non-binding heuristic",
+          "Mileage volume alone is not a release prerequisite; v15 architecture, regulatory framework, and geography-by-geography validation are the actual binding constraints",
+          "No new FSD safety report issued in this period to substantiate whether the additional training miles are producing measurable safety metric improvements"
+        ]
+      },
+      "source": "https://www.basenor.com/blogs/news/tesla-fsd-hits-13-billion-miles-as-user-base-reaches-1-5-million",
+      "impact": "low"
     }
   ],
   "metricUpdate": null,
+  "fleetUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Consumer HW4 FSD cycling through point releases: v14.3.6 introduced brake-stutter regression (July 28); v14.3.7 fix (2026.21.5) shipped August 1 and is in limited rollout (<1% fleet). Robotaxi fleet remains on early v15 builds (~40% of 7 planned improvement tracks). Consumer v15 OTA still end-2026/early-2027. Max-speed offset permanently removed.",
-    "nextMilestone": "FSD v14.3.7 (2026.21.5) wider rollout to HW4 consumer fleet; Grok→FSD planning integration still targeted September/fall 2026; v15 consumer OTA still targeted end-2026 or early 2027",
+    "latestStatus": "FSD v14.3.7 in slow fleet rollout (6.4% HW4 fleet as of Aug 9 per NotATeslaApp) via 2026.21.6 unified package. HW3 owners received FSD v14.1 Lite as thermal-failure fix; HW3 hardware ceiling now confirmed as structural. Consumer v15 OTA remains Q4 2026/Q1 2027 target — no new evidence of schedule pull-forward. FSD-merged Summer Update (2026.26.x) expected late August/early September.",
+    "nextMilestone": "FSD-merged 2026.26 Summer Update (late August / early September 2026); consumer FSD v15 OTA (Q4 2026 / Q1 2027 at earliest)",
     "concerns": [
-      "v14.3.x regression-then-patch cycle signals branch instability as v15 completion drags at ~40%",
-      "Consumer v15 OTA remains months away while robotaxi v15 is incomplete — large gap between fleet capability and owner experience",
-      "Removal of FSD max-speed offset may increase disengagements until behavior-inference model matures",
-      "HW3 permanently capped at v14 Lite — large legacy fleet excluded from any future unsupervised path"
+      "HW3 ECU thermal failures caused by FSD v14 Lite OTA represent a software-induced hardware damage event — Tesla's liability exposure if boards are failing under warranty is unresolved",
+      "v14.3.7 is still a point-release regression patch; no new capabilities; highway-exit miss persists",
+      "Consumer v15 timeline remains vague — 'end of 2026 or early 2027' has not tightened despite robotaxi fleet already running early v15 builds",
+      "FSD-merged Summer Update (2026.26.x) is a branch merge, not a new FSD capability version; investor expectations for a Q3 software milestone may be disappointed",
+      "HW3 software divergence is now permanent: v14.1 Lite is not the full v14 stack, and HW3 will never receive v15 — affecting ~2 million vehicles and their FSD subscription revenue"
     ]
   },
   "urlsSeen": [
-    "https://teslanorth.com/2026/08/03/tesla-2026-21-5-release-notes-fsd-supervised-14-3-7-is-here/",
+    "https://teslanorth.com/2026/08/10/tesla-expands-unified-fsd-v14-rollout-in-2026-21-6-update/",
+    "https://www.teslaoracle.com/2026/08/11/tesla-rolls-out-fsd-v14-1-lite-after-hw3-ecu-overheating-issues-in-fsd-v14-lite/",
+    "https://teslanorth.com/2026/08/03/some-tesla-hw3-owners-report-overheating-issues-after-fsd-v14-lite-update/",
+    "https://www.notateslaapp.com/news/4536/tesla-hw3-computers-are-overheating-on-fsd-v14-lite",
+    "https://www.notateslaapp.com/software-updates/version/2026.21.6/release-notes",
+    "https://www.notateslaapp.com/software-updates/version/2026.21.6/statistics",
     "https://www.teslaoracle.com/2026/08/06/tesla-fsd-v14-3-7-fixes-regressions-found-in-the-previous-version-video-reviews/",
-    "https://www.teslaoracle.com/2026/07/28/tesla-owners-report-regressions-in-fsd-v14-3-6-2026-20-6-11-the-update-still-goes-wide-release/",
-    "https://www.teslarati.com/tesla-full-self-driving-v14-3-7-early-review-fsd-saved-me-accident/",
-    "https://www.teslarati.com/tesla-full-self-driving-v14-3-6-review-rare-regression-bright-spots/",
-    "https://www.notateslaapp.com/software-updates/version/2026.21.5/release-notes",
-    "https://www.notateslaapp.com/news/4534/tesla-wont-bring-back-fsd-max-speed-option-speed-selection-improvements-coming",
-    "https://www.teslarati.com/tesla-fsd-speed-strategy-owners-confused/"
+    "https://www.basenor.com/blogs/news/tesla-fsd-hits-13-billion-miles-as-user-base-reaches-1-5-million",
+    "https://www.basenor.com/blogs/news/tesla-update-2026-21-6",
+    "https://www.teslaoracle.com/2026/08/04/tesla-summer-update-2026-26-features-release-notes-and-rollout-status/"
   ],
   "metadata": {
     "sourcesSearched": [
-      "notateslaapp.com",
       "teslanorth.com",
+      "teslaoracle.com",
       "teslarati.com",
-      "teslaoracle.com"
+      "notateslaapp.com",
+      "basenor.com",
+      "teslascope.com",
+      "x.com"
     ],
-    "dateRange": "2026-07-23 to 2026-08-06",
+    "dateRange": "2026-08-06 to 2026-08-15",
     "skipReason": null
   }
 }

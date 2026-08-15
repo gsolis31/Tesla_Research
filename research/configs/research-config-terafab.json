@@ -1,73 +1,46 @@
 {
   "categoryKey": "terafab",
-  "dateFrom": "2026-07-23",
-  "dateTo": "2026-08-06",
-  "weekOf": "2026-08-03",
+  "dateFrom": "2026-08-06",
+  "dateTo": "2026-08-15",
+  "weekOf": "2026-08-10",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
   "hotContext": {
-    "criticalNews": "Political track for Grimes County SpaceX Terafab JETI advanced on July 21: Abbott and both school districts submitted positive determinations (per KBTX/Comptroller confirmation), but agreements still require formal three-party signing and Comptroller filing\u2014no verified groundbreaking. Separately, Tesla\u2019s Q2 update and earnings call confirmed early-stage construction and equipment procurement for an Austin semiconductor/development fab, with Musk calling it high-risk/high-payoff and necessary for Optimus chip supply.",
+    "criticalNews": "Terafab groundbreaking confirmed August 6; JETI tax abatements signed and active; civil work and foundation prep underway in Grimes County. First phase $16.8B investment; total project scope ~$119B across four phases. 100+ million sq ft facility targeting 3,000+ jobs and production of logic, memory, and packaging chips for Tesla and SpaceX.",
     "recentKeyChanges": [
       {
-        "title": "Gov. Abbott Submits Positive JETI Determinations for SpaceX Terafab; Deal Still Needs Formal Signing",
-        "description": "On July 21, 2026, KBTX confirmed with the Texas Comptroller\u2019s office that Governor Greg Abbott and both Grimes County school districts (Iola ISD and Anderson-Shiro CISD) have submitted positive determinations on all eight SpaceX Terafab JETI school-property-tax agreements\u2014clearing the discretionary political gates that had left the project in limbo after the July 15 statutory decision deadline. Official verification letters were not yet posted to the Comptroller\u2019s website at the time of reporting, and the Governor\u2019s office did not respond to KBTX comment requests. With positive determinations from all three required parties, the remaining step is formal three-party execution of the agreements and filing with the Comptroller before Phase 1 construction can begin under the JETI framework. SpaceX still targets Phase 1 construction before year-end 2026 on the ~22,000-acre Grimes County site near Gibbons Creek; building permits and groundwater applications were not on file as of prior mid-June document reporting. Political/tax track advanced, but dirt has not moved and the abatements remain unsigned.",
-        "date": "2026-07-21",
+        "title": "Tesla, SpaceX Confirm Terafab Groundbreaking: $16.8B First Phase, 100M Sq Ft, Civil Work Underway",
+        "description": "On August 6, 2026, Tesla and SpaceX made an official public announcement confirming the Terafab chip manufacturing facility in Grimes County, Texas will proceed with $16.8 billion in first-phase investment. Governor Abbott endorsed the project publicly, and SpaceX representatives met with Grimes County residents on August 5-6, confirming JETI tax agreements are signed/active and civil work and foundation preparation are starting 'almost immediately.' The facility is planned at 100+ million square feet \u2014 designed to be 'the largest and most valuable building on Earth by far' (Musk's public statement). The plant will vertically integrate logic, memory, packaging, and testing; employ at least 3,000 people; and supply chips for Tesla Optimus robots, Cybercabs, and SpaceX space-based data centers. Build permits were issued around July 26 (four building permits for the Advanced Technology Chip Fabrication facility), and foundation work (excavation, GeoPiers, gravel base) is visibly progressing. The Texas Enterprise Fund granted $30 million toward the project, and SpaceX paid $10 million to Grimes County satisfying a deal milestone. Total multi-phase project scope remains at ~$119 billion. This marks the transition from political/tax approval track (completed July 21-23 with JETI signing) to active site preparation and early construction.",
+        "date": "2026-08-06",
         "category": "Terafab Manufacturing",
-        "status": "neutral",
+        "status": "positive",
         "sentiment": {
           "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium"
-        },
-        "evidence": {
-          "positive_signals": [
-            "Texas Comptroller\u2019s office confirmed to KBTX that Abbott submitted positive JETI determinations",
-            "Both Grimes County school districts and the Governor have now submitted positive determinations\u2014all three required political parties aligned",
-            "Clears the discretionary gubernatorial gate that could have voided the July 14 school-board 5-2 approvals",
-            "Final remaining JETI step is formal three-party signing and Comptroller filing rather than another discretionary no-vote window"
-          ],
-          "negative_signals": [
-            "Official verification letters still not posted on Comptroller website as of July 21 reporting\u2014public record incomplete",
-            "Agreements are not yet formally executed or filed; construction cannot start under JETI until signing/filing complete",
-            "No confirmation of building permits or groundwater applications for the Grimes County megasite",
-            "Year-end 2026 Phase 1 construction target remains aspirational with mid/late July and unsigned deals",
-            "Governor\u2019s office gave no on-record statement; process opacity continues after missed public July 15 decision visibility",
-            "Tax abatements do not equal fab equipment, process qualification, talent, or first wafer\u2014political progress \u2260 manufacturing progress",
-            "Project entity remains TeraFab AI, LLC (SpaceX SPE); community water/noise/identity opposition unresolved"
-          ]
-        },
-        "source": "https://www.kbtx.com/2026/07/21/gov-abbott-signals-approval-spacexs-terafab-jeti-tax-agreements/",
-        "impact": "high",
-        "_sourceCategory": "terafab"
-      },
-      {
-        "title": "Tesla Q2 Update: Early-Stage Austin Semiconductor Fab Construction and Equipment Procurement Underway",
-        "description": "In its Q2 2026 shareholder update (released with July 22 earnings), Tesla stated it is making progress on construction and equipment procurement for a semiconductor fab in Austin, while labeling the project 'still in its early stages' and critical for long-term logic/memory supply. Highlights also said site selection, preparation, construction, and equipment procurement progressed in the quarter for solar and semiconductor manufacturing, with multi-year semiconductor manufacturing capacity build-out 'underway.' On the earnings call, Musk called Terafab an 'amazing initiative' and a 'high-risk, high-payoff bet on AI chips,' confirmed equipment orders for a development fab in Austin, and described an integrated stack (lithography mask production, logic, memory, packaging, and chip testing under one roof) for faster iteration\u2014framing it as necessary to scale Optimus. Capex more than doubled to $5.8B in Q2 with free cash flow of negative $1.1B and full-year spend guided above $25B. This is an early development-fab signal in Austin, not proof of Grimes County megafab groundbreaking or volume wafer production; dual tracks (Tesla Austin development fab vs. SpaceX Grimes JETI megasite) remain only partially closed politically and still early operationally.",
-        "date": "2026-07-22",
-        "category": "Terafab Manufacturing",
-        "status": "neutral",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
+          "reality": "positive",
           "confidence": "high"
         },
         "evidence": {
           "positive_signals": [
-            "Official Q2 update: construction and equipment procurement progressing for semiconductor fab in Austin",
-            "Musk confirmed equipment orders placed for development fab (earnings call, reported by The Register and others)",
-            "Company frames fab as critical to long-term logic/memory supply and Optimus scale",
-            "Capex surge ($5.8B Q2; >$25B full-year guide) shows real cash commitment to multi-year infrastructure including semiconductor manufacturing"
+            "Official announcement by Tesla/SpaceX on August 6 with Governor Abbott public endorsement",
+            "JETI tax agreements confirmed signed and active by SpaceX reps at county meeting",
+            "Four building permits issued around July 26 specifically for Advanced Technology Chip Fabrication facility",
+            "Foundation prep work (excavation, GeoPiers, gravel base) visibly underway and accelerating per drone observations",
+            "Civil work and foundation prep to start 'almost immediately' per official SpaceX statement",
+            "$16.8 billion first-phase capital commitment announced and publicly confirmed",
+            "Texas Enterprise Fund $30 million grant awarded; $10 million payment to Grimes County completed by SpaceX",
+            "100+ million square foot vertically integrated facility design (logic, memory, packaging, testing under one roof)",
+            "3,000+ planned jobs from Grimes and Brazos County",
+            "Specific supply commitments articulated: Optimus chips, Cybercab chips, SpaceX data center chips"
           ],
           "negative_signals": [
-            "Tesla itself labels Austin fab 'still in its early stages'\u2014not a production ramp milestone",
-            "Musk/Register framing is a development fab, not demonstrated high-volume manufacturing",
-            "No public permit/groundbreaking package for Grimes County megasite; JETI deals still need formal signing after Abbott determination",
-            "Musk explicitly called Terafab a high-risk, high-payoff bet\u2014execution risk acknowledged by management",
-            "Negative free cash flow (\u2212$1.1B) and margin compression show investment cost before any fab revenue or wafer output",
-            "Little operational detail on tool install schedule, process node, yield path, or first-silicon date for self-fab",
-            "Austin development-fab progress does not by itself de-risk the separate SpaceX Grimes County $10B\u2013$119B multi-phase claim set"
+            "Terafab still remains pre-production; first-phase is ~$16.8B of ~$119B total project cost",
+            "No specific timeline given for when production will begin (only 'months' for full-scale construction)",
+            "Foundation work is early-stage civil; tool installation, process qualification, and first wafer production remain years away",
+            "Land rights and environmental permitting (water, noise, traffic) still ongoing; community opposition voiced at county meeting",
+            "First-phase alone expected to take multiple years; multi-phase build-out extends well past 2026",
+            "Project described as 'high-risk, high-payoff' by Musk earlier; execution risk acknowledged in Q2 earnings"
           ]
         },
-        "source": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+        "source": "https://teslanorth.com/2026/08/06/spacex-tesla-break-ground-on-massive-16-8b-terafab-in-texas/",
         "impact": "high",
         "_sourceCategory": "terafab"
       }

@@ -1,86 +1,12 @@
 {
   "categoryKey": "aiChip",
-  "dateFrom": "2026-07-23",
-  "dateTo": "2026-08-06",
-  "weekOf": "2026-08-03",
+  "dateFrom": "2026-08-06",
+  "dateTo": "2026-08-15",
+  "weekOf": "2026-08-10",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
   "hotContext": {
     "criticalNews": "Post-Q2: AI5 volume production still guided to 2027 ('hopefully next year'); Samsung/TSMC credited for Optimus compute investment and Micron for multi-year memory allocation. AI6 remains aspirational ('best edge chip') with no new tape-out date. Training compute (Cortex 1/2) >200 MW combined in Texas. No public AI5 wafer/yield/board metrics.",
-    "recentKeyChanges": [
-      {
-        "title": "Q2 Call: AI5 Volume Still 'Hopefully 2027'; Samsung/TSMC/Micron Named; AI6 Boast Unbacked",
-        "description": "On Tesla's July 22, 2026 Q2 earnings call, Musk reaffirmed that AI5 is expected in volume production 'hopefully next year' (2027), saying the chip design team 'exceeded expectations' \u2014 a design-quality compliment, not a production pull-forward. He publicly thanked Samsung and TSMC for major compute-capacity investments supporting Optimus (and robotaxi) silicon, and thanked Micron for a 'significant' multi-year memory allocation at 'reasonable' terms amid what he called 'pretty insane' memory prices (a 'hundred-year flood' / biggest price jump he has seen). Nikkei and TrendForce quote Musk claiming AI6 will be 'the best edge computing chip in the world' while development continues; no AI6 tape-out or production date was advanced beyond prior mid-2028 framing. Official Q2 shareholder deck quantifies Cortex training clusters (Cortex 1 >90 MW, Cortex 2 >115 MW in production; onsite Texas MW more than doubled in H1 2026) but contains no AI5 wafer starts, yield figures, or board-volume milestones. Reality check: Samsung foundry-side AI5 tape-out (July 13) already filed last week; volume AI5 remains H2 2027 / vehicle meaningful deployment 2028+; Cybercab and current fleets still ship on AI4; memory allocation is necessary insurance in a shortage, not proof of inference-chip ramp.",
-        "date": "2026-07-22",
-        "category": "AI Chip Production",
-        "status": "neutral",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "high",
-          "rationale": "Named foundry/memory partners and 'design exceeded expectations' sound bullish, but AI5 volume date is unchanged at 2027, AI6 claim is unbacked marketing, and no new wafer/yield/board metrics were disclosed."
-        },
-        "evidence": {
-          "positive_signals": [
-            "Musk: AI5 chip design team 'exceeded expectations'; volume production 'hopefully next year' (2027) reiterated on official call",
-            "Samsung and TSMC explicitly credited for major compute investments tied to Optimus/robotaxi silicon scale-up",
-            "Micron allocated significant multi-year memory supply on 'reasonable' terms despite industry DRAM crunch (TrendForce, Wccftech, earnings transcript quotes)",
-            "Cortex 1 >90 MW and Cortex 2 >115 MW both in production; Tesla onsite Texas training compute (MW) more than doubled in H1 2026 (Q2 shareholder update)",
-            "Dual-source AI5 path (Samsung Taylor 2nm + TSMC) still intact after July 13 foundry tape-out context"
-          ],
-          "negative_signals": [
-            "AI5 volume still 2027 \u2014 no acceleration vs prior mid/late-2027 guidance; nearly ~2 years behind original timelines",
-            "No disclosed AI5 wafer starts, yield %, engineering-sample qualification status, or completed board counts toward the 'hundreds of thousands of boards' line-switchover bar",
-            "AI6 'best edge chip in the world' is aspirational PR with no new tape-out/date; AI6 previously slipped toward mid-2028 on Samsung 2nm risk",
-            "Vehicles, Robotaxi Model Ys, and Cybercab still launching/shipping on AI4 (or AI4.x) \u2014 AI5 not in commercial hardware yet",
-            "Memory 'win' is defensive amid industry-wide DRAM shortage (Cook/Musk 'hundred-year flood'); does not prove inference-chip manufacturing readiness",
-            "Q2 deck's only AI Inference Compute paragraph focuses on early-stage Austin semiconductor fab (Terafab path) \u2014 foundry partners still carry near-term volume risk",
-            "Not a Tesla App / call summary: vehicle production also described as electronics/chip constrained alongside batteries \u2014 supply tightness, not abundance"
-          ],
-          "key_metrics": {
-            "actual": "AI5 volume target still 2027; Cortex 1 >90 MW + Cortex 2 >115 MW training; no public AI5 unit production count",
-            "target": "High-volume AI5 boards for vehicle line switchover mid/late 2027; AI6 thereafter",
-            "trajectory": "Design milestones (April design tape-out; July Samsung foundry tape-out) progressing; manufacturing volume still ~12+ months out with no yield proof"
-          }
-        },
-        "source": "https://www.notateslaapp.com/news/4481/summary-of-teslas-2026-q2-earnings-call-cybercab-fsd-ai4-and-more",
-        "impact": "high",
-        "_sourceCategory": "aiChip"
-      },
-      {
-        "title": "Micron Multi-Year Memory Allocation Highlighted; AI Board BOM Still Supply-Risk Bound",
-        "description": "Coverage of the July 22 earnings call (TrendForce 2026-07-23, Wccftech 2026-07-22, Bloomberg headline) centers on Musk thanking Micron for making 'room for Tesla in the years to come' with significant memory allocation at non-panic pricing. TrendForce frames this against Micron's Strategic Customer Agreements (3\u20135 year price+volume locks; 16 SCAs covering ~20% DRAM / ~1/3 NAND at Micron's prior call) and notes auto OEMs already face multi-billion DRAM inflation. For Tesla AI computers, high unified memory (Electronics Weekly's July 13 A15/AI5 writeup cited up to 144GB-class configs in secondary coverage \u2014 treat as unverified spec chatter) makes DRAM a first-class BOM risk alongside Samsung/TSMC logic wafers. Positive for de-risking Optimus/Robotaxi board builds if allocation is real; critical caveat: allocation \u2260 free capacity, terms are undisclosed, and logic foundry 2nm yield at Taylor remains the gating item for AI5 volume \u2014 memory thanks do not move the AI5 production clock.",
-        "date": "2026-07-23",
-        "category": "AI Chip Production",
-        "status": "neutral",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium",
-          "rationale": "Multiple outlets quote Musk on Micron allocation, but contract size/price/duration are undisclosed and memory relief does not resolve 2nm AI5 manufacturing risk."
-        },
-        "evidence": {
-          "positive_signals": [
-            "Musk on-call thanks to Micron for significant multi-year memory allocation at 'reasonable' prices (transcript quotes via TrendForce/Investing.com)",
-            "Public signal that Tesla secured DRAM amid industry shortage while peers (e.g., Apple/GM) warn of price shock",
-            "Aligns with Optimus scale-up narrative naming TSMC, Samsung, and Micron as key silicon partners (Digitimes/Nikkei secondary)"
-          ],
-          "negative_signals": [
-            "No disclosed volume, ASP, or SCA contract details \u2014 cannot verify 'significant' or 'reasonable'",
-            "Industry DRAM shortage ongoing; allocation can be re-prioritized if hyperscalers bid higher",
-            "Does not address Samsung Taylor 2nm yield or AI5 wafer start schedule \u2014 still the primary production gate",
-            "AI5 board volume for vehicles still not expected until 2027+; memory reservation is pre-positioning, not shipment evidence"
-          ],
-          "key_metrics": {
-            "actual": "Qualitative Micron allocation only; no public unit or $ figure",
-            "target": "Secure DRAM/HBM-class supply for AI5/AI6 boards and Optimus at scale",
-            "trajectory": "Supply-chain de-risking messaging; manufacturing proof still missing"
-          }
-        },
-        "source": "https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply/",
-        "impact": "medium",
-        "_sourceCategory": "aiChip"
-      }
-    ]
+    "recentKeyChanges": []
   },
   "categoryName": "AI Chip Production",
   "priority": "medium",

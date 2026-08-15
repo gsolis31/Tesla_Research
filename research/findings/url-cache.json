@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-08-06",
+  "lastUpdated": "2026-08-15",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -834,22 +834,184 @@
       "lastSeen": "2026-08-06",
       "category": "Vehicle Production & Delivery",
       "title": "Tesla Semi FSD timeline: 'end of year or early 2027' \u2014 explicitly sequenced behind Cybercab"
+    },
+    "https://www.axios.com/2026/08/14/tesla-sought-permit-for-5000-robotaxis-in-las-vegas-it-got-10": {
+      "originalUrl": "https://www.axios.com/2026/08/14/tesla-sought-permit-for-5000-robotaxis-in-las-vegas-it-got-10",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Cybercab Production",
+      "title": "Nevada grants Las Vegas robotaxi permit capped at 10 vehicles \u2014 Tesla had requested 5,000"
+    },
+    "https://www.basenor.com/blogs/news/cybercab-vin-2172-spotted-how-far-along-is-production": {
+      "originalUrl": "https://www.basenor.com/blogs/news/cybercab-vin-2172-spotted-how-far-along-is-production",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Cybercab Production",
+      "title": "Cybercab VIN #2172 spotted in San Diego \u2014 implies 2,000+ units produced, zero in paid public fleet"
+    },
+    "https://teslanorth.com/2026/08/10/tesla-reveals-first-cybercab-built-with-integrated-starlink-dish": {
+      "originalUrl": "https://teslanorth.com/2026/08/10/tesla-reveals-first-cybercab-built-with-integrated-starlink-dish/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Cybercab Production",
+      "title": "Tesla integrates Starlink antenna into first Cybercab production unit \u2014 operational purpose unclear"
+    },
+    "https://www.teslarati.com/teslas-driverless-cybercab-just-passed-a-big-test-with-state-governor": {
+      "originalUrl": "https://www.teslarati.com/teslas-driverless-cybercab-just-passed-a-big-test-with-state-governor/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Cybercab Production",
+      "title": "Florida Governor DeSantis rides in Cybercab at SunTrax \u2014 endorses vehicle but stresses safety caution"
+    },
+    "https://www.newsanyway.com/2026/08/09/tesla-fsd-investigation-puts-musks-espresso-posts-under-federal-scrutiny": {
+      "originalUrl": "https://www.newsanyway.com/2026/08/09/tesla-fsd-investigation-puts-musks-espresso-posts-under-federal-scrutiny",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD Country Approvals",
+      "title": "NHTSA escalates EA26002 probe to include Musk social-media posts encouraging distracted FSD use"
+    },
+    "https://www.autonews.com/tesla/ane-tesla-demands-secrecy-in-europe-for-self-driving-europe-0807": {
+      "originalUrl": "https://www.autonews.com/tesla/ane-tesla-demands-secrecy-in-europe-for-self-driving-europe-0807/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD Country Approvals",
+      "title": "EU regulators and European Commission publicly silent as data-secrecy fallout widens post-Reuters"
+    },
+    "https://cleantechnica.com/2026/08/12/tesla-fsd-hurdles-in-china-secrecy-in-europe": {
+      "originalUrl": "https://cleantechnica.com/2026/08/12/tesla-fsd-hurdles-in-china-secrecy-in-europe/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD Country Approvals",
+      "title": "Tesla FSD China full approval misses Q3 2026 target \u2014 dual-deadline slip continues"
+    },
+    "https://www.teslaoracle.com/2026/08/11/tesla-rolls-out-fsd-v14-1-lite-after-hw3-ecu-overheating-issues-in-fsd-v14-lite": {
+      "originalUrl": "https://www.teslaoracle.com/2026/08/11/tesla-rolls-out-fsd-v14-1-lite-after-hw3-ecu-overheating-issues-in-fsd-v14-lite/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD v15 Software",
+      "title": "HW3 ECU thermal failures from FSD v14 Lite prompt emergency v14.1 Lite release (2026.21.6)"
+    },
+    "https://teslanorth.com/2026/08/10/tesla-expands-unified-fsd-v14-rollout-in-2026-21-6-update": {
+      "originalUrl": "https://teslanorth.com/2026/08/10/tesla-expands-unified-fsd-v14-rollout-in-2026-21-6-update/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD v15 Software",
+      "title": "2026.21.6 unified rollout delivers FSD v14.3.7 (HW4) and FSD v14.1 Lite (HW3) simultaneously"
+    },
+    "https://www.basenor.com/blogs/news/tesla-fsd-hits-13-billion-miles-as-user-base-reaches-1-5-million": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-fsd-hits-13-billion-miles-as-user-base-reaches-1-5-million",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "FSD v15 Software",
+      "title": "FSD fleet crosses 13 billion cumulative miles; 1.5 million active users at 33M miles/day pace"
+    },
+    "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm": {
+      "originalUrl": "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Job Postings",
+      "title": "Tesla Total Job Postings: ~5,000 Open Positions in August 2026 (Flat YoY)"
+    },
+    "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries": {
+      "originalUrl": "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Job Postings",
+      "title": "FSD Vehicle Operator Expansion: 9-Market Hiring for Autonomous Testing Data"
+    },
+    "https://www.basenor.com/blogs/news/optimus-factory-at-giga-texas-south-beam-reveals-final-building-length": {
+      "originalUrl": "https://www.basenor.com/blogs/news/optimus-factory-at-giga-texas-south-beam-reveals-final-building-length",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Optimus Production",
+      "title": "Giga Texas Optimus factory south perimeter beam emerges, locking building footprint \u2014 production still 12+ months away"
+    },
+    "https://www.teslarati.com/teslas-mysterious-robovan-makes-a-sneak-peek-with-optimus-in-terafab-video": {
+      "originalUrl": "https://www.teslarati.com/teslas-mysterious-robovan-makes-a-sneak-peek-with-optimus-in-terafab-video/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Optimus Production",
+      "title": "Musk Terafab concept render features Optimus \u2014 brand content released as production start window elapsed"
+    },
+    "https://www.tipranks.com/news/the-fly/tesla-price-target-lowered-to-350-from-400-at-jefferies-thefly-news": {
+      "originalUrl": "https://www.tipranks.com/news/the-fly/tesla-price-target-lowered-to-350-from-400-at-jefferies-thefly-news",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Vehicle Production & Delivery",
+      "title": "Jefferies cuts Tesla EBIT forecast 37%, lowers price target to $350 \u2014 August 7 post-earnings follow-through"
+    },
+    "https://247wallst.com/investing/2026/08/15/tesla-stock-is-recovering-the-3-problems-underneath-it-are-not": {
+      "originalUrl": "https://247wallst.com/investing/2026/08/15/tesla-stock-is-recovering-the-3-problems-underneath-it-are-not/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Vehicle Production & Delivery",
+      "title": "TSLA bounces from $297 low to ~$330-345 \u2014 sentiment recovery without fundamental repair"
+    },
+    "https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026": {
+      "originalUrl": "https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla China: domestic sales fell 9% YoY in H1 2026 while exports surge 127% \u2014 headline wholesale figures mask domestic c"
+    },
+    "https://www.teslarati.com/elon-musk-confirms-tesla-ai6-chip-project-dojo-successor": {
+      "originalUrl": "https://www.teslarati.com/elon-musk-confirms-tesla-ai6-chip-project-dojo-successor/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "AI Chip Production",
+      "title": "Dojo Strategy Pivot: AI6 Now Serves as Training Supercomputer"
+    },
+    "https://www.teslarati.com/tesla-finalizes-ai5-chip-design-elon-musk-makes-bold-claim-capability": {
+      "originalUrl": "https://www.teslarati.com/tesla-finalizes-ai5-chip-design-elon-musk-makes-bold-claim-capability/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "AI Chip Production",
+      "title": "AI5 Design Finalized, Sample Production Proceeding, Volume Production Targeted for 2027"
+    },
+    "https://www.basenor.com/blogs/news/tesla-semi-on-track-for-2026-battery-capacity-still-the-bottleneck": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-semi-on-track-for-2026-battery-capacity-still-the-bottleneck",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "4680 Battery Cell Production",
+      "title": "Q2 2026 IR: 4680 Battery Cell Capacity Remains Global Production Bottleneck"
+    },
+    "https://teslanorth.com/2026/08/13/tesla-terafab-construction-already-underway-in-texas-drone-footage-reveals": {
+      "originalUrl": "https://teslanorth.com/2026/08/13/tesla-terafab-construction-already-underway-in-texas-drone-footage-reveals/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Terafab Construction Accelerating: Drone Footage Confirms Excavation, GeoPiers, and Site Leveling Underway"
+    },
+    "https://www.teslarati.com/space-finally-faced-the-people-living-next-to-its-next-terafab-mega-project": {
+      "originalUrl": "https://www.teslarati.com/space-finally-faced-the-people-living-next-to-its-next-terafab-mega-project/",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Terafab Community Meeting: JETI Tax Agreements Confirmed Active, $20M Annual Payment to County Locked In"
+    },
+    "https://www.tipranks.com/news/the-fly/tesla-q3-deliveries-to-miss-consensus-estimate-says-glj-research": {
+      "originalUrl": "https://www.tipranks.com/news/the-fly/tesla-q3-deliveries-to-miss-consensus-estimate-says-glj-research",
+      "firstSeen": "2026-08-15",
+      "lastSeen": "2026-08-15",
+      "category": "Vehicle Production & Delivery",
+      "title": "Q3 2026 delivery consensus forming around 461,500 \u2014 GLJ Research projects miss at 456,600"
     }
   },
   "stats": {
-    "totalUrls": 119,
+    "totalUrls": 142,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 8,
-      "Cybercab Production": 12,
-      "FSD v15 Software": 9,
-      "Vehicle Production & Delivery": 11,
+      "Optimus Production": 10,
+      "Cybercab Production": 16,
+      "FSD v15 Software": 12,
+      "Vehicle Production & Delivery": 15,
       "unknown": 52,
-      "FSD Country Approvals": 8,
-      "4680 Battery Cell Production": 2,
+      "FSD Country Approvals": 11,
+      "4680 Battery Cell Production": 3,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 3,
-      "Job Postings": 1
+      "AI Chip Production": 5,
+      "Job Postings": 3,
+      "Terafab In-House Chip Manufacturing": 2
     }
   }
 }

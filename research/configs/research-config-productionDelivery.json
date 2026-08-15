@@ -1,84 +1,112 @@
 {
   "categoryKey": "productionDelivery",
-  "dateFrom": "2026-07-23",
-  "dateTo": "2026-08-06",
-  "weekOf": "2026-08-03",
+  "dateFrom": "2026-08-06",
+  "dateTo": "2026-08-15",
+  "weekOf": "2026-08-10",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
   "hotContext": {
     "criticalNews": "Q2 2026 earnings (July 22): record $28.2B revenue and already-known 480k deliveries, but non-GAAP EPS $0.33 (miss), op margin 1.4%, FCF \u2212$1.09B on $5.8B CapEx. Regulatory credits collapsed to $146M. TSLA \u2212~14.5% on July 23. Volume without profit; full-year CapEx >$25B keeps auto P&L under pressure.",
     "recentKeyChanges": [
       {
-        "title": "Q2 earnings: record $28.2B revenue, but op margin collapses to 1.4% and FCF goes negative",
-        "description": "Tesla reported Q2 2026 financials on July 22 after the already-known 480,126 delivery / 451,758 production print. Revenue hit a record $28.236B (+26% YoY, beat ~$26.4\u201327.6B Street), and TTM revenue crossed $100B for the first time. The P&L underneath is ugly: non-GAAP EPS $0.33 vs ~$0.53 expected (miss of ~$0.20), operating income $398M (\u221257% YoY), operating margin 1.4% (vs 4.1% YoY and vs ~5.4% pre-earnings Street consensus), free cash flow \u2212$1.092B on CapEx of $5.789B (+142% YoY). Gross margin held relatively better at 16.8% (\u221241 bps YoY), so the damage was opex and mix, not just discounting. Regulatory credit revenue collapsed to $146M (\u221267% YoY from $439M), removing near-pure profit after the federal EV credit / CAFE penalty market evaporated. GAAP net income $1.114B (\u22125% YoY) was propped by ~$590M other income (bitcoin MTM / FX). Management framed CapEx run-rate above $25B for full-year 2026 as deliberate AI/robotics/autonomy spend. Market verdict: TSLA fell ~14.5% on July 23 to ~$320, erasing >$140B market value \u2014 one of the steeper single-day drops in years. Critical read: the Q2 delivery beat did not translate into a healthy auto quarter. Volume was inventory-fed (prod 28k below del), ASP pressure + AI opex + dead credit line crushed operating leverage. Cash burn better than the \u2212$3.25B Street worst-case, but 1.4% op margin is incompatible with a re-rating of the car business.",
-        "date": "2026-07-22",
-        "category": "Vehicle Production & Delivery",
-        "status": "negative",
-        "sentiment": {
-          "headline": "neutral",
-          "reality": "negative",
-          "confidence": "high",
-          "rationale": "Headlines split 'revenue beat / EPS miss'; reality is a structural profit collapse (1.4% op margin, negative FCF, credits gone) that the stock priced with a ~14.5% one-day drop."
-        },
-        "evidence": {
-          "positive_signals": [
-            "Record Q2 revenue $28.236B (+26% YoY), first real top-line growth in >1 year; TTM revenue >$100B",
-            "Revenue beat Street (~$26.4\u201327.6B consensus) on 480,126 Q2 deliveries already printed",
-            "Total gross margin 16.8% only \u221241 bps YoY \u2014 not a full discount-driven collapse at the gross line",
-            "FCF \u2212$1.09B and CapEx $5.8B both better than pre-earnings Street worst-case (\u2212$3.25B FCF / ~$6.7B CapEx)",
-            "Services & Other revenue +50% to $4.581B; energy storage 13.5 GWh (+41% YoY) diversifies top line",
-            "Cash + investments still $43.5B \u2014 liquidity not an immediate crisis"
-          ],
-          "negative_signals": [
-            "Non-GAAP EPS $0.33 vs ~$0.53 expected \u2014 miss of ~38% vs Street",
-            "Operating income $398M (\u221257% YoY); operating margin only 1.4% vs 4.1% YoY and vs ~5.4% pre-call consensus",
-            "Free cash flow \u2212$1.092B \u2014 first cash-burning quarter since early 2024 as CapEx hit $5.789B (+142% YoY)",
-            "Regulatory credits $146M (\u221267% YoY from $439M) \u2014 structural profit line largely gone post-EV-credit/CAFE changes",
-            "GAAP NI $1.114B leaned on ~$590M other income (bitcoin/FX); underlying auto profitability weaker than headline NI",
-            "Q2 volume beat was inventory drawdown (451,758 produced vs 480,126 delivered) \u2014 not a production re-acceleration",
-            "Full-year CapEx guided >$25B; management accepts multi-quarter capital inefficiency for AI/Optimus/robotaxi with no near-term auto margin recovery path",
-            "TSLA \u2212~14.5% on July 23 (~$374 \u2192 ~$320), >$140B market-cap wipe \u2014 market rejected the 'volume without profit' print"
-          ],
-          "key_metrics": {
-            "actual": "Rev $28.24B; non-GAAP EPS $0.33; op margin 1.4%; FCF \u2212$1.09B; CapEx $5.79B; op income $398M",
-            "target": "Street ~$26.4\u201327.6B rev; ~$0.53\u20130.55 EPS; ~5.4% op margin; FCF \u2212$3.25B / CapEx ~$6.7B pre-print",
-            "trajectory": "Top-line recovered on inventory-fed volume; bottom-line and cash generation deteriorated as AI opex and lost credits destroy operating leverage"
-          }
-        },
-        "source": "https://teslanorth.com/2026/07/22/tesla-hits-28-2-billion-revenue-in-q2-as-production-begins-for-cybercab/",
-        "impact": "high",
-        "_sourceCategory": "productionDelivery"
-      },
-      {
-        "title": "TSLA drops ~14.5% post-earnings as Street digests profit miss and $25B+ CapEx path",
-        "description": "On July 23, the first full session after the Q2 report, Tesla shares fell approximately 14.5%, closing near $320 after opening around $374, wiping out more than $140B in market value on heavy volume. The move ranks among Tesla's steeper single-day percentage declines in years. The catalyst was not the already-known delivery beat but the combination of a large EPS miss ($0.33 vs ~$0.53), 1.4% operating margin, negative free cash flow, and management's willingness to run CapEx above $25B for 2026 with limited new concrete Robotaxi/Optimus commercial milestones on the call. Pre-earnings IR consensus had already baked in thin margins and negative FCF; the actual 1.4% op margin undershot even that cautious setup. Critical read: the market is no longer willing to re-rate the auto business on volume alone while AI/robotics spend suppresses near-term profitability. Delivery strength is being treated as a one-quarter inventory/demand bounce, not proof of durable high-margin auto growth.",
-        "date": "2026-07-23",
+        "title": "TSLA -26% in July \u2014 worst month since December 2022",
+        "description": "The Q2 earnings miss (EPS $0.33 vs $0.53 expected, 1.4% op margin, -$1.09B FCF) triggered a month-long selloff from ~$425 to ~$311. Continued analyst note-writing extended the move through late July. Stock is now down ~30% YTD. Market is explicitly repricing Tesla on profit quality failure, not delivery volume. The ~$320 close on July 23 erased >$140B in market cap in a single session, and the bleed continued through month-end.",
+        "date": "2026-08-06",
         "category": "Vehicle Production & Delivery",
         "status": "negative",
         "sentiment": {
           "headline": "negative",
           "reality": "negative",
           "confidence": "high",
-          "rationale": "Price action and multi-source coverage agree: profit quality and CapEx intensity, not delivery volume, drove a double-digit selloff."
+          "rationale": "Stock action and analyst coverage uniformly negative post-earnings. No recovery catalyst emerged in the two weeks following the print."
         },
         "evidence": {
           "positive_signals": [
-            "Long-term Tesla history includes recoveries from sharp one-day drops; liquidity ($43.5B cash) and energy/services growth still intact",
-            "Revenue and delivery records remain factual supports for any medium-term demand narrative"
+            "Wedbush maintained $600 Buy \u2014 outlier but signals some institutional support",
+            "Energy/services revenue diversification still growing",
+            "Cash position $43.5B provides liquidity runway"
           ],
           "negative_signals": [
-            "~14.5% single-day decline and >$140B market-cap loss on July 23",
-            "Selloff followed EPS miss + 1.4% op margin + \u2212$1.1B FCF, not a delivery miss",
-            "Limited new concrete Robotaxi/Optimus P&L milestones on the call left investors with spend now, monetization later",
-            "Full-year CapEx >$25B path implies multi-quarter pressure on free cash flow and auto returns",
-            "Confirms Street skepticism already visible in pre-earnings Hold ratings after the Q2 delivery beat"
+            "TSLA -26% in July, worst monthly performance since December 2022",
+            "Stock down ~30% YTD as of early August",
+            ">$140B market cap wiped on July 23 alone",
+            "No recovery catalysts emerged through early August",
+            "Sustained institutional selling pressure through month-end"
           ],
           "key_metrics": {
-            "actual": "TSLA ~\u221214.5% to ~$320; >$140B market-cap loss on July 23",
-            "target": "Market needed margin/cash proof after 480k delivery beat",
-            "trajectory": "Equity re-pricing lower as auto profit quality fails to match volume headlines"
+            "actual": "TSLA ~$311 end of July; -26% MoM; -30% YTD",
+            "target": "Market needed margin/profitability proof after Q2 delivery beat",
+            "trajectory": "Continued downward repricing as auto profit quality fails to match volume headlines"
           }
         },
-        "source": "https://www.teslarati.com/tesla-tsla-tumbles-after-earnings-one-of-its-sharpest-single-day-declines/",
+        "source": "https://www.fool.com/investing/2026/08/06/why-tesla-stock-plunged-26-in-july/",
+        "impact": "high",
+        "_sourceCategory": "productionDelivery"
+      },
+      {
+        "title": "Broad analyst price target cuts post-earnings \u2014 Hold cluster at $375-400 now institutional consensus",
+        "description": "No upward PT revisions post-Q2 earnings. Goldman Sachs, Truist, and Morgan Stanley all moved to Hold at ~$375-400. Piper Sandler cut from $500 to $450 on July 28 (stock fell an additional 1.2% that session). Wells Fargo and JPMorgan maintained Underweight at $130-145. Wedbush remained the only notable outlier at $600 Buy. Full-year 2026 EPS consensus cut from ~$1.89 pre-earnings to ~$1.37 post-earnings \u2014 a ~28% reduction driven by the operating margin miss and structural loss of regulatory credit revenue.",
+        "date": "2026-07-28",
+        "category": "Vehicle Production & Delivery",
+        "status": "negative",
+        "sentiment": {
+          "headline": "negative",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "Uniform analyst PT cuts with no upgrades reflects broad institutional consensus that Q2 profit quality was structurally poor, not a one-quarter anomaly."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Wedbush $600 Buy maintained \u2014 bullish case still exists in sell-side",
+            "Revenue beat demonstrates top-line demand is present"
+          ],
+          "negative_signals": [
+            "Goldman, Truist, Morgan Stanley all Hold at ~$375-400",
+            "Piper Sandler cut $500 to $450 on July 28; stock fell 1.2% additional",
+            "Wells Fargo/JPMorgan Underweight $130-145 \u2014 bear case intact",
+            "Full-year EPS consensus ~$1.37 (from ~$1.89 pre-earnings) \u2014 ~28% cut",
+            "No upward PT revisions from any major bank post-Q2"
+          ],
+          "key_metrics": {
+            "actual": "2026 EPS consensus ~$1.37; Hold cluster $375-400",
+            "target": "Pre-earnings consensus ~$1.89 EPS; Street had ~5.4% op margin baked in",
+            "trajectory": "Consensus anchoring lower with no near-term margin recovery catalyst visible"
+          }
+        },
+        "source": "https://www.cnbc.com/2026/07/23/tesla-gets-price-target-cuts-from-analysts-on-earnings-miss-what-theyre-saying.html",
+        "impact": "high",
+        "_sourceCategory": "productionDelivery"
+      },
+      {
+        "title": "Full-year 2026 delivery consensus revised to ~1.65M \u2014 barely 1% growth vs 2025",
+        "description": "Post-Q2 analyst consensus for full-year 2026 deliveries was cut from ~1.69M to ~1.65M. Q2's 480k beat was inventory-fed (production 28k below deliveries), not a demand re-acceleration. Musk's 20-30% growth guidance \u2014 implying ~1.9-2.0M deliveries \u2014 is now widely viewed as unreachable by Street consensus. Q3 2026 IR delivery consensus had not yet been published as of August 6. The ~1.65M full-year estimate implies H2 run-rate roughly flat with H1, with no major model refresh or new market entry expected to accelerate volume.",
+        "date": "2026-07-26",
+        "category": "Vehicle Production & Delivery",
+        "status": "negative",
+        "sentiment": {
+          "headline": "neutral",
+          "reality": "negative",
+          "confidence": "high",
+          "rationale": "Headlines emphasize Q2 delivery beat; underlying reality is full-year consensus implies ~1% YoY growth vs management's 20-30% target \u2014 a massive guidance miss in the making."
+        },
+        "evidence": {
+          "positive_signals": [
+            "Q2 480k deliveries technically beat pre-print Street estimates",
+            "H2 Cybercab commercial launch could add incremental units if executed"
+          ],
+          "negative_signals": [
+            "Full-year consensus cut to ~1.65M (from ~1.69M) \u2014 ~1% YoY growth",
+            "Musk 20-30% growth guidance implies ~1.9-2.0M \u2014 Street now 15%+ below management target",
+            "Q2 beat was inventory drawdown (prod 28k < deliveries) not organic demand growth",
+            "No major model refresh or new market entry visible to accelerate H2 volume",
+            "Q3 IR consensus not yet published \u2014 uncertainty about near-term trajectory"
+          ],
+          "key_metrics": {
+            "actual": "2026 consensus ~1.65M deliveries; Q2 480k beat on inventory drawdown",
+            "target": "Musk guided 20-30% growth (~1.9-2.0M); prior consensus ~1.69M",
+            "trajectory": "Consensus converging to ~flat YoY growth; management guidance gap widening"
+          }
+        },
+        "source": "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results/",
         "impact": "high",
         "_sourceCategory": "productionDelivery"
       }

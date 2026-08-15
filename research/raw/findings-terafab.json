@@ -2,9 +2,9 @@
   "categoryKey": "terafab",
   "keyChanges": [
     {
-      "title": "Tesla, SpaceX Confirm Terafab Groundbreaking: $16.8B First Phase, 100M Sq Ft, Civil Work Underway",
-      "description": "On August 6, 2026, Tesla and SpaceX made an official public announcement confirming the Terafab chip manufacturing facility in Grimes County, Texas will proceed with $16.8 billion in first-phase investment. Governor Abbott endorsed the project publicly, and SpaceX representatives met with Grimes County residents on August 5-6, confirming JETI tax agreements are signed/active and civil work and foundation preparation are starting 'almost immediately.' The facility is planned at 100+ million square feet—designed to be 'the largest and most valuable building on Earth by far' (Musk's public statement). The plant will vertically integrate logic, memory, packaging, and testing; employ at least 3,000 people; and supply chips for Tesla Optimus robots, Cybercabs, and SpaceX space-based data centers. Build permits were issued around July 26 (four building permits for the Advanced Technology Chip Fabrication facility), and foundation work (excavation, GeoPiers, gravel base) is visibly progressing. The Texas Enterprise Fund granted $30 million toward the project, and SpaceX paid $10 million to Grimes County satisfying a deal milestone. Total multi-phase project scope remains at ~$119 billion. This marks the transition from political/tax approval track (completed July 21-23 with JETI signing) to active site preparation and early construction.",
-      "date": "2026-08-06",
+      "title": "Terafab Construction Accelerating: Drone Footage Confirms Excavation, GeoPiers, and Site Leveling Already Underway",
+      "description": "On August 13, 2026, independent drone footage captured by Tesla construction monitor Joe Tegtmeyer (with Tesla flight approval) revealed that Terafab construction is well underway at the Grimes County site. The footage shows active earthmoving operations, excavation work in the northern section, GeoPiers installation, and leveling/fill work in the central area where the main factory foundation will be laid. This represents a 7-day acceleration beyond the August 6 groundbreaking announcement—construction has moved from 'starting almost immediately' (per August 5-6 community meeting statements) to visibly active mobilization. Terafab representative Riley Trennell stated civil work and foundation prep would begin almost immediately after JETI tax agreements were signed (early August), and the drone footage confirms that timeline is being met. The facility remains on track for commercial operations in Q1 2029.",
+      "date": "2026-08-13",
       "category": "Terafab Manufacturing",
       "status": "positive",
       "sentiment": {
@@ -14,66 +14,80 @@
       },
       "evidence": {
         "positive_signals": [
-          "Official announcement by Tesla/SpaceX on August 6 with Governor Abbott public endorsement",
-          "JETI tax agreements confirmed signed and active by SpaceX reps at county meeting",
-          "Four building permits issued around July 26 specifically for Advanced Technology Chip Fabrication facility",
-          "Foundation prep work (excavation, GeoPiers, gravel base) visibly underway and accelerating per drone observations",
-          "Civil work and foundation prep to start 'almost immediately' per official SpaceX statement",
-          "$16.8 billion first-phase capital commitment announced and publicly confirmed",
-          "Texas Enterprise Fund $30 million grant awarded; $10 million payment to Grimes County completed by SpaceX",
-          "Musk's public statement: 'largest and most valuable building on Earth by far'",
-          "100+ million square foot vertically integrated facility design (logic, memory, packaging, testing under one roof)",
-          "3,000+ planned jobs from Grimes and Brazos County",
-          "Specific supply commitments articulated: Optimus chips, Cybercab chips, SpaceX data center chips"
+          "Drone footage from August 13 shows active excavation and earthmoving operations already visible",
+          "GeoPiers installation documented in northern section of site",
+          "Foundation leveling and gravel base work confirmed in central area",
+          "Rapid transition from permitting (July 26) to active civil work (August 13) demonstrates execution pace",
+          "Independent verification via aerial monitoring by Joe Tegtmeyer with Tesla flight approval",
+          "Timeline adherence: JETI signed early August, construction visible by August 13—7-day acceleration",
+          "Construction activity aligns with stated 'almost immediately' timeline from August 5-6 community meeting"
         ],
         "negative_signals": [
-          "Terafab still remains pre-production; first-phase is ~$16.8B of ~$119B total project cost",
-          "No specific timeline given for when production will begin (only 'months' for full-scale construction)",
-          "Foundation work is early-stage civil; tool installation, process qualification, and first wafer production remain years away",
-          "Land rights and environmental permitting (water, noise, traffic) still ongoing; community opposition voiced at county meeting",
-          "First-phase alone expected to take multiple years; multi-phase build-out extends well past 2026",
-          "Supply-chain and workforce recruitment challenges typical for mega-facilities remain unaddressed",
-          "Project described as 'high-risk, high-payoff' by Musk earlier; execution risk acknowledged in Q2 earnings"
+          "Foundation work is still early-stage civil; fabrication tools, process qualification, and wafer production remain 2+ years away",
+          "Q1 2029 target is still 2.5+ years away; multi-phase build-out extends well beyond 2029",
+          "Drone footage shows only ground-level preparation; no major structural progress yet",
+          "Total project cost ($119B across four phases) indicates execution risk remains significant"
         ]
       },
-      "source": "https://teslanorth.com/2026/08/06/spacex-tesla-break-ground-on-massive-16-8b-terafab-in-texas/",
+      "source": "https://teslanorth.com/2026/08/13/tesla-terafab-construction-already-underway-in-texas-drone-footage-reveals/",
+      "impact": "high"
+    },
+    {
+      "title": "Terafab Community Meeting: JETI Tax Agreements Confirmed Active, $20M Annual Payment to County Locked In",
+      "description": "On August 5-6, 2026, SpaceX and Terafab representatives held their first public meeting with Grimes County residents in the Commissioners Court. The meeting confirmed that JETI (Jobs and Exports Texas Incentive) tax abatement agreements with Iola ISD and Anderson-Shiro CISD are officially signed and active. SpaceX attorney Buck Brannon clarified that SpaceX's abatement is approximately 78% (not 100% as some reports suggested), with SpaceX committing to pay Grimes County a fixed $20 million annually for 35 years (total: $710 million). The county had already received a $10 million payment from SpaceX earlier in the week, satisfying a milestone deadline in the tax abatement agreement signed in June. Terafab representative Riley Trennell stated that civil work and foundation preparation are starting 'almost immediately,' with renderings potentially released within days and full construction beginning 'within months.' The company addressed environmental concerns, stating Terafab will not raise local electric bills, deplete local water supplies, or draw down the Navasota River. Governor Abbott's office confirmed support via public release on August 6.",
+      "date": "2026-08-05",
+      "category": "Terafab Manufacturing",
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "positive",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "JETI tax agreements with both Iola ISD and Anderson-Shiro CISD confirmed signed and active",
+          "SpaceX $10 million payment to Grimes County received before deadline, satisfying contract milestone",
+          "$20 million annual payment commitment for 35 years ($710 million total) ensures long-term county revenue",
+          "Tax abatement percentage (78%) clarified by SpaceX legal counsel, showing transparency",
+          "Governor Greg Abbott's office issued public release confirming state-level support",
+          "School district tax abatements locked in; no further board votes required",
+          "Official project timeline ('almost immediately' civil work, 'within months' full construction) stated publicly"
+        ],
+        "negative_signals": [
+          "Initial reports suggested 100% abatement; actual 78% is materially lower tax benefit",
+          "Environmental concerns (water depletion, electric grid impact, river drawdown) raised at county meeting, requiring company assurances",
+          "No new timeline details beyond 'within months' for construction start and Q1 2029 commercial operations",
+          "Community opposition and concerns voiced at meeting (details not fully reported but implied by company need to provide assurances)"
+        ]
+      },
+      "source": "https://www.teslarati.com/space-finally-faced-the-people-living-next-to-its-next-terafab-mega-project/",
       "impact": "high"
     }
   ],
   "metricUpdate": null,
-  "fleetUpdate": null,
   "categoryUpdate": {
-    "latestStatus": "Terafab groundbreaking confirmed August 6; JETI tax abatements signed and active; civil work and foundation prep underway in Grimes County. First phase $16.8B investment; total project scope ~$119B across four phases. 100+ million sq ft facility targeting 3,000+ jobs and production of logic, memory, and packaging chips for Tesla and SpaceX.",
-    "nextMilestone": "Full-scale construction within several months (target Q4 2026 / Q1 2027); tool procurement and installation; process qualification and first-silicon targets unknown but likely 2027–2028 for initial wafer production",
+    "latestStatus": "Terafab construction is actively underway as of August 13, 2026, with ground preparation, excavation, and GeoPiers installation visible in drone footage. All political/tax approvals (JETI agreements, school board tax abatements) are signed and active. Project remains on track for Q1 2029 commercial operations start.",
+    "nextMilestone": "Main structural work and foundation completion (expected within 12-18 months); tool installation and process qualification (2027-2028); first wafer production (~Q1 2029)",
     "concerns": [
-      "No specific production ramp timeline; pre-production phases (civil, tool install, process qual) expected multi-year",
-      "Environmental and community opposition (water usage, noise, identity) remains unresolved despite JETI approval",
-      "Supply-chain and workforce recruitment for 3,000+ skilled semiconductor jobs remains unproven",
-      "Total investment ($119B) implies high execution risk; cash burn during construction significant",
-      "Fab efficiency, yield path, and competitive positioning vs. Samsung/TSMC not yet tested"
+      "Total project cost ($119B across four phases) and multi-phase timeline remain massive execution risks",
+      "Community opposition and environmental concerns (water, power, river usage) may surface during permitting process",
+      "No specific tool procurement or equipment delivery timeline announced",
+      "Q1 2029 target is aggressive for a 100M+ sq ft vertically integrated fab facility",
+      "Geopolitical and supply chain risks for semiconductor manufacturing equipment (ASML, Applied Materials, etc.)"
     ]
   },
   "urlsSeen": [
     "https://teslanorth.com/2026/08/06/spacex-tesla-break-ground-on-massive-16-8b-terafab-in-texas/",
-    "https://electrek.co/2026/08/06/tesla-spacex-terafab-grimes-county-16-8-billion/",
-    "https://www.kbtx.com/2026/08/06/spacex-confirms-terefab-project-is-done-deal-reps-meet-face-to-face-with-grimes-county-residents/",
-    "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
-    "https://gov.texas.gov/news/post/governor-abbott-announces-spacex-expansion-in-grimes-county",
-    "https://www.kbtx.com/2026/08/06/spacex-drops-first-look-terafab-facility/",
-    "https://www.kbtx.com/2026/08/06/gov-abbott-confirms-spacex-expansion-grimes-county/"
+    "https://teslanorth.com/2026/08/13/tesla-terafab-construction-already-underway-in-texas-drone-footage-reveals/",
+    "https://www.teslarati.com/space-finally-faced-the-people-living-next-to-its-next-terafab-mega-project/",
+    "https://www.teslarati.com/elon-musk-terafab-project-everything-you-need-to-know/"
   ],
   "metadata": {
     "sourcesSearched": [
-      "teslanorth.com",
-      "electrek.co",
-      "kbtx.com",
-      "techcrunch.com",
-      "gov.texas.gov",
       "teslarati.com",
-      "basenor.com"
+      "teslanorth.com"
     ],
-    "dateRange": "2026-07-23 to 2026-08-06",
-    "skipReason": null,
-    "notes": "Aug 6 announcement is major milestone: moves from political/tax approval (completed 7/21-23) to official groundbreaking and active site work. JETI agreements signed and active per SpaceX reps. Four building permits issued ~7/26. Foundation work visibly underway. $16.8B first phase confirmed; $30M TEF grant + $10M payment to county completed. Still pre-production but material operational progress. July 21 Abbott JETI approval already in hot context; this is follow-up execution milestone."
+    "dateRange": "2026-08-06 to 2026-08-15",
+    "skipReason": null
   }
 }

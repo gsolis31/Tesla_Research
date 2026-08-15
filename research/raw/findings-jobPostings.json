@@ -1,20 +1,124 @@
 {
   "categoryKey": "jobPostings",
-  "keyChanges": [],
-  "metricUpdate": null,
-  "categoryUpdate": null,
-  "urlsSeen": [],
+  "keyChanges": [
+    {
+      "title": "Optimus Hiring Plateau: 110 Jobs Stable vs. Production Delays",
+      "description": "Tesla's Optimus hiring remains steady at 100-110 open positions as of August 2026, spanning AI/ML, manufacturing engineering, mechanical design, and robotics software roles across Palo Alto, Fremont, Austin, and other U.S. facilities. However, this plateau contradicts initial 'mass production staffing' narrative. Fremont production line conversion (from Model S/X lines ending in early May 2026) was originally targeted for late July/August 2026, but as of July 22 shareholder letter, Optimus output was still 'anticipated later this year'—another delay. Hiring at this volume (110 jobs) is insufficient to staff a 1-million-unit annual Optimus production line; data collection and manufacturing associate roles dominate, indicating slow ramp rather than aggressive scaling.",
+      "date": "2026-08-12",
+      "category": "Job Postings",
+      "status": "negative",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "negative",
+        "confidence": "high"
+      },
+      "evidence": {
+        "positive_signals": [
+          "110+ Optimus job openings across U.S. facilities (consistent with July baseline)",
+          "Roles span full engineering spectrum: software, mechanical, manufacturing, data pipeline",
+          "Fremont production line conversion in progress; Tesla confirmed line being installed"
+        ],
+        "negative_signals": [
+          "Hiring volume (110 jobs) is insufficient to staff claimed 1-million-unit annual production target",
+          "Production timeline slipped again: April 2026 target (late July/August production start) missed; July 22 update pushed to 'later this year'",
+          "Roles heavily weighted toward data collection and manufacturing associates, not senior engineers needed for high-volume scaling",
+          "No evidence of hiring surge relative to production ambitions; job count static since July 12 (no net increase reported)",
+          "Musk warned initial output will be 'quite slow' and 'literally impossible to predict'; suggests hiring lags production reality"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-optimus-job-listings/",
+      "impact": "medium"
+    },
+    {
+      "title": "Tesla Total Job Postings: 5,000 Open Positions in August 2026 (Flat YoY)",
+      "description": "As of August 2026, Tesla has approximately 4,900-5,000 open positions across all operations globally (per Glassdoor and ZipRecruiter). This represents stable hiring relative to July 2026 (~4,800 jobs). While this signals continued business activity, the flat or slightly declining open position count despite simultaneous Fremont Optimus production ramp suggests hiring pipeline pressure. No mass-layoff announcements occurred in August 2026, but background reports document steady attrition from Autopilot, Powertrain, and Manufacturing engineering—driven by post-2024 reductions and voluntary departures of senior engineers after Robotaxi launch and Optimus push in 2025.",
+      "date": "2026-08-15",
+      "category": "Job Postings",
+      "status": "neutral",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "neutral",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "~5,000 total Tesla job openings in U.S. and globally as of August 2026",
+          "No mass-layoff announcements in August 2026 (contrasts with 2024-2025 reductions)",
+          "Hiring across manufacturing, engineering, customer support, and AI/robotics domains"
+        ],
+        "negative_signals": [
+          "Job posting count flat or slightly down YoY (5,000 in Aug 2026 vs. historical trends suggesting decline from peak 2025 hiring)",
+          "Steady background attrition from core engineering teams (Autopilot, Powertrain, Manufacturing) rather than targeted hiring",
+          "No hiring surge despite simultaneous Fremont Optimus ramp and Cybercab scaling—suggests budget or execution constraints",
+          "Senior engineer departures noted: post-2024 survivors from Robotaxi/Optimus push stepping out"
+        ]
+      },
+      "source": "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm",
+      "impact": "medium"
+    },
+    {
+      "title": "FSD Vehicle Operator Expansion: 9-Market Hiring for Autonomous Testing Data",
+      "description": "Tesla expanded FSD Vehicle Operator hiring into nine new markets (India, South Korea, Thailand, Saudi Arabia, and others) as of August 2026 to gather localized autonomy data. This represents a targeted hiring push for data collection roles rather than core engineering growth. The strategy positions Tesla to approach local regulators with market-specific safety evidence ahead of planned EU-wide FSD vote (October 6, 2026) and global rollout of FSD Supervised. However, these are lower-tier roles (operators, not engineers), indicating resource allocation toward deployment readiness rather than core AI advancement.",
+      "date": "2026-08-10",
+      "category": "Job Postings",
+      "status": "positive",
+      "sentiment": {
+        "headline": "positive",
+        "reality": "positive",
+        "confidence": "medium"
+      },
+      "evidence": {
+        "positive_signals": [
+          "9-market expansion for FSD Vehicle Operator roles (India, South Korea, Thailand, Saudi Arabia, Eastern Europe, Middle East, Asia)",
+          "Demonstrates FSD readiness and regulatory preparation across geographic markets",
+          "Operator hiring precedes customer rollout; proactive for regulatory approval strategy"
+        ],
+        "negative_signals": [
+          "Operator roles are lower-tier data-collection positions, not core engineering hires",
+          "Expansion focused on gathering localized data, not deploying proven technology",
+          "No mention of engineering hiring correlates; suggests FSD software is stabilizing (fewer core developer needs)"
+        ]
+      },
+      "source": "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries",
+      "impact": "medium"
+    }
+  ],
+  "metricUpdate": {
+    "date": "2026-08-15",
+    "count": 5000,
+    "note": "Total Tesla job postings across all operations as of August 2026 (U.S. and global). Represents stable hiring plateau; no net growth from July 2026.",
+    "source": "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm"
+  },
+  "categoryUpdate": {
+    "latestStatus": "Optimus hiring plateau at 110 jobs despite production line ramp; total Tesla hiring at 5,000 positions (flat). No mass layoffs in August 2026, but continued attrition from core engineering teams. FSD operator hiring expanded to 9 markets for testing data collection.",
+    "nextMilestone": "Fremont Optimus production start (delayed; now 'later this year' per July 22 update). EU FSD vote October 6, 2026. Tesla Q3 2026 earnings (expected late October) may provide updated headcount and hiring guidance.",
+    "concerns": [
+      "Optimus hiring volume (110 jobs) insufficient to support claimed 1-million-unit annual production target; suggests execution risk or revised ambitions",
+      "Production timeline slips (April → late July/Aug → 'later this year') correlate with flat hiring; indicates staffing constraints or production delays",
+      "Attrition of senior engineers from core teams (Autopilot, Powertrain, Manufacturing) ongoing; may impact quality or scaling speed",
+      "Total Tesla hiring flat YoY despite multi-product ramps (Optimus, Cybercab, Semi, Roadster); suggests budget pressure or hiring pipeline saturation"
+    ]
+  },
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-optimus-job-listings/",
+    "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm",
+    "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries",
+    "https://www.teslarati.com/tesla-careers-page-reopens-job-listings-united-states/",
+    "https://ev.careers/companies/tesla",
+    "https://www.linkedin.com/jobs/tesla-jobs",
+    "https://blockchain.news/ainews/tesla-expands-ai-hiring-for-optimus-robot-110-open-jobs-and-production-plans-for-2026",
+    "https://www.kore1.com/tesla-layoffs-2026/"
+  ],
   "metadata": {
-    "skipReason": "No significant new job posting clusters, hiring expansions, freezes, or notable departures detected in date range 2026-07-23 to 2026-08-06. Optimus hiring pipeline remains stable at July baseline (~110-120 openings across multiple facilities per Tesla careers). AI/autonomy hiring for FSD operators continues globally (9 new country hiring noted but dated earlier in 2026, not this specific week). No Tier-1 article published this week quantifying net change in Tesla AI/robotics/Optimus openings vs. prior week. LinkedIn inventory remains partially stale (May-dated listings still surfacing). Hot context from week of Jul 17-23 already captures latest hiring pulse pattern. This is a quiet week for job posting news.",
     "sourcesSearched": [
-      "linkedin.com",
-      "optimusk.blog",
       "teslarati.com",
-      "tesla.com/careers",
+      "linkedin.com",
       "glassdoor.com",
-      "indeed.com",
+      "ev.careers",
+      "notateslaapp.com",
       "ziprecruiter.com"
     ],
-    "dateRange": "2026-07-23 to 2026-08-06"
+    "dateRange": "2026-08-06 to 2026-08-15",
+    "skipReason": null
   }
 }

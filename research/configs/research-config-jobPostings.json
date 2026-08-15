@@ -1,50 +1,12 @@
 {
   "categoryKey": "jobPostings",
-  "dateFrom": "2026-07-23",
-  "dateTo": "2026-08-06",
-  "weekOf": "2026-08-03",
+  "dateFrom": "2026-08-06",
+  "dateTo": "2026-08-15",
+  "weekOf": "2026-08-10",
   "outputPath": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
   "hotContext": {
     "criticalNews": "Optimus hiring remains active on LinkedIn through week of Jul 17\u201323 with a manufacturing/test/production-associate pulse (Factory Texas gears, hand process, stator, controls, data collection). No re-verified Tesla careers count; July 12 baseline of ~110 Optimus openings still the last official-style metric. No fill-rate or headcount disclosure. Same-week earnings undercut any 'mass production staffing' read.",
-    "recentKeyChanges": [
-      {
-        "title": "Optimus hiring pulse continues \u2014 manufacturing/test/production roles, but still no fill-rate or headcount proof",
-        "description": "LinkedIn primary scan of Tesla (company ID 15564) Optimus-titled roles for July 17\u201323, 2026 shows a clear week-of-earnings hiring pulse, not a freeze: new posts include Manufacturing Test Engineer, Optimus; Manufacturing Controls Electrical / Development Engineer (Optimus Assembly); Robotics Manufacturing Process Development Engineer, Hand; Staff Robotics Manufacturing Engineer, Stator (Austin); Controls & Automation Engineer, Optimus Factory Texas, Gears; Production Associate, Optimus; Production Change Process Engineer, Material Handling; multiple Data Collection Operator / Operations Lead, Optimus roles; and several Robotics/Technical Program Manager, Optimus openings (Palo Alto and Austin). Quoted-keyword LinkedIn search reports ~407 Tesla+Optimus matches (public scrape yields ~50+ Optimus-in-title uniques; many listings still dated late May, so inventory is partly stale). CRITICAL: this is not evidence of a hiring surge past the July 12 baseline of ~110 Tesla-careers Optimus openings \u2014 tesla.com/careers was inaccessible for re-count this week, and LinkedIn counts are not methodologically comparable. Same-week Q2 earnings (owned by optimus category) confirmed no Optimus supply chain, a 'flat and long' initial S-curve, and 2026 units earmarked for Optimus Academy training only. Data-collection and Academy-adjacent postings fit that internal-training story better than a mass-production labor ramp. Job posts \u2260 filled seats \u2260 robots built.",
-        "date": "2026-07-23",
-        "category": "Job Postings",
-        "status": "neutral",
-        "sentiment": {
-          "headline": "positive",
-          "reality": "neutral",
-          "confidence": "medium"
-        },
-        "evidence": {
-          "positive_signals": [
-            "Multiple new Optimus-titled engineering posts Jul 17\u201323 spanning hand manufacturing, stator, gears (Factory Texas), controls, test, and TPMs",
-            "Production Associate, Optimus and Production Change Process Engineer postings imply line-staffing intent beyond pure R&D",
-            "Geographic spread: Palo Alto (AI/TPM/design) + Austin/Giga Texas (manufacturing/controls) matches dual-site production narrative",
-            "LinkedIn still surfaces 50+ Optimus-in-title Tesla roles and a ~407 keyword match header \u2014 pipeline not shut"
-          ],
-          "negative_signals": [
-            "No re-verified Tesla careers count this week (site access denied) \u2014 cannot confirm move above/below July 12 baseline of 110",
-            "LinkedIn public inventory includes many May 28\u2013dated Optimus listings \u2014 open-role counts overstate fresh demand if roles sit unfilled",
-            "No disclosed fill rates, acceptances, or Optimus org headcount growth \u2014 postings are demand signals only",
-            "Heavy Data Collection Operator/Lead posting wave aligns with Academy training-data needs, not factory labor replacement at scale",
-            "Same-week earnings: Musk says no Optimus supply chain and initial manufacturing S-curve will be 'flat and long' \u2014 hiring does not override production reality",
-            "No Tier-1 article this week quantifying a net increase vs the long-stable 100\u2013110 Optimus openings band (May\u2013July)",
-            "Service/retail/detailer noise dominates broader Tesla LinkedIn recency \u2014 AI/robotics share of new volume is a minority"
-          ],
-          "key_metrics": {
-            "actual": "~110 Optimus openings last verified Jul 12 via Teslarati/Tesla careers; this week LinkedIn: 50+ Optimus-in-title uniques scraped, ~18 Optimus-titled posts dated Jul 17\u201323, ~407 keyword-match header (not comparable methodology)",
-            "target": "Sustained growth in filled Optimus manufacturing headcount ahead of full-scale Fremont/Texas ramp; careers-site count expansion beyond flat 100\u2013110 band",
-            "trajectory": "Open-req pipeline still active with manufacturing-weighted new posts, but no verified count acceleration and no proof roles are being filled faster than they open"
-          }
-        },
-        "source": "https://www.linkedin.com/jobs/view/manufacturing-test-engineer-optimus-at-tesla-4444745128",
-        "impact": "medium",
-        "_sourceCategory": "jobPostings"
-      }
-    ],
+    "recentKeyChanges": [],
     "latestMetric": {
       "date": "2026-07-12",
       "count": 110,
