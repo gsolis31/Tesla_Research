@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Project**: Tesla Investor Tracking Dashboard  
 **Type**: React + TypeScript frontend + Python research pipeline  
-**Purpose**: Automated tracking system for Tesla's key milestones across 9 categories (AI chips, autonomy, robotics, batteries, production)  
+**Purpose**: Automated tracking system for Tesla's key milestones across 9 categories (Cybercab Production, FSD Country Approvals, FSD v15 Software, Optimus Production, AI Chip Production, 4680 Battery Cell Production, Terafab In-House Chip Manufacturing, Job Postings, Vehicle Production & Delivery)  
 **Live**: https://gsolis31.github.io/Tesla_Research/  
 **Stack**: React 18, TypeScript, Vite, Tailwind, Chart.js, TradingView widget; Claude API agents for research  
 
