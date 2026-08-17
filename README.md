@@ -16,7 +16,7 @@ An automated tracking system for Tesla's key milestones across AI chips, autonom
 4. **Optimus Production** — humanoid ramp, factory deployment
 5. **AI Chip Production** — AI5/AI6, Samsung/TSMC, Dojo (chip design/foundry — not fab politics)
 6. **4680 Battery Cell Production** — cell lines, yield, dry electrode, GWh
-7. **Terafab Manufacturing** — fab site, JETI tax deals, permits (not chip tape-outs)
+7. **Terafab In-House Chip Manufacturing** — fab site, JETI tax deals, permits (not chip tape-outs)
 8. **Job Postings** — AI/robotics/Optimus hiring signals
 9. **Vehicle Production & Delivery** — quarterly P&D, IR consensus, market entries
 
@@ -41,53 +41,52 @@ npm run build        # production → dist/
 
 ### Research update (Claude Code)
 
-**Preferred (batched, ~12–15 min):**
+**Only path (all cases):**
 
 ```bash
-/tesla-update-v2
+/tesla-update-v2     # 12–15 min, ~$0.02/run
 ```
 
-**Simpler sequential (low-news weeks):**
+Then finalize with one command:
 
 ```bash
-/tesla-update
+python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
 ```
 
 V2 pipeline:
-1. Generates configs under `research/configs/`
-2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json`
+1. Generates configs under `research/configs/` (gitignored)
+2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json` (gitignored)
 3. Curator validates/dedupes/sentiment-corrects → `research/findings/YYYY-MM-DD.json`
-4. Merges into `data/tesla-tracking-data.json`
-5. Updates URL cache (canonical article URLs only)
-6. Archives old years, validates, builds, **commits and pushes**
+4. `finalize_update.py` chains: merge → url-cache → archive → validate (Python + Zod) → build
 
 ## Project Structure
 
 ```
 Research/
 ├── src/                         # React dashboard (Vite + TypeScript)
-├── dist/                        # Production build (GitHub Pages)
+├── dist/                        # Production build (gitignored — CI builds fresh)
 ├── data/
 │   ├── tesla-tracking-data.json # Live tracking data (source of truth)
 │   └── archives/                # Year archives of old metrics/summaries
 ├── research/
-│   ├── configs/                 # Generated research-config-*.json + curator-config
-│   ├── raw/                     # Per-category findings-{category}.json
+│   ├── configs/                 # Gitignored — generated research-config-*.json + curator-config
+│   ├── raw/                     # Gitignored — per-category findings-{category}.json
 │   └── findings/                # Curated YYYY-MM-DD.json, reports, url-cache, schema
 ├── scripts/
 │   ├── paths.py                 # Canonical paths (import this; don't hardcode)
 │   ├── spawn_researcher.py      # → research/configs/
 │   ├── spawn_curator.py         # → research/configs/curator-config.json
+│   ├── finalize_update.py       # One command: merge → cache → archive → validate → build
 │   ├── merge_findings.py        # curated findings → data/
 │   ├── validate_data.py         # Python structure + invariants
-│   ├── validate-zod-schema.ts   # CI Zod check
+│   ├── validate-zod-schema.ts   # Zod check (CI + pre-commit)
 │   ├── update_url_cache.py      # Canonical article URLs only
 │   ├── url_cache.py             # Cache primitives + noise filters
 │   └── archive_old_data.py      # → data/archives/
 ├── docs/                        # Architecture notes (see below)
 ├── .claude/
 │   ├── agents/                  # tesla-researcher, tesla-curator
-│   └── skills/                  # tesla-update-v2 (preferred), tesla-update, …
+│   └── skills/                  # tesla-update-v2 (preferred), tesla-update (retired)
 ├── .github/workflows/deploy.yml # Validate → build → GitHub Pages
 ├── package.json
 └── README.md
@@ -178,8 +177,7 @@ Live: https://gsolis31.github.io/Tesla_Research/
 Actions: https://github.com/gsolis31/Tesla_Research/actions
 
 ```bash
-npm run build
-git add data/ research/ dist/   # typical research update paths
+git add data/tesla-tracking-data.json research/findings/YYYY-MM-DD.json research/findings/url-cache.json
 git commit -m "Update: …"
 git push origin main
 ```
@@ -199,6 +197,7 @@ Every `git commit` then runs:
 
 1. `python3 scripts/validate_data.py`
 2. `python3 -m pytest` (if pytest is installed)
+3. `npx tsx scripts/validate-zod-schema.ts`
 
 No ESLint, no full build — fast fail before push. Bypass: `git commit --no-verify`.
 
@@ -233,7 +232,6 @@ python3 scripts/update_url_cache.py --prune
 | [docs/VALIDATION_UPGRADE.md](docs/VALIDATION_UPGRADE.md) | Python + Zod validation |
 | [docs/PARALLEL_RESEARCH.md](docs/PARALLEL_RESEARCH.md) | Parallel / batched research design |
 | [research/README.md](research/README.md) | Pipeline folder layout |
-| [docs/DEAD_FILES.md](docs/DEAD_FILES.md) | Obsolete workflows / cleanup notes |
 
 ## Contributing
 
