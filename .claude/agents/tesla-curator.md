@@ -203,7 +203,7 @@ When the same story appears under two categories (same/similar title or same sou
 | Story type | Owner category |
 |------------|----------------|
 | AI5/AI6 design or foundry process tape-out, chip yields, wafer deals | AI Chip Production |
-| Terafab construction, JETI, school boards, Abbott politics | Terafab Manufacturing |
+| Terafab construction, JETI, school boards, Abbott politics | Terafab In-House Chip Manufacturing |
 | Country approvals, EU homologation, NHTSA/NTSB | FSD Country Approvals |
 | FSD OTA versions (v14.x/v15), cumulative miles, HW3/HW4 software ceiling | FSD v15 Software |
 | Robotaxi fleet/cities/ops | Cybercab Production |
@@ -222,7 +222,7 @@ CATEGORY_NAMES = {
     'productionDelivery': 'Vehicle Production & Delivery',
     'aiChip': 'AI Chip Production',
     'battery4680': '4680 Battery Cell Production',
-    'terafab': 'Terafab Manufacturing',
+    'terafab': 'Terafab In-House Chip Manufacturing',
     'jobPostings': 'Job Postings',
     'fsdv15': 'FSD v15 Software'
 }

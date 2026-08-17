@@ -15,7 +15,7 @@ function Categories({ data }: Props) {
     { id: 'optimus', label: 'Optimus Production', data: data.categories.optimus },
     { id: 'aiChip', label: 'AI Chip Production', data: data.categories.aiChip },
     { id: 'battery4680', label: '4680 Battery Cell Production', data: data.categories.battery4680 },
-    { id: 'terafab', label: 'Terafab Manufacturing', data: data.categories.terafab },
+    { id: 'terafab', label: 'Terafab In-House Chip Mfg', data: data.categories.terafab },
     { id: 'jobPostings', label: 'Job Postings', data: data.categories.jobPostings },
   ]
 

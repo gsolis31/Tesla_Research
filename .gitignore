@@ -4,7 +4,8 @@
 # Dependencies
 node_modules/
 
-# Build artifacts (keep dist/ since we commit it)
+# Build artifacts (CI builds dist/ from source; don't commit it)
+dist/
 dist-temp/
 *.tsbuildinfo
 
@@ -24,6 +25,6 @@ dist-temp/
 # TypeScript incremental
 *.tsbuildinfo
 
-# Optional: uncomment to keep generated pipeline configs out of git
-# research/configs/
-# research/raw/
+# Generated pipeline artifacts — not part of the audit trail
+research/configs/
+research/raw/

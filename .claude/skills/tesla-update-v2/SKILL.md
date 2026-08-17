@@ -275,54 +275,25 @@ Check:
 - Any sentiment corrections?
 - Any weak claims rejected?
 
-### Step 9: Run Merge Script
+### Step 9: Finalize (merge → cache → archive → validate → build)
+
+Run the finalization script — this replaces the old manual steps 9–13:
 
 ```bash
 today=$(date +%Y-%m-%d)
-python3 scripts/merge_findings.py research/findings/$today.json
+python3 scripts/finalize_update.py research/findings/$today.json
 ```
 
-This merges the validated findings into `tesla-tracking-data.json`.
+This chains: `merge_findings.py` → `update_url_cache.py` → `archive_old_data.py` → `validate_data.py` → `validate-zod-schema.ts` → `npm run build`
 
-### Step 10: Update URL Cache
+If you need to iterate on data before building, use `--skip-build` and run `npm run build` separately.
 
-Cache **canonical article source URLs only** (from accepted keyChanges). Do not dump search/feed/homepage URLs.
-
-```bash
-today=$(date +%Y-%m-%d)
-python3 scripts/update_url_cache.py research/findings/$today.json
-```
-
-Optional cleanup if noise leaked into the cache:
+Optional url-cache cleanup if noise leaked in:
 ```bash
 python3 scripts/update_url_cache.py --prune
 ```
 
-### Step 11: Archive Old Data
-
-```bash
-python3 scripts/archive_old_data.py
-```
-
-Keeps current + previous year in main file, archives the rest.
-
-### Step 12: Validate Merged Data
-
-```bash
-python3 scripts/validate_data.py
-```
-
-This runs comprehensive validation. Must pass before proceeding.
-
-### Step 13: Build
-
-```bash
-npm run build
-```
-
-Build will fail if validation errors exist.
-
-### Step 14: Commit and Push
+### Step 10: Commit and Push
 
 ```bash
 today=$(date +%Y-%m-%d)
@@ -336,7 +307,7 @@ trend_count = len(findings['findings'].get('trends', []))
 print(f'{kc_count} key changes, {trend_count} trends')
 ")
 
-git add data/tesla-tracking-data.json research/findings/$today.json research/findings/url-cache.json dist/
+git add data/tesla-tracking-data.json research/findings/$today.json research/findings/url-cache.json
 
 git commit -m "$(cat <<EOF
 Update: Batched research for $today
@@ -351,7 +322,7 @@ Research pipeline:
 Validation summary:
 $(cat research/findings/curator-report-$today.md | grep -A 10 "validationSummary" | head -5)
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 EOF
 )"
 

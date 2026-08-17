@@ -26,28 +26,29 @@ npm test             # Python pytest (merge pipeline)
 
 ### Research Updates (Claude Code)
 
-**Preferred (parallel, batched):**
+**Only path (all cases):**
 ```bash
-/tesla-update-v2     # 15–20 min, ~$0.02/run, sequential research
+/tesla-update-v2     # 12–15 min, ~$0.02/run
 ```
 
-**Fallback (low-news weeks):**
+`/tesla-update` (V1) is retired — it bypassed the merge pipeline.
+
+### Post-Research Finalization
+
+After the curator writes `research/findings/YYYY-MM-DD.json`:
+
 ```bash
-/tesla-update        # V1, deprecated but functional
+python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
+# chains: merge → url-cache → archive → python-validate → zod-validate → build
 ```
 
-### Validation & Deployment
+### Deployment
 
 ```bash
-# Pre-build checks (run locally)
-python3 scripts/validate_data.py     # Python structure + invariants
-npx tsx scripts/validate-zod-schema.ts # Zod schema check
-
-# Deployment
-npm run build        # Fails if validation fails
-git add .
+git add data/tesla-tracking-data.json research/findings/YYYY-MM-DD.json research/findings/url-cache.json
 git commit -m "Update: …"
 git push origin main # CI/CD: validate → build → GitHub Pages
+# Note: dist/ is NOT committed — CI rebuilds it fresh
 ```
 
 ---
@@ -91,7 +92,7 @@ git push origin main # CI/CD: validate → build → GitHub Pages
 4. **Optimus Production** — humanoid robot ramp, factory deployment
 5. **AI Chip Production** — AI5/AI6 design, Samsung/TSMC foundry, Dojo
 6. **4680 Battery Cell Production** — cell lines, yield, dry electrode, GWh
-7. **Terafab Manufacturing** — fab site, JETI tax deals, permits
+7. **Terafab In-House Chip Manufacturing** — fab site, JETI tax deals, permits
 8. **Job Postings** — AI/robotics hiring signals
 9. **Vehicle Production & Delivery** — quarterly P&D, IR consensus, market entries
 

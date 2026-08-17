@@ -30,7 +30,7 @@ CATEGORY_DISPLAY_NAMES = {
     "productionDelivery": "Vehicle Production & Delivery",
     "aiChip": "AI Chip Production",
     "battery4680": "4680 Battery Cell Production",
-    "terafab": "Terafab Manufacturing",
+    "terafab": "Terafab In-House Chip Manufacturing",
     "jobPostings": "Job Postings",
 }
 
@@ -192,7 +192,7 @@ CATEGORIES = {
         },
     },
     "terafab": {
-        "categoryName": "Terafab Manufacturing",
+        "categoryName": "Terafab In-House Chip Manufacturing",
         "priority": "medium",
         "sources": {
             "tier1": ["teslarati.com", "teslanorth.com"]
