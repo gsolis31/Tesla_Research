@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-08-15",
+  "lastUpdated": "2026-08-22",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -995,23 +995,142 @@
       "lastSeen": "2026-08-15",
       "category": "Vehicle Production & Delivery",
       "title": "Q3 2026 delivery consensus forming around 461,500 \u2014 GLJ Research projects miss at 456,600"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-gets-a-massive-upgrade-in-nevada": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-gets-a-massive-upgrade-in-nevada/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Cybercab Production",
+      "title": "Nevada NTA replaces 10-vehicle cap with 5,000-robotaxi Clark County permit"
+    },
+    "https://www.teslarati.com/tesla-cybercab-launch-official-date-austin": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-launch-official-date-austin/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Cybercab Production",
+      "title": "Tesla sets Sept 3 Austin Cybercab launch event \u2014 paid public service still unconfirmed"
+    },
+    "https://www.teslarati.com/tesla-admits-slow-model-y-robotaxi-integration-good-reason": {
+      "originalUrl": "https://www.teslarati.com/tesla-admits-slow-model-y-robotaxi-integration-good-reason/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Cybercab Production",
+      "title": "Tesla tells JPMorgan it is holding back Model Y robotaxis to wait for Cybercab"
+    },
+    "https://electrek.co/2026/08/20/tesla-jpmorgan-fremont-fsd-v15-hw4-optimus-2027": {
+      "originalUrl": "https://electrek.co/2026/08/20/tesla-jpmorgan-fremont-fsd-v15-hw4-optimus-2027/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Optimus Production",
+      "title": "Tesla IR tells JPMorgan Optimus sales slip to H2 2027; Fremont SOP still unconfirmed"
+    },
+    "https://www.notateslaapp.com/news/4594/tesla-is-holding-back-model-y-robotaxis-reveals-new-fsd-v15-details": {
+      "originalUrl": "https://www.notateslaapp.com/news/4594/tesla-is-holding-back-model-y-robotaxis-reveals-new-fsd-v15-details",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "FSD v15 Software",
+      "title": "IR restates FSD v15 as a step-change; still ~40% of tracks after 4 weeks, consumer on v14"
+    },
+    "https://www.scmp.com/tech/tech-trends/article/3364499/unitree-robotics-surges-629-us66-billion-valuation-shanghai-share-debut": {
+      "originalUrl": "https://www.scmp.com/tech/tech-trends/article/3364499/unitree-robotics-surges-629-us66-billion-valuation-shanghai-share-debut",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Optimus Production",
+      "title": "Unitree IPO hits $66B after selling 5,215 humanoids; Tesla Optimus still pre-revenue"
+    },
+    "https://www.teslarati.com/tesla-semi-largest-order-yet": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-largest-order-yet/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Vehicle Production & Delivery",
+      "title": "Einride orders 500 Tesla Semis \u2014 largest Semi deal, still a rounding error vs auto volume"
+    },
+    "https://www.businesskorea.co.kr/news/articleView.html": {
+      "originalUrl": "https://www.businesskorea.co.kr/news/articleView.html?idxno=275294",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "FSD Country Approvals",
+      "title": "Korea FSD remains origin-split: Shanghai-built majority fleet still blocked despite 50M km"
+    },
+    "https://teslanorth.com/2026/08/21/tesla-giga-texas-cathode-factory-video": {
+      "originalUrl": "https://teslanorth.com/2026/08/21/tesla-giga-texas-cathode-factory-video/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "4680 Battery Cell Production",
+      "title": "Giga Texas cathode video is a 10 GWh Early Ramp tour, not a 4680 GWh win"
+    },
+    "https://www.notateslaapp.com/news/4599/tesla-owner-successfully-upgrades-hw3-model-3-to-hw4": {
+      "originalUrl": "https://www.notateslaapp.com/news/4599/tesla-owner-successfully-upgrades-hw3-model-3-to-hw4",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "FSD v15 Software",
+      "title": "DIY HW3-to-HW4 retrofit shows swap is feasible; Tesla still has no official program"
+    },
+    "https://www.linkedin.com/jobs/view/software-engineer-scenario-evaluation-optimus-simulation-at-tesla-4457053214": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/software-engineer-scenario-evaluation-optimus-simulation-at-tesla-4457053214",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Job Postings",
+      "title": "Optimus hiring this week is mocap, training, and simulation \u2014 not a production-line ramp"
+    },
+    "https://www.linkedin.com/jobs/view/functional-safety-ai-engineer-tesla-ai-at-tesla-4456760498": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/functional-safety-ai-engineer-tesla-ai-at-tesla-4456760498",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Job Postings",
+      "title": "FSD hiring pulse is a U.S. data-collection supervisor wave, not a core Autopilot engineering surge"
+    },
+    "https://www.basenor.com/blogs/news/whats-happening-at-giga-texas-right-now-august-2026": {
+      "originalUrl": "https://www.basenor.com/blogs/news/whats-happening-at-giga-texas-right-now-august-2026",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Vehicle Production & Delivery",
+      "title": "Model Y L appears in Giga Texas outbound lots \u2014 US production live, deliveries still October"
+    },
+    "https://www.koreajoongangdaily.com/business/exclusive-large-portion-of-groundwork-for-samsungs-second-taylor-fab-already-done-even-before-first-opens-mayor-says/12822661": {
+      "originalUrl": "https://www.koreajoongangdaily.com/business/exclusive-large-portion-of-groundwork-for-samsungs-second-taylor-fab-already-done-even-before-first-opens-mayor-says/12822661",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "AI Chip Production",
+      "title": "Samsung Taylor Fab 1 still dark; Tesla AI5 first product in 2027, CHIPS funds unpaid"
+    },
+    "https://www.kbtx.com/2026/08/21/elon-musk-connected-company-now-controls-over-4600-acres-grimes-county": {
+      "originalUrl": "https://www.kbtx.com/2026/08/21/elon-musk-connected-company-now-controls-over-4600-acres-grimes-county/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "WIT TECH land holdings jump to 4,620 acres \u2014 still ~21% of advertised 22,000-acre site"
+    },
+    "https://www.teslarati.com/tesla-semi-officially-headed-europe": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-officially-headed-europe/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla confirms Semi Europe reveal at IAA \u2014 still no on-sale date, 9 years after 2017 unveil"
+    },
+    "https://www.kbtx.com/2026/08/20/chamber-briefing-details-jobs-wages-growth-expected-terafab-project": {
+      "originalUrl": "https://www.kbtx.com/2026/08/20/chamber-briefing-details-jobs-wages-growth-expected-terafab-project/",
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-22",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Chamber briefing cites 1,500 Terafab jobs vs SpaceX's 3,000 pledge; 9\u201310 year build"
     }
   },
   "stats": {
-    "totalUrls": 142,
+    "totalUrls": 159,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 10,
-      "Cybercab Production": 16,
-      "FSD v15 Software": 12,
-      "Vehicle Production & Delivery": 15,
+      "Optimus Production": 12,
+      "Cybercab Production": 19,
+      "FSD v15 Software": 14,
+      "Vehicle Production & Delivery": 18,
       "unknown": 52,
-      "FSD Country Approvals": 11,
-      "4680 Battery Cell Production": 3,
+      "FSD Country Approvals": 12,
+      "4680 Battery Cell Production": 4,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 5,
-      "Job Postings": 3,
-      "Terafab In-House Chip Manufacturing": 2
+      "AI Chip Production": 6,
+      "Job Postings": 5,
+      "Terafab In-House Chip Manufacturing": 4
     }
   }
 }
