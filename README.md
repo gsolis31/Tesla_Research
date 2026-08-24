@@ -74,8 +74,8 @@ Research/
 │   └── findings/                # Curated YYYY-MM-DD.json, reports, url-cache, schema
 ├── scripts/
 │   ├── paths.py                 # Canonical paths (import this; don't hardcode)
-│   ├── spawn_researcher.py      # → research/configs/
-│   ├── spawn_curator.py         # → research/configs/curator-config.json
+│   ├── spawn_researcher.py      # slim configs (titles + seenUrls) → research/configs/
+│   ├── spawn_curator.py         # curator-config (slim last week + seenUrls)
 │   ├── finalize_update.py       # One command: merge → cache → archive → validate → build
 │   ├── merge_findings.py        # curated findings → data/
 │   ├── validate_data.py         # Python structure + invariants
@@ -121,7 +121,7 @@ git commit + push → GitHub Actions deploys Pages
 | Gate | What it does |
 |------|----------------|
 | **Category ownership** | Each researcher has `owns` / `doesNotOwn` (e.g. AI5 tape-out → aiChip, not terafab; FSD OTA → fsdv15, not fsd) |
-| **Curator** | Dedupes vs last week + URL cache; auto-corrects sugar-coated sentiment; rejects weak Electrek-only claims |
+| **Curator** | Dedupes vs last week's titles + `seenUrls` in the curator config (does not load the cache file); auto-corrects sugar-coated sentiment; rejects weak Electrek-only claims |
 | **Canonical URL cache** | Only article source URLs are cached (no search pages, RSS, homepages) |
 | **Dual validation** | Python `validate_data.py` + Zod `src/schema.ts` (CI + build) |
 

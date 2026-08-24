@@ -135,8 +135,8 @@ dist/ (GitHub Pages)
    - `tesla-curator.md` — Deduplicates/validates findings; outputs `research/findings/YYYY-MM-DD.json`
 
 2. **Config Generators** (`scripts/`)
-   - `spawn_researcher.py` — Generates per-category research configs
-   - `spawn_curator.py` — Generates curator config
+   - `spawn_researcher.py` — Per-category configs with slim last-week titles + `seenUrls` (agents do not open the master JSON or url-cache file)
+   - `spawn_curator.py` — Curator config: findings files, slim last-week keyChanges, `seenUrls`
    - `paths.py` — Canonical paths (import this, don't hardcode)
 
 3. **Pipeline Orchestrators** (Skills in `.claude/skills/`)
@@ -348,8 +348,8 @@ Research/
 │   └── README.md                     # Pipeline documentation
 ├── scripts/
 │   ├── paths.py                      # Canonical paths (import this)
-│   ├── spawn_researcher.py           # Generate research configs
-│   ├── spawn_curator.py              # Generate curator config
+│   ├── spawn_researcher.py           # Slim per-category configs (titles + seenUrls)
+│   ├── spawn_curator.py              # Curator config (slim last week + seenUrls)
 │   ├── finalize_update.py            # One command: merge → cache → archive → validate → build
 │   ├── merge_findings.py             # Deterministic merge (ONLY script that writes main data)
 │   ├── validate_data.py              # Python validation (structure + invariants)
@@ -598,17 +598,18 @@ Each category has explicit `owns` and `doesNotOwn` boundaries. Example:
 2. Research (Parallel agents via /tesla-update-v2 skill)
    tesla-researcher (category 1) → research/raw/findings-cybercab.json
    tesla-researcher (category 2) → research/raw/findings-fsd.json
-   ... (9 categories, with URL cache checks)
+   ... (9 categories)
    
    Each researcher:
-   - Loads hot context (~2KB: last week summary, latest metrics)
-   - Checks URL cache before processing each URL
+   - Reads only its config (slim last-week titles/status/source, latest metric, `seenUrls`)
+   - Does not open `data/tesla-tracking-data.json` or `research/findings/url-cache.json`
+   - Skips stories already in `recentKeyChanges` or `seenUrls`
    - Outputs findings-{category}.json (~2KB)
 
 3. Curation
    tesla-curator:
-   - Loads 9 × findings-{category}.json
-   - Deduplicates by (title, category)
+   - Loads 9 × findings-{category}.json plus curator-config (slim last week + `seenUrls`)
+   - Deduplicates by (title, category) and `seenUrls` — does not open the cache file
    - Sentiment-corrects sugar-coated claims
    - Rejects weak Electrek-only claims
    - Outputs research/findings/2026-07-08.json (~10KB)
