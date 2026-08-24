@@ -36,31 +36,19 @@ allowed-tools: Read, Write, Bash, Task
 
 **Why batched?** Prevents WebSearch rate limit exhaustion (9 agents × 10 searches = 90 calls).
 
+### Context rules (do not skip)
+
+Agents already have SOPs in `.claude/agents/tesla-researcher.md` and `tesla-curator.md`. Configs from the spawn scripts already carry last week's titles, seen URLs, sources, and ownership.
+
+- Spawn with the short prompts below. Do **not** paste search queries, JSON schemas, ownership lists, or last week's stories into the prompt.
+- Do **not** read `data/tesla-tracking-data.json`, `research/findings/url-cache.json`, or a prior `research/findings/YYYY-MM-DD.json` (not even as a writing sample). `spawn_researcher.py --all` prints the date range.
+- Do **not** tell researchers or the curator to open those files. Dedup data is in each config as `hotContext.recentKeyChanges` / `lastWeekKeyChanges` and `hotContext.seenUrls`.
+
 ---
 
 ## Execution Steps
 
-### Step 1: Determine Research Period
-
-```python
-from datetime import datetime, timedelta
-import json
-
-# Load current data
-data = json.load(open('/Users/gonzalosolis/Research/data/tesla-tracking-data.json'))
-last_updated = data['lastUpdated']
-today = datetime.now().strftime('%Y-%m-%d')
-
-# Calculate Monday of current week
-now = datetime.now()
-monday = now - timedelta(days=now.weekday())
-week_of = monday.strftime('%Y-%m-%d')
-
-print(f"Research period: {last_updated} → {today}")
-print(f"Week of: {week_of}")
-```
-
-### Step 2: Generate Research Configs
+### Step 1: Generate Research Configs
 
 ```bash
 cd /Users/gonzalosolis/Research
@@ -78,99 +66,44 @@ This creates 9 config files:
 - `research/configs/research-config-productionDelivery.json`
 - `research/configs/research-config-fsdv15.json`
 
-### Step 3: Spawn Researcher Agents (Batched)
+### Step 2: Spawn Researcher Agents (Batched)
 
 **IMPORTANT:** Spawn agents in 3 batches of 3 to avoid hitting WebSearch rate limits.
 
-**Batch 1 (Critical + High Priority):**
+Use this prompt for every category (swap `CATEGORY` only). Do not expand it.
+
+```
+Research ONLY CATEGORY.
+
+Read research/configs/research-config-CATEGORY.json and write to its outputPath.
+Do not read data/tesla-tracking-data.json, research/findings/url-cache.json, or any research/findings/YYYY-MM-DD.json.
+Dedup using hotContext.recentKeyChanges and hotContext.seenUrls in the config.
+Follow your system instructions for search, sentiment, ownership, and output schema.
+```
+
+**Batch 1 (Critical + High Priority):** `productionDelivery`, `cybercab`, `fsd` (sonnet)
+
+**Batch 2 (High Priority):** `optimus`, `fsdv15` (sonnet); `aiChip` (haiku)
+
+**Batch 3 (Medium + Low Priority):** `battery4680`, `terafab`, `jobPostings` (haiku)
+
+Example (repeat per category, `run_in_background: true`):
 ```python
-# Spawn 3 high-priority agents in parallel
 Task({
     subagent_type: "tesla-researcher",
     description: "Research productionDelivery",
-    model: "sonnet",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research cybercab",
-    model: "sonnet",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research fsd",
-    model: "sonnet",
-    prompt: "...",
+    prompt: "<template above with CATEGORY=productionDelivery>",
     run_in_background: true
 })
 ```
 
-Wait for batch 1 to complete (check for 3 research/raw/findings-*.json files).
-
-**Batch 2 (High Priority):**
-```python
-# Spawn next 3 high-priority agents
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research optimus",
-    model: "sonnet",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research fsdv15",
-    model: "sonnet",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research aiChip",
-    model: "haiku",
-    prompt: "...",
-    run_in_background: true
-})
-```
-
-Wait for batch 2 to complete (check for 6 research/raw/findings-*.json files total).
-
-**Batch 3 (Medium + Low Priority):**
-```python
-# Spawn final 3 agents
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research battery4680",
-    model: "haiku",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research terafab",
-    model: "haiku",
-    prompt: "...",
-    run_in_background: true
-})
-Task({
-    subagent_type: "tesla-researcher",
-    description: "Research jobPostings",
-    model: "haiku",
-    prompt: "...",
-    run_in_background: true
-})
-```
-
-Wait for batch 3 to complete (check for 9 research/raw/findings-*.json files total).
+Wait after each batch before starting the next (3 files after batch 1, 6 after batch 2, 9 after batch 3).
 
 **Expected outputs:** 9 `findings-{category}.json` files
 
 **Estimated time:** 8-12 minutes (batched execution with rate limit protection)
 
-### Step 4: Wait Between Batches
+### Step 3: Wait Between Batches
 
 **After each batch, wait for completion:**
 
@@ -194,7 +127,7 @@ ls research/raw/findings-*.json
 # Should see 9 files
 ```
 
-### Step 5: Generate Curator Config
+### Step 4: Generate Curator Config
 
 ```bash
 python3 scripts/spawn_curator.py
@@ -202,41 +135,23 @@ python3 scripts/spawn_curator.py
 
 This creates `curator-config.json` with:
 - List of all research/raw/findings-*.json files
-- Last week's keyChanges (for deduplication)
-- URL cache path
+- Slim last-week keyChanges (title/date/category/source/status)
+- `seenUrls` (URL strings only — do not open url-cache.json)
 - Date and weekOf
 
-### Step 6: Spawn Curator Agent
-
-Use the Task tool to spawn curator:
+### Step 5: Spawn Curator Agent
 
 ```python
 Task({
     subagent_type: "tesla-curator",
     description: "Validate and merge findings",
-    model: "sonnet",  # Always use Sonnet for quality
     prompt: """
-Curate the research findings from all categories.
-
-Use the configuration file: research/configs/curator-config.json
-
-This file contains:
-- All findings-{category}.json files to merge
-- Last week's keyChanges for deduplication
-- URL cache for checking seen URLs
-
-Your tasks:
-1. Load all category findings
-2. Deduplicate vs last week + URL cache
-3. Validate sentiment (catch sugar-coating, auto-correct)
-4. Refuse weak claims (Electrek-only + low confidence)
-5. Normalize data (category names, dates, confidence)
-6. Extract trends
-7. Merge metrics and category updates
-8. Write research/findings/YYYY-MM-DD.json
-9. Generate validation report
-
-Be critical. Auto-fix sentiment when status=positive but reality=negative.
+Curate using research/configs/curator-config.json.
+Read only that config plus the findingsFiles it lists.
+Write research/findings/YYYY-MM-DD.json and research/findings/curator-report-YYYY-MM-DD.md.
+Do not read data/tesla-tracking-data.json, research/findings/url-cache.json, or a prior findings/YYYY-MM-DD.json.
+Dedup using hotContext.lastWeekKeyChanges and hotContext.seenUrls.
+Be critical. Auto-fix status when status=positive but reality=negative.
     """
 })
 ```
@@ -247,7 +162,7 @@ Be critical. Auto-fix sentiment when status=positive but reality=negative.
 
 **Estimated time:** 2-3 minutes
 
-### Step 7: Wait for Curator to Complete
+### Step 6: Wait for Curator to Complete
 
 Check that findings file exists:
 
@@ -264,7 +179,7 @@ done
 echo "✓ Curator completed"
 ```
 
-### Step 8: Review Curator Report
+### Step 7: Review Curator Report
 
 ```bash
 cat research/findings/curator-report-$(date +%Y-%m-%d).md
@@ -275,7 +190,7 @@ Check:
 - Any sentiment corrections?
 - Any weak claims rejected?
 
-### Step 9: Finalize (merge → cache → archive → validate → build)
+### Step 8: Finalize (merge → cache → archive → validate → build)
 
 Run the finalization script — this replaces the old manual steps 9–13:
 
@@ -293,7 +208,7 @@ Optional url-cache cleanup if noise leaked in:
 python3 scripts/update_url_cache.py --prune
 ```
 
-### Step 10: Commit and Push
+### Step 9: Commit and Push
 
 ```bash
 today=$(date +%Y-%m-%d)

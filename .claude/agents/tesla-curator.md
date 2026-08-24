@@ -10,14 +10,16 @@ You are a senior data curator and validation specialist for Tesla intelligence. 
 ## Purpose
 
 After all tesla-researcher agents complete, you:
-1. Load all raw findings under `research/raw/findings-{category}.json`
-2. Deduplicate vs last week + URL cache
+1. Load all raw findings listed in the curator config (`research/raw/findings-{category}.json`)
+2. Deduplicate vs last week + `hotContext.seenUrls`
 3. Validate sentiment (catch sugar-coating, auto-correct)
 4. Refuse weak single-source claims
 5. Normalize data (category names, dates, confidence)
 6. Extract trends
 7. Merge metrics and category updates
 8. Output validated `research/findings/YYYY-MM-DD.json`
+
+**Do not read** `data/tesla-tracking-data.json`, `research/findings/url-cache.json`, or a prior `research/findings/YYYY-MM-DD.json`. Dedup lists are already in the config.
 
 ## Input Contract
 
@@ -39,12 +41,16 @@ You will receive a curator configuration file: `research/configs/curator-config.
     "research/raw/findings-fsdv15.json"
   ],
   "hotContext": {
-    "lastWeekKeyChanges": [...],
-    "urlCache": "research/findings/url-cache.json"
+    "lastWeekKeyChanges": [
+      {"title": "...", "date": "2026-07-08", "category": "Cybercab Production", "source": "https://...", "status": "neutral"}
+    ],
+    "seenUrls": ["https://teslarati.com/already-filed-article"]
   },
   "outputPath": "research/findings/2026-07-10.json"
 }
 ```
+
+`lastWeekKeyChanges` are slim (title/date/category/source/status only). That is enough to detect duplicates.
 
 ## Execution Steps
 
@@ -78,13 +84,14 @@ for category_data in category_findings:
 
 Check against:
 1. Last week's keyChanges (same title + category = duplicate)
-2. URL cache (URL already seen = duplicate)
+2. `hotContext.seenUrls` (URL already seen = duplicate, unless this week is a genuine new development)
 3. Within this week (same title + category = duplicate)
+
+Do not open `url-cache.json`. Use the list in the config.
 
 ```python
 last_week_kcs = config['hotContext']['lastWeekKeyChanges']
-url_cache_path = config['hotContext']['urlCache']
-url_cache = json.load(open(url_cache_path)) if Path(url_cache_path).exists() else {'urls': {}}
+seen_urls = set(config['hotContext'].get('seenUrls') or [])
 
 seen_titles = set()
 deduplicated = []
@@ -104,8 +111,8 @@ for kc in all_key_changes:
             is_dup = True
             break
 
-    # vs URL cache
-    if source_url and source_url in url_cache.get('urls', {}):
+    # vs already-seen URLs (from config, not the cache file)
+    if source_url and source_url in seen_urls:
         is_dup = True
 
     # within week

@@ -20,6 +20,7 @@ from paths import (  # noqa: E402
     ensure_research_dirs,
     research_config_path,
 )
+from url_cache import load_cache  # noqa: E402
 
 # Canonical display names used in keyChanges.category (for hot-context matching)
 CATEGORY_DISPLAY_NAMES = {
@@ -234,56 +235,145 @@ CATEGORIES = {
 }
 
 
+# Dedup only needs identity fields — not last week's essays.
+SLIM_KEY_CHANGE_FIELDS = ("title", "date", "category", "source", "status")
+NOTE_MAX = 240
+# Older cache entries used a shorter Terafab label.
+CATEGORY_CACHE_ALIASES = {
+    "terafab": ("Terafab Manufacturing",),
+}
+
+
 def _normalize_label(s: str) -> str:
     return s.lower().replace(" ", "").replace("&", "").replace("-", "").replace("/", "")
 
 
-def load_hot_context(category_key):
-    """Extract hot context for a category from main data file."""
-    with open(TRACKING_DATA) as f:
-        data = json.load(f)
+def slim_key_change(kc):
+    """Keep title/date/category/source/status only (enough to skip last week's stories)."""
+    return {k: kc[k] for k in SLIM_KEY_CHANGE_FIELDS if kc.get(k) not in (None, "")}
+
+
+def slim_metric_point(point, note_max=NOTE_MAX):
+    """Keep date/count/note/source; truncate long notes."""
+    if not point:
+        return {}
+    out = {}
+    for k in ("date", "count", "note", "source"):
+        if point.get(k) is not None:
+            out[k] = point[k]
+    note = out.get("note")
+    if isinstance(note, str) and len(note) > note_max:
+        out["note"] = note[: note_max - 3] + "..."
+    return out
+
+
+def _category_label_aliases(category_key):
+    display = CATEGORY_DISPLAY_NAMES.get(category_key, category_key)
+    labels = {display, category_key, *CATEGORY_CACHE_ALIASES.get(category_key, ())}
+    return {_normalize_label(x) for x in labels}
+
+
+def _add_url(url, ordered: list, seen: set) -> None:
+    if url and url not in seen:
+        seen.add(url)
+        ordered.append(url)
+
+
+def all_seen_urls(cache_urls=None):
+    """Flat URL list (normalized key + originalUrl) so agents skip the 64KB cache file."""
+    if cache_urls is None:
+        cache_urls = load_cache().get("urls", {})
+    ordered = []
+    seen = set()
+    for key, meta in cache_urls.items():
+        _add_url(key, ordered, seen)
+        if isinstance(meta, dict):
+            _add_url(meta.get("originalUrl"), ordered, seen)
+    return ordered
+
+
+def urls_for_category(category_key, cache_urls=None, extra_urls=None):
+    """URLs already filed under this category, plus any extra (e.g. last week's sources)."""
+    if cache_urls is None:
+        cache_urls = load_cache().get("urls", {})
+    aliases = _category_label_aliases(category_key)
+    ordered = []
+    seen = set()
+    for key, meta in cache_urls.items():
+        cat = meta.get("category") if isinstance(meta, dict) else None
+        if not cat or _normalize_label(cat) not in aliases:
+            continue
+        _add_url(key, ordered, seen)
+        if isinstance(meta, dict):
+            _add_url(meta.get("originalUrl"), ordered, seen)
+    for url in extra_urls or []:
+        _add_url(url, ordered, seen)
+    return ordered
+
+
+def load_hot_context(category_key, data=None, cache_urls=None):
+    """Extract slim hot context for a category from main data file."""
+    if data is None:
+        with open(TRACKING_DATA) as f:
+            data = json.load(f)
 
     display_name = CATEGORY_DISPLAY_NAMES.get(category_key, category_key)
     cat_data = data["categories"].get(category_key, {})
 
     hot_context = {
         "criticalNews": cat_data.get("criticalNews", ""),
-        "recentKeyChanges": []
+        "recentKeyChanges": [],
+        "seenUrls": [],
     }
 
+    matched = []
     if data["weeklySummaries"]:
         latest_week = data["weeklySummaries"][0]
-        matched = []
+        want = {
+            _normalize_label(display_name),
+            _normalize_label(category_key),
+        }
         for kc in latest_week.get("keyChanges", []):
-            kc_cat = kc.get("category", "")
-            if kc_cat == display_name:
+            if _normalize_label(kc.get("category", "")) in want:
                 matched.append(kc)
-            elif _normalize_label(kc_cat).startswith(_normalize_label(category_key)):
-                matched.append(kc)
-            elif _normalize_label(kc_cat).startswith(_normalize_label(display_name)):
-                matched.append(kc)
-        hot_context["recentKeyChanges"] = matched[:3]
+        hot_context["recentKeyChanges"] = [slim_key_change(kc) for kc in matched]
+
+    extra_urls = [kc.get("source") for kc in hot_context["recentKeyChanges"]]
+    hot_context["seenUrls"] = urls_for_category(
+        category_key, cache_urls=cache_urls, extra_urls=extra_urls
+    )
 
     if category_key == "cybercab" and "cybercab" in data["metrics"]:
         if data["metrics"]["cybercab"].get("data"):
-            hot_context["latestMetric"] = data["metrics"]["cybercab"]["data"][-1]
+            hot_context["latestMetric"] = slim_metric_point(
+                data["metrics"]["cybercab"]["data"][-1]
+            )
         if data["metrics"]["robotaxiFleet"].get("data"):
-            hot_context["latestFleet"] = data["metrics"]["robotaxiFleet"]["data"][-1]
+            hot_context["latestFleet"] = slim_metric_point(
+                data["metrics"]["robotaxiFleet"]["data"][-1]
+            )
     elif category_key == "jobPostings" and "jobPostings" in data["metrics"]:
         if data["metrics"]["jobPostings"].get("data"):
-            hot_context["latestMetric"] = data["metrics"]["jobPostings"]["data"][-1]
+            hot_context["latestMetric"] = slim_metric_point(
+                data["metrics"]["jobPostings"]["data"][-1]
+            )
     elif category_key == "fsd" and "fsdApprovals" in data["metrics"]:
         countries = data["metrics"]["fsdApprovals"].get("countries", [])
         if countries:
+            latest = countries[-1] or {}
             hot_context["latestMetric"] = {
                 "totalCountries": len([c for c in countries if c.get("status") == "active"]),
-                "latestCountry": countries[-1]
+                "latestCountry": {
+                    k: latest[k]
+                    for k in ("name", "status", "date")
+                    if latest.get(k) not in (None, "")
+                },
             }
 
     return hot_context
 
 
-def create_config(category_key, date_from, date_to, week_of):
+def create_config(category_key, date_from, date_to, week_of, data=None, cache_urls=None):
     """Create research config for a category."""
     if category_key not in CATEGORIES:
         raise ValueError(f"Unknown category: {category_key}")
@@ -294,7 +384,7 @@ def create_config(category_key, date_from, date_to, week_of):
         "dateTo": date_to,
         "weekOf": week_of,
         "outputPath": str(RAW_DIR / f"findings-{category_key}.json"),
-        "hotContext": load_hot_context(category_key),
+        "hotContext": load_hot_context(category_key, data=data, cache_urls=cache_urls),
         **CATEGORIES[category_key]
     }
 
@@ -312,6 +402,7 @@ def main():
 
     with open(TRACKING_DATA) as f:
         data = json.load(f)
+    cache_urls = load_cache().get("urls", {})
 
     date_from = data["lastUpdated"]
     date_to = datetime.now().strftime("%Y-%m-%d")
@@ -326,14 +417,22 @@ def main():
         print(f"Week of: {week_of}\n")
 
         for category_key in CATEGORIES.keys():
-            config = create_config(category_key, date_from, date_to, week_of)
+            config = create_config(
+                category_key, date_from, date_to, week_of,
+                data=data, cache_urls=cache_urls,
+            )
             config_path = research_config_path(category_key)
             with open(config_path, 'w') as f:
                 json.dump(config, f, indent=2)
 
             priority = config["priority"]
             model = "sonnet" if priority in ["critical", "high"] else "haiku"
-            print(f"✓ {category_key:20} priority={priority:8} model={model:6} → {config_path.relative_to(config_path.parents[1])}")
+            seen_n = len(config["hotContext"].get("seenUrls", []))
+            print(
+                f"✓ {category_key:20} priority={priority:8} model={model:6} "
+                f"{config_path.stat().st_size:5}B seenUrls={seen_n:2} "
+                f"→ {config_path.relative_to(config_path.parents[1])}"
+            )
 
         print(f"\n✅ Created 9 config files in research/configs/")
         print(f"   Researchers write to research/raw/findings-{{category}}.json")
@@ -350,7 +449,10 @@ def main():
             print(f"Available: {', '.join(CATEGORIES.keys())}")
             sys.exit(1)
 
-        config = create_config(category_key, date_from, date_to, week_of)
+        config = create_config(
+            category_key, date_from, date_to, week_of,
+            data=data, cache_urls=cache_urls,
+        )
         config_path = research_config_path(category_key)
         with open(config_path, 'w') as f:
             json.dump(config, f, indent=2)
@@ -364,6 +466,8 @@ def main():
         print(f"  Output: {config['outputPath']}")
         print(f"  Sources: {', '.join(config['sources']['tier1'])}")
         print(f"  Keywords: {', '.join(config['keywords'][:3])}...")
+        print(f"  Last-week stories: {len(config['hotContext']['recentKeyChanges'])} (slim)")
+        print(f"  seenUrls: {len(config['hotContext']['seenUrls'])}")
         owns = config.get("ownership", {}).get("owns", [])
         if owns:
             print(f"  Owns: {owns[0][:60]}...")

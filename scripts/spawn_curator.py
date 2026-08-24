@@ -16,11 +16,12 @@ sys.path.insert(0, str(Path(__file__).parent))
 from paths import (  # noqa: E402
     TRACKING_DATA,
     RAW_DIR,
-    URL_CACHE,
     ensure_research_dirs,
     curator_config_path,
     curated_findings_path,
 )
+from spawn_researcher import all_seen_urls, slim_key_change  # noqa: E402
+from url_cache import load_cache  # noqa: E402
 
 
 def main():
@@ -67,13 +68,12 @@ def main():
 
     last_week_key_changes = []
     if data['weeklySummaries']:
-        last_week_key_changes = data['weeklySummaries'][0].get('keyChanges', [])
+        last_week_key_changes = [
+            slim_key_change(kc)
+            for kc in data['weeklySummaries'][0].get('keyChanges', [])
+        ]
 
-    try:
-        from paths import ROOT
-        url_cache_rel = str(URL_CACHE.relative_to(ROOT))
-    except Exception:
-        url_cache_rel = str(URL_CACHE)
+    seen_urls = all_seen_urls(load_cache().get("urls", {}))
 
     config = {
         "date": date,
@@ -81,7 +81,7 @@ def main():
         "findingsFiles": relative_paths,
         "hotContext": {
             "lastWeekKeyChanges": last_week_key_changes,
-            "urlCache": url_cache_rel,
+            "seenUrls": seen_urls,
         },
         "outputPath": str(curated_findings_path(date).as_posix()),
     }
@@ -95,7 +95,9 @@ def main():
     print(f"  Date: {date}")
     print(f"  Week of: {week_of}")
     print(f"  Category findings: {len(findings_files)}")
-    print(f"  Last week keyChanges: {len(last_week_key_changes)}")
+    print(f"  Last week keyChanges: {len(last_week_key_changes)} (slim)")
+    print(f"  seenUrls: {len(seen_urls)}")
+    print(f"  Config size: {config_path.stat().st_size}B")
     print(f"\nNext: Spawn tesla-curator agent with this config")
     print(f"  Expected output: research/findings/{date}.json")
 
