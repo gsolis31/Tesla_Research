@@ -1,0 +1,283 @@
+{
+  "date": "2026-08-23",
+  "weekOf": "2026-08-17",
+  "findings": {
+    "keyChanges": [
+      {
+        "title": "~100 Cybercabs staged at Dallas hub — still zero in paid public service",
+        "description": "A Dallas-area robotaxi lot was photographed on the evening of Aug 23 with a large cluster of gold Cybercabs. TeslaNewswire and Basenor put the count at almost 100, roughly double the ~40 units Basenor says were reported at the same DFW hub in mid-June. The site matches Tesla's Irving, Texas robotaxi hub (documented in May city filings as a 24-acre DFW depot sized for up to 212 AVs). That is staging inventory, not a Cybercab city launch. Dallas/Houston Model Y unsupervised robotaxi has been live since April; none of these Cybercabs are in paid public service. A separate Aug 23 public-road clip still shows a no-steering-wheel, no-pedals Cybercab with a safety monitor in the passenger seat. Tesla's Sept 3 Austin date remains an invite-only launch EVENT — Teslarati and TeslaNorth both treat paid Cybercab rides that day as unconfirmed.",
+        "date": "2026-08-23",
+        "category": "Cybercab Production",
+        "status": "negative",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "negative",
+          "confidence": "medium"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Photo/video from a Dallas Cybercab parking lot on Aug 23, amplified by TeslaNewswire as 'almost 100' units",
+            "Basenor reports the DFW hub count roughly doubled from ~40 in mid-June toward a depot designed for up to 212 AVs",
+            "Production-spec no-steering-wheel / no-pedals Cybercabs continue public-road validation ahead of the Sept 3 Austin event"
+          ],
+          "negative_signals": [
+            "Zero Cybercabs remain in paid public service; ~100 parked units are inventory, not a robotaxi print",
+            "'Almost 100' is a spotter/aggregator estimate, not a Tesla-confirmed count — Teslarati and TeslaNorth have not independently verified it",
+            "No-pedals road tests still require a human safety monitor in the passenger seat",
+            "Dallas already has Model Y unsupervised robotaxi; Cybercabs sitting at the hub have not replaced or expanded that paid fleet",
+            "Latest verified VIN floor is still ~2,172 (Aug 10) — most built Cybercabs are not in commercial use",
+            "Tesla is holding back Model Y robotaxi additions while waiting on Cybercab, so paid fleet growth is paused against a vehicle that is still not in service",
+            "Sept 3 is an influencer/invite event; paid Cybercab app availability that day is unconfirmed"
+          ]
+        },
+        "source": "https://www.basenor.com/blogs/news/tesla-cybercab-in-dallas-5-details-that-matter"
+      },
+      {
+        "title": "Musk hypes WSJ praise of Supervised v14; 2026.26.6.2 still ships with no FSD merge",
+        "description": "On Aug 22, Elon Musk amplified a Wall Street Journal review in which critic Dan Neil called Tesla Full Self-Driving (Supervised) “amazing” and said he was “bewitched” after about two hours in a Model Y. TeslaNorth and Basenor both treated the write-up as a mainstream-press win, and TeslaNorth explicitly tied the drive to the current consumer stack: Hardware 4 on FSD (Supervised) v14.3.7 and Hardware 3 on v14.1 Lite via the unified 2026.21.6 package. That is not a software advance. The same day Tesla began rolling 2026.26.6.2, a Summer Update bug-fix build whose NotATeslaApp release notes still contain no FSD version and no v15 (or even v14) merge. TeslaFi-based fleet mix on NotATeslaApp shows the non-FSD 2026.26 branch already at ~45.7% of the tracked fleet versus ~29.4% on 2026.21; 2026.21.6 itself is ~27.8% of the fleet and remains the latest North America FSD drop. Consumer cars are still on supervised v14. Robotaxi-only v15, the ~40% track figure from IR, HW3’s Lite ceiling, and the lack of an official HW3 retrofit are all unchanged. A two-hour sample-of-one review does not move the ship date.",
+        "date": "2026-08-22",
+        "category": "FSD v15 Software",
+        "status": "negative",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "negative",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "WSJ automotive critic Dan Neil described FSD (Supervised) as “amazing” and said it earned his confidence mile by mile after a ~2-hour Model Y drive, including rush-hour interstate lane centering and following distance.",
+            "Elon Musk amplified the review on X on Aug 22: “Try Tesla self-driving. Feels like magic.”",
+            "TeslaNorth confirms the current wide consumer rollout is still a unified 2026.21.6 package bringing v14.3.7 to HW4 and v14.1 Lite to HW3."
+          ],
+          "negative_signals": [
+            "Neil himself framed the piece as a sample of one with limited evidence; this is a journalist impression of existing Supervised v14, not a new OTA or v15 consumer release.",
+            "Consumer FSD remains Supervised v14.3.7 (HW4) and v14.1 Lite (HW3). v15 is still not on customer-owned vehicles.",
+            "2026.26.6.2 (released Aug 22; TeslaFi ~0.8–1% of fleet) is another Summer Update point release with only bug/security fixes — NotATeslaApp lists no FSD version on this build.",
+            "The non-FSD 2026.26 branch is now the plurality of the TeslaFi fleet (~45.7%) while the FSD-carrying 2026.21 branch is ~29.4%, so a growing share of cars is on firmware that never received the latest FSD merge.",
+            "NotATeslaApp’s FSD index still shows 2026.21.6 (Aug 9) as the latest North America FSD drop; no v14.x or v15 consumer build landed on Aug 22–23.",
+            "IR’s v15 “step-change” claim and ~40% of robotaxi tracks, plus no official HW3 retrofit, were restated earlier this week and were not improved by this review or this OTA."
+          ]
+        },
+        "source": "https://teslanorth.com/2026/08/22/tesla-fsd-wsj-review/"
+      },
+      {
+        "title": "Aug 22–23 Tesla AI/FSD/Optimus hiring is empty of core engineering",
+        "description": "Over 2026-08-22 to 2026-08-23, LinkedIn showed no new Tesla Autopilot, Tesla AI, or Optimus engineering requisitions. A past-24-hour Tesla (f_C=15564) search returned a single posting: Production Associate, Model Y, Body in Austin (posted ~4 hours ago). The only in-window FSD/AI-adjacent reqs are ops/program-management, not model work: an AI Safety Operator in Jacksonville, FL (posted ~2 days ago) whose JD is driving an engineering vehicle 6–8 hours a day for supervised-FSD camera/audio collection, plus a Technical Program Manager, Sensing Products in Palo Alto (posted ~2 days ago) owning vehicle-sensing hardware/software schedule, not Autopilot software. This continues last week's data-ops pulse (supervisors, mocap, simulation QA) rather than a core AI hiring surge. Tesla careers remains Akamai-blocked, so there is no official Optimus/FSD recount.",
+        "date": "2026-08-23",
+        "category": "Job Postings",
+        "status": "negative",
+        "sentiment": {
+          "headline": "neutral",
+          "reality": "negative",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "AI Safety Operator req is live in Jacksonville, extending FSD data-collection geography",
+            "Technical Program Manager, Sensing Products (Palo Alto) is a mid-senior hardware/software delivery role for vehicle sensing, not retail/service hiring"
+          ],
+          "negative_signals": [
+            "LinkedIn past-24-hour Tesla search: 1 job, and it is Model Y body production — not AI/robotics/FSD/Optimus",
+            "AI Safety Operator is entry-level data collection (valid license, 6–8 hours driving, start/stop recorders) — not Autopilot/Tesla AI engineering",
+            "No new Functional Safety, Autopilot software, Optimus AI, Dojo, or AI5 reqs identified in the Aug 22–23 window",
+            "Tesla.com/careers search and APIs return Akamai 403, so official AI-org headcount cannot be independently recounted",
+            "This is a continuation of last week's data-ops-not-engineering pattern, not a new scaling signal"
+          ]
+        },
+        "source": "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4457355936"
+      },
+      {
+        "title": "Optimus manufacturing-adjacent reqs are live — still not a production-line ramp",
+        "description": "Contrary to last week's 'no production-line Optimus pulse' read, LinkedIn now shows a thin cluster of Optimus manufacturing-adjacent roles that were still open on Aug 22–23 (LinkedIn stamps ~3 days ago): Robotics Manufacturing Engineer, Battery Manufacturing, Optimus (Austin) to take Optimus battery equipment from concept through launch — the JD itself says the architecture is in 'early development stages'; Process Technician, Optimus (Fremont) at $28.75–$37.41/hr covering production-line process, rework, and subsystem repair; Automated Systems Technician, Precision Machining, Optimus (Lathrop) for factory-automation install/repair; and Manufacturing Engineer, Battery Interconnects, Optimus (Palo Alto) whose body copy is generic EV battery interconnect (laser welding) and barely mentions the robot. These are individual engineer/technician reqs, not a wave of production associates. No weekend (past-24-hour) Optimus manufacturing adds. This is process-development and line-support hiring, not evidence Tesla is staffing a high-volume Optimus line.",
+        "date": "2026-08-22",
+        "category": "Job Postings",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "negative",
+          "confidence": "high"
+        },
+        "evidence": {
+          "positive_signals": [
+            "Austin Robotics Manufacturing Engineer JD explicitly targets Optimus battery manufacturing equipment and high-volume automated lines",
+            "Fremont Process Technician, Optimus JD covers production-line process, yield/Cpk, and Optimus subsystem repair — a factory-floor role, not mocap/simulation",
+            "Lathrop Automated Systems Technician, Precision Machining, Optimus is factory-automation / machining support for the Optimus program"
+          ],
+          "negative_signals": [
+            "Austin JD still describes Optimus product architecture as in 'early development stages' — equipment concept-to-launch, not a staffed mass-production line",
+            "Four individual engineer/technician reqs is not a production-associate or shift-staffing wave",
+            "Palo Alto 'Battery Interconnects, Optimus' posting is largely a reused EV battery interconnect JD (laser welding, EV cost/performance) with Optimus only in the title",
+            "Zero new Optimus manufacturing roles in LinkedIn's past-24-hour Tesla filter (Aug 23)",
+            "No corroborating Teslarati, TeslaNorth, Tesla Oracle, or Optimusk.blog hiring articles in the Aug 22–23 window"
+          ]
+        },
+        "source": "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-battery-manufacturing-optimus-at-tesla-4457300079"
+      },
+      {
+        "title": "Semi EOL cluster at Nevada factory — still no official volume 4 months after 'high-volume' start",
+        "description": "Basenor, citing Sawyer Merritt (Aug 22) and TeslaNewswire video (Aug 23), reports multiple Tesla Semis clustered at the Sparks/Nevada Semi factory end-of-line staging area — the first visual hint of a modest output uptick since the dedicated high-volume line started April 29, 2026. Merritt’s own language is cautious (“at least a little bit”); Tesla still has not disclosed Semi production or delivery counts. The cluster is also the obvious staging pattern for Einride’s already-announced first trucks in September (500 units over 24 months), not proof of a 50,000-unit/year run-rate. Tesla has said the plant targets 50,000 annual capacity with “many thousands” by end of 2026 — even the high end of that would be a rounding error versus ~461.5k Q3 Street auto deliveries and Q2’s 480k print. Separately, Tesla Charging opened a 6-stall public Megacharger in Vernon, CA (industrial LA corridor), extending a still-thin Southern California Semi charging footprint beyond the earlier Ontario pad. No official Q3 2026 production/delivery print this window; Model Y L US deliveries remain October, so the 3-row adds no Q3 US volume.",
+        "date": "2026-08-23",
+        "category": "Vehicle Production & Delivery",
+        "status": "neutral",
+        "sentiment": {
+          "headline": "positive",
+          "reality": "neutral",
+          "confidence": "medium",
+          "rationale": "Headlines read as a Semi production ramp. Reality is unquantified watcher video plus a 6-stall charger, 4 months after 'high-volume' start, with no official Semi units disclosed and first Einride deliveries already scheduled for September."
+        },
+        "evidence": {
+          "positive_signals": [
+            "TeslaNewswire video shows multiple Semis queued at Nevada factory end-of-line (Aug 23), consistent with completed units awaiting delivery",
+            "Sawyer Merritt flagged at least a modest increase in Semi units coming off the line (Aug 22)",
+            "Tesla Charging officially posted a new 6-stall public Megacharger in Vernon, CA (Aug 21/22), adding LA-area Semi corridor charging",
+            "High-volume Semi line has been running since April 29, 2026; Einride 500-unit order still points to September first deliveries"
+          ],
+          "negative_signals": [
+            "Tesla has published no Semi production or delivery count; watcher language is explicitly 'at least a little bit,' not a confirmed inflection",
+            "EOL clustering is the expected staging pattern for Einride's already-announced September first trucks, not independent evidence of a 50k/year ramp",
+            "Four months after the 'high-volume' line started, output is still described as sluggish relative to the 50,000-unit annual capacity target",
+            "'Many thousands' of Semis by end of 2026 remains a rounding error vs Q3 Street ~461.5k auto deliveries and Q2's 480k",
+            "No official Q3 2026 vehicle production/delivery print; Model Y L US deliveries still October, so no Q3 US 3-row volume",
+            "China July retail already printed at 27,249 (exports masking weak domestic); August China retail not yet out"
+          ],
+          "key_metrics": {
+            "actual": "Unquantified Semi EOL cluster; no official Semi unit count. Q3 Street still ~461.5k auto deliveries.",
+            "target": "Semi factory 50,000/year capacity; 'many thousands' of Semis by end of 2026; Q3 auto likely down vs Q2 480k",
+            "trajectory": "Visual Semi staging ahead of September Einride first deliveries; auto volume still the P&L, with no new Q3 print this window"
+          }
+        },
+        "source": "https://www.basenor.com/blogs/news/tesla-semi-production-may-finally-be-picking-up"
+      }
+    ],
+    "trends": [
+      "Cybercab Production: ~100 Cybercabs staged at Dallas hub — still zero in paid public service",
+      "FSD v15 Software: Musk hypes WSJ praise of Supervised v14; 2026.26.6.2 still ships with no FSD merge",
+      "Job Postings: Mixed signals with concerning developments",
+      "Vehicle Production & Delivery: Semi EOL cluster at Nevada factory — still no official volume 4 months after 'high-volume' start"
+    ],
+    "metrics": {
+      "cybercab": [],
+      "robotaxiFleet": [],
+      "jobPostings": [
+        {
+          "date": "2026-08-23",
+          "count": 5030,
+          "note": "Glassdoor company-jobs title still indexes as 'Tesla Jobs & Careers - 5030 Open Positions' with FAQ copy 'hiring for 5K open positions in the United States' (DuckDuckGo snippet 2026-08-23). Unchanged vs Aug 22 ~5,030 and Aug 15 ~5,000 plateau. Direct Glassdoor and Indeed fetches blocked (Cloudflare/403). Tesla careers search/API blocked (Akamai 403). LinkedIn Tesla company page lists 6,921 open jobs worldwide — not a US-only figure and not comparable to the Glassdoor U.S. count. LinkedIn U.S. Tesla jobs SERP remains capped at '1,000+'.",
+          "source": "https://www.glassdoor.com/Jobs/Tesla-Jobs-E43129.htm"
+        }
+      ]
+    },
+    "quarterlyData": [],
+    "categoryUpdates": {
+      "cybercab": {
+        "latestStatus": "Tesla is stacking Cybercab inventory at the Dallas/Irving robotaxi hub (~100 estimated on Aug 23) and still running monitored no-pedals road tests. Paid public Cybercab service remains at zero. Sept 3 is a launch EVENT in Austin, not a confirmed start of Cybercab rides.",
+        "nextMilestone": "Sept 3, 2026 Austin Cybercab launch event — watch whether paid unsupervised Cybercab rides actually open in the Robotaxi app, versus a demo/influencer reveal",
+        "concerns": [
+          "Production/staging (VIN floor ~2,172; ~100 parked in Dallas) is far ahead of commercial deployment (0 Cybercabs in paid service)",
+          "Safety-monitor requirement on no-pedals public-road tests is unchanged ahead of the launch event",
+          "Tesla is throttling Model Y robotaxi adds to wait for Cybercab, so the paid fleet can stall while Cybercab inventory sits",
+          "Nevada's 5,000-vehicle Clark County permit is a ceiling, not a deployment plan — Tesla's own Cybercab engineer told Nevada he does not expect 5,000 vehicles in 12 months"
+        ]
+      },
+      "fsdv15": {
+        "latestStatus": "Consumer FSD is unchanged: Supervised v14.3.7 on HW4 and v14.1 Lite on HW3 via 2026.21.6 (~27.8% of TeslaFi fleet). 2026.26.6.2 began rolling Aug 22 with no FSD merge; the Summer Update branch is now ~45.7% of the tracked fleet. v15 remains robotaxi-only.",
+        "nextMilestone": "A consumer FSD v15 OTA, or at least a merge of the current v14 stack into the 2026.26 Summer Update so owners are not stuck choosing between cabin features and the latest FSD.",
+        "concerns": [
+          "v15 still has no consumer ship date; IR’s step-change language has not been matched by a public build.",
+          "Summer Update 2026.26 continues to expand without FSD, splitting the fleet onto a non-FSD majority branch.",
+          "HW3 remains on a distilled Lite model with no official retrofit; one incomplete DIY HW4 swap does not constitute a program.",
+          "A two-hour WSJ drive and Musk “magic” posts do not substitute for unsupervised capability or a v15 consumer rollout."
+        ]
+      },
+      "jobPostings": {
+        "latestStatus": "U.S. openings still ~5,030 (flat vs Aug 15–22). Aug 22–23 added no core Tesla AI / Autopilot / Optimus software engineering reqs. In-window FSD signal is another data-collection operator (Jacksonville AI Safety Operator) plus a sensing-hardware TPM. A thin Optimus manufacturing-adjacent cluster (Austin battery-equipment engineer, Fremont process tech, Lathrop machining automation tech, Palo Alto interconnects) is live but is early-dev / line-support, not a production-associate ramp.",
+        "nextMilestone": "A counted Tesla-careers Optimus/FSD engineering wave, or production-associate / shift staffing for an Optimus line — not more mocap, supervisors, or single process-tech reqs",
+        "concerns": [
+          "Total U.S. reqs stuck ~5,000–5,030 for more than a week; no verified breakout of AI/robotics share because tesla.com/careers is blocked",
+          "FSD hiring remains operator/supervisor data collection, not Autopilot engineering",
+          "Optimus 'manufacturing' titles include at least one reused EV-battery interconnect JD; Austin battery-equipment role still says early development",
+          "LinkedIn past-24-hour Tesla filter is noisy (false-positive Model Y associate on Optimus/FSD keyword searches) and guest SERPs cap at 1,000+"
+        ]
+      },
+      "productionDelivery": {
+        "latestStatus": "No official Q3 2026 production/delivery print (expected early October). Street remains ~461.5k, likely QoQ down vs Q2 480k. Semi EOL video is unquantified staging, not a disclosed ramp. Model Y L is in Giga Texas lots with US deliveries still October. China July retail 27,249 already known; August not printed. Auto profit quality unchanged: 1.4% operating margin, −$1.09B FCF, FY CapEx >$25B.",
+        "nextMilestone": "Einride first Semis in September; IAA Europe Semi specs Sept 15–20; Model Y L US deliveries in October; official Q3 P&D print in early October",
+        "concerns": [
+          "Q3 auto deliveries still expected down vs Q2 480k with no new consensus refresh this window",
+          "Semi remains undisclosed volume 4 months after 'high-volume' start; 50k/year capacity is not run-rate",
+          "Model Y L adds no Q3 US volume if deliveries slip to October",
+          "China domestic retail was already weak in July (27,249) while exports inflated wholesale",
+          "Auto operating margin 1.4% and negative FCF leave little room if Q3 volume misses Street"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "sourcesSearched": [
+      "archpaper.com",
+      "basenor.com",
+      "businesskorea.co.kr",
+      "cnevpost.com",
+      "constructionequipmentguide.com",
+      "driveteslacanada.ca",
+      "electrek.co",
+      "en.sedaily.com",
+      "en.yna.co.kr",
+      "fool.com",
+      "glassdoor.com",
+      "gov.texas.gov",
+      "indeed.com",
+      "insideevs.com",
+      "ir.tesla.com",
+      "kbtx.com",
+      "koreajoongangdaily.com",
+      "linkedin.com",
+      "news.google.com",
+      "notateslaapp.com",
+      "optimusk.blog",
+      "robotaxitracker.com",
+      "servethehome.com",
+      "spacex.com",
+      "terafab.ai",
+      "tesla.com/careers",
+      "teslanorth.com",
+      "teslaoracle.com",
+      "teslarati.com",
+      "theeagle.com",
+      "thelec.net",
+      "tomshardware.com",
+      "traficom.fi",
+      "trendforce.com",
+      "yna.co.kr"
+    ],
+    "urlsSeen": [
+      "https://www.basenor.com/blogs/news/tesla-cybercab-in-dallas-5-details-that-matter",
+      "https://teslanorth.com/2026/08/22/tesla-fsd-wsj-review/",
+      "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4457355936",
+      "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-battery-manufacturing-optimus-at-tesla-4457300079",
+      "https://www.basenor.com/blogs/news/tesla-semi-production-may-finally-be-picking-up",
+      "https://www.basenor.com/blogs/news/wsjs-dan-neil-calls-tesla-fsd-amazing-musk-says-try-it",
+      "https://www.notateslaapp.com/software-updates/version/2026.26.6.2/release-notes",
+      "https://teslanorth.com/2026/08/22/tesla-megacharger-vernon-ca/"
+    ],
+    "categoriesResearched": [
+      "aiChip",
+      "battery4680",
+      "cybercab",
+      "fsd",
+      "fsdv15",
+      "jobPostings",
+      "optimus",
+      "productionDelivery",
+      "terafab"
+    ],
+    "validationSummary": {
+      "totalKeyChanges": 5,
+      "duplicatesRemoved": 0,
+      "sentimentCorrected": 0,
+      "weakClaimsRejected": 0,
+      "ownershipDrops": 0,
+      "warnings": 1
+    }
+  }
+}

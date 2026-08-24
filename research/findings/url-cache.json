@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-08-22",
+  "lastUpdated": "2026-08-23",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1114,22 +1114,57 @@
       "lastSeen": "2026-08-22",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "Chamber briefing cites 1,500 Terafab jobs vs SpaceX's 3,000 pledge; 9\u201310 year build"
+    },
+    "https://www.basenor.com/blogs/news/tesla-cybercab-in-dallas-5-details-that-matter": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-cybercab-in-dallas-5-details-that-matter",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "category": "Cybercab Production",
+      "title": "~100 Cybercabs staged at Dallas hub \u2014 still zero in paid public service"
+    },
+    "https://teslanorth.com/2026/08/22/tesla-fsd-wsj-review": {
+      "originalUrl": "https://teslanorth.com/2026/08/22/tesla-fsd-wsj-review/",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "category": "FSD v15 Software",
+      "title": "Musk hypes WSJ praise of Supervised v14; 2026.26.6.2 still ships with no FSD merge"
+    },
+    "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4457355936": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4457355936",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "category": "Job Postings",
+      "title": "Aug 22\u201323 Tesla AI/FSD/Optimus hiring is empty of core engineering"
+    },
+    "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-battery-manufacturing-optimus-at-tesla-4457300079": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-battery-manufacturing-optimus-at-tesla-4457300079",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "category": "Job Postings",
+      "title": "Optimus manufacturing-adjacent reqs are live \u2014 still not a production-line ramp"
+    },
+    "https://www.basenor.com/blogs/news/tesla-semi-production-may-finally-be-picking-up": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-semi-production-may-finally-be-picking-up",
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-23",
+      "category": "Vehicle Production & Delivery",
+      "title": "Semi EOL cluster at Nevada factory \u2014 still no official volume 4 months after 'high-volume' start"
     }
   },
   "stats": {
-    "totalUrls": 159,
+    "totalUrls": 164,
     "categoryCounts": {
       "Research": 9,
       "Optimus Production": 12,
-      "Cybercab Production": 19,
-      "FSD v15 Software": 14,
-      "Vehicle Production & Delivery": 18,
+      "Cybercab Production": 20,
+      "FSD v15 Software": 15,
+      "Vehicle Production & Delivery": 19,
       "unknown": 52,
       "FSD Country Approvals": 12,
       "4680 Battery Cell Production": 4,
       "Terafab Manufacturing": 4,
       "AI Chip Production": 6,
-      "Job Postings": 5,
+      "Job Postings": 7,
       "Terafab In-House Chip Manufacturing": 4
     }
   }
