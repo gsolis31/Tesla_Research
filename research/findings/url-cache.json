@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-08-23",
+  "lastUpdated": "2026-08-28",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1149,23 +1149,191 @@
       "lastSeen": "2026-08-23",
       "category": "Vehicle Production & Delivery",
       "title": "Semi EOL cluster at Nevada factory \u2014 still no official volume 4 months after 'high-volume' start"
+    },
+    "https://www.digitimes.com/news/a20260825PD228/tesla-hardware-design-chips-robotics.html": {
+      "originalUrl": "https://www.digitimes.com/news/a20260825PD228/tesla-hardware-design-chips-robotics.html",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "AI Chip Production",
+      "title": "Senior AI hardware director leaves Tesla for ex-Dojo startup DensityAI"
+    },
+    "https://wccftech.com/elon-musk-says-he-has-memorized-the-design-of-his-ai-chip-that-is-three-times-better-than-nvidias-ai-products": {
+      "originalUrl": "https://wccftech.com/elon-musk-says-he-has-memorized-the-design-of-his-ai-chip-that-is-three-times-better-than-nvidias-ai-products/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "AI Chip Production",
+      "title": "Musk claims AI5 is 2\u20133x Nvidia at 10% cost, while admitting the chip program 'wasn't closing'"
+    },
+    "https://www.koreajoongangdaily.com/business/ai-chip-boom-drove-global-foundry-market-growth-of-nearly-30-in-q2-report/12849481": {
+      "originalUrl": "https://www.koreajoongangdaily.com/business/ai-chip-boom-drove-global-foundry-market-growth-of-nearly-30-in-q2-report/12849481",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "AI Chip Production",
+      "title": "Samsung still 'improving SF2 yield' as TSMC already runs 2nm at 73% foundry share"
+    },
+    "https://www.teslarati.com/tesla-cybercab-unique-strategy-for-picking-up-right-rider": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-unique-strategy-for-picking-up-right-rider/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Cybercab Production",
+      "title": "Tesla tests Cybercab RGB rider-ID lights \u2014 still staff rides, some units have wheels"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-fleet-gets-a-brain-upgrade-ahead-of-cybercab-launch-event": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-fleet-gets-a-brain-upgrade-ahead-of-cybercab-launch-event/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Cybercab Production",
+      "title": "Robotaxi claims 6am\u201310pm hours and a bigger unsupervised fleet \u2014 no count given"
+    },
+    "https://teslanorth.com/2026/08/25/tesla-berlin-rural-robotaxi": {
+      "originalUrl": "https://teslanorth.com/2026/08/25/tesla-berlin-rural-robotaxi/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Cybercab Production",
+      "title": "Brandenburg talks rural Tesla robotaxis \u2014 Tesla unconfirmed, German FSD still blocked"
+    },
+    "https://cnevpost.com/2026/08/26/tesla-denies-rumors-china-fsd-pullout": {
+      "originalUrl": "https://cnevpost.com/2026/08/26/tesla-denies-rumors-china-fsd-pullout/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "FSD Country Approvals",
+      "title": "China still missing from Tesla FSD subscription list despite pullout denial"
+    },
+    "https://teslanorth.com/2026/08/24/tesla-swiss-fsd-ride-alongs": {
+      "originalUrl": "https://teslanorth.com/2026/08/24/tesla-swiss-fsd-ride-alongs/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "FSD Country Approvals",
+      "title": "Swiss FSD ride-alongs continue; Tesla still has not filed with Astra"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.26.6.5/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.26.6.5/release-notes",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "FSD v15 Software",
+      "title": "Tesla merges FSD v14.3.8 into Summer Update; v15 still absent, notes clone 14.3.7"
+    },
+    "https://teslanorth.com/2026/08/28/tesla-hw3-fsd-lite-australia": {
+      "originalUrl": "https://teslanorth.com/2026/08/28/tesla-hw3-fsd-lite-australia/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "FSD v15 Software",
+      "title": "Tesla emails AU/NZ HW3 owners that v14 Lite is 'in development' with no date"
+    },
+    "https://teslanorth.com/2026/08/28/tesla-fsd-100-million-europe": {
+      "originalUrl": "https://teslanorth.com/2026/08/28/tesla-fsd-100-million-europe/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "FSD v15 Software",
+      "title": "Tesla Europe hits 100 million supervised FSD km; still five countries on v14.2"
+    },
+    "https://www.linkedin.com/jobs/view/ai-engineer-model-pre-training-tesla-ai-at-tesla-4460315668": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/ai-engineer-model-pre-training-tesla-ai-at-tesla-4460315668",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Job Postings",
+      "title": "Tesla AI core engineering reappears as one pre-training req \u2014 Autopilot SWE still absent"
+    },
+    "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-zone-lead-optimus-at-tesla-4460172006": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/robotics-manufacturing-engineer-zone-lead-optimus-at-tesla-4460172006",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Job Postings",
+      "title": "Optimus hiring is prototype, service tooling, and data ops \u2014 still not a production-associate ramp"
+    },
+    "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4460167098": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4460167098",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Job Postings",
+      "title": "FSD/Robotaxi hiring this week is AI Safety Operators and fleet support, not Autopilot engineering"
+    },
+    "https://teslanorth.com/2026/08/26/tesla-optimus-1-billion-2036": {
+      "originalUrl": "https://teslanorth.com/2026/08/26/tesla-optimus-1-billion-2036/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Optimus Production",
+      "title": "Tesla's Q1-guided August Fremont Optimus SOP window closes with no first unit"
+    },
+    "https://www.benzinga.com/pressreleases/26/08/n61376435/xpeng-robotics-business-raises-over-us-900-million-post-money-valuation-over-us-6-3-billion-accelera": {
+      "originalUrl": "https://www.benzinga.com/pressreleases/26/08/n61376435/xpeng-robotics-business-raises-over-us-900-million-post-money-valuation-over-us-6-3-billion-accelera",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Optimus Production",
+      "title": "XPeng funds IRON for end-2026 mass production while Tesla Optimus is still pre-revenue"
+    },
+    "https://www.benzinga.com/markets/prediction-markets/26/08/61477237/softbank-1x-6-billion-tesla-optimus": {
+      "originalUrl": "https://www.benzinga.com/markets/prediction-markets/26/08/61477237/softbank-1x-6-billion-tesla-optimus",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Optimus Production",
+      "title": "1X takes paid NEO reservations as SoftBank talks $6B stake; Tesla 2026 Optimus preorder odds hit 3%"
+    },
+    "https://teslanorth.com/2026/08/26/tesla-model-y-europe-115957": {
+      "originalUrl": "https://teslanorth.com/2026/08/26/tesla-model-y-europe-115957/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Europe Q3 QTD cratering while EV market booms \u2014 Model Y 5,138 in July after 32,685 in June"
+    },
+    "https://www.teslarati.com/tesla-cybertruck-big-price-change-two-trims": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybertruck-big-price-change-two-trims/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Cybertruck AWD/Premium hiked $5,000 with no spec change \u2014 volume product still not selling"
+    },
+    "https://www.teslarati.com/tesla-semi-factory-is-getting-a-celebration-nobody-expected": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-factory-is-getting-a-celebration-nobody-expected/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla sets Sept 24 Nevada Semi factory inauguration \u2014 still no official volume 4 months after 'high-volume' start"
+    },
+    "https://www.teslarati.com/tesla-semi-biggest-adoptee-update-production-timeline": {
+      "originalUrl": "https://www.teslarati.com/tesla-semi-biggest-adoptee-update-production-timeline/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Einride CEO now expects ~75 Semis this year and the rest of 500 by end-2027 \u2014 still a rounding error"
+    },
+    "https://www.basenor.com/blogs/news/model-y-l-test-drives-begin-in-the-u-s-6-details-that-matter": {
+      "originalUrl": "https://www.basenor.com/blogs/news/model-y-l-test-drives-begin-in-the-u-s-6-details-that-matter",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Model Y L US test drives start at select showrooms \u2014 deliveries still not confirmed, originally October"
+    },
+    "https://www.kbtx.com/2026/08/24/spacexs-grimes-county-land-holdings-nearly-double-just-four-days": {
+      "originalUrl": "https://www.kbtx.com/2026/08/24/spacexs-grimes-county-land-holdings-nearly-double-just-four-days/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "WIT TECH land holdings jump to 7,721 acres \u2014 still ~35% of advertised 22,000-acre site"
+    },
+    "https://www.kbtx.com/2026/08/28/anderson-shiro-cisd-raises-taxes-budget-shrinks": {
+      "originalUrl": "https://www.kbtx.com/2026/08/28/anderson-shiro-cisd-raises-taxes-budget-shrinks/",
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "JETI school districts raise taxes as Terafab remains dirt work; first tax-roll hit 2029-30"
     }
   },
   "stats": {
-    "totalUrls": 164,
+    "totalUrls": 188,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 12,
-      "Cybercab Production": 20,
-      "FSD v15 Software": 15,
-      "Vehicle Production & Delivery": 19,
+      "Optimus Production": 15,
+      "Cybercab Production": 23,
+      "FSD v15 Software": 18,
+      "Vehicle Production & Delivery": 24,
       "unknown": 52,
-      "FSD Country Approvals": 12,
+      "FSD Country Approvals": 14,
       "4680 Battery Cell Production": 4,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 6,
-      "Job Postings": 7,
-      "Terafab In-House Chip Manufacturing": 4
+      "AI Chip Production": 9,
+      "Job Postings": 10,
+      "Terafab In-House Chip Manufacturing": 6
     }
   }
 }
