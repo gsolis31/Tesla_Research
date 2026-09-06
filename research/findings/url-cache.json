@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-08-28",
+  "lastUpdated": "2026-09-06",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1317,23 +1317,170 @@
       "lastSeen": "2026-08-28",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "JETI school districts raise taxes as Terafab remains dirt work; first tax-roll hit 2029-30"
+    },
+    "https://teslanorth.com/2026/09/05/tesla-cybertruck-gulf-coast-lithium-4680-2": {
+      "originalUrl": "https://teslanorth.com/2026/09/05/tesla-cybertruck-gulf-coast-lithium-4680-2/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "4680 Battery Cell Production",
+      "title": "First Cybertruck uses Gulf Coast lithium in 4680 cells; volume and GWh still undisclosed"
+    },
+    "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals": {
+      "originalUrl": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "Paid Austin Cybercab rides start \u2014 45 registered, dispatch pool unstated"
+    },
+    "https://www.teslarati.com/tesla-cybercab-launch-nhtsa-attention-know-more": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-launch-nhtsa-attention-know-more/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "NHTSA opens AQ26002 into Cybercab FMVSS self-certification of ~1,000 units"
+    },
+    "https://teslanorth.com/2026/09/02/tesla-robotaxi-texas-420": {
+      "originalUrl": "https://teslanorth.com/2026/09/02/tesla-robotaxi-texas-420/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "Texas authorizes 420 robotaxis including 45 Cybercabs \u2014 live unsupervised count still unproven"
+    },
+    "https://www.teslarati.com/tesla-crosses-major-unsupervised-self-driving-milestone": {
+      "originalUrl": "https://www.teslarati.com/tesla-crosses-major-unsupervised-self-driving-milestone/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "Tesla claims 1M unsupervised Robotaxi miles \u2014 ~0.5% of Waymo's rider-only total"
+    },
+    "https://teslanorth.com/2026/09/03/tesla-robotaxi-interest-form": {
+      "originalUrl": "https://teslanorth.com/2026/09/03/tesla-robotaxi-interest-form/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "Cybercab 'fleet orders' are an interest form \u2014 no price, no PO, owners still locked out"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-24-7-service": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-24-7-service/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Cybercab Production",
+      "title": "Ashok says 24/7 Robotaxi is 'next month or so' \u2014 still 6am\u201310pm, blocked on v15"
+    },
+    "https://teslanorth.com/2026/09/03/tesla-fsd-france-utac-tests": {
+      "originalUrl": "https://teslanorth.com/2026/09/03/tesla-fsd-france-utac-tests/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "FSD Country Approvals",
+      "title": "France starts UTAC FSD road tests; consumer approval still blocked"
+    },
+    "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/skriftlig-fraga/sveriges-standpunkt-i-eu-gallande-behandling-av_hd111000": {
+      "originalUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/skriftlig-fraga/sveriges-standpunkt-i-eu-gallande-behandling-av_hd111000/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "FSD Country Approvals",
+      "title": "Sweden restates EU-wide FSD aim but does not override Trafikverket no-vote"
+    },
+    "https://teslanorth.com/2026/09/01/tesla-fsd-europe-dashboard": {
+      "originalUrl": "https://teslanorth.com/2026/09/01/tesla-fsd-europe-dashboard/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "FSD Country Approvals",
+      "title": "Tesla opens Article 39 FSD dashboard; data is pre-April and 4.1x not 5.2x"
+    },
+    "https://www.teslarati.com/tesla-full-self-driving-overtake-manual-driving-avoid-disaster": {
+      "originalUrl": "https://www.teslarati.com/tesla-full-self-driving-overtake-manual-driving-avoid-disaster/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "FSD v15 Software",
+      "title": "Tesla starts employee FSD v14.3.9 with Automatic Collision Evasion; v15 still absent"
+    },
+    "https://teslanorth.com/2026/08/31/tesla-fsd-pothole-avoidance": {
+      "originalUrl": "https://teslanorth.com/2026/08/31/tesla-fsd-pothole-avoidance/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "FSD v15 Software",
+      "title": "Musk says FSD pothole avoidance is coming soon; still listed as upcoming since April"
+    },
+    "https://www.linkedin.com/jobs/view/supplier-industrialization-engineer-optimus-at-tesla-4462485457": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/supplier-industrialization-engineer-optimus-at-tesla-4462485457",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Job Postings",
+      "title": "Optimus hiring adds actuator SIE and Fremont repair techs \u2014 still zero production-associate reqs"
+    },
+    "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4462051939": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/ai-safety-operator-at-tesla-4462051939",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Job Postings",
+      "title": "FSD/Robotaxi hiring expands to Orlando plus a national night-shift depot wave \u2014 still not Autopilot engineering"
+    },
+    "https://www.linkedin.com/jobs/view/thermal-design-engineer-ai-hardware-at-tesla-4462116746": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/thermal-design-engineer-ai-hardware-at-tesla-4462116746",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Job Postings",
+      "title": "Tesla AI hiring is Dojo cooling and 2027 internships \u2014 Autopilot SWE window empty again"
+    },
+    "https://www.basenor.com/blogs/news/optimus-shows-up-at-teslas-cybercab-launch-event": {
+      "originalUrl": "https://www.basenor.com/blogs/news/optimus-shows-up-at-teslas-cybercab-launch-event",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Optimus Production",
+      "title": "Tesla stages Optimus at Cybercab launch but still withholds Fremont SOP, rate, and yield"
+    },
+    "https://cnevpost.com/2026/09/02/tesla-china-aug-2026-wholesale-sales": {
+      "originalUrl": "https://cnevpost.com/2026/09/02/tesla-china-aug-2026-wholesale-sales/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "China August wholesale 86,166 \u2014 sequential drop as YoY growth collapses to 3.6% and retail still unprinted"
+    },
+    "https://www.teslarati.com/tesla-model-y-l-gets-suspension-complaints-odd-issue-china": {
+      "originalUrl": "https://www.teslarati.com/tesla-model-y-l-gets-suspension-complaints-odd-issue-china/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "Model Y L China rear-suspension sag \u2014 no recall, springs fail again, US deliveries still originally October"
+    },
+    "https://thedriven.io/2026/09/04/australian-electric-vehicle-sales-by-month-in-2026-by-model-and-by-brand-3": {
+      "originalUrl": "https://thedriven.io/2026/09/04/australian-electric-vehicle-sales-by-month-in-2026-by-model-and-by-brand-3/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Vehicle Production & Delivery",
+      "title": "Australia August: Model Y 6,414 is #1 overall \u2014 Tesla still 3rd as a brand, 7.7k vs Europe crater"
+    },
+    "https://www.statesman.com/business/article/elon-musk-tesla-terafab-texas-timeline-22403413.php": {
+      "originalUrl": "https://www.statesman.com/business/article/elon-musk-tesla-terafab-texas-timeline-22403413.php",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "JETI deals lock Dec. 1 start, 2028 finish \u2014 enforceable floor is 10 jobs and $20M"
+    },
+    "https://www.kbtx.com/2026/09/02/raising-pay-grimes-county-workers-isnt-easy-it-sounds": {
+      "originalUrl": "https://www.kbtx.com/2026/09/02/raising-pay-grimes-county-workers-isnt-easy-it-sounds/",
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Grimes County says Terafab payments have started as it struggles to raise worker pay"
     }
   },
   "stats": {
-    "totalUrls": 188,
+    "totalUrls": 209,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 15,
-      "Cybercab Production": 23,
-      "FSD v15 Software": 18,
-      "Vehicle Production & Delivery": 24,
+      "Optimus Production": 16,
+      "Cybercab Production": 29,
+      "FSD v15 Software": 20,
+      "Vehicle Production & Delivery": 27,
       "unknown": 52,
-      "FSD Country Approvals": 14,
-      "4680 Battery Cell Production": 4,
+      "FSD Country Approvals": 17,
+      "4680 Battery Cell Production": 5,
       "Terafab Manufacturing": 4,
       "AI Chip Production": 9,
-      "Job Postings": 10,
-      "Terafab In-House Chip Manufacturing": 6
+      "Job Postings": 13,
+      "Terafab In-House Chip Manufacturing": 8
     }
   }
 }
