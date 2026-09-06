@@ -78,6 +78,7 @@ Research ONLY CATEGORY.
 Read research/configs/research-config-CATEGORY.json and write to its outputPath.
 Do not read data/tesla-tracking-data.json, research/findings/url-cache.json, or any research/findings/YYYY-MM-DD.json.
 Dedup using hotContext.recentKeyChanges and hotContext.seenUrls in the config.
+On Grok, call web_search not search_tool.
 Follow your system instructions for search, sentiment, ownership, and output schema.
 ```
 

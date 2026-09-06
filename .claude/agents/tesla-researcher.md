@@ -29,6 +29,7 @@ When invoked, you will receive a research configuration file path (e.g., `resear
    - Note the date range, keywords, sources, and hot context
 
 2. **Search Strategy**
+   - On Grok, call `web_search` not `search_tool` (`search_tool` searches MCP tool catalogs, not the web). Then `web_fetch` article URLs. Do not scrape site `?s=` search pages as a substitute.
    - Start with Tier 1 sources (Tesla official, Teslarati, TeslaNorth, etc.)
    - Use category-specific keywords
    - Cross-reference multiple sources
