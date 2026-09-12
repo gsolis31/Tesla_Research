@@ -55,9 +55,11 @@ python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
 
 V2 pipeline:
 1. Generates configs under `research/configs/` (gitignored)
-2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json` (gitignored)
-3. Curator validates/dedupes/sentiment-corrects → `research/findings/YYYY-MM-DD.json`
-4. `finalize_update.py` chains: merge → url-cache → archive → validate (Python + Zod) → build
+2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json` (gitignored; must include `searchLog`)
+   Coverage scout (with batch 3) → `research/logs/YYYY-MM-DD/coverage.json`
+3. `lint_findings.py --raw` → `research/logs/YYYY-MM-DD/` (committed; diffs scout vs researchers)
+4. Curator validates/dedupes/sentiment-corrects and addresses coverage gaps → `research/findings/YYYY-MM-DD.json`
+5. `finalize_update.py` chains: lint-curated → merge → url-cache → archive → validate (Python + Zod) → build
 
 ## Project Structure
 
@@ -71,12 +73,14 @@ Research/
 ├── research/
 │   ├── configs/                 # Gitignored — generated research-config-*.json + curator-config
 │   ├── raw/                     # Gitignored — per-category findings-{category}.json
+│   ├── logs/                    # Committed per-run searchLog, lint, run.json
 │   └── findings/                # Curated YYYY-MM-DD.json, reports, url-cache, schema
 ├── scripts/
 │   ├── paths.py                 # Canonical paths (import this; don't hardcode)
 │   ├── spawn_researcher.py      # slim configs (titles + seenUrls) → research/configs/
-│   ├── spawn_curator.py         # curator-config (slim last week + seenUrls)
-│   ├── finalize_update.py       # One command: merge → cache → archive → validate → build
+│   ├── spawn_curator.py         # curator-config (slim last week + seenUrls + lintReport)
+│   ├── lint_findings.py         # Mechanical quality gate + run ledger
+│   ├── finalize_update.py       # lint-curated → merge → cache → archive → validate → build
 │   ├── merge_findings.py        # curated findings → data/
 │   ├── validate_data.py         # Python structure + invariants
 │   ├── validate-zod-schema.ts   # Zod check (CI + pre-commit)
@@ -102,12 +106,18 @@ spawn_researcher.py --all
 research/configs/research-config-*.json
         ↓
 9× tesla-researcher (3 batches of 3)
++ tesla-coverage-scout (with batch 3)
         ↓
 research/raw/findings-{category}.json
+research/logs/YYYY-MM-DD/coverage.json
+        ↓
+lint_findings.py --raw → research/logs/YYYY-MM-DD/
         ↓
 spawn_curator.py + tesla-curator
         ↓
 research/findings/YYYY-MM-DD.json
+        ↓
+lint_findings.py --curated
         ↓
 merge_findings.py → data/tesla-tracking-data.json
         ↓
@@ -121,7 +131,10 @@ git commit + push → GitHub Actions deploys Pages
 | Gate | What it does |
 |------|----------------|
 | **Category ownership** | Each researcher has `owns` / `doesNotOwn` (e.g. AI5 tape-out → aiChip, not terafab; FSD OTA → fsdv15, not fsd) |
-| **Curator** | Dedupes vs last week's titles + `seenUrls` in the curator config (does not load the cache file); auto-corrects sugar-coated sentiment; rejects weak Electrek-only claims |
+| **searchLog + run ledger** | Every researcher records queries/skips; `research/logs/YYYY-MM-DD/run.json` shows ok / empty / lint_error / missing |
+| **Coverage scout** | Independent news sweep. Lint diffs it against the 9 researchers; unmatched items become curator `coverageGaps` |
+| **lint_findings.py** | Deterministic gates (registration-as-fleet, stale dates, Electrek-only, ownership trespass). Gold evals in `tests/evals/` |
+| **Curator** | Dedupes vs last week's titles + `seenUrls`; honors lint-raw errors as must-drops; files or rejects every coverage gap |
 | **Canonical URL cache** | Only article source URLs are cached (no search pages, RSS, homepages) |
 | **Dual validation** | Python `validate_data.py` + Zod `src/schema.ts` (CI + build) |
 

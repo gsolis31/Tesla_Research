@@ -1,0 +1,28 @@
+{
+  "categoryKey": "optimus",
+  "keyChanges": [
+    {
+      "title": "Rumor of secret Optimus factory",
+      "description": "A blog says Tesla might possibly could be building a new Optimus line.",
+      "date": "2026-09-02",
+      "category": "Optimus Production",
+      "status": "positive",
+      "sentiment": { "headline": "positive", "reality": "positive", "confidence": "low" },
+      "evidence": {
+        "positive_signals": ["Anonymous source claims a factory"],
+        "negative_signals": ["No official confirmation"]
+      },
+      "source": "https://electrek.co/2026/09/02/tesla-optimus-secret-factory/"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "Optimus factory rumor", "tool": "web_search", "hits": 3 }],
+    "fetched": [{ "url": "https://electrek.co/2026/09/02/tesla-optimus-secret-factory/", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["electrek.co"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

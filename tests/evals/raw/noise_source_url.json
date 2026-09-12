@@ -1,0 +1,28 @@
+{
+  "categoryKey": "fsd",
+  "keyChanges": [
+    {
+      "title": "France starts UTAC FSD road tests",
+      "description": "UTAC began tests of two series cars after a Tabarot–Musk call. Consumer approval still blocked.",
+      "date": "2026-09-03",
+      "category": "FSD Country Approvals",
+      "status": "neutral",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "medium" },
+      "evidence": {
+        "positive_signals": ["UTAC tests of two series cars started"],
+        "negative_signals": ["July rejection still stands"]
+      },
+      "source": "https://www.teslarati.com/?s=france+fsd"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "France UTAC FSD", "tool": "web_search", "hits": 4 }],
+    "fetched": [{ "url": "https://www.teslarati.com/?s=france+fsd", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

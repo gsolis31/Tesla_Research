@@ -1,0 +1,57 @@
+{
+  "categoryKey": "cybercab",
+  "keyChanges": [
+    {
+      "title": "Paid Austin Cybercab rides start — 45 registered, dispatch pool unstated",
+      "description": "Tesla opened public Robotaxi-app booking for the no-controls Cybercab on September 4.",
+      "date": "2026-09-04",
+      "category": "Cybercab Production",
+      "status": "neutral",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "high" },
+      "evidence": {
+        "positive_signals": ["Paid public Cybercab rides started in Austin on Sep 4"],
+        "negative_signals": ["Tesla has not published the Austin dispatch pool"]
+      },
+      "source": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+    }
+  ],
+  "metricUpdate": {
+    "date": "2026-09-03",
+    "count": 45,
+    "note": "Texas-registered Cybercabs on Tesla Robotaxi, LLC TxMCCS roster — not a production print",
+    "source": "https://www.txdmv.gov/"
+  },
+  "fleetUpdate": {
+    "city": "Austin",
+    "country": "USA",
+    "status": "active",
+    "vehicleCount": 45,
+    "lastUpdate": "2026-09-03",
+    "note": "Texas registered 45 Cybercabs; not the live unsupervised dispatch pool",
+    "source": "https://www.txdmv.gov/"
+  },
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+  ],
+  "searchLog": {
+    "queries": [{ "q": "Tesla Cybercab Austin paid rides September 2026", "tool": "web_search", "hits": 10 }],
+    "fetched": [
+      { "url": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/", "kept": true }
+    ],
+    "considered": [
+      {
+        "title": "Paid Austin Cybercab rides",
+        "url": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/",
+        "decision": "file",
+        "reason": "first paid no-controls public rides"
+      }
+    ],
+    "metricCandidates": [
+      { "series": "robotaxiFleet", "count": 45, "decision": "file", "reason": "WRONG: TxMCCS registration dumped as fleet" }
+    ]
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

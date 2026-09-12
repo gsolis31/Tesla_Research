@@ -156,6 +156,27 @@ def merge_weekly_summary(main_data: dict, findings: dict) -> dict:
     return main_data
 
 
+def looks_like_registration(point: dict) -> bool:
+    """True if a metric point is a DMV/registry count, not an in-service fleet print."""
+    note = (point.get('note') or '').lower()
+    bd = point.get('breakdown') or {}
+    if isinstance(bd, dict) and bd.get('texasRegistered'):
+        return True
+    if 'texas-registered' in note or 'texas registered' in note:
+        return True
+    if 'txmccs' in note:
+        return True
+    if 'dmv' in note and 'registr' in note:
+        return True
+    if 'registration basis' in note or 'registry count' in note:
+        return True
+    if 'automated-vehicle registry' in note or 'automated vehicle registry' in note:
+        return True
+    if 'commercial registration' in note:
+        return True
+    return False
+
+
 def merge_metrics(main_data: dict, findings: dict) -> dict:
     """
     Merge metric data points (append-only, no duplicates).
@@ -167,21 +188,6 @@ def merge_metrics(main_data: dict, findings: dict) -> dict:
 
     def get_date(point):
         return point.get('date') or point.get('lastUpdate')
-
-    def looks_like_registration(point) -> bool:
-        note = (point.get('note') or '').lower()
-        bd = point.get('breakdown') or {}
-        if isinstance(bd, dict) and bd.get('texasRegistered'):
-            return True
-        if 'texas-registered' in note or 'texas registered' in note:
-            return True
-        if 'dmv' in note and 'registr' in note:
-            return True
-        if 'registration basis' in note or 'registry count' in note:
-            return True
-        if 'automated-vehicle registry' in note or 'automated vehicle registry' in note:
-            return True
-        return False
 
     def normalize_metric_point(point: dict) -> dict:
         out = {

@@ -103,6 +103,36 @@ Write to the path in config `outputPath` (default: `research/raw/findings-{categ
     "concerns": ["Concern 1", "Concern 2"]
   },
   "urlsSeen": ["url1", "url2"],
+  "searchLog": {
+    "queries": [
+      { "q": "Tesla Cybercab Austin 2026", "tool": "web_search", "hits": 8 }
+    ],
+    "fetched": [
+      { "url": "https://teslarati.com/article-url", "kept": true, "reason": null }
+    ],
+    "considered": [
+      {
+        "title": "Brief title",
+        "url": "https://teslarati.com/article-url",
+        "decision": "file",
+        "reason": "new development in date window"
+      },
+      {
+        "title": "Last week's recap",
+        "url": "https://teslarati.com/already-filed",
+        "decision": "skip",
+        "reason": "seenUrl / last-week recap"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 45,
+        "decision": "reject",
+        "reason": "TxMCCS registration, not live dispatch — use robotaxiRegistered"
+      }
+    ]
+  },
   "metadata": {
     "sourcesSearched": ["teslarati.com", "teslanorth.com"],
     "dateRange": "2026-07-08 to 2026-07-10",
@@ -110,6 +140,8 @@ Write to the path in config `outputPath` (default: `research/raw/findings-{categ
   }
 }
 ```
+
+`searchLog` is required even on empty weeks. `python3 scripts/lint_findings.py --raw` extracts it to `research/logs/YYYY-MM-DD/{category}.json`. Do not write that log file yourself.
 
 If NO news found, write:
 ```json
@@ -119,6 +151,23 @@ If NO news found, write:
   "metricUpdate": null,
   "categoryUpdate": null,
   "urlsSeen": [],
+  "searchLog": {
+    "queries": [
+      { "q": "Tesla Cybercab Austin 2026", "tool": "web_search", "hits": 8 }
+    ],
+    "fetched": [
+      { "url": "https://teslarati.com/already-filed", "kept": false, "reason": "seenUrl" }
+    ],
+    "considered": [
+      {
+        "title": "Closest story you looked at",
+        "url": "https://teslarati.com/already-filed",
+        "decision": "skip",
+        "reason": "last-week recap, no new metric"
+      }
+    ],
+    "metricCandidates": []
+  },
   "metadata": {
     "skipReason": "No significant news found in date range"
   }
@@ -200,13 +249,25 @@ Your config may include an `ownership` block:
 
 Prefer fewer high-quality article URLs over dumping every URL you visited.
 
+## searchLog discipline
+
+`searchLog` is how we tell “searched well, nothing new” from “two queries and a skip.”
+
+- `queries`: every `web_search` you ran (query text + hit count). Empty queries on an empty week is a lint error.
+- `fetched`: canonical article URLs you opened (same rules as `urlsSeen`). Not search pages.
+- `considered`: stories you evaluated, **including skips**. Empty-week files must list the 1–3 closest rejects.
+- `metricCandidates`: any number you almost wrote. Registration / TxMCCS / DMV counts are `decision: reject` for `cybercab` production and `robotaxiFleet` — those belong on `robotaxiRegistered` only.
+- `decision` is `file` or `skip` (considered) / `file` or `reject` (metrics).
+
 ## Quality Standards
 
 - Minimum 2 sources for high confidence
 - Electrek-only + low confidence = REJECT
 - Vague language ("could", "might", "possibly") = low confidence
 - Official numbers only for metrics
+- Texas TxMCCS / DMV registry counts are **not** `metricUpdate` (production) and **not** `fleetUpdate` (active fleet)
 - Always include source URLs
+- Always include `searchLog` (queries + considered skips)
 - Date every finding
 - Respect category ownership (see above)
 

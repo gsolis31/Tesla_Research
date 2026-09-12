@@ -1,0 +1,28 @@
+{
+  "categoryKey": "jobPostings",
+  "keyChanges": [
+    {
+      "title": "Tesla AI hiring is Dojo cooling and 2027 internships — Autopilot SWE window empty again plus Digital Optimus datacenter and model-training roles still missing from the board",
+      "description": "Past-week Tesla US AI postings are thermal/Dojo internships, not Autopilot SWE.",
+      "date": "2026-09-05",
+      "category": "Job Postings",
+      "status": "negative",
+      "sentiment": { "headline": "neutral", "reality": "negative", "confidence": "high" },
+      "evidence": {
+        "positive_signals": ["Some Dojo thermal internships posted"],
+        "negative_signals": ["Autopilot SWE window empty"]
+      },
+      "source": "https://www.linkedin.com/jobs/view/1234567890"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "Tesla Autopilot SWE jobs", "tool": "web_search", "hits": 3 }],
+    "fetched": [{ "url": "https://www.linkedin.com/jobs/view/1234567890", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["linkedin.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

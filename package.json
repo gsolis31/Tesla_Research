@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "test": "python3 -m pytest",
     "test:merge": "python3 -m pytest tests/test_merge_findings.py",
+    "test:lint": "python3 -m pytest tests/test_lint_findings.py",
     "hooks:install": "bash scripts/install_hooks.sh",
     "prepare": "bash scripts/install_hooks.sh || true"
   },

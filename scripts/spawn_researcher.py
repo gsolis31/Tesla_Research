@@ -4,7 +4,8 @@ Spawn a tesla-researcher agent for one category.
 
 Usage:
     python3 scripts/spawn_researcher.py cybercab
-    python3 scripts/spawn_researcher.py --all  # spawn all 9 in parallel
+    python3 scripts/spawn_researcher.py --all    # 9 researcher configs + coverage scout
+    python3 scripts/spawn_researcher.py --scout  # coverage-scout-config.json only
 """
 
 import json
@@ -18,6 +19,9 @@ from paths import (  # noqa: E402
     TRACKING_DATA,
     RAW_DIR,
     ensure_research_dirs,
+    coverage_path,
+    coverage_scout_config_path,
+    logs_dir,
     research_config_path,
 )
 from url_cache import load_cache  # noqa: E402
@@ -391,10 +395,58 @@ def create_config(category_key, date_from, date_to, week_of, data=None, cache_ur
     return config
 
 
+def create_scout_config(date_from, date_to, week_of, data=None):
+    """Slim config for tesla-coverage-scout. No full URL cache — last-week titles only."""
+    if data is None:
+        with open(TRACKING_DATA) as f:
+            data = json.load(f)
+
+    last_week = []
+    if data.get("weeklySummaries"):
+        last_week = [
+            slim_key_change(kc)
+            for kc in data["weeklySummaries"][0].get("keyChanges", [])
+        ]
+
+    return {
+        "dateFrom": date_from,
+        "dateTo": date_to,
+        "weekOf": week_of,
+        "outputPath": str(coverage_path(date_to)),
+        "maxCandidates": 15,
+        "hotContext": {
+            "lastWeekKeyChanges": last_week,
+        },
+        "sources": {
+            "tier1": [
+                "teslarati.com",
+                "teslanorth.com",
+                "teslaoracle.com",
+                "ir.tesla.com",
+                "tesla.com",
+            ],
+            "regulatory": ["nhtsa.gov", "ntsb.gov"],
+            "tier2": ["electrek.co"],
+        },
+        "categoryKeys": list(CATEGORIES.keys()),
+        "categoryNames": dict(CATEGORY_DISPLAY_NAMES),
+    }
+
+
+def write_scout_config(date_from, date_to, week_of, data=None) -> Path:
+    logs_dir(date_to).mkdir(parents=True, exist_ok=True)
+    config = create_scout_config(date_from, date_to, week_of, data=data)
+    path = coverage_scout_config_path()
+    with open(path, "w") as f:
+        json.dump(config, f, indent=2)
+    return path
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 scripts/spawn_researcher.py <category>")
         print("       python3 scripts/spawn_researcher.py --all")
+        print("       python3 scripts/spawn_researcher.py --scout")
         print(f"\nAvailable categories: {', '.join(CATEGORIES.keys())}")
         sys.exit(1)
 
@@ -411,8 +463,16 @@ def main():
     monday = now - timedelta(days=now.weekday())
     week_of = monday.strftime("%Y-%m-%d")
 
+    if sys.argv[1] == "--scout":
+        path = write_scout_config(date_from, date_to, week_of, data=data)
+        print(f"✅ Created coverage scout config: {path}")
+        print(f"  Period: {date_from} → {date_to}")
+        print(f"  Output: research/logs/{date_to}/coverage.json")
+        print(f"\nNext: Spawn tesla-coverage-scout with this config")
+        return
+
     if sys.argv[1] == "--all":
-        print(f"Creating configs for all 9 categories...")
+        print(f"Creating configs for all 9 categories + coverage scout...")
         print(f"Research period: {date_from} → {date_to}")
         print(f"Week of: {week_of}\n")
 
@@ -434,12 +494,19 @@ def main():
                 f"→ {config_path.relative_to(config_path.parents[1])}"
             )
 
-        print(f"\n✅ Created 9 config files in research/configs/")
+        scout_path = write_scout_config(date_from, date_to, week_of, data=data)
+        print(f"✓ {'coverage-scout':20} {'(recall)':8} model=sonnet "
+              f"{scout_path.stat().st_size:5}B "
+              f"→ {scout_path.relative_to(scout_path.parents[1])}")
+
+        print(f"\n✅ Created 9 researcher configs + coverage-scout-config.json")
         print(f"   Researchers write to research/raw/findings-{{category}}.json")
+        print(f"   Scout writes to research/logs/{date_to}/coverage.json")
         print(f"\nNext steps:")
-        print(f"1. Spawn researchers in parallel (via Task tool or manually)")
-        print(f"2. Wait for all to complete")
-        print(f"3. Run tesla-curator to merge findings")
+        print(f"1. Spawn researchers in 3 batches; spawn coverage scout with batch 3")
+        print(f"2. Wait for 9 raw files + coverage.json")
+        print(f"3. python3 scripts/lint_findings.py --raw --date {date_to} --write-logs")
+        print(f"4. Run tesla-curator to merge findings")
 
     else:
         category_key = sys.argv[1]

@@ -1,0 +1,28 @@
+{
+  "categoryKey": "terafab",
+  "keyChanges": [
+    {
+      "title": "AI5 tape-out at Samsung Taylor 2nm",
+      "description": "Samsung reportedly completed AI5 tape-out on the Taylor 2nm line. This is a foundry process milestone, not a Terafab construction update.",
+      "date": "2026-09-02",
+      "category": "Terafab In-House Chip Manufacturing",
+      "status": "neutral",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "medium" },
+      "evidence": {
+        "positive_signals": ["Tape-out claimed at Taylor"],
+        "negative_signals": ["No volume silicon date"]
+      },
+      "source": "https://www.teslarati.com/tesla-ai5-samsung-taylor-tape-out/"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "Terafab AI5 tape-out", "tool": "web_search", "hits": 4 }],
+    "fetched": [{ "url": "https://www.teslarati.com/tesla-ai5-samsung-taylor-tape-out/", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

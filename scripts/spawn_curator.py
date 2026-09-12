@@ -16,9 +16,13 @@ sys.path.insert(0, str(Path(__file__).parent))
 from paths import (  # noqa: E402
     TRACKING_DATA,
     RAW_DIR,
+    coverage_gaps_path,
+    coverage_path,
     ensure_research_dirs,
     curator_config_path,
     curated_findings_path,
+    lint_raw_path,
+    logs_dir,
 )
 from spawn_researcher import all_seen_urls, slim_key_change  # noqa: E402
 from url_cache import load_cache  # noqa: E402
@@ -75,6 +79,14 @@ def main():
 
     seen_urls = all_seen_urls(load_cache().get("urls", {}))
 
+    gaps = []
+    gaps_file = coverage_gaps_path(date)
+    if gaps_file.exists():
+        try:
+            gaps = json.loads(gaps_file.read_text()).get("gaps") or []
+        except json.JSONDecodeError:
+            gaps = []
+
     config = {
         "date": date,
         "weekOf": week_of,
@@ -83,6 +95,10 @@ def main():
             "lastWeekKeyChanges": last_week_key_changes,
             "seenUrls": seen_urls,
         },
+        "lintReport": str(lint_raw_path(date).as_posix()),
+        "coverageReport": str(coverage_path(date).as_posix()),
+        "coverageGaps": gaps,
+        "logsDir": str(logs_dir(date).as_posix()),
         "outputPath": str(curated_findings_path(date).as_posix()),
     }
 
@@ -97,6 +113,10 @@ def main():
     print(f"  Category findings: {len(findings_files)}")
     print(f"  Last week keyChanges: {len(last_week_key_changes)} (slim)")
     print(f"  seenUrls: {len(seen_urls)}")
+    lint_path = lint_raw_path(date)
+    print(f"  lintReport: {lint_path} ({'exists' if lint_path.exists() else 'missing — run lint_findings.py --raw'})")
+    print(f"  coverageGaps: {len(gaps)}"
+          f" ({'missing coverage.json' if not coverage_path(date).exists() else 'from coverage-gaps.json'})")
     print(f"  Config size: {config_path.stat().st_size}B")
     print(f"\nNext: Spawn tesla-curator agent with this config")
     print(f"  Expected output: research/findings/{date}.json")

@@ -3,7 +3,7 @@
 Post-research finalization pipeline.
 
 Chains all steps that follow curator output into a single command:
-  merge → url-cache → archive → python-validate → zod-validate → build
+  lint-curated → merge → url-cache → archive → python-validate → zod-validate → build
 
 Usage:
     python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
@@ -36,11 +36,25 @@ def main() -> None:
         sys.exit(1)
 
     findings_file = findings_args[0]
+    findings_path = Path(ROOT / findings_file)
 
-    if not Path(ROOT / findings_file).exists():
+    if not findings_path.exists():
         print(f"✗ Findings file not found: {findings_file}")
         sys.exit(1)
 
+    date = findings_path.stem
+    run(
+        "lint curated findings",
+        [
+            "python3",
+            "scripts/lint_findings.py",
+            "--curated",
+            findings_file,
+            "--date",
+            date,
+            "--write-logs",
+        ],
+    )
     run("merge findings", ["python3", "scripts/merge_findings.py", findings_file])
     run("update url cache", ["python3", "scripts/update_url_cache.py", findings_file])
     run("archive old data", ["python3", "scripts/archive_old_data.py"])

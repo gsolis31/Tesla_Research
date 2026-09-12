@@ -1,0 +1,52 @@
+{
+  "categoryKey": "cybercab",
+  "keyChanges": [
+    {
+      "title": "Nevada NTA grants 5,000-vehicle Clark County robotaxi permit",
+      "description": "The Nevada Transportation Authority voted on August 20 to raise Tesla's Clark County robotaxi cap. Tesla's own Cybercab lead said they will not fill 5,000 in 12 months; first vehicles are Model Y; zero in paid Las Vegas service.",
+      "date": "2026-08-20",
+      "category": "Cybercab Production",
+      "status": "positive",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "high" },
+      "evidence": {
+        "positive_signals": [
+          "NTA voted a 5,000-vehicle Clark County permit",
+          "Paper cap is larger than the prior 10-vehicle Strip cap",
+          "Tesla can theoretically stage more Model Y robotaxis",
+          "Permit is a real regulatory document",
+          "Date of vote is new vs last week"
+        ],
+        "negative_signals": [
+          "Tesla Cybercab lead said they will not fill 5,000 in 12 months",
+          "First vehicles are Model Y, not Cybercab",
+          "Zero vehicles in paid Las Vegas service",
+          "Cap is not a deployment",
+          "No launch date for paid Strip rides",
+          "Staff rides only if any",
+          "Paper permit does not move the verified fleet print"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-nevada-robotaxi-permit-5000/"
+    }
+  ],
+  "metricUpdate": null,
+  "fleetUpdate": null,
+  "urlsSeen": ["https://www.teslarati.com/tesla-nevada-robotaxi-permit-5000/"],
+  "searchLog": {
+    "queries": [{ "q": "Tesla Nevada robotaxi permit 5000", "tool": "web_search", "hits": 6 }],
+    "fetched": [{ "url": "https://www.teslarati.com/tesla-nevada-robotaxi-permit-5000/", "kept": true }],
+    "considered": [
+      {
+        "title": "Nevada NTA 5,000-vehicle permit",
+        "url": "https://www.teslarati.com/tesla-nevada-robotaxi-permit-5000/",
+        "decision": "file",
+        "reason": "new NTA vote vs last week's 10-vehicle cap"
+      }
+    ],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com"],
+    "dateRange": "2026-08-17 to 2026-08-22"
+  }
+}

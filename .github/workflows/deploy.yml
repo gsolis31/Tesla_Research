@@ -32,7 +32,7 @@ jobs:
       - name: Install Python test deps
         run: pip install -r requirements-dev.txt
 
-      - name: Unit tests (merge pipeline)
+      - name: Unit tests (merge + lint evals)
         run: |
           python3 -m pytest
           echo "✅ Unit tests passed"

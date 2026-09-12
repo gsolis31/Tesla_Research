@@ -1,0 +1,67 @@
+{
+  "categoryKey": "cybercab",
+  "keyChanges": [
+    {
+      "title": "Paid Austin Cybercab rides start — 45 registered, dispatch pool unstated",
+      "description": "Tesla opened public Robotaxi-app booking for the no-controls Cybercab on September 4 in Austin. Hours remain 6 a.m.–10 p.m.",
+      "date": "2026-09-04",
+      "category": "Cybercab Production",
+      "status": "neutral",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "high" },
+      "evidence": {
+        "positive_signals": [
+          "Paid public Cybercab rides started in Austin on Sep 4",
+          "NHTSA independently described Sep 3 as commercial deployment start"
+        ],
+        "negative_signals": [
+          "Tesla has not published how many of the 45 registered units are in dispatch",
+          "Hours stay 16/day, not 24/7"
+        ]
+      },
+      "source": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+    }
+  ],
+  "metricUpdate": null,
+  "fleetUpdate": null,
+  "urlsSeen": [
+    "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+  ],
+  "searchLog": {
+    "queries": [
+      { "q": "Tesla Cybercab Austin paid rides September 2026", "tool": "web_search", "hits": 10 }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/",
+        "kept": true
+      }
+    ],
+    "considered": [
+      {
+        "title": "Paid Austin Cybercab rides",
+        "url": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/",
+        "decision": "file",
+        "reason": "first paid no-controls public rides"
+      },
+      {
+        "title": "RGB staff-ride recap",
+        "url": "https://www.teslarati.com/tesla-cybercab-rgb-lights/",
+        "decision": "skip",
+        "reason": "last-week recap"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 45,
+        "decision": "reject",
+        "reason": "TxMCCS registration, not live dispatch"
+      }
+    ]
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com", "teslanorth.com"],
+    "dateRange": "2026-08-31 to 2026-09-06",
+    "skipReason": null
+  }
+}

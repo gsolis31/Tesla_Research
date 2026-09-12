@@ -1,0 +1,28 @@
+{
+  "categoryKey": "fsdv15",
+  "keyChanges": [
+    {
+      "title": "FSD v14.1 ships to employees",
+      "description": "Old story from July restated this week without a new build number.",
+      "date": "2026-07-01",
+      "category": "FSD v15 Software",
+      "status": "neutral",
+      "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "medium" },
+      "evidence": {
+        "positive_signals": ["A build existed in July"],
+        "negative_signals": ["No new OTA this window"]
+      },
+      "source": "https://www.notateslaapp.com/news/fsd-v14-1-july"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "FSD v15 OTA September 2026", "tool": "web_search", "hits": 4 }],
+    "fetched": [{ "url": "https://www.notateslaapp.com/news/fsd-v14-1-july", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["notateslaapp.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "categoryKey": "battery4680",
+  "keyChanges": [
+    {
+      "title": "4680 yield rumored better",
+      "description": "One sentence with no corroboration.",
+      "date": "2026-09-02",
+      "category": "4680 Battery Cell Production",
+      "status": "positive",
+      "sentiment": { "headline": "positive", "reality": "positive", "confidence": "medium" },
+      "evidence": {
+        "positive_signals": ["Someone said yield is up"],
+        "negative_signals": []
+      },
+      "source": "https://www.teslarati.com/tesla-4680-yield-rumor/"
+    }
+  ],
+  "searchLog": {
+    "queries": [{ "q": "Tesla 4680 yield", "tool": "web_search", "hits": 2 }],
+    "fetched": [{ "url": "https://www.teslarati.com/tesla-4680-yield-rumor/", "kept": true }],
+    "considered": [],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com"],
+    "dateRange": "2026-08-31 to 2026-09-06"
+  }
+}

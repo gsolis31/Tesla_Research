@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-06",
+  "weekOf": "2026-08-31",
+  "findings": {
+    "keyChanges": [
+      {
+        "title": "Paid Austin Cybercab rides start — 45 registered, dispatch pool unstated",
+        "description": "Tesla opened public Robotaxi-app booking for the no-controls Cybercab on September 4.",
+        "date": "2026-09-04",
+        "category": "Cybercab Production",
+        "status": "neutral",
+        "sentiment": { "headline": "positive", "reality": "neutral", "confidence": "high" },
+        "evidence": {
+          "positive_signals": ["Paid public Cybercab rides started in Austin on Sep 4"],
+          "negative_signals": ["Dispatch pool unpublished"]
+        },
+        "source": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+      }
+    ],
+    "trends": ["Cybercab Production: Paid Austin rides are live"],
+    "metrics": {
+      "cybercab": [],
+      "robotaxiFleet": [],
+      "robotaxiRegistered": [
+        {
+          "date": "2026-09-03",
+          "count": 420,
+          "note": "Texas TxMCCS 375 Model Y + 45 Cybercab. Ceiling, not live dispatch."
+        }
+      ],
+      "jobPostings": []
+    }
+  },
+  "metadata": {
+    "urlsSeen": [
+      "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/"
+    ],
+    "validationSummary": {
+      "totalKeyChanges": 1,
+      "duplicatesRemoved": 0,
+      "sentimentCorrected": 0,
+      "weakClaimsRejected": 0
+    }
+  }
+}

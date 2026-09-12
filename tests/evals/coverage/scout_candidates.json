@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-06",
+  "weekOf": "2026-08-31",
+  "dateFrom": "2026-08-31",
+  "dateTo": "2026-09-06",
+  "candidates": [
+    {
+      "title": "Paid Austin Cybercab rides start",
+      "url": "https://www.teslarati.com/tesla-opens-cybercab-rides-to-the-public-with-no-steering-wheel-or-pedals/",
+      "date": "2026-09-04",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "First paid no-controls public rides"
+    },
+    {
+      "title": "Paid Austin Cybercab rides start — dispatch pool unstated",
+      "url": "https://teslanorth.com/2026/09/04/cybercab-public-rides-austin/",
+      "date": "2026-09-04",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Same launch, different host"
+    },
+    {
+      "title": "RGB staff-ride recap",
+      "url": "https://www.teslarati.com/tesla-cybercab-rgb-lights/",
+      "date": "2026-09-01",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Researcher skipped as last-week recap"
+    },
+    {
+      "title": "Korea Times restates Taylor 2nm end-2026",
+      "url": "https://www.koreatimes.co.kr/tesla-taylor-2nm",
+      "date": "2026-09-02",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "Already in seenUrls / last week"
+    },
+    {
+      "title": "NHTSA opens AQ26002 into Cybercab FMVSS self-certification",
+      "url": "https://www.teslarati.com/nhtsa-opens-aq26002-cybercab-fmvss/",
+      "date": "2026-09-03",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Same-day federal audit of no-controls commercial deployment"
+    },
+    {
+      "title": "Teslarati homepage",
+      "url": "https://www.teslarati.com/",
+      "date": "2026-09-06",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Noise — should be ignored"
+    },
+    {
+      "title": "AI5 sample wafers rumored at Samsung Taylor",
+      "url": "https://www.teslarati.com/tesla-ai5-sample-wafers-samsung-taylor/",
+      "date": "2026-09-05",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "aiChip researcher filed nothing this week"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      { "q": "Tesla Cybercab NHTSA September 2026", "tool": "web_search", "hits": 10 }
+    ]
+  }
+}

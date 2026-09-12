@@ -1,0 +1,30 @@
+{
+  "categoryKey": "aiChip",
+  "keyChanges": [],
+  "metricUpdate": null,
+  "categoryUpdate": null,
+  "urlsSeen": [],
+  "searchLog": {
+    "queries": [
+      { "q": "Tesla AI5 tape-out 2026", "tool": "web_search", "hits": 8 },
+      { "q": "Samsung SF2 Tesla yield", "tool": "web_search", "hits": 5 }
+    ],
+    "fetched": [
+      { "url": "https://www.koreatimes.co.kr/tesla-taylor-2nm", "kept": false, "reason": "seenUrl" }
+    ],
+    "considered": [
+      {
+        "title": "Korea Times restates Taylor 2nm / end-2026",
+        "url": "https://www.koreatimes.co.kr/tesla-taylor-2nm",
+        "decision": "skip",
+        "reason": "last-week recap, no new sample/yield"
+      }
+    ],
+    "metricCandidates": []
+  },
+  "metadata": {
+    "sourcesSearched": ["teslarati.com", "teslanorth.com"],
+    "dateRange": "2026-08-31 to 2026-09-06",
+    "skipReason": "No significant news found in date range"
+  }
+}
