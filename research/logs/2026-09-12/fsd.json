@@ -1,0 +1,138 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-09-12",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD country approval regulatory September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "NHTSA EA26002 Tesla response August 2026 FSD probe update",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD Slovenia approval September 8 2026 EU TCMV October vote",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "NHTSA EA26002 Tesla response August 2026 FSD probe update",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD EU TCMV October 6 vote sealed Dutch safety file speed offset Germany Italy September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "teslarati teslanorth Tesla FSD approval September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Germany Steffen Bilger Tesla FSD transport minister September 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.reuters.com/business/slovenia-clears-teslas-fsd-driver-assistance-ahead-eu-vote-2026-09-08/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.autonext.co/news/tesla-fsd-six-eu-approvals-slovenia-nine-percent-population-vote",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/germanys-kba-reviews-tesla-fsd-approval-under-eu-article-39",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Slovenia clears Tesla's FSD driver assistance ahead of EU vote",
+        "url": "https://www.reuters.com/business/slovenia-clears-teslas-fsd-driver-assistance-ahead-eu-vote-2026-09-08/",
+        "decision": "file",
+        "reason": "New Slovenia approval Sept 8, not in seenUrls, within date window"
+      },
+      {
+        "title": "Tesla FSD clears six EU states before the October vote \u2014 structural math analysis",
+        "url": "https://www.autonext.co/news/tesla-fsd-six-eu-approvals-slovenia-nine-percent-population-vote",
+        "decision": "file",
+        "reason": "Detailed population arithmetic and speed-offset analysis for Oct 6 vote; new in date window; not in seenUrls"
+      },
+      {
+        "title": "Six EU States Cleared Tesla FSD Using One Sealed, Never-Released Safety File",
+        "url": "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm",
+        "decision": "file",
+        "reason": "Significant regulatory transparency concern; ETSC calling for vote pause; published Sept 8 in date window; not in seenUrls"
+      },
+      {
+        "title": "Germany's KBA Reviews Tesla FSD Approval Under EU Article 39",
+        "url": "https://www.basenor.com/blogs/news/germanys-kba-reviews-tesla-fsd-approval-under-eu-article-39",
+        "decision": "file",
+        "reason": "KBA confirmation of dual-track review is new Sept 11-12 development; Tier 1 source (basenor.com); not in seenUrls"
+      },
+      {
+        "title": "Tesla FSD Now Approved in Slovenia, Its Sixth European Market \u2014 autoevolution",
+        "url": "https://www.autoevolution.com/news/tesla-fsd-now-approved-in-slovenia-its-sixth-european-market-france-and-sweden-could-be-next-275253.html",
+        "decision": "skip",
+        "reason": "Corroborative coverage of Slovenia approval; content superseded by Reuters primary source filed above"
+      },
+      {
+        "title": "Tesla's FSD (Supervised) reaches sixth EU market with Slovenia approval \u2014 TeslaMagz",
+        "url": "https://teslamagz.com/news/teslas-fsd-supervised-reaches-sixth-eu-market-with-slovenia-approval/",
+        "decision": "skip",
+        "reason": "Additional corroboration of Slovenia story; no new information beyond Reuters filing"
+      },
+      {
+        "title": "Tesla Full Self-Driving Clears Six EU Nations: Speed-Offset Fight Could Kill October Vote \u2014 TechTimes",
+        "url": "https://www.techtimes.com/articles/327034/20260908/tesla-full-self-driving-clears-six-eu-nations-speed-offset-fight-could-kill-october-vote.htm",
+        "decision": "skip",
+        "reason": "Speed-offset and Oct 6 vote analysis incorporated into EU vote structural failure finding (autonext.co cited); overlapping content"
+      },
+      {
+        "title": "Tesla Hands France Two FSD Cars for UTAC Tests Ahead of EU Vote \u2014 TeslaNorth",
+        "url": "https://teslanorth.com/2026/09/03/tesla-fsd-france-utac-tests/",
+        "decision": "skip",
+        "reason": "URL already in seenUrls (dated Sept 3, outside Sept 6-12 window)"
+      },
+      {
+        "title": "NHTSA targets Tesla 'Radar Saves Us' document \u2014 Electrek",
+        "url": "https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/",
+        "decision": "skip",
+        "reason": "URL already in seenUrls; pre-dates our window; Aug 12 deadline outcome still undisclosed (no new NHTSA action in Sept 6-12 window)"
+      },
+      {
+        "title": "KBA best\u00e4tigt: Vorl\u00e4ufige Genehmigung f\u00fcr Tesla-FSD wird gepr\u00fcft \u2014 insideTesla.de",
+        "url": "https://insidetesla.de/kba-bestaetigt-vorlaeufige-genehmigung-fuer-tesla-fsd-wird-geprueft/",
+        "decision": "skip",
+        "reason": "German-language corroboration of KBA story; key facts captured in Tier 1 basenor.com filing"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 7,
+        "decision": "file",
+        "reason": "Slovenia approval Sept 8 is a confirmed new national approval; Reuters primary source; brings count from 6 to 7 total consumer markets"
+      }
+    ]
+  }
+}

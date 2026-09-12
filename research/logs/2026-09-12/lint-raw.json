@@ -1,0 +1,165 @@
+{
+  "date": "2026-09-12",
+  "errorCount": 0,
+  "warningCount": 8,
+  "files": [
+    {
+      "path": "/workspace/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Goldman Sachs holds Tesla Neutral at $360 as Musk claims Cybercab 5x faster to produce than conventional cars",
+          "category": "cybercab",
+          "title": "Goldman Sachs holds Tesla Neutral at $360 as Musk claims Cybercab 5x faster to produce than conventional cars",
+          "path": "/workspace/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 4,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 125 chars (max 120)",
+          "category": "fsd",
+          "title": "EU TCMV October 6 vote faces near-certain failure: 9% population coverage, speed-offset deadlock, and sealed-file controversy",
+          "path": "/workspace/research/raw/findings-fsd.json"
+        },
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 122 chars (max 120)",
+          "category": "fsd",
+          "title": "Germany's KBA confirms active FSD review on both EU-wide and national early-approval tracks; no approval or timeline given",
+          "path": "/workspace/research/raw/findings-fsd.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Slovenia approves FSD Supervised as 6th EU member \u2014 28 days before Oct 6 bloc-wide vote",
+          "category": "fsd",
+          "title": "Slovenia approves FSD Supervised as 6th EU member \u2014 28 days before Oct 6 bloc-wide vote",
+          "path": "/workspace/research/raw/findings-fsd.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla releases EU FSD safety evidence ahead of Oct 6 vote \u2014 all data closes before April 2026",
+          "category": "fsd",
+          "title": "Tesla releases EU FSD safety evidence ahead of Oct 6 vote \u2014 all data closes before April 2026",
+          "path": "/workspace/research/raw/findings-fsd.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: HW3 Model S and X to receive FSD v14 Lite 'soon' \u2014 Ashok told Ryan McCaffrey at Cybercab launch",
+          "category": "fsdv15",
+          "title": "HW3 Model S and X to receive FSD v14 Lite 'soon' \u2014 Ashok told Ryan McCaffrey at Cybercab launch",
+          "path": "/workspace/research/raw/findings-fsdv15.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 2,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 131 chars (max 120)",
+          "category": "productionDelivery",
+          "title": "Tesla China launches quarter-end inventory incentives \u2014 10,000 yuan off Model Y, 5,000 yuan off Model 3, effective from September 7",
+          "path": "/workspace/research/raw/findings-productionDelivery.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Cybertruck + Powerwall 3 integration goes live \u2014 extends home backup 3+ days, three years after promise",
+          "category": "productionDelivery",
+          "title": "Cybertruck + Powerwall 3 integration goes live \u2014 extends home backup 3+ days, three years after promise",
+          "path": "/workspace/research/raw/findings-productionDelivery.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No new battery4680-owned developments (cell GWh, yield, dry electrode, Berlin/Texas cell line updates) published by Tier 1 sources in the Sep 6-12 window. The Gulf Coast lithium milestone (Sep 4) is already captured in recentKeyChanges. The Nevada Semi factory inauguration (Sep 10) is productionDelivery-owned. Q2 IR context (>40 GWh Texas, Berlin Construction, pack/cell as global bottleneck) remains unchanged.",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

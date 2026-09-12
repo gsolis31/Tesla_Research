@@ -1,6 +1,608 @@
 {
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-12",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-09-07",
+      "keyChanges": [
+        {
+          "title": "Samsung Taylor Fab fully booked for 2nm before trial ops; AI5/AI6 yield reaches 80%",
+          "description": "Multiple Korean and semiconductor industry sources (Sept 8\u20139) report Samsung's Taylor, Texas fab is at full capacity before a single wafer ships. Confirmed 2nm orders: Tesla AI5 and AI6, Broadcom next-gen chips, and Arm edge-AI. Trial operations expected late September or early October 2026; mass production 2027. Monthly capacity 50,000 wafer starts. Samsung 2nm yield improved from ~60% early 2026 to ~80%, crossing the HVM threshold. Critically, 'fully booked' and 'trial operations imminent' does not mean chip delivery: Tesla will not receive production AI5 wafers from Taylor until 2027. TSMC continues to dominate with ~80,000 wsm and a multi-month tape-out head-start. Taylor Fab 2 groundbreaking confirmed for end-2026 with mass production targeting 2030.",
+          "date": "2026-09-09",
+          "category": "AI Chip Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Samsung 2nm yield improved from ~60% to ~80% at Taylor, crossing the HVM threshold",
+              "Taylor fab fully booked with Tesla AI5 and AI6 orders before opening, removing demand-side risk",
+              "Trial operations expected late September or early October 2026",
+              "Samsung 2nm order volume projected to more than double in 2026 vs 2025",
+              "Taylor Fab 2 groundbreaking confirmed for end-2026"
+            ],
+            "negative_signals": [
+              "Trial operations \u2260 chip delivery: Tesla AI5 production wafers from Taylor not expected until 2027",
+              "Samsung lags TSMC on capacity (50K wsm vs ~80K wsm) and overall foundry market share (~7% vs ~73%)",
+              "TSMC taped out AI5 months earlier; Samsung version remains a secondary allocation",
+              "Taylor Fab 2 mass production not until 2030 \u2014 AI6 volume at Taylor is years away",
+              "AI5 chip remains pre-volume for vehicles; AI4 is still the in-vehicle standard",
+              "80% yield figure comes from industry sources, not official Samsung/Tesla disclosure"
+            ]
+          },
+          "source": "https://www.trendforce.com/news/2026/09/09/news-samsung-taylor-fab-reportedly-fully-booked-for-2nm-before-operations-begin-fab-2-preparations-accelerate/",
+          "impact": "medium"
+        },
+        {
+          "title": "First-week Cybercab service: 25\u201345 min waits, software bugs, mid-lane drop-offs",
+          "description": "The Verge (Sept 9), MotorTrend, and Stick Shifting independently documented consistent service-quality problems in the first full week of public Cybercab rides in Austin. Wait times ranged 25\u201345 minutes for a 45-car fleet across a 288-sq-mi geofence. Drop-offs occurred mid-lane on busy roads rather than at the curb, causing traffic blockages. Wipers activated on a sunny 95\u00b0F day. One rider's touchscreen froze, the car circled aimlessly, and the rider had to exit manually and call a Lyft. Fares were Uber-comparable ($15\u201321) but one report calculated a $15.85/mile rate versus Waymo's $1.75/mile. Positively, the hardware interior is genuinely impressive. These are first-week field reports from multiple independent journalists, not a single anecdote.",
+          "date": "2026-09-09",
+          "category": "Cybercab Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Interior hardware praised across all three reviews: spacious legroom, massive touchscreen, smooth quiet ride",
+              "Butterfly doors and automatic open/close well-received in most rides",
+              "Price competitive with Uber on a per-trip basis ($15\u201321)"
+            ],
+            "negative_signals": [
+              "45-car fleet generates 25\u201345 minute wait times for rides under 2 miles",
+              "Multiple documented drop-offs mid-lane on busy roads, blocking traffic",
+              "Software: wipers on during 95\u00b0F sunny day, indecisive lane changes, nervous braking",
+              "Frozen touchscreen left one rider with no route display; car stalled, rider had to exit manually",
+              "No freeway access, no airport; geofence severely limits utility",
+              "Multiple journalists note it feels unfinished, not ready for primary transport use"
+            ]
+          },
+          "source": "https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin",
+          "impact": "high"
+        },
+        {
+          "title": "Cybercab open to anyone via app \u2014 but 49 Texas-registered units cannot meet public demand",
+          "description": "Tesla's official @robotaxi account posted September 10 that 'Anyone can try Cybercab in Austin \u2014 just download the Robotaxi app & hail a ride,' dropping the invite-only framing. Simultaneously, Texas DMV records showed the registered Cybercab count at 49 \u2014 only 4 cars added from the 45 present at launch September 4. Demand clearly exists (Tesla moved the public launch window earlier 'due to popular demand'), but 49 registered Cybercabs across a 288-sq-mi Austin geofence cannot supply the volume that open access implies. Most requests in peak hours result in 25\u201345 minute waits or no availability.",
+          "date": "2026-09-10",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Official Robotaxi account removes invite-only restriction, opening to general public",
+              "Strong demand signal: Tesla moved launch window up 3 hours 'due to popular demand' on Sept 4",
+              "Service is live and publicly accessible \u2014 a genuine operational milestone"
+            ],
+            "negative_signals": [
+              "Only 49 Cybercabs registered in Texas as of Sept 10 \u2014 just 4 added in 5 days post-launch",
+              "25\u201345 min wait times reported consistently by multiple journalists in the first week",
+              "49 cars across 288-sq-mi geofenced city cannot meet open public demand",
+              "TxMCCS registration ceiling is not the same as active dispatch count; pool is smaller still"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin/",
+          "impact": "medium"
+        },
+        {
+          "title": "Giga Texas ships Cybercabs with factory-integrated Starlink in volume for the first time",
+          "description": "Drone photographer Joe Tegtmeyer documented September 8 that the Giga Texas outbound lot contained 'many more Cybercabs and for the 1st time equipped with the Starlink module on the hatch in big numbers.' Earlier Starlink-equipped sightings were one-off or retrofit; this is the first aerial confirmation of factory-fit Starlink shipping in volume. Starlink provides satellite connectivity when cellular coverage drops, which matters for unsupervised robotaxi operations. If this becomes standard build spec, all production Cybercabs will ship connectivity-redundant. Production appeared to ramp back up after the Labor Day holiday pause.",
+          "date": "2026-09-08",
+          "category": "Cybercab Production",
+          "status": "positive",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "positive",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Factory-integrated Starlink on Cybercab hatch now shipping in volume \u2014 not retrofit",
+              "Production restarted and visibly ramped after Labor Day weekend pause",
+              "Satellite backup connectivity improves service reliability for unsupervised ops"
+            ],
+            "negative_signals": [
+              "Single aerial observer source (Tegtmeyer); Tesla has not officially confirmed Starlink as standard",
+              "Volume of Cybercabs exiting factory still not quantified \u2014 'many more' is relative",
+              "VIN floor is still the Aug 10 estimate of 2,172+ units; no new count available"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/09/08/tesla-cybercab-starlink-giga-texas/",
+          "impact": "medium"
+        },
+        {
+          "title": "Cybercab Japan Tour opens in Tokyo \u2014 static display only, no service launch or regulatory path",
+          "description": "Tesla Japan launched the 'Cybercab Japan Tour' September 11 at OMAKASE Aoyama Garden in Tokyo, the vehicle's first public showing in Japan. The tour runs through four venues in Tokyo, Osaka, and Nagoya across September. Admission is free with no reservation. This is a static display event \u2014 no test rides, no Robotaxi launch announcement, no regulatory pathway for Japan operations. Tesla Japan framed it as 'designed from the ground up for unsupervised taxi use.' Japan has no active Cybercab regulatory process underway.",
+          "date": "2026-09-11",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "First public Japan showing signals Tesla is marketing Cybercab for future international markets",
+              "Four-city Japan tour (Tokyo Aoyama, Osaka, Nagoya, Tokyo Shinjuku) through late September"
+            ],
+            "negative_signals": [
+              "Static display only \u2014 no rides, no operational launch, no Japan-specific regulatory announcement",
+              "Japan has no established Cybercab approval process or timeline",
+              "Tour is a marketing event, not an operational milestone"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+          "impact": "low"
+        },
+        {
+          "title": "Slovenia approves FSD Supervised, becoming 7th consumer market and 6th EU member state",
+          "description": "Slovenia's Traffic Safety Agency confirmed it recognized the Dutch RDW provisional type approval September 8, 2026, making it the sixth EU member state and seventh global market where Tesla FSD Supervised is legal on public roads. Tesla Europe announced on X: 'FSD Supervised now approved in Slovenia. Rollout will begin soon.' All authorized vehicles must be Hardware 4; drivers must complete a mandatory tutorial and quiz. FSD stays active crossing between approved EU countries, disengaging automatically before entering an unapproved one. Slovenia breaks a three-month approval hiatus since Belgium in June, but its population of ~2.1 million adds negligibly to the ~9% of EU population currently covered by all six approved states.",
+          "date": "2026-09-08",
+          "category": "FSD Country Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Official confirmation from Slovenian Traffic Safety Agency via email to Reuters",
+              "Slovenian Energy and Infrastructure Minister Vrtovec publicly endorsed the approval",
+              "Breaks 3-month approval drought since Belgium in June",
+              "Cross-border FSD continuity confirmed between all six approved EU states"
+            ],
+            "negative_signals": [
+              "Slovenia's 2.1 million population contributes negligibly to the 65% EU population threshold needed for Oct 6 bloc-wide vote",
+              "All six approvals rest on one sealed Dutch safety file not reviewable by other member states or the public",
+              "Does not bring Tesla closer to Germany (84M), France (68M), or Italy (60M) \u2014 required to pass the Oct 6 vote",
+              "National cascade of small-population approvals cannot by itself unlock EU-wide authorization"
+            ]
+          },
+          "source": "https://www.reuters.com/business/slovenia-clears-teslas-fsd-driver-assistance-ahead-eu-vote-2026-09-08/",
+          "impact": "medium"
+        },
+        {
+          "title": "EU TCMV October 6 vote faces near-certain failure: 9% coverage, speed-offset deadlock, sealed-file controversy",
+          "description": "With the October 6 EU Technical Committee on Motor Vehicles vote 28 days away, the structural arithmetic is deeply unfavorable. The six approved countries collectively represent ~42 million people \u2014 approximately 9% of the EU's ~450 million population. A qualified majority requires at least 15 member states representing 65% of EU population (~293 million). Without Germany (84M), France (68M), Italy (60M), or Spain (47M) voting yes, the threshold is mathematically unreachable. None of the four has approved FSD nationally, and none has committed to voting yes. Sweden submitted a written no to the TCMV on April 30 unless Tesla removes its speed-offset feature (which allows the car to exceed speed limits by a user-set margin). France has a public reservation on the same feature. Tesla has not removed speed-offset from any EU market. The ETSC has formally asked the European Commission to pause the vote. If the vote fails or defers, existing national approvals remain valid but bloc-wide harmonization slips to early 2027 at the earliest.",
+          "date": "2026-09-08",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "October 6 vote is on the calendar; Tesla publicly states it supports proceeding",
+              "Six countries already voted yes and will likely vote yes at TCMV",
+              "France moved to active UTAC road tests; Finland and Greece considering approvals",
+              "Italy's senate saw a formal parliamentary question pushing for FSD approval"
+            ],
+            "negative_signals": [
+              "Six approved countries = only ~9% of EU population; threshold requires 65% (~293M)",
+              "Sweden has a written no on record (April 30) unless speed-offset is removed",
+              "France has a public reservation on speed-offset; July safety objections still on record",
+              "Germany, Italy, Spain have committed to nothing; none has approved nationally",
+              "ETSC formally requested Commission pause the vote pending transparent review",
+              "Tesla has not removed speed-offset feature from any EU market",
+              "Without Germany or France, even every other EU country cannot reach 65% threshold",
+              "Next realistic vote after October 6 if it fails or defers: early 2027"
+            ]
+          },
+          "source": "https://www.autonext.co/news/tesla-fsd-six-eu-approvals-slovenia-nine-percent-population-vote",
+          "impact": "high"
+        },
+        {
+          "title": "All six EU FSD approvals rest on a single sealed Dutch safety file no regulator or citizen can inspect",
+          "description": "A TechTimes investigation published September 8 confirmed that every one of the six EU national FSD approvals \u2014 Netherlands, Lithuania, Estonia, Denmark, Belgium, and Slovenia \u2014 derives from a single Dutch RDW provisional type approval file sealed at Tesla's request as a commercial secret. Under EU Regulation 2018/858 Article 39, other member states can recognize the Dutch certification without repeating the technical review, which five countries did without seeing the file. The October 6 TCMV vote, if it passes, would extend this approval to all 27 member states and ~450 million people on the basis of evidence that none of them can read. Multiple EU regulators including Germany, Norway, and Denmark have refused FOIA requests citing trade-secret protections. The ETSC called this a structural gap in EU vehicle type approval regulation. Tesla published a voluntary Article 39 public dashboard September 1 using pre-April 2026 crash data showing a 4.1x safety improvement (reduced from a previously claimed 5.2x), but this does not substitute for the sealed primary approval record.",
+          "date": "2026-09-08",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla published a voluntary public safety dashboard on Sept 1 (Article 39 dashboard)",
+              "Dutch RDW conducted 18+ months of independent testing before initial approval in April",
+              "Six countries recognized the approval; none has reversed their decision"
+            ],
+            "negative_signals": [
+              "Dutch safety file sealed at Tesla's request; methodology and conclusions classified as trade secret",
+              "Six EU regulators including Germany, Norway, Denmark refused FOIA requests on Tesla's trade-secret grounds",
+              "EU-wide vote would ratify approval across 27 states and 450M people without public evidentiary record",
+              "ETSC formally requested Commission pause the vote and require transparent, independently verified review",
+              "Tesla's public dashboard uses pre-April crash data and shows 4.1x safety ratio, down from claimed 5.2x",
+              "EU has no NTSB-equivalent to audit real-world FSD performance independently"
+            ]
+          },
+          "source": "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm",
+          "impact": "high"
+        },
+        {
+          "title": "Germany's KBA confirms active FSD review on EU-wide and national tracks; no approval or timeline given",
+          "description": "Germany's Federal Motor Transport Authority (KBA) confirmed September 11, 2026 it is actively reviewing Tesla FSD Supervised for approval along two legal paths under EU Regulation 2018/858 Article 39: the standard TCMV committee procedure (vote expected October 6) and a national exemption route under Article 39(5) allowing Germany to recognize the Dutch RDW provisional type approval unilaterally, as the Netherlands, Lithuania, Estonia, Denmark, Belgium, and Slovenia already did. The KBA confirmed receipt of Tesla's application materials and stated it is evaluating traffic safety aspects, including independent on-road testing with a Tesla vehicle. No formal approval, concrete timeline, or decision in favor of the national path has been announced. Germany (84M people, ~19% of EU population) voting yes at the October TCMV meeting \u2014 or a national pre-approval \u2014 would dramatically reshape the probability of EU-wide authorization passing.",
+          "date": "2026-09-11",
+          "category": "FSD Country Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "KBA explicitly confirmed it is evaluating both the TCMV route and a national pre-approval route",
+              "Germany received a Tesla vehicle for independent on-road testing",
+              "German federal government (BMV) views autonomous driving ramp-up as high priority",
+              "Article 39(5) national path used successfully by 5 other EU states"
+            ],
+            "negative_signals": [
+              "KBA confirmed review only; no approval, no timeline, no decision favoring national path announced",
+              "KBA has been reviewing the Dutch file since at least May 2026 with no outcome",
+              "Germany has previously declined to rush a national approval before EU-wide consensus",
+              "FOIA requests for the sealed Dutch safety file refused in Germany",
+              "October 6 timeline is extremely tight for a formal German position"
+            ]
+          },
+          "source": "https://www.basenor.com/blogs/news/germanys-kba-reviews-tesla-fsd-approval-under-eu-article-39",
+          "impact": "high"
+        },
+        {
+          "title": "FSD v14.3.9 (2026.27.6) enters public early-access rollout; only 0.2% of fleet after 4 days",
+          "description": "Tesla began rolling out FSD Supervised v14.3.9 in firmware 2026.27.6 on September 8, 2026, replacing the employee-only 2026.27.5 build. The update includes two branches: HW4 vehicles get v14.3.9 with Automatic Collision Evasion (highway frontal-crash steering maneuver when under 85 mph), a rewritten MLIR-based AI compiler delivering 20% faster reaction time, an upgraded RL training stage, and a new vision encoder for rare/low-visibility scenarios. HW3 Model 3 and Model Y owners receive v14.2 Lite (parking/unparking, Arrival Options, Speed Profiles including new SLOTH profile). As of September 12, TeslaFi shows only 114 cars (0.2% of fleet) on 2026.27.6, while 28.9% of the fleet remains on the previous wide build 2026.26.6.5. FSD v15 is absent from all consumer vehicles.",
+          "date": "2026-09-08",
+          "category": "FSD v15 Software",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Automatic Collision Evasion (HW4) is a genuine new safety capability \u2014 steering around imminent frontal crashes",
+              "MLIR compiler rewrite achieves 20% faster reaction time \u2014 a measurable improvement",
+              "HW3 Model 3/Y owners receive v14.2 Lite with parking, Arrival Options, Speed Profiles",
+              "HW4 and HW3 firmware merged into single build (2026.27.6), reducing fragmentation"
+            ],
+            "negative_signals": [
+              "Only 0.2% of fleet (114 cars) after 4 days \u2014 confined to early access, no wide rollout",
+              "28.9% of fleet still on previous build 2026.26.6.5 \u2014 majority of users see no change",
+              "FSD v15 absent from all consumer vehicles; v14.3.9 is still the same-generation small model",
+              "Automatic Collision Evasion restricted to HW4 only; HW3 does not receive it"
+            ]
+          },
+          "source": "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes",
+          "impact": "medium"
+        },
+        {
+          "title": "HW3 Model S/X still missing FSD v14 Lite; Elluswamy says it was 'supposed to go out last week'",
+          "description": "During the Cybercab launch event in Austin, Tesla AI lead Ashok Elluswamy told IGN's Ryan McCaffrey that FSD v14 Lite for HW3 Model S and Model X was 'supposed to go out last week,' signaling an imminent release. However, the September 8 rollout of 2026.27.6 explicitly lists only 'Models: 3 Y' for FSD v14.2 Lite, leaving HW3 S/X owners without any v14-generation FSD. HW3 Model 3/Y received v14 Lite in late June 2026; S/X HW3 owners have been stuck on the legacy branch since then. NotATeslaApp confirmed that v14 Lite for S/X is 'ready' and expected 'any day now,' but the build has not shipped as of September 12. The Elluswamy statement was secondhand (McCaffrey's recollection) rather than an official Tesla communication.",
+          "date": "2026-09-08",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Elluswamy reportedly confirmed the S/X v14 Lite build is ready and expected to ship very soon",
+              "HW3 Model 3/Y has already proven v14 Lite architecture works on legacy hardware"
+            ],
+            "negative_signals": [
+              "Despite Elluswamy saying it 'was supposed to go out last week,' it did not ship in 2026.27.6",
+              "HW3 S/X owners have been excluded from v14 Lite for 2+ months while 3/Y owners received it",
+              "No official Tesla announcement or timeline \u2014 only a secondhand conference hallway quote",
+              "HW3 S/X owners are off the unsupervised FSD roadmap regardless; Lite ceiling is permanent without HW upgrade"
+            ]
+          },
+          "source": "https://www.notateslaapp.com/news/4664/tesla-fsd-v14-lite-coming-soon-to-model-s-model-x",
+          "impact": "medium"
+        },
+        {
+          "title": "Elluswamy previews FSD v15 safety promise; v15 carries no consumer release date",
+          "description": "On September 11, 2026, Tesla AI lead Ashok Elluswamy responded to a near-miss incident shared by an owner, writing: 'Glad you are safe. Even earlier prediction of hazards, even faster reaction time and overall significantly better safety and collision avoidance coming as part of the next big upgrade (v15).' Teslarati contextualized this against Tesla's published FSD safety data: FSD vehicles travel 5.1\u20135.7 million miles between airbag-deployment events vs. ~699,000 miles for the U.S. average (Tesla's preferred comparison), but the same-car baseline shows a narrower 2.4\u20132.7x advantage. v15 remains absent from all consumer vehicles. The previously reported target of end-2026 / early 2027 has not changed. Robotaxi builds using early v15 are operational in Austin but inaccessible to consumer hardware. The Elluswamy tweet is a product promise tied to no verified code drop or OTA timeline.",
+          "date": "2026-09-11",
+          "category": "FSD v15 Software",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Elluswamy confirms v15 is targeting hazard prediction, reaction time, and collision avoidance",
+              "Early v15 builds reportedly running in Austin robotaxi fleet with ~40% of planned improvements in internal benchmarks",
+              "FSD safety data shows measurable advantage vs. U.S. average (5.1\u20135.7M miles per airbag event vs. 699K)"
+            ],
+            "negative_signals": [
+              "v15 carries no OTA release date \u2014 target remains 'end-2026 or early 2027,' unchanged since Q1 earnings",
+              "Elluswamy tweet is a product promise in response to a near-miss post \u2014 not a software announcement",
+              "FSD same-car safety comparison shows a narrower 2.4\u20132.7x advantage, not the advertised 7x vs. U.S. average",
+              "HW3 vehicles confirmed off the v15 roadmap entirely; HW4 sufficiency for 10B-parameter model still a promise"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+          "impact": "low"
+        },
+        {
+          "title": "Optimus Production Associate listing expires Sept 8 \u2014 production-scale hiring absent for 7+ weeks",
+          "description": "The only Production Associate, Optimus posting (Fremont, originally listed Jul 24, 2026 at $25.76\u2013$34.68/hr) was removed from job boards around September 8, 2026 \u2014 confirmed via iHireManufacturing showing 'removed 4 days ago' as of September 12. No new production-associate or floor-operator replacement appeared during the September 6\u201312 window. Engineering, technician, and AI roles continue to appear, but the single metric that directly signals readiness to hire hourly assembly workers for a production ramp has disappeared without replacement for the second consecutive research cycle. Without production associates, no meaningful volume ramp is possible regardless of engineer headcount.",
+          "date": "2026-09-08",
+          "category": "Job Postings",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Production Associate hiring did exist briefly (Jul 24 listing), showing the role was opened at some point",
+              "Multiple engineering and technician roles for Optimus manufacturing still active"
+            ],
+            "negative_signals": [
+              "Production Associate, Optimus (Fremont) listed Jul 24, expired ~Sept 8 with no replacement",
+              "Two consecutive research cycles show zero active Production Associate, Optimus listings",
+              "Without production associates (the actual assembly workers), no volume ramp is possible",
+              "Q2 2026 earnings confirmed 'no production figure given' and initial builds go to internal Optimus Academy \u2014 hiring pattern consistent with prototype-scale output"
+            ]
+          },
+          "source": "https://www.ihiremanufacturing.com/jobs/view/529738787",
+          "impact": "high"
+        },
+        {
+          "title": "Tesla Langley BC Optimus actuator/geartrain cluster grows to 12+ roles \u2014 supply chain broadening signal",
+          "description": "A September 9, 2026 Active Vancouver article confirmed Tesla's Langley, British Columbia facility has grown from a single Canadian Optimus posting to more than a dozen roles covering Robotics Manufacturing Engineer (Line Design, Geartrain), Robotics Engineering Technician (Metrology), Robotics Technical Project Manager (Actuator Manufacturing), and geartrain equipment engineers. Compensation ranges from $23.41/hr for technicians to C$207,900/yr for senior geartrain engineers. The cluster is focused on actuator gearbox production, indicating Tesla is building in-house actuator supply chain capability in Canada, not just Austin. However, the underlying job postings originate from May\u2013June 2026; the article is a new synthesis published in-window. This is a positive hiring-breadth signal but does not indicate a near-term production ramp.",
+          "date": "2026-09-09",
+          "category": "Job Postings",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla Langley BC now has 12+ Optimus roles spanning manufacturing, controls, metrology, and test engineering",
+              "In-house actuator/geartrain manufacturing in Canada diversifies supply chain beyond Austin and Fremont",
+              "Salary ranges ($120k\u2013$207k CAD for senior roles) indicate serious investment, not exploratory hiring"
+            ],
+            "negative_signals": [
+              "All underlying job postings originate from May\u2013June 2026 \u2014 no new roles posted in the Sept 6\u201312 window",
+              "No production-associate or volume-assembly roles in the Langley cluster \u2014 still engineering/R&D profile",
+              "Geartrain manufacturing in Canada adds supply chain complexity vs. vertically integrating at US facilities"
+            ]
+          },
+          "source": "https://activevancouver.ca/tesla-is-hiring-robotics-engineers-in-langley-what-it-means-for-metro-vancouvers-future-workforce/",
+          "impact": "medium"
+        },
+        {
+          "title": "Jiemian reports Tesla placed first batch order for ~5,000 Optimus components with T-chain suppliers",
+          "description": "Jiemian News, citing channel checks within Tesla's core manufacturing network, reported September 7, 2026 that Tesla placed bulk purchase orders for approximately 5,000 units' worth of components with T-chain suppliers. This marks the first thousand-unit-scale procurement order after only a few hundred units in earlier pilot runs. Fremont humanoid assembly line underwent initial equipment debugging starting in July, completing preliminary trial phases by mid-August; yield improvements were the stated prerequisite for releasing this commercial-grade parts order. Internal 2026 target: 10,000\u201320,000 units for internal deployment. Supplier capacity ramp targets: 1,000 units/week by end of September, 2,000\u20132,500/week by year-end. Tesla has not officially confirmed these purchase orders. As of the August 20 JPMorgan Fremont visit, the Optimus area was still tarped off with no robots working on the floor. Gen 3 has not been publicly unveiled. Commercial external sales remain 'as early as H2 2027.'",
+          "date": "2026-09-07",
+          "category": "Optimus Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "First batch-scale (thousand-unit) component order placed with T-chain suppliers, up from pilot runs of only hundreds",
+              "Fremont line completed preliminary commissioning mid-August \u2014 stated as prerequisite for this order",
+              "Multiple Chinese industrial sources corroborate the Jiemian report",
+              "Internal 2026 shipment baseline of 10,000\u201320,000 units being maintained",
+              "Supplier weekly capacity targets suggest meaningful ramp cadence if achieved"
+            ],
+            "negative_signals": [
+              "Tesla has NOT officially confirmed the batch order \u2014 sourced entirely from Chinese supply chain channel checks",
+              "Gen 3 has not been publicly revealed; no official unit count, yield, or cost data from Tesla IR",
+              "JPMorgan's August 20 Fremont visit found Optimus area tarped off with zero robots working on the floor",
+              "Tesla's own Q2 2026 update lists Optimus capacity at both Fremont and Texas as 'Construction'",
+              "Musk warned ramp will be 'quite flat and long' with ~10,000 unique parts and all-new processes",
+              "Supply chain component orders are a leading indicator only \u2014 not actual robot production counts",
+              "Commercial external sales remain 'as early as H2 2027' \u2014 no customers, price, or delivery date",
+              "Optimus targets have been repeatedly missed: Q1 Gen 3 reveal pushed to 'closer to production'"
+            ]
+          },
+          "source": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+          "impact": "high"
+        },
+        {
+          "title": "China August retail confirmed at 50,047 \u2014 down 12.43% YoY, weakest August since 2022, Model Y falls 26%",
+          "description": "CPCA published August 2026 market data September 8, printing the China retail figure that was unresolved last week. Tesla sold 50,047 vehicles in China retail in August, down 12.43% year-over-year and marking the third consecutive annual decline in monthly retail sales \u2014 the weakest August performance since 2022. The MoM bounce (+83.67% from July's 27,249) reflects the predictable end-of-quarter trough pattern but does not reverse the YoY trajectory. Model Y specifically fell 25.76% YoY to 29,260 units, deepening from -18.23% in July and -13.81% in June (third consecutive monthly YoY decline). Model 3 rose 17.18% YoY to 20,787 \u2014 the highest of 2026 \u2014 but at insufficient volume to offset Model Y's decline. YTD China retail: 316,251 through August, down 12.44% YoY. Tesla held 7.17% of China BEV market share vs. 8.33% a year earlier. Giga Shanghai exports of 36,119 (down 45.55% MoM but up 38.71% YoY) confirm the factory is prioritizing export markets over domestic demand.",
+          "date": "2026-09-08",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "MoM bounce +83.67% from July's trough to 50,047",
+              "Model 3 deliveries up 17.18% YoY to 20,787, highest monthly total of 2026",
+              "Exports up 38.71% YoY, showing Shanghai continues to supply global markets"
+            ],
+            "negative_signals": [
+              "Third consecutive annual YoY decline in China retail (Aug: -12.43%, Jul: -33%, Jun: -13.7%)",
+              "Weakest August retail since 2022 (vs. 63,456 in Aug 2024 and 57,152 in Aug 2025)",
+              "Model Y down 25.76% YoY for third consecutive monthly decline \u2014 deepening trend",
+              "YTD China retail 316,251 down 12.44% YoY through August",
+              "China BEV market share eroded to 7.17% from 8.33% a year prior",
+              "6th place in China NEV retail behind BYD, Geely, Leapmotor, Changan, SAIC-GM-Wuling"
+            ]
+          },
+          "source": "https://cnevpost.com/2026/09/09/tesla-aug-2026-china-deliveries-breakdown/",
+          "impact": "high"
+        },
+        {
+          "title": "Tesla China launches Q3 inventory incentives: 10,000 yuan off Model Y, 5,000 yuan off Model 3",
+          "description": "Tesla China announced September 7 that customers ordering and taking delivery of in-stock vehicles by September 30 receive cash reductions of 5,000 yuan on Model 3 and 10,000 yuan on all Model Y inventory variants (including Model Y L and the new Performance). Combined with 5-year 0% financing and an 8,000 yuan paint benefit on select configs, effective starting prices drop to historic lows: Model 3 from 222,500 yuan (~$33,000) and Model Y from 253,500 yuan (~$38,000). The promotion drew a surge in orders but triggered owner backlash \u2014 existing buyers who took delivery before September 7 cannot retroactively claim the discount. Background: Giga Shanghai hit a first-half 2026 output record, creating inventory surplus as China domestic retail fell 12.44% YTD. The incentive is a tactical volume pull-forward for Q3, not a permanent price cut.",
+          "date": "2026-09-07",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Incentive expected to trigger order surge and boost Q3 China deliveries",
+              "Effective prices hit historic lows, potentially re-attracting price-sensitive buyers",
+              "Covers full Model Y lineup including new Performance and Model Y L"
+            ],
+            "negative_signals": [
+              "Incentive required because Tesla China domestic retail is 12.44% below prior year YTD",
+              "Giga Shanghai production outpacing domestic sales, creating inventory pressure",
+              "Owner backlash from abrupt announcement without retroactive eligibility damages brand trust",
+              "Tactical discounting rather than organic demand recovery",
+              "Q3 China volume boost partially borrowed from Q4 if buyers rush orders before Sept 30"
+            ]
+          },
+          "source": "https://www.evshift.com/521910/tesla-launches-quarter-end-inventory-offers-in-china-as-local-deliveries-decline/",
+          "impact": "medium"
+        },
+        {
+          "title": "Tesla Model Y Performance launches in China at 369,000 yuan \u2014 completes Juniper lineup as YoY sales weaken",
+          "description": "Tesla opened Model Y Performance ordering in China September 11, 2026 at 369,000 yuan (~$54,450). The Shanghai-built, dual-motor variant is the fifth Model Y configuration in China and the most expensive. Specs: 3.5s 0-100 km/h, 250 km/h top speed, 659 km CLTC range, 250 kW fast charge. Delivery window: 2-6 weeks. The launch arrives as Model Y China deliveries have fallen 25.76% YoY in August (third consecutive monthly decline). The Performance is a margin and mix story \u2014 ASP uplift of 100,500 yuan above base Model Y \u2014 rather than a volume driver. By comparison, BYD's flash charging covers 500 km in 10 minutes vs. Tesla's 250 km in 15 minutes at this price tier.",
+          "date": "2026-09-11",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Completes the refreshed Juniper Model Y lineup in China \u2014 all five variants now available",
+              "ASP uplift: Performance at 369,000 yuan is 100,500 yuan above base Model Y",
+              "Giga Shanghai production of Performance gives export flexibility to Australia/New Zealand",
+              "2-6 week delivery window suggests Tesla has production ready"
+            ],
+            "negative_signals": [
+              "Launches directly into a sustained Model Y YoY sales decline (third consecutive month)",
+              "Too late in Q3 for meaningful volume impact on September quarterly push",
+              "BYD and Chinese competitors offer faster charging (500 km in 10 min vs Tesla's 250 km in 15 min)",
+              "Premium pricing in a market where the price war has pushed BYD's comparable models lower",
+              "China NEV market share erosion continues despite lineup expansion"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/09/11/tesla-model-y-performance-china/",
+          "impact": "medium"
+        },
+        {
+          "title": "Giga Berlin orders three extra shifts targeting 7,500 vehicles/week for Q3 push \u2014 still short of target",
+          "description": "Tesla ordered three mandatory extra production shifts at Gigafactory Berlin in September 2026 to push output toward 7,500 vehicles per week by mid-October, per a September 7 report. Current production sits around 6,500 vehicles/week, up from ~5,000/week in June after plant manager Andr\u00e9 Thierig set the 7,500 target. The extra shifts: night shift September 18, early shift September 19, night shift September 25. Each of Giga Berlin's three shift groups will be called in once; workers receive a 35% surcharge. Even with extra shifts, Tesla expects peak-week output of 7,100\u20137,300 vehicles \u2014 still short of the 7,500 goal. Context: Germany August registrations were 3,034, up 110.5% YoY; but Europe Q3 QTD registrations track at record lows (-37.5% YoY through August) with 2 of 3 months complete.",
+          "date": "2026-09-07",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Giga Berlin weekly production up from ~5,000/week in June to ~6,500/week now",
+              "Germany registrations up 110.5% YoY in August; YTD +182%",
+              "Extra shifts demonstrate Tesla is actively pushing Q3 European production volumes"
+            ],
+            "negative_signals": [
+              "Even with extra shifts, peak week only reaches 7,100\u20137,300 \u2014 short of 7,500 target",
+              "Europe Q3 QTD registrations still -37.5% YoY through August across 12 markets",
+              "Norway August Model Y registrations: only 253 units vs. 2,456 a year prior (-89.7%)",
+              "September surge needed to rescue Q3 Europe is historically large given the August deficit"
+            ]
+          },
+          "source": "https://evwire.com/p/tesla-grunheide-extra-shifts-production-ramp-7500",
+          "impact": "medium"
+        },
+        {
+          "title": "Cybertruck + Powerwall 3 Powershare integration goes live \u2014 3+ days of home backup, Powerwall 2 still pending",
+          "description": "Tesla enabled Powershare + Powerwall 3 integration via OTA on September 10, 2026, allowing Cybertruck owners to pair the truck with an existing Powerwall 3 for combined home backup extending over 3 days \u2014 equivalent to 9 additional Powerwalls, per Tesla's official Cybertruck account. Lead engineer Wes Morrill confirmed the rollout and called it the first vehicle-home battery joint operation of this kind. Powershare itself launched with Cybertruck in November 2023; basic home backup via a Gateway arrived in 2024. The missing piece \u2014 making Powershare work alongside a Powerwall rather than as a competing backup source \u2014 required certifying two grid-forming devices negotiating grid management across multiple Powerwall hardware generations. The feature was originally promised for 2025, then pushed to mid-2026. Powerwall 2 and Powerwall+ compatibility is still pending for later in 2026.",
+          "date": "2026-09-10",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "OTA update closes a long-standing gap \u2014 Powershare + Powerwall 3 joint operation now live",
+              "3+ days of combined home backup is a meaningful improvement over single-Powerwall capacity",
+              "Official Tesla Cybertruck account and lead engineer Wes Morrill both confirmed rollout",
+              "Expands Cybertruck's home energy role beyond original Powershare launch capability"
+            ],
+            "negative_signals": [
+              "Feature was originally promised at Cybertruck launch in November 2023 \u2014 arrived nearly 3 years late",
+              "Powerwall 2 and Powerwall+ compatibility still pending, limiting reach to Powerwall 3 owners only",
+              "Rollout is software/OTA only \u2014 no new hardware milestone"
+            ]
+          },
+          "source": "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall/",
+          "impact": "medium",
+          "_fromCoverageGap": true
+        },
+        {
+          "title": "SpaceX sues Texas AG and Grimes County to block release of Terafab tax-break records",
+          "description": "SpaceX filed a lawsuit September 9 in Travis County's 126th District Court against Texas AG Ken Paxton and Grimes County to permanently block release of public records related to Terafab's tax-abatement application and negotiation communications. Records were originally requested in May\u2013June 2026 under the Texas Public Information Act. On July 28, Paxton's office ruled most records should be released \u2014 allowing only attorney-client communications to remain withheld. Rather than allow release, SpaceX is asserting trade-secret arguments itself in court. SpaceX seeks to shield: the full tax-abatement application, negotiation correspondence, technical and project design information, site-location and land-acquisition records, cost and financial data, and employee contact details. SpaceX also seeks a temporary restraining order blocking release while the case is pending. No judge had ruled as of September 10. GCCRD is considering formally intervening in the case.",
+          "date": "2026-09-10",
+          "category": "Terafab In-House Chip Manufacturing",
+          "status": "negative",
+          "sentiment": {
+            "headline": "negative",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Lawsuit filing confirms project is active enough that SpaceX is protecting competitive details",
+              "SpaceX proactively engaging legal process rather than abandoning project"
+            ],
+            "negative_signals": [
+              "Texas AG already ordered most records released \u2014 SpaceX is fighting against its own state government to suppress information",
+              "Community opposition group GCCRD considering formal court intervention, which could expand litigation",
+              "Pattern of secrecy deepens local distrust in a county already uneasy about the project",
+              "If records reveal deal terms worse than disclosed, political backlash could threaten county approvals",
+              "Litigation adds procedural uncertainty to Dec. 1 construction start milestone",
+              "National context unfavorable: other major tech firms pledging transparency while SpaceX moves opposite"
+            ]
+          },
+          "source": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+          "impact": "high"
+        }
+      ],
+      "trends": [
+        "Cybercab Production: Live Austin service reveals severe supply-demand mismatch \u2014 49-unit fleet, 25\u201345 min waits, and first-week software bugs underscore gap between marketing and operational reality",
+        "FSD Country Approvals: October 6 EU-wide vote faces near-certain failure as 6 small-nation approvals cover only ~9% of the 65% population threshold; speed-offset deadlock and sealed-file controversy add structural risk",
+        "Vehicle Production & Delivery: China retail declined for the third consecutive year (-12.4% YTD), forcing quarter-end discounts; Europe Q3 tracks -37.5% YoY, requiring historically large September surge to make up deficit",
+        "FSD v15 Software: Consumer fleet advances incrementally to v14.3.9 at only 0.2% rollout; v15 remains absent from all consumer vehicles with end-2026 / early-2027 target unchanged for 5 months"
+      ]
+    },
     {
       "weekOf": "2026-08-31",
       "keyChanges": [
@@ -8441,10 +9043,9 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-08-28",
-      "criticalNews": "AI5 remains pre-volume with no new sample, yield, or board-count disclosure this week. Tesla lost Senior Director of AI Hardware Design Shishuang Sun to DensityAI (July start, reported Aug. 24). Musk recirculated 2\u20133x Nvidia / ~10% cost claims while admitting the AI5 program had not been closing and that training still runs on Nvidia. Samsung Foundry is still yield-fixing SF2 and stuck at 7% share; TSMC is already in 2nm mass production at 73% share. Taylor Fab 1 trial production remains unconfirmed.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Samsung Taylor fab entering trial production late Sept/early Oct 2026; 2nm yield at 80%; fully booked with AI5/AI6 orders. Mass production still 2027. AI5 pre-volume in vehicles; AI4 remains in-vehicle standard. AI6 December 2026 tape-out target unchanged.",
       "keyPoints": [
-        "AI5 first silicon samples expected later 2026, high-volume production mid-2027",
         "AI5 dual-sourced: TSMC Arizona facility and Samsung Texas plant (both US-based)",
         "Samsung holding equipment installation ceremony at Taylor, Texas on April 24, 2026",
         "Samsung Taylor Fab: $44B campus for 2nm production using Gate-All-Around transistor architecture",
@@ -8458,7 +9059,8 @@
         "Next milestone: AI5 engineering samples qualification and first meaningful wafer/board volumes; any official yield or H2 2027 ramp confirmation from Samsung Taylor 2nm / TSMC",
         "Tesla has officially abandoned the Dojo 3 as a separate project; AI6 will serve as both inference and training supercomputer when deployed in clusters, consolidating Tesla's AI hardware roadmap into a single chip family.",
         "Taylor Mayor Jim Buzan confirmed Tesla AI5 as the planned first full-scale product once volume starts in 2027 \u2014 and also that Fab 1 is still dark, September trial production is unconfirmed, and none of the $4.745B CHIPS award has been paid.",
-        "Next milestone: Any verified AI5 sample silicon, Samsung SF2 yield number, or Taylor Fab 1 trial-production confirmation (September target still unconfirmed by officials)"
+        "Next milestone: Any verified AI5 sample silicon, Samsung SF2 yield number, or Taylor Fab 1 trial-production confirmation (September target still unconfirmed by officials)",
+        "Next milestone: Samsung Taylor trial operations (late September or early October 2026); AI6 tape-out (targeted December 2026)"
       ],
       "timeline": [
         {
@@ -8517,10 +9119,9 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "Paid public Cybercab service is live in Austin as of Sep 4 on the Robotaxi app (6 a.m.\u201310 p.m.), with 45 Texas-registered Cybercabs beside 375 authorized Model Ys (420 Texas ceiling). NHTSA opened AQ26002 the same day covering ~1,000 FMVSS-certified Cybercabs. Unsupervised miles claimed at 1 million; overnight service still blocked on a v15 merge.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Public Cybercab rides live in Austin since Sept 4, open to anyone via app as of Sept 10. Fleet crawls from 45 to 49 Texas-registered units in 5 days post-launch. First-week rider reports confirm impressive hardware but consistent service quality problems: 25\u201345 min waits, mid-road drop-offs, software bugs. NHTSA AQ26002 audit ongoing. No new city launches this week.",
       "keyPoints": [
-        "Production line cycle time: <10 seconds per unit",
         "Long-term target: 2 million units/year at full capacity",
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
         "July 3: Miami and Dallas robotaxi service launched with unsupervised vehicles",
@@ -8534,7 +9135,8 @@
         "Next milestone: Sept 3, 2026 Austin Cybercab launch event \u2014 watch whether paid unsupervised Cybercab rides actually open in the Robotaxi app, versus a demo/influencer reveal",
         "Next milestone: Sept 3, 2026 Austin Cybercab launch event \u2014 watch whether paid public Cybercab rides actually start, and whether unsupervised active fleet leaves the ~20-vehicle range",
         "Paid public Cybercab service live in Austin as of Sep 4 (Robotaxi app, 6 a.m.\u201310 p.m.); 45 Texas-registered Cybercabs of 420 authorized robotaxis. NHTSA AQ26002 opened the same day on FMVSS self-certification of ~1,000 units.",
-        "Next milestone: 24-hour Robotaxi if Elluswamy's 'next month or so' v15 merge holds (~October 2026); Cybercab availability outside Austin; NHTSA AQ26002 outcome that either clears or constrains expansion."
+        "Next milestone: 24-hour Robotaxi if Elluswamy's 'next month or so' v15 merge holds (~October 2026); Cybercab availability outside Austin; NHTSA AQ26002 outcome that either clears or constrains expansion.",
+        "Next milestone: Fleet needs to scale beyond ~50 registered units for wait times to become acceptable; 24/7 service still blocked on v15 merge (Ashok: 'next month or so')"
       ],
       "timeline": [
         {
@@ -8605,10 +9207,9 @@
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "No new national consumer FSD approvals in the Aug. 28\u2013Sept. 6 window. Tracked consumer markets remain 6 (US + Netherlands, Belgium, Denmark, Estonia, Lithuania). France moved two series cars into independent UTAC road tests after a Tabarot\u2013Musk call but did not authorize owner FSD and left July speeding/attention objections on the record. Sweden restated a Union-wide ambition without overruling Trafikverket's no-unless-Speed-Offset-is-removed advice. Tesla Europe open-sourced its Article 39 dashboard using pre-April data and a 4.1x crash claim (down from 5.2x). China still off the subscription list; Switzerland still has no Astra filing. NHTSA EA26002 Tesla response due Aug. 12 remains undisclosed.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "7 consumer markets (US + 6 EU). October 6 TCMV EU-wide vote 28 days out but faces structural math failure: 6 approved countries cover only ~9% of EU population vs. 65% required. Speed-offset feature is Sweden's written no and France's public reservation. Germany KBA confirmed dual-track review Sept 11 with no approval or timeline. NHTSA EA26002 response (due Aug 12) remains publicly undisclosed.",
       "keyPoints": [
-        "Germany, France, Belgium, Spain, Italy rollout anticipated by summer 2026",
         "Japan released first public FSD demo video in Tokyo (March 6)",
         "Japan targeting end of 2026 commercial rollout",
         "Approved under Article 39 (EU mutual recognition mechanism)",
@@ -8622,7 +9223,8 @@
         "Tesla Korea's 50 million km Supervised FSD figure excludes the Shanghai-built Model 3/Y majority fleet, which remains locked out by origin-based safety certification; Tesla has not applied for the self-certification path MOLIT left open in April.",
         "Next milestone: October 6 TCMV mutual-recognition vote; any Astra (Switzerland), Traficom (Finland), or Italy filing/decision",
         "No new consumer FSD country approvals. France started UTAC tests of two series cars after a Tabarot\u2013Musk call; July speeding/attention objections remain. Sweden restated EU-wide ambition without overruling Trafikverket's Speed Offset no-vote.",
-        "Next milestone: October 6 TCMV mutual-recognition vote (December sitting if France's UTAC results slip); UTAC French-road results mid-to-late September; any Astra (Switzerland), Traficom (Finland), or Italy filing/decision"
+        "Next milestone: October 6 TCMV mutual-recognition vote (December sitting if France's UTAC results slip); UTAC French-road results mid-to-late September; any Astra (Switzerland), Traficom (Finland), or Italy filing/decision",
+        "Next milestone: EU TCMV vote October 6, 2026 \u2014 requires 15+ member states representing 65%+ of EU population; highly uncertain without Germany, France, Italy, Spain"
       ],
       "activeCountries": [
         "United States",
@@ -8727,10 +9329,9 @@
     },
     "jobPostings": {
       "title": "Job Postings",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "U.S. Tesla openings still ~5k (LinkedIn 5,000+ floor; Glassdoor blocked; Tesla careers 403). Past-week Tesla US filter is 375, mostly sales/service. In-window Optimus signal is Austin mocap data operators, Palo Alto data-ops process tech, Fremont/Palo Alto repair leads, one actuator SIE, and one commodity TPM \u2014 still 0 Production Associate, Optimus. FSD/Robotaxi pulse is Orlando AI Safety Operator + ops advisor and a 10-city night-shift fleet-support supervisor wave. Tesla AI this week is Dojo thermal and Digital Optimus datacenter plus 2027 internships; last week's Palo Alto pre-training engineer aged out and was not replaced by Autopilot SWEs.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Production Associate, Optimus listing expired Sept 8 with no replacement \u2014 production-scale hiring absent for 2+ consecutive weeks. Engineering, technician, AI, and international design roles continue steady. Langley BC actuator cluster confirmed at 12+ roles. LinkedIn US floor unchanged at 5,000+.",
       "keyPoints": [
-        "100+ Optimus-related job openings maintained in mid-May 2026",
         "No significant change from April 100+ baseline ahead of production start",
         "Summer 2026 internship programs underway",
         "100+ Optimus-related job openings posted in April 2026 across U.S. facilities",
@@ -8744,7 +9345,8 @@
         "Fresh Optimus and FSD postings this week are mocap/data-collection/supervisor ops, not manufacturing-line or core Autopilot engineering \u2014 total U.S. openings remain a ~5,030 plateau.",
         "Next milestone: A counted Tesla-careers Optimus/FSD engineering wave, or production-associate / shift staffing for an Optimus line \u2014 not more mocap, supervisors, or single process-tech reqs",
         "Next milestone: Production Associate, Optimus reqs at Fremont; a cluster of Autopilot/FSD software-engineer reqs; Glassdoor US opening count re-verified off the ~5,030 plateau",
-        "U.S. openings still ~5k. In-window Optimus hiring is mocap/data-ops/repair plus one actuator SIE and one commodity TPM \u2014 zero Production Associate, Optimus. Autopilot/FSD SWE window empty; robotaxi pulse is Orlando data drivers and night-shift depot supervisors."
+        "U.S. openings still ~5k. In-window Optimus hiring is mocap/data-ops/repair plus one actuator SIE and one commodity TPM \u2014 zero Production Associate, Optimus. Autopilot/FSD SWE window empty; robotaxi pulse is Orlando data drivers and night-shift depot supervisors.",
+        "Next milestone: First appearance of a new Production Associate, Optimus listing (Fremont or Austin) would signal an imminent volume ramp"
       ],
       "roleTypes": [
         "AI Engineers (manipulation, world modeling, video generation)",
@@ -8774,10 +9376,9 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "Fremont Optimus SOP remains undisclosed more than a week after Tesla's own late-July/August 2026 window closed. The September 3 Cybercab launch staged Optimus as a non-headlined cameo and still produced no first unit, line rate, or yield. Outlets claiming Gen 3 production is 'live' have not shown Tesla numbers. External sales remain 'as early as' H2 2027.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Tesla's Fremont Optimus line completed initial commissioning mid-August 2026. Unconfirmed supply chain reports (Jiemian, Sept 7) indicate Tesla placed a ~5,000-unit component batch order with T-chain suppliers \u2014 the first thousand-unit-scale procurement. No official production count, unit rate, or yield data has been disclosed by Tesla. Gen 3 has not been publicly unveiled. Internal 2026 target is 10,000\u201320,000 units; commercial sales targeted 'as early as H2 2027.'",
       "keyPoints": [
-        "Gen 3 facility setup at Fremont moved to Q2/Q3 2026 (from end of 2026)",
         "Model S/X production ending Q2 2026 to free Fremont lines",
         "First commercial customers expected late 2026 at premium pricing ($100K+)",
         "2026 production target: 50,000-100,000 units",
@@ -8791,7 +9392,8 @@
         "First external Optimus sales slipped from late 2026 to H2 2027 while Fremont SOP is still unconfirmed after the Q1-guided window elapsed \u2014 a missed start plus a ~12-month commercial slip, against Unitree already selling 5,215 humanoids.",
         "Next milestone: An official Fremont first-unit or SOP confirmation, a public Optimus Gen 3 reveal tied to that line, or any disclosed internal factory deployment with a unit count.",
         "Fremont Optimus SOP remains undisclosed after the Q1-guided July/August window and after Tesla's Sep 3 Cybercab launch, which staged Optimus with no unit, rate, or yield.",
-        "Next milestone: An official Fremont first-unit photo or serial, a disclosed line rate/yield, a public Optimus Gen 3 reveal tied to that line, or Q3 2026 earnings commentary with a unit count."
+        "Next milestone: An official Fremont first-unit photo or serial, a disclosed line rate/yield, a public Optimus Gen 3 reveal tied to that line, or Q3 2026 earnings commentary with a unit count.",
+        "Next milestone: Tesla public confirmation or Q3 2026 earnings update with actual Optimus unit production/deployment numbers (expected October 2026). Gen 3 reveal event still unannounced."
       ],
       "timeline": [
         {
@@ -8864,8 +9466,8 @@
     },
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "No official Q3 2026 production/delivery print (expected early October; street still ~461.5k, likely QoQ down vs Q2 480k). China August wholesale printed at 86,166 (\u22127.9% MoM, +3.6% YoY) while August China retail remains unprinted and July retail was already 27,249 (\u221233% YoY) with exports ~71% of wholesale. Europe Q3 QTD is still the live warning (Model Y 5,138 July regs after 32,685 in June). Australia Model Y 6,414 #1 overall is a small-market print, not an offset. Model Y L, the only new volume SKU, has China rear-suspension sag reports and no recall as US deliveries remain originally October.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Q3 2026 delivery report expected October 2, 2026. Street consensus ~461.5k (vs. Q2 actual 480,126). China August retail confirmed at 50,047 (-12.43% YoY), Model Y YoY decline deepening for third month. Europe Q3 QTD at record lows (-37.5% YoY) pending September surge. Giga Berlin adding extra shifts. Tesla China deploying inventory incentives + Model Y Performance launch to maximize Q3 deliveries.",
       "totalProduction": "9,759,880",
       "totalDeliveries": "9,664,074",
       "quarterlyData": [
@@ -9157,10 +9759,9 @@
     },
     "terafab": {
       "title": "Terafab In-House Chip Manufacturing",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "Executed JETI agreements (J0035/J0039) now lock a Dec. 1, 2026 construction start and end-2028 completion on paper, but the enforceable floors are 10 jobs and $20M in year one. The Grimes site is still dirt work, land is ~35% of the advertised 22,000 acres, and Anderson-Shiro has received only filing fees. Grimes County says some project payments have started; amount undisclosed. Austin 'semiconductor fab' TDLR work is $150k.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "SpaceX suing Texas AG and Grimes County to block public records release on Terafab tax deal; project construction milestone (Dec 1 start) nominally intact but community opposition escalating via legal avenue",
       "keyPoints": [
-        "Vertically integrated facility - all chip manufacturing stages in one location",
         "Strategic goal: Reduce dependence on Samsung/TSMC external fabs",
         "Designed for rapid iteration on custom AI chips",
         "Part of broader 1+ terawatt AI compute capacity goal",
@@ -9174,7 +9775,8 @@
         "WIT TECH land holdings jumped to 4,620 acres (~21% of the advertised 22,000-acre site) while local officials marked phase-1 jobs down to 1,500 vs SpaceX's 3,000 pledge \u2014 site assembly and headcount are both tracking below the JETI pitch, with first wafers still Q1 2029.",
         "Next milestone: Vertical construction / cleanroom / tool install; first Terafab taxable value on school rolls in 2029-30; Q1 2029 commercial operations",
         "Executed JETI agreements list Dec. 1, 2026 start and end-2028 completion, but enforceable floors are 10 jobs and $20M in year one versus the $16.8B / 3,000-job pitch. Site remains dirt work.",
-        "Next milestone: Whether vertical construction actually starts by the Dec. 1, 2026 JETI date; Grimes County budget vote Sept. 16; first school tax-roll hit 2029-30; Q1 2029 commercial operations."
+        "Next milestone: Whether vertical construction actually starts by the Dec. 1, 2026 JETI date; Grimes County budget vote Sept. 16; first school tax-roll hit 2029-30; Q1 2029 commercial operations.",
+        "Next milestone: Court ruling on temporary restraining order (timing unknown); December 1, 2026 construction start per JETI agreements"
       ],
       "timeline": [
         {
@@ -9279,10 +9881,9 @@
     },
     "fsdv15": {
       "title": "FSD v15 Software",
-      "latestUpdate": "2026-09-06",
-      "criticalNews": "Consumer FSD is still Supervised v14. Tesla AI announced v14.3.9 (2026.27.5) on Sept 4 with Automatic Collision Evasion; NotATeslaApp labels it an employee release dated Sept 6 and TeslaFi shows 0 installs. Wide consumer fleet is on 2026.26.6.5 (v14.3.8 / v14.1 Lite) at 28.2% TeslaFi. HW3 remains on Lite. Europe's 2026.27.200 still ships 14.2.2.6. v15 does not appear on any consumer tracker.",
+      "latestUpdate": "2026-09-12",
+      "criticalNews": "Consumer fleet on v14.3.9 (HW4) / v14.2 Lite (HW3 3/Y) via 2026.27.6, but rollout at 0.2% after 4 days. HW3 Model S/X still excluded from v14 Lite. v15 absent from all consumer vehicles. Target: end-2026 / early 2027.",
       "keyPoints": [
-        "Complete neural network architecture overhaul",
         "10x parameter increase (originally planned for v14, pushed to v15)",
         "Orders of magnitude safety improvement target",
         "Next milestone: FSD v15 (10B-param architectural overhaul) targeted late-2026/early-2027; Grok\u2192FSD planning layer targeted September 2026; expand reasoning beyond destination handling and pothole avoidance listed as upcoming on v14.x",
@@ -9296,7 +9897,8 @@
         "Next milestone: A consumer FSD v15 OTA, or at least a merge of the current v14 stack into the 2026.26 Summer Update so owners are not stuck choosing between cabin features and the latest FSD.",
         "Next milestone: Wide 2026.26.6.5 / v14.3.8 adoption; AU/NZ HW3 v14 Lite download with a date; consumer FSD v15",
         "Consumer FSD remains Supervised v14. Employee v14.3.9 (2026.27.5) adds HW4-only Automatic Collision Evasion; TeslaFi 0%. Wide fleet on 2026.26.6.5 (v14.3.8 / HW3 v14.1 Lite) at 28.2%. v15 still absent from consumer trackers.",
-        "Next milestone: Consumer-wide v14.3.9 ACE; any first TeslaFi/NotATeslaApp listing of v15; pothole avoidance leaving Upcoming Improvements"
+        "Next milestone: Consumer-wide v14.3.9 ACE; any first TeslaFi/NotATeslaApp listing of v15; pothole avoidance leaving Upcoming Improvements",
+        "Next milestone: Wide rollout of 2026.27.6 with v14.3.9/v14.2 Lite; FSD v14 Lite for HW3 Model S/X (reported as imminent); FSD v15 Q4 2026 or Q1 2027 consumer launch"
       ],
       "timeline": [
         {

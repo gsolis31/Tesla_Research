@@ -1,0 +1,166 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-09-12",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q3 2026 production delivery estimate September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla China August 2026 retail sales CPCA",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Europe registrations September 2026 Q3 Model Y",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Model Y L US delivery date October 2026 update",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Goldman Sachs Tesla Q3 delivery estimate 455000 September 2026 date",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Model Y L first delivery US customers September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Q3 2026 deliveries consensus estimate September 7-12 street forecast",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla federal EV tax credit expires September 30 2026 delivery surge",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla China CPCA August 2026 retail 50047 September 8",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Model Y L first delivery US customers September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Europe September 2026 registrations Model Y Norway Denmark partial",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslarati.com Tesla China sales September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslanorth.com Tesla September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Model Y Performance China September 11 2026 369000 yuan delivery",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "teslarati.com Tesla production delivery September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla China Model Y price cut incentive September 7 2026 inventory discount",
+        "tool": "web_search",
+        "hits": 3
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-europe-sales-hit-record-low-quarter-to-date-in-q3-2026",
+        "kept": false,
+        "reason": "Published August 25 \u2014 outside Sep 6-12 research window; useful background context only"
+      },
+      {
+        "url": "https://cnevpost.com/2026/09/11/tesla-launches-model-y-performance-china/",
+        "kept": true,
+        "reason": "September 11 in-window: Model Y Performance China launch confirmed with specs and delivery dates"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/model-y-l-us-deliveries-5-details-that-matter",
+        "kept": false,
+        "reason": "Published August 14, updated August 19 \u2014 outside Sep 6-12 window; no new Sep 6-12 development"
+      }
+    ],
+    "considered": [
+      {
+        "title": "China August retail confirmed: 50,047 down 12.43% YoY, Model Y falls 26% (CnEVPost Sep 9)",
+        "url": "https://cnevpost.com/2026/09/09/tesla-aug-2026-china-deliveries-breakdown/",
+        "decision": "file",
+        "reason": "September 8-9, in window; CPCA official data; confirms previously unprinted retail figure; third consecutive YoY decline; deepening Model Y trend"
+      },
+      {
+        "title": "Tesla China launches quarter-end inventory incentives (EVSHIFT Sep 7)",
+        "url": "https://www.evshift.com/521910/tesla-launches-quarter-end-inventory-offers-in-china-as-local-deliveries-decline/",
+        "decision": "file",
+        "reason": "September 7, in window; 10,000 yuan Model Y discount signals demand weakness requiring incentives to hit Q3 China volume"
+      },
+      {
+        "title": "Tesla Model Y Performance launches in China at 369,000 yuan (TeslaNorth Sep 11)",
+        "url": "https://teslanorth.com/2026/09/11/tesla-model-y-performance-china/",
+        "decision": "file",
+        "reason": "September 11, in window; new market entry/product launch completing Juniper China lineup; tier 1 source (TeslaNorth)"
+      },
+      {
+        "title": "Giga Berlin orders extra shifts targeting 7,500 vehicles/week (EVwire Sep 7)",
+        "url": "https://evwire.com/p/tesla-grunheide-extra-shifts-production-ramp-7500",
+        "decision": "file",
+        "reason": "September 7, in window; production news directly impacting Q3 Europe deliveries; by Simon Alvarez (same author as Teslarati); credible source"
+      },
+      {
+        "title": "Tesla Europe Q3 QTD record-low: -37.5% YoY through August, basenor Aug 25",
+        "url": "https://www.basenor.com/blogs/news/tesla-europe-sales-hit-record-low-quarter-to-date-in-q3-2026",
+        "decision": "skip",
+        "reason": "Published August 25, outside Sep 6-12 research window. Background context only; Giga Berlin extra shifts story filed instead as the Sep 6-12 production response to this."
+      },
+      {
+        "title": "Goldman Sachs raised Q3 delivery estimate to 455,000 before quarterly report",
+        "url": "https://stocktwits.com/news-articles/markets/equity/goldman-sachs-hikes-price-target-on-tesla/chD250DR3bA",
+        "decision": "skip",
+        "reason": "Stocktwits aggregator with mixed 2025/2026 data; verified date for this Goldman action was September 18, 2025 (Q3 2025 pre-print), not 2026. Discarded to avoid year confusion."
+      },
+      {
+        "title": "Model Y L US deliveries beginning in September (basenor Aug 14 / notateslaapp Sep 2)",
+        "url": "https://www.notateslaapp.com/news/4639/tesla-model-y-l-gets-official-epa-range-ratings",
+        "decision": "skip",
+        "reason": "No confirmed first customer delivery in the Sep 6-12 window. EPA ratings article dated Sep 2 (just outside window). Basenor Model Y L article dated Aug 14/19. Delivery windows mid-Sep through Oct are still in progress; no specific Sep 6-12 development."
+      },
+      {
+        "title": "Model Y Leads Tesla September Sales Rebound Across Europe (allthings-elon.com Sep 8)",
+        "url": "https://www.allthings-elon.com/articles/tesla-europe-september-sales-rebound-model-y-2026-09-08",
+        "decision": "skip",
+        "reason": "Source (allthings-elon.com) is not tier 1 or tier 2; claims of Norway/Denmark September leadership partially contradicted by primary OFV data (749 MTD through Sep 10, not yet conclusive for full month). Insufficient source quality."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": null,
+        "decision": "reject",
+        "reason": "No Q3 2026 official production/delivery print this week. Expected ~October 2, 2026. Q2 2026 actuals (480,126 delivered / 451,758 produced) already in data from July."
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-12",
+  "status": "ok",
+  "candidates": 11,
+  "covered": 6,
+  "ignored": 0,
+  "gapCount": 5,
+  "gaps": [
+    {
+      "title": "Slovenia approves FSD Supervised as 6th EU member \u2014 28 days before Oct 6 bloc-wide vote",
+      "url": "https://teslanorth.com/2026/09/07/tesla-fsd-slovenia-approval/",
+      "date": "2026-09-07",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Sixth national approval ahead of the October 6 TCMV vote; six approved countries still cover only ~9% of the 65% population threshold needed to pass",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla releases EU FSD safety evidence ahead of Oct 6 vote \u2014 all data closes before April 2026",
+      "url": "https://eletric-vehicles.com/tesla/tesla-releases-fsd-safety-evidence-ahead-of-october-6-eu-wide-vote/",
+      "date": "2026-09-08",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "First public disclosure of the safety file underpinning Dutch RDW approval; data predates the European rollout it is meant to justify, which may weaken the October vote",
+      "match": "gap"
+    },
+    {
+      "title": "HW3 Model S and X to receive FSD v14 Lite 'soon' \u2014 Ashok told Ryan McCaffrey at Cybercab launch",
+      "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+      "date": "2026-09-09",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Closes the last major HW3 gap in the v14 Lite rollout; S/X discontinued in May 2026 yet still awaiting the update that reached most other HW3 cars months ago",
+      "match": "gap"
+    },
+    {
+      "title": "Cybertruck + Powerwall 3 integration goes live \u2014 extends home backup 3+ days, three years after promise",
+      "url": "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall/",
+      "date": "2026-09-10",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First vehicle-plus-home-battery bidirectional integration of this scale; originally promised at Cybertruck launch Nov 2023; Powerwall 2 and Powerwall+ compatibility still pending later this year",
+      "match": "gap"
+    },
+    {
+      "title": "Goldman Sachs holds Tesla Neutral at $360 as Musk claims Cybercab 5x faster to produce than conventional cars",
+      "url": "https://www.gate.com/news/detail/TSLA/tesla-stocks-slip-overnight-as-musk-touts-cybercab-production-speed-24129028",
+      "date": "2026-09-08",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Goldman's analysis pins Cybercab's $0.05\u2013$0.30/mile cost edge on lower vehicle cost, but flags software scalability as the swing factor; Musk's 5x production claim lacks a unit or context",
+      "match": "gap"
+    }
+  ]
+}

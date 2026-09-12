@@ -1,0 +1,115 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-09-12",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus production Fremont 2026 September",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus humanoid robot update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus 15000 supplier order Jiemian September 7 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslarati.com OR site:teslanorth.com Optimus September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus Gen 3 reveal production ramp September 8 9 10 11 12 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus 5000 batch order supplier T-chain Jiemian teslarati.com September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "teslarati.com optimus production batch order September 2026",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://aishiftnews.ca/news/optimus-entered-production-headlines-need-a-receipt/",
+        "kept": false,
+        "reason": "Published August 31 \u2014 outside Sep 6\u201312 date window; covers JPMorgan visit context already in hot context"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/",
+        "kept": false,
+        "reason": "Published July 1, 2026 \u2014 outside date window"
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Jiemian / Humanoids Daily: Tesla places first ~5,000-unit batch order with T-chain suppliers (Sep 7)",
+        "url": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+        "decision": "file",
+        "reason": "New development within date window; not in seenUrls; first batch-scale procurement order is a meaningful milestone"
+      },
+      {
+        "title": "AI Shift News: Optimus 'Entered Production' Headlines Need a Receipt (Aug 31)",
+        "url": "https://aishiftnews.ca/news/optimus-entered-production-headlines-need-a-receipt/",
+        "decision": "skip",
+        "reason": "Published August 31, outside the Sep 6\u201312 window; critical context already captured in hotContext.criticalNews"
+      },
+      {
+        "title": "Teslarati: Tesla Optimus project fires up as Musk sees production line progress (Jul 1)",
+        "url": "https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/",
+        "decision": "skip",
+        "reason": "Published July 1, outside the date window"
+      },
+      {
+        "title": "NextBigFuture: OPTIMUS CONFIRMED: 15,000 Bots This Year (Sep 7)",
+        "url": "https://www.nextbigfuture.com/2026/09/optimus-confirmed-15000-bots-this-year-tesla-to-3000.html",
+        "decision": "skip",
+        "reason": "Same Jiemian sourced story, bullish spin without additional primary evidence; filed via Humanoids Daily which is more balanced"
+      },
+      {
+        "title": "SmartBrainsAI: Tesla Targets 15,000 Optimus Robots by Year-End (Sep 11)",
+        "url": "https://smartbrainsai.com/tesla-targets-15000-optimus-robots-by-year-end-as-fremont-line-ramps-slowly/",
+        "decision": "skip",
+        "reason": "Secondary aggregator article covering same Jiemian story; no additional primary evidence; already captured in filed keyChange"
+      },
+      {
+        "title": "Teslarati / TeslaNorth homepages: no Optimus-specific articles found in Sep 6\u201312 window",
+        "url": "https://www.teslarati.com/",
+        "decision": "skip",
+        "reason": "No Optimus articles visible in the Sep 6\u201312 date window on either Tier 1 site"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "Component batch order to suppliers, not actual Optimus units produced or delivered by Tesla \u2014 supplier order \u2260 production metric; Tesla has disclosed no official count"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 15000,
+        "decision": "reject",
+        "reason": "Extrapolated 2026 year-end target from supply chain sources; Tesla has not confirmed this figure; unverified aspiration, not a production metric"
+      }
+    ]
+  }
+}
