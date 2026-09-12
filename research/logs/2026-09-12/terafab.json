@@ -1,0 +1,75 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-09-12",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab Grimes County Texas construction September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Terafab Tesla SpaceX September 2026 news update",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Teslarati TeslaNorth Terafab September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab Grimes County construction permits JETI September 6-12 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "SpaceX Terafab records lawsuit GCCRD transparency September 2026",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.businessinsider.com/spacex-terafab-tax-break-records-ai-transparency-texas-2026-9",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "SpaceX sues Texas AG and Grimes County to block release of Terafab records",
+        "url": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+        "decision": "file",
+        "reason": "New development Sep 9-10 in date window; not in seenUrls; directly owned by terafab (JETI/tax abatement politics)"
+      },
+      {
+        "title": "Tesla Terafab Construction Already Underway (Aug 13)",
+        "url": "https://teslanorth.com/2026/08/13/tesla-terafab-construction-already-underway-in-texas-drone-footage-reveals/",
+        "decision": "skip",
+        "reason": "seenUrl \u2014 already in url-cache"
+      },
+      {
+        "title": "SpaceX Grimes County land holdings nearly double (Aug 24)",
+        "url": "https://www.kbtx.com/2026/08/24/spacexs-grimes-county-land-holdings-nearly-double-just-four-days/",
+        "decision": "skip",
+        "reason": "seenUrl \u2014 already in url-cache"
+      },
+      {
+        "title": "SpaceX confirms Terafab done deal at Aug 6 Commissioners Court meeting",
+        "url": "https://www.kbtx.com/2026/08/06/spacex-confirms-terefab-project-is-done-deal-reps-meet-face-to-face-with-grimes-county-residents/",
+        "decision": "skip",
+        "reason": "August story predating date window; content covered in prior weeks"
+      }
+    ],
+    "metricCandidates": []
+  }
+}

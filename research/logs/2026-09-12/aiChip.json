@@ -1,0 +1,94 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-09-12",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 chip Samsung TSMC 2nm September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI6 chip Dojo update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI5 AI6 chip news week September 7 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslarati.com Tesla AI5 AI6 chip September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Samsung Taylor fab trial operations Tesla AI5 chip September October 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.trendforce.com/news/2026/09/09/news-samsung-taylor-fab-reportedly-fully-booked-for-2nm-before-operations-begin-fab-2-preparations-accelerate/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=276433",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung Taylor Fab Fully Booked for 2nm; Trial Operations Imminent",
+        "url": "https://www.trendforce.com/news/2026/09/09/news-samsung-taylor-fab-reportedly-fully-booked-for-2nm-before-operations-begin-fab-2-preparations-accelerate/",
+        "decision": "file",
+        "reason": "New development in date window (Sept 8\u20139, 2026); not in seenUrls; yield improvement to 80% and trial-ops confirmation are genuine updates vs last week's hot context"
+      },
+      {
+        "title": "Samsung nears Tesla AI5 production at Texas chip plant (tape-out announcement)",
+        "url": "https://en.yna.co.kr/view/AEN20260713007100320",
+        "decision": "skip",
+        "reason": "Dated July 13, 2026 \u2014 outside the Sept 6\u201312 date window; this is the same tape-out news already captured previously"
+      },
+      {
+        "title": "Tesla AI5 2nm tapes out at Samsung Foundry \u2014 Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/teslas-ai5-with-2nm-class-node-tapes-out-at-samsung-foundry-production-starts-soon-months-after-tsmc-tape-out",
+        "decision": "skip",
+        "reason": "Dated July 13, 2026 \u2014 outside the Sept 6\u201312 date window"
+      },
+      {
+        "title": "Elon Musk teases expectations for Tesla's AI6 self-driving chip \u2014 Teslarati March 2026",
+        "url": "https://www.teslarati.com/elon-musk-teases-expectations-tesla-ai6-self-driving-chip/",
+        "decision": "skip",
+        "reason": "Dated March 21, 2026 \u2014 outside date window; background context only"
+      },
+      {
+        "title": "Tesla confirms that work on Dojo 3 has officially resumed \u2014 Teslarati Jan 2026",
+        "url": "https://www.teslarati.com/tesla-confirms-that-work-on-dojo-3-has-officially-resumed/",
+        "decision": "skip",
+        "reason": "Dated January 19, 2026 \u2014 outside date window; Dojo 3 restart already established background context"
+      },
+      {
+        "title": "Anant Nivarti rejoins Tesla to lead silicon engineering \u2014 Data Center Dynamics April 2026",
+        "url": "https://www.datacenterdynamics.com/en/news/anant-nivarti-rejoins-tesla-to-lead-silicon-engineering-including-ai6-and-dojo-3/",
+        "decision": "skip",
+        "reason": "Dated April 7, 2026 \u2014 outside date window"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChipYield",
+        "count": 80,
+        "decision": "reject",
+        "reason": "No aiChipYield metric series defined in config; yield data is from unverified industry sources, not official Samsung/Tesla disclosure. Not suitable as a production count metric."
+      }
+    ]
+  }
+}

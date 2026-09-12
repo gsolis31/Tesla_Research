@@ -1,0 +1,151 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-09-12",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab robotaxi Austin service September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla robotaxi fleet expansion September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab new city expansion September 6-12 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Cybercab production VIN September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab Japan tour September 11 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab Austin rides experience quality September 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/08/tesla-cybercab-starlink-giga-texas/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/09/tesla-cybercab-fleet-49-texas/",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "First-week Cybercab service quality: 25-45 min waits, drop-offs, software bugs",
+        "url": "https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin",
+        "decision": "file",
+        "reason": "New Sep 9 first-person review; 3+ corroborating sources; not in seenUrls; high-impact service quality assessment in date window"
+      },
+      {
+        "title": "Tesla Cybercabs Leave Giga Texas With Starlink on the Hatch",
+        "url": "https://teslanorth.com/2026/09/08/tesla-cybercab-starlink-giga-texas/",
+        "decision": "file",
+        "reason": "New Sep 8 production milestone; not in seenUrls; factory Starlink integration in volume is a genuine production development"
+      },
+      {
+        "title": "Tesla Robotaxi Cybercab Fleet Hits 49 in Texas DMV Records",
+        "url": "https://teslanorth.com/2026/09/09/tesla-cybercab-fleet-49-texas/",
+        "decision": "file",
+        "reason": "New Sep 9 operational update; not in seenUrls; only 4 cars added in 5 days post-launch is material for fleet scaling narrative"
+      },
+      {
+        "title": "Tesla Robotaxi App Lets Anyone Hail a Cybercab in Austin",
+        "url": "https://teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin/",
+        "decision": "file",
+        "reason": "New Sep 10; not in seenUrls; official account removes invite-only framing, meaningful service access milestone"
+      },
+      {
+        "title": "Tesla Cybercab Japan Tour Opens Today in Tokyo Aoyama",
+        "url": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+        "decision": "file",
+        "reason": "New Sep 11; not in seenUrls; static display only, low operational impact, but within date window"
+      },
+      {
+        "title": "Inside Tesla's Austin Cybercab Debut: Frozen Touchscreens",
+        "url": "https://stickshifting.com/inside-teslas-austin-cybercab-debut-from-seamless-scissor-doors-to-frozen-touchscreens",
+        "decision": "file",
+        "reason": "Corroborates service quality finding with frozen screen incident; merged into Finding 1 rather than filed separately"
+      },
+      {
+        "title": "Tesla Launches Steering-Wheel-Free Cybercab Robotaxi in Austin - Business Insider",
+        "url": "https://www.businessinsider.com/tesla-cybercab-robotaxi-launch-event-austin-self-driving-car-2026-9",
+        "decision": "skip",
+        "reason": "Sep 4 launch coverage \u2014 predates research window (Sep 6-12); core launch facts already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla Cybercab Public Rides Start Friday at 5 PM CT in Austin",
+        "url": "https://teslanorth.com/2026/09/03/tesla-cybercab-public-rides-austin/",
+        "decision": "skip",
+        "reason": "Sep 3, predates research window"
+      },
+      {
+        "title": "Tesla Moves Austin Cybercab Public Rides Up to 2 PM CT",
+        "url": "https://teslanorth.com/2026/09/04/tesla-cybercab-public-2pm-ct/",
+        "decision": "skip",
+        "reason": "Sep 4, predates research window"
+      },
+      {
+        "title": "Tesla Cybercab Europe: Elon Musk Says Robotaxis Could Arrive Soon",
+        "url": "https://vfuturemedia.com/electric-vehicles/tesla-cybercab-europe-robotaxi-launch/",
+        "decision": "skip",
+        "reason": "Tier-3 source only; Musk tweet 'hopefully soon in Europe too' is aspirational with no timeline, regulatory process, or confirmed market entry \u2014 low confidence, low impact"
+      },
+      {
+        "title": "Tesla's new self-driving Cybercabs drive into federal safety scrutiny",
+        "url": "https://cbsaustin.com/news/local/teslas-new-self-driving-cybercabs-drive-into-federal-safety-scrutiny-as-safety-audit-open",
+        "decision": "skip",
+        "reason": "NHTSA AQ26002 is already in seenUrls (teslarati source) and belongs to fsd ownership, not cybercab"
+      },
+      {
+        "title": "Tesla Robotaxi Roster Hits 420 Vehicles Ahead of Austin Cybercab Launch",
+        "url": "https://teslanorth.com/2026/09/02/tesla-robotaxi-texas-420/",
+        "decision": "skip",
+        "reason": "Sep 2, predates research window; already in seenUrls"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "cybercab",
+        "count": 49,
+        "decision": "reject",
+        "reason": "Texas TxMCCS/DMV registration count, not a confirmed production count \u2014 VIN floor from Aug 10 (2172) remains the latest production estimate; registry ceiling \u2260 production metric"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 49,
+        "decision": "reject",
+        "reason": "TxMCCS registration ceiling, not confirmed active dispatch fleet; articles explicitly note registered \u2260 actively taking paid rides; not a valid fleetUpdate per rules"
+      }
+    ]
+  }
+}

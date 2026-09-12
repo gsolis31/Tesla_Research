@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-12",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1464,23 +1464,170 @@
       "lastSeen": "2026-09-06",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "Grimes County says Terafab payments have started as it struggles to raise worker pay"
+    },
+    "https://www.trendforce.com/news/2026/09/09/news-samsung-taylor-fab-reportedly-fully-booked-for-2nm-before-operations-begin-fab-2-preparations-accelerate": {
+      "originalUrl": "https://www.trendforce.com/news/2026/09/09/news-samsung-taylor-fab-reportedly-fully-booked-for-2nm-before-operations-begin-fab-2-preparations-accelerate/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "AI Chip Production",
+      "title": "Samsung Taylor Fab fully booked for 2nm before trial ops; AI5/AI6 yield reaches 80%"
+    },
+    "https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin": {
+      "originalUrl": "https://www.theverge.com/transportation/992014/tesla-cybercab-hands-on-test-robotaxi-austin",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Cybercab Production",
+      "title": "First-week Cybercab service: 25\u201345 min waits, software bugs, mid-lane drop-offs"
+    },
+    "https://teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin": {
+      "originalUrl": "https://teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Cybercab Production",
+      "title": "Cybercab open to anyone via app \u2014 but 49 Texas-registered units cannot meet public demand"
+    },
+    "https://teslanorth.com/2026/09/08/tesla-cybercab-starlink-giga-texas": {
+      "originalUrl": "https://teslanorth.com/2026/09/08/tesla-cybercab-starlink-giga-texas/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Cybercab Production",
+      "title": "Giga Texas ships Cybercabs with factory-integrated Starlink in volume for the first time"
+    },
+    "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo": {
+      "originalUrl": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Cybercab Production",
+      "title": "Cybercab Japan Tour opens in Tokyo \u2014 static display only, no service launch or regulatory path"
+    },
+    "https://www.reuters.com/business/slovenia-clears-teslas-fsd-driver-assistance-ahead-eu-vote-2026-09-08": {
+      "originalUrl": "https://www.reuters.com/business/slovenia-clears-teslas-fsd-driver-assistance-ahead-eu-vote-2026-09-08/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD Country Approvals",
+      "title": "Slovenia approves FSD Supervised, becoming 7th consumer market and 6th EU member state"
+    },
+    "https://www.autonext.co/news/tesla-fsd-six-eu-approvals-slovenia-nine-percent-population-vote": {
+      "originalUrl": "https://www.autonext.co/news/tesla-fsd-six-eu-approvals-slovenia-nine-percent-population-vote",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD Country Approvals",
+      "title": "EU TCMV October 6 vote faces near-certain failure: 9% coverage, speed-offset deadlock, sealed-file controversy"
+    },
+    "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm": {
+      "originalUrl": "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD Country Approvals",
+      "title": "All six EU FSD approvals rest on a single sealed Dutch safety file no regulator or citizen can inspect"
+    },
+    "https://www.basenor.com/blogs/news/germanys-kba-reviews-tesla-fsd-approval-under-eu-article-39": {
+      "originalUrl": "https://www.basenor.com/blogs/news/germanys-kba-reviews-tesla-fsd-approval-under-eu-article-39",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD Country Approvals",
+      "title": "Germany's KBA confirms active FSD review on EU-wide and national tracks; no approval or timeline given"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.9 (2026.27.6) enters public early-access rollout; only 0.2% of fleet after 4 days"
+    },
+    "https://www.notateslaapp.com/news/4664/tesla-fsd-v14-lite-coming-soon-to-model-s-model-x": {
+      "originalUrl": "https://www.notateslaapp.com/news/4664/tesla-fsd-v14-lite-coming-soon-to-model-s-model-x",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD v15 Software",
+      "title": "HW3 Model S/X still missing FSD v14 Lite; Elluswamy says it was 'supposed to go out last week'"
+    },
+    "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15": {
+      "originalUrl": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "FSD v15 Software",
+      "title": "Elluswamy previews FSD v15 safety promise; v15 carries no consumer release date"
+    },
+    "https://www.ihiremanufacturing.com/jobs/view/529738787": {
+      "originalUrl": "https://www.ihiremanufacturing.com/jobs/view/529738787",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Job Postings",
+      "title": "Optimus Production Associate listing expires Sept 8 \u2014 production-scale hiring absent for 7+ weeks"
+    },
+    "https://activevancouver.ca/tesla-is-hiring-robotics-engineers-in-langley-what-it-means-for-metro-vancouvers-future-workforce": {
+      "originalUrl": "https://activevancouver.ca/tesla-is-hiring-robotics-engineers-in-langley-what-it-means-for-metro-vancouvers-future-workforce/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Job Postings",
+      "title": "Tesla Langley BC Optimus actuator/geartrain cluster grows to 12+ roles \u2014 supply chain broadening signal"
+    },
+    "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up": {
+      "originalUrl": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Optimus Production",
+      "title": "Jiemian reports Tesla placed first batch order for ~5,000 Optimus components with T-chain suppliers"
+    },
+    "https://cnevpost.com/2026/09/09/tesla-aug-2026-china-deliveries-breakdown": {
+      "originalUrl": "https://cnevpost.com/2026/09/09/tesla-aug-2026-china-deliveries-breakdown/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Vehicle Production & Delivery",
+      "title": "China August retail confirmed at 50,047 \u2014 down 12.43% YoY, weakest August since 2022, Model Y falls 26%"
+    },
+    "https://www.evshift.com/521910/tesla-launches-quarter-end-inventory-offers-in-china-as-local-deliveries-decline": {
+      "originalUrl": "https://www.evshift.com/521910/tesla-launches-quarter-end-inventory-offers-in-china-as-local-deliveries-decline/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla China launches Q3 inventory incentives: 10,000 yuan off Model Y, 5,000 yuan off Model 3"
+    },
+    "https://teslanorth.com/2026/09/11/tesla-model-y-performance-china": {
+      "originalUrl": "https://teslanorth.com/2026/09/11/tesla-model-y-performance-china/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Model Y Performance launches in China at 369,000 yuan \u2014 completes Juniper lineup as YoY sales weaken"
+    },
+    "https://evwire.com/p/tesla-grunheide-extra-shifts-production-ramp-7500": {
+      "originalUrl": "https://evwire.com/p/tesla-grunheide-extra-shifts-production-ramp-7500",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Vehicle Production & Delivery",
+      "title": "Giga Berlin orders three extra shifts targeting 7,500 vehicles/week for Q3 push \u2014 still short of target"
+    },
+    "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Vehicle Production & Delivery",
+      "title": "Cybertruck + Powerwall 3 Powershare integration goes live \u2014 3+ days of home backup, Powerwall 2 still pending"
+    },
+    "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records": {
+      "originalUrl": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "SpaceX sues Texas AG and Grimes County to block release of Terafab tax-break records"
     }
   },
   "stats": {
-    "totalUrls": 209,
+    "totalUrls": 230,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 16,
-      "Cybercab Production": 29,
-      "FSD v15 Software": 20,
-      "Vehicle Production & Delivery": 27,
+      "Optimus Production": 17,
+      "Cybercab Production": 33,
+      "FSD v15 Software": 23,
+      "Vehicle Production & Delivery": 32,
       "unknown": 52,
-      "FSD Country Approvals": 17,
+      "FSD Country Approvals": 21,
       "4680 Battery Cell Production": 5,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 9,
-      "Job Postings": 13,
-      "Terafab In-House Chip Manufacturing": 8
+      "AI Chip Production": 10,
+      "Job Postings": 15,
+      "Terafab In-House Chip Manufacturing": 9
     }
   }
 }

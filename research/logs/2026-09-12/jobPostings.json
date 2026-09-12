@@ -1,0 +1,135 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-09-12",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus job postings hiring September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI robotics FSD hiring LinkedIn jobs September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus \"production associate\" OR \"manufacturing associate\" LinkedIn jobs 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla \"Digital Optimus\" OR \"Optimus\" job posting site:linkedin.com 2026 September",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla jobs hiring \"September 2026\" LinkedIn new openings AI robotics",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla \"Production Associate\" Optimus expired removed hiring 2026",
+        "tool": "web_search",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Autopilot \"software engineer\" OR \"FSD\" hiring LinkedIn site:linkedin.com September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:optimusk.blog Tesla Optimus hiring 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla hiring signal Optimus AI jobs week September 8 9 10 11 12 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla \"AI Engineer, Model Pre-training\" site:tesla.com OR site:linkedin.com 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Optimus Langley Canada hiring September 2026 manufacturing",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.physicalai.jobs/tesla/ai-infrastructure-engineer-digital-optimus",
+        "kept": false,
+        "reason": "Posted Aug 27 \u2014 pre-window; Digital Optimus datacenter already covered in last week's hotContext"
+      },
+      {
+        "url": "https://activevancouver.ca/tesla-is-hiring-robotics-engineers-in-langley-what-it-means-for-metro-vancouvers-future-workforce/",
+        "kept": true,
+        "reason": "New Sep 9 article confirming Langley cluster growth; in-window analysis piece"
+      },
+      {
+        "url": "https://optimusk.blog/blog/tesla-q2-2026-earnings-optimus-update/",
+        "kept": true,
+        "reason": "Confirmed Q2 context: no production targets, initial builds to Optimus Academy \u2014 validates negative hiring signal reading"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Production Associate, Optimus expired Sep 8 (iHireManufacturing)",
+        "url": "https://www.ihiremanufacturing.com/jobs/view/529738787",
+        "decision": "file",
+        "reason": "In-window expiration (Sep 8) of the only production-associate listing; absence of replacement is a meaningful negative signal"
+      },
+      {
+        "title": "Tesla Langley BC Optimus cluster grows to 12+ roles (Active Vancouver, Sep 9)",
+        "url": "https://activevancouver.ca/tesla-is-hiring-robotics-engineers-in-langley-what-it-means-for-metro-vancouvers-future-workforce/",
+        "decision": "file",
+        "reason": "New in-window analysis article; confirms supply chain breadth growing even if underlying jobs are from May\u2013June"
+      },
+      {
+        "title": "AI Infrastructure Engineer, Digital Optimus (jobs-in.us, Sep 9 indexed)",
+        "url": "https://jobs-in.us/infrastructure-engineer_palo-alto-c426308/2026-09-tesla_i4198497256",
+        "decision": "skip",
+        "reason": "Job ID 4198497256 is lower than known recent seenUrl IDs (44xx range) \u2014 likely an older listing re-indexed; Digital Optimus datacenter role already covered in last-week hotContext"
+      },
+      {
+        "title": "AI Engineer, Model Pre-training, Tesla AI (jobs-in.us, Sep 8 indexed)",
+        "url": "https://jobs-in.us/ai-engineer_palo-alto-c426308/2026-09-tesla_i4198278237",
+        "decision": "skip",
+        "reason": "Job ID 4198278237 is lower than seenUrl IDs \u2014 likely re-indexed old listing; hotContext confirms pre-training role aged out and hotContext pre-training seenUrl (4460315668) covers this category; Shashank Sangar post from Aug 29 points to same underlying listing"
+      },
+      {
+        "title": "Senior Motor Design Engineer, Optimus (Greece, Sep 10)",
+        "url": "https://jobily.gr/en/jobs/theseis-ergasia/TESLA-Senior-Motor-Design-Engineer-Optimus-Attikh-full-time-on-site-permanent-Kataskeuastikos-Klados-Texnika-Epaggelmata/180c280a-e3e2-4081-bea1-a0925183ac7e",
+        "decision": "skip",
+        "reason": "Single niche international actuator-motor design role; does not change the hiring-signal narrative meaningfully; no production-scale implication"
+      },
+      {
+        "title": "Tesla Optimus manufacturing night-shift wave (Divya Keerthiraj, Sep 2)",
+        "url": "https://www.linkedin.com/posts/divyakeerthiraj_careers-tesla-activity-7501049926102159360-kNiX",
+        "decision": "skip",
+        "reason": "Posted Sep 2 \u2014 before the Sep 6 window start; also likely captured in last week's research (night-shift manufacturing engineer wave was noted in hotContext)"
+      },
+      {
+        "title": "Fall 2026 Tesla AI internships (RL, AI Engineer, Optimus simulation)",
+        "url": "https://ev.careers/jobs/512190469-internship-rl-engineer-tesla-ai-fall-2026",
+        "decision": "skip",
+        "reason": "Internship wave covered in last week's hotContext ('2027 internships'); no new in-window postings identified"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "LinkedIn US 5,000+ floor is unchanged from last week's latestMetric (2026-09-06, count=5000); no new verified count data found in window"
+      }
+    ]
+  }
+}

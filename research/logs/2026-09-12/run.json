@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-12",
+  "weekOf": "2026-09-07",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 6,
+      "fetched": 4,
+      "considered": 12,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 7,
+      "fetched": 4,
+      "considered": 10,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 4,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 7,
+      "fetched": 3,
+      "considered": 6,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 3,
+      "considered": 7,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 16,
+      "fetched": 3,
+      "considered": 8,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 2,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 5,
+      "fetched": 2,
+      "considered": 6,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 6,
+      "fetched": 3,
+      "considered": 4,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No new battery4680-owned developments (cell GWh, yield, dry electrode, Berlin/Texas cell line updates) published by Tier 1 sources in the Sep 6-12 window. The Gulf Coast lithium milestone (Sep 4) is already captured in recentKeyChanges. The Nevada Semi factory inauguration (Sep 10) is productionDelivery-owned. Q2 IR context (>40 GWh Texas, Berlin Construction, pack/cell as global bottleneck) remains unchanged.",
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 5,
+      "fetched": 2,
+      "considered": 4,
+      "skipped": 3,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 11,
+      "fetched": 3,
+      "considered": 7,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 8,
+    "report": "/workspace/research/logs/2026-09-12/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/workspace/research/logs/2026-09-12/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 11,
+    "covered": 6,
+    "ignored": 0,
+    "gapCount": 5,
+    "queries": 15,
+    "gaps": [
+      {
+        "title": "Slovenia approves FSD Supervised as 6th EU member \u2014 28 days before Oct 6 bloc-wide vote",
+        "url": "https://teslanorth.com/2026/09/07/tesla-fsd-slovenia-approval/",
+        "likelyCategory": "fsd"
+      },
+      {
+        "title": "Tesla releases EU FSD safety evidence ahead of Oct 6 vote \u2014 all data closes before April 2026",
+        "url": "https://eletric-vehicles.com/tesla/tesla-releases-fsd-safety-evidence-ahead-of-october-6-eu-wide-vote/",
+        "likelyCategory": "fsd"
+      },
+      {
+        "title": "HW3 Model S and X to receive FSD v14 Lite 'soon' \u2014 Ashok told Ryan McCaffrey at Cybercab launch",
+        "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+        "likelyCategory": "fsdv15"
+      },
+      {
+        "title": "Cybertruck + Powerwall 3 integration goes live \u2014 extends home backup 3+ days, three years after promise",
+        "url": "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall/",
+        "likelyCategory": "productionDelivery"
+      },
+      {
+        "title": "Goldman Sachs holds Tesla Neutral at $360 as Musk claims Cybercab 5x faster to produce than conventional cars",
+        "url": "https://www.gate.com/news/detail/TSLA/tesla-stocks-slip-overnight-as-musk-touts-cybercab-production-speed-24129028",
+        "likelyCategory": "cybercab"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 21,
+    "duplicatesRemoved": 0,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 0,
+    "totalKeyChanges": 20,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

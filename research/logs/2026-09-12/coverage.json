@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-12",
+  "weekOf": "2026-09-07",
+  "dateFrom": "2026-09-06",
+  "dateTo": "2026-09-12",
+  "candidates": [
+    {
+      "title": "Slovenia approves FSD Supervised as 6th EU member — 28 days before Oct 6 bloc-wide vote",
+      "url": "https://teslanorth.com/2026/09/07/tesla-fsd-slovenia-approval/",
+      "date": "2026-09-07",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Sixth national approval ahead of the October 6 TCMV vote; six approved countries still cover only ~9% of the 65% population threshold needed to pass"
+    },
+    {
+      "title": "Tesla FSD clears six EU nations but speed-offset fight could kill October 6 vote",
+      "url": "https://www.techtimes.com/articles/327034/20260908/tesla-full-self-driving-clears-six-eu-nations-speed-offset-fight-could-kill-october-vote.htm",
+      "date": "2026-09-08",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Details October 6 TCMV vote mechanics (15 states + 65% population required) and identifies speed-offset setting as the political blocker; Germany, France, Italy, Spain uncommitted"
+    },
+    {
+      "title": "Tesla releases EU FSD safety evidence ahead of Oct 6 vote — all data closes before April 2026",
+      "url": "https://eletric-vehicles.com/tesla/tesla-releases-fsd-safety-evidence-ahead-of-october-6-eu-wide-vote/",
+      "date": "2026-09-08",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "First public disclosure of the safety file underpinning Dutch RDW approval; data predates the European rollout it is meant to justify, which may weaken the October vote"
+    },
+    {
+      "title": "Tesla issues ~5,000-unit Optimus component batch order to T-chain suppliers",
+      "url": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+      "date": "2026-09-07",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "First production-scale procurement order (vs. prior hundreds-unit pilot runs); targets 1,000 units/week by late September, 2,500/week by year-end — still unconfirmed by Tesla"
+    },
+    {
+      "title": "FSD v14.3.9 with Automatic Collision Evasion rolls out broadly to owners via 2026.27.6",
+      "url": "https://www.teslarati.com/tesla-rolling-new-fsd-version-massive-safety-addition/",
+      "date": "2026-09-09",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Broadens ACE from employee fleet to customer vehicles on HW4; adds highway evasive-steering and re-engagement when driver inattention detected — distinct from last week's employee-only preview"
+    },
+    {
+      "title": "Ashok Elluswamy previews FSD v15: 'even earlier hazard prediction, significantly better collision avoidance'",
+      "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+      "date": "2026-09-12",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "First on-record Ashok statement positioning v15 as a safety step-change, not just capability; company already running early v15 on Robotaxi fleet while customer cars are still on v14.3.9"
+    },
+    {
+      "title": "HW3 Model S and X to receive FSD v14 Lite 'soon' — Ashok told Ryan McCaffrey at Cybercab launch",
+      "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+      "date": "2026-09-09",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Closes the last major HW3 gap in the v14 Lite rollout; S/X discontinued in May 2026 yet still awaiting the update that reached most other HW3 cars months ago"
+    },
+    {
+      "title": "Samsung Taylor fab reaches full capacity before trial ops — AI5 2nm yield hits 80%, mass production 2027",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=276433",
+      "date": "2026-09-08",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "Taylor fab booked solid on Tesla AI5/AI6, Broadcom, and Arm orders before first wafer; 2nm yield up from 60% to 80%; trial ops begin 'early next month' with volume production 2027"
+    },
+    {
+      "title": "Cybertruck + Powerwall 3 integration goes live — extends home backup 3+ days, three years after promise",
+      "url": "https://www.teslarati.com/tesla-cybertruck-powershare-powerwall/",
+      "date": "2026-09-10",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First vehicle-plus-home-battery bidirectional integration of this scale; originally promised at Cybertruck launch Nov 2023; Powerwall 2 and Powerwall+ compatibility still pending later this year"
+    },
+    {
+      "title": "Goldman Sachs holds Tesla Neutral at $360 as Musk claims Cybercab 5x faster to produce than conventional cars",
+      "url": "https://www.gate.com/news/detail/TSLA/tesla-stocks-slip-overnight-as-musk-touts-cybercab-production-speed-24129028",
+      "date": "2026-09-08",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Goldman's analysis pins Cybercab's $0.05–$0.30/mile cost edge on lower vehicle cost, but flags software scalability as the swing factor; Musk's 5x production claim lacks a unit or context"
+    },
+    {
+      "title": "Tesla Cybercab Japan tour opens in Tokyo — display only, no rides, no approval",
+      "url": "https://teslanorth.com/2026/09/11/tesla-cybercab-japan-tour-opens-tokyo/",
+      "date": "2026-09-11",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "First public Cybercab appearance in Japan across four cities (Tokyo, Osaka, Nagoya); frames potential market interest but no regulatory pathway or launch timeline announced"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab FSD Optimus September 2026 news",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "NHTSA NTSB Tesla Cybercab FSD September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslarati.com Tesla September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v15 release date September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Optimus robot production September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 battery cell production September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla AI5 chip Samsung TSMC production September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Terafab chip manufacturing September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Q3 2026 deliveries production estimates September",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD Europe approval EU homologation September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab expansion cities Dallas Houston Miami September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla stock price Goldman Sachs Barclays upgrade target September 8 9 10 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslanorth.com September 7 8 9 10 11 12 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus 5000 unit order supply chain September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla EV tax credit expiry September 30 2026 demand Model Y",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/07/tesla-fsd-slovenia-approval/",
+        "kept": true
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-us-sales-fall-26-in-august-to-40800-units-mi-says/",
+        "kept": false,
+        "reason": "Published September 2 — before dateFrom window"
+      }
+    ]
+  }
+}

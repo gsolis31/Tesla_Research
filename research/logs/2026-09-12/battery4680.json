@@ -1,0 +1,85 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-09-12",
+  "filed": 0,
+  "skipReason": "No new battery4680-owned developments (cell GWh, yield, dry electrode, Berlin/Texas cell line updates) published by Tier 1 sources in the Sep 6-12 window. The Gulf Coast lithium milestone (Sep 4) is already captured in recentKeyChanges. The Nevada Semi factory inauguration (Sep 10) is productionDelivery-owned. Q2 IR context (>40 GWh Texas, Berlin Construction, pack/cell as global bottleneck) remains unchanged.",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery cell production yield 2026 September",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 battery September 2026 GWh dry electrode update",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla 4680 cell Berlin Model Y customer delivery late Q3 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla battery 4680 production news week September 8 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla 4680 Semi Cybercab battery production update September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla 4680 battery news September 9 10 11 12 2026 site:teslarati.com OR site:teslanorth.com OR site:basenor.com",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-inside-the-can-stamping-operation",
+        "kept": false,
+        "reason": "Published Aug 31, outside Sep 6-12 window; URL already in seenUrls"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/teslas-gulf-coast-lithium-refinery-now-feeds-4680-cells-in-cybertruck",
+        "kept": false,
+        "reason": "Published Sep 4, before research window; same story as recentKeyChange already filed"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-5-details-that-matter",
+        "kept": false,
+        "reason": "Published Jul 16, outside window; URL already in seenUrls"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla's Gulf Coast Lithium Refinery Now Feeds 4680 Cells in Cybertruck",
+        "url": "https://www.basenor.com/blogs/news/teslas-gulf-coast-lithium-refinery-now-feeds-4680-cells-in-cybertruck",
+        "decision": "skip",
+        "reason": "Published Sep 4, before research window (Sep 6-12). Core topic identical to already-filed recentKeyChange 'First Cybertruck uses Gulf Coast lithium in 4680 cells.' HotContext criticalNews explicitly flags this as feedstock origin, not a 4680 output/yield/cost milestone."
+      },
+      {
+        "title": "Tesla Sets Sept 24 Inauguration for New Nevada Semi Factory",
+        "url": "https://www.basenor.com/blogs/news/tesla-sets-sept-24-inauguration-for-new-nevada-semi-factory",
+        "decision": "skip",
+        "reason": "Published Sep 10, within window. Confirms Semi uses 4680 cells, but primary story is vehicle factory inauguration \u2014 owned by productionDelivery, not battery4680. No new 4680 GWh, yield, or dry electrode data."
+      },
+      {
+        "title": "Giga Berlin's 4680 Cell Line: Inside the Can Stamping Operation",
+        "url": "https://www.basenor.com/blogs/news/giga-berlins-4680-cell-line-inside-the-can-stamping-operation",
+        "decision": "skip",
+        "reason": "Published Aug 31, outside research window. URL also in seenUrls."
+      },
+      {
+        "title": "Tesla orders extra shifts at Giga Berlin to hit 7,500 vehicles per week",
+        "url": "https://evwire.com/p/tesla-grunheide-extra-shifts-production-ramp-7500",
+        "decision": "skip",
+        "reason": "Giga Berlin production ramp story; cell manufacturing was explicitly exempted from extra shifts but no new 4680 cell production or yield data disclosed. Primary ownership: productionDelivery."
+      }
+    ],
+    "metricCandidates": []
+  }
+}

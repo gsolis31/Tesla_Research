@@ -1,0 +1,110 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-09-12",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 software update September 2026 site:notateslaapp.com OR site:teslanorth.com OR site:teslarati.com",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v14.3.9 2026.27 rollout OTA update September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v15 timeline release date September 2026 HW3 ceiling update",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD cumulative miles billion September 2026 training data milestone",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD Lite HW3 Model S Model X September 2026 site:notateslaapp.com OR site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 2026.32 firmware update FSD September 2026 site:notateslaapp.com",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/09/tesla-fsd-v14-3-9-collision-evasion/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v14.3.9 (2026.27.6) enters public early-access rollout; only 0.2% of fleet after 4 days",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes",
+        "decision": "file",
+        "reason": "New public rollout (employee-only 2026.27.5 was seenUrl for Teslarati story; 2026.27.6 is distinct public release not seen before)"
+      },
+      {
+        "title": "HW3 Model S/X still missing FSD v14 Lite; Elluswamy says it was 'supposed to go out last week'",
+        "url": "https://www.notateslaapp.com/news/4664/tesla-fsd-v14-lite-coming-soon-to-model-s-model-x",
+        "decision": "file",
+        "reason": "New development in date window; HW3 S/X ceiling story not in recentKeyChanges or seenUrls"
+      },
+      {
+        "title": "Elluswamy previews FSD v15 safety promise in tweet; v15 carries no consumer release date",
+        "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+        "decision": "file",
+        "reason": "Sept 12 article with Sept 11 Elluswamy tweet; new v15 signal in date window, URL not in seenUrls"
+      },
+      {
+        "title": "Tesla Robotaxis Are Running FSD V15 - Not a Tesla App",
+        "url": "https://www.notateslaapp.com/news/4484/tesla-robotaxis-are-already-running-fsd-v15",
+        "decision": "skip",
+        "reason": "seenUrl \u2014 already in seenUrls list"
+      },
+      {
+        "title": "Tesla FSD V14.3.9 and V14.2 Lite: First Impressions - Not a Tesla App",
+        "url": "https://www.notateslaapp.com/news/4669/tesla-fsd-v1439-and-v142-lite-first-impressions",
+        "decision": "skip",
+        "reason": "Corroborating impressions article; content fully covered by primary release notes and TeslaNorth feature breakdown"
+      },
+      {
+        "title": "First Look at Tesla Update 2026.32",
+        "url": "https://www.notateslaapp.com/news/4670/first-look-at-tesla-update-202632-photos",
+        "decision": "skip",
+        "reason": "2026.32.3 is a non-FSD UI update (wheel selection, Apple Music, EU recall OTA); does not own any fsdv15 content"
+      },
+      {
+        "title": "Tesla HW3 vehicles can't achieve Unsupervised FSD - Tesla Oracle (April 2026)",
+        "url": "https://www.teslaoracle.com/2026/04/23/tesla-hw3-vehicles-cant-achieve-unsupervised-fsd-v14-lite-to-be-released-by-june-musk-on-q1-2026-earnings-call/",
+        "decision": "skip",
+        "reason": "Outside date window (April 2026); background context only"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdMiles",
+        "count": 14000000000,
+        "decision": "file",
+        "reason": "14B cumulative supervised miles crossed Aug 27 (reported in-window Sept 8); 13B was last entry in recentKeyChanges (July 17); this is the next genuine milestone"
+      }
+    ]
+  }
+}
