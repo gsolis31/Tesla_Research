@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-16",
+  "status": "ok",
+  "candidates": 11,
+  "covered": 6,
+  "ignored": 0,
+  "gapCount": 5,
+  "gaps": [
+    {
+      "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour \u2014 no highways, no railroad crossings",
+      "url": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
+      "date": "2026-09-14",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Surface-street-only limitation combined with at-grade railroad-crossing avoidance forces massive detours across all Austin robotaxi vehicles (Cybercab + Model Y fleet). App shows price but not trip-time estimates, so riders discover the detour only mid-ride. Waymo already allows highway driving in some cities, underlining a competitive gap.",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla and SpaceX sue nanotechnology firm TERA-print to secure 'Terafab' trademark",
+      "url": "https://www.reuters.com/legal/legalindustry/tesla-spacex-sue-nanotech-company-over-terafab-name-2026-09-16/",
+      "date": "2026-09-16",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "TERA-print sent a cease-and-desist over its existing 'Tera-Fab' mark; Tesla and SpaceX responded with a federal complaint in Austin. Legal cloud over the brand name adds friction to the $16.8B project's permitting and public communications track.",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla deploys first pre-assembled 1.2 MW Megachargers for Semi production ramp",
+      "url": "https://teslanorth.com/2026/09/16/tesla-preassembled-megachargers-semi-ramp/",
+      "date": "2026-09-16",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First factory-pre-assembled V4 Megacharger units (dual posts, 1.2 MW each) now in the field; invite-only Semi rollout at Sparks factory set for Sept 24. Charging infrastructure deployment is the critical bottleneck for fleet electrification ahead of Semi deliveries accelerating.",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla Roadster production reveal confirmed for October 1 in Waco, Texas",
+      "url": "https://evwire.com/p/tesla-roadster-launch-teaser-secret-message-explained",
+      "date": "2026-09-14",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First hard date for Roadster production reveal after nine years of delays; countdown timer live on Tesla website; reservation-holder invitations reference Waco TX venue and Sept 16 RSVP deadline. Marks transition from prototype to production reveal \u2014 but analysts note the SpaceX 'thruster package' framing may be tying Roadster timing to a potential Tesla-SpaceX merger narrative.",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla Roadster teaser hints at 'Cyber' redesign \u2014 full-width light bar and angular styling",
+      "url": "https://electrek.co/2026/09/15/tesla-roadster-cyber-treatment-redesign/",
+      "date": "2026-09-15",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Weekend teaser suggests production Roadster inherits Cybertruck/Cybercab angular 'Cyber' aesthetic with full-width light bar, departing from the 2017 concept's curves. Electrek critical: original design had stronger appeal; changes risk alienating reservation holders who already waited 8+ years. SpaceX cold-gas thruster package headline feature.",
+      "match": "gap"
+    }
+  ]
+}

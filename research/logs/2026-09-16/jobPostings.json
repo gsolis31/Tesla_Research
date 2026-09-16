@@ -1,0 +1,122 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-09-16",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus job posting hiring September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla LinkedIn job postings AI robotics September 2026 count",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus production associate hiring September 2026 replacement",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla hiring Optimus robot production September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla jobs LinkedIn United States count September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:optimusk.blog Tesla hiring September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus gears manufacturing Austin hiring September 2026 site:tesla.com OR site:linkedin.com",
+        "tool": "web_search",
+        "hits": 1
+      },
+      {
+        "q": "Tesla hiring surge 7000 jobs September 2026 AI robotics",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla LinkedIn US jobs index jumps to 7,000+ (from 5,000+ on Sept 6)",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "file",
+        "reason": "New metric data point this week \u2014 LinkedIn display band shifted from 5,000+ to 7,000+; AltIndex confirms at 7,834. Not a seenUrl. New development in date window."
+      },
+      {
+        "title": "Manufacturing Engineering Lead, Optimus Factory Texas Gears \u2014 Austin TX (Sept 13)",
+        "url": "https://diversityjobs.com/career/17621511/Manufacturing-Engineering-Lead-Optimus-Factory-Texas-Gears-Texas-Austin",
+        "decision": "file",
+        "reason": "New role posted Sept 13, 2026 for dedicated Optimus Gears manufacturing program in Austin. Not a seenUrl. Distinct from Langley BC actuator cluster."
+      },
+      {
+        "title": "Controls & Automation Engineer, Optimus Factory Gears \u2014 Austin TX (Sept 11)",
+        "url": "https://justjobs.com/career/17662201/Controls-Automation-Engineer-Optimus-Factory-Texas-Gears-Texas-Austin",
+        "decision": "file",
+        "reason": "Companion role to the Manufacturing Engineering Lead \u2014 grouped into single keyChange about Austin Gears program buildout."
+      },
+      {
+        "title": "Lead Engineering Technician Optimus Fremont/Palo Alto (Sept 4)",
+        "url": "https://diversityjobs.com/career/18200781/Lead-Engineering-Technician-Optimus-California-Fremont",
+        "decision": "skip",
+        "reason": "Posted Sept 4, 2026 \u2014 outside date window (Sept 12-16). Engineer/technician roles consistent with prior weeks; no new signal."
+      },
+      {
+        "title": "Technical Program Manager Optimus Palo Alto (Sept 4)",
+        "url": "https://diversityjobs.com/career/18208139/Technical-Program-Manager-Optimus-California-Palo-Alto",
+        "decision": "skip",
+        "reason": "Posted Sept 4, 2026 \u2014 outside date window (Sept 12-16). Standard engineering management role, no new categorical signal."
+      },
+      {
+        "title": "Operations Supervisor Optimus Actuators Austin (Aug 29)",
+        "url": "https://justjobs.com/career/17467595/Operations-Supervisor-Optimus-Actuators-Texas-Austin",
+        "decision": "skip",
+        "reason": "Posted Aug 29, 2026 \u2014 outside date window. Also would overlap with prior-week Langley BC/actuator seenUrl context."
+      },
+      {
+        "title": "Optimus Production Associate \u2014 continued absence (post-Sept 8)",
+        "url": "https://www.tesla.com/careers/search",
+        "decision": "skip",
+        "reason": "Same topic as recentKeyChanges entry 'Optimus Production Associate listing expires Sept 8 \u2014 production-scale hiring absent for 7+ weeks'. No new development to file as a separate keyChange; noted in categoryUpdate.concerns instead."
+      },
+      {
+        "title": "tesorb.com: Tesla posts 100+ manufacturing roles for Optimus (March 2026)",
+        "url": "https://tesorb.com/tesla-optimus-gen-3-production-hiring-2026/",
+        "decision": "skip",
+        "reason": "From March 2026 \u2014 well outside date window. Historical context only."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 7834,
+        "decision": "file",
+        "reason": "AltIndex live count confirmed at 7,834 as of Sept 16, 2026, up 57% from July 2026 (5,001). LinkedIn US index independently shows 7,000+ display band. Two corroborating sources \u2014 high confidence. Represents all Tesla postings across categories, with breakdown noted."
+      },
+      {
+        "series": "jobPostings",
+        "count": 7000,
+        "decision": "reject",
+        "reason": "LinkedIn '7,000+' is a display-band artifact, not a precise count. AltIndex's 7,834 is more precise and preferred."
+      }
+    ]
+  }
+}

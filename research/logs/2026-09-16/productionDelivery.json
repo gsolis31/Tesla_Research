@@ -1,0 +1,126 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-09-16",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q3 2026 delivery estimate production September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla China deliveries September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Europe sales September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Goldman Sachs Tesla Q3 delivery forecast 435000 September 2026",
+        "tool": "web_search",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Europe sales registration September 2026 YoY decline",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Model Y Long Range production US Europe September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla production delivery news September 13 14 15 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Semi production update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://blockonomi.com/tesla-tsla-stock-downgraded-goldman-sachs-slashes-q3-delivery-projections-amid-demand-concerns/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-berlin-targets-7-500-model-y-per-week-by-mid-october",
+        "kept": false,
+        "reason": "Published September 7, 2026 \u2014 outside date window; topic overlaps with seenUrl evwire.com extra-shifts article"
+      },
+      {
+        "url": "https://evtrader.com/en-gb/ev-news/tesla-semi-iaa-hannover-debut",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Goldman Sachs slashes Tesla Q3 forecast to 435k on weak US/China/Europe",
+        "url": "https://blockonomi.com/tesla-tsla-stock-downgraded-goldman-sachs-slashes-q3-delivery-projections-amid-demand-concerns/",
+        "decision": "file",
+        "reason": "Published September 16, 2026; not in seenUrls; major demand signal with multiple corroborating sources (gurufocus, gate.com)"
+      },
+      {
+        "title": "Tesla Semi European debut at IAA Hannover, EU-spec confirmed, charger sales open",
+        "url": "https://evtrader.com/en-gb/ev-news/tesla-semi-iaa-hannover-debut",
+        "decision": "file",
+        "reason": "September 14, 2026 event; not in seenUrls; seenUrl teslarati/tesla-semi-officially-headed-europe was earlier announcement \u2014 this is the actual IAA debut with spec confirmed; Semi is owned by productionDelivery as volume-adjacent auto news"
+      },
+      {
+        "title": "Giga Berlin Targets 7,500 Model Y Per Week by Mid-October",
+        "url": "https://www.basenor.com/blogs/news/giga-berlin-targets-7-500-model-y-per-week-by-mid-october",
+        "decision": "skip",
+        "reason": "Published September 7, 2026 \u2014 outside date window (Sep 12-16); overlaps with seenUrl evwire.com extra-shifts/7500 story already filed"
+      },
+      {
+        "title": "Tesla to display Cybercab in Beijing and Shanghai this week",
+        "url": "https://cnevpost.com/2026/09/14/tesla-to-display-cybercab-beijing-shanghai-this-week/",
+        "decision": "skip",
+        "reason": "Cybercab story \u2014 owned by cybercab category, not productionDelivery"
+      },
+      {
+        "title": "NHTSA orders Tesla to prove Cybercab is legal to sell",
+        "url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
+        "decision": "skip",
+        "reason": "Cybercab regulatory story \u2014 owned by fsd (country approvals / regulatory) or cybercab, not productionDelivery"
+      },
+      {
+        "title": "Tesla Sets September 24 Semi Rollout at Sparks Factory",
+        "url": "https://teslanorth.com/2026/08/25/tesla-semi-rollout-sparks/",
+        "decision": "skip",
+        "reason": "Published August 25, 2026 \u2014 outside date window; already in seenUrls (teslarati.com/tesla-semi-factory-is-getting-a-celebration-nobody-expected)"
+      },
+      {
+        "title": "Model Y Leads Tesla September Sales Rebound Across Europe",
+        "url": "https://www.allthings-elon.com/articles/tesla-europe-september-sales-rebound-model-y-2026-09-08",
+        "decision": "skip",
+        "reason": "Published September 8, 2026 \u2014 outside date window"
+      },
+      {
+        "title": "China August retail 50,047 breakdown / Model Y -26% YoY",
+        "url": "https://cnevpost.com/2026/09/09/tesla-aug-2026-china-deliveries-breakdown/",
+        "decision": "skip",
+        "reason": "Already filed in seenUrls"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": null,
+        "decision": "reject",
+        "reason": "Q3 2026 delivery report not yet published; due October 2, 2026. Goldman forecast of 435k is analyst estimate, not official Tesla figure."
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-16",
+  "errorCount": 1,
+  "warningCount": 8,
+  "files": [
+    {
+      "path": "/workspace/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla Cybercab turns 10-minute Austin trip into 70-minute detour \u2014 no highways, no railroad crossings",
+          "category": "cybercab",
+          "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour \u2014 no highways, no railroad crossings",
+          "path": "/workspace/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "lint_error",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 1,
+      "warningCount": 0,
+      "issues": [
+        {
+          "level": "error",
+          "code": "OWNERSHIP_TRESPASS",
+          "message": "looks like fsdv15 story filed under fsd (\\b(v14\\.\\d|fsd v15|ota (merge|release)|teslafi|hw3 lite)\\b)",
+          "category": "fsd",
+          "title": "Tesla Spain FSD Regulatory Testing Reaches 460,000 km Over Two Years \u2014 No Customer Approval in Sight",
+          "path": "/workspace/research/raw/findings-fsd.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 134 chars (max 120)",
+          "category": "optimus",
+          "title": "Supply chain reports now cite 15,000-unit 2026 Optimus target with specific weekly ramp milestones \u2014 zero official verification exists",
+          "path": "/workspace/research/raw/findings-optimus.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 2,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 126 chars (max 120)",
+          "category": "fsdv15",
+          "title": "FSD v14.3.9 (2026.27.6) full changelog: 20% faster reaction time via MLIR 2 rewrite, Automatic Collision Evasion active on HW4",
+          "path": "/workspace/research/raw/findings-fsdv15.json"
+        },
+        {
+          "level": "warning",
+          "code": "TITLE_TOO_LONG",
+          "message": "title is 128 chars (max 120)",
+          "category": "fsdv15",
+          "title": "Elluswamy: FSD v15 coming to commercial robotaxi fleet 'next month or so' (October); 24/7 rides contingent on deployment success",
+          "path": "/workspace/research/raw/findings-fsdv15.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 3,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla deploys first pre-assembled 1.2 MW Megachargers for Semi production ramp",
+          "category": "productionDelivery",
+          "title": "Tesla deploys first pre-assembled 1.2 MW Megachargers for Semi production ramp",
+          "path": "/workspace/research/raw/findings-productionDelivery.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla Roadster production reveal confirmed for October 1 in Waco, Texas",
+          "category": "productionDelivery",
+          "title": "Tesla Roadster production reveal confirmed for October 1 in Waco, Texas",
+          "path": "/workspace/research/raw/findings-productionDelivery.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla Roadster teaser hints at 'Cyber' redesign \u2014 full-width light bar and angular styling",
+          "category": "productionDelivery",
+          "title": "Tesla Roadster teaser hints at 'Cyber' redesign \u2014 full-width light bar and angular styling",
+          "path": "/workspace/research/raw/findings-productionDelivery.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No new verified 4680 battery production news (GWh, yield, dry electrode, cell line status) found within the Sep 12\u201316 window. The only Sep 12\u201316 article touching 4680 (basenor Sep 13 Cybertruck charging piece) is primarily a Cybertruck/vehicle story with an unverified secondary claim about improved cell thermal behavior \u2014 no production metrics, no official Tesla announcement, single secondary source (@TeslaNewswire). Giga Berlin extra-shifts news explicitly excludes battery/cell manufacturing. Hot context from Sep 4 Gulf Coast Lithium milestone still governs; Q2 IR (July 22) Texas >40 GWh Production and Berlin Construction status remain current.",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/workspace/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla and SpaceX sue nanotechnology firm TERA-print to secure 'Terafab' trademark",
+          "category": "terafab",
+          "title": "Tesla and SpaceX sue nanotechnology firm TERA-print to secure 'Terafab' trademark",
+          "path": "/workspace/research/raw/findings-terafab.json"
+        }
+      ]
+    },
+    {
+      "path": "/workspace/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "date": "2026-09-16",
+  "weekOf": "2026-09-14",
+  "dateFrom": "2026-09-12",
+  "dateTo": "2026-09-16",
+  "candidates": [
+    {
+      "title": "NHTSA formally orders Tesla to prove Cybercab is legal to sell — under oath, by Sept 30",
+      "url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
+      "date": "2026-09-15",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Escalation from AQ26002 (opened Sep 3) to a sworn Special Order: 21 requests, $139M penalty ceiling, potential criminal liability; NHTSA specifically asks how Cybercab is legal to sell without a Part 555 FMVSS exemption — the same path Zoox took and Tesla deliberately skipped. Determines whether commercial Cybercab service can continue to scale."
+    },
+    {
+      "title": "Tesla Cybercab turns 10-minute Austin trip into 70-minute detour — no highways, no railroad crossings",
+      "url": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
+      "date": "2026-09-14",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Surface-street-only limitation combined with at-grade railroad-crossing avoidance forces massive detours across all Austin robotaxi vehicles (Cybercab + Model Y fleet). App shows price but not trip-time estimates, so riders discover the detour only mid-ride. Waymo already allows highway driving in some cities, underlining a competitive gap."
+    },
+    {
+      "title": "Tesla Robotaxis to get FSD v15 and start 24/7 rides 'next month,' Elluswamy confirms",
+      "url": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+      "date": "2026-09-13",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "VP of AI Elluswamy confirms October fleet-wide v15 rollout to enable 24/7 commercial operations. v15 (10B-parameter network) is also the prerequisite Tesla has named for multi-city Robotaxi expansion. Article synthesises fleet-validation implications for consumer HW4 rollout timeline late 2026 / early 2027."
+    },
+    {
+      "title": "Samsung starts trial production of Tesla AI5 chips on 2nm process at Taylor, Texas fab",
+      "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+      "date": "2026-09-16",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "Samsung pulled forward Taylor fab startup from November to begin yield verification on the $16.5B AI5 chip contract. Some production lines are already making AI5 wafers; mass-production verification targeted for year-end, full supply to Tesla in 2027. Directly affects Cybercab, Optimus, and FSD computer supply timelines."
+    },
+    {
+      "title": "Terafab is Taiwan chip insurance, Musk says at All-In Summit — 'build it or fail to scale'",
+      "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+      "date": "2026-09-15",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "Musk's clearest public strategic framing of Terafab as geopolitical necessity rather than ambition: Taiwan supply risk + global fab capacity gap forces in-house production. Confirms crawl-walk-run path: Austin R&D fab by end of 2027, then Grimes County scale. All-In Summit Sept 13-15 LA."
+    },
+    {
+      "title": "Tesla and SpaceX sue nanotechnology firm TERA-print to secure 'Terafab' trademark",
+      "url": "https://www.reuters.com/legal/legalindustry/tesla-spacex-sue-nanotech-company-over-terafab-name-2026-09-16/",
+      "date": "2026-09-16",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "TERA-print sent a cease-and-desist over its existing 'Tera-Fab' mark; Tesla and SpaceX responded with a federal complaint in Austin. Legal cloud over the brand name adds friction to the $16.8B project's permitting and public communications track."
+    },
+    {
+      "title": "Tesla Semi makes European public debut at IAA Hannover; Semi Charging for Business opens in 5 EU markets",
+      "url": "https://evtrader.com/en-gb/ev-news/tesla-semi-iaa-hannover-debut",
+      "date": "2026-09-14",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First public showing of EU-homologated Semi (800V, 550 km at 40t, up to 800 kW charging); ride-alongs at show Sept 15-20; Megacharger + Basecharger depot sales open in DE, NL, BE, FR, UK. Deliveries start 2027. No Long Range announced for Europe; positions Tesla Semi in a market dominated by Volvo FH Electric."
+    },
+    {
+      "title": "Tesla deploys first pre-assembled 1.2 MW Megachargers for Semi production ramp",
+      "url": "https://teslanorth.com/2026/09/16/tesla-preassembled-megachargers-semi-ramp/",
+      "date": "2026-09-16",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First factory-pre-assembled V4 Megacharger units (dual posts, 1.2 MW each) now in the field; invite-only Semi rollout at Sparks factory set for Sept 24. Charging infrastructure deployment is the critical bottleneck for fleet electrification ahead of Semi deliveries accelerating."
+    },
+    {
+      "title": "Optimus supply chain orders signal 15,000 units by year-end; 1,000/week by end of September",
+      "url": "https://www.allthings-elon.com/articles/tesla-optimus-15000-units-2027-customer-shipments-2026-09-15",
+      "date": "2026-09-15",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Component orders reviewed by industry trackers confirm 15,000-unit target in 2026, ramping from ~1,000/week in late September to ~2,500/week by December — implying a 100,000-125,000 annualised run rate entering 2027. First outside-customer commercial shipments still slated for 2027; all 2026 units go to internal Tesla factory deployment."
+    },
+    {
+      "title": "Tesla Roadster production reveal confirmed for October 1 in Waco, Texas",
+      "url": "https://evwire.com/p/tesla-roadster-launch-teaser-secret-message-explained",
+      "date": "2026-09-14",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First hard date for Roadster production reveal after nine years of delays; countdown timer live on Tesla website; reservation-holder invitations reference Waco TX venue and Sept 16 RSVP deadline. Marks transition from prototype to production reveal — but analysts note the SpaceX 'thruster package' framing may be tying Roadster timing to a potential Tesla-SpaceX merger narrative."
+    },
+    {
+      "title": "Tesla Roadster teaser hints at 'Cyber' redesign — full-width light bar and angular styling",
+      "url": "https://electrek.co/2026/09/15/tesla-roadster-cyber-treatment-redesign/",
+      "date": "2026-09-15",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Weekend teaser suggests production Roadster inherits Cybertruck/Cybercab angular 'Cyber' aesthetic with full-width light bar, departing from the 2017 concept's curves. Electrek critical: original design had stronger appeal; changes risk alienating reservation holders who already waited 8+ years. SpaceX cold-gas thruster package headline feature."
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab Austin robotaxi September 2026 fleet expansion",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD v15 software OTA update September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Optimus robot production ramp September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "NHTSA Tesla Cybercab safety standards inquiry sworn testimony September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 battery cell production Gigafactory September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Terafab chip fabrication Bastrop September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla news September 12 13 14 15 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Roadster launch date Cybercab Miami expansion September 14 15 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD v15 robotaxi 24/7 October deployment site:notateslaapp.com OR site:teslarati.com",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Model S X refresh upgrade announcement September 2026 site:teslarati.com",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla news Cybertruck Semi production Terafab September 13-16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 battery Giga Texas OR AI chip OR Samsung AI5 AI6 September 14-16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Q3 deliveries estimate Wall Street September 2026 OR FSD Europe vote September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla 4680 Cybercab navigation route detour highway avoidance September 2026",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+        "kept": false,
+        "reason": "Published Sep 9 — outside date window and already covered in last-week findings (HW3 Model S/X FSD v14 Lite delay)"
+      },
+      {
+        "url": "https://www.teslarati.com",
+        "kept": false,
+        "reason": "Homepage — skipped per instructions"
+      },
+      {
+        "url": "https://teslanorth.com",
+        "kept": false,
+        "reason": "Homepage — skipped per instructions"
+      }
+    ]
+  }
+}

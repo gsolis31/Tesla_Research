@@ -1,0 +1,101 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-09-16",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab Texas September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "SpaceX Terafab Grimes County Texas lawsuit records September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Terafab Texas construction update September 12 13 14 15 16 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "SpaceX Terafab lawsuit TRO hearing court ruling 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "kbtx.com Terafab September 2026 week",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab Grimes County GCCRD intervention lawsuit TRO September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Terafab news update September 14 15 16 2026 site:kbtx.com OR site:teslanorth.com OR site:teslarati.com",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "\"Terafab\" OR \"North Campus\" chip fab Texas week September 2026",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kbtx.com/2026/09/11/college-station-city-council-weighs-regional-impact-spacex-terafab-bass-pro-shop-plans/",
+        "kept": false,
+        "reason": "Published Sep 10 \u2014 outside Sep 12\u201316 date window"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/terafabs-first-project-what-the-starlink-ground-station-tells-us",
+        "kept": false,
+        "reason": "Published Aug 24 \u2014 outside Sep 12\u201316 date window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Terafab Is Taiwan Chip Insurance, Musk Says at All-In Summit",
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "decision": "file",
+        "reason": "Sep 15 article in date window; new Musk strategic rationale statement not in recentKeyChanges or seenUrls; Tier 1 source"
+      },
+      {
+        "title": "SpaceX Sues to Block Release of Terafab Tax Records (TeslaNorth)",
+        "url": "https://teslanorth.com/2026/09/10/spacex-terafab-records-lawsuit/",
+        "decision": "skip",
+        "reason": "Same story as recentKeyChanges entry from Sep 10; URL not in seenUrls but story is a duplicate by title/category/date"
+      },
+      {
+        "title": "College Station City Council weighs regional impact of SpaceX Terafab (KBTX)",
+        "url": "https://www.kbtx.com/2026/09/11/college-station-city-council-weighs-regional-impact-spacex-terafab-bass-pro-shop-plans/",
+        "decision": "skip",
+        "reason": "Published Sep 10, outside Sep 12\u201316 date window"
+      },
+      {
+        "title": "TERAFAB's First Project: What the Starlink Ground Station Tells Us (Basenor)",
+        "url": "https://www.basenor.com/blogs/news/terafabs-first-project-what-the-starlink-ground-station-tells-us",
+        "decision": "skip",
+        "reason": "Published Aug 24, outside Sep 12\u201316 date window"
+      },
+      {
+        "title": "SpaceX Terafab TRO hearing / court ruling",
+        "url": null,
+        "decision": "skip",
+        "reason": "No hearing date set as of Sep 16; no court ruling issued; no new article in window to file"
+      }
+    ],
+    "metricCandidates": []
+  }
+}
