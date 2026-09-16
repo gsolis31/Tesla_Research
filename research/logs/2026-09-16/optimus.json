@@ -1,0 +1,137 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-09-16",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus humanoid robot production September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus Fremont production ramp 2026 update",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus robot news site:teslarati.com OR site:teslanorth.com September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus production update \"September 12\" OR \"September 13\" OR \"September 14\" OR \"September 15\" OR \"September 16\" 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Optimus site:teslarati.com September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus Gen 3 reveal update September 12-16 2026 news",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus production humanoid robot news site:teslanorth.com 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://aishiftnews.ca/news/optimus-entered-production-headlines-need-a-receipt/",
+        "kept": false,
+        "reason": "Published August 31 \u2014 outside date window; useful background context on JPMorgan tarped-floor finding already reflected in filed story"
+      },
+      {
+        "url": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/",
+        "kept": true,
+        "reason": "Sept 14, 2026 \u2014 within date window; provides 15,000-unit total 2026 estimate and analyst revenue analysis; corroborates All Things Elon"
+      },
+      {
+        "url": "https://optimusk.blog",
+        "kept": false,
+        "reason": "Homepage only; no new tier-1 article within Sept 12-16 window found"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/",
+        "kept": false,
+        "reason": "Published July 1, 2026 \u2014 outside date window"
+      },
+      {
+        "url": "https://smartbrainsai.com/tesla-targets-15000-optimus-robots-by-year-end-as-fremont-line-ramps-slowly/",
+        "kept": false,
+        "reason": "Published September 11 \u2014 one day before date window opens; useful background, not filed directly"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Elon Musk Says Optimus Will Ship to Customers in 2027. Here's How Much Revenue That Could Actually Generate.",
+        "url": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/",
+        "decision": "file",
+        "reason": "Sept 14, 2026 \u2014 within date window; adds 15,000-unit total 2026 target and analyst revenue projections; meaningful update over the already-filed Sept 7 '5,000 first batch' story"
+      },
+      {
+        "title": "Tesla Ramps Toward 15,000 Optimus Robots, Eyes 2027 Customer Sales",
+        "url": "https://www.allthings-elon.com/articles/tesla-optimus-15000-units-2027-customer-shipments-2026-09-15",
+        "decision": "file",
+        "reason": "Sept 15, 2026 \u2014 within date window; corroborates Motley Fool with specific weekly ramp targets (1,000/week by end September, 2,500/week by year-end); merged into same story as Motley Fool"
+      },
+      {
+        "title": "Optimus 'Entered Production' Headlines Need a Receipt",
+        "url": "https://aishiftnews.ca/news/optimus-entered-production-headlines-need-a-receipt/",
+        "decision": "skip",
+        "reason": "August 31, 2026 \u2014 outside date window; critical analysis of JPMorgan tarped-floor visit already incorporated as context"
+      },
+      {
+        "title": "Tesla Targets 15,000 Optimus Robots by Year-End as Fremont Line Ramps Slowly",
+        "url": "https://smartbrainsai.com/tesla-targets-15000-optimus-robots-by-year-end-as-fremont-line-ramps-slowly/",
+        "decision": "skip",
+        "reason": "September 11 \u2014 one day outside date window; not tier-1 source; context incorporated into filed story"
+      },
+      {
+        "title": "Supply Chain Rumors Hint at Massive Optimus Order as Fremont Production Line Ramps Up",
+        "url": "https://www.humanoidsdaily.com/news/supply-chain-rumors-hint-at-massive-optimus-order-as-fremont-production-line-ramps-up",
+        "decision": "skip",
+        "reason": "In seenUrls \u2014 the Sept 7 source story; this week's story is a meaningful update (15,000 total, weekly ramp specifics), not a duplicate"
+      },
+      {
+        "title": "Tesla Optimus project fires up as Musk sees production line progress (Teslarati)",
+        "url": "https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/",
+        "decision": "skip",
+        "reason": "Published July 1, 2026 \u2014 outside date window"
+      },
+      {
+        "title": "Tesla Tore Down Its Most Historic Assembly Line in 46 Days. Robots Are Moving In. (TeslaNorth)",
+        "url": "https://teslanorth.com/2026/07/10/the-model-s-x-line-is-gone-in-46-days-heres-what-tesla-is-building-instead/",
+        "decision": "skip",
+        "reason": "Published July 10, 2026 \u2014 outside date window"
+      },
+      {
+        "title": "Tesla Optimus Gets Called the Greatest Product Ever (TeslaNorth Aug 26)",
+        "url": "https://teslanorth.com/2026/08/26/tesla-optimus-1-billion-2036/",
+        "decision": "skip",
+        "reason": "In seenUrls \u2014 already filed"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimus",
+        "count": 15000,
+        "decision": "reject",
+        "reason": "Supply chain channel check target for full 2026, not a confirmed production count \u2014 Tesla has disclosed zero official units; no metric update warranted"
+      },
+      {
+        "series": "optimus",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "Weekly target by end of September per supply chain reports \u2014 unverified aspirational rate, not an observed production number"
+      }
+    ]
+  }
+}

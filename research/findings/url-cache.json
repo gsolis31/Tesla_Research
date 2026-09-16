@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-12",
+  "lastUpdated": "2026-09-16",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1611,23 +1611,142 @@
       "lastSeen": "2026-09-12",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "SpaceX sues Texas AG and Grimes County to block release of Terafab tax-break records"
+    },
+    "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas": {
+      "originalUrl": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "AI Chip Production",
+      "title": "Samsung Taylor Fab Starts AI5 Trial Production Ahead of November Schedule"
+    },
+    "https://www.basenor.com/blogs/news/tesla-cybercab-nhtsa-certification-your-questions-answered": {
+      "originalUrl": "https://www.basenor.com/blogs/news/tesla-cybercab-nhtsa-certification-your-questions-answered",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Cybercab Production",
+      "title": "NHTSA escalates Cybercab FMVSS audit to formal Special Order \u2014 Tesla must prove vehicle is legal under oath by Sept 30"
+    },
+    "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour": {
+      "originalUrl": "https://electrek.co/2026/09/14/tesla-cybercab-70-minute-austin-detour/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Cybercab Production",
+      "title": "Austin Cybercab fleet avoids highways and at-grade railroad crossings \u2014 turns 10-minute trips into 70-minute detours"
+    },
+    "https://www.axios.com/local/austin/2026/09/16/cybercab-tesla-autonomous-vehicle-austin": {
+      "originalUrl": "https://www.axios.com/local/austin/2026/09/16/cybercab-tesla-autonomous-vehicle-austin",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Cybercab Production",
+      "title": "Second-week Cybercab rider report: waits drop under 5 min but drop-off failures and route detours persist"
+    },
+    "https://teslanorth.com/2026/09/14/tesla-cybercab-beijing-shanghai-display": {
+      "originalUrl": "https://teslanorth.com/2026/09/14/tesla-cybercab-beijing-shanghai-display/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Cybercab Production",
+      "title": "Cybercab China tour confirmed: Beijing and Shanghai static displays Sept 17\u201327, no commercial service or regulatory path"
+    },
+    "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules": {
+      "originalUrl": "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "FSD Country Approvals",
+      "title": "UK Automated Vehicles Marketing Law Forces Tesla to Drop 'FSD' Branding by January 2027"
+    },
+    "https://www.teslaoracle.com/2026/09/12/tesla-rolls-out-fsd-v14-3-9-2026-27-6-with-automatic-collision-evasion-feature-details-and-official-release-notes": {
+      "originalUrl": "https://www.teslaoracle.com/2026/09/12/tesla-rolls-out-fsd-v14-3-9-2026-27-6-with-automatic-collision-evasion-feature-details-and-official-release-notes/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.9 (2026.27.6): MLIR 2 compiler rewrite, 20% faster reaction time, Automatic Collision Evasion on HW4"
+    },
+    "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month": {
+      "originalUrl": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "FSD v15 Software",
+      "title": "Elluswamy: FSD v15 targeting commercial robotaxi fleet in October; 24/7 operations contingent on deployment success"
+    },
+    "https://altindex.com/ticker/tsla/job-posts": {
+      "originalUrl": "https://altindex.com/ticker/tsla/job-posts",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Job Postings",
+      "title": "Tesla LinkedIn US job index jumps to 7,000+ in mid-September \u2014 bulk driven by service/sales, not AI/robotics"
+    },
+    "https://diversityjobs.com/career/17621511/Manufacturing-Engineering-Lead-Optimus-Factory-Texas-Gears-Texas-Austin": {
+      "originalUrl": "https://diversityjobs.com/career/17621511/Manufacturing-Engineering-Lead-Optimus-Factory-Texas-Gears-Texas-Austin",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Job Postings",
+      "title": "Tesla posts Optimus 'Gears' manufacturing engineering roles in Austin, TX \u2014 dedicated gear production line signaled"
+    },
+    "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2": {
+      "originalUrl": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Optimus Production",
+      "title": "Optimus 2026 target: supply chain cites 15,000 units with weekly ramp milestones \u2014 no official Tesla verification"
+    },
+    "https://blockonomi.com/tesla-tsla-stock-downgraded-goldman-sachs-slashes-q3-delivery-projections-amid-demand-concerns": {
+      "originalUrl": "https://blockonomi.com/tesla-tsla-stock-downgraded-goldman-sachs-slashes-q3-delivery-projections-amid-demand-concerns/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Vehicle Production & Delivery",
+      "title": "Goldman Sachs slashes Tesla Q3 delivery forecast to 435k \u2014 9% below Q2, below consensus, Q4 also cut"
+    },
+    "https://evtrader.com/en-gb/ev-news/tesla-semi-iaa-hannover-debut": {
+      "originalUrl": "https://evtrader.com/en-gb/ev-news/tesla-semi-iaa-hannover-debut",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Semi makes European public debut at IAA Hannover in EU-homologated spec \u2014 deliveries from 2027, no pricing yet"
+    },
+    "https://teslanorth.com/2026/09/16/tesla-preassembled-megachargers-semi-ramp": {
+      "originalUrl": "https://teslanorth.com/2026/09/16/tesla-preassembled-megachargers-semi-ramp/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Charging deploys first factory-pre-assembled 1.2 MW Megachargers to support Semi production ramp"
+    },
+    "https://evwire.com/p/tesla-roadster-launch-teaser-secret-message-explained": {
+      "originalUrl": "https://evwire.com/p/tesla-roadster-launch-teaser-secret-message-explained",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla Roadster reveal set for October 1 in Waco, Texas \u2014 first hard date after nine years of delays"
+    },
+    "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit": {
+      "originalUrl": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Musk frames Terafab as existential Taiwan chip insurance at All-In Summit"
+    },
+    "https://www.reuters.com/legal/legalindustry/tesla-spacex-sue-nanotech-company-over-terafab-name-2026-09-16": {
+      "originalUrl": "https://www.reuters.com/legal/legalindustry/tesla-spacex-sue-nanotech-company-over-terafab-name-2026-09-16/",
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Tesla and SpaceX sue TERA-print to secure 'Terafab' name \u2014 preemptive federal action"
     }
   },
   "stats": {
-    "totalUrls": 230,
+    "totalUrls": 247,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 17,
-      "Cybercab Production": 33,
-      "FSD v15 Software": 23,
-      "Vehicle Production & Delivery": 32,
+      "Optimus Production": 18,
+      "Cybercab Production": 37,
+      "FSD v15 Software": 25,
+      "Vehicle Production & Delivery": 36,
       "unknown": 52,
-      "FSD Country Approvals": 21,
+      "FSD Country Approvals": 22,
       "4680 Battery Cell Production": 5,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 10,
-      "Job Postings": 15,
-      "Terafab In-House Chip Manufacturing": 9
+      "AI Chip Production": 11,
+      "Job Postings": 17,
+      "Terafab In-House Chip Manufacturing": 11
     }
   }
 }

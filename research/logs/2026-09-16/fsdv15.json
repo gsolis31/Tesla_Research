@@ -1,0 +1,92 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-09-16",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 software September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla FSD v14.3 OTA update rollout September 2026 notateslaapp",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v15 HW3 consumer release 2026 teslanorth notateslaapp",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD update 2026.27 rollout percentage fleet September 12-16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD 2026.27.300 Europe September 15 2026 notateslaapp",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD v14 Lite HW3 Model S Model X update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/12/tesla-rolls-out-fsd-v14-3-9-2026-27-6-with-automatic-collision-evasion-feature-details-and-official-release-notes/",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla plans big safety improvements for Full Self-Driving v15 (Teslarati Sept 12)",
+        "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+        "decision": "skip",
+        "reason": "seenUrl \u2014 already in seenUrls; same story covered in recentKeyChanges as 'Elluswamy previews FSD v15 safety promise'"
+      },
+      {
+        "title": "Tesla FSD v14.3.9 Adds Automatic Collision Evasion on Highways (TeslaNorth Sept 9)",
+        "url": "https://teslanorth.com/2026/09/09/tesla-fsd-v14-3-9-collision-evasion/",
+        "decision": "skip",
+        "reason": "Date Sept 9, outside date window (Sept 12-16)"
+      },
+      {
+        "title": "Tesla is rolling out a new FSD version with a massive safety addition (Teslarati Sept 9)",
+        "url": "https://www.teslarati.com/tesla-rolling-new-fsd-version-massive-safety-addition/",
+        "decision": "skip",
+        "reason": "Date Sept 9, outside date window (Sept 12-16)"
+      },
+      {
+        "title": "Tesla FSD V14 Lite Coming Soon to Model S and Model X (notateslaapp 4664)",
+        "url": "https://www.notateslaapp.com/news/4664/tesla-fsd-v14-lite-coming-soon-to-model-s-model-x",
+        "decision": "skip",
+        "reason": "seenUrl \u2014 already in seenUrls; and recentKeyChanges already has 'HW3 Model S/X still missing FSD v14 Lite'"
+      },
+      {
+        "title": "Tesla's two defunct flagship models are getting a big upgrade (Teslarati)",
+        "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+        "decision": "skip",
+        "reason": "Same Elluswamy quote from Sept 8 Cybercab event as seenUrl notateslaapp/4664 \u2014 no new development within date window"
+      },
+      {
+        "title": "Tesla Update 2026.27.300 (FSD 14.2.2.6 Europe) \u2014 EU Recall Remedy UNECE Reg 135",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.300/statistics",
+        "decision": "skip",
+        "reason": "EU homologation / regulatory compliance topic \u2192 ownership belongs to fsd category, not fsdv15"
+      }
+    ],
+    "metricCandidates": []
+  }
+}

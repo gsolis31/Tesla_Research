@@ -1,0 +1,95 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-09-16",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 chip Samsung 2nm September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla AI6 chip tape-out delay 2026 September",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Dojo AI chip September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI chip news week September 14-16 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.sammobile.com/news/push-to-make-tesla-chips-sees-samsungs-texas-fab-begin-production-early/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/supercomputers/elon-musk-restarts-dojo3-space-supercomputer-project-as-ai5-chip-design-gets-in-good-shape-will-be-first-tesla-built-supercomputer-to-feature-all-in-house-hardware-with-no-help-from-nvidia",
+        "kept": false,
+        "reason": "Published January 2026 \u2014 outside date range"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung Taylor Fab Starts AI5 Trial Production Ahead of November Schedule",
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "decision": "file",
+        "reason": "New milestone within date range: trial production actually started (previously only 'fully booked'); not in seenUrls"
+      },
+      {
+        "title": "Samsung Starts Tesla AI5 Prototype Production, Narrowing Gap with TSMC",
+        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=277083",
+        "decision": "file",
+        "reason": "Corroborating source for same Sept 15 trial production milestone; used as evidence"
+      },
+      {
+        "title": "Samsung's Taylor Fab Begins Pilot Production Ahead of Mass Production of 2nm Chips",
+        "url": "https://www.ajupress.com/view/20260913180470562",
+        "decision": "file",
+        "reason": "Corroborating source (Sept 13) with yield data (70%+ GAA); used as evidence"
+      },
+      {
+        "title": "Terafab Is Taiwan Chip Insurance, Musk Says at All-In Summit",
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "decision": "skip",
+        "reason": "Terafab construction/strategy \u2192 ownership: terafab, not aiChip"
+      },
+      {
+        "title": "Elon Musk restarts Dojo3 'space' supercomputer project",
+        "url": "https://www.tomshardware.com/tech-industry/supercomputers/elon-musk-restarts-dojo3-space-supercomputer-project-as-ai5-chip-design-gets-in-good-shape-will-be-first-tesla-built-supercomputer-to-feature-all-in-house-hardware-with-no-help-from-nvidia",
+        "decision": "skip",
+        "reason": "Published January 2026 \u2014 outside date range (Sept 12-16)"
+      },
+      {
+        "title": "Tesla AI6 chip delayed ~6 months as Samsung 2nm production slips",
+        "url": "https://electrek.co/2026/03/12/tesla-ai6-chip-delayed-samsung-2nm-production-slips/",
+        "decision": "skip",
+        "reason": "Published March 2026 \u2014 outside date range; background context only"
+      },
+      {
+        "title": "Tesla order anchors Samsung's Taylor 2nm ramp, not full capacity",
+        "url": "https://magica.com/news/samsung-taylor-tesla-contract-not-full-2nm-capacity",
+        "decision": "skip",
+        "reason": "Unable to confirm publication date within Sept 12-16 range; content references July/earnings data"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChip",
+        "count": null,
+        "decision": "reject",
+        "reason": "No verifiable production count; Taylor at ~30% utilization but no unit/wafer volume disclosed; trial production not mass production"
+      }
+    ]
+  }
+}

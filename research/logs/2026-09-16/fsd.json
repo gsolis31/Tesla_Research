@@ -1,0 +1,162 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-09-16",
+  "filed": 2,
+  "skipReason": null,
+  "status": "lint_error",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval Europe EU TCMV vote October 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD NHTSA EA26002 investigation response 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD Italy Germany Spain approval TCMV September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD NHTSA EA26002 response September 2026 recall update",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD France Italy approval news September 12 13 14 15 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD country approval new news week September 15 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla NHTSA FSD recall investigation update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD teslarati teslanorth news September 12 13 14 15 16 2026 regulatory",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD EU TCMV October vote new country support Sweden France position September 12 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD UK 'self-driving' branding ban law January 2027 DfT regulation September 13 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslarati.com FSD regulatory September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD October 6 TCMV vote update news September 14 15 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-drops-massive-fsd-safety-dataset-ahead-of-oct-6-eu-vote",
+        "kept": false,
+        "reason": "Published Sept 1, outside date window (Sept 12-16)"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/16/tesla-fsd-spain-460000-km/",
+        "kept": true,
+        "reason": "Sept 16 2026, within date window, new regulatory testing milestone for Spain"
+      },
+      {
+        "url": "https://teslarobotaxi.com/nhtsa-fsd-visibility-probe-still-open/",
+        "kept": false,
+        "reason": "Published Aug 29, outside date window; EA26002 probe status already in hotContext"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/fsd-supervised-4-details-that-matter-right-now",
+        "kept": false,
+        "reason": "Sept 15 article, content primarily about Slovenia rollout demos (already filed in recentKeyChanges Sept 8) and Foppe accessibility story; no new regulatory finding"
+      },
+      {
+        "url": "https://notanfsdtracker.com/articles",
+        "kept": false,
+        "reason": "Article index page; most recent new article Sept 11, outside our window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla Drops Massive FSD Safety Dataset Ahead of Oct 6 EU Vote (basenor, Sept 1)",
+        "url": "https://www.basenor.com/blogs/news/tesla-drops-massive-fsd-safety-dataset-ahead-of-oct-6-eu-vote",
+        "decision": "skip",
+        "reason": "Published September 1, 2026 \u2014 outside the Sept 12-16 date window"
+      },
+      {
+        "title": "FSD (Supervised): 4 Details That Matter Right Now (basenor, Sept 15)",
+        "url": "https://www.basenor.com/blogs/news/fsd-supervised-4-details-that-matter-right-now",
+        "decision": "skip",
+        "reason": "Content is primarily about Slovenia rollout demonstrations (Sept 12-14), which are downstream of the already-filed Slovenia approval (Sept 8, in recentKeyChanges); Foppe accessibility story is not regulatory"
+      },
+      {
+        "title": "NHTSA FSD visibility probe still open; Tesla answer not public (teslarobotaxi.com, Aug 29)",
+        "url": "https://teslarobotaxi.com/nhtsa-fsd-visibility-probe-still-open/",
+        "decision": "skip",
+        "reason": "Published August 29, outside date window; status already captured in hotContext ('EA26002 response remains publicly undisclosed')"
+      },
+      {
+        "title": "Congressman presses DOT on Tesla FSD after 43 sleeping-driver videos (Electrek, Sept 10)",
+        "url": "https://electrek.co/2026/09/10/congressman-dot-tesla-fsd-sleeping-drivers/",
+        "decision": "skip",
+        "reason": "Published September 10, outside date window; Electrek-only at time of consideration; congressional letter is background pressure, not a new regulatory action"
+      },
+      {
+        "title": "As Autonomous Driving Goes High Stakes on Oct. 6, 2026, Tesla FSD Cleared in Slovenia (Car Revs Daily, Sept 12)",
+        "url": "https://www.car-revs-daily.com/2026/09/12/as-autonomous-driving-goes-high-stakes-on-oct-6-2026-tesla-fsd-cleared-in-slovenia/",
+        "decision": "skip",
+        "reason": "Recap of Slovenia approval (already filed Sept 8 in recentKeyChanges) and TCMV vote context; no new regulatory development"
+      },
+      {
+        "title": "Tesla FSD v14.3.9 rollout with Automatic Collision Evasion (teslaoracle.com, Sept 12)",
+        "url": "https://www.teslaoracle.com/2026/09/12/tesla-rolls-out-fsd-v14-3-9-2026-27-6-with-automatic-collision-evasion-feature-details-and-official-release-notes/",
+        "decision": "skip",
+        "reason": "FSD software OTA release \u2192 fsdv15 category, not fsd (doesNotOwn: FSD software version OTA releases)"
+      },
+      {
+        "title": "NHTSA orders Tesla to prove its Cybercab is legal to sell (Electrek, Sept 15)",
+        "url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
+        "decision": "skip",
+        "reason": "About Cybercab FMVSS certification \u2014 cybercab category, not fsd; robotaxi fleet ops are explicitly in doesNotOwn"
+      },
+      {
+        "title": "UK Automated Vehicles Marketing Law Forces Tesla to Drop 'FSD' Branding (The Telegraph, Sept 13)",
+        "url": "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules/",
+        "decision": "file",
+        "reason": "Sept 13, in date window; UK regulations (AV Marketing Restrictions 2026) effective Jan 7 2027 prohibit Tesla's 'Full Self-Driving' branding absent official authorisation; new regulatory headwind not previously filed"
+      },
+      {
+        "title": "Tesla Spain FSD Regulatory Testing Reaches 460,000 km (teslanorth.com, Sept 16)",
+        "url": "https://teslanorth.com/2026/09/16/tesla-fsd-spain-460000-km/",
+        "decision": "file",
+        "reason": "Sept 16, in date window, Tier 1 source; Spain regulatory testing milestone under ES-AV framework; Spain pending approval status (owns: pending applications as regulatory status); no customer approval or retail date"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 7,
+        "decision": "file",
+        "reason": "hotContext latestMetric shows totalCountries: 6 with latestCountry: Denmark (June 9). Slovenia was approved Sept 8 (filed in recentKeyChanges) making it 7 markets (US + 6 EU). Metric needs updating to reflect Slovenia addition."
+      }
+    ]
+  }
+}

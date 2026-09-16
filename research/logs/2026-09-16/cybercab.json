@@ -1,0 +1,128 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-09-16",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab robotaxi Austin fleet September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab production update September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "NHTSA Tesla Cybercab Special Order FMVSS September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab fleet size rider experience September 12-16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab teslarati teslanorth September 13 14 15 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Cybercab fleet count Texas DMV registry September 12 13 14 15 16 2026 new registrations",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-cybercab-nhtsa-certification-your-questions-answered",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/15/nhtsa-cybercab-probe-certification/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/14/tesla-cybercab-beijing-shanghai-display/",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "NHTSA Opens Probe Into Nearly 1,000 Tesla Cybercabs After Austin Launch (TeslaNorth Sept 15)",
+        "url": "https://teslanorth.com/2026/09/15/nhtsa-cybercab-probe-certification/",
+        "decision": "file",
+        "reason": "Tier 1 source corroborating NHTSA Special Order escalation in date window; primary filed under basenor.com which covers the Special Order more specifically"
+      },
+      {
+        "title": "NHTSA orders Tesla to prove its Cybercab is legal to sell, under oath (Electrek Sept 15)",
+        "url": "https://electrek.co/2026/09/15/nhtsa-tesla-cybercab-special-order-fmvss-certification/",
+        "decision": "skip",
+        "reason": "Tier 2 source (Electrek, known bias) \u2014 used for corroboration only; story filed via Tier 1 basenor.com"
+      },
+      {
+        "title": "NHTSA orders Tesla to defend Cybercab certification (Automotive World Sept 16)",
+        "url": "https://www.automotiveworld.com/news/nhtsa-orders-tesla-to-defend-cybercab-certification/",
+        "decision": "skip",
+        "reason": "Additional corroboration for Special Order story; already filed via basenor.com; not a new distinct finding"
+      },
+      {
+        "title": "What it's like to ride a Cybercab in Austin (Axios Austin Sept 16)",
+        "url": "https://www.axios.com/local/austin/2026/09/16/cybercab-tesla-autonomous-vehicle-austin",
+        "decision": "file",
+        "reason": "New rider experience report in date window with updated wait time data (improved) and persistent drop-off failures; new URL not in seenUrls"
+      },
+      {
+        "title": "Tesla Cybercab Gets Beijing and Shanghai Display Dates (TeslaNorth Sept 14)",
+        "url": "https://teslanorth.com/2026/09/14/tesla-cybercab-beijing-shanghai-display/",
+        "decision": "file",
+        "reason": "New Tier 1 story in date window; China mainland legs not previously filed (Japan tour was); confirms Asia display-only tour pattern"
+      },
+      {
+        "title": "Tesla Robotaxi Cybercab Fleet Hits 49 in Texas DMV Records (TeslaNorth Sept 9)",
+        "url": "https://teslanorth.com/2026/09/09/tesla-cybercab-fleet-49-texas/",
+        "decision": "skip",
+        "reason": "Already filed in prior week (seenUrls includes teslanorth.com/2026/09/10/tesla-cybercab-anyone-austin/ covering same 49-unit finding); outside date window (Sept 9)"
+      },
+      {
+        "title": "Cybercab Is Waiting on Batteries (Road to Autonomy)",
+        "url": "https://www.roadtoautonomy.com/cybercab-waiting-on-batteries-before-scaling/",
+        "decision": "skip",
+        "reason": "General overview of 4680 battery constraint and production capacity \u2014 content summarizes previously filed Q2 shareholder letter news; no new development in Sept 12\u201316 window"
+      },
+      {
+        "title": "Tesla Launched the Cybercab Thursday, 6 Weeks After Removing Volume Production From This Year's Plan (Motley Fool Sept 4)",
+        "url": "https://www.fool.com/investing/2026/09/04/tesla-launched-the-cybercab-thursday-6-weeks-after-removing-volume-production-of-it-from-this-year-s-plan/",
+        "decision": "skip",
+        "reason": "Published Sept 4 \u2014 before date window; covers Q2 volume production removal, already previously filed context"
+      },
+      {
+        "title": "Texas Robotaxi Database fleet counts Sept 10 = 439 total (FSD Database)",
+        "url": "https://www.fsddb.com/robotaxi?operator=tesla-robotaxi-llc",
+        "decision": "skip",
+        "reason": "TxMCCS registry counts \u2014 rejected for both metricUpdate (production) and fleetUpdate (active fleet) per instructions; no new Cybercab-specific entries after Sept 8"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 49,
+        "decision": "reject",
+        "reason": "Texas TxMCCS Cybercab registration count as of Sept 8 \u2014 already filed in prior week; TxMCCS registration is not live dispatch fleet"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 439,
+        "decision": "reject",
+        "reason": "Total Tesla Robotaxi LLC registration (Model Y + Cybercab) as of Sept 10 \u2014 TxMCCS authorized-vehicle roster, not active fleet; mixed vehicle types"
+      }
+    ]
+  }
+}
