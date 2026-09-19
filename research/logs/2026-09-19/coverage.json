@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-19",
+  "weekOf": "2026-09-14",
+  "dateFrom": "2026-09-16",
+  "dateTo": "2026-09-19",
+  "candidates": [
+    {
+      "title": "Tesla adds 9 Cybercabs in Texas; purpose-built fleet hits 58 on TxDMV roster",
+      "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+      "date": "2026-09-18",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Hard VIN count: 9 new Tesla Robotaxi, LLC Cybercab registrations on Sept 18 lift the Texas purpose-built roster from 49 to 58 (448 combined with 390 Model Y robotaxis). Registration is not active-ride proof, but it is the first public step-up since mid-forties after Austin public Cybercab opened."
+    },
+    {
+      "title": "Tesla trains Austin first responders on Cybercab crash, fire, and door-open procedures",
+      "url": "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety/",
+      "date": "2026-09-18",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Official Robotaxi video says first-responder feedback is being designed into Cybercab as Austin Metro Police get briefed on handle-free butterfly doors, extrication, and EV fire response for unsupervised two-seaters still under NHTSA AQ26002."
+    },
+    {
+      "title": "Optimus factory steel frame nears north perimeter at Giga Texas",
+      "url": "https://www.teslarati.com/new-drone-video-shows-teslas-optimus-factory-reaching-a-turning-point/",
+      "date": "2026-09-18",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Joe Tegtmeyer drone on Sept 17: steel ~5 column grids from the north beam, concrete on three upper floors, ~6 months after late-March groundbreaking. Tesla still points high-volume Texas output to summer 2027; Fremont Gen 3 pilot is the near-term data line."
+    },
+    {
+      "title": "Tesla app 4.61.0 treats Optimus as a home Energy site with dedicated charger IDs",
+      "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+      "date": "2026-09-19",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "iOS 4.61.0 strings (passkeys plus Tesla Electric/VPP) label Optimus as a home Energy site with charger IDs. Dormant hooks, not a product launch, but the first consumer-app plumbing tying the robot to Powerwall/energy rather than factory-only use."
+    },
+    {
+      "title": "FSD v14.3.10 (2026.27.10) starts HW4 train with Collision Evasion notes intact",
+      "url": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+      "date": "2026-09-19",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "New 2026.27.10 build keeps Automatic Collision Evasion, MLIR rewrite, and RL/vision-encoder notes from v14.3.9; Tesla's own notes still say 'v14.3.9 includes' under a v14.3.10 header. Early-install counts look like the start of a wider HW4 train, not a fleet flip."
+    },
+    {
+      "title": "Tesla Europe: 460,000 km of FSD Supervised testing in Spain, still no retail unlock",
+      "url": "https://teslanorth.com/2026/09/16/tesla-fsd-spain-460000-km/",
+      "date": "2026-09-16",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Two years of DGT ES-AV Level 2 testing now has a mileage total from Tesla EMEA. Spain remains a proving ground, not a customer market; Tesla still points the wider EU file at an October 6 vote. No crash counts or Spain retail date in the post."
+    },
+    {
+      "title": "Tesla AUNZ: FSD Supervised logs 160 million km in first year with local safety scorecard",
+      "url": "https://teslanorth.com/2026/09/18/tesla-fsd-160-million-km-australia-nz/",
+      "date": "2026-09-18",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Official AU/NZ anniversary: ~160 million km of Supervised FSD vs ~2.4 billion km manual-with-Active-Safety baseline, claiming 40% fewer collisions and 66% fewer AEB events. First RHD markets; HW3 Lite for AU/NZ still unpublished. Tesla did not split AU vs NZ or subscription counts."
+    },
+    {
+      "title": "Tesla will operate public Megachargers at 3 Forum Mobility California Semi depots",
+      "url": "https://electrek.co/2026/09/17/tesla-public-megachargers-forum-mobility-semi-depots/",
+      "date": "2026-09-17",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Forum Mobility breaks ground on four CA heavy-duty depots (+30 MW); Tesla will run public MCS Megacharging at FM Francis (Ontario), FM Adeline and FM Coliseum (Oakland). FM Santa Fe holds reservations for 330+ Semis. Partner-operated charging, not Tesla-owned real estate."
+    },
+    {
+      "title": "Top Gear Tech tours production Semi and $3.6B Nevada plant sized for 50,000 trucks/year",
+      "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+      "date": "2026-09-18",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "First on-camera production Semi and Sparks factory tour: 1.7 million sq ft, $3.6B, 50k trucks/year (1,000/week at rate). Packs use 4680 cells (third pack for long-range). Claimed 1.7 kWh/mi, ~325/500 mile targets, 60% charge in 30 min. No U.S. retail price or current weekly rate on camera."
+    },
+    {
+      "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck",
+      "url": "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment/",
+      "date": "2026-09-16",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Tesla Charging's first Accordion site ships 16 V4 stalls on one truck, 20% cheaper install, instant commission, between-space layout when curb-behind cabinets cannot trench. Stated goal: pre-assemble every Supercharger. Comes after 2024 charging-team layoff and ~17% YoY connector growth vs 35-45% in 2020-21."
+    },
+    {
+      "title": "Tesla reopens Roadster reservations at $50,000 refundable deposit ahead of Oct 1",
+      "url": "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit/",
+      "date": "2026-09-18",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Live tesla.com/roadster/reserve: $5,000 card today plus $45,000 wire in 10 days, labeled fully refundable. No retail price or delivery date. New money on the queue, not just last week's October 1 teaser; prior holds already slipped toward 2027-28 customer builds."
+    },
+    {
+      "title": "Tesla India: order a Model Y today for delivery before Diwali",
+      "url": "https://teslanorth.com/2026/09/19/tesla-india-model-y-diwali-delivery/",
+      "date": "2026-09-19",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Official Tesla India post pitches festival-season fulfillment (Oct/early Nov) with EMI from ₹39,990 and ₹600,000 down. Near-term India delivery promise, not a list-price cut; tenure, rate, and trim for the EMI floor were not in the tweet."
+    },
+    {
+      "title": "Bloomberg: Tokyo Model Y can fall under $23,000 after Japan plus city EV subsidies",
+      "url": "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies/",
+      "date": "2026-09-19",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "¥5.6 million Japan sticker can stack to ~¥3.6 million (~$22,889) in Tokyo with national CEV plus city ZEV grants and a weak yen, undercutting China (~$39k) and California. Shanghai-built Model Y was Japan's top imported car in H1. Eligibility still depends on residency/registration, not a Tesla MSRP cut."
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "site:teslarati.com Tesla news September 2026",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "site:teslanorth.com Tesla latest news 2026-09-16..2026-09-19",
+        "tool": "web_fetch",
+        "hits": 40
+      },
+      {
+        "q": "site:teslaoracle.com Tesla Cybercab FSD Optimus September 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "https://ir.tesla.com/press-releases",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "https://www.tesla.com/blog",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:electrek.co Tesla Cybercab FSD Optimus Semi Megacharger September 2026",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Tesla NHTSA Cybercab AQ26002 Special Order September 2026",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "https://www.nhtsa.gov/press-releases Tesla",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla robotaxi FSD Optimus AI5 4680 Terafab deliveries September 16-19 2026",
+        "tool": "web_fetch",
+        "hits": 15
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/latest-news/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/feed/",
+        "kept": false
+      },
+      {
+        "url": "https://ir.tesla.com/press-releases",
+        "kept": false
+      },
+      {
+        "url": "https://www.tesla.com/blog",
+        "kept": false
+      },
+      {
+        "url": "https://electrek.co/guides/tesla/",
+        "kept": false
+      },
+      {
+        "url": "https://www.nhtsa.gov/recalls",
+        "kept": false
+      },
+      {
+        "url": "https://www.nhtsa.gov/press-releases",
+        "kept": false
+      },
+      {
+        "url": "https://static.nhtsa.gov/odi/inv/2026/INOA-AQ26002-17078.pdf",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/16/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/17/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/page/2/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/new-drone-video-shows-teslas-optimus-factory-reaching-a-turning-point/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/16/tesla-fsd-spain-460000-km/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-fsd-160-million-km-australia-nz/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/17/tesla-public-megachargers-forum-mobility-semi-depots/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/17/tesla-megacharger-forum-mobility-california/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-india-model-y-diwali-delivery/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/faa-tfr-mcgregor-tesla-roadster-october-1/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/16/tesla-preassembled-megachargers-semi-ramp/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-looks-expand-into-new-asian-market-strengthening-presence/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-two-defunct-models-big-upgrade/",
+        "kept": false
+      },
+      {
+        "url": "https://electrek.co/2026/09/16/tesla-cybercab-china-display-no-sale-robotaxi/",
+        "kept": false
+      }
+    ]
+  }
+}

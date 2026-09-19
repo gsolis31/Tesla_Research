@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-19",
+  "status": "ok",
+  "candidates": 13,
+  "covered": 11,
+  "ignored": 0,
+  "gapCount": 2,
+  "gaps": [
+    {
+      "title": "Tesla AUNZ: FSD Supervised logs 160 million km in first year with local safety scorecard",
+      "url": "https://teslanorth.com/2026/09/18/tesla-fsd-160-million-km-australia-nz/",
+      "date": "2026-09-18",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Official AU/NZ anniversary: ~160 million km of Supervised FSD vs ~2.4 billion km manual-with-Active-Safety baseline, claiming 40% fewer collisions and 66% fewer AEB events. First RHD markets; HW3 Lite for AU/NZ still unpublished. Tesla did not split AU vs NZ or subscription counts.",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck",
+      "url": "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment/",
+      "date": "2026-09-16",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Tesla Charging's first Accordion site ships 16 V4 stalls on one truck, 20% cheaper install, instant commission, between-space layout when curb-behind cabinets cannot trench. Stated goal: pre-assemble every Supercharger. Comes after 2024 charging-team layoff and ~17% YoY connector growth vs 35-45% in 2020-21.",
+      "match": "gap"
+    }
+  ]
+}

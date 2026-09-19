@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-19",
+  "errorCount": 0,
+  "warningCount": 2,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla AUNZ: FSD Supervised logs 160 million km in first year with local safety scorecard",
+          "category": "fsd",
+          "title": "Tesla AUNZ: FSD Supervised logs 160 million km in first year with local safety scorecard",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck",
+          "category": "productionDelivery",
+          "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range. Tier 1 Tesla sites had no AI5/AI6/Dojo/foundry stories. English follow-ups of Samsung Taylor AI5 trial production (Sedaily/BusinessKorea Sept 15, already filed) added no new yield, sample, or shipment numbers; mass production and Tesla supply remain 2027. AI6 December tape-out target unchanged. Intel 14A 'evaluation' is an eight-company analyst list, not a Tesla chip milestone. Terafab All-In/trademark coverage belongs to terafab.",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant AI/robotics/Optimus hiring news in date range; AltIndex count +58 is a metric tick only",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

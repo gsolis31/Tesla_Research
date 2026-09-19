@@ -1,0 +1,152 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-09-19",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval OR NHTSA OR TCMV OR homologation OR KBA when:7d",
+        "tool": "web_search",
+        "hits": 40
+      },
+      {
+        "q": "Tesla FSD Europe OR Germany OR France OR Italy OR Spain OR UK when:7d",
+        "tool": "web_search",
+        "hits": 42
+      },
+      {
+        "q": "Annick De Ridder Tesla FSD OR Full Self-Driving Belgium",
+        "tool": "web_search",
+        "hits": 25
+      },
+      {
+        "q": "NHTSA Morrison AI Horizons OR national autonomy framework Tesla when:7d",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Tesla FSD China permit OR approval OR Cybercab China when:7d",
+        "tool": "web_search",
+        "hits": 30
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "kept": false,
+        "reason": "AQ26002 Cybercab FMVSS Special Order \u2014 cybercab ownership, not FSD country approvals"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-fsd-safety-data-belgium/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-in-belgium-9-6x-lower-crash-risk-outside-highways",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/nhtsas-national-autonomy-framework-what-tesla-owners-need-to-know",
+        "kept": false,
+        "reason": "January 2026 NHTSA framework recap; only Basenor + aggregator, no NHTSA.gov/Teslarati corroboration"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/unece-smart-summon-range-increase-5-details-that-matter",
+        "kept": false,
+        "reason": "UNECE R171 Smart Summon 6m\u219215m proposal, not FSD country approval"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-now-live-in-14-countries-plus-3-months-free-with-new-orders",
+        "kept": false,
+        "reason": "existing global footprint recap, no new country this week"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+        "kept": false,
+        "reason": "AU/NZ fleet miles/safety stats \u2192 fsdv15; markets already live since 2025"
+      },
+      {
+        "url": "https://mashable.com/article/tesla-fsd-monthly-fee-europe",
+        "kept": false,
+        "reason": "stale recap (NL + Lithuania only); not a 2026-09-16..19 development"
+      },
+      {
+        "url": "https://www.techtimes.com/articles/327019/20260908/six-eu-states-cleared-tesla-fsd-using-one-sealed-never-released-safety-file.htm",
+        "kept": false,
+        "reason": "seenUrl / Sep 8 Slovenia-TCMV recap outside this week's new-approval window"
+      },
+      {
+        "url": "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules/",
+        "kept": false,
+        "reason": "seenUrl / last-week UK FSD branding law"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Flemish Minister Presents Tesla-Supplied Belgian FSD Stats Ahead of Oct 6 TCMV Vote",
+        "url": "https://driveteslacanada.ca/news/tesla-fsd-safety-data-belgium/",
+        "decision": "file",
+        "reason": "new parliamentary presentation of Belgian FSD Supervised safety data in date window, TCMV-relevant"
+      },
+      {
+        "title": "NHTSA escalated Cybercab audit to sworn Special Order, Sep 30 deadline",
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "decision": "skip",
+        "reason": "AQ26002 is Cybercab FMVSS certification (no wheel/pedals) \u2192 cybercab, not FSD country approvals / EA26002"
+      },
+      {
+        "title": "Tesla FSD Now Live in 14 Countries \u2014 Plus 3 Months Free With New Orders",
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-now-live-in-14-countries-plus-3-months-free-with-new-orders",
+        "decision": "skip",
+        "reason": "no new country this week; 14-count mixes NA/APAC consumer markets with the 6 EU clearances already tracked"
+      },
+      {
+        "title": "Tesla FSD Cuts Collisions by 40% in Australia and NZ",
+        "url": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+        "decision": "skip",
+        "reason": "cumulative miles / company safety stats in already-approved AU/NZ \u2192 fsdv15"
+      },
+      {
+        "title": "NHTSA's National Autonomy Framework (Morrison at AI Horizons PGH)",
+        "url": "https://www.basenor.com/blogs/news/nhtsas-national-autonomy-framework-what-tesla-owners-need-to-know",
+        "decision": "skip",
+        "reason": "speech recap of a January 2026 framework; no Federal Register action; insufficient corroboration"
+      },
+      {
+        "title": "UNECE plans to raise Smart Summon range from 6m to 15m",
+        "url": "https://www.basenor.com/blogs/news/unece-smart-summon-range-increase-5-details-that-matter",
+        "decision": "skip",
+        "reason": "R171 parking-summon proposal, not FSD Supervised country homologation; no adoption date"
+      },
+      {
+        "title": "UK Automated Vehicles Marketing Law Forces Tesla to Drop 'FSD' Branding by January 2027",
+        "url": "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules/",
+        "decision": "skip",
+        "reason": "recentKeyChanges / seenUrl last-week recap"
+      },
+      {
+        "title": "Tesla Reaches 460,000 km of FSD Supervised Testing in Spain",
+        "url": "https://teslanorth.com/2026/09/16/tesla-reaches-460000-km-of-fsd-supervised-testing-in-spain/",
+        "decision": "skip",
+        "reason": "already in criticalNews; TeslaNorth 404 on guessed slug; no new Spanish approval path"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 14,
+        "decision": "reject",
+        "reason": "Basenor/NATA 14-country map is global consumer availability (US/CA/MX/PR/CN/KR/AU/NZ + 6 EU), not a new approval; latestMetric remains 6 EU countries, latest Denmark"
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 6,
+        "decision": "reject",
+        "reason": "no new country this week; Slovenia already filed Sep 8"
+      }
+    ]
+  }
+}

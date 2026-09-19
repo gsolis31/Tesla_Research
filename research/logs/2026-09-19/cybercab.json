@@ -1,0 +1,166 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-09-19",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab Austin 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Cybercab teslarati teslanorth teslaoracle",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Cybercab Texas fleet registration 58",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Cybercab NHTSA Special Order September 2026",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Cybercab China Beijing Shanghai display",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Cybercab first responder Austin",
+        "tool": "web_fetch",
+        "hits": 2
+      },
+      {
+        "q": "Tesla robotaxi fleet Austin September 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "site:electrek.co Tesla Cybercab September 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "kept": false,
+        "reason": "same NHTSA Special Order already in recentKeyChanges"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/16/nhtsa-cybercab-special-order-september-30/",
+        "kept": false,
+        "reason": "same NHTSA Special Order already filed"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/09/tesla-cybercab-fleet-49-texas/",
+        "kept": false,
+        "reason": "prior 49 baseline, outside window"
+      },
+      {
+        "url": "https://electrek.co/2026/09/16/tesla-cybercab-china-display-no-sale-robotaxi/",
+        "kept": false,
+        "reason": "China tour recap already in recentKeyChanges"
+      },
+      {
+        "url": "https://insideevs.com/news/808554/tesla-cybercab-nhtsa-legal-fmvss/",
+        "kept": false,
+        "reason": "same NHTSA Special Order"
+      },
+      {
+        "url": "https://www.motor1.com/news/808502/tesla-cybercab-nhtsa-special-order/",
+        "kept": false,
+        "reason": "same NHTSA Special Order"
+      },
+      {
+        "url": "https://www.axios.com/local/austin/2026/09/16/cybercab-tesla-autonomous-vehicle-austin",
+        "kept": false,
+        "reason": "seenUrl / already in recentKeyChanges"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/15/tesla-cybercab-australia-nz-tour/",
+        "kept": false,
+        "reason": "dated 2026-09-15, before dateFrom"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/14/tesla-cybercab-beijing-shanghai-display/",
+        "kept": false,
+        "reason": "seenUrl / already in recentKeyChanges"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Texas Cybercab registrations climb to 58 after nine new VINs",
+        "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+        "decision": "file",
+        "reason": "new TxDMV Cybercab VIN batch in window; filed as ops/pipeline news, not production or live-fleet metric"
+      },
+      {
+        "title": "Tesla trains Austin first responders on Cybercab crash and fire rescue",
+        "url": "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety/",
+        "decision": "file",
+        "reason": "new official Robotaxi training video in window; ops quality, not a crash investigation"
+      },
+      {
+        "title": "NHTSA escalates Cybercab FMVSS audit to formal Special Order",
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "decision": "skip",
+        "reason": "same title/category as recentKeyChanges (Basenor 2026-09-15)"
+      },
+      {
+        "title": "Second-week Cybercab rider report: waits drop under 5 min",
+        "url": "https://www.axios.com/local/austin/2026/09/16/cybercab-tesla-autonomous-vehicle-austin",
+        "decision": "skip",
+        "reason": "seenUrl / already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla brings Cybercab to China, rules out sale and robotaxi service",
+        "url": "https://electrek.co/2026/09/16/tesla-cybercab-china-display-no-sale-robotaxi/",
+        "decision": "skip",
+        "reason": "China static-display tour already filed; Electrek corroboration of no commercial path"
+      },
+      {
+        "title": "Tesla Cybercab Tour Puts Sydney First Across Australia and Auckland",
+        "url": "https://teslanorth.com/2026/09/15/tesla-cybercab-australia-nz-tour/",
+        "decision": "skip",
+        "reason": "dated 2026-09-15, before dateFrom 2026-09-16"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 58,
+        "decision": "reject",
+        "reason": "TxDMV / FSD Database registration, not live dispatch \u2014 use robotaxiRegistered"
+      },
+      {
+        "series": "cybercab",
+        "count": 58,
+        "decision": "reject",
+        "reason": "Texas registry count is not production; VIN floor remains 2172"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 448,
+        "decision": "reject",
+        "reason": "combined Tesla Robotaxi authorization (58 Cybercab + 390 Model Y), not active Cybercab fleet"
+      }
+    ]
+  }
+}

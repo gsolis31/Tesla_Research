@@ -1,0 +1,172 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-09-19",
+  "filed": 0,
+  "skipReason": "No significant AI/robotics/Optimus hiring news in date range; AltIndex count +58 is a metric tick only",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring job posting September 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla hiring Optimus OR robotics OR \"AI engineer\" September 2026",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "site:teslarati.com Tesla hiring OR jobs OR careers 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus \"production associate\" hiring OR jobs 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla jobs OR hiring OR \"job postings\" Optimus OR robotics OR FSD",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "\"Training Coordinator, Optimus\" Tesla",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "Tesla Chicago robotaxi hiring OR jobs 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla LinkedIn jobs \"7,000\" OR \"7000+\" OR \"8000\" OR \"job postings\" September 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": "verified live count 7,892 for metricUpdate"
+      },
+      {
+        "url": "https://optimusk.blog/blog/",
+        "kept": false,
+        "reason": "no hiring articles in Sept 16\u201319 window"
+      },
+      {
+        "url": "https://www.teslarati.com/",
+        "kept": false,
+        "reason": "homepage; no job-posting stories"
+      },
+      {
+        "url": "https://teslanorth.com/",
+        "kept": false,
+        "reason": "homepage; no job-posting stories"
+      },
+      {
+        "url": "https://www.teslaoracle.com/",
+        "kept": false,
+        "reason": "no hiring/job-posting stories in date window"
+      },
+      {
+        "url": "https://electrek.co/",
+        "kept": false,
+        "reason": "no hiring stories; corroboration only"
+      },
+      {
+        "url": "https://www.notateslaapp.com/",
+        "kept": false,
+        "reason": "no new FSD/Optimus hiring article this week"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/training-coordinator-optimus-at-tesla-4466420746",
+        "kept": false,
+        "reason": "posted ~2026-09-12, outside dateFrom"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/training-coordinator-optimus-at-tesla-4466426766",
+        "kept": false,
+        "reason": "same Training Coordinator role, Fremont; 1 week old"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/production-associate-optimus-at-tesla-4444201604",
+        "kept": false,
+        "reason": "1-month-old listing; generic vehicle/energy PA copy"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/supervisor-robotaxi-fleet-support-night-shift-at-tesla-4468288758",
+        "kept": false,
+        "reason": "single Chicago fleet-ops supervisor, not AI/robotics hiring wave"
+      }
+    ],
+    "considered": [
+      {
+        "title": "AltIndex Tesla job count ticks to 7,892",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "not a keyChange \u2014 +58 / +0.7% vs Sept 16 is noise on last week\u2019s 7,834 surge; mix still 40% service/sales. Filed as metricUpdate only"
+      },
+      {
+        "title": "Tesla LinkedIn US job index jumps to 7,000+ in mid-September \u2014 bulk driven by service/sales, not AI/robotics",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "recentKeyChanges / seenUrl \u2014 last week\u2019s recap"
+      },
+      {
+        "title": "Tesla posts Optimus 'Gears' manufacturing engineering roles in Austin, TX",
+        "url": "https://diversityjobs.com/career/17621511/Manufacturing-Engineering-Lead-Optimus-Factory-Texas-Gears-Texas-Austin",
+        "decision": "skip",
+        "reason": "recentKeyChanges / seenUrl"
+      },
+      {
+        "title": "Training Coordinator, Optimus (Palo Alto and Fremont)",
+        "url": "https://www.linkedin.com/jobs/view/training-coordinator-optimus-at-tesla-4466420746",
+        "decision": "skip",
+        "reason": "DuckDuckGo dates Palo Alto posting 2026-09-12, before dateFrom 2026-09-16; data-collection trainer, not production-floor ramp"
+      },
+      {
+        "title": "Production Associate, Optimus \u2014 Fremont",
+        "url": "https://www.linkedin.com/jobs/view/production-associate-optimus-at-tesla-4444201604",
+        "decision": "skip",
+        "reason": "posted 1 month ago (outside window); body is copy-paste vehicle/energy production-associate language, not a new Optimus line-staffing wave"
+      },
+      {
+        "title": "Supervisor, Robotaxi Fleet Support (Night Shift) \u2014 Chicago",
+        "url": "https://www.linkedin.com/jobs/view/supervisor-robotaxi-fleet-support-night-shift-at-tesla-4468288758",
+        "decision": "skip",
+        "reason": "in-window (posted ~Sept 17) but a single fleet-ops supervisor; robotaxi city/ops belongs to cybercab; not an AI/robotics hiring signal"
+      },
+      {
+        "title": "Optimus factory steel frame nears finish at Giga Texas",
+        "url": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+        "decision": "skip",
+        "reason": "factory conversion narrative without hiring metrics \u2192 optimus"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 7892,
+        "decision": "file",
+        "reason": "AltIndex live LinkedIn-listing count on 2026-09-19, same series as latestMetric 7834 on 2026-09-16"
+      },
+      {
+        "series": "jobPostings",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "LinkedIn public US display band '5,000+' is coarse and noisy after AI job-search rollout; not comparable to last week\u2019s '7,000+' band; AltIndex global 7,892 is the tracked series"
+      },
+      {
+        "series": "jobPostings",
+        "count": 5171,
+        "decision": "reject",
+        "reason": "Indeed company-page count, different universe from AltIndex/LinkedIn series"
+      }
+    ]
+  }
+}

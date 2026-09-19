@@ -1,0 +1,172 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-09-19",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus factory Fremont OR \"Giga Texas\" 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla auditing Chinese suppliers Optimus SCMP",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:bloomberg.com Chinese Robotics Suppliers Rise Tesla Optimus 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Optimus Fremont production units September 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus when:7d",
+        "tool": "web_fetch",
+        "hits": 40
+      },
+      {
+        "q": "Tesla Optimus teslarati teslanorth optimusk.blog",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Optimus app charger Energy 4.61.0",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/new-drone-video-shows-teslas-optimus-factory-reaching-a-turning-point/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+        "kept": false,
+        "reason": "dormant app strings; incremental to already-seen Optimus smartphone-app prep"
+      },
+      {
+        "url": "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.yicaiglobal.com/news/chinese-tesla-suppliers-pare-gains-after-denying-knowledge-of-optimus-factory-checks",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-09-18/chinese-robotics-suppliers-rise-on-tesla-optimus-audit-report",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-supplier-audits-china",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-factory-steel-frame",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-apps-optimus-charger-support-5-details-that-matter",
+        "kept": false,
+        "reason": "same app 4.61.0 Optimus Energy strings; not production"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-5-details-that-matter",
+        "kept": false,
+        "reason": "JS-empty page; factory story covered by TeslaNorth/Teslarati"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-optimus-factory-construction-giga-texas/",
+        "kept": false,
+        "reason": "thin page; same Tegtmeyer steel-frame story"
+      },
+      {
+        "url": "https://theroboticsmedia.com/article/tesla-optimus-ningbo-mass-production-audit-china-suppliers-september-18-2026",
+        "kept": false,
+        "reason": "repeats unverified 50k/orders narrative without Tesla confirmation"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Giga Texas Optimus steel frame nears north beam \u2014 still a construction site, not a factory",
+        "url": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+        "decision": "file",
+        "reason": "new Sept 17 drone milestone in window; construction not production"
+      },
+      {
+        "title": "Ningbo Optimus supplier-audit headlines fade as named vendors deny new Tesla inspections",
+        "url": "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources",
+        "decision": "file",
+        "reason": "new Sept 16\u201318 China audit claim plus Yicai denials; distinct from last week's unofficial 15k parts-order recap"
+      },
+      {
+        "title": "Tesla App 4.61.0 Adds Passkeys and Hints Optimus in Energy",
+        "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+        "decision": "skip",
+        "reason": "decompiled dormant Energy-site/charger-ID strings, not a product launch; incremental to seenUrl tesla-starts-preparing-optimus-smartphone-app"
+      },
+      {
+        "title": "Optimus 2026 target: supply chain cites 15,000 units with weekly ramp milestones \u2014 no official Tesla verification",
+        "url": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/",
+        "decision": "skip",
+        "reason": "recentKeyChanges / seenUrl (2026-09-15)"
+      },
+      {
+        "title": "Samsung Starts 2nm AI5 Chip Production for Tesla FSD and Optimus",
+        "url": "https://www.basenor.com/blogs/news/samsung-starts-2nm-ai5-chip-production-for-tesla-fsd-and-optimus",
+        "decision": "skip",
+        "reason": "ownership: AI inference chips \u2192 aiChip"
+      },
+      {
+        "title": "Tesla Supercharger Hardware Lead Leaves for Figure Robotics",
+        "url": "https://www.basenor.com/blogs/news/tesla-supercharger-hardware-lead-leaves-for-figure-robotics",
+        "decision": "skip",
+        "reason": "competitor hire is not Optimus production; jobPostings/competitor, not a direct Optimus contrast"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimus",
+        "count": 15000,
+        "decision": "reject",
+        "reason": "unofficial supply-chain 2026 parts target already filed last week; Tesla has not verified"
+      },
+      {
+        "series": "optimus",
+        "count": 50000,
+        "decision": "reject",
+        "reason": "Chinese-media 2026 internal plan cited around Ningbo audits; not Tesla guidance and conflicts with 15k"
+      },
+      {
+        "series": "optimus",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "Moomoo/36Kr '5,000-unit order' ticker; unverified and not corroborated by Tesla, SCMP, or named suppliers"
+      },
+      {
+        "series": "optimus",
+        "count": 10000000,
+        "decision": "reject",
+        "reason": "long-term Musk Texas capacity claim, not current production"
+      }
+    ]
+  }
+}

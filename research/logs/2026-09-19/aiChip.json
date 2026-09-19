@@ -1,0 +1,189 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-09-19",
+  "filed": 0,
+  "skipReason": "No significant news found in date range. Tier 1 Tesla sites had no AI5/AI6/Dojo/foundry stories. English follow-ups of Samsung Taylor AI5 trial production (Sedaily/BusinessKorea Sept 15, already filed) added no new yield, sample, or shipment numbers; mass production and Tesla supply remain 2027. AI6 December tape-out target unchanged. Intel 14A 'evaluation' is an eight-company analyst list, not a Tesla chip milestone. Terafab All-In/trademark coverage belongs to terafab.",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 Samsung Taylor 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla AI6 chip tape-out September 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Dojo chip September 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Elon Musk AI6 tape-out December",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Dojo3 supercomputer 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla AI5 Samsung trial production September 16 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Intel 14A chip 2026",
+        "tool": "web_search",
+        "hits": 51
+      },
+      {
+        "q": "Tesla TSMC AI5 AI6 September 2026",
+        "tool": "web_search",
+        "hits": 33
+      },
+      {
+        "q": "Tesla Dojo September 16 2026 OR September 17 2026 OR September 18 2026",
+        "tool": "web_search",
+        "hits": 23
+      },
+      {
+        "q": "Tesla AI6 tape-out December 2026 update",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Samsung Taylor Tesla AI5 yield 70 September 2026",
+        "tool": "web_search",
+        "hits": 11
+      },
+      {
+        "q": "Tesla HW5 HW6 inference chip production 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslarati.com AI5 OR AI6 OR Dojo September 2026",
+        "tool": "web_search",
+        "hits": 100
+      },
+      {
+        "q": "site:teslanorth.com AI5 OR AI6 OR Dojo OR Samsung chip",
+        "tool": "web_search",
+        "hits": 32
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "kept": false,
+        "reason": "seenUrl / last-week trial-production filing"
+      },
+      {
+        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=277083",
+        "kept": false,
+        "reason": "Sept 15 corroboration of already-filed Taylor trial production"
+      },
+      {
+        "url": "https://www.sammobile.com/news/push-to-make-tesla-chips-sees-samsungs-texas-fab-begin-production-early/",
+        "kept": false,
+        "reason": "Sept 16 recap of Sept 15 trial production; no new yield/volume"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/samsung-starts-2nm-ai5-chip-production-for-tesla-fsd-and-optimus",
+        "kept": false,
+        "reason": "Sept 17 recap of Sedaily/BusinessKorea trial-production story"
+      },
+      {
+        "url": "https://www.ajupress.com/view/20260913180470562",
+        "kept": false,
+        "reason": "Sept 13 yield recap (70%+ 2nm GAA) \u2014 outside window and already in last-week evidence"
+      },
+      {
+        "url": "https://wccftech.com/intels-14a-process-is-currently-being-evaluated-by-amazon-apple-amd-google-tesla-microsoft-nvidia-and-qualcomm-according-to-piper-sandler/",
+        "kept": false,
+        "reason": "Tesla is one of eight evaluators on an Intel 14A analyst list; no Tesla AI5/AI6 deal or tape-out"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "kept": false,
+        "reason": "Terafab construction/strategy \u2192 terafab"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-spacex-lawsuit-terafab-trademark-court/",
+        "kept": false,
+        "reason": "Terafab trademark litigation \u2192 terafab"
+      },
+      {
+        "url": "https://www.koreajoongangdaily.com/business/samsung-forms-team-dedicated-to-developing-robots-for-chip-plants/12880926",
+        "kept": false,
+        "reason": "Samsung internal fab-automation robots, not Tesla inference chips"
+      },
+      {
+        "url": "https://www.sammobile.com/news/samsung-has-a-team-working-on-robots-for-semiconductor-manufacturing/",
+        "kept": false,
+        "reason": "Same Samsung fab-robot story; not Tesla AI5/AI6"
+      },
+      {
+        "url": "https://www.ajupress.com/view/20260919130809873",
+        "kept": false,
+        "reason": "Samsung Euclyd investment; not Tesla chips"
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20260825PD228/tesla-hardware-design-chips-robotics.html",
+        "kept": false,
+        "reason": "seenUrl; Aug 25 DensityAI departure, outside window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung Taylor Fab Starts AI5 Trial Production Ahead of November Schedule",
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "decision": "skip",
+        "reason": "seenUrl / last-week keyChange; English follow-ups (SamMobile Sept 16, Basenor Sept 17, BusinessKorea) restate trial production, 2027 supply, no new yield or unit count"
+      },
+      {
+        "title": "Intel 14A Process Is Currently Being Evaluated By Amazon, Apple, AMD, Google, Tesla, Microsoft, NVIDIA, And Qualcomm",
+        "url": "https://wccftech.com/intels-14a-process-is-currently-being-evaluated-by-amazon-apple-amd-google-tesla-microsoft-nvidia-and-qualcomm-according-to-piper-sandler/",
+        "decision": "skip",
+        "reason": "Single-source Piper Sandler listicle; Tesla already reported as a 14A customer in April 2026; no AI5/AI6 node change, tape-out, or wafer-volume update"
+      },
+      {
+        "title": "Terafab Is Taiwan Chip Insurance, Musk Says at All-In Summit",
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "decision": "skip",
+        "reason": "Terafab construction/strategy \u2192 ownership: terafab, not aiChip"
+      },
+      {
+        "title": "Tesla and SpaceX take Terafab Trademark fight to Federal Court",
+        "url": "https://www.teslarati.com/tesla-spacex-lawsuit-terafab-trademark-court/",
+        "decision": "skip",
+        "reason": "Terafab naming/legal dispute \u2192 terafab"
+      },
+      {
+        "title": "Samsung forms team dedicated to developing robots for chip plants",
+        "url": "https://www.koreajoongangdaily.com/business/samsung-forms-team-dedicated-to-developing-robots-for-chip-plants/12880926",
+        "decision": "skip",
+        "reason": "Samsung DS fab-automation staffing; not Tesla AI5/AI6/Dojo silicon"
+      },
+      {
+        "title": "Samsung joins $231 million bet on Dutch AI chips",
+        "url": "https://www.ajupress.com/view/20260919130809873",
+        "decision": "skip",
+        "reason": "Samsung-Euclyd Series A; commercial deployment 2028; not Tesla foundry or inference chips"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChip",
+        "count": 30,
+        "decision": "reject",
+        "reason": "SamMobile ~30% Taylor utilization is a fab loading anecdote from the already-filed trial-production story, not a Tesla chip/wafer/unit count"
+      }
+    ]
+  }
+}

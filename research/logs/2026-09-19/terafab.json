@@ -1,0 +1,160 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-09-19",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Terafab Tesla OR SpaceX when:7d",
+        "tool": "web_search",
+        "hits": 18
+      },
+      {
+        "q": "Tesla Terafab Texas September 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "SpaceX Terafab Grimes County construction update September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Terafab trademark TERA-print lawsuit September 2026",
+        "tool": "web_search",
+        "hits": 14
+      },
+      {
+        "q": "SpaceX Terafab records lawsuit TRO hearing September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "kbtx.com Terafab September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "College Station school board Terafab CSISD September 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Hanmi Semiconductor Terafab equipment deal September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "site:teslanorth.com OR site:teslarati.com Terafab September 16 17 18 19 2026",
+        "tool": "web_search",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-spacex-lawsuit-terafab-trademark-court/",
+        "kept": false,
+        "reason": "Sep 17 recap of Sep 16 Reuters filing already in recentKeyChanges/seenUrls"
+      },
+      {
+        "url": "https://www.kbtx.com/2026/09/17/trademark-dispute-over-name-terafab-lands-federal-court/",
+        "kept": false,
+        "reason": "Same TERA-print declaratory-judgment filing; service-of-process Wednesday is not a ruling"
+      },
+      {
+        "url": "https://uk.pcmag.com/processors/167367/elon-musks-terafab-chip-factory-faces-legal-battle-over-its-name",
+        "kept": false,
+        "reason": "Sep 16 same lawsuit; TERA-print CTO quotes do not change the docket"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-hits-a-roadblock-before-making-a-single-chip-receives-cease-and-desist-order-firm-files-trademark-lawsuit-has-sold-tera-fab-branded-lithography-tools-for-over-a-decade",
+        "kept": false,
+        "reason": "Sep 19 recap of Sep 16 trademark complaint"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "kept": false,
+        "reason": "seenUrl / recentKeyChanges All-In Summit recap"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/10/spacex-terafab-records-lawsuit/",
+        "kept": false,
+        "reason": "Sep 10 records suit; no hearing date in this window"
+      },
+      {
+        "url": "https://theeagle.com/news/local/business/development/article_daa444bd-60f5-420a-a731-d9353ff0e663.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://theeagle.com/news/local/business/development/article_08ac86f5-3745-4489-9348-995da302cdb5.html",
+        "kept": false,
+        "reason": "College Station city-council regional-impact briefing; same theme as KBTX Sep 10/11 story outside this window"
+      },
+      {
+        "url": "https://www.kbtx.com/2026/09/18/pete-hegseth-visit-texas-tech-hubs-address-texas-am-cadets/",
+        "kept": false,
+        "reason": "Hegseth Texas tour; no Terafab site visit"
+      }
+    ],
+    "considered": [
+      {
+        "title": "CSISD board briefed on Terafab housing spillover",
+        "url": "https://theeagle.com/news/local/business/development/article_daa444bd-60f5-420a-a731-d9353ff0e663.html",
+        "decision": "file",
+        "reason": "Sep 18 local article in window; school-board/local-politics is terafab-owned; not in recentKeyChanges or seenUrls"
+      },
+      {
+        "title": "Tesla and SpaceX take Terafab trademark fight to federal court (Teslarati)",
+        "url": "https://www.teslarati.com/tesla-spacex-lawsuit-terafab-trademark-court/",
+        "decision": "skip",
+        "reason": "Same Sep 16 TERA-print DJ complaint already filed from Reuters; no ruling"
+      },
+      {
+        "title": "Trademark dispute over the name Terafab lands in federal court (KBTX)",
+        "url": "https://www.kbtx.com/2026/09/17/trademark-dispute-over-name-terafab-lands-federal-court/",
+        "decision": "skip",
+        "reason": "Local recap of same filing; Wednesday service is not a hearing or injunction"
+      },
+      {
+        "title": "Elon Musk's Terafab hits a roadblock before making a single chip (Tom's Hardware)",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-hits-a-roadblock-before-making-a-single-chip-receives-cease-and-desist-order-firm-files-trademark-lawsuit-has-sold-tera-fab-branded-lithography-tools-for-over-a-decade",
+        "decision": "skip",
+        "reason": "Sep 19 recap of the Sep 16 complaint already in recentKeyChanges"
+      },
+      {
+        "title": "Musk frames Terafab as Taiwan chip insurance at All-In Summit",
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "decision": "skip",
+        "reason": "seenUrl / recentKeyChanges; Sep 15"
+      },
+      {
+        "title": "SpaceX Terafab records TRO / court ruling",
+        "url": "https://teslanorth.com/2026/09/10/spacex-terafab-records-lawsuit/",
+        "decision": "skip",
+        "reason": "No hearing date set as of Sep 19; no new article in window"
+      },
+      {
+        "title": "Hanmi Semiconductor equipment supply deal for Terafab (KED Global)",
+        "url": "https://www.kedglobal.com/",
+        "decision": "skip",
+        "reason": "Google News dated Tue Sep 15 \u2014 outside Sep 16\u201319 window"
+      },
+      {
+        "title": "Optimus factory steel frame at Giga Texas North Campus",
+        "url": "https://www.teslarati.com/new-drone-video-shows-teslas-optimus-factory-reaching-a-turning-point/",
+        "decision": "skip",
+        "reason": "Optimus production / factory steel; passing Terafab mention only \u2014 doesNotOwn"
+      },
+      {
+        "title": "College Station prepares for Terafab impact on region (The Eagle)",
+        "url": "https://theeagle.com/news/local/business/development/article_08ac86f5-3745-4489-9348-995da302cdb5.html",
+        "decision": "skip",
+        "reason": "City-council regional-impact briefing matching KBTX Sep 10/11 coverage already outside this window"
+      }
+    ],
+    "metricCandidates": []
+  }
+}

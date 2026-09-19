@@ -1,0 +1,200 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-09-19",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q3 2026 deliveries forecast September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Vietnam subsidiary 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Q3 2026 Barclays deliveries 475000",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslanorth.com Forum Mobility Megacharger 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Japan Model Y $23000 Bloomberg September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Q3 2026 production deliveries report October 2",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-looks-expand-into-new-asian-market-strengthening-presence/",
+        "kept": false,
+        "reason": "Vietnam LLC filing dated 2026-09-14, before dateFrom 2026-09-16"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/14/tesla-vietnam-subsidiary-ho-chi-minh/",
+        "kept": false,
+        "reason": "outside date window (2026-09-14)"
+      },
+      {
+        "url": "https://www.tipranks.com/news/the-fly/barclays-sees-tesla-q3-deliveries-beating-expectations-thefly-news",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.zerohedge.com/technology/barclays-sees-two-key-drivers-potential-tesla-q3-delivery-beat",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/barclays-lifts-tesla-price-target-q3-earnings-ai-momentum/",
+        "kept": false,
+        "reason": "stale 2025 Barclays PT note; teslabriefing misattributed 2026 475k print to this URL"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/17/tesla-megacharger-forum-mobility-california/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/09/17/tesla-public-megachargers-forum-mobility-semi-depots/",
+        "kept": true,
+        "reason": "corroboration of Forum Mobility Megacharger story"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.japantimes.co.jp/business/2026/09/18/companies/tesla-cheap-model/",
+        "kept": true,
+        "reason": "Bloomberg/Japan Times corroboration of Tokyo Model Y subsidy price"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-india-model-y-diwali-delivery/",
+        "kept": false,
+        "reason": "festival promo, no volume metric, India already a live market"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+        "kept": false,
+        "reason": "factory PR tour; 50k/year is nameplate, no verified weekly rate"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+        "kept": false,
+        "reason": "Cybercab registrations \u2192 cybercab, not productionDelivery"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-roadster-unveiling-getting-hyped-up-elon-musk/",
+        "kept": false,
+        "reason": "Oct 1 Roadster reveal already in recentKeyChanges"
+      },
+      {
+        "url": "https://cnevpost.com/tesla/",
+        "kept": false,
+        "reason": "tag index; August China prints already in seenUrls, no new September monthly"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Barclays lifts Q3 delivery estimate to 475k \u2014 still down vs Q2 480k, vs Goldman 435k",
+        "url": "https://www.tipranks.com/news/the-fly/barclays-sees-tesla-q3-deliveries-beating-expectations-thefly-news",
+        "decision": "file",
+        "reason": "new IR consensus print in window, contradicts last week's Goldman 435k cut"
+      },
+      {
+        "title": "Tesla to run public Megachargers at 3 Forum Mobility CA depots; 330+ Semi reservations",
+        "url": "https://teslanorth.com/2026/09/17/tesla-megacharger-forum-mobility-california/",
+        "decision": "file",
+        "reason": "new Semi partner-charging + reservation figure, distinct from Sept 15 pre-assembled hardware"
+      },
+      {
+        "title": "Tesla reopens Roadster reservations at $50k deposit \u2014 still no production date",
+        "url": "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit/",
+        "decision": "file",
+        "reason": "new development vs last week's Oct 1 reveal date"
+      },
+      {
+        "title": "Tokyo Model Y effective price under $23k after subsidies \u2014 export win, not a Tesla cut",
+        "url": "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies/",
+        "decision": "file",
+        "reason": "verified Shanghai-export demand/pricing datapoint in window, Bloomberg + TeslaNorth"
+      },
+      {
+        "title": "Tesla registers $3M Vietnam subsidiary in Ho Chi Minh City",
+        "url": "https://teslanorth.com/2026/09/14/tesla-vietnam-subsidiary-ho-chi-minh/",
+        "decision": "skip",
+        "reason": "date 2026-09-14 is before dateFrom 2026-09-16 (STALE_DATE); filing is LLC paperwork, no launch/pricing/deliveries"
+      },
+      {
+        "title": "Goldman Sachs slashes Tesla Q3 delivery forecast to 435k",
+        "url": "https://blockonomi.com/tesla-tsla-stock-downgraded-goldman-sachs-slashes-q3-delivery-projections-amid-demand-concerns/",
+        "decision": "skip",
+        "reason": "seenUrl / already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla India says order a Model Y today for delivery before Diwali",
+        "url": "https://teslanorth.com/2026/09/19/tesla-india-model-y-diwali-delivery/",
+        "decision": "skip",
+        "reason": "holiday fulfillment promo, no volume number, not a new market entry"
+      },
+      {
+        "title": "Top Gear Tech tours production Tesla Semi and Nevada factory",
+        "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+        "decision": "skip",
+        "reason": "PR factory tour; 50k/year nameplate and 17M test miles are not a verified weekly production metric"
+      },
+      {
+        "title": "Tesla adds 9 Cybercabs in Texas, fleet hits 58",
+        "url": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+        "decision": "skip",
+        "reason": "doesNotOwn: Cybercab unit production/fleet \u2192 cybercab; TxMCCS-style registration not passenger P&D"
+      },
+      {
+        "title": "Tesla Roadster unveiling is getting hyped up by Elon Musk",
+        "url": "https://www.teslarati.com/tesla-roadster-unveiling-getting-hyped-up-elon-musk/",
+        "decision": "skip",
+        "reason": "same Oct 1 Waco reveal already in recentKeyChanges"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 475000,
+        "decision": "reject",
+        "reason": "Barclays estimate, not official Tesla Q3 production/delivery print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 435000,
+        "decision": "reject",
+        "reason": "Goldman estimate already filed last week; not official P&D"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 330,
+        "decision": "reject",
+        "reason": "Forum Mobility Semi reservations/offtake, not delivered vehicles"
+      }
+    ]
+  }
+}

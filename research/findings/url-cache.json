@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-16",
+  "lastUpdated": "2026-09-19",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1730,23 +1730,114 @@
       "lastSeen": "2026-09-16",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "Tesla and SpaceX sue TERA-print to secure 'Terafab' name \u2014 preemptive federal action"
+    },
+    "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas": {
+      "originalUrl": "https://teslanorth.com/2026/09/18/tesla-cybercab-fleet-58-texas/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Cybercab Production",
+      "title": "Texas Cybercab registrations climb to 58 after nine new VINs"
+    },
+    "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety": {
+      "originalUrl": "https://www.teslaoracle.com/2026/09/18/first-responder-training-and-feedback-enhances-tesla-cybercab-crash-and-fire-safety/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Cybercab Production",
+      "title": "Tesla trains Austin first responders on Cybercab crash and fire rescue"
+    },
+    "https://driveteslacanada.ca/news/tesla-fsd-safety-data-belgium": {
+      "originalUrl": "https://driveteslacanada.ca/news/tesla-fsd-safety-data-belgium/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "FSD Country Approvals",
+      "title": "Flemish Minister Presents Tesla-Supplied Belgian FSD Stats Ahead of Oct 6 TCMV Vote"
+    },
+    "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion": {
+      "originalUrl": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.10 (2026.27.10): identical notes to v14.3.9, 0.2% TeslaFi"
+    },
+    "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz": {
+      "originalUrl": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "FSD v15 Software",
+      "title": "Tesla AUNZ: 160M km FSD, 40% fewer collisions after 1 year supervised"
+    },
+    "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas": {
+      "originalUrl": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Optimus Production",
+      "title": "Giga Texas Optimus steel frame nears north beam \u2014 still a construction site, not a factory"
+    },
+    "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources": {
+      "originalUrl": "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Optimus Production",
+      "title": "Ningbo Optimus supplier-audit headlines fade as named vendors deny new Tesla inspections"
+    },
+    "https://www.tipranks.com/news/the-fly/barclays-sees-tesla-q3-deliveries-beating-expectations-thefly-news": {
+      "originalUrl": "https://www.tipranks.com/news/the-fly/barclays-sees-tesla-q3-deliveries-beating-expectations-thefly-news",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Vehicle Production & Delivery",
+      "title": "Barclays lifts Q3 delivery estimate to 475k \u2014 still down vs Q2 480k, vs Goldman 435k"
+    },
+    "https://teslanorth.com/2026/09/17/tesla-megacharger-forum-mobility-california": {
+      "originalUrl": "https://teslanorth.com/2026/09/17/tesla-megacharger-forum-mobility-california/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla to run public Megachargers at 3 Forum Mobility CA depots; 330+ Semi reservations"
+    },
+    "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit": {
+      "originalUrl": "https://teslanorth.com/2026/09/18/tesla-roadster-reservations-50000-deposit/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla reopens Roadster reservations at $50k deposit \u2014 still no production date"
+    },
+    "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies": {
+      "originalUrl": "https://teslanorth.com/2026/09/19/tesla-model-y-tokyo-under-23000-subsidies/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tokyo Model Y effective price under $23k after subsidies \u2014 export win, not a Tesla cut"
+    },
+    "https://theeagle.com/news/local/business/development/article_daa444bd-60f5-420a-a731-d9353ff0e663.html": {
+      "originalUrl": "https://theeagle.com/news/local/business/development/article_daa444bd-60f5-420a-a731-d9353ff0e663.html",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "CSISD board briefed on Terafab housing spillover, not Grimes tax base"
+    },
+    "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment": {
+      "originalUrl": "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment/",
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck"
     }
   },
   "stats": {
-    "totalUrls": 247,
+    "totalUrls": 260,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 18,
-      "Cybercab Production": 37,
-      "FSD v15 Software": 25,
-      "Vehicle Production & Delivery": 36,
+      "Optimus Production": 20,
+      "Cybercab Production": 39,
+      "FSD v15 Software": 27,
+      "Vehicle Production & Delivery": 41,
       "unknown": 52,
-      "FSD Country Approvals": 22,
+      "FSD Country Approvals": 23,
       "4680 Battery Cell Production": 5,
       "Terafab Manufacturing": 4,
       "AI Chip Production": 11,
       "Job Postings": 17,
-      "Terafab In-House Chip Manufacturing": 11
+      "Terafab In-House Chip Manufacturing": 12
     }
   }
 }

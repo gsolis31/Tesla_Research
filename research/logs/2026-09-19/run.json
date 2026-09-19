@@ -1,0 +1,155 @@
+{
+  "date": "2026-09-19",
+  "weekOf": "2026-09-14",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 8,
+      "fetched": 11,
+      "considered": 6,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 5,
+      "fetched": 10,
+      "considered": 8,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 7,
+      "fetched": 12,
+      "considered": 6,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 7,
+      "fetched": 14,
+      "considered": 10,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 6,
+      "fetched": 15,
+      "considered": 10,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 14,
+      "fetched": 12,
+      "considered": 6,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range. Tier 1 Tesla sites had no AI5/AI6/Dojo/foundry stories. English follow-ups of Samsung Taylor AI5 trial production (Sedaily/BusinessKorea Sept 15, already filed) added no new yield, sample, or shipment numbers; mass production and Tesla supply remain 2027. AI6 December tape-out target unchanged. Intel 14A 'evaluation' is an eight-company analyst list, not a Tesla chip milestone. Terafab All-In/trademark coverage belongs to terafab.",
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 10,
+      "fetched": 8,
+      "considered": 3,
+      "skipped": 3,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 9,
+      "fetched": 9,
+      "considered": 9,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 8,
+      "fetched": 11,
+      "considered": 7,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant AI/robotics/Optimus hiring news in date range; AltIndex count +58 is a metric tick only",
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 2,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-09-19/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-09-19/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 13,
+    "covered": 11,
+    "ignored": 0,
+    "gapCount": 2,
+    "queries": 9,
+    "gaps": [
+      {
+        "title": "Tesla AUNZ: FSD Supervised logs 160 million km in first year with local safety scorecard",
+        "url": "https://teslanorth.com/2026/09/18/tesla-fsd-160-million-km-australia-nz/",
+        "likelyCategory": "fsd"
+      },
+      {
+        "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck",
+        "url": "https://electrek.co/2026/09/16/tesla-accordion-supercharger-deployment/",
+        "likelyCategory": "productionDelivery"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 13,
+    "duplicatesRemoved": 0,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 0,
+    "totalKeyChanges": 12,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

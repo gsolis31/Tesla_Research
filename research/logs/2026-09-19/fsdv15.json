@@ -1,0 +1,194 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-09-19",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v14.3.10 2026.27.10",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v15 software September 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD Australia New Zealand 160 million km collisions",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "Tesla FSD v14.2 Lite HW3 rollout September 2026",
+        "tool": "web_fetch",
+        "hits": 2
+      },
+      {
+        "q": "Tesla FSD upcoming features pothole Grok v15",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla FSD 2026.28.5 Oceania v14.3.9",
+        "tool": "web_fetch",
+        "hits": 2
+      },
+      {
+        "q": "Tesla FSD Europe 2026.27.300 14.2.2.6",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.10/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.28.5/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-update-2026-27-10",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-supervised-hits-160m-km-in-australia-new-zealand",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4705/teslas-upcoming-full-self-driving-features",
+        "kept": false,
+        "reason": "recap of already-filed Grok/pothole/v15 items"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/15/fsd-v14-2-lite-goes-wide-release-legacy-tesla-owner-reviews-rollout-status/",
+        "kept": false,
+        "reason": "dated 2026-09-15, outside window / last-week Lite recap"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.6/release-notes",
+        "kept": false,
+        "reason": "seenUrl / last-week v14.3.9 + v14.2 Lite"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4708/tesla-launches-vehicle-to-home-with-powerwall-in-update-20262710",
+        "kept": false,
+        "reason": "Cybertruck V2H energy feature, not FSD software"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.300/release-notes",
+        "kept": false,
+        "reason": "Europe FSD 14.2.2.6 + UNECE recall merge, dated 2026-09-15"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.200/release-notes",
+        "kept": false,
+        "reason": "dated 2026-09-01, Europe Summer merge, not new FSD"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.100.1/release-notes",
+        "kept": false,
+        "reason": "dated 2026-08-24, outside window"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-in-belgium-9-6x-lower-crash-risk-outside-highways",
+        "kept": false,
+        "reason": "country safety stats \u2192 fsd"
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v14.3.10 (2026.27.10) copy-paste of v14.3.9 notes",
+        "url": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+        "decision": "file",
+        "reason": "new NA OTA version in window; FSD notes unchanged vs last week's v14.3.9"
+      },
+      {
+        "title": "Tesla AUNZ 160M km FSD / 40% fewer collisions plus Oceania v14.3.9 OTA",
+        "url": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+        "decision": "file",
+        "reason": "official regional FSD miles and software-performance stats in window; 2026.28.5 is the matching Oceania OTA"
+      },
+      {
+        "title": "Tesla's Upcoming Full Self-Driving Features",
+        "url": "https://www.notateslaapp.com/news/4705/teslas-upcoming-full-self-driving-features",
+        "decision": "skip",
+        "reason": "roundup of already-filed Grok, pothole, parking-habits, and v15 parameter claims"
+      },
+      {
+        "title": "FSD v14.2 Lite wide release / HW3 owner reviews",
+        "url": "https://www.teslaoracle.com/2026/09/15/fsd-v14-2-lite-goes-wide-release-legacy-tesla-owner-reviews-rollout-status/",
+        "decision": "skip",
+        "reason": "dated 2026-09-15, outside window; criticalNews already covers v14.2 Lite"
+      },
+      {
+        "title": "FSD v14.3.9 (2026.27.6) MLIR 2 / Automatic Collision Evasion",
+        "url": "https://www.teslaoracle.com/2026/09/12/tesla-rolls-out-fsd-v14-3-9-2026-27-6-with-automatic-collision-evasion-feature-details-and-official-release-notes/",
+        "decision": "skip",
+        "reason": "seenUrl / last-week recap"
+      },
+      {
+        "title": "Elluswamy: FSD v15 targeting commercial robotaxi fleet in October",
+        "url": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+        "decision": "skip",
+        "reason": "seenUrl / last-week recap"
+      },
+      {
+        "title": "Tesla plans big safety improvements for Full Self-Driving v15",
+        "url": "https://www.teslarati.com/tesla-plans-big-safety-improvements-full-self-driving-v15/",
+        "decision": "skip",
+        "reason": "seenUrl / last-week recap"
+      },
+      {
+        "title": "Tesla FSD in Belgium: 9.6x lower crash risk outside highways",
+        "url": "https://www.basenor.com/blogs/news/tesla-fsd-in-belgium-9-6x-lower-crash-risk-outside-highways",
+        "decision": "skip",
+        "reason": "country-level safety dataset belongs to fsd, not fsdv15 software versions"
+      },
+      {
+        "title": "Vehicle-to-Home with Powerwall in 2026.27.10",
+        "url": "https://www.notateslaapp.com/news/4708/tesla-launches-vehicle-to-home-with-powerwall-in-update-20262710",
+        "decision": "skip",
+        "reason": "Cybertruck energy feature; FSD notes in this build are unchanged"
+      },
+      {
+        "title": "Europe 2026.27.300 FSD 14.2.2.6 Summer merge",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.300/release-notes",
+        "decision": "skip",
+        "reason": "dated 2026-09-15; Europe lag on 14.2.2.6, not a new NA FSD version"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdVersionRollout",
+        "count": 21,
+        "decision": "reject",
+        "reason": "TeslaFi day-one install count for 2026.27.10, not a tracked fsdv15 metric series"
+      },
+      {
+        "series": "fsdMiles",
+        "count": 160000000,
+        "decision": "reject",
+        "reason": "regional AU/NZ km, not a global cumulative FSD-miles series in this config"
+      }
+    ]
+  }
+}

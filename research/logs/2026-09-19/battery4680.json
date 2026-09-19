@@ -1,0 +1,143 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-09-19",
+  "filed": 0,
+  "skipReason": "No significant news found in date range",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery September 2026",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Tesla 4680 Berlin OR Texas OR yield OR \"dry electrode\" OR GWh site:teslanorth.com 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla 4680 yield OR GWh OR \"dry electrode\" OR Berlin September 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "4680",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "teslarati 4680",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "teslarati posts after 2026-09-16",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "teslanorth battery after 2026-09-16",
+        "tool": "web_fetch",
+        "hits": 2
+      },
+      {
+        "q": "electrek 4680",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "teslanorth dry electrode",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "teslanorth GWh after 2026-09-01",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+        "kept": false,
+        "reason": "in-window Semi factory tour; 4680 pack mention only, no cell GWh/yield"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/05/tesla-cybertruck-gulf-coast-lithium-4680-2/",
+        "kept": false,
+        "reason": "seenUrl / outside window (Sep 5 feedstock origin, not cell output)"
+      },
+      {
+        "url": "https://teslanorth.com/2026/08/21/tesla-giga-texas-cathode-factory-video/",
+        "kept": false,
+        "reason": "seenUrl / outside window"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-battery-challenge/",
+        "kept": false,
+        "reason": "July Cell Giga Challenge recap; no Sep 16\u201319 development"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-semi-fsd-self-driving/",
+        "kept": false,
+        "reason": "July Q2 recap; 4680 bottleneck restatement, not new this week"
+      },
+      {
+        "url": "https://electrek.co/2026/07/07/tesla-giga-berlin-cell-giga-challenge/",
+        "kept": false,
+        "reason": "July Berlin 18 GWh / Cell Giga Challenge; outside window"
+      },
+      {
+        "url": "https://electrek.co/2026/08/20/geely-500-wh-kg-solid-state-battery-2027-pilot/",
+        "kept": false,
+        "reason": "Geely solid-state; 4680 cited only as density comparison"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-breaks-ground-on-650m-2-8-gwh-megapack-site-in-belgium",
+        "kept": false,
+        "reason": "Megapack energy-storage GWh \u2014 doesNotOwn"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Top Gear Tech Tours Production Tesla Semi and Nevada Factory",
+        "url": "https://teslanorth.com/2026/09/18/top-gear-tech-tesla-semi-nevada-factory/",
+        "decision": "skip",
+        "reason": "In-window, but 4680 is pack architecture (cells in structural packs, 548 kWh option). No Texas/Berlin cell-line GWh, yield, scrap, or dry-electrode update. Vehicle/Semi factory belongs elsewhere."
+      },
+      {
+        "title": "Tesla Cybertruck Hits First Gulf Coast Lithium 4680 Milestone",
+        "url": "https://teslanorth.com/2026/09/05/tesla-cybertruck-gulf-coast-lithium-4680-2/",
+        "decision": "skip",
+        "reason": "seenUrl; dated Sep 5, outside 2026-09-16 to 2026-09-19. Feedstock origin, not cell output."
+      },
+      {
+        "title": "Tesla Breaks Ground on $650M, 2.8 GWh Megapack Site in Belgium",
+        "url": "https://www.basenor.com/blogs/news/tesla-breaks-ground-on-650m-2-8-gwh-megapack-site-in-belgium",
+        "decision": "skip",
+        "reason": "Energy storage deployment GWh (Megapack) is doesNotOwn \u2192 productionDelivery if quarterly."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680",
+        "count": 548,
+        "decision": "reject",
+        "reason": "Semi pack kWh from Top Gear tour, not 4680 cell GWh production"
+      },
+      {
+        "series": "battery4680",
+        "count": 2.8,
+        "decision": "reject",
+        "reason": "Belgium Megapack site GWh is energy storage, not 4680 cell output"
+      },
+      {
+        "series": "battery4680",
+        "count": 18,
+        "decision": "reject",
+        "reason": "Berlin 18 GWh H1 2027 target restated in older Cell Giga Challenge coverage; no new figure this week"
+      }
+    ]
+  }
+}
