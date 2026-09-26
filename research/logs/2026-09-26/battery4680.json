@@ -1,0 +1,210 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-09-26",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla 4680 GWh yield dry electrode site:teslarati.com 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla 4680 site:teslanorth.com September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "\"4680\" Tesla (Giga Texas OR Berlin OR cathode OR \"dry electrode\") September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybertruck 4680 charging curve improvements September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "\"4680\" (Tesla OR \"Giga Texas\" OR \"Giga Berlin\") (September OR \"Sep\" OR \"this week\") 2026 yield OR GWh OR scrap OR \"dry electrode\" OR cathode",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com 4680 September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:basenor.com 4680 September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla \"Cell Giga Challenge\" OR \"4680\" Berlin September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 OR \"dry cathode\" OR \"cathode plant\" OR \"cathode material\" after:2026-09-18",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Semi rollout 4680 battery cells GWh Nevada September 24 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslarati.com Cybercab cathode OR \"4680\" September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "\"Giga Berlin\" 4680 (September OR \"Sep 2\" OR \"this week\") 2026 -challenge",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "(\"4680\" OR \"dry cathode\" OR \"cathode material\" OR \"cathode plant\") (Tesla OR Cybercab OR Berlin) since:2026-09-19 until:2026-09-27",
+        "tool": "x_keyword_search",
+        "hits": 5
+      },
+      {
+        "q": "from:elonmusk cathode since:2026-09-23 until:2026-09-26",
+        "tool": "x_keyword_search",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/23/tesla-first-cybercab-in-house-cathode/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4729/tesla-builds-first-cybercab-using-in-house-battery-materials",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://evwire.com/p/tesla-cybercab-in-house-cathode-giga-texas",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production/",
+        "kept": false,
+        "reason": "Semi factory volume belongs to productionDelivery; 4680 line is a cell-format restatement with no GWh or yield"
+      },
+      {
+        "url": "https://electrek.co/2026/09/25/tesla-semi-volume-production-launch-nevada-factory/",
+        "kept": false,
+        "reason": "Tier-2 corroboration only; truck volume, and Tesla gave no new pack kWh or cell output"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4738/tesla-semi-event-recap-everything-that-was-announced",
+        "kept": false,
+        "reason": "'battery cell and pack line' is not a disclosed 4680 GWh or yield"
+      },
+      {
+        "url": "https://evwire.com/p/tesla-semi-high-volume-production-details-review",
+        "kept": false,
+        "reason": "Same Semi rollout; 2170-to-4680 claim has no cell production metric"
+      }
+    ],
+    "considered": [
+      {
+        "title": "First Cybercab uses Giga Texas nickel cathode; still no 4680 output figure",
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "decision": "file",
+        "reason": "New Sep 23\u201324 material tie-in. Not the Aug 21 plant-operating video already in seenUrls. Not a GWh or yield update."
+      },
+      {
+        "title": "Tesla Builds First Cybercab Using In-House Cathode Material",
+        "url": "https://teslanorth.com/2026/09/23/tesla-first-cybercab-in-house-cathode/",
+        "decision": "file",
+        "reason": "Tier-1 corroboration of the same Robotaxi post; used as a second source, not a second keyChange."
+      },
+      {
+        "title": "Tesla Semi high-volume production uses in-house 4680",
+        "url": "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production/",
+        "decision": "skip",
+        "reason": "Best owner is productionDelivery (Semi volume). In-house 4680 and an on-site battery line came with no cell GWh, yield, or new pack kWh."
+      },
+      {
+        "title": "Cybertruck 10-80% charging time cut via 4680 and firmware",
+        "url": "https://driveteslacanada.ca/news/cybertruck-10-80-charging-time-4680-improvements/",
+        "decision": "skip",
+        "reason": "Published Sep 14, before the Sep 19 window. 500 kW peak dates to 2024; no new cell output figure."
+      },
+      {
+        "title": "Giga Berlin 18 GWh 4680 target recycled as a Sep 25 update",
+        "url": "https://driveteslacanada.ca/news/tesla-giga-berlin-battery-expansion-18gwh/",
+        "decision": "skip",
+        "reason": "May 12 investment recap. Berlin remains Construction; 18 GWh not due until H1 2027. No in-window change."
+      },
+      {
+        "title": "Dry-electrode mass production and Model Y 4680 packs",
+        "url": "https://www.teslarati.com/tesla-confirms-finally-solved-4680-battery-dry-cathode-process/",
+        "decision": "skip",
+        "reason": "January 2026 Q4 IR recap, outside the window. TipRanks republished the same item with a Sep 25 page date."
+      },
+      {
+        "title": "Gulf Coast lithium in a production Cybertruck 4680 pack",
+        "url": "https://teslanorth.com/2026/09/05/tesla-cybertruck-gulf-coast-lithium-4680-2/",
+        "decision": "skip",
+        "reason": "seenUrl and before the window. Feedstock origin, not a new output milestone."
+      },
+      {
+        "title": "Cell Giga Challenge at Giga Berlin",
+        "url": "https://electrek.co/2026/07/07/tesla-giga-berlin-cell-giga-challenge/",
+        "decision": "skip",
+        "reason": "July program. Andr\u00e9 Thierig's Sep 22 post was a family day, not a cell-line update."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "cathodeGWh",
+        "count": 10,
+        "decision": "reject",
+        "reason": "Standing Q2 IR Early Ramp figure, not a new reading this week."
+      },
+      {
+        "series": "cybercabPackKWh",
+        "count": 47.6,
+        "decision": "reject",
+        "reason": "Not a Tesla App calculated usable capacity. Absent from the Sep 23\u201324 Tesla posts. Not a cell-output metric."
+      },
+      {
+        "series": "cell4680GWh",
+        "count": 40,
+        "decision": "reject",
+        "reason": "Unverified restatement on X of a prior capacity slide. Not disclosed in this week's primary posts."
+      },
+      {
+        "series": "berlin4680GWh",
+        "count": 18,
+        "decision": "reject",
+        "reason": "May 2026 nameplate target, still H1 2027 construction. Not new output."
+      },
+      {
+        "series": "semiNameplateTrucks",
+        "count": 50000,
+        "decision": "reject",
+        "reason": "Truck-factory nameplate, owned by productionDelivery. Not 4680 cell GWh or yield."
+      }
+    ]
+  }
+}

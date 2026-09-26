@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-19",
+  "lastUpdated": "2026-09-26",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1671,7 +1671,7 @@
     "https://altindex.com/ticker/tsla/job-posts": {
       "originalUrl": "https://altindex.com/ticker/tsla/job-posts",
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-09-16",
+      "lastSeen": "2026-09-26",
       "category": "Job Postings",
       "title": "Tesla LinkedIn US job index jumps to 7,000+ in mid-September \u2014 bulk driven by service/sales, not AI/robotics"
     },
@@ -1821,23 +1821,156 @@
       "lastSeen": "2026-09-19",
       "category": "Vehicle Production & Delivery",
       "title": "Tesla deploys first Accordion Supercharger: 16 factory-preassembled stalls per truck"
+    },
+    "https://aishiftnews.ca/robotaxi-radar": {
+      "originalUrl": "https://aishiftnews.ca/robotaxi-radar/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Cybercab Production",
+      "title": "Texas Cybercab roster jumps from 58 to 126 while rider-tagged cars stay near 44"
+    },
+    "https://teslanorth.com/2026/09/25/tesla-robotaxi-26-8-2-decompile": {
+      "originalUrl": "https://teslanorth.com/2026/09/25/tesla-robotaxi-26-8-2-decompile/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Cybercab Production",
+      "title": "Robotaxi app 26.8.2 decompile shows Stop Now and door-unlock strings, not shipped features"
+    },
+    "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed": {
+      "originalUrl": "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD Country Approvals",
+      "title": "October 6 TCMV Agenda Has No Vote on EU-Wide FSD"
+    },
+    "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system": {
+      "originalUrl": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system?lang=en-GB",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD Country Approvals",
+      "title": "Czechia Recognises Dutch FSD Supervised Approval, Seventh EU State"
+    },
+    "https://teslanorth.com/2026/09/24/belgian-fsd-speed-limit-study": {
+      "originalUrl": "https://teslanorth.com/2026/09/24/belgian-fsd-speed-limit-study/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD Country Approvals",
+      "title": "Brussels Safety Study Finds FSD Speeding in Most 30 km/h Segments"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.27.11/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.27.11/release-notes",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.10 (2026.27.11) widens in North America on unchanged v14.3.9 notes"
+    },
+    "https://www.notateslaapp.com/news/4716/tesla-fsd-v1439-triggers-false-camera-service-alerts": {
+      "originalUrl": "https://www.notateslaapp.com/news/4716/tesla-fsd-v1439-triggers-false-camera-service-alerts",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.9 false camera-service alerts; Tesla Support calls it a software bug"
+    },
+    "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x": {
+      "originalUrl": "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "FSD v15 Software",
+      "title": "HW3 refresh Model S and Model X get first FSD v14.2 Lite installs"
+    },
+    "https://www.humanoidsdaily.com/news/tesla-optimus-production-hundreds-per-week-report": {
+      "originalUrl": "https://www.humanoidsdaily.com/news/tesla-optimus-production-hundreds-per-week-report",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Optimus Production",
+      "title": "Fremont Optimus hit hundreds a week in August \u2014 internal V3 units that still cannot generalize"
+    },
+    "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders": {
+      "originalUrl": "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Optimus Production",
+      "title": "Gen 3 Optimus app images are August mock art, not a hardware reveal"
+    },
+    "https://www.globaltimes.cn/page/202609/1371152.shtml": {
+      "originalUrl": "https://www.globaltimes.cn/page/202609/1371152.shtml",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Optimus Production",
+      "title": "Sanhua and Joyson will not confirm Optimus supplier certification headlines"
+    },
+    "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production": {
+      "originalUrl": "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla inaugurates Nevada Semi factory without disclosing a build rate"
+    },
+    "https://www.ttnews.com/articles/tesla-semi-olrders": {
+      "originalUrl": "https://www.ttnews.com/articles/tesla-semi-olrders",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Vehicle Production & Delivery",
+      "title": "ZET SCALE names Tesla primary for 2,500 electric trucks; Semi share undisclosed"
+    },
+    "https://cnevpost.com/2026/09/25/tesla-offers-china-discounts-sales-push": {
+      "originalUrl": "https://cnevpost.com/2026/09/25/tesla-offers-china-discounts-sales-push/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla China extends Model 3/Y cash discounts through Oct 31 and trims the Model Y cut"
+    },
+    "https://eletric-vehicles.com/tesla/ubs-sees-tesla-q3-deliveries-falling-5-year-on-year-keeps-385-price-target": {
+      "originalUrl": "https://eletric-vehicles.com/tesla/ubs-sees-tesla-q3-deliveries-falling-5-year-on-year-keeps-385-price-target/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Vehicle Production & Delivery",
+      "title": "UBS sees 470k Q3 deliveries, above a lowered consensus but below Q2 and down 5% YoY"
+    },
+    "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "4680 Battery Cell Production",
+      "title": "First Cybercab uses Giga Texas nickel cathode; still no 4680 output figure"
+    },
+    "https://www.kbtx.com/2026/09/24/terafab-may-not-be-impacted-by-gov-abbotts-pause-data-centers": {
+      "originalUrl": "https://www.kbtx.com/2026/09/24/terafab-may-not-be-impacted-by-gov-abbotts-pause-data-centers/",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "County calls Terafab exempt from Abbott data-center permit freeze; state has not"
+    },
+    "https://x.com/JoeTegtmeyer/status/2102383381916930554": {
+      "originalUrl": "https://x.com/JoeTegtmeyer/status/2102383381916930554",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Austin research-fab slab gets more concrete; Grimes production start still Dec. 1"
+    },
+    "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC": {
+      "originalUrl": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "TERA-print served in Terafab name suit; answer due Oct. 9 with no ruling"
     }
   },
   "stats": {
-    "totalUrls": 260,
+    "totalUrls": 279,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 20,
-      "Cybercab Production": 39,
-      "FSD v15 Software": 27,
-      "Vehicle Production & Delivery": 41,
+      "Optimus Production": 23,
+      "Cybercab Production": 41,
+      "FSD v15 Software": 30,
+      "Vehicle Production & Delivery": 45,
       "unknown": 52,
-      "FSD Country Approvals": 23,
-      "4680 Battery Cell Production": 5,
+      "FSD Country Approvals": 26,
+      "4680 Battery Cell Production": 6,
       "Terafab Manufacturing": 4,
       "AI Chip Production": 11,
       "Job Postings": 17,
-      "Terafab In-House Chip Manufacturing": 12
+      "Terafab In-House Chip Manufacturing": 15
     }
   }
 }

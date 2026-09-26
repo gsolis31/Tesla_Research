@@ -1,0 +1,237 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-09-26",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 September 2026 software update",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD v14.3.10 OR v14.3.11 OR 2026.27 OR 2026.28 September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla FSD Supervised release notes September 2026 site:notateslaapp.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "FSD v15 OR v14.3 teslarati OR teslanorth OR notateslaapp September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla FSD v15 October 2026 Elluswamy OR Musk",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "FSD v14.2 Lite Model S OR Model X September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD billion miles OR cumulative September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 2026.27.6.5 OR FSD 14.1 Lite South Korea September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:notateslaapp.com FSD v15 OR 14.2 Lite OR Automatic Collision Evasion September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Automatic Collision Evasion Tesla FSD video September 26 2026 notateslaapp",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD 14 billion OR 15 billion miles September 19-26 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla FSD v14.1 Lite South Korea 2026.27.6.5 teslarati OR teslanorth OR teslaoracle",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "FSD v14.3.11 OR v14.4 OR v15 OR 2026.32 release September 22-26 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD camera dirty OR cleaning OR service alert v14.3.9 September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslarati.com FSD September 2026 v14 OR v15 OR Lite",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Full Self-Driving release in the EU gets delayed September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "(from:elonmusk OR from:aelluswamy) (FSD OR v15 OR v14) since:2026-09-19 until:2026-09-27",
+        "tool": "x_keyword_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/22/tesla-brings-fsd-v14-2-lite-to-hardware-3-model-s-and-x/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.11/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.6.5/release-notes",
+        "kept": false,
+        "reason": "2-car TeslaFi drip of v14.1 Lite; notes say Available Worldwide and do not establish a new Korea version beyond July"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4739/watch-tesla-fsds-new-automatic-collision-evasion-feature-in-action-video",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4716/tesla-fsd-v1439-triggers-false-camera-service-alerts",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslascope.com/software",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslascope.com/fsd",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-fsd-v14-2-lite-hardware-3-model-s-model-x/",
+        "kept": false,
+        "reason": "page body did not return; S/X story already corroborated by Not a Tesla App and TeslaNorth"
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v14.3.10 (2026.27.11) widens in North America on unchanged v14.3.9 notes",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.11/release-notes",
+        "decision": "file",
+        "reason": "same FSD version as last week's 0.2% drip, but this week it became a wide North America wave with no new bullets"
+      },
+      {
+        "title": "FSD v14.3.9 false camera-service alerts; Tesla Support calls it a software bug",
+        "url": "https://www.notateslaapp.com/news/4716/tesla-fsd-v1439-triggers-false-camera-service-alerts",
+        "decision": "file",
+        "reason": "new quality defect on the shipping HW4 build, acknowledged by Tesla Support inside the date window"
+      },
+      {
+        "title": "HW3 refresh Model S and Model X get first FSD v14.2 Lite installs",
+        "url": "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x",
+        "decision": "file",
+        "reason": "the prior 'coming soon' item is now a real, still-tiny install wave"
+      },
+      {
+        "title": "First Automatic Collision Evasion clip re-engages FSD during a deliberate lane change",
+        "url": "https://www.notateslaapp.com/news/4739/watch-tesla-fsds-new-automatic-collision-evasion-feature-in-action-video",
+        "decision": "file",
+        "reason": "first on-road behavior of an already-shipped feature; the clip shows a takeover fight, not a new version"
+      },
+      {
+        "title": "FSD v14.3.10 identical notes at 0.2% TeslaFi",
+        "url": "https://teslanorth.com/2026/09/19/tesla-fsd-v14-3-10-collision-evasion/",
+        "decision": "skip",
+        "reason": "seenUrl; the new fact this week is the 2026.27.11 wave, filed separately"
+      },
+      {
+        "title": "Elluswamy: FSD v15 on the robotaxi fleet in October",
+        "url": "https://www.notateslaapp.com/news/4682/tesla-robotaxis-to-get-fsd-v15-start-running-247-next-month",
+        "decision": "skip",
+        "reason": "seenUrl; no new Musk or Elluswamy v15 post in this window"
+      },
+      {
+        "title": "Tesla AUNZ 160 million km / 40% fewer collisions",
+        "url": "https://www.notateslaapp.com/news/4704/tesla-fsd-cuts-collisions-by-40-in-australia-and-nz",
+        "decision": "skip",
+        "reason": "seenUrl; dated September 18, before this window"
+      },
+      {
+        "title": "FSD v14.1 Lite build 2026.27.6.5 labeled South Korea",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.27.6.5/release-notes",
+        "decision": "skip",
+        "reason": "TeslaFi shows 2 cars and 0%; notes say Available Worldwide and repeat August's v14.1 Lite bullets. Korea already had v14 Lite in July. Not a new stack and not a wide rollout"
+      },
+      {
+        "title": "EU FSD vote slips from October 6 to December",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed/",
+        "decision": "skip",
+        "reason": "country-approval story; owned by fsd, not fsdv15"
+      },
+      {
+        "title": "FSD Supervised approved in Czechia",
+        "url": "https://www.notateslaapp.com/news/4715/tesla-fsd-supervised-approved-for-launch-in-czechia",
+        "decision": "skip",
+        "reason": "country approval; owned by fsd"
+      },
+      {
+        "title": "1 million unsupervised robotaxi miles",
+        "url": "https://www.thecooldown.com/green-tech/tesla-cybercab-austin-unsupervised-miles/",
+        "decision": "skip",
+        "reason": "robotaxi ops mileage, owned by cybercab, not a customer FSD version"
+      },
+      {
+        "title": "2026.32.7 and 2026.26.6.3 firmware waves",
+        "url": "https://teslascope.com/software",
+        "decision": "skip",
+        "reason": "no FSD version on either build; 2026.32.7 is a non-FSD fix wave and 2026.26.6.3 is an Australia/New Zealand fix"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdSoftwareShare",
+        "count": 17.7,
+        "decision": "reject",
+        "reason": "Teslascope firmware distribution for 2026.27.11, not a cumulative miles series and not in this category's metrics"
+      },
+      {
+        "series": "fsdMiles",
+        "count": 14000000000,
+        "decision": "reject",
+        "reason": "14 billion mile mark was reported September 1, outside this window; no newer official milestone found"
+      },
+      {
+        "series": "unsupervisedMiles",
+        "count": 1000000,
+        "decision": "reject",
+        "reason": "robotaxi unsupervised miles belong to cybercab, not an fsdv15 customer-software metric"
+      }
+    ]
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "date": "2026-09-26",
+  "weekOf": "2026-09-21",
+  "dateFrom": "2026-09-19",
+  "dateTo": "2026-09-26",
+  "candidates": [
+    {
+      "title": "Tesla inaugurates Sparks Semi factory and starts customer handovers at a 50,000-a-year target",
+      "url": "https://www.notateslaapp.com/news/4738/tesla-semi-event-recap-everything-that-was-announced",
+      "date": "2026-09-25",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Sept 24 Nevada event opened the dedicated Semi plant and a redesigned truck; long-range claimed at 500 loaded miles and about 300 miles recovered in 30 minutes on a Megacharger"
+    },
+    {
+      "title": "ZET SCALE names Tesla primary OEM for up to 2,500 Class 8 trucks",
+      "url": "https://www.teslarati.com/tesla-semi-lands-the-biggest-electric-truck-deal-in-u-s-history/",
+      "date": "2026-09-22",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Largest US electric Class 8 order, but Kenworth, RIDE, and Volvo are secondary OEMs and the Semi share of the 2,500 is unpublished"
+    },
+    {
+      "title": "EU FSD vote slips off the Oct 6 TCMV agenda to December at the earliest",
+      "url": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/",
+      "date": "2026-09-25",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Draft agenda gives the Dutch Article 39 request 25 minutes of discussion and no vote; Musk replied 'sigh'"
+    },
+    {
+      "title": "Czechia recognizes Dutch FSD Supervised approval, seventh EU country",
+      "url": "https://www.notateslaapp.com/news/4715/tesla-fsd-supervised-approved-for-launch-in-czechia",
+      "date": "2026-09-21",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Ministry of Transport recognized the April RDW file on Sept 21; Tesla Europe says rollout starts soon, still SAE Level 2 and HW4 first"
+    },
+    {
+      "title": "Brussels group says FSD sped in 55% of tested 30 km/h zones",
+      "url": "https://electrek.co/2026/09/24/tesla-fsd-belgium-test-speeding-30-kmh-eu-vote/",
+      "date": "2026-09-24",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Johanna.be FSD30 study, published Sept 24, says the car often showed 50 km/h in 30 zones; independent of Tesla's own Belgian safety stats"
+    },
+    {
+      "title": "Optimus output hits several hundred a week, but robots still cannot generalize",
+      "url": "https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/",
+      "date": "2026-09-25",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "The Information says Fremont rose from dozens a week in Q2 to several hundred, with a 1,000-a-week year-end aim, while most units stay internal and basic tasks take days to learn"
+    },
+    {
+      "title": "Austin robotaxi active count falls back to 8 vehicles after the Cybercab launch spike",
+      "url": "https://electrek.co/2026/09/22/tesla-robotaxi-active-fleet-austin-crashes-8-vehicles/",
+      "date": "2026-09-22",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Robotaxi Tracker seven-day active Austin fleet is back to the June 2025 level even as Texas registrations keep climbing"
+    },
+    {
+      "title": "Texas robotaxi registrations hit 420 Model Ys and 126 Cybercabs",
+      "url": "https://www.teslaoracle.com/2026/09/26/tesla-robotaxi-and-cybercab-fleet-in-texas-surpasses-the-500-mark-420-126/",
+      "date": "2026-09-26",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Combined Texas roster at 546, with Cybercabs up from 58 last week and 69 on Sept 24; registrations are not the same as cars giving rides"
+    },
+    {
+      "title": "First Cybercab built with in-house Giga Texas nickel cathode",
+      "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+      "date": "2026-09-24",
+      "likelyCategory": "battery4680",
+      "whyItMightMatter": "Robotaxi account and Musk say the car used cathode from what they call the first cathode plant in the Americas, tying 4680 material supply to Cybercab"
+    },
+    {
+      "title": "Tesla Android app assets leak an Optimus Gen 3 design",
+      "url": "https://teslanorth.com/2026/09/23/optimus-gen-3-app-leak/",
+      "date": "2026-09-23",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Signed app files labeled Gen 3 show covered joints versus exposed Gen 2.5 hardware; Tesla has not confirmed the art is the production robot"
+    },
+    {
+      "title": "Tesla confirms FSD v14.3.9 false dirty-camera alerts and cancels service visits",
+      "url": "https://electrek.co/2026/09/22/tesla-fsd-v14-3-9-false-camera-service-alerts/",
+      "date": "2026-09-22",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Support told owners the clean-windshield warning on 2026.27.5/2026.27.6 is a software bug; v14.3.10 notes still do not say it is fixed"
+    },
+    {
+      "title": "FSD v14.2 Lite starts reaching HW3 Model S and Model X",
+      "url": "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x",
+      "date": "2026-09-23",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "First v14 Lite builds for redesigned HW3 S/X on 2026.27.10 and 2026.27.11; wave is small and legacy S/X are still waiting"
+    },
+    {
+      "title": "Tesla China extends Model 3/Y discounts through Oct 31 and cuts the Model Y incentive",
+      "url": "https://teslanorth.com/2026/09/25/tesla-china-model-y-october-promo/",
+      "date": "2026-09-25",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Tail-payment cut stays CNY 5,000 on Model 3 but drops from CNY 10,000 to CNY 7,000 on Model Y for orders delivered by Oct 31"
+    },
+    {
+      "title": "US Model 3 and Model Y L new-order delivery estimates slip into early 2027",
+      "url": "https://teslanorth.com/2026/09/22/model-3-y-deliveries-slip-2027/",
+      "date": "2026-09-22",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Cheapest Model 3 quotes January-March 2027 and Model Y L quotes January-February 2027, a sold-out signal separate from sell-side delivery cuts"
+    },
+    {
+      "title": "Large Cybercab and Model Y robotaxi lot spotted in Houston",
+      "url": "https://www.teslaoracle.com/2026/09/20/large-number-of-tesla-cybercab-robotaxis-spotted-in-houston-hinting-at-a-close-launch/",
+      "date": "2026-09-20",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Sept 19 footage shows a packed Houston staging lot, including Starlink-equipped Cybercabs, but no Cybercab service launch has been announced"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla September 19-26 2026 robotaxi Cybercab FSD Optimus AI5 4680 Terafab deliveries",
+        "tool": "web_search",
+        "hits": 15
+      },
+      {
+        "q": "site:teslarati.com Tesla September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslanorth.com Tesla September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslaoracle.com Tesla September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla NHTSA OR NTSB Cybercab OR FSD OR Optimus September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:nhtsa.gov Tesla Cybercab September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Q3 2026 deliveries OR earnings OR 4680 OR Terafab OR AI5 September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Semi Sparks inauguration handover September 24 2026 ZET SCALE",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla ZET SCALE 2,500 Semi primary OEM September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "EU delays Tesla FSD vote December TCMV October 6 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Czechia FSD Supervised September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla active robotaxi fleet Austin 8 vehicles September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Optimus Gen 3 app leak September 23 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD v14.3.9 dirty camera September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla Terafab OR AI5 OR 4680 OR job posting September 20-25 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4738/tesla-semi-event-recap-everything-that-was-announced",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-semi-lands-the-biggest-electric-truck-deal-in-u-s-history/",
+        "kept": true
+      },
+      {
+        "url": "https://www.ttnews.com/articles/tesla-semi-olrders",
+        "kept": false
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/tesla-set-formally-roll-out-semi-electric-trucks-nevada-event-2026-09-24/",
+        "kept": false
+      },
+      {
+        "url": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/",
+        "kept": true
+      },
+      {
+        "url": "https://www.reuters.com/business/eu-vote-teslas-supervised-self-driving-system-pushed-back-2026-09-25/",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4715/tesla-fsd-supervised-approved-for-launch-in-czechia",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/24/tesla-fsd-belgium-test-speeding-30-kmh-eu-vote/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/22/tesla-robotaxi-active-fleet-austin-crashes-8-vehicles/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/26/tesla-robotaxi-and-cybercab-fleet-in-texas-surpasses-the-500-mark-420-126/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/23/optimus-gen-3-app-leak/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/09/22/tesla-fsd-v14-3-9-false-camera-service-alerts/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4727/tesla-starts-rolling-out-fsd-v142-lite-to-hw3-model-s-and-model-x",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-china-model-y-october-promo/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/22/model-3-y-deliveries-slip-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/20/large-number-of-tesla-cybercab-robotaxis-spotted-in-houston-hinting-at-a-close-launch/",
+        "kept": true
+      }
+    ]
+  }
+}

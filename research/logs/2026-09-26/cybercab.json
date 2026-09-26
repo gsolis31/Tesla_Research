@@ -1,0 +1,230 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-09-26",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab September 2026",
+        "tool": "web_search",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Cybercab robotaxi Austin site:teslarati.com September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab site:teslanorth.com 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab robotaxi site:teslaoracle.com September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Cybercab after:2026-09-18 before:2026-09-27",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab Texas 126 registered September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab in-house cathode teslarati OR electrek OR reuters September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Robotaxi app 26.8.2 Stop Now Cybercab September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Cybercab Houston launch OR geofence September 2026 site:electrek.co OR site:reuters.com OR site:notateslaapp.com OR site:robotaxitracker.com",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab NHTSA September 2026 response OR deadline OR highway detour OR crash",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Cybercab Houston spotted September 20 2026 Tesla",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://aishiftnews.ca/robotaxi-radar/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/26/tesla-robotaxi-and-cybercab-fleet-in-texas-surpasses-the-500-mark-420-126/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/22/tesla-cybercab-67-austin-fleet/",
+        "kept": false,
+        "reason": "Tesla #67 post aligns with the Sept 22 registry step, not a separate active fleet"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/23/tesla-first-cybercab-in-house-cathode/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4729/tesla-builds-first-cybercab-using-in-house-battery-materials",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/23/cybercab-drive-unit-10-seconds/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-robotaxi-26-8-2-decompile/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/09/20/large-number-of-tesla-cybercab-robotaxis-spotted-in-houston-hinting-at-a-close-launch/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/cybercab",
+        "kept": false,
+        "reason": "page shell returned no article body; used AI Shift scrape of the same tracker instead"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Texas Cybercab roster jumps from 58 to 126 while rider-tagged cars stay near 44",
+        "url": "https://aishiftnews.ca/robotaxi-radar/",
+        "decision": "file",
+        "reason": "new Sept 22 and Sept 26 registry steps inside the window, with sightings flat"
+      },
+      {
+        "title": "Tesla Robotaxi and Cybercab fleet in Texas surpasses the 500 mark (420 + 126)",
+        "url": "https://www.teslaoracle.com/2026/09/26/tesla-robotaxi-and-cybercab-fleet-in-texas-surpasses-the-500-mark-420-126/",
+        "decision": "file",
+        "reason": "same roster event; Oracle calls the list an operating fleet, which the filing corrects"
+      },
+      {
+        "title": "Tesla's 67th Cybercab hits Austin streets",
+        "url": "https://teslanorth.com/2026/09/22/tesla-cybercab-67-austin-fleet/",
+        "decision": "skip",
+        "reason": "official #67 post matches the Sept 22 DMV step from 58 toward 69, not verified dispatch; folded into the roster item"
+      },
+      {
+        "title": "First in-house-cathode Cybercab is a single unit, not a volume ramp",
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "decision": "file",
+        "reason": "new Sept 23-24 production claim; one car, no output figure"
+      },
+      {
+        "title": "Cybercab drive units every 10 seconds",
+        "url": "https://teslanorth.com/2026/09/23/cybercab-drive-unit-10-seconds/",
+        "decision": "file",
+        "reason": "folded into the cathode item as a component takt, not a vehicle count"
+      },
+      {
+        "title": "Robotaxi app 26.8.2 decompile shows Stop Now and door-unlock strings, not shipped features",
+        "url": "https://teslanorth.com/2026/09/25/tesla-robotaxi-26-8-2-decompile/",
+        "decision": "file",
+        "reason": "new app strings dated Sept 21-24 for Cybercab pickup and doors; not a Tesla changelog"
+      },
+      {
+        "title": "Houston Cybercab lot is steering-wheel prototypes, not a paid launch",
+        "url": "https://www.teslaoracle.com/2026/09/20/large-number-of-tesla-cybercab-robotaxis-spotted-in-houston-hinting-at-a-close-launch/",
+        "decision": "file",
+        "reason": "in-window staging sighting; wheels present and no city launch"
+      },
+      {
+        "title": "NHTSA Cybercab special order still due September 30",
+        "url": "https://financefeeds.com/tesla-cybercab-nhtsa-special-order-aq26002/",
+        "decision": "skip",
+        "reason": "same Sept 10 special order already filed; no Tesla response this week"
+      },
+      {
+        "title": "Tesla skipped the exemption Zoox spent 11 months getting",
+        "url": "https://theweeklydriver.com/2026/09/tesla-cybercab-nhtsa-audit-self-certification/",
+        "decision": "skip",
+        "reason": "Sept 24 explainer of AQ26002 with no new agency action"
+      },
+      {
+        "title": "Grok 4.7 shipping unnamed FSD and Cybercab features",
+        "url": "https://teslanorth.com/2026/09/22/tesla-engineers-are-using-grok-4-7-to-ship-fsd-and-cybercab-features-overnight/",
+        "decision": "skip",
+        "reason": "no named Cybercab feature; FSD software versions belong to fsdv15"
+      },
+      {
+        "title": "Basenor says Robotaxi 26.8.2 makes Cybercab bookable",
+        "url": "https://www.basenor.com/blogs/news/tesla-update-26-8-2",
+        "decision": "skip",
+        "reason": "Cybercab booking has been live since Sept 3-4; changelog is minor fixes"
+      },
+      {
+        "title": "Cybercab Japan tour Nagoya and Shinjuku dates",
+        "url": "https://teslanorth.com/2026/09/07/tesla-cybercab-japan-tour/",
+        "decision": "skip",
+        "reason": "display tour already filed; still no rides, sales, or regulatory path"
+      },
+      {
+        "title": "Australia and New Zealand Cybercab display tour",
+        "url": "https://teslanorth.com/2026/09/15/tesla-cybercab-australia-nz-tour/",
+        "decision": "skip",
+        "reason": "posted September 15, before this window, and it is a static display"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 126,
+        "decision": "reject",
+        "reason": "TxDMV/TxMCCS Cybercab registrations on Sept 26, not live dispatch \u2014 robotaxiRegistered only"
+      },
+      {
+        "series": "cybercab",
+        "count": 126,
+        "decision": "reject",
+        "reason": "registry authorization, not a production or VIN-floor count"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 67,
+        "decision": "reject",
+        "reason": "Tesla Sept 22 '#67 joined' post tracks the same-day registry step (58 to 69), not cars in service at once"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 44,
+        "decision": "reject",
+        "reason": "community sightings and 409 logged trips in Austin, not a simultaneous active-dispatch census"
+      },
+      {
+        "series": "cybercab",
+        "count": 8640,
+        "decision": "reject",
+        "reason": "10-second drive-unit takt annualized to a daily component rate; not finished Cybercabs"
+      }
+    ]
+  }
+}

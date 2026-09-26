@@ -1,0 +1,227 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-09-26",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus September 2026",
+        "tool": "web_search",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Optimus site:teslarati.com 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus site:teslanorth.com September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Optimus Tesla Fremont OR Giga Texas OR production OR Gen 3 after:2026-09-18",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus The Information hundreds per week Fremont September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Optimus Gen 3 app leak WholeMars September 23 2026 teslarati",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla certified Chinese suppliers Optimus Tuopu Sanhua Joyson September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Optimus site:optimusk.blog 2026 September",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus Hangzhou exhibition September 23 2026 Gen 3",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus growing pains site:theverge.com September 2026",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Tesla eyes supply partners for Optimus teslarati.com",
+        "tool": "web_search",
+        "hits": 3
+      },
+      {
+        "q": "Optimus Global Digital Trade Expo Hangzhou September 23 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus Fremont OR Giga Texas OR Gen 3 OR reveal September 19 OR 20 OR 21 OR 22 OR 24 OR 26 2026",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-production-hundreds-per-week-report",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-optimus-gen-3-shows-off-a-cleaner-factory-ready-design-in-new-app-discovery/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/23/optimus-gen-3-app-leak/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.globaltimes.cn/page/202609/1371152.shtml",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/09/21/tesla-audits-china-suppliers-optimus-mass-production/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+        "kept": false,
+        "reason": "dormant app strings, not a hardware or sales event"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/26/tesla-musk-china-ai-giga-shanghai/",
+        "kept": false,
+        "reason": "billion-robot aside is a ten-year global forecast, not an Optimus commitment"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Fremont Optimus hit hundreds a week in August \u2014 internal V3 units that still cannot generalize",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-production-hundreds-per-week-report",
+        "decision": "file",
+        "reason": "new 25 September Information account inside the window; Tesla silent; reality is internal non-customer hardware"
+      },
+      {
+        "title": "Gen 3 Optimus app images are August mock art, not a hardware reveal",
+        "url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders",
+        "decision": "file",
+        "reason": "public breakout 22\u201323 September; files verified, but they are August mock assets and not a reveal"
+      },
+      {
+        "title": "Sanhua and Joyson will not confirm Optimus supplier certification headlines",
+        "url": "https://www.globaltimes.cn/page/202609/1371152.shtml",
+        "decision": "file",
+        "reason": "certification claim escalated 20\u201321 September and named vendors still would not confirm on 22 September"
+      },
+      {
+        "title": "Giga Texas Optimus steel frame nears north beam",
+        "url": "https://teslanorth.com/2026/09/18/optimus-factory-steel-frame-giga-texas/",
+        "decision": "skip",
+        "reason": "seenUrl / last-week keyChange; no newer drone milestone in this window"
+      },
+      {
+        "title": "Tesla auditing Chinese suppliers ahead of Optimus roll-out",
+        "url": "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources",
+        "decision": "skip",
+        "reason": "seenUrl; 16\u201318 September Ningbo round already filed. This week files only the certification escalation and the 22 September non-confirmation"
+      },
+      {
+        "title": "Getty caption: mass-produced Optimus Gen-3 at Hangzhou expo",
+        "url": "https://www.gettyimages.com/detail/news-photo/citizens-visit-teslas-first-mass-produced-optimus-gen-3-news-photo/2296204441",
+        "decision": "skip",
+        "reason": "photo caption only; Hangzhou expo coverage does not treat it as a Tesla production disclosure"
+      },
+      {
+        "title": "Musk: at least one billion humanoid robots in under ten years",
+        "url": "https://teslanorth.com/2026/09/26/tesla-musk-china-ai-giga-shanghai/",
+        "decision": "skip",
+        "reason": "CGTN/CMG forecast about humanoids in general, not a Tesla unit target or dated Optimus milestone"
+      },
+      {
+        "title": "Tesla app 4.61.0 treats Optimus as a home Energy site",
+        "url": "https://teslanorth.com/2026/09/19/tesla-app-4610-passkeys-optimus-energy/",
+        "decision": "skip",
+        "reason": "dormant code strings with no Tesla release note and no hardware change"
+      },
+      {
+        "title": "optimusk.blog: V3 shipping toward 15,000 units in 2026",
+        "url": "https://optimusk.blog/blog/tesla-optimus-humanoid-robot-latest-version-2026/",
+        "decision": "skip",
+        "reason": "page last updated 11 September; recycles the unverified 15,000-unit supply-chain figure already filed"
+      },
+      {
+        "title": "Interesting Engineering: Tesla close to 1,000 Optimus a week",
+        "url": "https://interestingengineering.com/ai-robotics/tesla-making-1000-optimus-humanoids-a-week",
+        "decision": "skip",
+        "reason": "misstates The Information as a Tesla disclosure; the 1,000-a-week figure is a manager target, not output"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusWeeklyBuilds",
+        "count": 200,
+        "decision": "reject",
+        "reason": "The Information's 'several hundred a week' in August is anonymous, Tesla did not comment, and it is not a disclosed cumulative production total"
+      },
+      {
+        "series": "optimusWeeklyBuilds",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "year-end line goal from managers, not achieved output or a Tesla IR target"
+      },
+      {
+        "series": "optimusWeeklyBuilds",
+        "count": 20000,
+        "decision": "reject",
+        "reason": "eventual ambition cited by The Information, not a current run rate"
+      },
+      {
+        "series": "optimusSupplierOrder",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "unnamed supply-chain batch tied to the Ningbo visit; Sanhua and Joyson did not confirm the audits"
+      },
+      {
+        "series": "optimusTrainingHours",
+        "count": 500000,
+        "decision": "reject",
+        "reason": "single-report training-hour figure, not a Tesla disclosure and not a robot count"
+      }
+    ]
+  }
+}

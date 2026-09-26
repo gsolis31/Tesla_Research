@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-26",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 14,
+  "ignored": 0,
+  "gapCount": 1,
+  "gaps": [
+    {
+      "title": "Austin robotaxi active count falls back to 8 vehicles after the Cybercab launch spike",
+      "url": "https://electrek.co/2026/09/22/tesla-robotaxi-active-fleet-austin-crashes-8-vehicles/",
+      "date": "2026-09-22",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Robotaxi Tracker seven-day active Austin fleet is back to the June 2025 level even as Texas registrations keep climbing",
+      "match": "gap"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-09-26",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab Grimes County September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Terafab JETI construction permits September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Terafab lawsuit OR TRO OR TERA-print OR trademark September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com Terafab 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslanorth.com Terafab September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:kbtx.com Terafab September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Abbott pause data center permits TCEQ September 2026 Terafab Grimes",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "TERA-print OR 1:26-cv-02543 Terafab served OR summons OR hearing September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "SpaceX Grimes County records lawsuit TRO hearing Terafab September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab permit OR land clearing OR groundbreaking OR construction start OR water OR CSISD after:2026-09-19",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:theeagle.com Terafab September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab data center Fauth OR Grimes Abbott pause OR halt permits",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "SpaceX Grimes County TRO OR hearing OR docket Terafab September 22-25 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab Tegtmeyer OR land clearing OR site prep September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Terafab OR TeraFab Iola OR Anderson-Shiro OR Grimes County OR Gibbons Creek September 22-25 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla, Inc. TERA-print answer due OR served on Terafab",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:courtlistener.com Tesla TERA-print 1:26-cv-02543",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:basenor.com Terafab concrete OR foundation September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Terafab Chip Fab Takes Shape OR Concrete Pours Terafab basenor",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Joe Tegtmeyer Terafab foundation September 22 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Travis County Space Exploration Technologies D-1-GN Terafab hearing OR TRO September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "from:JoeTegtmeyer (Terafab OR chip fab OR ATCF OR Advanced Technology) since:2026-09-19 until:2026-09-27",
+        "tool": "x_keyword_search",
+        "hits": 3
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.kbtx.com/2026/09/24/terafab-may-not-be-impacted-by-gov-abbotts-pause-data-centers/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.techtarget.com/it-infrastructure/news/366651196/TCEQs-data-center-permit-freeze-may-reach-beyond-ERCOT-review",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://thetexasdispatch.com/abbott-data-center-permit-freeze-self-powered-fermi-panhandle/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/terafab-chip-fab-takes-shape-as-concrete-pours-begin",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/JoeTegtmeyer/status/2102383381916930554",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "County calls Terafab exempt from Abbott data-center permit freeze; state has not",
+        "url": "https://www.kbtx.com/2026/09/24/terafab-may-not-be-impacted-by-gov-abbotts-pause-data-centers/",
+        "decision": "file",
+        "reason": "Sep 23 local report in window; exemption is the county judge's unconfirmed view, not a state determination"
+      },
+      {
+        "title": "Austin research-fab slab gets more concrete; Grimes production start still Dec. 1",
+        "url": "https://x.com/JoeTegtmeyer/status/2102383381916930554",
+        "decision": "file",
+        "reason": "Sep 22 North Campus slab pour; owned as North Campus construction, not a Grimes production start"
+      },
+      {
+        "title": "TERA-print served in Terafab name suit; answer due Oct. 9 with no ruling",
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "decision": "file",
+        "reason": "Return of service docketed Sep 22 with an Oct 9 answer date; complaint itself already filed last week"
+      },
+      {
+        "title": "Musk frames Terafab as existential Taiwan chip insurance at All-In Summit",
+        "url": "https://teslanorth.com/2026/09/15/terafab-taiwan-chip-insurance-all-in-summit/",
+        "decision": "skip",
+        "reason": "seenUrl; Sep 15, before this window"
+      },
+      {
+        "title": "Tesla and SpaceX sue TERA-print to secure Terafab name",
+        "url": "https://www.reuters.com/legal/legalindustry/tesla-spacex-sue-nanotech-company-over-terafab-name-2026-09-16/",
+        "decision": "skip",
+        "reason": "seenUrl; Sep 16 complaint already filed, not a new merits development"
+      },
+      {
+        "title": "CSISD board briefed on Terafab housing spillover",
+        "url": "https://theeagle.com/news/local/business/development/article_daa444bd-60f5-420a-a731-d9353ff0e663.html",
+        "decision": "skip",
+        "reason": "seenUrl; Sep 18, before this window"
+      },
+      {
+        "title": "SpaceX sues to block release of Terafab records",
+        "url": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+        "decision": "skip",
+        "reason": "seenUrl; no TRO hearing date or new order found for Sep 19-26"
+      },
+      {
+        "title": "Elon Musk's Terafab hits a roadblock before making a single chip",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-hits-a-roadblock-before-making-a-single-chip-receives-cease-and-desist-order-firm-files-trademark-lawsuit-has-sold-tera-fab-branded-lithography-tools-for-over-a-decade",
+        "decision": "skip",
+        "reason": "Sep 19 recap of the May cease-and-desist and the already-filed Sep 16 complaint"
+      },
+      {
+        "title": "SpaceX to invest $16.8B on first phase of Terafab project",
+        "url": "https://www.manufacturingdive.com/news/spacex-to-invest-16b-first-phase-terafab-project-grimes-county-texas/827422/",
+        "decision": "skip",
+        "reason": "Aug 10 announcement recrawled Sep 25; no new figure"
+      },
+      {
+        "title": "Terafab, Iola tracker still lists the project as announced",
+        "url": "https://www.oftmw.com/projects/terafab/",
+        "decision": "skip",
+        "reason": "Aggregator restates June-August milestones and says no groundbreaking; not a new primary report"
+      },
+      {
+        "title": "Sep 11 Grimes footing and clearing video",
+        "url": "https://www.youtube.com/watch?v=1dWnKxTN3-M",
+        "decision": "skip",
+        "reason": "Outside the window; Tegtmeyer's Sep 23 reply still points at this video rather than a new Grimes flight"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "austinResearchFabWafersPerMonth",
+        "count": 3000,
+        "decision": "reject",
+        "reason": "Tegtmeyer restated a prior 'few thousand wafers a month' scale for the Austin pilot; not a new official output figure, and volume silicon dates are aiChip"
+      },
+      {
+        "series": "grimesPhaseOneInvestmentBillion",
+        "count": 16.8,
+        "decision": "reject",
+        "reason": "August $16.8 billion phase-one figure recycled by September recaps; not a new commitment this week"
+      }
+    ]
+  }
+}

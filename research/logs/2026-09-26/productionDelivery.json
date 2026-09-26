@@ -1,0 +1,261 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-09-26",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q3 2026 deliveries estimate September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla production delivery September 2026 site:teslarati.com OR site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla China weekly insurance registrations September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Semi production ramp September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Model Y Cybertruck inventory price September 22 2026 OR September 23 OR September 24 OR September 25",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla insurance OR registrations China week September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Europe registrations September 2026 Model Y sales",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Semi ZET SCALE 2500 order September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Model 3 Model Y delivery estimate 2027 September 2026 order page",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla China September 2026 weekly insurance registrations week ending OR week of",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Ireland 15000 deliveries September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla cash discount China September 2026 Model Y 10000",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Europe registrations August 2026 France Norway Sweden teslarati OR teslanorth September",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Germany August 2026 registrations KBA OR SMMT Tesla August 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:ir.tesla.com Tesla third quarter 2026 production deliveries September",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://techcrunch.com/2026/09/25/tesla-finally-moves-to-electrify-trucking-after-a-decade-of-work-and-delays/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.automotiveworld.com/news/tesla-begins-semi-deliveries-nine-years-after-unveiling/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/09/25/tesla-semi-volume-production-launch-nevada-factory/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.ttnews.com/articles/tesla-semi-olrders",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/22/tesla-semi-wins-2500-truck-order-zet-scale/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/09/25/tesla-offers-china-discounts-sales-push/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-china-model-y-october-promo/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/ubs-sees-tesla-q3-deliveries-falling-5-year-on-year-keeps-385-price-target/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-drops-big-hints-ahead-semi-handover-event/",
+        "kept": false,
+        "reason": "pre-event drone piece; rollout coverage superseded it and the Roadster clip adds no production date"
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/22/model-3-y-deliveries-slip-2027/",
+        "kept": false,
+        "reason": "base Model 3 window into March 2027 was already reported in August; single configurator check"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla inaugurates Nevada Semi factory without disclosing a build rate",
+        "url": "https://teslanorth.com/2026/09/25/tesla-semi-high-volume-production/",
+        "decision": "file",
+        "reason": "Sept 24 volume-production event is new versus last week's Europe debut and Megacharger items; no build rate disclosed"
+      },
+      {
+        "title": "ZET SCALE names Tesla primary for 2,500 electric trucks; Semi share undisclosed",
+        "url": "https://www.ttnews.com/articles/tesla-semi-olrders",
+        "decision": "file",
+        "reason": "Sept 22 alliance order is not in recentKeyChanges; headline 2,500 Semis overstates a primary-OEM slot with secondary truck makers"
+      },
+      {
+        "title": "Tesla China extends Model 3/Y cash discounts through Oct 31 and trims the Model Y cut",
+        "url": "https://cnevpost.com/2026/09/25/tesla-offers-china-discounts-sales-push/",
+        "decision": "file",
+        "reason": "Sept 25 offer runs past quarter-end and cuts the Model Y incentive; distinct from the Sept 7 inventory deal already in seenUrls"
+      },
+      {
+        "title": "UBS sees 470k Q3 deliveries, above a lowered consensus but below Q2 and down 5% YoY",
+        "url": "https://eletric-vehicles.com/tesla/ubs-sees-tesla-q3-deliveries-falling-5-year-on-year-keeps-385-price-target/",
+        "decision": "file",
+        "reason": "new Sept 25 estimate and a Visible Alpha drift to 454k; not a repeat of the filed Goldman 435k or Barclays 475k notes"
+      },
+      {
+        "title": "Barclays Sees Tesla Beating Q3 Delivery Estimates",
+        "url": "https://www.allthings-elon.com/articles/tesla-q3-2026-delivery-beat-barclays-forecast-2026-09-21",
+        "decision": "skip",
+        "reason": "same 475k Barclays figure already filed on 2026-09-18"
+      },
+      {
+        "title": "Goldman cuts Tesla Q3 delivery forecast to 435,000",
+        "url": "https://driveteslacanada.ca/news/goldman-tesla-q3-delivery-forecast-435000/",
+        "decision": "skip",
+        "reason": "seenUrl / last-week Goldman cut, republished inside this window"
+      },
+      {
+        "title": "Tesla Model 3, Model Y US Delivery Estimates Slip Into 2027 for New Orders",
+        "url": "https://teslanorth.com/2026/09/22/model-3-y-deliveries-slip-2027/",
+        "decision": "skip",
+        "reason": "base Model 3 RWD was already quoted January\u2013March 2027 in August; not a new verified metric"
+      },
+      {
+        "title": "Tesla hints at new Roadster design in surprise clip",
+        "url": "https://www.teslarati.com/tesla-roadster-lightbar-tease-semi-truck/",
+        "decision": "skip",
+        "reason": "design tease for the October 1 event already filed; still no production date"
+      },
+      {
+        "title": "Tesla Hits 15,000 Deliveries in Ireland",
+        "url": "https://teslanorth.com/2026/09/24/tesla-ireland-15000-deliveries/",
+        "decision": "skip",
+        "reason": "cumulative small-market milestone, about 2,729 registrations year to date; FSD approval talk belongs to fsd"
+      },
+      {
+        "title": "Tesla's August Split: France up 279%, Norway down 79%",
+        "url": "https://www.tesla-mag.com/en/tesla-august-2026-registrations-europe-country-split/",
+        "decision": "skip",
+        "reason": "August country registrations were published September 1, before this window"
+      },
+      {
+        "title": "German Tesla registrations more than doubled in August after the July drop",
+        "url": "https://teslamag.de/news/aktuell-deutsche-tesla-verkaeufe-nach-juli-einbruch-im-august-wieder-mehr-als-verdoppelt-67255",
+        "decision": "skip",
+        "reason": "KBA August figure of 3,034 was published September 4, before this window"
+      },
+      {
+        "title": "Q2 2026 Delivery Consensus",
+        "url": "https://ir.tesla.com/press-release/delivery-consensus-second-quarter-2026",
+        "decision": "skip",
+        "reason": "still the June 26 sheet; no Q3 company-compiled consensus and no Q3 P&D release on IR"
+      },
+      {
+        "title": "Kalshi and Goldman Q3 delivery range",
+        "url": "https://www.gate.com/news/detail/tesla-q3-deliveries-forecast-range-from-435k-to-480k-as-kalshi-and-goldman-24479679",
+        "decision": "skip",
+        "reason": "prediction-market recap of estimates already in the file; not an official delivery count"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 470000,
+        "decision": "reject",
+        "reason": "UBS estimate, not a Tesla P&D print; also below Q2 480,126"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 454000,
+        "decision": "reject",
+        "reason": "Visible Alpha consensus, not company-compiled and not official deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 50000,
+        "decision": "reject",
+        "reason": "Semi factory nameplate capacity, not trucks built or delivered"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 2500,
+        "decision": "reject",
+        "reason": "ZET SCALE Class 8 order book, not delivered Semis and not a quarterly auto total"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 50047,
+        "decision": "reject",
+        "reason": "August China retail already covered on Sept 9; not a new Q3 global print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 16.9,
+        "decision": "reject",
+        "reason": "UBS energy-storage GWh estimate, outside quarterly vehicle deliveries and not official"
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-09-26",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla job postings AltIndex September 2026 hiring count",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus hiring job posting September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI FSD robotics careers hiring September 19-26 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:optimusk.blog Tesla hiring OR jobs 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI engineer OR Optimus OR robotics hiring OR job posting September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Machine Learning Engineer Model Quantization OR Embodied Intelligence OR Vision Foundation Models Optimus September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Optimus OR Tesla AI job OR hiring OR careers after:2026-09-18",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Mechatronics Engineer Optimus 276993 OR Hardware Validation careers",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "AI Engineer, Embodied Intelligence Tesla Optimus 249027",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Machine Learning Engineer, Model Quantization careers Palo Alto September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus jobs posted September 2026 Palo Alto OR Austin requisition",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Machine Learning Engineer, Digital Optimus Tesla posted OR hiring",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus posted today OR days ago engineer OR data collection September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:linkedin.com/jobs/view Tesla Optimus 2026 days ago OR hours ago",
+        "tool": "web_search",
+        "hits": 7
+      },
+      {
+        "q": "Tesla START Optimus Service Technician January 2027 cohort recruiter",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "AI Engineer, Policy, Optimus Tesla careers Palo Alto",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Software Engineer, Generalist, AI Inference Tesla posted OR requisition",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Data Collection Optimus Colorado OR Arizona OR Florida OR training hub hiring September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Data Collection Operator Optimus Doral OR 279361 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:www.tesla.com/careers/search/job data collection operator optimus doral OR florida",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Data Collection Operator, Optimus San Diego Tesla requisition",
+        "tool": "web_search",
+        "hits": 8
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.jobzmall.com/news/tesla-adds-734-jobs-worldwide-in-september-2026",
+        "kept": false,
+        "reason": "September gross and net mix sales and field service; 8,266 total conflicts with AltIndex and is not an AI-only count"
+      },
+      {
+        "url": "https://simplify.jobs/p/58a7c91a-300b-4583-921d-553cfac94197/Mechatronics-Engineer",
+        "kept": false,
+        "reason": "Optimus hardware-validation mechatronics req 276993 was posted July 17; Sept 21 is a refresh"
+      },
+      {
+        "url": "https://simplify.jobs/p/5d38a5ec-6a95-4f46-92ab-ab12c43b2322/AI-Engineer",
+        "kept": false,
+        "reason": "Embodied Intelligence Optimus req 249027 refresh; aggregator post date about Sept 14, outside the window"
+      },
+      {
+        "url": "https://simplify.jobs/p/5a8a7ba1-2464-4dc8-995e-4cd08627650e/Data-Collection-Operator",
+        "kept": false,
+        "reason": "Doral Optimus data-collection operator req 279361 shows an update date, not a verified first post inside the window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla LinkedIn openings at 8,001; mix still ~40% service/sales, not an AI ramp",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "file",
+        "reason": "Seen URL, but the live count moved from 7,892 on Sept 19 to 8,001 on Sept 26 with the same service-heavy mix"
+      },
+      {
+        "title": "Tesla Adds 734 Jobs Worldwide in September 2026",
+        "url": "https://www.jobzmall.com/news/tesla-adds-734-jobs-worldwide-in-september-2026",
+        "decision": "skip",
+        "reason": "Mixed manufacturing, sales, and field service; net +80 and 8,266 open roles are not an AI/robotics series"
+      },
+      {
+        "title": "Mechatronics Engineer, Optimus Hardware Validation",
+        "url": "https://simplify.jobs/p/58a7c91a-300b-4583-921d-553cfac94197/Mechatronics-Engineer",
+        "decision": "skip",
+        "reason": "Req 276993 originally posted July 17, 2026; Sept 21 Simplify stamp is an update"
+      },
+      {
+        "title": "AI Engineer, Embodied Intelligence, Optimus",
+        "url": "https://www.tesla.com/careers/search/job/ai-engineer-embodied-intelligence-optimus-249027",
+        "decision": "skip",
+        "reason": "Long-running req 249027; job-board date about Sept 14 is before the window"
+      },
+      {
+        "title": "Machine Learning Engineer, Model Quantization, Tesla AI",
+        "url": "https://simplify.jobs/p/bceb461a-9e7a-4f8f-b569-51500ecf342f/Machine-Learning-Engineer",
+        "decision": "skip",
+        "reason": "Req 271231 is live, but Glassdoor dates conflict (about 21 days vs 24 hours); not a verified in-window post"
+      },
+      {
+        "title": "START Optimus Service Technician (Winter 2027)",
+        "url": "https://www.tesla.com/careers/search/job/start-optimus-service-technician-winter-2027-281634",
+        "decision": "skip",
+        "reason": "Public recruiter post is Sept 18, before dateFrom; service-technician training, not an engineering ramp"
+      },
+      {
+        "title": "Data Collection Operator, Optimus (Doral and San Diego)",
+        "url": "https://www.tesla.com/careers/search/job/data-collection-operator-optimus-279361",
+        "decision": "skip",
+        "reason": "Operator/motion-capture reqs still open; no reliable first-post date inside Sept 19\u201326, and the role type dates to 2025"
+      },
+      {
+        "title": "Tesla workers balk at training Optimus",
+        "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
+        "decision": "skip",
+        "reason": "Sept 25 production and training narrative belongs to optimus; no new job-posting count"
+      },
+      {
+        "title": "Tesla Looks to Berlin Factory Workers to Help Train Optimus",
+        "url": "https://www.humanoidsdaily.com/news/tesla-berlin-workers-optimus-training-data",
+        "decision": "skip",
+        "reason": "Sept 23 recirculation of a July Handelsblatt plan; factory data-collection narrative, not a hiring metric"
+      },
+      {
+        "title": "AI Vehicle Operator, Self-Driving, Brisbane",
+        "url": "https://au.linkedin.com/jobs/view/ai-vehicle-operator-self-driving-brisbane-at-tesla-4469139367",
+        "decision": "skip",
+        "reason": "FSD vehicle-operator hiring already covered by the nine-country story and prior AI Safety Operator URLs; writeup is Sept 18"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 8001,
+        "decision": "file",
+        "reason": "AltIndex live LinkedIn open-count on Sept 26, continuation of the tracked series (7,892 on Sept 19)"
+      },
+      {
+        "series": "jobPostings",
+        "count": 8266,
+        "decision": "reject",
+        "reason": "JobzMall careers-page total conflicts with AltIndex and mixes sales and field service"
+      },
+      {
+        "series": "jobPostings",
+        "count": 734,
+        "decision": "reject",
+        "reason": "September gross posts, not active openings; JobzMall net was +80 and not AI-specific"
+      },
+      {
+        "series": "jobPostings",
+        "count": 91378,
+        "decision": "reject",
+        "reason": "AltIndex LinkedIn headcount updated Sept 15, outside this window and not the openings series"
+      }
+    ]
+  }
+}

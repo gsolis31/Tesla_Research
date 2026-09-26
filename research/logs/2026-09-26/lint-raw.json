@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-26",
+  "errorCount": 0,
+  "warningCount": 1,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Austin robotaxi active count falls back to 8 vehicles after the Cybercab launch spike",
+          "category": "cybercab",
+          "title": "Austin robotaxi active count falls back to 8 vehicles after the Cybercab launch spike",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range. In-window items were recaps of the Sept 15 Samsung Taylor AI5 trial start already filed; AI6 December tape-out, TSMC Arizona samples, and Dojo3 had no new primary update. Musk posted nothing on AI5, AI6, or Dojo from Sept 12-26.",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

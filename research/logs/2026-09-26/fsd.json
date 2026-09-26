@@ -1,0 +1,238 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-09-26",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval Europe September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD Supervised country approval OR homologation September 19 OR 20 OR 21 OR 22 OR 23 OR 24 OR 25 OR 26 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD TCMV October 6 2026 vote KBA Germany",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com FSD approval OR NHTSA OR Europe OR regulatory September 2026",
+        "tool": "web_search",
+        "hits": 7
+      },
+      {
+        "q": "site:teslanorth.com Tesla FSD September 2026 approval OR Europe OR France OR Germany OR Italy",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla FSD NHTSA investigation OR probe OR crash September 19..26 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD France UTAC OR Italy OR Germany OR Finland OR Sweden approval September 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Johanna Tesla FSD speed Brussels September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "TCMV draft agenda October 6 2026 Tesla FSD Article 39 no vote",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "NHTSA Tesla EA26002 September 23 2026 response OR deadline FSD",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "France UTAC Tesla FSD test results September 2026 Tabarot",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Christian Hirte KBA Tesla FSD September 23 2026 Kneller",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Johanna.be FSD30 Tesla report PDF OR site:johanna.be FSD 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "CMTD(2026)1554 TCMV agenda Article 39 Netherlands October 2026",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-expands-another-european-country-czechia/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system?lang=en-GB",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/21/tesla-fsd-supervised-gets-czech-approval-as-european-rollout-expands/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/25/tesla-eu-supervised-fsd-vote-delay/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/24/belgian-fsd-speed-limit-study/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/",
+        "kept": true,
+        "reason": "Tier 2 corroboration of the TCMV agenda, not the sole source"
+      },
+      {
+        "url": "https://www.reuters.com/business/czech-republic-approves-teslas-fsd-after-earlier-safety-concerns-2026-09-21/",
+        "kept": false,
+        "reason": "Page blocked on JS; lead only from search snippet"
+      },
+      {
+        "url": "https://johanna.be/en/projects/fsd30-en",
+        "kept": false,
+        "reason": "403 on fetch; publication date and findings taken from search index plus TeslaNorth and Electrek"
+      },
+      {
+        "url": "https://johanna.be/images/articleimages/FSD/report_FSD30.pdf",
+        "kept": false,
+        "reason": "403 on fetch; executive-summary excerpts came back in search results"
+      },
+      {
+        "url": "https://ec.europa.eu/transparency/comitology-register/screen/documents/118164/1/consult",
+        "kept": false,
+        "reason": "Register page did not return the agenda text"
+      }
+    ],
+    "considered": [
+      {
+        "title": "October 6 TCMV Agenda Has No Vote on EU-Wide FSD",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed/",
+        "decision": "file",
+        "reason": "In-window confirmation that 6 October is discussion only; prior hot context still treated that date as the vote"
+      },
+      {
+        "title": "Czechia Recognises Dutch FSD Supervised Approval, Seventh EU State",
+        "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system?lang=en-GB",
+        "decision": "file",
+        "reason": "New national recognition on 21 September; not in seenUrls; moves the EU count from 6 to 7"
+      },
+      {
+        "title": "Brussels Safety Study Finds FSD Speeding in Most 30 km/h Segments",
+        "url": "https://teslanorth.com/2026/09/24/belgian-fsd-speed-limit-study/",
+        "decision": "file",
+        "reason": "Published 24 September; distinct from the 17\u201318 September Tesla-supplied Belgian stats already filed"
+      },
+      {
+        "title": "UK Automated Vehicles Marketing Law Forces Tesla to Drop FSD Branding",
+        "url": "https://www.telegraph.co.uk/business/2026/09/13/musk-attacks-britain-over-stifling-driverless-car-rules/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange; 13\u201314 September, before this window"
+      },
+      {
+        "title": "Flemish Minister Presents Tesla-Supplied Belgian FSD Stats",
+        "url": "https://driveteslacanada.ca/news/tesla-fsd-safety-data-belgium/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange from 18 September; not the same story as the Johanna speed study"
+      },
+      {
+        "title": "Tesla Hands France Two FSD Cars for UTAC Tests",
+        "url": "https://teslanorth.com/2026/09/03/tesla-fsd-france-utac-tests/",
+        "decision": "skip",
+        "reason": "seenUrl; no in-window article with UTAC results despite a mid-to-late September target"
+      },
+      {
+        "title": "Germany Hirte letter on KBA speed review",
+        "url": "https://fsd-eu-tracker.de/en/country/germany/",
+        "decision": "skip",
+        "reason": "Tracker says a 14 September letter surfaced 23 September; primary letter text was not opened, and it adds no decision beyond KBA still reviewing"
+      },
+      {
+        "title": "NHTSA Cybercab Special Order deadline 30 September",
+        "url": "https://www.teslarati.com/nhtsa-just-escalated-its-tesla-cybercab-investigation-in-a-big-way/",
+        "decision": "skip",
+        "reason": "Cybercab certification audit, not an FSD country approval; main stories are 16\u201317 September, before the window, and no new response this week"
+      },
+      {
+        "title": "NHTSA EA26002 partial response deadline 23 September",
+        "url": "https://sdvsector.com/news/2026-08-11-nhtsa-tesla-fsd-visibility-deadline",
+        "decision": "skip",
+        "reason": "Deadline fell in-window but no article reported that Tesla filed or missed it"
+      },
+      {
+        "title": "UNECE proposal to extend Summon from 6 m to 15 m",
+        "url": "https://teslanorth.com/2026/09/20/unece-proposal-tesla-summon-range-6-15-meters/",
+        "decision": "skip",
+        "reason": "UN R79 parking-manoeuvre distance, not FSD Supervised country approval or homologation"
+      },
+      {
+        "title": "No automaker has licensed FSD",
+        "url": "https://www.teslarati.com/why-automakers-keep-turning-down-elon-musks-tesla-full-self-driving-offer/",
+        "decision": "skip",
+        "reason": "Licensing comment on 21 September; not a regulatory approval"
+      },
+      {
+        "title": "Tesla reaches 460,000 km of FSD testing in Spain",
+        "url": "https://teslanorth.com/2026/09/16/tesla-fsd-spain-460000-km/",
+        "decision": "skip",
+        "reason": "16 September, before the window; test mileage is not a country approval and the miles milestone belongs to fsdv15"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 7,
+        "decision": "file",
+        "reason": "Czech Ministry of Transport recognition on 21 September is the seventh EU state on the Dutch provisional approval; entering count was 6"
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 53,
+        "decision": "reject",
+        "reason": "About 53 million people is population coverage reported by Teslarati and Electrek, not a country count"
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 13,
+        "decision": "reject",
+        "reason": "Just Auto's worldwide 'thirteen countries' list is a partial marketing tally and omits the EU series this metric tracks"
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 55,
+        "decision": "reject",
+        "reason": "Johanna 55 percent speeding rate is a test finding, not an approval count"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-09-26",
+  "filed": 0,
+  "skipReason": "No significant news found in date range. In-window items were recaps of the Sept 15 Samsung Taylor AI5 trial start already filed; AI6 December tape-out, TSMC Arizona samples, and Dojo3 had no new primary update. Musk posted nothing on AI5, AI6, or Dojo from Sept 12-26.",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 chip Samsung TSMC September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI5 Samsung Taylor trial production September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com AI5 OR AI6 OR Dojo September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "\"AI6\" Tesla tape-out OR Samsung OR TSMC September 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Dojo chip OR AI5 yield OR \"2nm\" Tesla September 19-26 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 OR AI6 OR Dojo OR inference chip September 2026 excluding trial-production recaps",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslanorth.com AI5 OR AI6 OR Dojo 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslaoracle.com AI5 OR AI6 OR Samsung chip 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla TSMC AI5 Arizona OR AI6 tape-out September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Elon Musk AI5 OR AI6 OR Dojo September 20-26 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "AI5 OR AI6 Tesla yield OR tape-out OR TSMC OR Intel OR Micron September 2x 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:trendforce.com Tesla Samsung OR AI5 OR AI6 September 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla AI chip OR AI5 OR AI6 OR HW5 OR inference chip September 22-26 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI6 OR Dojo 3 tape OR design OR Samsung September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslarati.com AI5 OR AI6 OR Taylor OR Dojo after:2026-09-18",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Dojo Buffalo $500 million September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Samsung Tesla AI5 OR AI6 OR 2nm 2026-09-19 through 2026-09-26",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "TSMC Tesla AI5 Arizona OR engineering sample OR first silicon September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Samsung 2nm yield OR 70% Tesla OR AI5 September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "DigiTimes Samsung foundry 2nm yield Taylor Tesla September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:digitimes.com Tesla AI5 OR AI6 OR Samsung 2nm September 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "(AI5 OR AI6 OR Dojo OR AI chip OR HW5) (Tesla OR from:elonmusk) since:2026-09-19 until:2026-09-27",
+        "tool": "x_keyword_search",
+        "hits": 6
+      },
+      {
+        "q": "from:elonmusk (AI5 OR AI6 OR Dojo OR chip design OR tape) since:2026-09-12 until:2026-09-27",
+        "tool": "x_keyword_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-reiterates-500-million-dojo-supercomputer-buffalo-ny/",
+        "kept": false,
+        "reason": "Published August 4, 2024; search date was a recrawl, not a 2026 update"
+      },
+      {
+        "url": "https://www.teslarati.com/samsungs-tesla-ai5-ai6-chip-factory-to-start-key-equipment-tests-in-march-report/",
+        "kept": false,
+        "reason": "January 2026 Sina Finance recap; EUV-in-March and H2 2026 volume claims are stale versus the already-filed September trial start and 2027 supply"
+      },
+      {
+        "url": "https://www.sammyfans.com/2026/09/26/samsung-foundrys-comeback-gains-shape-around-2nm-and-taylor/",
+        "kept": false,
+        "reason": "Secondary paraphrase of a Sept 23 DigiTimes foundry roundup; no new AI5/AI6 milestone, and the above-60% yield line is looser than the already-tracked 70%+"
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20260923VL210/samsung-recovery-2nm-earnings-production.html",
+        "kept": false,
+        "reason": "Paywalled/blocked; headline and secondary summary do not add a Tesla chip event beyond known 2nm and Taylor constraints"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung Taylor fab running prototypes of Tesla's 2nm AI5 chip",
+        "url": "https://www.electronicsweekly.com/news/business/manufacturing/samsungs-taylor-fab-running-prototypes-of-teslas-2nm-a15-chip-2026-09/",
+        "decision": "skip",
+        "reason": "Sept 22 rewrite of the Sept 15 Seoul Economic Daily trial-production report already in recentKeyChanges and seenUrls; 50k wpm and fully-booked Taylor 2nm were in the Sept 9 TrendForce story already seen"
+      },
+      {
+        "title": "Samsung Begins Prototype Runs for Tesla's 2nm Autonomous Driving Chip",
+        "url": "https://www.electronicsforyou.biz/industry-buzz/samsung-begins-prototype-runs-for-teslas-2nm-autonomous-driving-chip/",
+        "decision": "skip",
+        "reason": "Same Sept 15-16 Korean reports, republished Sept 22; no new yield, tape-out, or shipment fact"
+      },
+      {
+        "title": "Samsung starts trial production of Tesla AI chips in Texas",
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "decision": "skip",
+        "reason": "seenUrl; event date Sept 15 is before the Sept 19 window and already filed"
+      },
+      {
+        "title": "Samsung Foundry's comeback gains shape around 2nm and Taylor",
+        "url": "https://www.sammyfans.com/2026/09/26/samsung-foundrys-comeback-gains-shape-around-2nm-and-taylor/",
+        "decision": "skip",
+        "reason": "Foundry-business roundup citing DigiTimes; Tesla appears only as the existing long-term deal, mass production still 2027, and the above-60% yield claim does not replace the already-tracked 70%+ figure"
+      },
+      {
+        "title": "Samsung foundry recovery gains pace, but 2nm, Taylor fab remain hurdles",
+        "url": "https://www.digitimes.com/news/a20260923VL210/samsung-recovery-2nm-earnings-production.html",
+        "decision": "skip",
+        "reason": "Sept 23 paywalled roundup; accessible summary does not report a new AI5/AI6 tape-out, sample, or shipment"
+      },
+      {
+        "title": "Tesla reiterates $500 million Dojo supercomputer plans in Buffalo",
+        "url": "https://www.teslarati.com/tesla-reiterates-500-million-dojo-supercomputer-buffalo-ny/",
+        "decision": "skip",
+        "reason": "Article body is dated August 4, 2024; Dojo was later shut down and only partially restarted as Dojo3, so this is not a current program update"
+      },
+      {
+        "title": "Samsung's Tesla AI5/AI6 chip factory to start key equipment tests in March",
+        "url": "https://www.teslarati.com/samsungs-tesla-ai5-ai6-chip-factory-to-start-key-equipment-tests-in-march-report/",
+        "decision": "skip",
+        "reason": "January 2026 story; March EUV tests and second-half 2026 full production are obsolete after the September trial start with 2027 supply"
+      },
+      {
+        "title": "Tesla AI server order puts Pegatron back alongside Asus",
+        "url": "https://www.digitimes.com/news/a20260921PD205/asus-pegatron-ai-server-tesla-growth.html",
+        "decision": "skip",
+        "reason": "ODM server order, not AI5/AI6 design, foundry yield, or Dojo chip architecture"
+      },
+      {
+        "title": "Musk Maps SpaceXAI Colossus GPU Buildout Toward 1.44 Million Chips by December",
+        "url": "https://teslanorth.com/2026/09/25/spacexai-colossus-gpu-buildout/",
+        "decision": "skip",
+        "reason": "Nvidia H100/H200/GB200/GB300 counts for SpaceXAI, not Tesla inference or training ASICs"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "taylorWaferStartsPerMonth",
+        "count": 50000,
+        "decision": "reject",
+        "reason": "Samsung Taylor nameplate capacity repeated from the Sept 9 fully-booked report already in seenUrls, not a Tesla chip output count"
+      },
+      {
+        "series": "taylorUtilizationPercent",
+        "count": 30,
+        "decision": "reject",
+        "reason": "SamMobile Sept 16 figure is outside the window and is fab utilization, not shipped AI5 units"
+      },
+      {
+        "series": "samsung2nmYieldPercent",
+        "count": 70,
+        "decision": "reject",
+        "reason": "Already in hot-context critical news; this week's secondary writeups conflict (above 60% vs earlier 80%) and add no new primary measurement"
+      }
+    ]
+  }
+}

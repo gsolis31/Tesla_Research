@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-26",
+  "weekOf": "2026-09-21",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 11,
+      "fetched": 10,
+      "considered": 13,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 14,
+      "fetched": 11,
+      "considered": 12,
+      "skipped": 9,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 13,
+      "fetched": 11,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 17,
+      "fetched": 9,
+      "considered": 12,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 15,
+      "fetched": 11,
+      "considered": 13,
+      "skipped": 9,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 23,
+      "fetched": 4,
+      "considered": 9,
+      "skipped": 9,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range. In-window items were recaps of the Sept 15 Samsung Taylor AI5 trial start already filed; AI6 December tape-out, TSMC Arizona samples, and Dojo3 had no new primary update. Musk posted nothing on AI5, AI6, or Dojo from Sept 12-26.",
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 15,
+      "fetched": 8,
+      "considered": 8,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 22,
+      "fetched": 7,
+      "considered": 11,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 21,
+      "fetched": 5,
+      "considered": 10,
+      "skipped": 9,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 1,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-09-26/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-09-26/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 15,
+    "covered": 14,
+    "ignored": 0,
+    "gapCount": 1,
+    "queries": 15,
+    "gaps": [
+      {
+        "title": "Austin robotaxi active count falls back to 8 vehicles after the Cybercab launch spike",
+        "url": "https://electrek.co/2026/09/22/tesla-robotaxi-active-fleet-austin-crashes-8-vehicles/",
+        "likelyCategory": "cybercab"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 20,
+    "duplicatesRemoved": 1,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 1,
+    "totalKeyChanges": 23,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 8
+  }
+}
