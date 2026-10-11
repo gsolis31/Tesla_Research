@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-10",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 10,
+  "ignored": 0,
+  "gapCount": 5,
+  "gaps": [
+    {
+      "title": "Tesla signs $30B of undrawn credit capacity for future projects",
+      "url": "https://www.notateslaapp.com/news/4750/tesla-secures-30-billion-in-loans-to-fund-future-projects",
+      "date": "2026-09-30",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Sep 29 facilities are committed and unused: $20B delayed-draw term loan to 2029, $8B five-year revolver, $2B 364-day revolver, plus a $5B liquidity covenant. Article ties the capacity to Terafab, Semi, and Optimus.",
+      "match": "gap"
+    },
+    {
+      "title": "NHTSA gives Tesla until Oct 30 to answer Cybercab audit AQ26002",
+      "url": "https://www.notateslaapp.com/news/4793/tesla-gets-extension-to-respond-to-nhtsas-cybercab-probe",
+      "date": "2026-10-08",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Tesla asked for eight weeks to Nov 20; NHTSA granted 30 days, moving the Sep 30 deadline to Oct 30. The 21 requests still cover no wheel, pedals, or mirrors, temporary human controls, and why there is no Zoox-style exemption.",
+      "match": "gap"
+    },
+    {
+      "title": "First Southeast Tesla Semi Megachargers open in Georgia",
+      "url": "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia/",
+      "date": "2026-10-09",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Semi account on Oct 8: Conley has 8 stalls up to 1.2 MW and the Ellabell Pilot site has 6 stalls, about 220 miles apart. Public list is about 4 sites and 26 stalls against about 37 sites planned for 2026.",
+      "match": "gap"
+    },
+    {
+      "title": "Shanghai Model 3 and Model Y gain V2L, 16-inch screen, and Zen Gray for Q4",
+      "url": "https://www.notateslaapp.com/news/4756/tesla-updates-china-made-model-3y-with-v2l-zen-gray-16-screen-and-more",
+      "date": "2026-10-01",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Q4 2026 Giga Shanghai deliveries: factory bidirectional charger, all-black headliner, Zen Gray, and a Model 3 screen step-up to 16-inch 2560\u00d71440. Hardware change, separate from last week's China cash discounts.",
+      "match": "gap"
+    },
+    {
+      "title": "IMC expects a first delivery of Tesla Semis this week",
+      "url": "https://www.teslarati.com/tesla-snags-semi-supply-deal-major-logistics-firm/",
+      "date": "2026-10-05",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "IMC said in September it intends to take Semis; a VP told Trucking Drive on Sep 29 that trucks would arrive this week or late the week before. About 50 units, separate from the ZET SCALE 2,500 figure and the Nevada factory opening.",
+      "match": "gap"
+    }
+  ]
+}

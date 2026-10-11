@@ -1,0 +1,254 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-10-10",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval OR homologation OR TCMV when:14d",
+        "tool": "google_news_rss",
+        "hits": 82
+      },
+      {
+        "q": "Tesla FSD Germany approval October 2026",
+        "tool": "google_news_rss",
+        "hits": 45
+      },
+      {
+        "q": "Tesla FSD TCMV October 6 2026",
+        "tool": "google_news_rss",
+        "hits": 62
+      },
+      {
+        "q": "Tesla FSD Croatia Slovakia approval 2026",
+        "tool": "google_news_rss",
+        "hits": 16
+      },
+      {
+        "q": "Tesla NHTSA FSD investigation October 2026",
+        "tool": "google_news_rss",
+        "hits": 54
+      },
+      {
+        "q": "Tesla FSD Italy UK China regulatory October 2026",
+        "tool": "google_news_rss",
+        "hits": 18
+      },
+      {
+        "q": "Tesla Assisted Driving Germany KBA October 2026",
+        "tool": "google_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "site:reuters.com Tesla FSD Slovakia approve October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD Croatia approval Reuters",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "Tesla browbeating EU approve Full Self-Driving Reuters experts",
+        "tool": "bing_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Tesla Assisted Driving Germany Bilger 10 percent",
+        "tool": "bing_news_rss",
+        "hits": 9
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/10/tesla-assisted-driving-tutorial-berlin/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/06/germany-eu-fsd-approval-push/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/tesla-assisted-driving-europe/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4794/tesla-renames-fsd-to-tesla-assisted-driving-in-europe",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Digitalisierung-der-Mobilitaet/aktueller-stand-tesla-assistenzsysteme.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.heise.de/news/Tesla-FSD-Verkehrsminister-Bilger-fordert-EU-Zulassung-des-Assistenzsystems-11477343.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/29/tesla-fsd-croatia-approval/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/slovakia-fsd-days-away/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.pravda.sk/auto/magazin/clanok/2055389-slovensko-onedlho-povoli-autonomne-riadenie-tesla-fsd-vodic-vsak-zodpovednost-neodovzda-autu",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.croatiaweek.com/tesla-self-driving-system-approved-croatia/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://insideevs.com/news/811098/tesla-pressure-campaign-europe-fsd-approval/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://insideevs.com/news/811088/tesla-fsd-gains-support-germany/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4747/tesla-wins-approval-to-launch-fsd-supervised-in-croatia",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/tesla-receives-approval-roll-out-self-driving-software-croatia-2026-09-29/",
+        "kept": false,
+        "reason": "HTTP 401; headline corroborated via Croatia Week and news indexes"
+      },
+      {
+        "url": "https://www.reuters.com/business/slovakia-approve-teslas-self-driving-tech-2026-10-08/",
+        "kept": false,
+        "reason": "HTTP 401; future-tense headline only, body unread"
+      },
+      {
+        "url": "https://www.reuters.com/investigations/tesla-is-browbeating-eu-approve-its-full-self-driving-tech-pressure-is-working-2026-10-07/",
+        "kept": true,
+        "reason": "body blocked; filed from InsideEVs and Pravda accounts of the same investigation"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Croatia Recognises Dutch FSD Supervised Approval, Eighth EU State",
+        "url": "https://teslanorth.com/2026/09/29/tesla-fsd-croatia-approval/",
+        "decision": "file",
+        "reason": "New in-window recognition; not in seenUrls. Count moves 7 to 8. Reality stays partial."
+      },
+      {
+        "title": "Germany Will Lobby for EU FSD Approval, But Has Not Granted It",
+        "url": "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Digitalisierung-der-Mobilitaet/aktueller-stand-tesla-assistenzsysteme.html",
+        "decision": "file",
+        "reason": "6 October ministry statement plus TCMV non-vote and website rename are a new development beyond last week\u2019s agenda item"
+      },
+      {
+        "title": "Reuters: Tesla Pressed RDW to Narrow the FSD Review",
+        "url": "https://www.reuters.com/investigations/tesla-is-browbeating-eu-approve-its-full-self-driving-tech-pressure-is-working-2026-10-07/",
+        "decision": "file",
+        "reason": "New 7 October investigation of the approval file other states are copying"
+      },
+      {
+        "title": "Slovakia Promises an FSD Recognition Letter, Has Not Sent It",
+        "url": "https://www.pravda.sk/auto/magazin/clanok/2055389-slovensko-onedlho-povoli-autonomne-riadenie-tesla-fsd-vodic-vsak-zodpovednost-neodovzda-autu",
+        "decision": "file",
+        "reason": "In-window ministerial pledge; not yet an approval and still absent from Tesla\u2019s 10 October country list"
+      },
+      {
+        "title": "October 6 TCMV Agenda Has No Vote on EU-Wide FSD",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-release-eu-gets-delayed/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange; 25 September agenda story. Meeting outcome is folded into the Germany item, not refiled"
+      },
+      {
+        "title": "EU vote on Tesla's supervised self-driving system pushed back",
+        "url": "https://www.reuters.com/business/eu-vote-teslas-supervised-self-driving-system-pushed-back-2026-09-25/",
+        "decision": "skip",
+        "reason": "25 September, before the window, and the same delay already filed last week"
+      },
+      {
+        "title": "Tesla FSD Just Got The Green Light From Germany",
+        "url": "https://insideevs.com/news/811088/tesla-fsd-gains-support-germany/",
+        "decision": "skip",
+        "reason": "Same 6 October ministry statement; headline overclaims a green light. Used only as corroboration"
+      },
+      {
+        "title": "Tesla wins German approval for Full Self-Driving, bringing Israel closer",
+        "url": "https://www.ynetnews.com/",
+        "decision": "skip",
+        "reason": "Headline is false relative to the ministry text; Germany has not approved FSD and Israel is not a new approval"
+      },
+      {
+        "title": "Tesla Films Its Mandatory Assisted Driving Video in Berlin",
+        "url": "https://teslanorth.com/2026/10/10/tesla-assisted-driving-tutorial-berlin/",
+        "decision": "skip",
+        "reason": "Confirms Germany is still blocked and the rename is live; not a separate approval. Cited inside the Germany item"
+      },
+      {
+        "title": "Tesla Europe Shows FSD Supervised Handling Snowy Swiss Roads",
+        "url": "https://teslanorth.com/2026/10/07/tesla-europe-fsd-winter-video/",
+        "decision": "skip",
+        "reason": "Marketing demo, not a country approval; Swiss ride-alongs already in seenUrls"
+      },
+      {
+        "title": "Tesla begins the FSD v14.3.11 rollout",
+        "url": "https://www.teslaoracle.com/",
+        "decision": "skip",
+        "reason": "Software version OTA belongs to fsdv15"
+      },
+      {
+        "title": "Tesla FSD (Supervised) Now Live in 16 Countries",
+        "url": "https://www.basenor.com/",
+        "decision": "skip",
+        "reason": "Global marketing tally, not a new EU recognition; China-limited and non-EU markets are outside this series"
+      },
+      {
+        "title": "NHTSA FSD investigation October 2026",
+        "url": "https://www.reuters.com/",
+        "decision": "skip",
+        "reason": "No new NHTSA or NTSB action inside 26 September\u201310 October; indexed hits were March\u2013July probes"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 8,
+        "decision": "file",
+        "reason": "Croatia is the eighth EU state on the Dutch provisional approval. Entering active count was 7 after Czechia. Germany and Slovakia excluded."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 9,
+        "decision": "reject",
+        "reason": "Slovakia has only promised a letter. Tesla\u2019s 10 October list was still eight countries."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 16,
+        "decision": "reject",
+        "reason": "Not a Tesla App\u2019s worldwide 16 includes the US, Canada, China limited, Mexico and others. This series tracks EU recognitions, and the entering count was 7."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 7,
+        "decision": "reject",
+        "reason": "Heise\u2019s seven-state count omitted Croatia and matches last week\u2019s Czechia total, not the latest list."
+      }
+    ]
+  }
+}

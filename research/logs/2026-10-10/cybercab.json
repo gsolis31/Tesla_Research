@@ -1,0 +1,247 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-10-10",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab robotaxi October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Cybercab robotaxi 2026",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Cybercab OR robotaxi after:2026-09-25",
+        "tool": "google_news_rss",
+        "hits": 100
+      },
+      {
+        "q": "Tesla robotaxi charging strategy teslarati",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "Tesla NHTSA Cybercab extension FMVSS",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "robotaxitracker Cybercab Austin 105 sightings October 2026",
+        "tool": "bing_news_rss",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/09/tesla-cybercab-floodgates/",
+        "kept": true,
+        "reason": "folded into the 300-plus claim; post has no date, city, or service change"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/09/texas-cybercab-registry/",
+        "kept": true,
+        "reason": "registry context only; not used as a fleet or production metric"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/tesla-dallas-cybercab-lineup/",
+        "kept": true,
+        "reason": "staging, not a Dallas launch; folded into the fleet keyChange"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/04/elon-musk-touts-careful-cybercab-rollout-austin-fleet-169/",
+        "kept": true,
+        "reason": "169 figure is the TxDMV roster, not an Austin dispatch count"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/03/tesla-robotaxi-austin-hours-11pm/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-robotaxi-early-charging-strategy-scrappy-dna/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-says-over-300-cybercabs-now-serve-austin-as-registry-count-hits-319/",
+        "kept": true,
+        "reason": "contrasts the 300-plus claim with registry growth and a sighting floor"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4802/tesla-now-has-300-cybercabs-in-austin-dallas-rides-next",
+        "kept": true,
+        "reason": "corroborates the Robotaxi-account post and the undated Dallas line"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4776/tesla-may-be-getting-ready-to-launch-cybercabs-in-houston",
+        "kept": true,
+        "reason": "Houston lot is staging and test driving, not passenger service"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4779/tesla-cybercab-crash-in-philadelphia-exposes-door-internals",
+        "kept": false,
+        "reason": "unconfirmed low-speed validation crash outside a robotaxi market; not a fleet or certification change"
+      },
+      {
+        "url": "https://static.nhtsa.gov/odi/inv/2026/IRSPO-AQ26002-19155.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/cybercab",
+        "kept": false,
+        "reason": "JS shell with no rendered counts; registry totals taken from the tracker's Texas DMV feed"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+        "kept": false,
+        "reason": "access denied; rider-complaint summary used only as reported by TeslaNorth"
+      },
+      {
+        "url": "https://www.nextbigfuture.com/2026/10/tesla-has-over-300-cybercabs-in-austin-and-500-robotaxi-in-austin.html",
+        "kept": false,
+        "reason": "page body did not return"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla's 300-plus Austin Cybercab claim tracks the registry, not verified rides",
+        "url": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/",
+        "decision": "file",
+        "reason": "new Oct 10 company claim; contradicted by TxDMV authorization versus community-active matches"
+      },
+      {
+        "title": "NHTSA gave Tesla until Oct 30, not Nov 20, for sworn Cybercab FMVSS answers",
+        "url": "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension/",
+        "decision": "file",
+        "reason": "certification deadline slip inside the window; Cybercab owns FMVSS self-certification, not a crash probe"
+      },
+      {
+        "title": "Austin robotaxi hours move only to 11 p.m. because night vision still misses pets",
+        "url": "https://teslanorth.com/2026/10/03/tesla-robotaxi-austin-hours-11pm/",
+        "decision": "file",
+        "reason": "new ops constraint; one-hour extension is not 24/7 service"
+      },
+      {
+        "title": "Driverless robotaxis still need a person to plug them in at a public Supercharger",
+        "url": "https://www.teslarati.com/tesla-robotaxi-early-charging-strategy-scrappy-dna/",
+        "decision": "file",
+        "reason": "documented charging workaround that does not scale"
+      },
+      {
+        "title": "Tesla Hints at Wider Cybercab Release With Floodgates Post",
+        "url": "https://teslanorth.com/2026/10/09/tesla-cybercab-floodgates/",
+        "decision": "skip",
+        "reason": "three-word post with no date or service change; folded into the Oct 10 fleet item"
+      },
+      {
+        "title": "Tesla Adds 150 Cybercabs to Its Texas Robotaxi Registry",
+        "url": "https://teslanorth.com/2026/10/09/texas-cybercab-registry/",
+        "decision": "skip",
+        "reason": "TxDMV authorization, not dispatch; cited inside the fleet item and rejected as a metric"
+      },
+      {
+        "title": "Elon Musk Defends Careful Cybercab Rollout as Austin Fleet Grows to 169",
+        "url": "https://teslanorth.com/2026/10/04/elon-musk-touts-careful-cybercab-rollout-austin-fleet-169/",
+        "decision": "skip",
+        "reason": "169 is the early-October registry count, mislabeled as fleet, and superseded by the Oct 9\u201310 authorization jump"
+      },
+      {
+        "title": "Dozens of Tesla Cybercabs Just Took Over the Dallas Robotaxi Lot",
+        "url": "https://teslanorth.com/2026/10/08/tesla-dallas-cybercab-lineup/",
+        "decision": "skip",
+        "reason": "staging only; Dallas riders still on Model Y; folded into the fleet item"
+      },
+      {
+        "title": "Tesla May Be Getting Ready to Launch Cybercabs in Houston",
+        "url": "https://www.notateslaapp.com/news/4776/tesla-may-be-getting-ready-to-launch-cybercabs-in-houston",
+        "decision": "skip",
+        "reason": "one observer's 190\u2013200 lot estimate and test driving, not a passenger launch"
+      },
+      {
+        "title": "Tesla Cybercab Crash in Philadelphia Exposes Door Internals",
+        "url": "https://www.notateslaapp.com/news/4779/tesla-cybercab-crash-in-philadelphia-exposes-door-internals",
+        "decision": "skip",
+        "reason": "unconfirmed low-speed crash outside a robotaxi market; crash investigations belong to fsd"
+      },
+      {
+        "title": "Tesla's Cybercab had a rocky first month in Austin",
+        "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+        "decision": "skip",
+        "reason": "CNBC blocked; complaint summary already reflected via TeslaNorth in the hours item"
+      },
+      {
+        "title": "Tesla to showcase Cybercab at the Paris Motor Show",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-06/tesla-to-showcase-its-cybercab-robotaxi-at-paris-auto-show",
+        "decision": "skip",
+        "reason": "auto-show display starting Oct 12, not a city launch or production change"
+      },
+      {
+        "title": "Tesla Engineer Says Cybercab Rider Cameras Are Coming",
+        "url": "https://teslanorth.com/2026/10/10/cybercab-rider-camera-views/",
+        "decision": "skip",
+        "reason": "engineer said cameras are in development; not a shipped rider feature"
+      },
+      {
+        "title": "Tesla Robotaxi App Now Available in Many More Countries",
+        "url": "https://www.notateslaapp.com/news/4769/tesla-robotaxi-app-now-available-worldwide",
+        "decision": "skip",
+        "reason": "app-store availability for visitors, not a new ride market"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 300,
+        "decision": "reject",
+        "reason": "Robotaxi account '300+ serving Austin' tracks the 319-car TxDMV Cybercab authorization, not a verified dispatch count"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 319,
+        "decision": "reject",
+        "reason": "TxDMV Cybercab authorization count \u2014 robotaxiRegistered only, not active fleet"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 739,
+        "decision": "reject",
+        "reason": "Combined Texas AV authorization (420 Model Y + 319 Cybercab), not cars in service"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 193,
+        "decision": "reject",
+        "reason": "Robotaxi Tracker matched_active_count is a statewide community-match field, not an official Austin dispatch census"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 105,
+        "decision": "reject",
+        "reason": "EV's citation of a Robotaxi Tracker Austin sighting floor; not an official in-service count and not split out on the public registry feed"
+      },
+      {
+        "series": "cybercab",
+        "count": 319,
+        "decision": "reject",
+        "reason": "Texas registration, not production; no new VIN floor beyond the Aug 10 count of 2172"
+      }
+    ]
+  }
+}

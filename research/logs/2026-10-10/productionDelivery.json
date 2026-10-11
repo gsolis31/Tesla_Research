@@ -1,0 +1,270 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-10-10",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q3 2026 production deliveries October",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Q3 2026 deliveries site:teslarati.com",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla China September 2026 wholesale sales CPCA",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Europe September 2026 registrations Model Y",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Semi October 2026 production deliveries",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Q3 2026 delivery beat analyst price target October",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla new country launch October 2026 sales",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Cybertruck Q3 2026 production volume",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Model Y L US deliveries October 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla UK SMMT September 2026 registrations",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments",
+        "kept": false,
+        "reason": "IR blocked with 403; numbers taken from outlets quoting the release"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-tsla-best-wall-street-best-energy-q3-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/02/tesla-q3-2026-deliveries-486532/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/10/02/tesla-q3-delivery-byd-bev-sales/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4759/tesla-announces-q3-2026-vehicle-deliveries-beating-analyst-estimates",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/09/29/tesla-ir-q3-2026-delivery-consensus/",
+        "kept": false,
+        "reason": "Consensus subsumed by the October 2 print"
+      },
+      {
+        "url": "https://cnevpost.com/2026/10/09/tesla-china-sept-2026-wholesale/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/09/tesla-shanghai-september-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-sells-90812-china-produced-vehicles-in-september-cpca-says/",
+        "kept": false,
+        "reason": "Article is the September 2025 CPCA print, dated 2025-10-10"
+      },
+      {
+        "url": "https://www.rte.ie/news/2026/1001/1593687-tesla-european-car-sales/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-model-y-germany-best-selling-car-september-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-model-3-spain-best-selling-car-september-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/07/tesla-model-y-nordic-sweep-september/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-q3-deliveries-was-it-a-beat-or-a-miss/",
+        "kept": false,
+        "reason": "October 2024 recap, not Q3 2026"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybertruck-dual-motor-awd-delivery-2026/",
+        "kept": false,
+        "reason": "February 2026 delivery-window note, outside this window"
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-semi-order-from-imc-follows-its-costly-nikola-hydrogen-bet/",
+        "kept": false,
+        "reason": "50-truck order announced at a September 14-16 expo; no confirmed new build rate"
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-begins-assigning-us-delivery-windows-for-model-y-l/",
+        "kept": false,
+        "reason": "Published 2026-08-14, outside the window"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-launching-vehicle-sales-in-uruguay-third-south-american-market",
+        "kept": false,
+        "reason": "Uruguay launch was June 28, 2026"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Q3 deliveries of 486,532 beat a low consensus, but volume is still down YoY and the beat is mostly destocking",
+        "url": "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries/",
+        "decision": "file",
+        "reason": "Official Q3 production and delivery print inside the window"
+      },
+      {
+        "title": "Shanghai wholesale hits a 2026 high of 95,366 while China retail falls for a fourth straight month",
+        "url": "https://cnevpost.com/2026/10/09/tesla-china-sept-2026-wholesale/",
+        "decision": "file",
+        "reason": "New CPCA September wholesale, export, and retail split"
+      },
+      {
+        "title": "September European registrations jump, including a Germany Model Y win, off an easy 2025 base",
+        "url": "https://driveteslacanada.ca/news/tesla-model-y-germany-best-selling-car-september-2026/",
+        "decision": "file",
+        "reason": "September national registration data, including KBA Germany, published this window"
+      },
+      {
+        "title": "Tesla IR posts Q3 delivery consensus of 461,974",
+        "url": "https://teslanorth.com/2026/09/29/tesla-ir-q3-2026-delivery-consensus/",
+        "decision": "skip",
+        "reason": "Estimate only; superseded by the October 2 actuals, which cite the same 461,974 figure"
+      },
+      {
+        "title": "Tesla showrooms picked clean ahead of Q3 end",
+        "url": "https://www.teslarati.com/tesla-tsla-showrooms-picked-clean-ahead-q3-end-demand-looks-strong/",
+        "decision": "skip",
+        "reason": "Anecdotal pre-print color; actual deliveries and the inventory draw are the record"
+      },
+      {
+        "title": "Tesla Semi order from IMC for 50 trucks",
+        "url": "https://eletric-vehicles.com/tesla/tesla-semi-order-from-imc-follows-its-costly-nikola-hydrogen-bet/",
+        "decision": "skip",
+        "reason": "Order dates to the September 14-16 Intermodal EXPO; 50 units versus a 50,000 nameplate and no new disclosed build rate"
+      },
+      {
+        "title": "Tesla sells 90,812 China-produced vehicles in September",
+        "url": "https://eletric-vehicles.com/tesla/tesla-sells-90812-china-produced-vehicles-in-september-cpca-says/",
+        "decision": "skip",
+        "reason": "2025 CPCA article; 90,812 is the September 2025 comparison, not the 2026 print"
+      },
+      {
+        "title": "Tesla launching vehicle sales in Uruguay",
+        "url": "https://www.basenor.com/blogs/news/tesla-launching-vehicle-sales-in-uruguay-third-south-american-market",
+        "decision": "skip",
+        "reason": "Market entry announced June 28, 2026, outside this window"
+      },
+      {
+        "title": "Cybertruck Dual Motor AWD delivery slips to September-October 2026",
+        "url": "https://www.teslarati.com/tesla-cybertruck-dual-motor-awd-delivery-2026/",
+        "decision": "skip",
+        "reason": "February 2026 story, not a new October development"
+      },
+      {
+        "title": "China Model 3/Y discounts through October 31",
+        "url": "https://cnevpost.com/2026/09/25/tesla-offers-china-discounts-sales-push/",
+        "decision": "skip",
+        "reason": "Already in recentKeyChanges and seenUrls; still the backdrop, not a new extension"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 486532,
+        "decision": "file",
+        "reason": "Official Q3 2026 deliveries from the October 2 IR release, corroborated by TeslaNorth, Teslarati, CnEVPost, and Electrek"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 464391,
+        "decision": "file",
+        "reason": "Official Q3 2026 production, with Model 3/Y 457,387 and other models 7,004"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 13.7,
+        "decision": "file",
+        "reason": "Official Q3 energy storage GWh on the same release; stored on the quarter, not as a vehicle count"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 461974,
+        "decision": "reject",
+        "reason": "Company-compiled analyst consensus, not a Tesla production or delivery actual"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 95366,
+        "decision": "reject",
+        "reason": "CPCA Shanghai wholesale, not the global quarterly production and delivery print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 64837,
+        "decision": "reject",
+        "reason": "China retail only; not global deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 12552,
+        "decision": "reject",
+        "reason": "Germany September registrations, not the global quarter"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 470000,
+        "decision": "reject",
+        "reason": "Prior-week UBS estimate, already filed, and superseded by the actual print"
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-10-10",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab OR Optimus OR FSD OR robotaxi hiring OR jobs site:teslarati.com after:2026-09-26",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "https://www.teslarati.com/feed/ (RSS scan for hiring titles)",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "teslarati.com wp-json posts search=hiring after 2026-09-20",
+        "tool": "urllib",
+        "hits": 0
+      },
+      {
+        "q": "teslarati.com wp-json posts search=job after 2026-09-20",
+        "tool": "urllib",
+        "hits": 3
+      },
+      {
+        "q": "teslanorth.com wp-json posts search=hiring after 2026-09-20",
+        "tool": "urllib",
+        "hits": 1
+      },
+      {
+        "q": "electrek.co wp-json posts search=hiring after 2026-09-20",
+        "tool": "urllib",
+        "hits": 4
+      },
+      {
+        "q": "teslaoracle.com wp-json posts search=hiring after 2026-09-20",
+        "tool": "urllib",
+        "hits": 0
+      },
+      {
+        "q": "Google News: \"Tesla\" (\"job openings\" OR \"job postings\" OR \"is hiring\") 2026",
+        "tool": "web_fetch",
+        "hits": 26
+      },
+      {
+        "q": "Google News: Tesla Optimus OR \"job posting\" OR hiring when:14d",
+        "tool": "web_fetch",
+        "hits": 70
+      },
+      {
+        "q": "Google News: \"Tesla\" \"LinkedIn\" (\"job postings\" OR \"open roles\" OR \"job openings\")",
+        "tool": "web_fetch",
+        "hits": 40
+      },
+      {
+        "q": "Google News: \"Tesla\" (hiring OR \"job openings\" OR \"job postings\" OR careers) (Optimus OR FSD OR robotaxi OR AI) after:2026-09-25",
+        "tool": "web_fetch",
+        "hits": 55
+      },
+      {
+        "q": "AltIndex TSLA job posts live count",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "LinkedIn Tesla company jobs worldwide f_C=15564",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "LinkedIn Tesla Optimus past month f_TPR=r1209600",
+        "tool": "web_fetch",
+        "hits": 731
+      },
+      {
+        "q": "LinkedIn Tesla \"Optimus\" past month",
+        "tool": "web_fetch",
+        "hits": 1000
+      },
+      {
+        "q": "LinkedIn Tesla \"Robotaxi Fleet Support\" past month",
+        "tool": "web_fetch",
+        "hits": 602
+      },
+      {
+        "q": "Tesla careers search query=Optimus site=US",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Bing/DuckDuckGo/Google HTML/Brave: Tesla Optimus OR robotaxi hiring 2026",
+        "tool": "urllib",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/robotaxi-fleet-support-specialist-night-shift-at-tesla-4475842133",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/lead-training-coordinator-optimus-at-tesla-4477472419",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/data-auditor-supervisor-optimus-at-tesla-4476146394",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla LinkedIn openings at 8,185; mix still ~41% sales/service, not an AI ramp",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "file",
+        "reason": "Same tracker URL as last week, but the live count moved from 8,001 to 8,185 inside the window."
+      },
+      {
+        "title": "Tesla LinkedIn openings at 8,001; mix still ~40% service/sales, not an AI ramp",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "Prior week keyChange; the new print is filed separately and the old 8,001 figure is not repeated as its own change."
+      },
+      {
+        "title": "Robotaxi Fleet Support Specialist (Night Shift), Doral FL",
+        "url": "https://www.linkedin.com/jobs/view/robotaxi-fleet-support-specialist-night-shift-at-tesla-4475842133",
+        "decision": "file",
+        "reason": "Opened posting, about five days before the Oct 10 fetch; entry-level wash, inspect, move, and charge work."
+      },
+      {
+        "title": "Lead Training Coordinator, Optimus, Austin",
+        "url": "https://www.linkedin.com/jobs/view/lead-training-coordinator-optimus-at-tesla-4477472419",
+        "decision": "skip",
+        "reason": "Opened and in urlsSeen; folded into the ops-composition keyChange rather than a separate item. Data-collection training, posted about two days before the fetch."
+      },
+      {
+        "title": "Data Auditor Supervisor, Optimus, Fremont",
+        "url": "https://www.linkedin.com/jobs/view/data-auditor-supervisor-optimus-at-tesla-4476146394",
+        "decision": "skip",
+        "reason": "Opened and in urlsSeen; folded into the ops-composition keyChange. Data-audit supervision, $92k\u2013$138k, posted about four days before the fetch."
+      },
+      {
+        "title": "Lead Training Coordinator, Optimus, Fremont",
+        "url": "https://www.linkedin.com/jobs/view/lead-training-coordinator-optimus-at-tesla-4477481054",
+        "decision": "skip",
+        "reason": "Same title as the Austin role, listed about two days before the fetch; description not opened, so not cited."
+      },
+      {
+        "title": "Tesla ramps Optimus to hundreds a week, but the robots can't generalize",
+        "url": "https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/",
+        "decision": "skip",
+        "reason": "Dated 2026-09-25, before the window, and it is an Optimus production story, not a hiring metric."
+      },
+      {
+        "title": "Germany: Tesla Can Launch FSD in EU, but Must Drop the Misleading Name",
+        "url": "https://www.pcmag.com",
+        "decision": "skip",
+        "reason": "Google News hit after 2026-09-25. FSD naming and approval belong to fsd, and the result was not a job-count article."
+      },
+      {
+        "title": "Former Tesla Optimus Lead is Launching an Industrial Robot Startup",
+        "url": "https://www.theinformation.com",
+        "decision": "skip",
+        "reason": "Oct 7 personnel/startup item. Optimus product ownership, not a Tesla requisition count."
+      },
+      {
+        "title": "Tesla executives say company is hiring to support Musk\u2019s expanded solar strategy",
+        "url": "https://www.reuters.com",
+        "decision": "skip",
+        "reason": "Google News hiring query returned Feb 2026 Reuters solar hiring, outside the window."
+      },
+      {
+        "title": "Tesla is hiring for Elon Musk's Terafab chip moonshot",
+        "url": "https://www.businessinsider.com",
+        "decision": "skip",
+        "reason": "March 2026 terafab hiring recap, outside the window and owned by terafab."
+      },
+      {
+        "title": "Tesla launches hiring for Robotaxi program in its twentieth country",
+        "url": "https://www.teslarati.com",
+        "decision": "skip",
+        "reason": "January 2026 Teslarati item on the undated Google News hiring query; already outside this window."
+      },
+      {
+        "title": "Elon Musk Says Grokipedia\u2019s 2,200 Daily Edits Will Get a New Manager",
+        "url": "https://teslanorth.com/2026/10/09/grok-bots-grokipedia/",
+        "decision": "skip",
+        "reason": "TeslaNorth hiring-keyword false positive on 2026-10-09. Not Tesla jobs."
+      },
+      {
+        "title": "Tesla careers Optimus search",
+        "url": "https://www.tesla.com/careers/search/?query=Optimus&site=US",
+        "decision": "skip",
+        "reason": "Akamai Access Denied. Not evidence of a hiring freeze, and the URL is a careers search page."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 8185,
+        "decision": "file",
+        "reason": "AltIndex daily LinkedIn active-posting count on the 2026-10-10 fetch, versus 8,001 on 2026-09-26."
+      },
+      {
+        "series": "jobPostings",
+        "count": 7928,
+        "decision": "reject",
+        "reason": "AltIndex September 2026 monthly chart point, not the daily series that printed 8,001 on Sept 26."
+      },
+      {
+        "series": "jobPostings",
+        "count": 8000,
+        "decision": "reject",
+        "reason": "LinkedIn company page floor of 8,000+ worldwide. Order-of-magnitude check only."
+      },
+      {
+        "series": "jobPostings",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "LinkedIn quoted-Optimus past-month title of 1,000+ is an AI search total dominated by unrelated Robotaxi fleet-support cards."
+      },
+      {
+        "series": "jobPostings",
+        "count": 731,
+        "decision": "reject",
+        "reason": "LinkedIn unquoted Optimus past-month title of 731 mixes Robotaxi fleet support and other non-Optimus roles."
+      },
+      {
+        "series": "jobPostings",
+        "count": 602,
+        "decision": "reject",
+        "reason": "LinkedIn Robotaxi Fleet Support past-month title of 602 mixes true fleet-support roles with Semi, Optimus, and service jobs."
+      }
+    ]
+  }
+}

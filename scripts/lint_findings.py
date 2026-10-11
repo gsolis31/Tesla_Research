@@ -404,10 +404,12 @@ def lint_curated_file(
     if not data.get("date"):
         add("error", "MISSING_DATE", "curated findings missing top-level date")
     week_from, week_to = date_from, date_to
-    if not week_to and data.get("date"):
-        week_to = data["date"]
-    if not week_from and data.get("weekOf"):
-        week_from = data["weekOf"]
+    # metadata.dateRange is the research window and can start before weekOf.
+    meta_from, meta_to = parse_date_range((data.get("metadata") or {}).get("dateRange"))
+    if not week_to:
+        week_to = meta_to or data.get("date")
+    if not week_from:
+        week_from = meta_from or data.get("weekOf")
 
     for kc in key_changes:
         cat_key = _resolve_curated_category_key(kc) or "unknown"

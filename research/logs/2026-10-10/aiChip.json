@@ -1,0 +1,233 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-10-10",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 Samsung TSMC 2nm October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 9
+      },
+      {
+        "q": "Tesla AI5 chip site:teslarati.com",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI6 tape-out site:teslarati.com",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Dojo chip 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Samsung Taylor Tesla AI5 trial production October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI5 site:teslanorth.com",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI chip site:teslaoracle.com",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI5 OR AI6 chip when:30d",
+        "tool": "google_news_rss",
+        "hits": 27
+      },
+      {
+        "q": "Tesla Samsung Taylor AI5 when:30d",
+        "tool": "google_news_rss",
+        "hits": 10
+      },
+      {
+        "q": "TSMC Tesla AI5 when:30d",
+        "tool": "google_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Tesla AI5 RAM OR memory OR DRAM OR HBM when:21d",
+        "tool": "google_news_rss",
+        "hits": 16
+      },
+      {
+        "q": "Dojo Tesla chip OR training when:30d",
+        "tool": "google_news_rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI6 tape-out OR tape out OR December when:30d",
+        "tool": "google_news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Samsung Foundry Tesla September 30 2026",
+        "tool": "google_news_rss",
+        "hits": 20
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4763/tesla-cuts-ram-on-ai5-and-ai6-chips-to-boost-production",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://wccftech.com/elon-musk-slashes-memory-requirements-for-teslas-ai5-chip-by-half-to-72-gb-and-ai6-by-a-third-to-144-gb-but-says-the-performance-of-optimus-wont-be-affected/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://wccftech.com/elon-musk-halves-tesla-ai5-memory-amid-memory-shortage-then-bumps-it-to-96gb-to-dodge-sitting-at-the-bottom-barrel-of-chip-specifications/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/elonmusk/status/2105747471045370250",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/elonmusk/status/2105930010205024419",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/elon-x-takeover-giga-texas/",
+        "kept": false,
+        "reason": "X Takeover remarks were Starship, Model 3 history, and generic AI caution, not AI5/AI6 or foundry"
+      },
+      {
+        "url": "https://koreantechtexas.com/tesla-ai5-samsung-taylor-production-phase-july/",
+        "kept": false,
+        "reason": "Sept 28 recap of known Taylor production; no new spec, yield, or shipment"
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20261005PD200.html",
+        "kept": false,
+        "reason": "Wrong article (Japan AI investment plan), not Tesla silicon"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-cuts-ai5-memory-optimus-96gb/",
+        "kept": false,
+        "reason": "Same memory revision; page title only, no new spec"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla cuts AI5/AI6 memory for DRAM volume, then lifts AI5 only to 96GB",
+        "url": "https://www.notateslaapp.com/news/4763/tesla-cuts-ram-on-ai5-and-ai6-chips-to-boost-production",
+        "decision": "file",
+        "reason": "New Oct 1-2 Musk spec change inside the date window, corroborated by both posts and Wccftech"
+      },
+      {
+        "title": "Elon Musk slashes AI5 memory to 72GB and AI6 to 144GB",
+        "url": "https://wccftech.com/elon-musk-slashes-memory-requirements-for-teslas-ai5-chip-by-half-to-72-gb-and-ai6-by-a-third-to-144-gb-but-says-the-performance-of-optimus-wont-be-affected/",
+        "decision": "skip",
+        "reason": "Same Oct 1 de-spec; used as corroboration, not a second keyChange"
+      },
+      {
+        "title": "Musk bumps AI5 memory from 72GB to 96GB",
+        "url": "https://wccftech.com/elon-musk-halves-tesla-ai5-memory-amid-memory-shortage-then-bumps-it-to-96gb-to-dodge-sitting-at-the-bottom-barrel-of-chip-specifications/",
+        "decision": "skip",
+        "reason": "Same 12-hour revision already included in the filed item"
+      },
+      {
+        "title": "Tesla bumps AI5 memory to 96GB after cutting it to 72GB",
+        "url": "https://driveteslacanada.ca/news/tesla-cuts-ai5-memory-optimus-96gb/",
+        "decision": "skip",
+        "reason": "Same Oct 1-2 memory revision already filed"
+      },
+      {
+        "title": "Tesla AI5 chip enters trial production at Samsung Taylor",
+        "url": "https://www.notateslaapp.com/news/4701/tesla-ai5-chip-enters-trial-production-at-samsungs-texas-fab",
+        "decision": "skip",
+        "reason": "Sept 17, before the window, and already covered in criticalNews"
+      },
+      {
+        "title": "Elon Musk confirms TSMC talks for Texas Terafab",
+        "url": "https://driveteslacanada.ca/news/elon-musk-confirms-tsmc-terafab-talks/",
+        "decision": "skip",
+        "reason": "Terafab operating talks, owned by terafab; not an AI5/AI6 process update"
+      },
+      {
+        "title": "Elon Musk rules out TSMC takeover of Terafab",
+        "url": "https://driveteslacanada.ca/news/elon-musk-rules-out-tsmc-terafab-takeover/",
+        "decision": "skip",
+        "reason": "Terafab control story, not AI5/AI6 foundry process"
+      },
+      {
+        "title": "TSMC, Intel named as Musk Terafab ambitions face reality check",
+        "url": "https://www.digitimes.com/news/a20261005PD219/elon-musk-fab-ic-manufacturing-intel-tsmc.html",
+        "decision": "skip",
+        "reason": "Terafab ownership, not inference-chip tape-out or yield"
+      },
+      {
+        "title": "Tesla AI5 locks in Samsung 2nm at Taylor",
+        "url": "https://www.techtimes.com/articles/320427/20260714/tesla-ai5-locks-samsung-2nm-taylor-flipping-node-assumption.htm",
+        "decision": "skip",
+        "reason": "July 14 node story, outside the window; Sept 30 Tech Times 2nm-vs-Snapdragon item was a mobile-SoC headline, not a Tesla AI5 yield"
+      },
+      {
+        "title": "Elon joins X Takeover and discusses AI",
+        "url": "https://teslanorth.com/2026/10/10/elon-x-takeover-giga-texas/",
+        "decision": "skip",
+        "reason": "No AI5, AI6, Dojo, or foundry detail"
+      },
+      {
+        "title": "Startup founded by ex-Tesla Dojo leaders nears $10 billion",
+        "decision": "skip",
+        "reason": "Sept 24 Google News headline, before the window; alumni startup, not Tesla Dojo program status"
+      },
+      {
+        "title": "Tesla finalizes AI5 chip design",
+        "url": "https://www.teslarati.com/tesla-finalizes-ai5-chip-design-elon-musk-makes-bold-claim-capability/",
+        "decision": "skip",
+        "reason": "seenUrl; Teslarati AI5 tag feed had no new October item"
+      },
+      {
+        "title": "Taiwanese op-ed tells TSMC to reject Terafab partnership",
+        "url": "https://wccftech.com/elon-musk-is-aligned-with-china-warns-taiwanese-op-ed-advising-tsmc-to-reject-terafab-chip-making-project-partnership/",
+        "decision": "skip",
+        "reason": "Terafab partnership commentary, not AI5/AI6 design or yield"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "ai5MemoryGb",
+        "count": 96,
+        "decision": "reject",
+        "reason": "Settled DRAM capacity, not a production or shipment count; config tracks no chip metric series"
+      },
+      {
+        "series": "ai5MemoryGb",
+        "count": 72,
+        "decision": "reject",
+        "reason": "Interim Oct 1 floor, reversed the next morning; not a production metric"
+      },
+      {
+        "series": "ai6MemoryGb",
+        "count": 144,
+        "decision": "reject",
+        "reason": "Chip spec, not output"
+      },
+      {
+        "series": "humanoidDramGb",
+        "count": 200,
+        "decision": "reject",
+        "reason": "Micron or industry estimate per humanoid, not Tesla chip volume"
+      }
+    ]
+  }
+}

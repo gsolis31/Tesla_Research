@@ -1,0 +1,252 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-10-10",
+  "filed": 7,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab Grimes County OR JETI OR \"North Campus\" after:2026-09-25 before:2026-10-11",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "\"Terafab\" Tesla OR SpaceX news past 30 days",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "Terafab Tesla OR SpaceX when:14d",
+        "tool": "web_fetch",
+        "hits": 22
+      },
+      {
+        "q": "\"Terafab\" Grimes OR JETI OR Abbott OR \"North Campus\"",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "\"Terafab\" (JETI OR TERAprint OR \"North Campus\" OR Paxton OR water OR Abbott) news past 30 days",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "\"Terafab\" (JETI OR TERAprint OR \"North Campus\" OR Paxton OR water OR TCEQ OR College Station) when:20d",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "TERAprint OR \"North Campus\" Terafab OR \"research fab\" Tesla Austin when:20d",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "\"Joe Tegtmeyer\" OR JoeTegtmeyer (steel OR crane OR \"North Campus\" OR ATCF) when:21d",
+        "tool": "web_fetch",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://spectrumlocalnews.com/tx/austin/news/2026/09/28/terafab-semiconductor-plant-takes-shape-in-grimes-county",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/elon-musk-tsmc-potential-terafab-partner/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/07/musk-terafab-chip-fab-tsmc/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.enr.com/articles/63809-spacex-records-fight-exposes-119b-terafab-buildout-plans",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://comptroller.texas.gov/economy/development/prop-tax/jeti/application-details.php?id=J0035",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://assets.comptroller.texas.gov/open-data/jeti/J0035/J0035-terafab-anderson-app.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kbtx.com/2026/09/30/terafab-site-takes-shape-elon-musks-companies-face-growing-transparency-questions/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://spectrumlocalnews.com/tx/austin/news/2026/10/06/spacex-sues-ken-paxton-and-grimes-county-over-release-of-terafab-records",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.statesman.com/business/article/college-station-terafab-growth-planning-22436476.php",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-chip-fab-goes-vertical-steel-up-7-cranes-on-site",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://mjengohub.co.ke/articles/infrastructure/spacex-and-tesla-erect-first-structural-steel-at-advanced-technology-chip-fabrication-facility",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.reuters.com/business/media-telecom/intel-keep-working-musks-terafab-chipmaking-venture-bloomberg-news-reports-2026-10-07/",
+        "kept": false,
+        "reason": "page blocked; Intel-remains fact taken from Teslarati and TeslaNorth instead"
+      },
+      {
+        "url": "https://www.tesla.com/careers/search/job/site-construction-superintendent-terafab-280835",
+        "kept": false,
+        "reason": "access denied; hiring claim left attributed to ENR"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Grimes Terafab is still graded earth; $119B is four optional phases",
+        "url": "https://www.enr.com/articles/63809-spacex-records-fight-exposes-119b-terafab-buildout-plans",
+        "decision": "file",
+        "reason": "Oct. 8 report plus JETI application: contingent phase dollars, 2029 jobs start, Oct. 6 earthwork"
+      },
+      {
+        "title": "Musk caps TSMC at a Terafab sublease and says Tesla will run the fab",
+        "url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+        "decision": "file",
+        "reason": "Oct. 7 control decision on who builds and runs the fab, corroborated by TeslaNorth"
+      },
+      {
+        "title": "Austin research fab raises first steel while the slab is still unfinished",
+        "url": "https://www.basenor.com/blogs/news/giga-texas-chip-fab-goes-vertical-steel-up-7-cranes-on-site",
+        "decision": "file",
+        "reason": "New North Campus steel after the Sept. 22 slab item; second outlet shows the slab is unfinished"
+      },
+      {
+        "title": "Hinojosa demands Abbott-Musk Terafab files; answer due Oct. 13",
+        "url": "https://www.kbtx.com/2026/09/30/terafab-site-takes-shape-elon-musks-companies-face-growing-transparency-questions/",
+        "decision": "file",
+        "reason": "New public-information demand on Abbott correspondence, inside the window"
+      },
+      {
+        "title": "Terafab records defendants still unserved a month after SpaceX sued",
+        "url": "https://spectrumlocalnews.com/tx/austin/news/2026/10/06/spacex-sues-ken-paxton-and-grimes-county-over-release-of-terafab-records",
+        "decision": "file",
+        "reason": "Sept. 8 suit was already filed; Oct. 6 docket check that defendants are unserved is new"
+      },
+      {
+        "title": "Court moves TERA-print's Terafab answer from Oct. 9 to Oct. 16",
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "decision": "file",
+        "reason": "Same case as last week, but Oct. 8 order moved the answer date; genuine new docket event"
+      },
+      {
+        "title": "College Station braces for Terafab but will collect none of its property tax",
+        "url": "https://www.statesman.com/business/article/college-station-terafab-growth-planning-22436476.php",
+        "decision": "file",
+        "reason": "Oct. 10 local-impact story; briefing itself was Sept. 10 and is flagged as such"
+      },
+      {
+        "title": "Terafab semiconductor plant takes shape in Grimes County",
+        "url": "https://spectrumlocalnews.com/tx/austin/news/2026/09/28/terafab-semiconductor-plant-takes-shape-in-grimes-county",
+        "decision": "skip",
+        "reason": "Clearing, late-2027 ops line, and neighbor water worries folded into the Oct. 8 earthwork item"
+      },
+      {
+        "title": "Elon Musk teases TSMC as potential Terafab partner",
+        "url": "https://www.teslarati.com/elon-musk-tsmc-potential-terafab-partner/",
+        "decision": "skip",
+        "reason": "Oct. 3 discussions are the setup for the Oct. 7 walk-back, not a separate deal"
+      },
+      {
+        "title": "Wall Street says Elon Musk's Terafab talks with TSMC could spell bad news for Intel",
+        "url": "https://www.cnbc.com/2026/10/06/wall-street-says-elon-musks-terafab-talks-with-tsmc-could-be-bad-news-for-intel.html",
+        "decision": "skip",
+        "reason": "Market take on the same TSMC talks; process-partner angle left for aiChip"
+      },
+      {
+        "title": "Intel to Keep Working on Elon Musk's Terafab Chipmaking Venture",
+        "url": "https://www.reuters.com/business/media-telecom/intel-keep-working-musks-terafab-chipmaking-venture-bloomberg-news-reports-2026-10-07/",
+        "decision": "skip",
+        "reason": "Unread paywall; Intel-remains line already in the Oct. 7 Teslarati and TeslaNorth pieces"
+      },
+      {
+        "title": "County calls Terafab exempt from Abbott data-center permit freeze",
+        "url": "https://www.kbtx.com/2026/09/24/terafab-may-not-be-impacted-by-gov-abbotts-pause-data-centers/",
+        "decision": "skip",
+        "reason": "seenUrl and before the Sept. 26 window; no new state confirmation this week"
+      },
+      {
+        "title": "SpaceX sues to block release of Terafab records",
+        "url": "https://www.kbtx.com/2026/09/10/spacex-sues-block-release-terafab-records/",
+        "decision": "skip",
+        "reason": "seenUrl; Sept. 8 filing already reported. Oct. 6 unserved status filed separately"
+      },
+      {
+        "title": "Terafab Chip Fab Takes Shape as Concrete Pours Begin",
+        "url": "https://www.basenor.com/blogs/news/terafab-chip-fab-takes-shape-as-concrete-pours-begin",
+        "decision": "skip",
+        "reason": "Sept. 22 slab pour, before the window and already covered via Joe Tegtmeyer"
+      },
+      {
+        "title": "Giga Texas Optimus Factory: Steel Frame Nearly Done by October",
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-steel-frame-nearly-done-by-october",
+        "decision": "skip",
+        "reason": "Optimus factory steel, not the North Campus chip fab"
+      },
+      {
+        "title": "Musk's Terafab Advances as SpaceX and Tesla Commit $16.8 Billion",
+        "url": "https://www.sphericalinsights.com/",
+        "decision": "skip",
+        "reason": "Recycled August $16.8 billion announcement, no new construction fact"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafabInvestment",
+        "count": 119,
+        "decision": "reject",
+        "reason": "$119 billion is a four-phase range in the JETI application, not committed spend and not a tracked production series"
+      },
+      {
+        "series": "terafabJobs",
+        "count": 3000,
+        "decision": "reject",
+        "reason": "State announcement of eventual jobs, contradicted near-term by the Anderson-Shiro table showing zero operating jobs until 2029"
+      },
+      {
+        "series": "terafabJobs",
+        "count": 617,
+        "decision": "reject",
+        "reason": "Anderson-Shiro Phase 1 projection for 2029, not a current headcount and not the whole campus"
+      },
+      {
+        "series": "northCampusCranes",
+        "count": 7,
+        "decision": "reject",
+        "reason": "Drone anecdote; the second writeup says eight, and crane count is not a project metric"
+      }
+    ]
+  }
+}

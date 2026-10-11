@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-10",
+  "weekOf": "2026-10-05",
+  "dateFrom": "2026-09-26",
+  "dateTo": "2026-10-10",
+  "candidates": [
+    {
+      "title": "Tesla Q3 2026: 486,532 deliveries, 464,391 produced, 13.7 GWh storage",
+      "url": "https://www.teslarati.com/tesla-tsla-best-wall-street-best-energy-q3-2026/",
+      "date": "2026-10-02",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Actual print beat ~462k delivery consensus and last week's UBS 470k sketch; deliveries were down 2.1% from Q3 2025's 497,099, and 13.7 GWh was the second-best energy quarter."
+    },
+    {
+      "title": "Tesla signs $30B of undrawn credit capacity for future projects",
+      "url": "https://www.notateslaapp.com/news/4750/tesla-secures-30-billion-in-loans-to-fund-future-projects",
+      "date": "2026-09-30",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Sep 29 facilities are committed and unused: $20B delayed-draw term loan to 2029, $8B five-year revolver, $2B 364-day revolver, plus a $5B liquidity covenant. Article ties the capacity to Terafab, Semi, and Optimus."
+    },
+    {
+      "title": "NHTSA gives Tesla until Oct 30 to answer Cybercab audit AQ26002",
+      "url": "https://www.notateslaapp.com/news/4793/tesla-gets-extension-to-respond-to-nhtsas-cybercab-probe",
+      "date": "2026-10-08",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Tesla asked for eight weeks to Nov 20; NHTSA granted 30 days, moving the Sep 30 deadline to Oct 30. The 21 requests still cover no wheel, pedals, or mirrors, temporary human controls, and why there is no Zoox-style exemption."
+    },
+    {
+      "title": "Tesla says Austin Robotaxi has scaled to 300+ Cybercabs, Dallas soon",
+      "url": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/",
+      "date": "2026-10-10",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Company line is 300+ Cybercabs serving Austin, an 8x rise in 30 days, with Ashok Elluswamy saying Dallas is next. Serving-fleet claim, separate from last week's 58-to-126 Texas registry, and silent on unsupervised versus safety monitor."
+    },
+    {
+      "title": "FSD v14.3.11 and HW3 14.3 Lite release notes on 2026.33.5",
+      "url": "https://www.notateslaapp.com/software-updates/version/2026.33.5/release-notes",
+      "date": "2026-10-07",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Oct 7 supervised build after last week's v14.3.10 and HW3 v14.2 Lite. HW4 gets a new vision encoder and faster reaction; HW3 gets 14.3 Lite with parking and speed profiles. TeslaFi at fetch was ~2.5% of fleet."
+    },
+    {
+      "title": "Musk says Tesla will build and run Terafab; TSMC at most a sublease",
+      "url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+      "date": "2026-10-07",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "Oct 7 post closes the Oct 2 Culpan report and Musk's Oct 3 'just discussions' line. Intel's CEO said Intel is still working on Terafab. Phase 1 remains ~$16.8B in Grimes County; Samsung stays the near-term AI5/AI6 foundry."
+    },
+    {
+      "title": "Germany says FSD name is misleading; Tesla offered Tesla Assisted Driving",
+      "url": "https://electrek.co/2026/10/09/tesla-fsd-renamed-tesla-assisted-driving-europe/",
+      "date": "2026-10-09",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "BMV statement on Oct 6: 'FSD – Full Self-Driving Supervised' is misleading, and Tesla offered 'Tesla Assisted Driving' in September talks. Germany will back 10% over the limit versus up to 50% in the Dutch approval. Germany is still outside the approved set."
+    },
+    {
+      "title": "After the Oct 6 TCMV, Germany weighs a national FSD approval path",
+      "url": "https://teslanorth.com/2026/10/06/germany-eu-fsd-approval-push/",
+      "date": "2026-10-06",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Post-meeting outcome, past last week's agenda preview: TCMV discussed FSD and held no vote; next window is December. Minister Bilger said Germany will consider Article 39(5) if Brussels does not act. KBA is still reviewing Dutch documents."
+    },
+    {
+      "title": "Croatia approves FSD Supervised, eighth European country",
+      "url": "https://www.notateslaapp.com/news/4747/tesla-wins-approval-to-launch-fsd-supervised-in-croatia",
+      "date": "2026-09-29",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Tesla EMEA announced the approval on Sep 29, with rollout still pending and limited to HW4/AI4 and the European v14 build. Adds a country beyond last week's Czechia recognition."
+    },
+    {
+      "title": "Austin Robotaxi hours move to 11pm; night pet detection still blocks 24/7",
+      "url": "https://www.teslarati.com/tesla-robotaxi-expands-hours-musk-explains-why-its-been-a-challenge/",
+      "date": "2026-10-03",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Musk on Oct 3 extended closing from 10pm to 11pm and cited grey kittens on grey tarmac. Still short of midnight. The piece still quoted 169 Cybercabs and tied all-night service to an upcoming Robotaxi FSD v15."
+    },
+    {
+      "title": "First Southeast Tesla Semi Megachargers open in Georgia",
+      "url": "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia/",
+      "date": "2026-10-09",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Semi account on Oct 8: Conley has 8 stalls up to 1.2 MW and the Ellabell Pilot site has 6 stalls, about 220 miles apart. Public list is about 4 sites and 26 stalls against about 37 sites planned for 2026."
+    },
+    {
+      "title": "Tesla patent describes flexible tactile sensors for curved robot hands",
+      "url": "https://www.notateslaapp.com/news/4790/tesla-patent-reveals-flexible-sensors-that-let-optimus-feel-objects",
+      "date": "2026-10-08",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Published Oct 8, filed Sep 11 2025. Flexible capacitive or resistive sensors for fingers and palms. The filing does not name Optimus and gives no production rate; Gen 3 is still unshown."
+    },
+    {
+      "title": "Shanghai Model 3 and Model Y gain V2L, 16-inch screen, and Zen Gray for Q4",
+      "url": "https://www.notateslaapp.com/news/4756/tesla-updates-china-made-model-3y-with-v2l-zen-gray-16-screen-and-more",
+      "date": "2026-10-01",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Q4 2026 Giga Shanghai deliveries: factory bidirectional charger, all-black headliner, Zen Gray, and a Model 3 screen step-up to 16-inch 2560×1440. Hardware change, separate from last week's China cash discounts."
+    },
+    {
+      "title": "Houston Robotaxi lot holds an estimated 190–200 Cybercabs, no launch date",
+      "url": "https://www.notateslaapp.com/news/4776/tesla-may-be-getting-ready-to-launch-cybercabs-in-houston",
+      "date": "2026-10-06",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Oct 6 drone count is a watcher estimate. Houston already runs unsupervised Model Y robotaxis; Tesla has not announced commercial Cybercab rides there. Austin remains the only commercial Cybercab city in the piece."
+    },
+    {
+      "title": "IMC expects a first delivery of Tesla Semis this week",
+      "url": "https://www.teslarati.com/tesla-snags-semi-supply-deal-major-logistics-firm/",
+      "date": "2026-10-05",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "IMC said in September it intends to take Semis; a VP told Trucking Drive on Sep 29 that trucks would arrive this week or late the week before. About 50 units, separate from the ZET SCALE 2,500 figure and the Nevada factory opening."
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "https://www.teslarati.com/ and /page/2/ Tesla Oct 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "https://teslanorth.com/ and /latest-news/ Cybercab FSD Oct 2026",
+        "tool": "web_fetch",
+        "hits": 7
+      },
+      {
+        "q": "https://www.teslaoracle.com/ Q3 deliveries earnings FSD Oct 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "https://www.notateslaapp.com/ and page 2 Tesla Sep 26–Oct 10 2026",
+        "tool": "web_fetch",
+        "hits": 14
+      },
+      {
+        "q": "https://electrek.co/ Tesla FSD Semi Oct 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "https://ir.tesla.com/press",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "https://www.nhtsa.gov/press-releases Tesla Cybercab FSD Optimus",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Q3 2026 deliveries robotaxi FSD Optimus AI5 4680 Terafab October 2026",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "https://megaproject.com/news/factory/battery-cells-made-in-grunheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe",
+        "tool": "web_fetch",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {"url": "https://www.teslarati.com/tesla-tsla-best-wall-street-best-energy-q3-2026/", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4750/tesla-secures-30-billion-in-loans-to-fund-future-projects", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4793/tesla-gets-extension-to-respond-to-nhtsas-cybercab-probe", "kept": true},
+      {"url": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/", "kept": true},
+      {"url": "https://www.notateslaapp.com/software-updates/version/2026.33.5/release-notes", "kept": true},
+      {"url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/", "kept": true},
+      {"url": "https://electrek.co/2026/10/09/tesla-fsd-renamed-tesla-assisted-driving-europe/", "kept": true},
+      {"url": "https://teslanorth.com/2026/10/06/germany-eu-fsd-approval-push/", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4747/tesla-wins-approval-to-launch-fsd-supervised-in-croatia", "kept": true},
+      {"url": "https://www.teslarati.com/tesla-robotaxi-expands-hours-musk-explains-why-its-been-a-challenge/", "kept": true},
+      {"url": "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia/", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4790/tesla-patent-reveals-flexible-sensors-that-let-optimus-feel-objects", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4756/tesla-updates-china-made-model-3y-with-v2l-zen-gray-16-screen-and-more", "kept": true},
+      {"url": "https://www.notateslaapp.com/news/4776/tesla-may-be-getting-ready-to-launch-cybercabs-in-houston", "kept": true},
+      {"url": "https://www.teslarati.com/tesla-snags-semi-supply-deal-major-logistics-firm/", "kept": true},
+      {"url": "https://www.teslarati.com/elon-musk-tsmc-potential-terafab-partner/", "kept": false},
+      {"url": "https://teslanorth.com/2026/10/08/tesla-dallas-cybercab-lineup/", "kept": false},
+      {"url": "https://www.teslarati.com/tesla-robotaxi-early-charging-strategy-scrappy-dna/", "kept": false},
+      {"url": "https://www.notateslaapp.com/news/4779/tesla-cybercab-crash-in-philadelphia-exposes-door-internals", "kept": false},
+      {"url": "https://teslanorth.com/2026/10/10/tesla-assisted-driving-tutorial-berlin/", "kept": false},
+      {"url": "https://www.teslarati.com/tesla-says-fixes-full-self-driving-two-biggest-issues-on-the-way/", "kept": false},
+      {"url": "https://www.teslaoracle.com/2026/10/03/tesla-tsla-q3-2026-vehicle-deliveries-grew-1-3-qoq-and-dropped-by-2-1-yoy-energy-business-also-slows-down/", "kept": false},
+      {"url": "https://www.teslaoracle.com/2026/10/04/tesla-tsla-announces-the-date-and-time-for-the-q3-2026-earnings-call-live-webcast-with-elon-musk-and-his-team/", "kept": false},
+      {"url": "https://www.teslaoracle.com/2026/10/08/tesla-begins-the-fsd-v14-3-11-2026-33-5-update-rollout-first-impression-videos-release-notes/", "kept": false},
+      {"url": "https://www.teslarati.com/", "kept": false},
+      {"url": "https://www.teslarati.com/page/2/", "kept": false},
+      {"url": "https://teslanorth.com/", "kept": false},
+      {"url": "https://teslanorth.com/latest-news/", "kept": false},
+      {"url": "https://www.teslaoracle.com/", "kept": false},
+      {"url": "https://www.notateslaapp.com/", "kept": false},
+      {"url": "https://www.notateslaapp.com/news", "kept": false},
+      {"url": "https://electrek.co/", "kept": false},
+      {"url": "https://electrek.co/guides/tesla/", "kept": false},
+      {"url": "https://ir.tesla.com/press", "kept": false},
+      {"url": "https://www.nhtsa.gov/press-releases", "kept": false},
+      {"url": "https://megaproject.com/news/factory/battery-cells-made-in-grunheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe", "kept": false}
+    ]
+  }
+}

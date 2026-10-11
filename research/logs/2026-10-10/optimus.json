@@ -1,0 +1,283 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-10-10",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus production",
+        "tool": "web_search",
+        "hits": 11
+      },
+      {
+        "q": "Tesla Optimus when:30d",
+        "tool": "web_search",
+        "hits": 100
+      },
+      {
+        "q": "Tesla Optimus production when:30d",
+        "tool": "web_search",
+        "hits": 75
+      },
+      {
+        "q": "Tesla Optimus hands when:30d",
+        "tool": "web_search",
+        "hits": 59
+      },
+      {
+        "q": "Optimus Gen 3 when:30d",
+        "tool": "web_search",
+        "hits": 43
+      },
+      {
+        "q": "Optimus Fremont when:30d",
+        "tool": "web_search",
+        "hits": 25
+      },
+      {
+        "q": "Sanhua Optimus when:30d",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Joyson Optimus when:30d",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Optimus in-window deduped Google News set",
+        "tool": "web_search",
+        "hits": 55
+      },
+      {
+        "q": "site:teslarati.com Optimus feed plus Google News",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus hands suppliers The Information",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla patent flexible sensors Optimus",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Giga Texas Optimus steel 40 percent Tegtmeyer",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Musk Digital Optimus Diablo",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Former Tesla Optimus AI lead industrial robots",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 30 billion credit Cybercab Optimus",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Barron's Tesla Optimus secrecy Wall Street",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Optimus learned chores video",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-plant-steel-40-percent",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-patent-flexible-touch-sensors-robot-hands",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/tesla-optimus-tactile-sensor-patent/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4790/tesla-patent-reveals-flexible-sensors-that-let-optimus-feel-objects",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/tesla/tesla-seeks-patent-for-touch-sensitive-skin-for-humanoid-robot-optimus/",
+        "kept": false,
+        "reason": "corroborates the same filing; not the cited source"
+      },
+      {
+        "url": "https://gizmodo.com/tesla-wants-to-build-20000-optimus-robots-a-week-first-it-has-to-figure-out-hands-2000817695",
+        "kept": false,
+        "reason": "Sept 26 rewrite of the Sept 25 Information report already filed"
+      },
+      {
+        "url": "https://thenextweb.com/news/tesla-optimus-production-hands-suppliers",
+        "kept": false,
+        "reason": "same Sept 25 Information account"
+      },
+      {
+        "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
+        "kept": false,
+        "reason": "Sept 25, before the window, same Information report"
+      },
+      {
+        "url": "https://biz.chosun.com/en/en-industry/2026/10/07/ESHUQPSNCRBODJ2W52GFCFO5KE/",
+        "kept": false,
+        "reason": "Hyundai hand design piece; thin unsourced Tesla claims"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/elon-musk-digital-optimus-diablo/",
+        "kept": false,
+        "reason": "screen agent, not the humanoid"
+      },
+      {
+        "url": "https://cryptobriefing.com/tesla-optimus-ai-lead-non-humanoid-robots/",
+        "kept": false,
+        "reason": "Kumar left in Sept 2025; weak startup profile"
+      },
+      {
+        "url": "https://techcrunch.com/2026/09/29/tesla-secures-30b-in-new-credit-lines-as-it-looks-to-scale-cybercab-optimus/",
+        "kept": false,
+        "reason": "shared Cybercab, Optimus, and Semi credit line; not an Optimus production fact"
+      },
+      {
+        "url": "https://www.teslarati.com/elon-musk-interview-xtakeover-giga-texas-event/",
+        "kept": false,
+        "reason": "event preview; no new Optimus production claims"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/elon-x-takeover-giga-texas/",
+        "kept": false,
+        "reason": "Starship and Cybercab remarks; no Optimus update"
+      },
+      {
+        "url": "https://startupfortune.com/tesla-says-optimus-learned-to-do-chores-just-by-watching-humans-on-video/",
+        "kept": false,
+        "reason": "secondary rewrite; primary not verified as new this week"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-steel-frame-nearly-done-by-october",
+        "kept": false,
+        "reason": "overclaims the same construction; 40% steel story filed from Humanoids Daily"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Giga Texas Optimus shell is about 40% steel, not a factory",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-plant-steel-40-percent",
+        "decision": "file",
+        "reason": "Oct 1 flyover is a new quantification versus the Sept 18 steel-frame item"
+      },
+      {
+        "title": "Optimus touch-sensor patent is a 2025 filing, not a working hand",
+        "url": "https://www.humanoidsdaily.com/news/tesla-patent-flexible-touch-sensors-robot-hands",
+        "decision": "file",
+        "reason": "USPTO publication on Oct 8 is new hardware-design evidence; headlines overclaim it"
+      },
+      {
+        "title": "Tesla Wants to Build 20,000 Optimus Robots a Week. First It Has to Figure Out Hands",
+        "url": "https://gizmodo.com/tesla-wants-to-build-20000-optimus-robots-a-week-first-it-has-to-figure-out-hands-2000817695",
+        "decision": "skip",
+        "reason": "Rewrite of the Sept 25 Information report already captured as hundreds a week, internal V3, cannot generalize"
+      },
+      {
+        "title": "Tesla Reportedly Builds Hundreds of Optimus Robots a Week",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-production-hundreds-per-week-report",
+        "decision": "skip",
+        "reason": "seenUrl"
+      },
+      {
+        "title": "Musk Says Tesla Halved AI5 RAM to Secure Memory for Optimus Production",
+        "url": "https://www.humanoidsdaily.com/news/tesla-ai5-ai6-ram-cuts-optimus-production",
+        "decision": "skip",
+        "reason": "AI5/AI6 memory specs belong to aiChip"
+      },
+      {
+        "title": "Elon Says Digital Optimus Is Halfway Through Diablo",
+        "url": "https://teslanorth.com/2026/10/10/elon-musk-digital-optimus-diablo/",
+        "decision": "skip",
+        "reason": "Macrohard screen agent, not Optimus hardware or production"
+      },
+      {
+        "title": "Tesla secures $30B in new credit lines as it looks to scale Cybercab, Optimus",
+        "url": "https://techcrunch.com/2026/09/29/tesla-secures-30b-in-new-credit-lines-as-it-looks-to-scale-cybercab-optimus/",
+        "decision": "skip",
+        "reason": "Undrawn facilities for Cybercab, Optimus, and Semi; not an Optimus ramp fact"
+      },
+      {
+        "title": "Tesla\u2019s former Optimus AI lead bets on robots that don\u2019t look like people",
+        "url": "https://cryptobriefing.com/tesla-optimus-ai-lead-non-humanoid-robots/",
+        "decision": "skip",
+        "reason": "Ashish Kumar left in September 2025; Oct 8 piece is a startup profile from a weak outlet"
+      },
+      {
+        "title": "Hyundai-Boston Dynamics drop pinky as Tesla pushes five-finger robot hands",
+        "url": "https://biz.chosun.com/en/en-industry/2026/10/07/ESHUQPSNCRBODJ2W52GFCFO5KE/",
+        "decision": "skip",
+        "reason": "Competitor hand choice; Tesla durability claim is an unnamed official in an AI translation"
+      },
+      {
+        "title": "Tesla Says Optimus Learned to Do Chores Just by Watching Humans on Video",
+        "url": "https://startupfortune.com/tesla-says-optimus-learned-to-do-chores-just-by-watching-humans-on-video/",
+        "decision": "skip",
+        "reason": "No verified new Tesla disclosure; mixes older training claims and admits no success rates"
+      },
+      {
+        "title": "Tesla\u2019s Secrecy Surrounding Optimus Robot Is Making Wall Street Nervous",
+        "url": "https://www.msn.com/en-us/money/top-stocks/tesla-s-secrecy-surrounding-optimus-robot-is-making-wall-street-nervous/ar-AA2dPipm",
+        "decision": "skip",
+        "reason": "Barron's body not retrievable; headline alone is not fileable"
+      },
+      {
+        "title": "Giga Texas Optimus Factory: Steel Frame Nearly Done by October",
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-steel-frame-nearly-done-by-october",
+        "decision": "skip",
+        "reason": "Same construction, inflated headline; filed the 40% steel account instead"
+      },
+      {
+        "title": "Tesla teases Halloween Mode update with Optimus rising from a graveyard",
+        "url": "https://www.teslarati.com/tesla-teases-halloween-mode-update-with-optimus-rising-from-a-graveyard/",
+        "decision": "skip",
+        "reason": "Vehicle software gag, not Optimus hardware or production"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "End-2026 weekly target from the Sept 25 Information report; unconfirmed, already filed, not a new counted output"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 200,
+        "decision": "reject",
+        "reason": "Several hundred a week is last week's unconfirmed Information figure for internal August units, not an official production metric"
+      },
+      {
+        "series": "optimusTexasSteel",
+        "count": 40,
+        "decision": "reject",
+        "reason": "Observer estimate of steel completion, not robot output and not a tracked Optimus series"
+      }
+    ]
+  }
+}

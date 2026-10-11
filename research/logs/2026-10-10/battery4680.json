@@ -1,0 +1,228 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-10-10",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery cell 2026",
+        "tool": "google_news_rss",
+        "hits": 20
+      },
+      {
+        "q": "\"dry electrode\" OR \"cell giga\" Tesla 4680",
+        "tool": "google_news_rss",
+        "hits": 2
+      },
+      {
+        "q": "Tesla 4680 after:2026-09-25",
+        "tool": "google_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "site:teslarati.com 4680",
+        "tool": "google_news_rss",
+        "hits": 100
+      },
+      {
+        "q": "site:teslanorth.com 4680 OR cathode OR dry electrode",
+        "tool": "google_news_rss",
+        "hits": 100
+      },
+      {
+        "q": "site:basenor.com 4680 OR cathode",
+        "tool": "google_news_rss",
+        "hits": 100
+      },
+      {
+        "q": "Giga Berlin 4680 October 2026",
+        "tool": "google_news_rss",
+        "hits": 45
+      },
+      {
+        "q": "Tesla dry electrode 4680 September OR October 2026",
+        "tool": "google_news_rss",
+        "hits": 16
+      },
+      {
+        "q": "Tesla cell giga OR GWh 4680 2026",
+        "tool": "google_news_rss",
+        "hits": 49
+      },
+      {
+        "q": "Tesla cathode plant Texas October 2026",
+        "tool": "google_news_rss",
+        "hits": 51
+      },
+      {
+        "q": "Tesla lithium refinery Giga Texas 4680 September 2026",
+        "tool": "google_news_rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla 4680 yield scrap cost GWh 2026",
+        "tool": "google_news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Tesla 4680 October 2026",
+        "tool": "google_news_rss",
+        "hits": 51
+      },
+      {
+        "q": "Panasonic 4680 Tesla 2026",
+        "tool": "google_news_rss",
+        "hits": 46
+      },
+      {
+        "q": "Giga Berlin battery cell October 2026",
+        "tool": "google_news_rss",
+        "hits": 49
+      },
+      {
+        "q": "4680 Tesla yield OR scrap OR GWh September OR October 2026",
+        "tool": "google_news_rss",
+        "hits": 50
+      },
+      {
+        "q": "Joe Tegtmeyer cathode OR lithium Tesla September 26 2026",
+        "tool": "google_news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Robert Meyer Tesla 4680",
+        "tool": "google_news_rss",
+        "hits": 1
+      },
+      {
+        "q": "site:battery-news.de Tesla 4680 Meyer",
+        "tool": "google_news_rss",
+        "hits": 1
+      },
+      {
+        "q": "teslarati.com WP posts 4680 cathode since 2026-09-20",
+        "tool": "wordpress_api",
+        "hits": 4
+      },
+      {
+        "q": "teslanorth.com WP posts 4680 cathode since 2026-09-20",
+        "tool": "wordpress_api",
+        "hits": 3
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://battery-news.de/2026/10/02/batteriezellen-made-in-gruenheide-wie-tesla-europas-zellfertigung-skalieren-will/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://megaproject.com/news/factory/battery-cells-made-in-grunheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe",
+        "kept": false,
+        "reason": "same Meyer interview, syndication of Battery-News"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-lithium-plant-hits-full-integration-with-giga-texas-cathode",
+        "kept": false,
+        "reason": "recap of Sep 4 Gulf lithium and Sep 23 cathode tie-in; no new cell metric"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-semi-no-human-contact-approach-production/",
+        "kept": false,
+        "reason": "Semi-plant cell handling plan from Sep 24 event; not a 4680 yield or GWh change"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-semi-more-in-common-than-you-might-think/",
+        "kept": false,
+        "reason": "shared thermal hardware; 4680 mention is incidental and already known"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-semi-4680-battery-electric-steering-heat-pump/",
+        "kept": false,
+        "reason": "published 2026-09-25, before the window"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/elon-x-takeover-giga-texas/",
+        "kept": false,
+        "reason": "Starship, Model 3, and AI; no 4680 remarks"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Berlin cell lead: 4680 still uneconomic, 18 GWh still a 2027 target",
+        "url": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+        "decision": "file",
+        "reason": "Oct 2 Meyer interview; Berlin cell line still pre-production and Tesla says the cost case is weak"
+      },
+      {
+        "title": "Tesla Lithium Plant Hits Full Integration With Giga Texas Cathode",
+        "url": "https://www.basenor.com/blogs/news/tesla-lithium-plant-hits-full-integration-with-giga-texas-cathode",
+        "decision": "skip",
+        "reason": "Sep 26 recap of seen Sep 4 Gulf Coast lithium Cybertruck and filed Sep 23 Cybercab cathode; Tegtmeyer note adds no GWh, yield, or cost figure"
+      },
+      {
+        "title": "Tesla has a no human contact approach for Semi production",
+        "url": "https://www.teslarati.com/tesla-semi-no-human-contact-approach-production/",
+        "decision": "skip",
+        "reason": "Sep 28 writeup of Sep 24 Semi handover; automated trailer unload is vehicle-line handling, not cell output. 2170-to-4680 switch already public Sep 25"
+      },
+      {
+        "title": "Tesla Cybercab and Semi have more in common than you might think",
+        "url": "https://www.teslarati.com/tesla-cybercab-semi-more-in-common-than-you-might-think/",
+        "decision": "skip",
+        "reason": "thermal architecture story; does not change 4680 production, yield, or capacity"
+      },
+      {
+        "title": "Tesla Q3 2026 energy storage 13.7 GWh",
+        "url": "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries/",
+        "decision": "skip",
+        "reason": "Megapack deployment GWh belongs to productionDelivery"
+      },
+      {
+        "title": "Elon Joins X Takeover Virtually at Giga Texas",
+        "url": "https://teslanorth.com/2026/10/10/elon-x-takeover-giga-texas/",
+        "decision": "skip",
+        "reason": "no 4680, cathode, or cell-line comments"
+      },
+      {
+        "title": "Giga Berlin 4-5% pay raise",
+        "url": "https://www.basenor.com/blogs/news/giga-berlins-5-pay-raise-4-details-that-matter",
+        "decision": "skip",
+        "reason": "vehicle-plant wages; article does not mention 4680 or the cell line"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "berlin4680GWh",
+        "count": 18,
+        "decision": "reject",
+        "reason": "up to 18 GWh/year is a 2027 target, not installed or produced output"
+      },
+      {
+        "series": "texas4680GWh",
+        "count": 10,
+        "decision": "reject",
+        "reason": "Q2 Early Ramp figure was not updated this window"
+      },
+      {
+        "series": "robstownLiOHSupportGWh",
+        "count": 30,
+        "decision": "reject",
+        "reason": "refinery LiOH support rating repeated from Lithium Day, not 4680 cell output"
+      },
+      {
+        "series": "energyStorageGWh",
+        "count": 13.7,
+        "decision": "reject",
+        "reason": "Q3 Megapack deployments belong to productionDelivery"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-10-10",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1671,7 +1671,7 @@
     "https://altindex.com/ticker/tsla/job-posts": {
       "originalUrl": "https://altindex.com/ticker/tsla/job-posts",
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-10-10",
       "category": "Job Postings",
       "title": "Tesla LinkedIn US job index jumps to 7,000+ in mid-September \u2014 bulk driven by service/sales, not AI/robotics"
     },
@@ -1951,26 +1951,229 @@
     "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC": {
       "originalUrl": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
       "firstSeen": "2026-09-26",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-10-10",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "TERA-print served in Terafab name suit; answer due Oct. 9 with no ruling"
+    },
+    "https://www.notateslaapp.com/news/4763/tesla-cuts-ram-on-ai5-and-ai6-chips-to-boost-production": {
+      "originalUrl": "https://www.notateslaapp.com/news/4763/tesla-cuts-ram-on-ai5-and-ai6-chips-to-boost-production",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "AI Chip Production",
+      "title": "Tesla cuts AI5/AI6 memory for DRAM volume, then lifts AI5 only to 96GB"
+    },
+    "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe": {
+      "originalUrl": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "4680 Battery Cell Production",
+      "title": "Berlin cell lead: 4680 still uneconomic, 18 GWh still a 2027 target"
+    },
+    "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet": {
+      "originalUrl": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Cybercab Production",
+      "title": "Tesla's 300-plus Austin Cybercab claim tracks the registry, not verified rides"
+    },
+    "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension": {
+      "originalUrl": "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Cybercab Production",
+      "title": "NHTSA gave Tesla until Oct 30, not Nov 20, for sworn Cybercab FMVSS answers"
+    },
+    "https://teslanorth.com/2026/10/03/tesla-robotaxi-austin-hours-11pm": {
+      "originalUrl": "https://teslanorth.com/2026/10/03/tesla-robotaxi-austin-hours-11pm/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Cybercab Production",
+      "title": "Austin robotaxi hours move only to 11 p.m. because night vision still misses pets"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-early-charging-strategy-scrappy-dna": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-early-charging-strategy-scrappy-dna/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Cybercab Production",
+      "title": "Driverless robotaxis still need a person to plug them in at a public Supercharger"
+    },
+    "https://teslanorth.com/2026/09/29/tesla-fsd-croatia-approval": {
+      "originalUrl": "https://teslanorth.com/2026/09/29/tesla-fsd-croatia-approval/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD Country Approvals",
+      "title": "Croatia Recognises Dutch FSD Supervised Approval, Eighth EU State"
+    },
+    "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Digitalisierung-der-Mobilitaet/aktueller-stand-tesla-assistenzsysteme.html": {
+      "originalUrl": "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Digitalisierung-der-Mobilitaet/aktueller-stand-tesla-assistenzsysteme.html",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD Country Approvals",
+      "title": "Germany Will Lobby for EU FSD Approval, But Has Not Granted It"
+    },
+    "https://www.reuters.com/investigations/tesla-is-browbeating-eu-approve-its-full-self-driving-tech-pressure-is-working-2026-10-07": {
+      "originalUrl": "https://www.reuters.com/investigations/tesla-is-browbeating-eu-approve-its-full-self-driving-tech-pressure-is-working-2026-10-07/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD Country Approvals",
+      "title": "Reuters: Tesla Pressed RDW to Narrow the FSD Review"
+    },
+    "https://www.pravda.sk/auto/magazin/clanok/2055389-slovensko-onedlho-povoli-autonomne-riadenie-tesla-fsd-vodic-vsak-zodpovednost-neodovzda-autu": {
+      "originalUrl": "https://www.pravda.sk/auto/magazin/clanok/2055389-slovensko-onedlho-povoli-autonomne-riadenie-tesla-fsd-vodic-vsak-zodpovednost-neodovzda-autu",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD Country Approvals",
+      "title": "Slovakia Promises an FSD Recognition Letter, Has Not Sent It"
+    },
+    "https://www.teslaoracle.com/2026/10/08/tesla-begins-the-fsd-v14-3-11-2026-33-5-update-rollout-first-impression-videos-release-notes": {
+      "originalUrl": "https://www.teslaoracle.com/2026/10/08/tesla-begins-the-fsd-v14-3-11-2026-33-5-update-rollout-first-impression-videos-release-notes/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.11 and HW3 v14.3 Lite roll out on 2026.33.5 with unchanged notes"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.38.5/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.38.5/release-notes",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.12 shows up on 2026.38.5 with the same notes and almost no installs"
+    },
+    "https://www.notateslaapp.com/news/4766/tesla-fsds-main-issue-with-nighttime-driving-is-avoiding-pets": {
+      "originalUrl": "https://www.notateslaapp.com/news/4766/tesla-fsds-main-issue-with-nighttime-driving-is-avoiding-pets",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD v15 Software",
+      "title": "Musk says night pet detection is still unsolved; no FSD v15 in customer OTAs"
+    },
+    "https://www.notateslaapp.com/news/4761/tesla-fsd-to-get-navigation-improvements-and-pothole-detection": {
+      "originalUrl": "https://www.notateslaapp.com/news/4761/tesla-fsd-to-get-navigation-improvements-and-pothole-detection",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "FSD v15 Software",
+      "title": "Pothole avoidance and route memory stay promised, not in v14.3.11 or v14.3.12"
+    },
+    "https://www.linkedin.com/jobs/view/robotaxi-fleet-support-specialist-night-shift-at-tesla-4475842133": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/robotaxi-fleet-support-specialist-night-shift-at-tesla-4475842133",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Job Postings",
+      "title": "New Robotaxi and Optimus posts are lot support and data collection, not engineering"
+    },
+    "https://www.humanoidsdaily.com/news/tesla-optimus-texas-plant-steel-40-percent": {
+      "originalUrl": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-plant-steel-40-percent",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Optimus Production",
+      "title": "Giga Texas Optimus shell is about 40% steel, not a factory"
+    },
+    "https://www.humanoidsdaily.com/news/tesla-patent-flexible-touch-sensors-robot-hands": {
+      "originalUrl": "https://www.humanoidsdaily.com/news/tesla-patent-flexible-touch-sensors-robot-hands",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Optimus Production",
+      "title": "Optimus touch-sensor patent is a 2025 filing, not a working hand"
+    },
+    "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries": {
+      "originalUrl": "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "Q3 deliveries of 486,532 beat a low consensus, but volume is still down YoY and the beat is mostly destocking"
+    },
+    "https://cnevpost.com/2026/10/09/tesla-china-sept-2026-wholesale": {
+      "originalUrl": "https://cnevpost.com/2026/10/09/tesla-china-sept-2026-wholesale/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "Shanghai wholesale hits a 2026 high of 95,366 while China retail falls for a fourth straight month"
+    },
+    "https://driveteslacanada.ca/news/tesla-model-y-germany-best-selling-car-september-2026": {
+      "originalUrl": "https://driveteslacanada.ca/news/tesla-model-y-germany-best-selling-car-september-2026/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "September European registrations jump, including a Germany Model Y win, off an easy 2025 base"
+    },
+    "https://www.notateslaapp.com/news/4750/tesla-secures-30-billion-in-loans-to-fund-future-projects": {
+      "originalUrl": "https://www.notateslaapp.com/news/4750/tesla-secures-30-billion-in-loans-to-fund-future-projects",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla signs $30B of undrawn credit; no 2026 draw and no project earmark"
+    },
+    "https://www.notateslaapp.com/news/4756/tesla-updates-china-made-model-3y-with-v2l-zen-gray-16-screen-and-more": {
+      "originalUrl": "https://www.notateslaapp.com/news/4756/tesla-updates-china-made-model-3y-with-v2l-zen-gray-16-screen-and-more",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "Shanghai Q4 Model 3 and Y add V2L and a 16-inch screen; not a sales rebound"
+    },
+    "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia": {
+      "originalUrl": "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Vehicle Production & Delivery",
+      "title": "First Southeast Semi Megachargers open in Georgia; network still ~4 of ~37 sites"
+    },
+    "https://www.enr.com/articles/63809-spacex-records-fight-exposes-119b-terafab-buildout-plans": {
+      "originalUrl": "https://www.enr.com/articles/63809-spacex-records-fight-exposes-119b-terafab-buildout-plans",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Grimes Terafab is still graded earth; $119B is four optional phases"
+    },
+    "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab": {
+      "originalUrl": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Musk caps TSMC at a Terafab sublease and says Tesla will run the fab"
+    },
+    "https://www.basenor.com/blogs/news/giga-texas-chip-fab-goes-vertical-steel-up-7-cranes-on-site": {
+      "originalUrl": "https://www.basenor.com/blogs/news/giga-texas-chip-fab-goes-vertical-steel-up-7-cranes-on-site",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Austin research fab raises first steel while the slab is still unfinished"
+    },
+    "https://www.kbtx.com/2026/09/30/terafab-site-takes-shape-elon-musks-companies-face-growing-transparency-questions": {
+      "originalUrl": "https://www.kbtx.com/2026/09/30/terafab-site-takes-shape-elon-musks-companies-face-growing-transparency-questions/",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Hinojosa demands Abbott-Musk Terafab files; answer due Oct. 13"
+    },
+    "https://spectrumlocalnews.com/tx/austin/news/2026/10/06/spacex-sues-ken-paxton-and-grimes-county-over-release-of-terafab-records": {
+      "originalUrl": "https://spectrumlocalnews.com/tx/austin/news/2026/10/06/spacex-sues-ken-paxton-and-grimes-county-over-release-of-terafab-records",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Terafab records defendants still unserved a month after SpaceX sued"
+    },
+    "https://www.statesman.com/business/article/college-station-terafab-growth-planning-22436476.php": {
+      "originalUrl": "https://www.statesman.com/business/article/college-station-terafab-growth-planning-22436476.php",
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "College Station braces for Terafab but will collect none of its property tax"
     }
   },
   "stats": {
-    "totalUrls": 279,
+    "totalUrls": 308,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 23,
-      "Cybercab Production": 41,
-      "FSD v15 Software": 30,
-      "Vehicle Production & Delivery": 45,
+      "Optimus Production": 25,
+      "Cybercab Production": 45,
+      "FSD v15 Software": 34,
+      "Vehicle Production & Delivery": 51,
       "unknown": 52,
-      "FSD Country Approvals": 26,
-      "4680 Battery Cell Production": 6,
+      "FSD Country Approvals": 30,
+      "4680 Battery Cell Production": 7,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 11,
-      "Job Postings": 17,
-      "Terafab In-House Chip Manufacturing": 15
+      "AI Chip Production": 12,
+      "Job Postings": 18,
+      "Terafab In-House Chip Manufacturing": 21
     }
   }
 }
