@@ -1,0 +1,140 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-10-18",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery October 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla 4680 battery",
+        "tool": "web_search",
+        "hits": 100
+      },
+      {
+        "q": "\"4680\" Tesla after:2026-10-09 before:2026-10-19",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla (Berlin OR Texas OR cathode OR dry electrode OR yield OR GWh) 4680 after:2026-10-01 before:2026-10-19",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Giga Berlin OR Gr\u00fcnheide Tesla (4680 OR battery cell) after:2026-10-09 before:2026-10-19",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 battery past 7 days",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslarati.com 4680 after:2026-09-01",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "site:teslanorth.com 4680 after:2026-09-01",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "site:electrek.co 4680 after:2026-09-15",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Tesla battery after:2026-10-10 before:2026-10-19 site:teslarati.com",
+        "tool": "web_search",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notebookcheck.net/Roadster-2-is-fastest-charging-Tesla-with-4680-battery-made-for-hard-driving.1427327.0.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-roadster-battery-pack-your-questions-answered",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/14/giga-berlin-second-hall/",
+        "kept": false,
+        "reason": "vehicle assembly hall, not a cell line"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/16/tesla-roadster-launch-behind-the-scenes/",
+        "kept": false,
+        "reason": "event color; no 4680 production or yield figure beyond the Moravy interview"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Roadster 4680 pack is a prototype claim, not a cell ramp",
+        "url": "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview/",
+        "decision": "file",
+        "reason": "in-window engineering disclosure on 4680 format, cooling, voltage, and an unproven charge target"
+      },
+      {
+        "title": "Tesla wants a second Giga Berlin hall more than twice the size of the first",
+        "url": "https://teslanorth.com/2026/10/14/giga-berlin-second-hall/",
+        "decision": "skip",
+        "reason": "vehicle assembly expansion toward 1 million cars a year; cell line is only background"
+      },
+      {
+        "title": "Tesla Roadster Battery Pack: Your Questions Answered",
+        "url": "https://www.basenor.com/blogs/news/tesla-roadster-battery-pack-your-questions-answered",
+        "decision": "skip",
+        "reason": "same Roadster pack story; 150 kWh is an unofficial observer figure, not a separate production update"
+      },
+      {
+        "title": "Battery cells made in Gr\u00fcnheide (reprint)",
+        "url": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+        "decision": "skip",
+        "reason": "seenUrl and before the Oct 10 window; no new GWh this week"
+      },
+      {
+        "title": "SpaceX and Tesla both report Q3 2026 earnings this week",
+        "url": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week",
+        "decision": "skip",
+        "reason": "earnings call is Oct 21, outside the window; 13.7 GWh is energy-storage deployment, not 4680 cell output"
+      },
+      {
+        "title": "Tesla Cybercab gets initial tie-in to localized in-house cathode plant",
+        "url": "https://www.teslarati.com/tesla-cybercab-initial-tie-in-localized-in-house-cathode-plant/",
+        "decision": "skip",
+        "reason": "seenUrl and dated 2026-09-24, before the window"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680PackKwh",
+        "count": 150,
+        "decision": "reject",
+        "reason": "unofficial Roadster pack kWh from a fan account; Moravy did not state it, and other estimates are near 100 kWh"
+      },
+      {
+        "series": "energyStorageGWh",
+        "count": 13.7,
+        "decision": "reject",
+        "reason": "Q3 energy-storage deployments, owned by productionDelivery, not 4680 cell production"
+      }
+    ]
+  }
+}

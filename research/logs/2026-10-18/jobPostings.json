@@ -1,0 +1,249 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-10-18",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring job posting October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI engineer job posting October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD hiring careers October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla LinkedIn job postings count October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Robotaxi hiring job October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "site:teslarati.com Tesla hiring Optimus OR careers October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "site:notateslaapp.com Tesla hiring OR job posting October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Optimus data collection job posting October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "AltIndex Tesla job posts October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla careers Optimus manufacturing engineer October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Optimus OR FSD OR Robotaxi hiring OR job posting after:2026-10-09 before:2026-10-19",
+        "tool": "google_news_rss",
+        "hits": 56
+      },
+      {
+        "q": "Tesla (hiring OR job posting OR job openings) (Optimus OR FSD OR Robotaxi OR Tesla AI) when:7d",
+        "tool": "google_news_rss",
+        "hits": 18
+      },
+      {
+        "q": "Tesla Optimus hiring OR job posting October 2026",
+        "tool": "bing",
+        "hits": 10
+      },
+      {
+        "q": "Tesla job posting OR now hiring Optimus OR FSD OR Robotaxi past week",
+        "tool": "bing",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus job hiring 2026 past week",
+        "tool": "brave",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Fleet Coordinator Optimus hiring past week",
+        "tool": "brave",
+        "hits": 1
+      },
+      {
+        "q": "site:teslarati.com Tesla hiring OR job posting Optimus OR FSD 2026 past week",
+        "tool": "brave",
+        "hits": 0
+      },
+      {
+        "q": "LinkedIn guest Optimus Tesla past week and past two weeks",
+        "tool": "linkedin_guest",
+        "hits": 10
+      },
+      {
+        "q": "LinkedIn guest Robotaxi f_C=15564 past two weeks",
+        "tool": "linkedin_guest",
+        "hits": 10
+      },
+      {
+        "q": "LinkedIn guest FSD Tesla and AI Engineer f_C=15564 past week",
+        "tool": "linkedin_guest",
+        "hits": 10
+      },
+      {
+        "q": "LinkedIn guest Optimus Charging Tesla past month",
+        "tool": "linkedin_guest",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://optimusk.blog/",
+        "kept": false,
+        "reason": "homepage; latest posts are March-September guides, no October hiring item"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/manufacturing-engineer-optimus-general-assembly-at-tesla-4479717056",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/software-engineer-mobile-optimus-at-tesla-4480332558",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/process-engineer-optimus-actuators-at-tesla-4480869978",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/site-reliability-engineer-optimus-at-tesla-4479796936",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4479716096",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/lead-training-coordinator-optimus-at-tesla-4478763208",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/program-manager-deployment-optimus-at-tesla-4480198581",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://ev.careers/jobs/762017505-sr-software-engineer-optimus-charging",
+        "kept": false,
+        "reason": "board mirror dated only 1w ago; matching LinkedIn req not found"
+      },
+      {
+        "url": "https://www.jobzmall.com/news/tesla-expands-hiring-across-global-roles-i9f8jg0t6p",
+        "kept": false,
+        "reason": "unsourced aggregator; 415 and 8340 conflict with AltIndex"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Austin Optimus line posts are single NPI engineers, not an AI hiring ramp",
+        "url": "https://www.linkedin.com/jobs/view/process-engineer-optimus-actuators-at-tesla-4480869978",
+        "decision": "file",
+        "reason": "new in-window engineering reqs; scale and mix do not support a ramp"
+      },
+      {
+        "title": "Robotaxi market leads and Optimus deployment posts are ops, not autonomy R&D",
+        "url": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4479716096",
+        "decision": "file",
+        "reason": "new multi-city ops reqs plus data-collection training and deployment PM inside the window"
+      },
+      {
+        "title": "Tesla LinkedIn openings at 8,170",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "same dashboard already filed at 8,185 on 2026-10-10; live page has no timestamp, 0% badge, and -15 is scrape noise \u2014 used as context only"
+      },
+      {
+        "title": "Tesla Expands Hiring Across Global Roles (415 new openings)",
+        "url": "https://www.jobzmall.com/news/tesla-expands-hiring-across-global-roles-i9f8jg0t6p",
+        "decision": "skip",
+        "reason": "unsourced JobzMall copy; 8,340 open roles disagrees with AltIndex 8,170 and no AI/robotics mix is shown"
+      },
+      {
+        "title": "Tesla is hiring an Optimus Fleet Coordinator in Palo Alto",
+        "url": "https://x.com/AGTPinsights/status/2110381852402106617",
+        "decision": "skip",
+        "reason": "X-only claim; no matching LinkedIn or Tesla careers posting found"
+      },
+      {
+        "title": "Sr. Software Engineer, Optimus Charging",
+        "url": "https://ev.careers/jobs/762017505-sr-software-engineer-optimus-charging",
+        "decision": "skip",
+        "reason": "aggregator date is only 1 week ago and the role did not appear in LinkedIn guest results"
+      },
+      {
+        "title": "Tesla's Optimus Data Push: 6 Details That Matter",
+        "url": "https://www.basenor.com/",
+        "decision": "skip",
+        "reason": "program commentary; data-collection hiring is already documented from primary reqs, and a factory narrative without a hiring metric belongs to optimus"
+      },
+      {
+        "title": "SI Platform Engineer, Terafab",
+        "url": "https://www.linkedin.com/jobs/view/si-platform-engineer-terafab-at-tesla-4479792984",
+        "decision": "skip",
+        "reason": "single terafab platform req; fab narrative is terafab, not this category's AI/Optimus hiring story"
+      },
+      {
+        "title": "New Robotaxi and Optimus posts are lot support and data collection, not engineering",
+        "url": "https://www.linkedin.com/jobs/view/robotaxi-fleet-support-specialist-night-shift-at-tesla-4475842133",
+        "decision": "skip",
+        "reason": "seenUrl from 2026-10-05; this week files newer market-lead and data-collection reqs instead"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 8170,
+        "decision": "reject",
+        "reason": "AltIndex live page shows 8,170 with a 0% badge and no timestamp; -15 versus 8,185 on 2026-10-10 is inside scrape noise and is not a confirmed dated observation"
+      },
+      {
+        "series": "jobPostings",
+        "count": 8340,
+        "decision": "reject",
+        "reason": "JobzMall '8,340 open roles' is a different unsourced scrape and conflicts with the tracked AltIndex series"
+      },
+      {
+        "series": "jobPostings",
+        "count": 415,
+        "decision": "reject",
+        "reason": "JobzMall '415 new openings' on 2026-10-13 has no role list, no primary Tesla source, and mixes service and sales with engineering"
+      }
+    ]
+  }
+}

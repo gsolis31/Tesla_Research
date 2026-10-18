@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-18",
+  "weekOf": "2026-10-12",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 9,
+      "fetched": 15,
+      "considered": 9,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 11,
+      "fetched": 14,
+      "considered": 10,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 8,
+      "fetched": 11,
+      "considered": 8,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 9,
+      "fetched": 13,
+      "considered": 8,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 5,
+      "queries": 6,
+      "fetched": 11,
+      "considered": 16,
+      "skipped": 11,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 13,
+      "fetched": 10,
+      "considered": 8,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 10,
+      "fetched": 5,
+      "considered": 6,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 11,
+      "fetched": 10,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 21,
+      "fetched": 11,
+      "considered": 9,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 2,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-10-18/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-10-18/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 9,
+    "covered": 7,
+    "ignored": 0,
+    "gapCount": 2,
+    "queries": 8,
+    "gaps": [
+      {
+        "title": "Austin robotaxi hours move from 11 p.m. to midnight",
+        "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+        "likelyCategory": "cybercab"
+      },
+      {
+        "title": "Cybercab general-assembly manager leaves Tesla for Rivian R2",
+        "url": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+        "likelyCategory": "jobPostings"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 23,
+    "duplicatesRemoved": 0,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 0,
+    "totalKeyChanges": 21,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-10-18",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "FSD approval Europe October 2026 site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "FSD approval site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "NHTSA FSD 2026 site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "NHTSA FSD October 2026 site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "Tesla FSD approval Europe October 2026 Slovakia OR Italy OR Germany OR NHTSA OR China",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD Slovakia approval October 16 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD Supervised Italy OR China OR France OR UK OR Finland OR Austria approval October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "NHTSA Tesla FSD investigation October 2026 -robotaxi -Cybercab",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Fairfield CHP Tesla I-80 October 2026 officers injured Full Self-Driving",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Ireland FSD 2026 site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Slovakia FSD site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.mindop.sk/media/tlacove-spravy/detail/slovensko-umoznilo-ciastocne-autonomne-riadenie-aut",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/16/slovakia-fsd-approved/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/16/tesla-europe-slovakia-rollout-soon/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.cbsnews.com/sacramento/news/i80-fairfield-tesla-full-self-driving-chp-crash-video/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.cbsnews.com/sacramento/news/fairfield-i80-tesla-crash-2-chp-officers-hurt/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.nbcbayarea.com/news/local/tesla-chp-patrol-car-i-80-fairfield/4159418/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://abc7news.com/post/video-driver-asleep-tesla-driving-mode-plows-scene-crash-80-fairfield/19942866/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/16/tesla-fsd-crash-chp-patrol-car-driver-asleep-fairfield/",
+        "kept": false,
+        "reason": "Tier 2; treats the driver's FSD claim as fact. CBS and NBC used instead."
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/tesla-assisted-driving-tutorial-berlin/",
+        "kept": false,
+        "reason": "Tutorial and price page; Germany still unapproved, already filed 6 October."
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+        "kept": false,
+        "reason": "Robotaxi ADS defect petition DP26010, opened 9 October, belongs to cybercab."
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4838/slovakia-becomes-9th-european-country-to-approve-tesla-fsd",
+        "kept": false,
+        "reason": "Same Slovakia recognition. Version table left out to avoid an fsdv15 trespass."
+      },
+      {
+        "url": "https://www.reuters.com/business/tesla-receives-approval-self-driving-tech-slovakia-2026-10-16/",
+        "kept": false,
+        "reason": "Page blocked; lede only via search snippet, not used as the cite."
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-fsd-slovakia-officially-approved/",
+        "kept": false,
+        "reason": "Article body did not load."
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-assisted-driving-in-europe-slovakia-approval-explained-in-5-points",
+        "kept": false,
+        "reason": "Fetch returned shop chrome, not the article body."
+      }
+    ],
+    "considered": [
+      {
+        "title": "Slovakia Recognizes Dutch FSD Approval, Still No EU Vote or Dated Rollout",
+        "url": "https://www.mindop.sk/media/tlacove-spravy/detail/slovensko-umoznilo-ciastocne-autonomne-riadenie-aut",
+        "decision": "file",
+        "reason": "New 16 October ministry recognition. Last week was only a promised letter."
+      },
+      {
+        "title": "Tesla Europe Confirms Slovakia FSD Approval, Says Rollout Begins Soon",
+        "url": "https://teslanorth.com/2026/10/16/tesla-europe-slovakia-rollout-soon/",
+        "decision": "skip",
+        "reason": "Same recognition. Czech/Croatia 'soon' lag folded into the ministry item."
+      },
+      {
+        "title": "Tesla Hit a Fairfield CHP Car; Driver Says He Was Asleep on FSD",
+        "url": "https://www.cbsnews.com/sacramento/news/i80-fairfield-tesla-full-self-driving-chp-crash-video/",
+        "decision": "file",
+        "reason": "In-window civil crash with a driver FSD claim. Engagement not confirmed by a log."
+      },
+      {
+        "title": "Tesla driver says he was asleep on FSD when he hit CHP car",
+        "url": "https://electrek.co/2026/10/16/tesla-fsd-crash-chp-patrol-car-driver-asleep-fairfield/",
+        "decision": "skip",
+        "reason": "Electrek-only framing overclaims FSD. CBS, NBC, and ABC7 carry the crash."
+      },
+      {
+        "title": "Tesla Films Its Mandatory Assisted Driving Video in Berlin",
+        "url": "https://teslanorth.com/2026/10/10/tesla-assisted-driving-tutorial-berlin/",
+        "decision": "skip",
+        "reason": "No new approval. Restates the 6 October Germany non-approval and an eight-country support list."
+      },
+      {
+        "title": "NHTSA Opens School Zone Review of Tesla Robotaxis",
+        "url": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+        "decision": "skip",
+        "reason": "DP26010 opened 9 October and targets robotaxi ADS, not FSD Supervised country approval. cybercab."
+      },
+      {
+        "title": "Slovakia Promises an FSD Recognition Letter, Has Not Sent It",
+        "url": "https://www.pravda.sk/auto/magazin/clanok/2055389-slovensko-onedlho-povoli-autonomne-riadenie-tesla-fsd-vodic-vsak-zodpovednost-neodovzda-autu",
+        "decision": "skip",
+        "reason": "8 October recentKeyChange. Superseded by the 16 October recognition, which is filed separately."
+      },
+      {
+        "title": "Reuters: Tesla Pressed RDW to Narrow the FSD Review",
+        "url": "https://www.reuters.com/investigations/tesla-is-browbeating-eu-approve-its-full-self-driving-tech-pressure-is-working-2026-10-07/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange. No new development this window."
+      },
+      {
+        "title": "NHTSA engineering analysis EA26002 on FSD visibility",
+        "url": "https://static.nhtsa.gov/odi/inv/2026/INOA-EA26002-10023.pdf",
+        "decision": "skip",
+        "reason": "Opened 18 March 2026, outside the window. No October update found."
+      },
+      {
+        "title": "Italy, China, France, UK, Finland, Austria, Ireland approvals",
+        "url": "https://teslanorth.com/2026/10/08/tesla-assisted-driving-europe/",
+        "decision": "skip",
+        "reason": "No in-window decision. Ireland and Italy lines are older background. Rename story is 8 October."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 9,
+        "decision": "reject",
+        "reason": "Compiled EU recognition tally, not an official EU or Tesla statistic, and merge does not append a count into the fsdApprovals country list. Czechia, Croatia, and Slovakia activations are still undated, so 9 is not live installs. Slovakia is in the keyChange."
+      }
+    ]
+  }
+}

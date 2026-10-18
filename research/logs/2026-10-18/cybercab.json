@@ -1,0 +1,227 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-10-18",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab OR robotaxi site:teslanorth.com October 2026",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "cybercab site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "Tesla Cybercab OR robotaxi October 12 2026..October 18 2026",
+        "tool": "web_fetch",
+        "hits": 14
+      },
+      {
+        "q": "cybercab site:teslaoracle.com",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "robotaxi site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Cybercab Dallas OR fleet OR production news past week",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "DP26010 Tesla robotaxi school zone",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "cybercab school zone site:electrek.co",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "school zone robotaxi site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "kept": false,
+        "reason": "valuation comment, no fleet or production fact"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/12/tesla-cybercab-paris-motor-show/",
+        "kept": false,
+        "reason": "display of one US fleet car, not a launch"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/11/grok-bot-cybercab-model-y/",
+        "kept": false,
+        "reason": "cabin assistant also on Model Y, not fleet ops"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-dallas/",
+        "kept": false,
+        "reason": "recap of Oct 10 300-plus claim already filed"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-passengers-camera-visibility/",
+        "kept": false,
+        "reason": "camera view still only 'in development'"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-robotaxi-grok-bot/",
+        "kept": false,
+        "reason": "opinion piece on Grok bot"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/cybercab-rider-camera-views/",
+        "kept": false,
+        "reason": "same unshipped camera request"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/12/tesla-scales-cybercabs-in-texas-and-halts-the-number-of-model-y-robotaxis/",
+        "kept": false,
+        "reason": "registry plateau spun as a Model Y halt"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://static.nhtsa.gov/odi/inv/2026/INOA-DP26010-19159.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/12/nhtsa-tesla-robotaxi-school-zone-speeding-petition/",
+        "kept": false,
+        "reason": "corroboration only; overstates 1,000 as a fleet count"
+      },
+      {
+        "url": "https://carbuzz.com/feds-investigate-tesla-cybercab-robotaxis-school-zone-speeding/",
+        "kept": false,
+        "reason": "headline calls a petition an investigation"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/10/cybercab-door-fence-video/",
+        "kept": false,
+        "reason": "single owner video, Tesla has not confirmed"
+      },
+      {
+        "url": "https://mondial.paris/actualites/auto-mondial/mondial-de-lauto-2026-le-futur-de-la-mobilite-selon-tesla-92190.html",
+        "kept": false,
+        "reason": "Sept 30 show announcement, not a service launch"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/14/tesla-q3-2026-earnings-questions/",
+        "kept": false,
+        "reason": "shareholder questions, no operational answer"
+      }
+    ],
+    "considered": [
+      {
+        "title": "NHTSA opened a school-zone speeding petition on Cybercab and Model Y robotaxis",
+        "url": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+        "decision": "file",
+        "reason": "new ODI defect petition DP26010 in the window, confirmed on the NHTSA resume; robotaxi ops, not a crash investigation"
+      },
+      {
+        "title": "Tesla's Cybercab fleet jumped 8x in a month, with Dallas up next",
+        "url": "https://www.teslarati.com/tesla-cybercab-dallas/",
+        "decision": "skip",
+        "reason": "same Oct 10 Robotaxi post and Ashok 'Dallas soon' line already covered by the seen 300-plus Austin story"
+      },
+      {
+        "title": "Tesla scales Cybercabs in Texas and halts the number of Model Y Robotaxis",
+        "url": "https://www.teslaoracle.com/2026/10/12/tesla-scales-cybercabs-in-texas-and-halts-the-number-of-model-y-robotaxis/",
+        "decision": "skip",
+        "reason": "319 Cybercabs and 420 Model Ys are Texas registry counts, not a stated halt; 739 total was already reported Oct 9"
+      },
+      {
+        "title": "Tesla Brings a Cybercab to the Paris Motor Show",
+        "url": "https://teslanorth.com/2026/10/12/tesla-cybercab-paris-motor-show/",
+        "decision": "skip",
+        "reason": "one US fleet car on a stand announced Sept 30; not a European robotaxi launch"
+      },
+      {
+        "title": "Elon Musk Says Optimus and Cybercab Will Dominate Tesla's Value",
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "decision": "skip",
+        "reason": "no fleet, production, or timeline figure; Roadster and Optimus are outside this category"
+      },
+      {
+        "title": "Tesla Turns On Grok Bot for Cybercab and Model Y",
+        "url": "https://teslanorth.com/2026/10/11/grok-bot-cybercab-model-y/",
+        "decision": "skip",
+        "reason": "cabin assistant also rolled to the Model Y fleet; does not change cities, hours, or production"
+      },
+      {
+        "title": "Tesla Engineer Says Cybercab Rider Cameras Are Coming",
+        "url": "https://teslanorth.com/2026/10/10/cybercab-rider-camera-views/",
+        "decision": "skip",
+        "reason": "engineer reply was only 'in development'; feature is not shipped"
+      },
+      {
+        "title": "Cybercab Shortens Its Door Swing to Miss a Fence",
+        "url": "https://teslanorth.com/2026/10/10/cybercab-door-fence-video/",
+        "decision": "skip",
+        "reason": "one owner video; Tesla has not confirmed the behavior or that it is new"
+      },
+      {
+        "title": "Tesla Just Opened the Q3 Earnings Question Box",
+        "url": "https://teslanorth.com/2026/10/14/tesla-q3-2026-earnings-questions/",
+        "decision": "skip",
+        "reason": "top question is how Cybercab scales past Austin; no company answer yet"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiFleet",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "NHTSA DP26010 population is an estimate of MY2026 Model Y plus Cybercab robotaxis, not verified live dispatch"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 300,
+        "decision": "reject",
+        "reason": "Tesla's 300-plus Austin claim was already filed as matching the Texas authorization list, not a verified ride count"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 319,
+        "decision": "reject",
+        "reason": "Texas Cybercab registration count \u2014 robotaxiRegistered only, not active fleet or production"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 420,
+        "decision": "reject",
+        "reason": "Texas Model Y robotaxi registration plateau, not a confirmed operational halt or live fleet"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 739,
+        "decision": "reject",
+        "reason": "319 Cybercabs plus 420 Model Ys on the Texas AV registry, already reported before this window"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 105,
+        "decision": "reject",
+        "reason": "RobotaxiTracker Cybercab sighting count cited by Teslarati; community tracker page did not load and is not an official dispatch count"
+      }
+    ]
+  }
+}

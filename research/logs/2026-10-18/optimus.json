@@ -1,0 +1,172 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-10-18",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus October 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Optimus October 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus production OR Gen 3 OR Fremont OR Giga Texas 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla Optimus production OR Gen 3 OR Fremont",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "site:teslarati.com Optimus 2026 October",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:humanoidsdaily.com Tesla Optimus October 2026",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "X Takeover Optimus Musk",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Optimus actuators Roadster Moravy",
+        "tool": "web_search",
+        "hits": 12
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/elon-musk-tesla-optimus-for-sale-timeline/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/musk-optimus-hand-challenges-production-ramp-x-takeover",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-optimus-production-challenges-musk-2027-launch/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-roadster-downforce-fan-system/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "kept": false,
+        "reason": "Oct 17 valuation restatement with no unit, customer, or ship date"
+      },
+      {
+        "url": "https://optimusk.blog/blog/tesla-optimus-production-timeline/",
+        "kept": false,
+        "reason": "Oct 17 refresh restates September output and Oct 2 chip-memory news"
+      },
+      {
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62321790/goldman-says-teslas-robotaxi-optimus-outlook-will-matter-more-than-q3-earnings-heres-the-bar-for-oct-21",
+        "kept": false,
+        "reason": "Earnings preview with no new Optimus fact"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-q3-earnings-say-questions/",
+        "kept": false,
+        "reason": "Q&A portal opened; no Optimus disclosure"
+      },
+      {
+        "url": "https://www.allthings-elon.com/articles/tesla-optimus-model-y-line-live-work-austin-2026-10-14",
+        "kept": false,
+        "reason": "Unsourced content farm; stock photos; contradicted by Musk"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-expansion-explained-whats-being-built-right-now",
+        "kept": false,
+        "reason": "Body not returned; 40% steel already filed from Oct 1 footage"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk says Optimus ramp starts very slow and hands are unsolved",
+        "url": "https://www.teslarati.com/elon-musk-tesla-optimus-for-sale-timeline/",
+        "decision": "file",
+        "reason": "Oct 10 X Takeover remarks in window; corroborated by Humanoids Daily and Drive Tesla Canada"
+      },
+      {
+        "title": "Roadster wing uses Optimus actuators, not a robot ramp",
+        "url": "https://www.teslarati.com/tesla-roadster-downforce-fan-system/",
+        "decision": "file",
+        "reason": "Official Oct 16 Tesla post plus Moravy interview; hardware signal, not a volume milestone"
+      },
+      {
+        "title": "Musk says Optimus and Cybercab will be most of Tesla's value",
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "decision": "skip",
+        "reason": "Restates the long-running valuation claim with no new output, customer, or timeline"
+      },
+      {
+        "title": "Optimus production timeline updated October 17",
+        "url": "https://optimusk.blog/blog/tesla-optimus-production-timeline/",
+        "decision": "skip",
+        "reason": "Roundup of September hundreds-per-week reporting and Oct 2 AI5 memory cuts, which are aiChip"
+      },
+      {
+        "title": "Goldman says Optimus outlook matters more than Q3 EPS",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62321790/goldman-says-teslas-robotaxi-optimus-outlook-will-matter-more-than-q3-earnings-heres-the-bar-for-oct-21",
+        "decision": "skip",
+        "reason": "No Optimus number or milestone; robotaxi ops belong to cybercab"
+      },
+      {
+        "title": "Tesla opens Q3 earnings question portal",
+        "url": "https://www.teslarati.com/tesla-q3-earnings-say-questions/",
+        "decision": "skip",
+        "reason": "Shareholders can ask about Optimus; management has not answered"
+      },
+      {
+        "title": "Tesla puts Optimus to work on the Model Y line in Austin",
+        "url": "https://www.allthings-elon.com/articles/tesla-optimus-model-y-line-live-work-austin-2026-10-14",
+        "decision": "skip",
+        "reason": "No named source or footage; Unsplash images; claims solved hands that Musk denied four days earlier"
+      },
+      {
+        "title": "Giga Texas Optimus shell still about 40 percent steel",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-plant-steel-40-percent",
+        "decision": "skip",
+        "reason": "Same 40 percent steel figure already filed from October 1 footage; no verified newer percentage"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusWeeklyOutput",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "Year-end internal goal repeated by press, not a new Tesla-disclosed build count"
+      },
+      {
+        "series": "optimusWeeklyOutput",
+        "count": 300,
+        "decision": "reject",
+        "reason": "Several hundred per week is August reporting already covered, not a new October measurement"
+      }
+    ]
+  }
+}

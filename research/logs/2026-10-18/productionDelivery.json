@@ -1,0 +1,229 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-10-18",
+  "filed": 5,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla production OR deliveries OR \"Model Y\" when:7d",
+        "tool": "web_search",
+        "hits": 100
+      },
+      {
+        "q": "\"Model 3\" Tesla Canada quota OR \"Model Y L\" delivery 2027",
+        "tool": "web_search",
+        "hits": 55
+      },
+      {
+        "q": "Tesla (earnings OR Semi OR Cybertruck OR Canada OR \"price cut\" OR insurance OR CPCA OR registrations) when:8d",
+        "tool": "web_search",
+        "hits": 100
+      },
+      {
+        "q": "\"export rebate\" OR VAT Tesla China NEV 2027",
+        "tool": "web_search",
+        "hits": 11
+      },
+      {
+        "q": "Giga Berlin OR Gr\u00fcnheide million Tesla rbb",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "electrek.co/feed/ Tesla items through 2026-10-18",
+        "tool": "web_fetch",
+        "hits": 100
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/13/tesla-model-3-canada-orders-paused-china-import-quota/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/10/12/china-cuts-nev-export-tax-rebates/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/13/tesla-china-sales-down-exports-double-export-rebate-cut/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-roadster-specs-configurations/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/10/16/tesla-unveils-redesigned-roadster/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4840/new-tesla-roadster-specs-battery-range-speed-trims-and-more",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-model-y-l-launch-series-waits-stretch-to-early-2027",
+        "kept": false,
+        "reason": "page returned a storefront shell with no article body"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-q3-earnings-say-questions/",
+        "kept": false,
+        "reason": "Q&A portal and a single Zacks consensus; the print is Oct 21 and the delivery count is already filed"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Canada pauses Model 3 Premium orders until a quota Tesla says is expected in March 2027",
+        "url": "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027/",
+        "decision": "file",
+        "reason": "New in-window order halt; Electrek corroborates the national permit tracker"
+      },
+      {
+        "title": "China cuts the NEV export VAT rebate to 9% in April 2027, raising the cost of Shanghai exports",
+        "url": "https://cnevpost.com/2026/10/12/china-cuts-nev-export-tax-rebates/",
+        "decision": "file",
+        "reason": "New MOF/STA policy on the export channel; September China print already filed and not repeated"
+      },
+      {
+        "title": "Roadster demo sets a 2028 production target and still is not a delivery driver",
+        "url": "https://www.teslarati.com/tesla-roadster-specs-configurations/",
+        "decision": "file",
+        "reason": "Oct 15 demo and 2028 production target are new; the Sept 18 deposit article is already seen"
+      },
+      {
+        "title": "Giga Berlin second hall aims at 1 million a year, but only over about a decade",
+        "url": "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year",
+        "decision": "file",
+        "reason": "In-window permit plan; framed as a decade-long target versus the current ~375k rate"
+      },
+      {
+        "title": "US Model Y L Launch Series delivery estimates slip to January-March 2027",
+        "url": "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027/",
+        "decision": "file",
+        "reason": "Configurator check shows a further one-month slip and no 2026 US delivery"
+      },
+      {
+        "title": "Q3 deliveries of 486,532 beat a low consensus, but volume is still down YoY",
+        "url": "https://teslanorth.com/2026/10/02/tesla-q3-2026-deliveries/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange; no new official print this week"
+      },
+      {
+        "title": "Shanghai wholesale hits a 2026 high of 95,366 while China retail falls for a fourth straight month",
+        "url": "https://cnevpost.com/2026/10/09/tesla-china-sept-2026-wholesale/",
+        "decision": "skip",
+        "reason": "seenUrl; YTD CPCA split is context inside the rebate item, not a new monthly print"
+      },
+      {
+        "title": "Tesla Q3 earnings Q&A opens ahead of the Oct 21 call",
+        "url": "https://www.teslarati.com/tesla-q3-earnings-say-questions/",
+        "decision": "skip",
+        "reason": "Call is after the window; Zacks consensus was not independently verified and Yahoo's preview failed to load"
+      },
+      {
+        "title": "Cybertruck at 13% of a 250,000 annual goal",
+        "decision": "skip",
+        "reason": "Headline only; primary registration source not opened, so no unit count is filed (no canonical URL recovered)"
+      },
+      {
+        "title": "Tesla staffs up Nevada Semi plant as fleet orders stack up",
+        "decision": "skip",
+        "reason": "Google News title only; guessed FreightWaves URLs 404 and no new hiring or order figure was verified. Prior Semi items are already filed (no canonical URL recovered)"
+      },
+      {
+        "title": "Giga Berlin Expansion: Tesla Plans Second 536,000 m\u00b2 Hall",
+        "decision": "skip",
+        "reason": "TeslaNorth headline in Google News; guessed slugs 404, so the Berlin item uses Not a Tesla App only (no canonical URL recovered)"
+      },
+      {
+        "title": "Tesla Giga Berlin targets 1 million cars, but 2025 output was just 202,000",
+        "decision": "skip",
+        "reason": "Unread secondary headline; the 202,000 figure is not used (no canonical URL recovered)"
+      },
+      {
+        "title": "Model Y L Launch Series waits stretch to early 2027",
+        "url": "https://www.basenor.com/blogs/news/tesla-model-y-l-launch-series-waits-stretch-to-early-2027",
+        "decision": "skip",
+        "reason": "Fetch returned no article body"
+      },
+      {
+        "title": "Tesla pauses Model 3 Premium orders in Canada over import quota",
+        "url": "https://driveteslacanada.ca/news/tesla-model-3-premium-orders-paused-canada-import-quota/",
+        "decision": "skip",
+        "reason": "HEAD 200 only; body not read. TeslaNorth and Electrek already document the pause"
+      },
+      {
+        "title": "Megapack Taiwan order",
+        "decision": "skip",
+        "reason": "Energy storage deployment, outside vehicle production and delivery ownership (no canonical URL recovered)"
+      },
+      {
+        "title": "First Southeast Semi Megachargers open in Georgia",
+        "url": "https://electrek.co/2026/10/09/tesla-semi-megacharger-atlanta-savannah-pilot-georgia/",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 33069,
+        "decision": "reject",
+        "reason": "National unused Chinese-EV permits as of Oct 9, not Tesla production and not Tesla's own remaining allotment"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 381088,
+        "decision": "reject",
+        "reason": "CPCA China retail Jan-Sep via Electrek; restates the already-filed demand split and is not a new IR quarterly print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 361972,
+        "decision": "reject",
+        "reason": "CPCA China export Jan-Sep via Electrek; same restatement, not quarterlyData"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 13,
+        "decision": "reject",
+        "reason": "Yahoo headline '13% of the 250,000 Cybertruck goal'; primary registration source not opened and a percent is not a delivery count"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "Deutsche Bank yuan-per-car export-profit cut for BYD, not a Tesla delivery or production figure"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 600000000,
+        "decision": "reject",
+        "reason": "Electrek's own annual Tesla export-rebate estimate, not an official Tesla metric"
+      }
+    ]
+  }
+}

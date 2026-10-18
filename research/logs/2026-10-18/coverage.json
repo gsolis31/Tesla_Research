@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-18",
+  "weekOf": "2026-10-12",
+  "dateFrom": "2026-10-10",
+  "dateTo": "2026-10-18",
+  "candidates": [
+    {
+      "title": "NHTSA opens a school-zone speeding inquiry into about 1,000 robotaxis",
+      "url": "https://www.notateslaapp.com/news/4813/tesla-robotaxis-accused-of-speeding-in-school-zones-nhtsa-launches-probe",
+      "date": "2026-10-12",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Defect-petition review opened Oct. 9 on Model Y and Cybercab school-zone speeds; four reports, no crash, and not yet a formal investigation"
+    },
+    {
+      "title": "Austin robotaxi hours move from 11 p.m. to midnight",
+      "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+      "date": "2026-10-17",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Service is now 6 a.m. to midnight, still six hours short of 24/7, and FSD v15 is not on the fleet"
+    },
+    {
+      "title": "Tesla Europe says Slovakia approved supervised FSD, rollout still pending",
+      "url": "https://www.notateslaapp.com/news/4838/slovakia-becomes-9th-european-country-to-approve-tesla-fsd",
+      "date": "2026-10-16",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Ninth European national approval, ahead of the December EU vote; cars have not received the software yet"
+    },
+    {
+      "title": "FSD v14.3 Lite reaches Intel HW3 Model S and X on 2026.38.5.1",
+      "url": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+      "date": "2026-10-14",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "First Lite build for legacy Intel S/X, but it still lacks arrival options, start-from-park, reverse, and Smart Summon"
+    },
+    {
+      "title": "Giga Berlin files toward a second hall and a 1 million-vehicle plan",
+      "url": "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year",
+      "date": "2026-10-15",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Permit applications are aimed at December and construction at 2027; the million-unit target is a roughly ten-year build, not current output"
+    },
+    {
+      "title": "Canada pauses new Model 3 Premium orders until about March 2027",
+      "url": "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027/",
+      "date": "2026-10-12",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Tesla says demand used up its Canadian import quota; Performance can still be ordered"
+    },
+    {
+      "title": "US Model Y L Launch Series deliveries slip to March 2027",
+      "url": "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027/",
+      "date": "2026-10-18",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Configurator window moved from Jan–Feb 2027 to Jan–Mar 2027, and some orders show Feb–Apr, with no reason given"
+    },
+    {
+      "title": "Roadster demo uses new 4680 cells; production is 2028 and FSD is unconfirmed",
+      "url": "https://www.notateslaapp.com/news/4840/new-tesla-roadster-specs-battery-range-speed-trims-and-more",
+      "date": "2026-10-16",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Oct. 15 unveil is outside the nine categories; pack is about 150 kWh of new 4680 cells and customer cars are not due until 2028"
+    },
+    {
+      "title": "Cybercab general-assembly manager leaves Tesla for Rivian R2",
+      "url": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+      "date": "2026-10-15",
+      "likelyCategory": "jobPostings",
+      "whyItMightMatter": "Giga Texas Cybercab assembly lead Jody Kerns joined Rivian; this is a departure, not a Tesla hiring increase"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "teslarati.com Tesla headlines 2026-10-10 to 2026-10-18",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "teslanorth.com Tesla headlines 2026-10-10 to 2026-10-18",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "teslaoracle.com Tesla news 2026-10-10 to 2026-10-18",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "notateslaapp.com latest Tesla 2026-10-10 to 2026-10-18",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "notateslaapp.com robotaxi section October 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "humanoidsdaily.com news Optimus October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "electrek.co Tesla guide October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "ir.tesla.com press releases",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4838/slovakia-becomes-9th-european-country-to-approve-tesla-fsd",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4813/tesla-robotaxis-accused-of-speeding-in-school-zones-nhtsa-launches-probe",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4840/new-tesla-roadster-specs-battery-range-speed-trims-and-more",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4814/new-cybercab-seats-and-very-cool-upgrades-coming-soon",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4819/tesla-cybercab-to-let-riders-see-rear-and-side-camera-feeds",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-q3-earnings-say-questions/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/12/tesla-scales-cybercabs-in-texas-and-halts-the-number-of-model-y-robotaxis/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/14/tesla-rolls-out-fsd-v14-3-lite-2026-38-5-1-to-legacy-hw3-model-s-x-vehicles-with-intel-gpu/",
+        "kept": false
+      }
+    ]
+  }
+}

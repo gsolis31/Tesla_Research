@@ -1,0 +1,194 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-10-18",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Terafab when:14d",
+        "tool": "news_rss",
+        "hits": 100
+      },
+      {
+        "q": "Tesla Terafab Grimes OR Anderson OR JETI OR Hinojosa when:14d",
+        "tool": "news_rss",
+        "hits": 26
+      },
+      {
+        "q": "\"North Campus\" Tesla fab OR terafab when:21d",
+        "tool": "news_rss",
+        "hits": 9
+      },
+      {
+        "q": "Hinojosa Terafab Abbott OR \"public information\" when:21d",
+        "tool": "news_rss",
+        "hits": 4
+      },
+      {
+        "q": "TERAprint OR \"TERA-print\" Tesla when:30d",
+        "tool": "news_rss",
+        "hits": 10
+      },
+      {
+        "q": "Grimes County SpaceX construction OR permit OR water when:14d",
+        "tool": "news_rss",
+        "hits": 11
+      },
+      {
+        "q": "\"Joe Tegtmeyer\" Terafab OR \"chip fab\" OR \"north campus\" when:14d",
+        "tool": "news_rss",
+        "hits": 2
+      },
+      {
+        "q": "TSMC Terafab Wei",
+        "tool": "web_search",
+        "hits": 22
+      },
+      {
+        "q": "Terafab ASML EUV 2027",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Hinojosa Terafab Abbott October",
+        "tool": "web_search",
+        "hits": 1
+      },
+      {
+        "q": "Grimes County Terafab October 2026",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.wsls.com/business/2026/10/15/taiwan-chipmaker-tsmc-explores-texas-investment-to-expand-production-in-the-us/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://thenextweb.com/news/tsmc-terafab-musk-wei-must-run-fab",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-confirms-it-is-considering-terafab-chipmaking-expansion-with-elon-musk-ceo-insists-tsmc-would-have-to-run-texas-based-project",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-will-reportedly-receive-its-first-euv-tool-from-asml-in-mid-2027-cutting-edge-scanner-could-sit-idle-for-some-time-as-experimental-facility-is-completed",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.culpium.com/p/inside-tsmc-texas-and-the-terafab",
+        "kept": false,
+        "reason": "paywalled Oct 11 newsletter; EUV date used only as cited by Tom's Hardware"
+      },
+      {
+        "url": "https://www.datacenterdynamics.com/en/news/spacex-secures-100-percent-property-tax-abatement-for-55bn-terafab-project-in-grimes-county-texas/",
+        "kept": false,
+        "reason": "article date is June 5, 2026; Google News misdated a known abatement vote"
+      },
+      {
+        "url": "https://www.teslarati.com/tag/terafab/",
+        "kept": false,
+        "reason": "latest Terafab posts are the Oct 7 TSMC-sublease story already in seenUrls"
+      },
+      {
+        "url": "https://teslanorth.com/feed/",
+        "kept": false,
+        "reason": "feed through Oct 18 has no Terafab item"
+      },
+      {
+        "url": "https://www.kbtx.com/arc/outboundfeeds/rss/?outputType=xml",
+        "kept": false,
+        "reason": "current RSS has no Terafab item in the window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "TSMC will talk Terafab only if TSMC runs the fab",
+        "url": "https://www.wsls.com/business/2026/10/15/taiwan-chipmaker-tsmc-explores-texas-investment-to-expand-production-in-the-us/",
+        "decision": "file",
+        "reason": "Oct 15 earnings-call confirmation and an operating-control condition that contradicts last week's Musk sublease cap"
+      },
+      {
+        "title": "Reported mid-2027 EUV tool would arrive before the Austin shell is done",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-will-reportedly-receive-its-first-euv-tool-from-asml-in-mid-2027-cutting-edge-scanner-could-sit-idle-for-some-time-as-experimental-facility-is-completed",
+        "decision": "file",
+        "reason": "new equipment and building timeline for the Austin pilot and Grimes phase 1; not a chip-spec story"
+      },
+      {
+        "title": "TERA-print counterclaims and moves to send the Terafab name case to Illinois",
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "decision": "file",
+        "reason": "same case page as last week, but Oct 16 docket entries are a new counterclaim and venue motion, not the deadline slip already filed"
+      },
+      {
+        "title": "College Station prepares for impacts from Elon Musk's Terafab",
+        "url": "https://www.statesman.com/business/article/college-station-terafab-growth-planning-22436476.php",
+        "decision": "skip",
+        "reason": "same title and URL already in recentKeyChanges and seenUrls"
+      },
+      {
+        "title": "SpaceX secures 100 percent property tax abatement for $55bn TeraFab",
+        "url": "https://www.datacenterdynamics.com/en/news/spacex-secures-100-percent-property-tax-abatement-for-55bn-terafab-project-in-grimes-county-texas/",
+        "decision": "skip",
+        "reason": "body is the June 4 commission vote, outside the window"
+      },
+      {
+        "title": "Elon Musk Sets the Record Straight on Terafab",
+        "url": "https://finance.yahoo.com/",
+        "decision": "skip",
+        "reason": "Oct 12 market recap of the Oct 7 Musk sublease post already filed; no new operating fact before the Oct 15 call"
+      },
+      {
+        "title": "SpaceX's Terafab chip complex could reach $119B across four phases",
+        "url": "https://app.dealroom.co/",
+        "decision": "skip",
+        "reason": "Oct 11 rewrite of the Oct 8 ENR records story already in seenUrls"
+      },
+      {
+        "title": "Elon Musk Says Terafab Could Rank Among Top 20 of Country GDPs",
+        "url": "https://www.benzinga.com/",
+        "decision": "skip",
+        "reason": "scale rhetoric, not a construction, JETI, or site-politics development"
+      },
+      {
+        "title": "Hinojosa Oct 13 Terafab records deadline",
+        "url": "https://www.kbtx.com/2026/09/30/terafab-site-takes-shape-elon-musks-companies-face-growing-transparency-questions/",
+        "decision": "skip",
+        "reason": "no Oct 13-18 article that Abbott or the companies answered; only the Sept 30 demand already filed"
+      },
+      {
+        "title": "Taiwan raising $4 billion to build an industrial park in Texas",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/taiwan-raising-usd4-billion-to-build-industrial-park-in-texas-to-support-us-chipmaking-supply-chain-project-to-support-countless-small-manufacturers-crucial-to-tsmc-foxconn-supply-chain",
+        "decision": "skip",
+        "reason": "Taiwan supply-chain park for TSMC and Foxconn, not the Terafab site"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafabGrimesVolumeStart",
+        "count": 2030,
+        "decision": "reject",
+        "reason": "SemiAnalysis mid-2030 volume is an analyst model, not a company or filing count, and this category has no metric series"
+      },
+      {
+        "series": "terafabCapex",
+        "count": 55,
+        "decision": "reject",
+        "reason": "DCD $55bn figure is the May-June abatement application already known, not a new Oct data point"
+      }
+    ]
+  }
+}

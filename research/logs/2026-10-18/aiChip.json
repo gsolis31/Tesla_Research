@@ -1,0 +1,186 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-10-18",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 chip Samsung TSMC October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site search teslarati.com AI5 AI6 chip",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "Tesla AI5 OR AI6 chip Samsung OR TSMC OR Dojo after:2026-10-10",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI5 chip Samsung October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI6 Dojo 2nm Taylor October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI5 AI6 chip October 2026 Samsung TSMC",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "Tesla AI5 AI6 Samsung pricing October 16 2026 engineer",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Musk Micron memory prices Tesla AI5 October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI5 OR AI6 OR Dojo chip Bing News past week",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Dojo AI5 AI6 site:teslarati.com OR teslanorth.com OR teslaoracle.com October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Musk China LPDDR5 LPDDR6 Tesla October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Samsung Taylor yield engineers Tesla AI5 October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Dojo 3 OR AI6 tape-out October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.fnnews.com/news/202610121821333879",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20261013VL222/samsung-production-texas-2nm-manufacturing.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.techpowerup.com/353801/samsung-to-break-ground-on-second-taylor-fab-in-november-production-targeted-for-2030",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20261016VL214/samsung-texas-fab-expansion-production.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/10/14/news-musk-weighs-in-on-memory-again-praises-microns-future-pricing-warns-extortionate-practices-wont-be-forgotten/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/10/14/news-musk-says-china-is-rapidly-advancing-in-lpddr5lpddr6-highlights-its-mass-production-capabilities/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tweaktown.com/news/114087/elon-musk-praises-micron-for-fair-memory-prices-calls-rival-pricing-extortionate/index.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/10/16/news-korean-chip-engineer-accuses-tesla-of-pressuring-samsung-on-ai5ai6-pricing-poaching-talent-for-terafab/",
+        "kept": false,
+        "reason": "Terafab talent-poaching is the lead; same story left to terafab"
+      },
+      {
+        "url": "https://wccftech.com/elon-musks-terafab-poached-a-ton-of-talent-from-samsungs-taylor-fab-as-tesla-asked-for-shitty-terms-on-the-ai5-chip-a-korean-engineer-claims/",
+        "kept": false,
+        "reason": "Terafab ownership; AI5 contract claim is an unconfirmed anonymous post"
+      },
+      {
+        "url": "https://www.tweaktown.com/news/114132/korean-semiconductor-engineer-accuses-tesla-of-squeezing-samsung-over-ai-chip-deals-and-poaching-talent/index.html",
+        "kept": false,
+        "reason": "Same Terafab-led allegation thread"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung sends Korea yield engineers to Taylor; 2nm volume still 2027",
+        "url": "https://www.fnnews.com/news/202610121821333879",
+        "decision": "file",
+        "reason": "New Oct. 12 foundry staffing and yield-prep update inside the window; volume date unchanged"
+      },
+      {
+        "title": "Taylor Fab 2 groundbreaking set for November; production aimed at 2030",
+        "url": "https://www.techpowerup.com/353801/samsung-to-break-ground-on-second-taylor-fab-in-november-production-targeted-for-2030",
+        "decision": "file",
+        "reason": "New dated groundbreaking versus the earlier Fab 2 preparations note; does not pull AI5/AI6 forward"
+      },
+      {
+        "title": "Musk praises Micron and China LPDDR; AI5/AI6 memory supply is unchanged",
+        "url": "https://www.trendforce.com/news/2026/10/14/news-musk-weighs-in-on-memory-again-praises-microns-future-pricing-warns-extortionate-practices-wont-be-forgotten/",
+        "decision": "file",
+        "reason": "Oct. 12-14 posts are new; they do not change the Oct. 2 96GB/144GB settlement"
+      },
+      {
+        "title": "Korean engineer accuses Tesla of AI5/AI6 price pressure and Terafab poaching",
+        "url": "https://wccftech.com/elon-musks-terafab-poached-a-ton-of-talent-from-samsungs-taylor-fab-as-tesla-asked-for-shitty-terms-on-the-ai5-chip-a-korean-engineer-claims/",
+        "decision": "skip",
+        "reason": "Best-fit owner is terafab (talent poaching and TSMC operating role); foundry-term claims are one unconfirmed X post"
+      },
+      {
+        "title": "Tesla cuts AI5 chip memory to 96GB",
+        "url": "https://tech-insider.org/tesla-ai5-chip-memory-cut-96gb-2026/",
+        "decision": "skip",
+        "reason": "Recap of the early-October cut already in recentKeyChanges; outside the new-development bar"
+      },
+      {
+        "title": "Samsung starts trial production of Tesla AI chips in Texas",
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "decision": "skip",
+        "reason": "seenUrl; September trial production, not a new October milestone"
+      },
+      {
+        "title": "Teslarati AI5/AI6 archive pages",
+        "url": "https://www.teslarati.com/tesla-finalizes-ai5-chip-design-elon-musk-makes-bold-claim-capability/",
+        "decision": "skip",
+        "reason": "Tier-1 search returned older AI5/AI6 stories, none dated Oct. 10-18"
+      },
+      {
+        "title": "Dojo 3 or AI6 tape-out this week",
+        "url": "https://www.teslarati.com/tesla-confirms-that-work-on-dojo-3-has-officially-resumed/",
+        "decision": "skip",
+        "reason": "No in-window Dojo or new tape-out story on tier-1 sites or news search"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChip",
+        "count": 16.5,
+        "decision": "reject",
+        "reason": "$16.5 billion Samsung supply deal is last year's contract, not a new volume or yield metric"
+      }
+    ]
+  }
+}

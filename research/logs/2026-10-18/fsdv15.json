@@ -1,0 +1,193 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-10-18",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 OR \"FSD v14\" October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:notateslaapp.com FSD v14 OR v15 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD v15 OR \"FSD v14.3\" October 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla FSD v14.3 OR \"FSD v15\" OR \"full self-driving\" software update past week",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:teslarati.com FSD v14 OR v15 October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:teslanorth.com FSD v14 OR v15 October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "\"FSD\" \"14.3.12\" OR \"v14.3 Lite\" OR \"2026.38.5.1\" past week",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD \"v14.3 Lite\" OR \"14.3.12\" OR \"2026.38.5.1\"",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "Tesla \"FSD v15\" OR \"billion miles\" October 2026 past week",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/fsd-beta/news",
+        "kept": false,
+        "reason": "section index, not an article"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/",
+        "kept": false,
+        "reason": "section index; used only to find 2026.38.5.1"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.1/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4842/why-the-new-tesla-roadster-wont-get-full-fsd",
+        "kept": false,
+        "reason": "Roadster product positioning, not an FSD OTA or v15 ship date"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4806/tesla-officially-renames-original-summon-feature",
+        "kept": false,
+        "reason": "EU assisted-driving package rename; owned by fsd"
+      },
+      {
+        "url": "https://www.teslarati.com/",
+        "kept": false,
+        "reason": "homepage; no in-window FSD version story"
+      },
+      {
+        "url": "https://teslanorth.com/",
+        "kept": false,
+        "reason": "homepage; no in-window FSD version story"
+      },
+      {
+        "url": "https://www.teslaoracle.com/",
+        "kept": false,
+        "reason": "homepage; used to find the Oct 13 and Oct 14 FSD articles"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/14/tesla-rolls-out-fsd-v14-3-lite-2026-38-5-1-to-legacy-hw3-model-s-x-vehicles-with-intel-gpu/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-update-2026-38-5-1",
+        "kept": false,
+        "reason": "fetch returned the shop shell, not the article body"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/news",
+        "kept": false,
+        "reason": "section index"
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v14.3.12 wide wave on 2026.38.5 keeps the same supervised notes",
+        "url": "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes/",
+        "decision": "file",
+        "reason": "New this window: prior filing was a ~2-install 2026.38.5 sighting; this is the wide wave and notes are still unchanged"
+      },
+      {
+        "title": "Intel HW3 Model S/X get a cut-down FSD v14.3 Lite, not v15",
+        "url": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+        "decision": "file",
+        "reason": "First Intel HW3 S/X v14.3 Lite on 2026.38.5.1; distinct from the September AMD S/X v14.2 Lite story already seen"
+      },
+      {
+        "title": "FSD v14.3.12 shows up on 2026.38.5 with the same notes and almost no installs",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5/release-notes",
+        "decision": "skip",
+        "reason": "seenUrl; the new fact is the later wide wave, filed separately"
+      },
+      {
+        "title": "Why the New Tesla Roadster Won't Get Full FSD",
+        "url": "https://www.notateslaapp.com/news/4842/why-the-new-tesla-roadster-wont-get-full-fsd",
+        "decision": "skip",
+        "reason": "Future Roadster product limit from the unveil, not a current FSD version, OTA, miles milestone, or v15 ship date"
+      },
+      {
+        "title": "Tesla Officially Renames Original Summon to Dumb Summon",
+        "url": "https://www.notateslaapp.com/news/4806/tesla-officially-renames-original-summon-feature",
+        "decision": "skip",
+        "reason": "European Tesla Assisted Driving package naming; regulatory/market naming belongs to fsd"
+      },
+      {
+        "title": "Watch Tesla FSD Clear a Path for an Ambulance at a Red Light",
+        "url": "https://www.notateslaapp.com/news/4841/watch-tesla-fsd-clear-a-path-for-an-ambulance-at-a-red-light-video",
+        "decision": "skip",
+        "reason": "Single driving clip, no new version, changelog, or miles figure"
+      },
+      {
+        "title": "Slovakia Becomes 9th European Country to Approve Tesla FSD",
+        "url": "https://www.notateslaapp.com/news/4838/slovakia-becomes-9th-european-country-to-approve-tesla-fsd",
+        "decision": "skip",
+        "reason": "Market approval belongs to fsd, not fsdv15"
+      },
+      {
+        "title": "Tesla scales Cybercabs in Texas and halts the number of Model Y Robotaxis",
+        "url": "https://www.teslaoracle.com/2026/10/12/tesla-scales-cybercabs-in-texas-and-halts-the-number-of-model-y-robotaxis/",
+        "decision": "skip",
+        "reason": "Robotaxi fleet ops belong to cybercab"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "teslaFiSoftwareShare",
+        "count": 2886,
+        "decision": "reject",
+        "reason": "TeslaFi sample on 2026.38.5.1 (~23% of that tracker), not an official FSD miles series and not in this category's metrics"
+      },
+      {
+        "series": "teslascopeWave",
+        "count": 1430,
+        "decision": "reject",
+        "reason": "Teslascope five-minute wave size for 2026.38.5, not a cumulative official metric"
+      },
+      {
+        "series": "teslascopeWave",
+        "count": 1210,
+        "decision": "reject",
+        "reason": "Teslascope five-minute wave size for 2026.38.5.1, not a cumulative official metric"
+      }
+    ]
+  }
+}

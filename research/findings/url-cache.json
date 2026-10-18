@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-18",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1951,7 +1951,7 @@
     "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC": {
       "originalUrl": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
       "firstSeen": "2026-09-26",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "TERA-print served in Terafab name suit; answer due Oct. 9 with no ruling"
     },
@@ -2157,23 +2157,177 @@
       "lastSeen": "2026-10-10",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "College Station braces for Terafab but will collect none of its property tax"
+    },
+    "https://www.fnnews.com/news/202610121821333879": {
+      "originalUrl": "https://www.fnnews.com/news/202610121821333879",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "AI Chip Production",
+      "title": "Samsung sends Korea yield engineers to Taylor; 2nm volume still 2027"
+    },
+    "https://www.trendforce.com/news/2026/10/14/news-musk-weighs-in-on-memory-again-praises-microns-future-pricing-warns-extortionate-practices-wont-be-forgotten": {
+      "originalUrl": "https://www.trendforce.com/news/2026/10/14/news-musk-weighs-in-on-memory-again-praises-microns-future-pricing-warns-extortionate-practices-wont-be-forgotten/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "AI Chip Production",
+      "title": "Musk praises Micron and China LPDDR; AI5/AI6 memory supply is unchanged"
+    },
+    "https://www.techpowerup.com/353801/samsung-to-break-ground-on-second-taylor-fab-in-november-production-targeted-for-2030": {
+      "originalUrl": "https://www.techpowerup.com/353801/samsung-to-break-ground-on-second-taylor-fab-in-november-production-targeted-for-2030",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "AI Chip Production",
+      "title": "Taylor Fab 2 groundbreaking set for November; production aimed at 2030"
+    },
+    "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview": {
+      "originalUrl": "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "4680 Battery Cell Production",
+      "title": "Roadster 4680 pack is a prototype claim, not a cell ramp"
+    },
+    "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding": {
+      "originalUrl": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Cybercab Production",
+      "title": "NHTSA opened a school-zone speeding petition on Cybercab and Model Y robotaxis"
+    },
+    "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly": {
+      "originalUrl": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Cybercab Production",
+      "title": "Cybercab general-assembly manager leaves Tesla for Rivian R2"
+    },
+    "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight": {
+      "originalUrl": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Cybercab Production",
+      "title": "Austin robotaxi hours move from 11 p.m. to midnight, still not 24/7"
+    },
+    "https://www.mindop.sk/media/tlacove-spravy/detail/slovensko-umoznilo-ciastocne-autonomne-riadenie-aut": {
+      "originalUrl": "https://www.mindop.sk/media/tlacove-spravy/detail/slovensko-umoznilo-ciastocne-autonomne-riadenie-aut",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "FSD Country Approvals",
+      "title": "Slovakia Recognizes Dutch FSD Approval, Still No EU Vote or Dated Rollout"
+    },
+    "https://www.cbsnews.com/sacramento/news/i80-fairfield-tesla-full-self-driving-chp-crash-video": {
+      "originalUrl": "https://www.cbsnews.com/sacramento/news/i80-fairfield-tesla-full-self-driving-chp-crash-video/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "FSD Country Approvals",
+      "title": "Tesla Hit a Fairfield CHP Car; Driver Says He Was Asleep on FSD"
+    },
+    "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes": {
+      "originalUrl": "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.12 wide wave on 2026.38.5 keeps the same supervised notes"
+    },
+    "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time": {
+      "originalUrl": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "FSD v15 Software",
+      "title": "Intel HW3 Model S/X get a cut-down FSD v14.3 Lite, not v15"
+    },
+    "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4479716096": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4479716096",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Job Postings",
+      "title": "Robotaxi market leads and Optimus deployment posts are ops, not autonomy R&D"
+    },
+    "https://www.linkedin.com/jobs/view/process-engineer-optimus-actuators-at-tesla-4480869978": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/process-engineer-optimus-actuators-at-tesla-4480869978",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Job Postings",
+      "title": "Austin Optimus line posts are single NPI engineers, not an AI hiring ramp"
+    },
+    "https://www.teslarati.com/elon-musk-tesla-optimus-for-sale-timeline": {
+      "originalUrl": "https://www.teslarati.com/elon-musk-tesla-optimus-for-sale-timeline/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Optimus Production",
+      "title": "Musk says Optimus ramp starts very slow and hands are unsolved"
+    },
+    "https://www.teslarati.com/tesla-roadster-downforce-fan-system": {
+      "originalUrl": "https://www.teslarati.com/tesla-roadster-downforce-fan-system/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Optimus Production",
+      "title": "Roadster wing uses Optimus actuators, not a robot ramp"
+    },
+    "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027": {
+      "originalUrl": "https://teslanorth.com/2026/10/12/tesla-canada-model-3-premium-orders-paused-2027/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Vehicle Production & Delivery",
+      "title": "Canada pauses Model 3 Premium orders until a quota Tesla says is expected in March 2027"
+    },
+    "https://cnevpost.com/2026/10/12/china-cuts-nev-export-tax-rebates": {
+      "originalUrl": "https://cnevpost.com/2026/10/12/china-cuts-nev-export-tax-rebates/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Vehicle Production & Delivery",
+      "title": "China cuts the NEV export VAT rebate to 9% in April 2027, raising the cost of Shanghai exports"
+    },
+    "https://www.teslarati.com/tesla-roadster-specs-configurations": {
+      "originalUrl": "https://www.teslarati.com/tesla-roadster-specs-configurations/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Vehicle Production & Delivery",
+      "title": "Roadster demo sets a 2028 production target and still is not a delivery driver"
+    },
+    "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year": {
+      "originalUrl": "https://www.notateslaapp.com/news/4836/tesla-plans-to-expand-giga-berlin-output-to-1-million-vehicles-per-year",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Vehicle Production & Delivery",
+      "title": "Giga Berlin second hall aims at 1 million a year, but only over about a decade"
+    },
+    "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027": {
+      "originalUrl": "https://teslanorth.com/2026/10/18/model-y-l-launch-series-delivery-march-2027/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Vehicle Production & Delivery",
+      "title": "US Model Y L Launch Series delivery estimates slip to January-March 2027"
+    },
+    "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-will-reportedly-receive-its-first-euv-tool-from-asml-in-mid-2027-cutting-edge-scanner-could-sit-idle-for-some-time-as-experimental-facility-is-completed": {
+      "originalUrl": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-will-reportedly-receive-its-first-euv-tool-from-asml-in-mid-2027-cutting-edge-scanner-could-sit-idle-for-some-time-as-experimental-facility-is-completed",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Reported mid-2027 EUV tool would arrive before the Austin shell is done"
+    },
+    "https://www.wsls.com/business/2026/10/15/taiwan-chipmaker-tsmc-explores-texas-investment-to-expand-production-in-the-us": {
+      "originalUrl": "https://www.wsls.com/business/2026/10/15/taiwan-chipmaker-tsmc-explores-texas-investment-to-expand-production-in-the-us/",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "TSMC will talk Terafab only if TSMC runs the fab"
     }
   },
   "stats": {
-    "totalUrls": 308,
+    "totalUrls": 330,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 25,
-      "Cybercab Production": 45,
-      "FSD v15 Software": 34,
-      "Vehicle Production & Delivery": 51,
+      "Optimus Production": 27,
+      "Cybercab Production": 48,
+      "FSD v15 Software": 36,
+      "Vehicle Production & Delivery": 56,
       "unknown": 52,
-      "FSD Country Approvals": 30,
-      "4680 Battery Cell Production": 7,
+      "FSD Country Approvals": 32,
+      "4680 Battery Cell Production": 8,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 12,
-      "Job Postings": 18,
-      "Terafab In-House Chip Manufacturing": 21
+      "AI Chip Production": 15,
+      "Job Postings": 20,
+      "Terafab In-House Chip Manufacturing": 23
     }
   }
 }

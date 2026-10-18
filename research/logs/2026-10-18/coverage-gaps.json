@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-18",
+  "status": "ok",
+  "candidates": 9,
+  "covered": 7,
+  "ignored": 0,
+  "gapCount": 2,
+  "gaps": [
+    {
+      "title": "Austin robotaxi hours move from 11 p.m. to midnight",
+      "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+      "date": "2026-10-17",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Service is now 6 a.m. to midnight, still six hours short of 24/7, and FSD v15 is not on the fleet",
+      "match": "gap"
+    },
+    {
+      "title": "Cybercab general-assembly manager leaves Tesla for Rivian R2",
+      "url": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+      "date": "2026-10-15",
+      "likelyCategory": "jobPostings",
+      "whyItMightMatter": "Giga Texas Cybercab assembly lead Jody Kerns joined Rivian; this is a departure, not a Tesla hiring increase",
+      "match": "gap"
+    }
+  ]
+}
