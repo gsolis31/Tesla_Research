@@ -114,6 +114,40 @@
                 }
               }
             },
+            "robotaxiRegistered": {
+              "type": "array",
+              "description": "Texas DMV roster points. Not in-service fleet.",
+              "items": {
+                "type": "object",
+                "required": ["date", "count", "note"],
+                "properties": {
+                  "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                  "count": { "type": "integer", "minimum": 0 },
+                  "note": { "type": "string" },
+                  "source": { "type": "string" }
+                }
+              }
+            },
+            "cityFleet": {
+              "type": "array",
+              "description": "Per-city sighting floor or company in-service figure.",
+              "items": {
+                "type": "object",
+                "required": ["date", "name", "activeVehicles", "basis", "source"],
+                "properties": {
+                  "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                  "name": { "type": "string" },
+                  "activeVehicles": { "type": "integer", "minimum": 0 },
+                  "basis": { "type": "string", "enum": ["sighting-floor", "company"] },
+                  "status": { "type": "string", "enum": ["active", "mapped"] },
+                  "serviceType": { "type": "string", "enum": ["unsupervised", "mixed", "safety-monitor-only"] },
+                  "vehicleType": { "type": "string" },
+                  "notes": { "type": "string" },
+                  "source": { "type": "string" },
+                  "breakdown": { "type": "object" }
+                }
+              }
+            },
             "jobPostings": {
               "type": "array",
               "items": {

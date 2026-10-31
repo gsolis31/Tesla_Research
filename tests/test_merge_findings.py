@@ -15,6 +15,7 @@ from merge_findings import (
     deduplicate_key_changes,
     get_monday_of_week,
     merge_category_updates,
+    merge_city_fleet,
     merge_metrics,
     merge_quarterly_data,
     merge_weekly_summary,
@@ -243,6 +244,88 @@ class TestMergeMetrics:
         )
         out = merge_metrics(main_data, findings)
         assert out["metrics"]["robotaxiRegistered"]["data"][0]["count"] == 175
+
+    def test_city_sighting_floor_replaces_stale_row(self, main_data):
+        main_data["metrics"]["robotaxiCities"]["cities"] = [
+            {
+                "name": "Austin",
+                "status": "active",
+                "serviceType": "mixed",
+                "vehicleType": "Model Y + Cybercab",
+                "activeVehicles": 14,
+                "asOf": "2026-07-15",
+                "basis": "historical",
+                "launchDate": "2025",
+                "serviceArea": "Austin",
+                "notes": "July snapshot",
+            }
+        ]
+        findings = make_findings(
+            metrics={
+                "cityFleet": [
+                    {
+                        "date": "2026-10-10",
+                        "name": "Austin",
+                        "status": "active",
+                        "serviceType": "mixed",
+                        "vehicleType": "Model Y + Cybercab",
+                        "activeVehicles": 275,
+                        "basis": "sighting-floor",
+                        "notes": "30-day distinct vehicles seen in Austin",
+                        "source": "https://eletric-vehicles.com/tesla/austin-floor/",
+                    }
+                ]
+            }
+        )
+        out = merge_city_fleet(main_data, findings)
+        austin = out["metrics"]["robotaxiCities"]["cities"][0]
+        assert austin["activeVehicles"] == 275
+        assert austin["basis"] == "sighting-floor"
+        assert austin["asOf"] == "2026-10-10"
+        assert out["metrics"]["robotaxiCities"]["lastUpdated"] == "2026-10-10"
+        summary = out["metrics"]["robotaxiCities"]["summary"]
+        assert summary["totalActiveVehicles"] == 275
+        assert summary["activeCities"] == 1
+        assert summary["totalCities"] == 1
+
+    def test_city_fleet_rejects_statewide_registry_total(self, main_data):
+        findings = make_findings(
+            metrics={
+                "robotaxiRegistered": [
+                    {"date": "2026-10-27", "count": 1051, "note": "Texas DMV registry"},
+                ],
+                "cityFleet": [
+                    {
+                        "date": "2026-10-27",
+                        "name": "Austin",
+                        "activeVehicles": 1051,
+                        "basis": "sighting-floor",
+                        "notes": "roster pasted onto the city",
+                        "source": "https://robotaxitracker.com/permits/texas",
+                    }
+                ],
+            }
+        )
+        out = merge_city_fleet(main_data, findings)
+        assert out["metrics"]["robotaxiCities"]["cities"] == []
+
+    def test_city_fleet_rejects_registry_basis(self, main_data):
+        findings = make_findings(
+            metrics={
+                "cityFleet": [
+                    {
+                        "date": "2026-10-27",
+                        "name": "Austin",
+                        "activeVehicles": 50,
+                        "basis": "registry",
+                        "notes": "not a sighting floor",
+                        "source": "https://example.com/roster",
+                    }
+                ]
+            }
+        )
+        out = merge_city_fleet(main_data, findings)
+        assert out["metrics"]["robotaxiCities"]["cities"] == []
 
     def test_normalizes_vehicle_count_field(self, main_data):
         findings = make_findings(

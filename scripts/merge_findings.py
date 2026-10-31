@@ -269,6 +269,120 @@ def merge_metrics(main_data: dict, findings: dict) -> dict:
                 main_data['metrics']['robotaxiFleet'].setdefault('breakdown', {})
                 main_data['metrics']['robotaxiFleet']['breakdown']['active'] = latest['count']
 
+    main_data = merge_city_fleet(main_data, findings)
+    return main_data
+
+
+CITY_FLEET_BASIS = {'sighting-floor', 'company'}
+CITY_STATUS = {'active', 'mapped'}
+CITY_SERVICE = {'unsupervised', 'mixed', 'safety-monitor-only'}
+
+
+def recompute_city_summary(cities_obj: dict) -> None:
+    """Keep summary fields in lockstep with the city rows the dashboard reads."""
+    cities = cities_obj.get('cities') or []
+    summary = cities_obj.setdefault('summary', {})
+    summary['totalCities'] = len(cities)
+    summary['activeCities'] = sum(
+        1 for c in cities
+        if c.get('status') == 'active' and (c.get('activeVehicles') or 0) > 0
+    )
+    summary['mappedOnly'] = sum(1 for c in cities if c.get('status') == 'mapped')
+    summary['unsupervisedCapable'] = sum(
+        1 for c in cities if c.get('serviceType') == 'unsupervised'
+    )
+    summary['safetyMonitorOnly'] = sum(
+        1 for c in cities if c.get('serviceType') == 'safety-monitor-only'
+    )
+    summary['totalActiveVehicles'] = sum(
+        (c.get('activeVehicles') or 0) for c in cities if c.get('status') == 'active'
+    )
+    summary['definition'] = (
+        'activeCities = status active AND activeVehicles > 0; '
+        'totalActiveVehicles sums activeVehicles on active cities only. '
+        'A row is a sighting floor or a company figure, not the Texas DMV roster.'
+    )
+
+
+def merge_city_fleet(main_data: dict, findings: dict) -> dict:
+    """
+    Upsert per-city in-service rows from findings.metrics.cityFleet.
+
+    Accepts basis sighting-floor or company. Refuses a registry total, including
+    a city count that equals a robotaxiRegistered point in the same package.
+    """
+    metrics_updates = findings.get('findings', {}).get('metrics', {})
+    points = metrics_updates.get('cityFleet') or []
+    if not points:
+        return main_data
+
+    registered_counts = set()
+    for point in metrics_updates.get('robotaxiRegistered') or []:
+        if point.get('count') is not None:
+            registered_counts.add(int(point['count']))
+
+    cities_obj = main_data['metrics']['robotaxiCities']
+    by_name = {c.get('name'): c for c in cities_obj.get('cities', [])}
+    updated_dates = []
+
+    for point in points:
+        name = point.get('name')
+        basis = point.get('basis')
+        count = point.get('activeVehicles')
+        if count is None:
+            count = point.get('count')
+        if not name or count is None or basis not in CITY_FLEET_BASIS:
+            print(f"⚠ Skipping city fleet point (need name, count, basis sighting-floor|company): {name}")
+            continue
+        count = int(count)
+        if looks_like_registration(point) or count in registered_counts:
+            print(f"⚠ Skipping {name}: {count} is a registry count, not a city in-service floor")
+            continue
+
+        row = by_name.get(name)
+        if row is None:
+            row = {
+                'name': name,
+                'status': 'active',
+                'serviceType': 'unsupervised',
+                'vehicleType': point.get('vehicleType') or 'Model Y',
+                'activeVehicles': None,
+                'launchDate': point.get('launchDate'),
+                'serviceArea': point.get('serviceArea') or '',
+                'notes': '',
+            }
+            cities_obj.setdefault('cities', []).append(row)
+            by_name[name] = row
+
+        status = point.get('status')
+        if status in CITY_STATUS:
+            row['status'] = status
+        service = point.get('serviceType')
+        if service in CITY_SERVICE:
+            row['serviceType'] = service
+        if point.get('vehicleType'):
+            row['vehicleType'] = point['vehicleType']
+        if point.get('serviceArea'):
+            row['serviceArea'] = point['serviceArea']
+        if point.get('launchDate'):
+            row['launchDate'] = point['launchDate']
+        row['activeVehicles'] = count
+        row['asOf'] = point.get('date')
+        row['basis'] = basis
+        if point.get('source'):
+            row['source'] = point['source']
+        if point.get('notes'):
+            row['notes'] = point['notes']
+        if isinstance(point.get('breakdown'), dict):
+            row['breakdown'] = point['breakdown']
+        if row.get('asOf'):
+            updated_dates.append(row['asOf'])
+        print(f"✓ City fleet {name} = {count} ({basis}, {row.get('asOf')})")
+
+    if updated_dates:
+        cities_obj['lastUpdated'] = max(updated_dates)
+        recompute_city_summary(cities_obj)
+
     return main_data
 
 

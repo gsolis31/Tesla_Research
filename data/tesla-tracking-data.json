@@ -12842,63 +12842,75 @@
     },
     "robotaxiCities": {
       "title": "Robotaxi Service by City",
-      "lastUpdated": "2026-07-15",
+      "lastUpdated": "2026-10-16",
       "cities": [
         {
           "name": "Miami",
           "status": "active",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
-          "activeVehicles": 3,
+          "activeVehicles": null,
           "launchDate": "2026-07-03",
           "serviceArea": "Western and central Miami (~10-14 sq mi) including Miami International Airport (MIA), SR 826 (Palmetto Expressway), US 41 (Tamiami Trail)",
-          "notes": "Launched July 3, 2026 unsupervised. Fleet size not fully disclosed; early reports imply a small starter fleet (~3 placeholder until better counts). Tiny geofence (~10\u201320 sq mi), reliability issues reported mid-July."
+          "notes": "Service is live. The July placeholder of about 3 vehicles was not a census and is removed. No October per-city vehicle count was published for this city.",
+          "asOf": "2026-07-15",
+          "basis": "historical"
         },
         {
           "name": "Dallas",
           "status": "active",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
-          "activeVehicles": 3,
+          "activeVehicles": 70,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Small unsupervised Model Y footprint; stable ~3 vehicles in mid-2026 reporting."
+          "notes": "Robotaxi Tracker city dump checked Oct 16, 2026: 70 vehicles, up from 69 the day before. No Model Y / Cybercab split in that dump. Public Cybercab rides were still Austin-only.",
+          "asOf": "2026-10-16",
+          "basis": "sighting-floor",
+          "source": "https://aishiftnews.ca/robotaxi-radar/"
         },
         {
           "name": "Houston",
           "status": "active",
           "serviceType": "unsupervised",
           "vehicleType": "Model Y",
-          "activeVehicles": 3,
+          "activeVehicles": null,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Small unsupervised Model Y footprint; ~3 vehicles in mid-2026 reporting."
+          "notes": "Service is live. The July placeholder of about 3 vehicles was not a census and is removed. No October per-city vehicle count was published for this city.",
+          "asOf": "2026-07-15",
+          "basis": "historical"
         },
         {
           "name": "Austin",
           "status": "active",
           "serviceType": "mixed",
           "vehicleType": "Model Y + Cybercab",
-          "activeVehicles": 14,
+          "activeVehicles": 405,
           "breakdown": {
-            "unsupervised": 14,
-            "safetyMonitor": 0,
-            "cybercabTesting": 42
+            "unsupervised": 405,
+            "safetyMonitor": 0
           },
           "launchDate": "2025",
           "serviceArea": "Broader city coverage",
-          "notes": "Primary hub. ~14 unsupervised Model Y in active service (July 2026 reporting). ~42 Cybercabs in test fleet at Giga/local testing (not counted in active fleet). Safety-monitor and rider-pool counts fluctuate; chart uses unsupervised active."
+          "notes": "Robotaxi Tracker city dump checked Oct 16, 2026: 405 Tesla vehicles in unsupervised Austin service. 181 of those were Cybercabs seen on the road (178 VIN-matched). An Oct 14 republish of the same tracker was 400 (224 Model Y + 176 Cybercab). Sighting floor, not the Texas DMV roster and not a dispatch census.",
+          "asOf": "2026-10-16",
+          "basis": "sighting-floor",
+          "source": "https://aishiftnews.ca/robotaxi-radar/"
         },
         {
           "name": "Bay Area",
           "status": "active",
           "serviceType": "safety-monitor-only",
           "vehicleType": "Model Y",
-          "activeVehicles": 9,
+          "activeVehicles": 721,
           "unsupervisedVehicles": 0,
           "launchDate": "2024",
           "serviceArea": "San Francisco Bay Area",
-          "notes": "Safety monitor required. ~9 vehicles in July 8 active-fleet breakdown. No unsupervised commercial operation."
+          "notes": "Robotaxi Tracker city dump checked Oct 16, 2026: 721 supervised vehicles. California still requires a safety driver. This is not part of the Texas roster.",
+          "asOf": "2026-10-16",
+          "basis": "sighting-floor",
+          "source": "https://aishiftnews.ca/robotaxi-radar/"
         },
         {
           "name": "Phoenix",
@@ -12908,17 +12920,45 @@
           "activeVehicles": null,
           "launchDate": "2025",
           "serviceArea": "Limited coverage",
-          "notes": "Unsupervised capability claimed historically; current active fleet size unconfirmed \u2014 excluded from active vehicle totals."
+          "notes": "Unsupervised capability claimed historically; current active fleet size unconfirmed \u2014 excluded from active vehicle totals.",
+          "asOf": "2026-07-15",
+          "basis": "historical"
+        },
+        {
+          "name": "Orlando",
+          "status": "active",
+          "serviceType": "unsupervised",
+          "vehicleType": "Model Y",
+          "activeVehicles": null,
+          "launchDate": "2026-07-21",
+          "serviceArea": "Metro service, area size not disclosed",
+          "notes": "Tesla's Robotaxi site lists the city as live with no one in the driver's seat. No vehicle count published.",
+          "asOf": "2026-10-21",
+          "basis": "historical",
+          "source": "https://www.robotaxistats.com/services/tesla/"
+        },
+        {
+          "name": "Tampa",
+          "status": "active",
+          "serviceType": "unsupervised",
+          "vehicleType": "Model Y",
+          "activeVehicles": null,
+          "launchDate": "2026-07-21",
+          "serviceArea": "Metro service, area size not disclosed",
+          "notes": "Tesla's Robotaxi site lists the city as live with no one in the driver's seat. No vehicle count published.",
+          "asOf": "2026-10-21",
+          "basis": "historical",
+          "source": "https://www.robotaxistats.com/services/tesla/"
         }
       ],
       "summary": {
-        "totalCities": 6,
-        "activeCities": 5,
+        "totalCities": 8,
+        "activeCities": 3,
         "mappedOnly": 1,
-        "unsupervisedCapable": 4,
+        "unsupervisedCapable": 6,
         "safetyMonitorOnly": 1,
-        "totalActiveVehicles": 32,
-        "definition": "activeCities = status active AND activeVehicles > 0; totalActiveVehicles sums activeVehicles on active cities only"
+        "totalActiveVehicles": 1196,
+        "definition": "activeCities = status active AND activeVehicles > 0; totalActiveVehicles sums activeVehicles on active cities only. A row is a sighting floor or a company figure, not the Texas DMV roster."
       }
     },
     "fsdApprovals": {
@@ -13042,6 +13082,24 @@
           "count": 420,
           "note": "Texas TxMCCS automated-vehicle list under Tesla Robotaxi, LLC: 375 Model Y + 45 Cybercab (5YJA). Regulatory ceiling, not live dispatch. Cybercab commercial roster is 45 vs VIN floor 2,172 and NHTSA AQ26002 population ~1,000. Tesla has not disclosed how many of the 45 sit in the Austin paid pool.",
           "source": "https://teslanorth.com/2026/09/02/tesla-robotaxi-texas-420/"
+        },
+        {
+          "date": "2026-10-10",
+          "count": 739,
+          "note": "Texas automated-vehicle roster for Tesla Robotaxi, LLC: 319 Cybercab + 420 Model Y. Authorization, not dispatch.",
+          "source": "https://teslanorth.com/2026/10/10/cybercab-300-austin-fleet/"
+        },
+        {
+          "date": "2026-10-27",
+          "count": 1051,
+          "note": "Texas DMV / TxMCCS roster reviewed by TeslaNorth: 544 Cybercab + 507 Model Y. Authorization, not dispatch.",
+          "source": "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas/"
+        },
+        {
+          "date": "2026-10-30",
+          "count": 1204,
+          "note": "Texas DMV roster: 631 Model Y + 573 Cybercab. Authorization, not cars in service. +124 Model Y since Oct 29.",
+          "source": "https://www.robotaxistats.com/services/tesla/"
         }
       ]
     }

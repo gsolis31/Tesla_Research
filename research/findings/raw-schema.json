@@ -15,6 +15,15 @@
     "keyChanges": { "type": "array" },
     "metricUpdate": { "type": ["object", "null"] },
     "fleetUpdate": { "type": ["object", "null"] },
+    "registeredUpdate": {
+      "type": ["object", "null"],
+      "description": "Texas DMV / TxMCCS roster point. Cybercab only. Never a city in-service count."
+    },
+    "cityFleetUpdate": {
+      "type": ["array", "null"],
+      "description": "Per-city sighting floor or company in-service figure. basis is required. Not the DMV roster.",
+      "items": { "type": "object" }
+    },
     "categoryUpdate": { "type": ["object", "null"] },
     "urlsSeen": { "type": "array", "items": { "type": "string" } },
     "searchLog": {

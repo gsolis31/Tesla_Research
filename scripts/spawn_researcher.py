@@ -49,7 +49,7 @@ CATEGORIES = {
             "specialized": ["robotaxitracker.com"]
         },
         "keywords": ["Cybercab", "robotaxi", "fleet", "autonomous", "unsupervised"],
-        "metrics": ["cybercab", "robotaxiFleet"],
+        "metrics": ["cybercab", "robotaxiFleet", "robotaxiRegistered", "cityFleet"],
         "ownership": {
             "owns": [
                 "Cybercab vehicle production, staging, EPA/certification",
@@ -356,6 +356,18 @@ def load_hot_context(category_key, data=None, cache_urls=None):
             hot_context["latestFleet"] = slim_metric_point(
                 data["metrics"]["robotaxiFleet"]["data"][-1]
             )
+        registered = data["metrics"].get("robotaxiRegistered", {}).get("data") or []
+        if registered:
+            hot_context["latestRegistered"] = slim_metric_point(registered[-1])
+        city_rows = data["metrics"].get("robotaxiCities", {}).get("cities") or []
+        hot_context["cityFleet"] = [
+            {
+                k: city[k]
+                for k in ("name", "activeVehicles", "asOf", "basis", "status", "serviceType")
+                if city.get(k) is not None
+            }
+            for city in city_rows
+        ]
     elif category_key == "jobPostings" and "jobPostings" in data["metrics"]:
         if data["metrics"]["jobPostings"].get("data"):
             hot_context["latestMetric"] = slim_metric_point(

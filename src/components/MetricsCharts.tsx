@@ -236,8 +236,9 @@ function MetricsCharts({ data }: Props) {
       <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
         <h3 className="text-lg font-bold mb-1">Robotaxi Service by City</h3>
         <p className="text-xs text-gray-500 mb-4">
-          Active fleet by city (in-service estimates). Updated{' '}
-          {data.metrics.robotaxiCities.lastUpdated}.
+          In-service estimate by city. Each count is only as current as that row’s as-of
+          date. A sighting floor is cars Robotaxi Tracker has seen. It is not the Texas
+          DMV roster.
         </p>
         <CityTable
           cities={data.metrics.robotaxiCities.cities}
@@ -306,7 +307,9 @@ function CityTable({ cities, summary }: { cities: any[]; summary: any }) {
                 <td className="p-3 text-center">
                   <span
                     className={`font-semibold ${
-                      (city.activeVehicles ?? 0) > 0 ? 'text-green-400' : 'text-gray-600'
+                      city.basis === 'historical' || (city.activeVehicles ?? 0) === 0
+                        ? 'text-gray-500'
+                        : 'text-green-400'
                     }`}
                   >
                     {(city.activeVehicles ?? 0) > 0 ? city.activeVehicles : '—'}
@@ -317,6 +320,18 @@ function CityTable({ cities, summary }: { cities: any[]; summary: any }) {
                       {city.breakdown.cybercabTesting
                         ? ` · ${city.breakdown.cybercabTesting} Cybercab test`
                         : ''}
+                    </div>
+                  )}
+                  {(city.basis || city.asOf) && (
+                    <div className="text-xs text-gray-500 mt-1">
+                      {city.basis === 'sighting-floor'
+                        ? 'sighting floor'
+                        : city.basis === 'company'
+                          ? 'company figure'
+                          : city.basis === 'historical'
+                            ? 'old snapshot'
+                            : city.basis}
+                      {city.asOf ? ` · as of ${city.asOf}` : ''}
                     </div>
                   )}
                 </td>
@@ -336,8 +351,10 @@ function CityTable({ cities, summary }: { cities: any[]; summary: any }) {
           {summary.mappedOnly > 0 ? ` · ${summary.mappedOnly} mapped-only` : ''}
         </span>
         <p className="text-xs text-gray-500 mt-2">
-          Active = status “active” and activeVehicles &gt; 0. Does not include Texas DMV
-          registrations ({summary.totalActiveVehicles} ≠ registry counts).
+          Active = status “active” and activeVehicles &gt; 0. Gray “old snapshot” rows are
+          the July 15, 2026 hand count. A weekly city update replaces a row only with a
+          sighting floor or a company in-service figure. Texas DMV registrations stay on
+          the registration chart ({summary.totalActiveVehicles} ≠ registry counts).
         </p>
       </div>
     </div>

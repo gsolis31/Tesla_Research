@@ -52,12 +52,20 @@ const MetricDataPointSchema = z.object({
   note: z.string(),
 })
 
+const CityBasisEnum = z.enum(['sighting-floor', 'company', 'historical'])
+
 const RobotaxiCitySchema = z.object({
   name: z.string(),
   status: CityStatusEnum,
   serviceType: ServiceTypeEnum,
   vehicleType: z.string(),
   activeVehicles: z.number().int().nonnegative().nullable(), // Can be null
+  // When the count was observed, and what kind of count it is.
+  // historical = last hand-set snapshot. sighting-floor = tracker cars seen.
+  // company = a Tesla in-service figure. Never a DMV roster total.
+  asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  basis: CityBasisEnum.optional(),
+  source: z.string().optional(),
   breakdown: z.object({
     unsupervised: z.number().int().nonnegative(),
     safetyMonitor: z.number().int().nonnegative(),

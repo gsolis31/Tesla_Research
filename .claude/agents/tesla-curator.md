@@ -69,7 +69,9 @@ If `lintReport` exists, **read it**. Error-level lint issues are must-drops (do 
 Mechanical gates already applied by `scripts/lint_findings.py` (do not reimplement):
 - date window, title length, Electrek-only+low, evidence count, noise URLs
 - `searchLog` present with queries
-- registration/TxMCCS counts filed as production or `robotaxiFleet`
+- registration/TxMCCS counts filed as production, `robotaxiFleet`, or a city `activeVehicles`
+- `registeredUpdate` belongs in `findings.metrics.robotaxiRegistered` (keep it)
+- `cityFleetUpdate` belongs in `findings.metrics.cityFleet`. Keep a row whose `basis` is `sighting-floor` or `company`. Drop a row whose count is the statewide roster, whose basis is missing, or that is only camera events / all-time rider logs. Say so in the report.
 - classic ownership trespass (AI5 under terafab, OTA under fsd, etc.)
 
 Empty categories with `skipReason` + non-empty `searchLog.queries` are valid quiet weeks. Empty with no queries is a researcher failure — note it in the report, do not invent news.
@@ -327,7 +329,7 @@ trends = extract_trends(filtered)
 ### Step 8: Merge Metrics & Category Updates
 
 ```python
-metrics = {'cybercab': [], 'robotaxiFleet': [], 'jobPostings': []}
+metrics = {'cybercab': [], 'robotaxiFleet': [], 'robotaxiRegistered': [], 'cityFleet': [], 'jobPostings': []}
 quarterly_data = []
 category_updates = {}
 
@@ -341,9 +343,17 @@ for category_data in category_findings:
         elif category_key == 'jobPostings':
             metrics['jobPostings'].append(category_data['metricUpdate'])
 
-    # Fleet updates
+    # Network in-service total only. Null is normal when the week only has a roster or city floors.
     if category_data.get('fleetUpdate'):
         metrics['robotaxiFleet'].append(category_data['fleetUpdate'])
+
+    # Texas DMV roster. Do not move this onto robotaxiFleet or into a city row.
+    if category_data.get('registeredUpdate'):
+        metrics['robotaxiRegistered'].append(category_data['registeredUpdate'])
+
+    # Per-city sighting floor or company figure. One object per city.
+    for city_point in category_data.get('cityFleetUpdate') or []:
+        metrics['cityFleet'].append(city_point)
 
     # Quarterly data
     if category_key == 'productionDelivery' and category_data.get('quarterlyData'):

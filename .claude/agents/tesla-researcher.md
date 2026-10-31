@@ -53,7 +53,12 @@ When invoked, you will receive a research configuration file path (e.g., `resear
 5. **Metric Tracking**
    - If config specifies metrics, extract latest data points
    - Format: {date, count/value, note, source}
-   - Only include if verified from credible source
+   - Cybercab week, every time, open Robotaxi Tracker and file two inputs or a `metricCandidates` reject:
+     - `registeredUpdate`: the Texas DMV roster total from the tracker permits/government page. This is allowed to be a registry count. File it when `hotContext.latestRegistered.count` changed.
+     - `cityFleetUpdate`: one object per city that has a **30-day distinct-vehicle sighting floor** or a Tesla in-service figure. `basis` is `sighting-floor` or `company`. File a city when its count changed versus `hotContext.cityFleet`.
+   - Do not put the roster total, a camera-event count, or an all-time "logged by riders" total into `cityFleetUpdate` or `fleetUpdate`.
+   - `fleetUpdate` is only a network-wide in-service total. Leave it null when the only new numbers are the roster or per-city sighting floors.
+   - If a number did not change, do not re-file it. Add `metricCandidates` with `decision: reject` and series `robotaxiRegistered` or `cityFleet` so lint can see the check.
 
 6. **Output Format**
 
@@ -88,15 +93,27 @@ Write to the path in config `outputPath` (default: `research/raw/findings-{categ
     "note": "Description",
     "source": "https://source.com"
   },
-  "fleetUpdate": {
-    "city": "Austin",
-    "country": "USA",
-    "status": "active",
-    "vehicleCount": 50,
-    "launchDate": "2026-07-01",
-    "lastUpdate": "2026-07-08",
-    "source": "https://source.com"
+  "fleetUpdate": null,
+  "registeredUpdate": {
+    "date": "2026-10-27",
+    "count": 1051,
+    "note": "Texas DMV roster: 544 Cybercab + 507 Model Y. Authorization, not cars in service.",
+    "source": "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas/"
   },
+  "cityFleetUpdate": [
+    {
+      "date": "2026-10-10",
+      "name": "Austin",
+      "status": "active",
+      "serviceType": "mixed",
+      "vehicleType": "Model Y + Cybercab",
+      "activeVehicles": 275,
+      "basis": "sighting-floor",
+      "breakdown": { "unsupervised": 170, "safetyMonitor": 0, "cybercabTesting": 105 },
+      "notes": "Distinct Tesla vehicles seen in unsupervised Austin service over 30 days, as cited from Robotaxi Tracker. A floor, not a dispatch census.",
+      "source": "https://eletric-vehicles.com/tesla/tesla-says-over-300-cybercabs-now-serve-austin-as-registry-count-hits-319/"
+    }
+  ],
   "categoryUpdate": {
     "latestStatus": "Brief status update",
     "nextMilestone": "Expected milestone",
@@ -256,7 +273,7 @@ Prefer fewer high-quality article URLs over dumping every URL you visited.
 - `queries`: every `web_search` you ran (query text + hit count). Empty queries on an empty week is a lint error.
 - `fetched`: canonical article URLs you opened (same rules as `urlsSeen`). Not search pages.
 - `considered`: stories you evaluated, **including skips**. Empty-week files must list the 1–3 closest rejects.
-- `metricCandidates`: any number you almost wrote. Registration / TxMCCS / DMV counts are `decision: reject` for `cybercab` production and `robotaxiFleet` — those belong on `robotaxiRegistered` only.
+- `metricCandidates`: any number you almost wrote. Registration / TxMCCS / DMV counts are `decision: reject` for `cybercab` production, `robotaxiFleet`, and `cityFleet`. File that roster on `registeredUpdate` (`series: robotaxiRegistered`). A per-city 30-day sighting floor is `decision: file` on `cityFleetUpdate`.
 - `decision` is `file` or `skip` (considered) / `file` or `reject` (metrics).
 
 ## Quality Standards
@@ -264,8 +281,9 @@ Prefer fewer high-quality article URLs over dumping every URL you visited.
 - Minimum 2 sources for high confidence
 - Electrek-only + low confidence = REJECT
 - Vague language ("could", "might", "possibly") = low confidence
-- Official numbers only for metrics
-- Texas TxMCCS / DMV registry counts are **not** `metricUpdate` (production) and **not** `fleetUpdate` (active fleet)
+- Production, delivery, and job-count metrics need an official number
+- Texas TxMCCS / DMV registry counts go in `registeredUpdate` only. They are **not** `metricUpdate` (production), **not** `fleetUpdate`, and **not** a city `activeVehicles`
+- `cityFleetUpdate.basis` is `sighting-floor` (tracker cars seen in that city) or `company` (Tesla said this many are in service). Camera snapshots, all-time rider logs, and the statewide roster are not a city count
 - Always include source URLs
 - Always include `searchLog` (queries + considered skips)
 - Date every finding

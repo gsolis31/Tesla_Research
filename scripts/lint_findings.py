@@ -150,6 +150,66 @@ def _blob(kc: dict) -> str:
     return f"{kc.get('title') or ''} {kc.get('description') or ''}"
 
 
+def _candidate_series(data: dict) -> set:
+    found = set()
+    for candidate in (data.get("searchLog") or {}).get("metricCandidates") or []:
+        series = candidate.get("series")
+        if series:
+            found.add(series)
+    return found
+
+
+def _lint_cybercab_metric_inputs(data: dict, add) -> None:
+    """A Cybercab week must show it checked the roster and the city sighting floor.
+
+    Filing the number is optional when it did not change. Silence is not.
+    The check belongs in registeredUpdate / cityFleetUpdate, or in a
+    metricCandidates row that says why it was not filed.
+    """
+    series = _candidate_series(data)
+    if not data.get("registeredUpdate") and "robotaxiRegistered" not in series:
+        add(
+            "warning",
+            "MISSING_REGISTRY_CHECK",
+            "no registeredUpdate and no robotaxiRegistered metricCandidate — "
+            "open the Robotaxi Tracker Texas roster and file it or reject it",
+        )
+    if not data.get("cityFleetUpdate") and "cityFleet" not in series:
+        add(
+            "warning",
+            "MISSING_CITY_FLEET_CHECK",
+            "no cityFleetUpdate and no cityFleet metricCandidate — "
+            "open the tracker sighting floor by city and file it or reject it",
+        )
+
+
+def _lint_city_fleet_point(point: dict, add, category: str, registered_counts: Optional[set] = None) -> None:
+    if not isinstance(point, dict):
+        add("error", "CITY_FLEET_BASIS", "city fleet point is not an object", category=category)
+        return
+    basis = point.get("basis")
+    name = point.get("name") or "city"
+    count = point.get("activeVehicles")
+    if count is None:
+        count = point.get("count")
+    if basis not in ("sighting-floor", "company"):
+        add(
+            "error",
+            "CITY_FLEET_BASIS",
+            f"{name} city fleet basis must be sighting-floor or company (got {basis})",
+            category=category,
+        )
+    if looks_like_registration(point) or (
+        registered_counts and count is not None and int(count) in registered_counts
+    ):
+        add(
+            "error",
+            "REGISTRATION_AS_CITY",
+            f"{name} city count {count} is a registry total — file it as robotaxiRegistered",
+            category=category,
+        )
+
+
 def _as_metric_point(raw: dict) -> dict:
     """Normalize metricUpdate / fleetUpdate into the shape looks_like_registration expects."""
     note = raw.get("note") or ""
@@ -302,10 +362,10 @@ def lint_raw_file(
     key_changes = data.get("keyChanges") or []
     result.filed = len(key_changes)
 
-    def add(level: str, code: str, message: str, title: Optional[str] = None) -> None:
+    def add(level: str, code: str, message: str, title: Optional[str] = None, category: Optional[str] = None) -> None:
         result.issues.append(
             Issue(level=level, code=code, message=message,
-                  category=category_key, title=title, path=path)
+                  category=category or category_key, title=title, path=path)
         )
 
     if data.get("categoryKey") and data.get("categoryKey") != category_key:
@@ -357,6 +417,12 @@ def lint_raw_file(
                 "REGISTRATION_AS_FLEET",
                 "fleetUpdate looks like a DMV/registry count — do not write as robotaxiFleet",
             )
+
+    if category_key == "cybercab":
+        _lint_cybercab_metric_inputs(data, add)
+
+    for point in data.get("cityFleetUpdate") or []:
+        _lint_city_fleet_point(point, add, category_key)
 
     sources = (data.get("metadata") or {}).get("sourcesSearched") or []
     if result.filed > 0 and not sources:
@@ -434,6 +500,14 @@ def lint_curated_file(
                     f"metrics.{series} point looks like a registry count (count={point.get('count')})",
                     category=series,
                 )
+
+    registered_counts = {
+        int(p["count"])
+        for p in (metrics.get("robotaxiRegistered") or [])
+        if isinstance(p, dict) and p.get("count") is not None
+    }
+    for point in metrics.get("cityFleet") or []:
+        _lint_city_fleet_point(point, add, "cityFleet", registered_counts=registered_counts)
 
     urls_seen = (data.get("metadata") or {}).get("urlsSeen") or []
     for url in urls_seen:
