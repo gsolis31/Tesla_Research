@@ -1,0 +1,258 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-10-31",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 Samsung TSMC 2nm October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI5 OR AI6 Samsung OR TSMC OR Dojo after:2026-10-17",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla AI5 OR AI6 Samsung OR TSMC OR Dojo",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 OR AI6 OR Dojo chip when:14d",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Tesla AI5 OR AI6 OR Dojo Samsung OR TSMC 2026 past week",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "site:teslarati.com AI5 OR AI6 OR Dojo OR Samsung chip",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:notateslaapp.com Intel Tesla chip AI6",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Intel Tesla AI6 OR 14A OR mystery chip October 2026",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "\"AI5\" OR \"AI6\" OR \"Dojo\" Tesla when:14d",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Intel 14A OR foundry chip when:14d",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Intel 14A foundry customer October 2026 Reuters OR earnings",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Q3 2026 earnings AI5 OR AI6 OR Dojo OR chip",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "\"Tesla has agreed\" Intel 14A foundry",
+        "tool": "web_fetch",
+        "hits": 7
+      },
+      {
+        "q": "Samsung finalizes Tesla AI5 chip design October 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "Samsung Electro-Mechanics Tesla substrate OR FC-BGA",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Q3 2026 earnings call recap AI5 site:notateslaapp.com",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "notateslaapp.com/rss latest 50 items",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "\"Samsung Electro-Mechanics\" Tesla Nvidia 3.7",
+        "tool": "web_fetch",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4887/intel-to-make-mystery-chip-for-tesla-ai6-or-something-new",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://finviz.com/news/403798/intel-shares-rise-nearly-4-following-jpmorgan-upgrade-and-tesla-foundry-agreement",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.ainvest.com/news/intel-foundry-14a-moment-strategic-win-revenue-engine-2610/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/10/22/news-tesla-reportedly-to-invest-krw-1-1t-to-secure-samsung-electro-mechanics-substrate-capacity-nvidia-also-commits/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cryptobriefing.com/samsung-electro-mechanics-tesla-nvidia-investment/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20261023PD226/tesla-nvidia-semco-production-abf-substrate.html",
+        "kept": true,
+        "reason": "lede only; body paywalled; corroborates the KRW 3.7T figure"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "kept": false,
+        "reason": "owner's-manual rename only; no silicon, node, or volume change"
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/10/16/news-korean-chip-engineer-accuses-tesla-of-pressuring-samsung-on-ai5ai6-pricing-poaching-talent-for-terafab/",
+        "kept": false,
+        "reason": "published 2026-10-16, before dateFrom; anonymous allegation; poaching half is terafab"
+      },
+      {
+        "url": "https://wccftech.com/elon-musks-terafab-poached-a-ton-of-talent-from-samsungs-taylor-fab-as-tesla-asked-for-shitty-terms-on-the-ai5-chip-a-korean-engineer-claims/",
+        "kept": false,
+        "reason": "pre-window original of the same allegation"
+      },
+      {
+        "url": "https://blockonomi.com/tesla-tsla-stock-semi-production-ramps-up-as-2-8b-ai-chip-deal-fuels-growth-hopes/",
+        "kept": false,
+        "reason": "conflates the joint substrate figure with Tesla Semi volume"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4870/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+        "kept": false,
+        "reason": "404; real recap is news/4867"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk expects AI5 in Optimus around April 2027; Taylor still trial-only",
+        "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+        "decision": "file",
+        "reason": "new in-window chip timeline from the Q3 call; Optimus production and in-house fab lines in the same recap left to other categories"
+      },
+      {
+        "title": "Tesla reportedly prepays KRW 1.1T for FC-BGA that arrives in 2029",
+        "url": "https://www.trendforce.com/news/2026/10/22/news-tesla-reportedly-to-invest-krw-1-1t-to-secure-samsung-electro-mechanics-substrate-capacity-nvidia-also-commits/",
+        "decision": "file",
+        "reason": "new packaging-capacity commitment for Tesla AI chips; deliveries miss the near-term dates"
+      },
+      {
+        "title": "Intel names Tesla a 14A foundry customer; chip, price, and wafers unspecified",
+        "url": "https://www.notateslaapp.com/news/4887/intel-to-make-mystery-chip-for-tesla-ai6-or-something-new",
+        "decision": "file",
+        "reason": "new named foundry-customer report inside the window; no chip, dollars, or wafers"
+      },
+      {
+        "title": "Q3 call in-house fab test chip and 2028 volume",
+        "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+        "decision": "skip",
+        "reason": "terafab ownership: machinery, test chip, and volume timeline for the in-house fab"
+      },
+      {
+        "title": "Goodbye AI4, Hello SI4: Tesla renames its FSD computers",
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "decision": "skip",
+        "reason": "manual wording only; speculative SI5 label, no node or volume change"
+      },
+      {
+        "title": "Korean engineer accuses Tesla of pressuring Samsung on AI5/AI6 pricing",
+        "url": "https://www.trendforce.com/news/2026/10/16/news-korean-chip-engineer-accuses-tesla-of-pressuring-samsung-on-ai5ai6-pricing-poaching-talent-for-terafab/",
+        "decision": "skip",
+        "reason": "before dateFrom; anonymous X account; talent-poaching half is terafab"
+      },
+      {
+        "title": "tech-insider rewrite of the Samsung AI5/AI6 pricing dispute",
+        "url": "https://tech-insider.org/tesla-samsung-ai5-ai6-chip-dispute-2026/",
+        "decision": "skip",
+        "reason": "in-window recap of the 16 October allegation, not a new contract fact"
+      },
+      {
+        "title": "Samsung finalizes Tesla AI5 chip design, production to begin soon",
+        "decision": "skip",
+        "reason": "headline matches the already-seen design-finalized story; article not opened"
+      },
+      {
+        "title": "Tesla taps Intel 14A (teslahubs rewrite)",
+        "decision": "skip",
+        "reason": "duplicate of the NATA/Finviz 14A customer report, not a second event"
+      },
+      {
+        "title": "Blockonomi: Semi ramp plus $2.8B AI chip deal",
+        "url": "https://blockonomi.com/tesla-tsla-stock-semi-production-ramps-up-as-2-8b-ai-chip-deal-fuels-growth-hopes/",
+        "decision": "skip",
+        "reason": "unreliable conflation of the joint substrate prepay with Semi volume"
+      },
+      {
+        "title": "Musk $15B in-house fab, ASML expedite, plant-purchase, and GDP claims",
+        "decision": "skip",
+        "reason": "terafab construction and timeline stories, outside aiChip ownership"
+      },
+      {
+        "title": "Dojo architecture or status update",
+        "decision": "skip",
+        "reason": "no in-window Dojo story on NATA RSS or tier-1 teslarati/teslanorth/teslaoracle searches"
+      },
+      {
+        "title": "Taylor yield engineers, Micron LPDDR praise, Fab 2 groundbreaking",
+        "decision": "skip",
+        "reason": "already in recentKeyChanges / seenUrls; memory stays 96GB and 144GB"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChip",
+        "count": 1100000000000,
+        "decision": "reject",
+        "reason": "KRW 1.1T is a reported FC-BGA capacity prepayment, not chip output"
+      },
+      {
+        "series": "aiChip",
+        "count": 2800000000,
+        "decision": "reject",
+        "reason": "US$2.8B is Tesla plus Nvidia, not a Tesla production count"
+      },
+      {
+        "series": "aiChip",
+        "count": 96,
+        "decision": "reject",
+        "reason": "96GB LPDDR5 and 144GB LPDDR6 are the existing baseline, not a new measurement"
+      }
+    ]
+  }
+}

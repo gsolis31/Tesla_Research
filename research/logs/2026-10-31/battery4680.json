@@ -1,0 +1,188 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-10-31",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery when:14d",
+        "tool": "google_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "dry electrode OR dry cathode Tesla 4680 when:30d",
+        "tool": "google_news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Giga Berlin OR Gruenheide OR Giga Texas 4680 when:21d",
+        "tool": "google_news_rss",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Q3 2026 4680 OR dry electrode OR yield OR GWh",
+        "tool": "google_news_rss",
+        "hits": 20
+      },
+      {
+        "q": "site:teslarati.com 4680 2026",
+        "tool": "google_news_rss",
+        "hits": 15
+      },
+      {
+        "q": "Should Tesla move away from its battery technology",
+        "tool": "duckduckgo",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Cybercab battery design LFP 4680 October 2026",
+        "tool": "duckduckgo",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Q3 2026 4680 cells Cybercab Semi",
+        "tool": "duckduckgo",
+        "hits": 8
+      },
+      {
+        "q": "Giga Berlin 4680 construction October 2026",
+        "tool": "duckduckgo",
+        "hits": 8
+      },
+      {
+        "q": "Tesla cathode Texas 4680 Q3 2026",
+        "tool": "duckduckgo",
+        "hits": 8
+      },
+      {
+        "q": "teslarati Tesla Q3 2026 earnings battery",
+        "tool": "duckduckgo",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q2-2026-Update.pdf",
+        "kept": true,
+        "reason": "baseline: cell table identical to Q3"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://insideevs.com/news/813324/tesla-cybercab-lfp-battery-chemistry/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-cybercab-battery-designed-future-lfp-cells/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+        "kept": false,
+        "reason": "earnings recap omits 4680; no new cell metric"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-move-away-battery-technology/",
+        "kept": false,
+        "reason": "2014 18650 piece resurfaced; not 4680 and not this window"
+      },
+      {
+        "url": "https://thenextweb.com/news/tesla-cybercab-lfp-battery-pack",
+        "kept": false,
+        "reason": "same Munro tour; also mixes Cybercab line speed, which this category does not own"
+      },
+      {
+        "url": "https://teslabriefing.com/en/earnings/2026-q3",
+        "kept": false,
+        "reason": "corroborates cell supply constrained volume; no new 4680 output number"
+      },
+      {
+        "url": "https://www.teslabriefing.com/en/articles/fsd-cybercab-battery-modular-pack-design-2026-10-28",
+        "kept": false,
+        "reason": "secondary summary of the Teslarati Munro write-up"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Q3 still lists Texas 4680 above 40 GWh and prints no cell output",
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "decision": "file",
+        "reason": "Oct 21 letter in window; table unchanged vs Q2 and still no yield or output GWh"
+      },
+      {
+        "title": "Cybercab's 4680 pack is built to switch to LFP later",
+        "url": "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure/",
+        "decision": "file",
+        "reason": "New Oct 26-27 Munro comments: nickel 4680 today, LFP headroom, fewer cells than planned"
+      },
+      {
+        "title": "Roadster 4680 pack recaps (Autoblog, autoevolution, InsideEVs, Notebookcheck)",
+        "url": "https://teslanorth.com/2026/10/16/tesla-roadster-moravy-hagerty-engineering-interview/",
+        "decision": "skip",
+        "reason": "same Moravy prototype-pack claim already filed 2026-10-16; seenUrl"
+      },
+      {
+        "title": "Should Tesla move away from its battery technology?",
+        "url": "https://www.teslarati.com/tesla-move-away-battery-technology/",
+        "decision": "skip",
+        "reason": "old 18650/JB Straubel item; Google News date is a recrawl, not a 4680 development"
+      },
+      {
+        "title": "First Megapacks with Nevada LFP cells and 13.7 GWh storage",
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "decision": "skip",
+        "reason": "energy-storage deployment and LFP cells, not 4680; owned by productionDelivery when quarterly"
+      },
+      {
+        "title": "Cybercab line outpacing Robotaxi deployments",
+        "url": "https://thenextweb.com/news/tesla-cybercab-lfp-battery-pack",
+        "decision": "skip",
+        "reason": "factory pace vs fleet ops belongs to cybercab, not cell production"
+      },
+      {
+        "title": "Tesla Q3 2026 earnings results recap",
+        "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+        "decision": "skip",
+        "reason": "financial recap with no 4680 yield, GWh output, or dry-electrode update"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680",
+        "count": 40,
+        "decision": "reject",
+        "reason": "Texas >40 GWh is installed capacity, identical to Q2, and the letter says installed capacity is not the production rate"
+      },
+      {
+        "series": "battery4680",
+        "count": 528,
+        "decision": "reject",
+        "reason": "88S6P is cells in one Cybercab pack, not factory output or yield"
+      },
+      {
+        "series": "battery4680",
+        "count": 544,
+        "decision": "reject",
+        "reason": "Texas DMV Cybercab authorization count in the Teslarati piece; registry, not 4680 production, and not this category"
+      },
+      {
+        "series": "energyStorage",
+        "count": 13.7,
+        "decision": "reject",
+        "reason": "Q3 storage deployments GWh; not 4680 cell output and not owned here"
+      }
+    ]
+  }
+}

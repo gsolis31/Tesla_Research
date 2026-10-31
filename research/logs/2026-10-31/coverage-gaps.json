@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-31",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 13,
+  "ignored": 0,
+  "gapCount": 2,
+  "gaps": [
+    {
+      "title": "Houston Robotaxi geofence expands; Cybercab public rides still Austin-only",
+      "url": "https://www.teslarati.com/tesla-expands-robotaxi-geofence-houston-spacex/",
+      "date": "2026-10-26",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Unsupervised Model Y area in Houston grew, while the article still limits public Cybercab service to Austin and points Dallas Cybercab rides to November",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla launches a Robotaxi safety site and says four more cities are coming",
+      "url": "https://www.teslaoracle.com/2026/10/23/tesla-announces-robotaxi-launch-in-four-more-cities-releases-safety-data-via-new-website-no-kittens-were-hurt/",
+      "date": "2026-10-23",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Oracle says a public safety site now covers Model Y robotaxis and Cybercabs and that Tesla announced four additional city launches",
+      "match": "gap"
+    }
+  ]
+}

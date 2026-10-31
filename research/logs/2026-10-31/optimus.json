@@ -1,0 +1,230 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-10-31",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Optimus site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "Optimus site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Optimus Q3 2026 earnings",
+        "tool": "duckduckgo_html",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Optimus Academy Fremont October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus Giga Texas factory October 2026 drone",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Moravy Optimus Cybercab charging Munro October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus October 28 OR October 29 OR October 30 2026",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Q3 2026 earnings call transcript Optimus",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Musk No Optimus reservations December waitlist",
+        "tool": "duckduckgo_html",
+        "hits": 10
+      },
+      {
+        "q": "Joe Tegtmeyer Optimus factory after 2026-10-18",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "site:humanoidsdaily.com Tesla Optimus October 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-optimus-production-quality-fremont/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/22/tesla-austin-optimus-factory-bigger-fremont/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-q3-2026-optimus-production-fremont-2027-deliveries",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/",
+        "kept": false,
+        "reason": "Tier 2 corroboration of the call. Not used as the cited source"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/30/elon-optimus-orders-december/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/27/moravy-optimus-cybercab-charging/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4904/teslas-optimus-robot-will-soon-plug-in-robotaxis-to-charge",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-lars-moravy-optimus-cybercab-charging-helper",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "kept": false,
+        "reason": "Recap of the October 17 value post already in criticalNews"
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-december-3-shareholder-meeting-board-letter",
+        "kept": false,
+        "reason": "October 19 letter has no new robot count or delivery date"
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-data-collection-scoble-robot-university",
+        "kept": false,
+        "reason": "Verified portion is job listings, which jobPostings owns. Scoble suit details are unsourced"
+      },
+      {
+        "url": "https://optimusk.blog/",
+        "kept": false,
+        "reason": "Homepage guides dated March to September 2026, nothing new in this window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Fremont Optimus called production-quality, with no count and sales in late 2027",
+        "url": "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+        "decision": "file",
+        "reason": "Q3 deck plus call: line started, capacity blank, hands unfinished, outside deliveries end of 2027"
+      },
+      {
+        "title": "Austin Optimus factory stays in Construction with no capacity or open date",
+        "url": "https://teslanorth.com/2026/10/22/tesla-austin-optimus-factory-bigger-fremont/",
+        "decision": "file",
+        "reason": "CFO and the capacity table confirm a larger Austin plant that is still Construction"
+      },
+      {
+        "title": "Musk replies No to a report that Optimus orders open in December",
+        "url": "https://teslanorth.com/2026/10/30/elon-optimus-orders-december/",
+        "decision": "file",
+        "reason": "Same-day denial of a consumer waitlist. No order page or ship date"
+      },
+      {
+        "title": "Moravy only hopes Optimus will plug in Cybercabs",
+        "url": "https://teslanorth.com/2026/10/27/moravy-optimus-cybercab-charging/",
+        "decision": "file",
+        "reason": "New VP comment, but it is a hope with no deployment and it depends on unsolved hands"
+      },
+      {
+        "title": "Elon Musk Says Optimus and Cybercab Will Dominate Tesla's Value",
+        "url": "https://teslanorth.com/2026/10/18/elon-optimus-cybercab-vast-majority-tesla-value-roadster/",
+        "decision": "skip",
+        "reason": "October 18 write-up of the October 17 post already summarized in criticalNews. No volume or ship date"
+      },
+      {
+        "title": "Tesla Makes Its Case for Board Continuity Ahead of December 3 Shareholder Vote",
+        "url": "https://www.humanoidsdaily.com/news/tesla-december-3-shareholder-meeting-board-letter",
+        "decision": "skip",
+        "reason": "October 19 letter restates the Fremont line with no output figure. Superseded two days later by the Q3 deck"
+      },
+      {
+        "title": "Tesla's Optimus Data-Collection Effort Comes Into Focus After Scoble's Robot University Claims",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-data-collection-scoble-robot-university",
+        "decision": "skip",
+        "reason": "Job listings belong to jobPostings. The 40-camera suit claim has no named source"
+      },
+      {
+        "title": "Tesla pushes Optimus deliveries to late 2027, says hands still a problem",
+        "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/",
+        "decision": "skip",
+        "reason": "Same earnings call already filed from the deck and Tier 1. Electrek is corroboration only"
+      },
+      {
+        "title": "Giga Texas Optimus Factory: Steel Frame Nearly Done by October",
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-steel-frame-nearly-done-by-october",
+        "decision": "skip",
+        "reason": "No new in-window measurement. September steel progress is already in seenUrls"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 20000,
+        "decision": "reject",
+        "reason": "Musk's roughly 20,000 a week is a rate at least a year away, not current output. The deck capacity cell is blank"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 10000,
+        "decision": "reject",
+        "reason": "10,000 to 20,000 is the planned Optimus Academy training fleet, not units built"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 1000000,
+        "decision": "reject",
+        "reason": "Aspirational Fremont line rate. Installed-capacity table prints a dash and Musk said the rate is a year or more out"
+      },
+      {
+        "series": "optimusBatteryKwh",
+        "count": 2.5,
+        "decision": "reject",
+        "reason": "Munro interview aside of about 2.5 to 3 kWh. Humanoids Daily says it is not a formal spec"
+      }
+    ]
+  }
+}

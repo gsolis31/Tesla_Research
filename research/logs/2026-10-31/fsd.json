@@ -1,0 +1,241 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-10-31",
+  "filed": 5,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "FSD approval Europe October 2026 site:teslarati.com",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "Tesla FSD approval Europe Latvia OR NHTSA OR country October 2026",
+        "tool": "web_fetch",
+        "hits": 11
+      },
+      {
+        "q": "FSD approval 2026 site:teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla FSD NHTSA OR NTSB OR Fairfield OR approval October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Latvia CSDD Tesla FSD OR Tesla Assisted Driving 2026",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Tesla FSD OR Full Self-Driving OR Assisted Driving when:14d",
+        "tool": "web_fetch",
+        "hits": 100
+      },
+      {
+        "q": "Tesla FSD Vallejo I-80 pedestrian killed CHP",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Korea police Tesla FSD unlock 80 JoongAng",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Slovakia assisted driving Reuters October 26 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Italy Salvini Tesla Assisted Driving October 29 2026",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Korea exemption FSD China-made October 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/26/tesla-fsd-latvia-approved/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/29/italy-salvini-tesla-assisted-driving-eu/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/19/tesla-japan-fsd-2026-hashimoto/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.nikkei.com/article/DGXZQOUC051IX0V01C26A0000000/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/29/seoul-court-rejects-fsd-refund-89-owners/",
+        "kept": false,
+        "reason": "consumer contract suit, not a regulatory approval or crash probe"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/22/tesla-europe-fsd-deals-perks/",
+        "kept": false,
+        "reason": "sales incentives, not a homologation decision"
+      },
+      {
+        "url": "https://abc7news.com/post/71-year-old-pedestrian-killed-driving-tesla-crossing-80-vallejo-chp/19969111/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.latimes.com/california/story/2026-10-22/self-driving-tesla-hits-kills-71-year-old-california-pedestrian",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.theverge.com/transportation/1016928/tesla-fsd-pedestrian-fatal-accident-california",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://en.fnnews.com/news/202610261609161974",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/10/27/tesla-fsd-south-korea-police-80-illegal-unlock-devices/",
+        "kept": false,
+        "reason": "tier-2 corroboration only; JoongAng and FN News used instead"
+      },
+      {
+        "url": "https://www.ilfoglio.it/en/economy/2026/10/29/news/salvinis-sovereignty-agenda-does-not-extend-to-self-driving-cars-he-praises-tesla-but-his-code-hinders-italian-projects--412042",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.thenews.com.pk/latest/1421732-italy-backs-swift-eu-approval-of-tesla-assisted-driving",
+        "kept": false,
+        "reason": "tweet corroboration only; unsourced 100k-customer and 14.3% population figures not used"
+      },
+      {
+        "url": "https://www.techtimes.com/articles/329505/20261026/baltic-bloc-now-complete-latvia-clears-tesla-assisted-driving-setting-december-eu-showdown.htm",
+        "kept": false,
+        "reason": "winter-warning and ministry-split claims not corroborated by Teslarati or TeslaNorth"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Vallejo I-80 Pedestrian Killed; Driver Told CHP the Tesla Was on FSD",
+        "url": "https://abc7news.com/post/71-year-old-pedestrian-killed-driving-tesla-crossing-80-vallejo-chp/19969111/",
+        "decision": "file",
+        "reason": "new 22 October fatal, distinct from the already filed Fairfield CHP-car crash"
+      },
+      {
+        "title": "Seoul Police Book 80 People for Illegal Tesla FSD Unlocks",
+        "url": "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
+        "decision": "file",
+        "reason": "country enforcement showing China-built cars remain uncertified"
+      },
+      {
+        "title": "Latvia Recognizes Dutch FSD Approval, Tenth EU State, Still No Dated Rollout",
+        "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+        "decision": "file",
+        "reason": "new national recognition on 26 October inside the window"
+      },
+      {
+        "title": "Salvini Backs a Fast EU Vote; Italy Still Has Not Approved Tesla Assisted Driving",
+        "url": "https://teslanorth.com/2026/10/29/italy-salvini-tesla-assisted-driving-eu/",
+        "decision": "file",
+        "reason": "large-state regulatory posture, not a national approval"
+      },
+      {
+        "title": "Tesla Japan Still Promises 2026 FSD, and Admits the Decision Is Not Its",
+        "url": "https://teslanorth.com/2026/10/19/tesla-japan-fsd-2026-hashimoto/",
+        "decision": "file",
+        "reason": "pending MLIT decision restated with an admission the year-end target is difficult"
+      },
+      {
+        "title": "Tesla owners in Slovakia welcome assisted-drive tech as EU weighs rollout",
+        "url": "https://www.msn.com/en-gb/news/other/tesla-owners-in-slovakia-welcome-assisted-drive-tech-as-eu-weighs-rollout-across-bloc/ar-AA2g5fIy",
+        "decision": "skip",
+        "reason": "Reuters recap via MSN of the 16 October Slovakia recognition already in recentKeyChanges; Latvia is the new country. Full Reuters page not opened."
+      },
+      {
+        "title": "Seoul Court Rejects FSD Refund Suit Filed by 89 Tesla Owners",
+        "url": "https://teslanorth.com/2026/10/29/seoul-court-rejects-fsd-refund-89-owners/",
+        "decision": "skip",
+        "reason": "consumer contract case, not a country approval, homologation decision, or crash probe"
+      },
+      {
+        "title": "Tesla Is Sweetening European Deals to Get FSD-Ready Cars on the Road",
+        "url": "https://teslanorth.com/2026/10/22/tesla-europe-fsd-deals-perks/",
+        "decision": "skip",
+        "reason": "Q3 sales incentives; Musk's hope of an EU approval by Q1 is not a new regulatory act"
+      },
+      {
+        "title": "Tesla pushes unsupervised FSD to Q2 2027, and only inside Robotaxi zones",
+        "decision": "skip",
+        "reason": "Electrek headline only; software and robotaxi deployment timing owned by fsdv15 and cybercab, not fetched as a canonical article."
+      },
+      {
+        "title": "Tesla Full Self-Driving becomes main pillar of new Referral Program",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-becomes-main-pillar-new-referral-program/",
+        "decision": "skip",
+        "reason": "subscription marketing, not a regulatory approval"
+      },
+      {
+        "title": "Tesla Hit a Fairfield CHP Car; Driver Says He Was Asleep on FSD",
+        "url": "https://www.cbsnews.com/sacramento/news/i80-fairfield-tesla-full-self-driving-chp-crash-video/",
+        "decision": "skip",
+        "reason": "already in recentKeyChanges and seenUrls; no new CHP log confirmation found this window"
+      },
+      {
+        "title": "The Baltic Bloc Is Now Complete: Latvia winter-sensor warning",
+        "url": "https://www.techtimes.com/articles/329505/20261026/baltic-bloc-now-complete-latvia-clears-tesla-assisted-driving-setting-december-eu-showdown.htm",
+        "decision": "skip",
+        "reason": "Latvia approval filed from Teslarati; winter warning and inter-ministry dispute not corroborated"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 10,
+        "decision": "reject",
+        "reason": "Running EU recognition count, not the active-country series whose latest point is Denmark on 2026-06-09 with totalCountries 6. Latvia rollout is undated, so it is not a new active country."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 47458,
+        "decision": "reject",
+        "reason": "Carisyou Data Lab count of Korean Teslas that can legally use FSD (20.7% of 229,311). Not an fsdApprovals country total and not a ministry certification figure."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 100000,
+        "decision": "reject",
+        "reason": "The News claimed more than 100,000 European customers on the system with no official source; not used."
+      }
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-10-31",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 OR FSD v14.3 OR 2026.40 October 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD v14 OR v15 software",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Tesla FSD v14.3.13 2026.38.5.11",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla unsupervised FSD Q2 2027 Elluswamy",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD Australia v14.3.12 October 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla cumulative FSD miles Q3 2026",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/fsd-beta/news",
+        "kept": false,
+        "reason": "section index, not a canonical article"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/news",
+        "kept": false,
+        "reason": "section index"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/",
+        "kept": false,
+        "reason": "update index used to find version pages"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.11/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.1/release-notes",
+        "kept": false,
+        "reason": "seenUrl; opened only to compare v14.3.12 bullets"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.6/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.5/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.39.6/release-notes",
+        "kept": false,
+        "reason": "same Europe FSD 14.2.2.6 already on 2026.33.100, not a new FSD version"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/26/tesla-expands-the-rollout-of-2026-38-5-11-update-fsd-v14-3-13-hw4-and-fsd-v14-3-lite-hw3/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4879/tesla-to-launch-unsupervised-fsd-let-owners-join-robotaxi-network-in-q2-2027",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+        "kept": false,
+        "reason": "call recap; highway-only line is the writer's hedge, not a direct quote"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4868/tesla-is-building-its-own-ai-maps-starting-with-fsd-v15",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4862/tesla-fsd-hits-record-subs-purchased-with-75-of-new-orders",
+        "kept": false,
+        "reason": "subscription attach rate, not a software version, miles milestone, or architecture change"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4860/tesla-names-next-robotaxi-cities-shares-miles-driven-safety-data",
+        "kept": false,
+        "reason": "robotaxi cities and robotaxi miles belong to cybercab"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "kept": false,
+        "reason": "computer rename, no software ceiling change; chip naming fits aiChip"
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v14.3.13 on 2026.38.5.11 keeps the same supervised notes",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.11/release-notes",
+        "decision": "file",
+        "reason": "new point release in window; notes unchanged versus v14.3.12"
+      },
+      {
+        "title": "Tesla expands the rollout of 2026.38.5.11: FSD v14.3.13 and v14.3 Lite",
+        "url": "https://www.teslaoracle.com/2026/10/26/tesla-expands-the-rollout-of-2026-38-5-11-update-fsd-v14-3-13-hw4-and-fsd-v14-3-lite-hw3/",
+        "decision": "file",
+        "reason": "corroborates the 2026.38.5.11 expansion; same story as the changelog"
+      },
+      {
+        "title": "Oceania HW4 gets supervised v14.3.12 with unchanged notes",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.6/release-notes",
+        "decision": "file",
+        "reason": "new regional OTA dated Oct 21-24; same supervised v14.3.12, not v15"
+      },
+      {
+        "title": "Customer unsupervised FSD hedged to around Q2 2027",
+        "url": "https://www.notateslaapp.com/news/4879/tesla-to-launch-unsupervised-fsd-let-owners-join-robotaxi-network-in-q2-2027",
+        "decision": "file",
+        "reason": "v15 software ship and unsupervised customer timeline from the Q3 call"
+      },
+      {
+        "title": "In-house AI maps wait on unshipped FSD v15",
+        "url": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+        "decision": "file",
+        "reason": "architecture roadmap tied to v15 customer deploy; current routing defects unfixed"
+      },
+      {
+        "title": "Tesla Is Building Its Own AI-Based Maps With FSD v15",
+        "url": "https://www.notateslaapp.com/news/4868/tesla-is-building-its-own-ai-maps-starting-with-fsd-v15",
+        "decision": "file",
+        "reason": "same maps story; corroborates first use on v15 departures and arrivals"
+      },
+      {
+        "title": "Europe 2026.39.6 still carries FSD 14.2.2.6",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.39.6/release-notes",
+        "decision": "skip",
+        "reason": "same FSD version already on 2026.33.100 from Oct 1; generic supervised boilerplate, not a new model"
+      },
+      {
+        "title": "FSD v14.3.12 wide wave on 2026.38.5",
+        "url": "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes/",
+        "decision": "skip",
+        "reason": "seenUrl / last-week recap"
+      },
+      {
+        "title": "Intel HW3 Model S/X FSD v14.3 Lite",
+        "url": "https://www.notateslaapp.com/news/4827/tesla-rolls-out-fsd-v14-lite-to-legacy-model-sx-for-first-time",
+        "decision": "skip",
+        "reason": "seenUrl; Oct 14 Lite launch already filed. This week only carries the same Lite build"
+      },
+      {
+        "title": "Tesla FSD hits record subs, 75% of new orders",
+        "url": "https://www.notateslaapp.com/news/4862/tesla-fsd-hits-record-subs-purchased-with-75-of-new-orders",
+        "decision": "skip",
+        "reason": "attach rate and 1.74 million subscriptions are commercial, not software, miles, or architecture"
+      },
+      {
+        "title": "Tesla names next robotaxi cities and miles",
+        "url": "https://www.notateslaapp.com/news/4860/tesla-names-next-robotaxi-cities-shares-miles-driven-safety-data",
+        "decision": "skip",
+        "reason": "robotaxi city launches and robotaxi miles belong to cybercab"
+      },
+      {
+        "title": "Q3 shareholder update cumulative FSD miles chart",
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "decision": "skip",
+        "reason": "chart axis only; no labeled cumulative FSD mile count to file"
+      },
+      {
+        "title": "Goodbye AI4, hello SI4",
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "decision": "skip",
+        "reason": "manual rename only; no new software ceiling. Chip naming is aiChip"
+      },
+      {
+        "title": "Latvia, Italy, Slovakia FSD approvals",
+        "url": "https://www.notateslaapp.com/news/4902/latvia-becomes-10th-eu-country-to-approve-tesla-fsd",
+        "decision": "skip",
+        "reason": "country approvals belong to fsd"
+      },
+      {
+        "title": "FSD referral program",
+        "url": "https://www.notateslaapp.com/news/4923/teslas-new-fsd-referral-program-is-live-how-it-works",
+        "decision": "skip",
+        "reason": "subscription marketing, not a software release"
+      },
+      {
+        "title": "Grok files on Intel cars in 2026.38",
+        "url": "https://www.notateslaapp.com/news/4927/tesla-adds-grok-files-to-intel-cars-in-update-202638-will-it-be-enabled",
+        "decision": "skip",
+        "reason": "infotainment assistant files, not FSD planning or a version change"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdMiles",
+        "count": 16,
+        "decision": "reject",
+        "reason": "Q3 update chart y-axis tops out at 16 billion; extracted text has no labeled cumulative FSD mile datapoint"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 3100000,
+        "decision": "reject",
+        "reason": "Robotaxi autonomous miles through Oct 18, not cumulative customer FSD miles; cybercab owns fleet ops"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 2000000,
+        "decision": "reject",
+        "reason": "Q3 letter says nearly 2 million cumulative unsupervised robotaxi miles; not customer FSD miles"
+      },
+      {
+        "series": "fsdSubscriptions",
+        "count": 1740000,
+        "decision": "reject",
+        "reason": "active subscriptions are not an owned software, miles, or architecture series; metrics list is empty"
+      },
+      {
+        "series": "teslaFiFleetShare",
+        "count": 32.4,
+        "decision": "reject",
+        "reason": "TeslaFi sample share on 2026.38.5.11, not an official Tesla fleet or production count"
+      }
+    ]
+  }
+}

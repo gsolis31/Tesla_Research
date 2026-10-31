@@ -1,0 +1,181 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-10-31",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Terafab Grimes County October 2026 KBTX",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "\"Terafab\" 2026 after:2026-10-17",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Q3 2026 earnings Terafab Musk",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Terafab water permit JETI drone TERA-print October 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Q3 2026 earnings call Terafab tens of billions",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:teslarati.com Terafab",
+        "tool": "web_fetch",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/10/22/terafab-cost-100-billion-long-term/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-deck-6-things/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/20/terafab-top-20-gdp-korean-suppliers/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.thelec.net/news/articleView.html?idxno=14743",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kbtx.com/2026/10/29/citizens-group-sues-grimes-county-terafab-records-fights-spacex-bid-keep-some-private/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.statesman.com/business/article/terafab-records-lawsuit-grimes-county-22499020.php",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+        "kept": false,
+        "reason": "Cybercab, FSD, and Optimus call notes; not Terafab construction"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Austin research fab still cannot make a chip; Musk floats a $100 billion bill",
+        "url": "https://teslanorth.com/2026/10/22/terafab-cost-100-billion-long-term/",
+        "decision": "file",
+        "reason": "Oct. 21 call: research-line timeline, undecided cost split, and a verbal $100 billion figure, corroborated by the transcript and Q3 deck"
+      },
+      {
+        "title": "Korean Terafab supply talks are mostly NDAs; one R&D tool is on order",
+        "url": "https://www.thelec.net/news/articleView.html?idxno=14743",
+        "decision": "file",
+        "reason": "Oct. 20 supply-chain report inside the window; fab procurement, not a chip tape-out"
+      },
+      {
+        "title": "Grimes County citizens sue to pry open Terafab tax-abatement records",
+        "url": "https://www.kbtx.com/2026/10/29/citizens-group-sues-grimes-county-terafab-records-fights-spacex-bid-keep-some-private/",
+        "decision": "file",
+        "reason": "New Oct. 27 petition; prior SpaceX records suit was already filed and does not cover the citizens' mandamus"
+      },
+      {
+        "title": "6 Things Tesla's Q3 Deck Revealed Beyond the Earnings",
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-deck-6-things/",
+        "decision": "skip",
+        "reason": "Austin Fab photo and 2027 commissioning folded into the earnings keyChange, not a second story"
+      },
+      {
+        "title": "Tesla Q3 Earnings Call: Cybercab Hits Dallas, FSD Unsupervised in 2027",
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+        "decision": "skip",
+        "reason": "Robotaxi, FSD, and Optimus; outside terafab ownership"
+      },
+      {
+        "title": "TSMC will talk Terafab only if TSMC runs the fab",
+        "url": "https://www.wsls.com/business/2026/10/15/taiwan-chipmaker-tsmc-explores-texas-investment-to-expand-production-in-the-us/",
+        "decision": "skip",
+        "reason": "seenUrl and before the Oct. 18 window; no new operator agreement this week"
+      },
+      {
+        "title": "TERA-print counterclaims and moves to send the Terafab name case to Illinois",
+        "url": "https://www.pacermonitor.com/public/case/66811108/Tesla,_Inc_et_al_v_TERAprint,_LLC",
+        "decision": "skip",
+        "reason": "seenUrl; no new docket development found after Oct. 16"
+      },
+      {
+        "title": "Reported mid-2027 EUV tool would arrive before the Austin shell is done",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-will-reportedly-receive-its-first-euv-tool-from-asml-in-mid-2027-cutting-edge-scanner-could-sit-idle-for-some-time-as-experimental-facility-is-completed",
+        "decision": "skip",
+        "reason": "seenUrl dated Oct. 14, before the window"
+      },
+      {
+        "title": "SpaceX Records Fight Exposes $119B Terafab Buildout Plans",
+        "url": "https://www.enr.com/articles/63809-spacex-records-fight-exposes-119b-terafab-buildout-plans",
+        "decision": "skip",
+        "reason": "seenUrl; no new dollar figure beyond the already filed records fight"
+      },
+      {
+        "title": "Terafab, Explained in 5 Points: What's Happening in Grimes County",
+        "url": "https://www.basenor.com/blogs/news/terafab-explained-in-5-points-whats-happening-in-grimes-county",
+        "decision": "skip",
+        "reason": "Latest construction note on the page is Oct. 16, before the window"
+      },
+      {
+        "title": "SpaceX donation helps Anderson-Shiro CISD get ahead of bus seatbelt deadline",
+        "url": "https://www.kbtx.com/2026/10/09/spacex-donation-helps-anderson-shiro-cisd-get-ahead-bus-seatbelt-deadline/",
+        "decision": "skip",
+        "reason": "Oct. 9, before the window, and not a fab permit or abatement decision"
+      },
+      {
+        "title": "Michael McCaul Discusses SpaceX's $16.8 Billion Terafab Project in Grimes County",
+        "url": "https://texaspolitics.com/2026/10/26/michael-mccaul-discusses-spacexs-16-8-billion-terafab-project-in-grimes-county/",
+        "decision": "skip",
+        "reason": "Single unverified site; no KBTX or Statesman corroboration of a new meeting"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafabCapex",
+        "count": 100000000000,
+        "decision": "reject",
+        "reason": "Verbal long-term 'probably north of $100 billion' on the earnings call, not a booked budget; category metrics list is empty"
+      },
+      {
+        "series": "terafabWafersPerMonth",
+        "count": 100000,
+        "decision": "reject",
+        "reason": "Industry-observer expectation of a starter fab before 2030, not a Tesla milestone, and volume silicon dates belong to aiChip"
+      }
+    ]
+  }
+}

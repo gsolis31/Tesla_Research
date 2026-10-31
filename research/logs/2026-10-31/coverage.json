@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-31",
+  "weekOf": "2026-10-26",
+  "dateFrom": "2026-10-18",
+  "dateTo": "2026-10-31",
+  "candidates": [
+    {
+      "title": "Tesla Q3 2026: $28.0B revenue, 75% FSD attach, Semi volume production started",
+      "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+      "date": "2026-10-21",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "In-line revenue and a 2.6% operating margin, with the letter claiming Semi volume production and a North America FSD attach rate above 75%"
+    },
+    {
+      "title": "Cybercab customer deliveries aimed at end of 2026, but most stay Tesla-owned",
+      "url": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+      "date": "2026-10-22",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Moravy wants outside Cybercab deliveries this year while Musk says transport-as-a-service stays Tesla-owned; Ashok put unsupervised FSD in customer cars in Q2 2027"
+    },
+    {
+      "title": "Cybercab line is building faster than Tesla can deploy the cars",
+      "url": "https://www.teslarati.com/tesla-has-a-cybercab-problem-nobody-saw-coming/",
+      "date": "2026-10-26",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Moravy says the Texas line is ahead of fleet deployment and is not run every day, with a stated 10-second cycle goal"
+    },
+    {
+      "title": "Cybercab 4680 pack leaves room for a later LFP swap",
+      "url": "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure/",
+      "date": "2026-10-27",
+      "likelyCategory": "battery4680",
+      "whyItMightMatter": "Current pack is nickel 4680 with spare volume for lower-density LFP; Texas records cited 544 Cybercabs versus 507 Model Y robotaxis"
+    },
+    {
+      "title": "Latvia becomes the 10th EU country to recognize Tesla Assisted Driving",
+      "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+      "date": "2026-10-26",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Another national recognition of the Dutch provisional approval; still supervised Level 2, and the EU-wide vote is still expected in December"
+    },
+    {
+      "title": "Italy backs an EU-wide Tesla Assisted Driving vote, not a national approval",
+      "url": "https://www.notateslaapp.com/news/4921/italy-backs-eu-wide-tesla-fsd-approval-after-salvini-speaks-with-elon-musk",
+      "date": "2026-10-30",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Salvini supports a swift EU decision after talking with Musk, but Italy has not cleared the feature for its own roads"
+    },
+    {
+      "title": "Houston Robotaxi geofence expands; Cybercab public rides still Austin-only",
+      "url": "https://www.teslarati.com/tesla-expands-robotaxi-geofence-houston-spacex/",
+      "date": "2026-10-26",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Unsupervised Model Y area in Houston grew, while the article still limits public Cybercab service to Austin and points Dallas Cybercab rides to November"
+    },
+    {
+      "title": "Robotaxi hours move from midnight to 2 a.m.",
+      "url": "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals",
+      "date": "2026-10-30",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Official account now lists 6 a.m. to 2 a.m., but Tesla did not say which cities or whether only Cybercab gets the extra hours"
+    },
+    {
+      "title": "Tesla launches a Robotaxi safety site and says four more cities are coming",
+      "url": "https://www.teslaoracle.com/2026/10/23/tesla-announces-robotaxi-launch-in-four-more-cities-releases-safety-data-via-new-website-no-kittens-were-hurt/",
+      "date": "2026-10-23",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Oracle says a public safety site now covers Model Y robotaxis and Cybercabs and that Tesla announced four additional city launches"
+    },
+    {
+      "title": "FSD v14.3.13 rolls wider on 2026.38.5.11 for HW4 and HW3 Lite",
+      "url": "https://www.teslaoracle.com/2026/10/26/tesla-expands-the-rollout-of-2026-38-5-11-update-fsd-v14-3-13-hw4-and-fsd-v14-3-lite-hw3/",
+      "date": "2026-10-26",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Point release after last week's v14.3.12 wave; still the v14 line, not v15"
+    },
+    {
+      "title": "Ashok says Tesla is building its own AI maps before FSD v15",
+      "url": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+      "date": "2026-10-22",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "On the Q3 call he said in-house AI navigation should be ready as v15 reaches customers, replacing reliance on outside map data"
+    },
+    {
+      "title": "Fremont Optimus line called production-quality; outside deliveries end of next year",
+      "url": "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+      "date": "2026-10-23",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Letter claims the first production-quality bots and a 10,000–20,000 robot academy; external delivery is still end of next year and hands remain unsolved"
+    },
+    {
+      "title": "Musk says Optimus ordering is not opening in December",
+      "url": "https://teslanorth.com/2026/10/30/elon-optimus-orders-december/",
+      "date": "2026-10-30",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "One-word denial of a same-day reservation rumor; Tesla still has no public order page"
+    },
+    {
+      "title": "Q3 letter targets 400 MW of SI training compute by year-end",
+      "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+      "date": "2026-10-21",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "Company target for training compute behind vehicle and Optimus autonomy, separate from last week's Samsung Taylor yield notes"
+    },
+    {
+      "title": "Q3 letter says Austin Fab equipment commissioning starts in 2027",
+      "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+      "date": "2026-10-21",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "Tesla's own date for starting tool commissioning at the Austin fab, against last week's reports that an EUV tool could sit idle"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Teslarati homepage Tesla news 2026-10-18 to 2026-10-31",
+        "tool": "web_fetch",
+        "hits": 14
+      },
+      {
+        "q": "Teslarati page 2 earnings Optimus Cybercab October 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "TeslaNorth latest news 2026-10-31",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Oracle homepage robotaxi FSD earnings October 2026",
+        "tool": "web_fetch",
+        "hits": 7
+      },
+      {
+        "q": "Tesla Oracle robotaxi topic October 2026",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "Not a Tesla App latest 2026-10-27 to 2026-10-31",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Electrek Tesla Optimus Q3 2026 earnings call",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "ir.tesla.com Q3 2026 update",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "NHTSA press releases Tesla Cybercab FSD Optimus October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "NTSB press releases Tesla October 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-has-a-cybercab-problem-nobody-saw-coming/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4921/italy-backs-eu-wide-tesla-fsd-approval-after-salvini-speaks-with-elon-musk",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-expands-robotaxi-geofence-houston-spacex/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/23/tesla-announces-robotaxi-launch-in-four-more-cities-releases-safety-data-via-new-website-no-kittens-were-hurt/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/10/26/tesla-expands-the-rollout-of-2026-38-5-11-update-fsd-v14-3-13-hw4-and-fsd-v14-3-lite-hw3/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/30/elon-optimus-orders-december/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-semi-catches-fire-california-what-we-know/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-project-crystal-sun-texas-approval/",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4913/new-bill-would-bring-back-us-ev-tax-credit-doubled-to-15k",
+        "kept": false
+      },
+      {
+        "url": "https://ir.tesla.com/",
+        "kept": false
+      },
+      {
+        "url": "https://www.nhtsa.gov/press-releases",
+        "kept": false
+      },
+      {
+        "url": "https://www.ntsb.gov/news/press-releases/Pages/default.aspx",
+        "kept": false
+      }
+    ]
+  }
+}

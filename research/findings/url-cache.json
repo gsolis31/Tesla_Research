@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-31",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -2311,23 +2311,261 @@
       "lastSeen": "2026-10-18",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "TSMC will talk Terafab only if TSMC runs the fab"
+    },
+    "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know": {
+      "originalUrl": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "AI Chip Production",
+      "title": "Musk expects AI5 in Optimus around April 2027; Taylor still trial-only"
+    },
+    "https://www.trendforce.com/news/2026/10/22/news-tesla-reportedly-to-invest-krw-1-1t-to-secure-samsung-electro-mechanics-substrate-capacity-nvidia-also-commits": {
+      "originalUrl": "https://www.trendforce.com/news/2026/10/22/news-tesla-reportedly-to-invest-krw-1-1t-to-secure-samsung-electro-mechanics-substrate-capacity-nvidia-also-commits/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "AI Chip Production",
+      "title": "Tesla reportedly prepays KRW 1.1T for FC-BGA that arrives in 2029"
+    },
+    "https://www.notateslaapp.com/news/4887/intel-to-make-mystery-chip-for-tesla-ai6-or-something-new": {
+      "originalUrl": "https://www.notateslaapp.com/news/4887/intel-to-make-mystery-chip-for-tesla-ai6-or-something-new",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "AI Chip Production",
+      "title": "Intel names Tesla a 14A foundry customer; chip, price, and wafers unspecified"
+    },
+    "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf": {
+      "originalUrl": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "4680 Battery Cell Production",
+      "title": "Q3 still lists Texas 4680 above 40 GWh and prints no cell output"
+    },
+    "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-battery-pack-design-structure/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "4680 Battery Cell Production",
+      "title": "Cybercab's 4680 pack is built to switch to LFP later"
+    },
+    "https://teslanorth.com/2026/10/26/tesla-cybercab-line-outpacing-robotaxi-munro": {
+      "originalUrl": "https://teslanorth.com/2026/10/26/tesla-cybercab-line-outpacing-robotaxi-munro/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Cybercab line sits idle some days because deployment cannot absorb output"
+    },
+    "https://teslanorth.com/2026/10/21/tesla-robotaxi-safety-report-four-new-cities": {
+      "originalUrl": "https://teslanorth.com/2026/10/21/tesla-robotaxi-safety-report-four-new-cities/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Robotaxi safety page claims 3.1 million miles and names four cities with no dates"
+    },
+    "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways": {
+      "originalUrl": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Cybercab Dallas launch is a November promise, not a start of service"
+    },
+    "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Year-end Cybercab customer deliveries are an aim, and most cars stay Tesla-owned"
+    },
+    "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals": {
+      "originalUrl": "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Austin Robotaxi hours move to 2 a.m., still four hours short of 24/7"
+    },
+    "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas": {
+      "originalUrl": "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Texas authorization roster hits 1,051 vehicles; that is not the dispatch fleet"
+    },
+    "https://teslanorth.com/2026/10/26/tesla-robotaxi-houston-starship-map": {
+      "originalUrl": "https://teslanorth.com/2026/10/26/tesla-robotaxi-houston-starship-map/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Houston Robotaxi map grows sharply; Cybercab is still not in service there"
+    },
+    "https://www.teslarati.com/tesla-cybercabs-take-over-austins-f1-weekend": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercabs-take-over-austins-f1-weekend/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Austin F1 weekend showed 50-plus Cybercabs, not a fleet-size print"
+    },
+    "https://teslanorth.com/2026/10/29/robotaxi-free-first-ride": {
+      "originalUrl": "https://teslanorth.com/2026/10/29/robotaxi-free-first-ride/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "Dallas and Houston comp the first Robotaxi ride; Austin does not"
+    },
+    "https://teslanorth.com/2026/10/23/nhtsa-cyan-lights-no-steering-wheel": {
+      "originalUrl": "https://teslanorth.com/2026/10/23/nhtsa-cyan-lights-no-steering-wheel/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Cybercab Production",
+      "title": "NHTSA proposes optional cyan lamps for cars with no steering wheel"
+    },
+    "https://abc7news.com/post/71-year-old-pedestrian-killed-driving-tesla-crossing-80-vallejo-chp/19969111": {
+      "originalUrl": "https://abc7news.com/post/71-year-old-pedestrian-killed-driving-tesla-crossing-80-vallejo-chp/19969111/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD Country Approvals",
+      "title": "Vallejo I-80 Pedestrian Killed; Driver Told CHP the Tesla Was on FSD"
+    },
+    "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799": {
+      "originalUrl": "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD Country Approvals",
+      "title": "Seoul Police Book 80 People for Illegal Tesla FSD Unlocks"
+    },
+    "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country": {
+      "originalUrl": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD Country Approvals",
+      "title": "Latvia Recognizes Dutch FSD Approval, Tenth EU State, Still No Dated Rollout"
+    },
+    "https://teslanorth.com/2026/10/29/italy-salvini-tesla-assisted-driving-eu": {
+      "originalUrl": "https://teslanorth.com/2026/10/29/italy-salvini-tesla-assisted-driving-eu/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD Country Approvals",
+      "title": "Salvini Backs a Fast EU Vote; Italy Still Has Not Approved Tesla Assisted Driving"
+    },
+    "https://teslanorth.com/2026/10/19/tesla-japan-fsd-2026-hashimoto": {
+      "originalUrl": "https://teslanorth.com/2026/10/19/tesla-japan-fsd-2026-hashimoto/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD Country Approvals",
+      "title": "Tesla Japan Still Promises 2026 FSD, and Admits the Decision Is Not Its"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.38.5.11/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.38.5.11/release-notes",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD v15 Software",
+      "title": "FSD v14.3.13 on 2026.38.5.11 keeps the same supervised notes"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.38.5.6/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.38.5.6/release-notes",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD v15 Software",
+      "title": "Oceania HW4 gets supervised v14.3.12 with unchanged notes"
+    },
+    "https://www.notateslaapp.com/news/4879/tesla-to-launch-unsupervised-fsd-let-owners-join-robotaxi-network-in-q2-2027": {
+      "originalUrl": "https://www.notateslaapp.com/news/4879/tesla-to-launch-unsupervised-fsd-let-owners-join-robotaxi-network-in-q2-2027",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD v15 Software",
+      "title": "Customer unsupervised FSD hedged to around Q2 2027"
+    },
+    "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues": {
+      "originalUrl": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "FSD v15 Software",
+      "title": "In-house AI maps wait on unshipped FSD v15"
+    },
+    "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4484420159": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4484420159",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Job Postings",
+      "title": "Littleton Optimus post is hourly data collection, already flagged closed"
+    },
+    "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves": {
+      "originalUrl": "https://www.teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Optimus Production",
+      "title": "Fremont Optimus called production-quality, with no count and sales in late 2027"
+    },
+    "https://teslanorth.com/2026/10/22/tesla-austin-optimus-factory-bigger-fremont": {
+      "originalUrl": "https://teslanorth.com/2026/10/22/tesla-austin-optimus-factory-bigger-fremont/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Optimus Production",
+      "title": "Austin Optimus factory stays in Construction with no capacity or open date"
+    },
+    "https://teslanorth.com/2026/10/30/elon-optimus-orders-december": {
+      "originalUrl": "https://teslanorth.com/2026/10/30/elon-optimus-orders-december/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Optimus Production",
+      "title": "Musk replies No to a report that Optimus orders open in December"
+    },
+    "https://teslanorth.com/2026/10/27/moravy-optimus-cybercab-charging": {
+      "originalUrl": "https://teslanorth.com/2026/10/27/moravy-optimus-cybercab-charging/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Optimus Production",
+      "title": "Moravy only hopes Optimus will plug in Cybercabs"
+    },
+    "https://teslanorth.com/2026/10/21/tesla-q3-2026-deck-6-things": {
+      "originalUrl": "https://teslanorth.com/2026/10/21/tesla-q3-2026-deck-6-things/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Vehicle Production & Delivery",
+      "title": "Semi volume production is official, but installed capacity is 25,000 and units are undisclosed"
+    },
+    "https://teslanorth.com/2026/10/23/tesla-model-y-apr-increase-us": {
+      "originalUrl": "https://teslanorth.com/2026/10/23/tesla-model-y-apr-increase-us/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Vehicle Production & Delivery",
+      "title": "US Model Y promo APR rises to 2.49% from 1.99% the day after earnings"
+    },
+    "https://teslanorth.com/2026/10/22/terafab-cost-100-billion-long-term": {
+      "originalUrl": "https://teslanorth.com/2026/10/22/terafab-cost-100-billion-long-term/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Austin research fab still cannot make a chip; Musk floats a $100 billion bill"
+    },
+    "https://www.thelec.net/news/articleView.html": {
+      "originalUrl": "https://www.thelec.net/news/articleView.html?idxno=14743",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Korean Terafab supply talks are mostly NDAs; one R&D tool is on order"
+    },
+    "https://www.kbtx.com/2026/10/29/citizens-group-sues-grimes-county-terafab-records-fights-spacex-bid-keep-some-private": {
+      "originalUrl": "https://www.kbtx.com/2026/10/29/citizens-group-sues-grimes-county-terafab-records-fights-spacex-bid-keep-some-private/",
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Grimes County citizens sue to pry open Terafab tax-abatement records"
     }
   },
   "stats": {
-    "totalUrls": 330,
+    "totalUrls": 364,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 27,
-      "Cybercab Production": 48,
-      "FSD v15 Software": 36,
-      "Vehicle Production & Delivery": 56,
+      "Optimus Production": 31,
+      "Cybercab Production": 58,
+      "FSD v15 Software": 40,
+      "Vehicle Production & Delivery": 58,
       "unknown": 52,
-      "FSD Country Approvals": 32,
-      "4680 Battery Cell Production": 8,
+      "FSD Country Approvals": 37,
+      "4680 Battery Cell Production": 10,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 15,
-      "Job Postings": 20,
-      "Terafab In-House Chip Manufacturing": 23
+      "AI Chip Production": 18,
+      "Job Postings": 21,
+      "Terafab In-House Chip Manufacturing": 26
     }
   }
 }

@@ -1,0 +1,152 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-10-31",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring OR job after:2026-10-18",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla (Optimus OR FSD OR AI engineer OR robotics) (hiring OR job posting OR careers) after:2026-10-17",
+        "tool": "web_fetch",
+        "hits": 22
+      },
+      {
+        "q": "Tesla job postings OR hiring freeze OR LinkedIn jobs after:2026-10-18",
+        "tool": "web_fetch",
+        "hits": 16
+      },
+      {
+        "q": "Tesla Optimus hiring job posting 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:linkedin.com/jobs/view Data Collection Operator Optimus Littleton Tesla",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Data Collection Operations Lead Optimus Tesla after:2026-10-25",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4484420159",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operator-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/research/tesla-optimus-hiring-data",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/TeslaZoa/status/2115322614994604108",
+        "kept": false,
+        "reason": "Fan post; titles do not match the Tesla board; not used as the source"
+      },
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": false,
+        "reason": "30\u201331 Oct cliff is internally inconsistent and uncorroborated"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/terafab-hiring-surge-6-details-that-matter",
+        "kept": false,
+        "reason": "Terafab project narrative, not this category"
+      },
+      {
+        "url": "https://www.hrlens.io/articles/tesla-optimus-jobs-how-to-get-hired",
+        "kept": false,
+        "reason": "Career-advice roundup; pay bands not re-checked on Tesla careers"
+      },
+      {
+        "url": "https://optimusk.blog",
+        "kept": false,
+        "reason": "No hiring article in the date window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Littleton Optimus post is hourly data collection, already flagged closed",
+        "url": "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4484420159",
+        "decision": "file",
+        "reason": "New 28 Oct LinkedIn req in the window; hourly motion-capture role, public card already closed"
+      },
+      {
+        "title": "TeslaZoa: three new Optimus posts are an expansion",
+        "url": "https://x.com/TeslaZoa/status/2115322614994604108",
+        "decision": "skip",
+        "reason": "Same 28 Oct batch; fan account and titles do not match the board"
+      },
+      {
+        "title": "Terafab Hiring Surge: 6 Details That Matter",
+        "url": "https://www.basenor.com/blogs/news/terafab-hiring-surge-6-details-that-matter",
+        "decision": "skip",
+        "reason": "Terafab fab-status story; chip hiring belongs with terafab, and the 50% claim is an accessories-blog paraphrase"
+      },
+      {
+        "title": "Fort Bend County approves $10B Tesla deal tied to 8,700 jobs",
+        "url": "https://www.houstonpublicmedia.org/",
+        "decision": "skip",
+        "reason": "Tax-break job commitment is terafab/JETI, not current AI or robotics requisitions; publisher URL not opened"
+      },
+      {
+        "title": "Tesla Begins Hiring for Five Positions in Vietnam",
+        "url": "https://driveteslacanada.ca/news/tesla-begins-hiring-for-five-positions-in-vietnam/",
+        "decision": "skip",
+        "reason": "Market-entry hiring, not AI/robotics/FSD/Optimus; page 404"
+      },
+      {
+        "title": "AltIndex Tesla openings print 710",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "Series was 8,155 on 29 Oct, 462 on 30 Oct, 710 on 31 Oct; +53.7% is only the bounce off 462, and the page's -29% copy matches neither"
+      },
+      {
+        "title": "How to get hired for Tesla Optimus jobs in 2026",
+        "url": "https://www.hrlens.io/articles/tesla-optimus-jobs-how-to-get-hired",
+        "decision": "skip",
+        "reason": "22 Oct career guide; factory pay bands not re-verified and no new requisition URL"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 710,
+        "decision": "reject",
+        "reason": "AltIndex 31 Oct headline. Prior points in the same embedded series: 8,155 on 29 Oct and 462 on 30 Oct. The +53.7% badge is 462 to 710 only. The page still says down 29% over three months, which matches neither 8,155 nor 710. No second source of a listing purge."
+      },
+      {
+        "series": "jobPostings",
+        "count": 8155,
+        "decision": "reject",
+        "reason": "Last clean AltIndex point on 29 Oct, flat versus 8,185 on 10 Oct, but it is not the live headline after the 30\u201331 Oct break."
+      },
+      {
+        "series": "jobPostings",
+        "count": 171,
+        "decision": "reject",
+        "reason": "RobotTraining location-expanded count of vehicle-operator, fleet-support, and demonstration roles only. Not the AltIndex LinkedIn total. The same site also refers to 31 postings."
+      }
+    ]
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-10-31",
+  "filed": 10,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "site:teslarati.com Cybercab October 2026",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "site:teslanorth.com Cybercab robotaxi October 2026",
+        "tool": "web_fetch",
+        "hits": 14
+      },
+      {
+        "q": "site:teslaoracle.com Cybercab October 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "notateslaapp.com robotaxi October 2026",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Cybercab NHTSA AQ26002 sworn answers October 30 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab submitted NHTSA response October 30 2026 AQ26002",
+        "tool": "web_fetch",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-has-a-cybercab-problem-nobody-saw-coming/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/26/tesla-cybercab-line-outpacing-robotaxi-munro/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/22/tesla-cybercab-half-parts-line-speed/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-robotaxi-safety-report-four-new-cities/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4860/tesla-names-next-robotaxi-cities-shares-miles-driven-safety-data",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4864/tesla-targets-5m-cars-a-year-by-2030-cybercab-sales-soon",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/22/tesla-robotaxi-2am-24-7-year-end/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/26/tesla-robotaxi-houston-starship-map/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4903/teslas-new-houston-robotaxi-area-is-shaped-like-a-rocket",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercabs-take-over-austins-f1-weekend/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/26/tesla-cybercab-austin-f1-swarm/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/23/tesla-robotaxi-austin-1am-cota/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/29/robotaxi-free-first-ride/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4917/tesla-offers-free-robotaxi-rides-for-first-time-riders",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/23/nhtsa-cyan-lights-no-steering-wheel/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-earnings/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-tsla-q3-2026-earnings-results/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/23/tesla-cybercab-first-crash-pothole/",
+        "kept": false,
+        "reason": "NHTSA SGO crash report belongs to fsd; crash itself was August"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension/",
+        "kept": false,
+        "reason": "seenUrl; October 30 deadline already in hot context"
+      },
+      {
+        "url": "https://www.tesla.com/robotaxi/safety",
+        "kept": false,
+        "reason": "Tesla edge blocked; numbers taken from TeslaNorth and Not a Tesla App quoting the page"
+      },
+      {
+        "url": "https://oemdtc.com/investigation/AQ26002/",
+        "kept": false,
+        "reason": "AQ26002 still listed open from September 3; no new response document"
+      },
+      {
+        "url": "https://autoautous.com/2026/10/28/nhtsa-investigation-tesla-cybercab-faces-regulatory-uncertainty-in-q4-2026/",
+        "kept": false,
+        "reason": "Conflicts with Tier 1 on the response date and on fleet size; not used"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Cybercab line sits idle some days because deployment cannot absorb output",
+        "url": "https://teslanorth.com/2026/10/26/tesla-cybercab-line-outpacing-robotaxi-munro/",
+        "decision": "file",
+        "reason": "Moravy on October 26 says the line is ahead of deployment; new versus the October 21 call"
+      },
+      {
+        "title": "Robotaxi safety page claims 3.1 million miles and names four cities with no dates",
+        "url": "https://teslanorth.com/2026/10/21/tesla-robotaxi-safety-report-four-new-cities/",
+        "decision": "file",
+        "reason": "New Tesla safety page and city list inside the window; miles are not a vehicle-count metric"
+      },
+      {
+        "title": "Cybercab Dallas launch is a November promise, not a start of service",
+        "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/",
+        "decision": "file",
+        "reason": "Elluswamy dated Dallas Cybercab for November; service is not live"
+      },
+      {
+        "title": "Year-end Cybercab customer deliveries are an aim, and most cars stay Tesla-owned",
+        "url": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+        "decision": "file",
+        "reason": "Call target is 'trying,' not an open order book"
+      },
+      {
+        "title": "Austin Robotaxi hours move to 2 a.m., still four hours short of 24/7",
+        "url": "https://www.notateslaapp.com/news/4920/tesla-extends-robotaxi-hours-to-2-am-adds-new-calm-mode-that-hides-fsd-visuals",
+        "decision": "file",
+        "reason": "New versus the October 17 midnight cutoff already filed"
+      },
+      {
+        "title": "Texas authorization roster hits 1,051 vehicles; that is not the dispatch fleet",
+        "url": "https://teslanorth.com/2026/10/27/tesla-cybercab-outnumbers-model-y-texas/",
+        "decision": "file",
+        "reason": "New TxMCCS pull; filed as authorization only, not as fleet or production"
+      },
+      {
+        "title": "Houston Robotaxi map grows sharply; Cybercab is still not in service there",
+        "url": "https://teslanorth.com/2026/10/26/tesla-robotaxi-houston-starship-map/",
+        "decision": "file",
+        "reason": "Official geofence expansion on October 26; Model Y only"
+      },
+      {
+        "title": "Austin F1 weekend showed 50-plus Cybercabs, not a fleet-size print",
+        "url": "https://www.teslarati.com/tesla-cybercabs-take-over-austins-f1-weekend/",
+        "decision": "file",
+        "reason": "Documented event ops and COTA geofence; spotter count is not fleet size"
+      },
+      {
+        "title": "Dallas and Houston comp the first Robotaxi ride; Austin does not",
+        "url": "https://teslanorth.com/2026/10/29/robotaxi-free-first-ride/",
+        "decision": "file",
+        "reason": "In-app promo in the expansion cities, corroborated by two outlets"
+      },
+      {
+        "title": "NHTSA proposes optional cyan lamps for cars with no steering wheel",
+        "url": "https://teslanorth.com/2026/10/23/nhtsa-cyan-lights-no-steering-wheel/",
+        "decision": "file",
+        "reason": "Certification-path proposal for pedal-free vehicles; does not close AQ26002"
+      },
+      {
+        "title": "Austin robotaxi hours move from 11 p.m. to midnight",
+        "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChanges; October 17, before this window"
+      },
+      {
+        "title": "NHTSA school-zone speeding petition",
+        "url": "https://teslanorth.com/2026/10/12/nhtsa-robotaxi-school-zone-speeding/",
+        "decision": "skip",
+        "reason": "seenUrl; no new finding this week"
+      },
+      {
+        "title": "Cybercab general-assembly manager leaves for Rivian",
+        "url": "https://www.notateslaapp.com/news/4830/rivian-taps-tesla-cybercab-veteran-to-lead-r2-assembly",
+        "decision": "skip",
+        "reason": "seenUrl; October 15"
+      },
+      {
+        "title": "First Cybercab crash was a 5 mph pothole",
+        "url": "https://teslanorth.com/2026/10/23/tesla-cybercab-first-crash-pothole/",
+        "decision": "skip",
+        "reason": "NHTSA SGO crash report belongs to fsd; the event was in August"
+      },
+      {
+        "title": "Unsupervised FSD and owner robotaxi network in Q2 2027",
+        "url": "https://www.notateslaapp.com/news/4879/tesla-to-launch-unsupervised-fsd-let-owners-join-robotaxi-network-in-q2-2027",
+        "decision": "skip",
+        "reason": "FSD version and unsupervised customer release belong to fsdv15"
+      },
+      {
+        "title": "Optimus will plug in robotaxis",
+        "url": "https://www.notateslaapp.com/news/4904/teslas-optimus-robot-will-soon-plug-in-robotaxis-to-charge",
+        "decision": "skip",
+        "reason": "Optimus ownership"
+      },
+      {
+        "title": "Cybercab paint process and LFP pack headroom",
+        "url": "https://www.teslarati.com/tesla-cybercab-unorthodox-paint-process-explained/",
+        "decision": "skip",
+        "reason": "Same October 26 Munro tour already filed under the idle-line story; not a separate production event"
+      },
+      {
+        "title": "AQ26002 sworn answers due October 30",
+        "url": "https://teslanorth.com/2026/10/08/cybercab-nhtsa-extension/",
+        "decision": "skip",
+        "reason": "Deadline already in hot context; no Tier 1 report that Tesla filed or missed"
+      },
+      {
+        "title": "Only 8 Cybercabs giving paid rides",
+        "url": "https://autoautous.com/2026/10/28/nhtsa-investigation-tesla-cybercab-faces-regulatory-uncertainty-in-q4-2026/",
+        "decision": "skip",
+        "reason": "Contradicted by F1 spotter counts and Tier 1; not a credible fleet print"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "cybercab",
+        "count": 125000,
+        "decision": "reject",
+        "reason": "Q3 deck listed annual line rate, not units built; Moravy says the line is not run every day"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 1051,
+        "decision": "reject",
+        "reason": "Texas TxMCCS authorization for Cybercab plus Model Y, not live dispatch"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 544,
+        "decision": "reject",
+        "reason": "Texas-registered Cybercabs on the DMV roster, not an active fleet count \u2014 robotaxiRegistered only"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 50,
+        "decision": "reject",
+        "reason": "Spotter count of Cybercabs at COTA during F1, not the network fleet"
+      },
+      {
+        "series": "cybercab",
+        "count": 3100000,
+        "decision": "reject",
+        "reason": "Company-reported Robotaxi miles, not a vehicle production or fleet count"
+      }
+    ]
+  }
+}
