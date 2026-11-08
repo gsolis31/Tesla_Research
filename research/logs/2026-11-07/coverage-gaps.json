@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-07",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 14,
+  "ignored": 0,
+  "gapCount": 1,
+  "gaps": [
+    {
+      "title": "FSD supervised fleet counter passes 17 billion miles",
+      "url": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles/",
+      "date": "2026-11-02",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Live safety page showed about 17.003 billion supervised miles and 6.76 billion city miles, only a few hundred million above the late-October print, and still driver-supervised",
+      "match": "gap"
+    }
+  ]
+}

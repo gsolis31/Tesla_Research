@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-07",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -1671,7 +1671,7 @@
     "https://altindex.com/ticker/tsla/job-posts": {
       "originalUrl": "https://altindex.com/ticker/tsla/job-posts",
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-07",
       "category": "Job Postings",
       "title": "Tesla LinkedIn US job index jumps to 7,000+ in mid-September \u2014 bulk driven by service/sales, not AI/robotics"
     },
@@ -2549,23 +2549,191 @@
       "lastSeen": "2026-10-31",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "Grimes County citizens sue to pry open Terafab tax-abatement records"
+    },
+    "https://teslanorth.com/2026/11/02/cybercab-austin-outside-geofence": {
+      "originalUrl": "https://teslanorth.com/2026/11/02/cybercab-austin-outside-geofence/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Cybercab Production",
+      "title": "Austin cameras log Cybercabs outside the paid geofence"
+    },
+    "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch": {
+      "originalUrl": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Cybercab Production",
+      "title": "Fort Worth Robotaxi opens Nov 2 on Model Y; Cybercab stays Austin-only"
+    },
+    "https://teslanorth.com/2026/11/03/tesla-cybercab-nhtsa-question-8-secret": {
+      "originalUrl": "https://teslanorth.com/2026/11/03/tesla-cybercab-nhtsa-question-8-secret/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Cybercab Production",
+      "title": "NHTSA Question 8 Cybercab compliance answers stay fully withheld"
+    },
+    "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y": {
+      "originalUrl": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Cybercab Production",
+      "title": "Robotaxi app 26.11.0 compares Cybercab and Model Y, mostly in Austin"
+    },
+    "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system": {
+      "originalUrl": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "FSD Country Approvals",
+      "title": "RDW Caps Europe Speed Margin at 10% and Locks In the Assisted-Driving Name"
+    },
+    "https://www.chosun.com/english/industry-en/2026/11/05/3H3QCQHTLZDHNOLSFZCI46VPLY": {
+      "originalUrl": "https://www.chosun.com/english/industry-en/2026/11/05/3H3QCQHTLZDHNOLSFZCI46VPLY/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "FSD Country Approvals",
+      "title": "Korean Consumer Group Files KFTC Complaint Over FSD Sold on Ineligible Cars"
+    },
+    "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles": {
+      "originalUrl": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "FSD v15 Software",
+      "title": "Supervised miles pass 17 billion, about 300 million above late October"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.38.5.12/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.38.5.12/release-notes",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "FSD v15 Software",
+      "title": "2026.38.5.12 keeps the same supervised v14.3.13 notes"
+    },
+    "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers": {
+      "originalUrl": "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Optimus Production",
+      "title": "Published robot-hand patent is a 2022 design, not a production hand"
+    },
+    "https://www.notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them": {
+      "originalUrl": "https://www.notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Optimus Production",
+      "title": "Musk says Tesla will probably rent Optimus, with no price"
+    },
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space": {
+      "originalUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "AI Chip Production",
+      "title": "Tesla slide sets SI6 at 80x SI4 and leaves Dojo D3 undated"
+    },
+    "https://www.digitimes.com/news/a20261102PD209/tsmc-elon-musk-manufacturing-fab-investment.html": {
+      "originalUrl": "https://www.digitimes.com/news/a20261102PD209/tsmc-elon-musk-manufacturing-fab-investment.html",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Digitimes says TSMC would run Terafab; the companies have not confirmed"
+    },
+    "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab": {
+      "originalUrl": "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Governor-elect who attacked the Terafab tax break replaces Abbott"
+    },
+    "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more": {
+      "originalUrl": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Baron floats a $1 trillion Terafab bill; Musk will not fund it now"
+    },
+    "https://www.eurotoptech.com/jobs/preview/ai-vehicle-operator-self-driving-birmingham-tesla-birmingham-2518463": {
+      "originalUrl": "https://www.eurotoptech.com/jobs/preview/ai-vehicle-operator-self-driving-birmingham-tesla-birmingham-2518463",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Job Postings",
+      "title": "New FSD seats are temp safety drivers and local supervisors"
+    },
+    "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus": {
+      "originalUrl": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Job Postings",
+      "title": "Littleton Optimus opening is another data-collection shift lead"
+    },
+    "https://teslanorth.com/2026/10/31/model-3-red-premium-canada": {
+      "originalUrl": "https://teslanorth.com/2026/10/31/model-3-red-premium-canada/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Canada Model 3 Premium is listed again, but buyers still cannot order it"
+    },
+    "https://teslanorth.com/2026/11/01/tesla-china-cpo-5000-november": {
+      "originalUrl": "https://teslanorth.com/2026/11/01/tesla-china-cpo-5000-november/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "China keeps November incentives, doubles the Model 3 cut, and discounts used cars"
+    },
+    "https://teslanorth.com/2026/11/03/tesla-norway-top-brand-21523-2026": {
+      "originalUrl": "https://teslanorth.com/2026/11/03/tesla-norway-top-brand-21523-2026/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Norway keeps Tesla as 2026's top brand while year-to-date volume is down"
+    },
+    "https://cnevpost.com/2026/11/03/tesla-china-oct-2026-wholesale": {
+      "originalUrl": "https://cnevpost.com/2026/11/03/tesla-china-oct-2026-wholesale/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Shanghai October wholesale falls to 67,829, lowest month since February"
+    },
+    "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm44_2026_n_10_26_pm_komplett.html": {
+      "originalUrl": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm44_2026_n_10_26_pm_komplett.html",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Germany October registrations quadruple year over year but trail BYD"
+    },
+    "https://teslanorth.com/2026/11/06/tesla-korea-kaida-9-months-import": {
+      "originalUrl": "https://teslanorth.com/2026/11/06/tesla-korea-kaida-9-months-import/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Korea import lead hits nine months, but October volume fell 26%"
+    },
+    "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027": {
+      "originalUrl": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Musk sets Cybertruck wind-down for mid-2027 after another US price hike"
+    },
+    "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch": {
+      "originalUrl": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla sets Argentina launch for November 20 with no prices or orders"
     }
   },
   "stats": {
-    "totalUrls": 364,
+    "totalUrls": 388,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 31,
-      "Cybercab Production": 58,
-      "FSD v15 Software": 40,
-      "Vehicle Production & Delivery": 58,
+      "Optimus Production": 33,
+      "Cybercab Production": 62,
+      "FSD v15 Software": 42,
+      "Vehicle Production & Delivery": 66,
       "unknown": 52,
-      "FSD Country Approvals": 37,
+      "FSD Country Approvals": 39,
       "4680 Battery Cell Production": 10,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 18,
-      "Job Postings": 21,
-      "Terafab In-House Chip Manufacturing": 26
+      "AI Chip Production": 19,
+      "Job Postings": 23,
+      "Terafab In-House Chip Manufacturing": 29
     }
   }
 }

@@ -1,0 +1,183 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-11-07",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab OR Grimes County OR JETI after:2026-10-30 before:2026-11-08",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:teslarati.com terafab",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:teslanorth.com terafab",
+        "tool": "web_fetch",
+        "hits": 36
+      },
+      {
+        "q": "Terafab Tesla OR SpaceX OR Grimes County news past 7 days",
+        "tool": "web_fetch",
+        "hits": 11
+      },
+      {
+        "q": "terafab 2026 site:kbtx.com",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Terafab construction OR permit OR water OR lawsuit November 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Google News RSS Terafab when:7d",
+        "tool": "web_fetch",
+        "hits": 45
+      },
+      {
+        "q": "Terafab Musk Baron OR Grimes OR JETI past week",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com ron baron terafab",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Musk may let TSMC run his Texas chip fab digitimes Terafab",
+        "tool": "web_fetch",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://247wallst.com/investing/2026/11/07/musk-says-his-terafab-chip-plant-could-cost-1-trillion/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.digitimes.com/news/a20261102PD209/tsmc-elon-musk-manufacturing-fab-investment.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.benzinga.com/markets/tech/26/11/62767635/elon-musk-tesla-terafab-tsmc-chip-production",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kxxv.com/news/local-news/in-your-neighborhood/grimes-county/citizens-group-sues-grimes-county-for-public-records-tied-to-spacex-terafab-project-amid-transparency-fight",
+        "kept": false,
+        "reason": "same citizens' suit as the Oct 29 KBTX item; no new ruling"
+      },
+      {
+        "url": "https://www.proactiveinvestors.com/companies/news/1101093/musk-may-soften-terafab-control-stance-in-fresh-tsmc-talks-1101093.html",
+        "kept": false,
+        "reason": "page did not return the article"
+      },
+      {
+        "url": "https://bits-chips.com/article/musk-reportedly-open-to-tsmc-running-terafab/",
+        "kept": false,
+        "reason": "empty body; same Digitimes rewrite"
+      },
+      {
+        "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/",
+        "kept": false,
+        "reason": "fetch returned only a headline"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Baron floats a $1 trillion Terafab bill; Musk will not fund it now",
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "decision": "file",
+        "reason": "Nov 6 primary remarks in window; cost talk jumped past last month's $100 billion line without a funded budget"
+      },
+      {
+        "title": "Digitimes says TSMC would run Terafab; the companies have not confirmed",
+        "url": "https://www.digitimes.com/news/a20261102PD209/tsmc-elon-musk-manufacturing-fab-investment.html",
+        "decision": "file",
+        "reason": "new Nov 2 supply-chain report reversing the October 'TSMC will not run it' line; still unconfirmed"
+      },
+      {
+        "title": "Governor-elect who attacked the Terafab tax break replaces Abbott",
+        "url": "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab/",
+        "decision": "file",
+        "reason": "Nov 3 result puts the JETI package under a governor-elect who already targeted it"
+      },
+      {
+        "title": "Citizens group sues Grimes County for Terafab records",
+        "url": "https://www.kxxv.com/news/local-news/in-your-neighborhood/grimes-county/citizens-group-sues-grimes-county-for-public-records-tied-to-spacex-terafab-project-amid-transparency-fight",
+        "decision": "skip",
+        "reason": "same lawsuit already filed from KBTX on 2026-10-29; no new court action"
+      },
+      {
+        "title": "Austin research fab still cannot make a chip; Musk floats a $100 billion bill",
+        "url": "https://teslanorth.com/2026/10/22/terafab-cost-100-billion-long-term/",
+        "decision": "skip",
+        "reason": "recentKeyChange from Oct 21-22, outside this window"
+      },
+      {
+        "title": "Elon Musk shuts down talk of TSMC taking over Terafab",
+        "url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+        "decision": "skip",
+        "reason": "seenUrl; October position, not this week's report"
+      },
+      {
+        "title": "Musk To Pitch Terafab Semiconductor Factory To ASML Ahead Of SpaceX IPO",
+        "url": "https://www.investors.com/news/technology/tsmc-stock-asml-stock-elon-musk-terafab-spacex-ipo/",
+        "decision": "skip",
+        "reason": "guessed IBD URL 404; no verified new tool order beyond the already-filed mid-2027 EUV note"
+      },
+      {
+        "title": "What Is Terafab? Elon Musk Explains the Name",
+        "url": "https://www.basenor.com/blogs/news/what-is-terafab-elon-musk-explains-the-name",
+        "decision": "skip",
+        "reason": "name recap of the same Nov 6 interview; no construction or permit news"
+      },
+      {
+        "title": "Musk's 100M Sq Ft Terafab Is 10x Giga Texas but Still a Plan",
+        "url": "https://fourweekmba.com/",
+        "decision": "skip",
+        "reason": "commentary restating a known footprint, not a new site fact"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafabCapex",
+        "count": 1000000000000,
+        "decision": "reject",
+        "reason": "Baron's aside, not a funded budget or a production count. Musk said the cash is not needed now. No terafab production series is defined."
+      },
+      {
+        "series": "terafabCapex",
+        "count": 16800000000,
+        "decision": "reject",
+        "reason": "Restated Abbott first-phase figure, not a new commitment this week."
+      }
+    ]
+  }
+}

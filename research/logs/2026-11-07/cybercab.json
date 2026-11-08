@@ -1,0 +1,341 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-11-07",
+  "filed": 5,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab OR Robotaxi when:7d",
+        "tool": "web_fetch",
+        "hits": 100
+      },
+      {
+        "q": "site:teslanorth.com Cybercab OR Robotaxi when:7d",
+        "tool": "web_fetch",
+        "hits": 45
+      },
+      {
+        "q": "site:teslarati.com Cybercab OR Robotaxi when:7d",
+        "tool": "web_fetch",
+        "hits": 54
+      },
+      {
+        "q": "site:notateslaapp.com Robotaxi OR Cybercab when:7d",
+        "tool": "web_fetch",
+        "hits": 33
+      },
+      {
+        "q": "robotaxitracker.com government roster and llms.txt data index",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "robotaxitracker.com/v1/api/texas-dmv",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "robotaxitracker.com/data/us-fleet-estimates.json",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "robotaxitracker.com/data/tesla-robotaxi-fleet.json",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "robotaxistats.com Tesla service page, changelog, events.json",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "NHTSA INCCS-AQ26002-19470 Question 8 PDF",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "DuckDuckGo Tesla Cybercab Robotaxi November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4932/tesla-expands-robotaxi-service-launches-unsupervised-rides-in-fort-worth",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/03/tesla-cybercab-nhtsa-question-8-secret/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://static.nhtsa.gov/odi/inv/2026/INCCS-AQ26002-19470.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-is-ending-cybertruck-production/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/cybercab-austin-outside-geofence/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.robotaxistats.com/services/tesla/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.robotaxistats.com/changelog/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/government",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "kept": false,
+        "reason": "Night shift is unconfirmed for the Cybercab line; Teslarati points the hours at Model Y absorption"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/tesla-cybercab-europe-tour/",
+        "kept": false,
+        "reason": "Display tour only; no rides, sales, or Robotaxi timeline"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/01/texas-robotaxi-fleet-1204/",
+        "kept": false,
+        "reason": "Recap of the Oct. 30 roster of 1,204 already in hotContext; superseded by 1,244"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/31/houston-robotaxi-74-mile-ride/",
+        "kept": false,
+        "reason": "Single-ride anecdote; Houston map expansion already filed"
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/31/robotaxi-halloween-skeleton-cybercab/",
+        "kept": false,
+        "reason": "Stunt, no fleet or production change"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Fort Worth Robotaxi opens Nov 2 on Model Y; Cybercab stays Austin-only",
+        "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+        "decision": "file",
+        "reason": "New Texas city on Nov. 2; Model Y, no fleet count, Cybercab still Austin-only"
+      },
+      {
+        "title": "NHTSA Question 8 Cybercab compliance answers stay fully withheld",
+        "url": "https://teslanorth.com/2026/11/03/tesla-cybercab-nhtsa-question-8-secret/",
+        "decision": "file",
+        "reason": "Oct. 30 sworn answers exist and the public file is a full CBI placeholder; confirmed on the NHTSA PDF"
+      },
+      {
+        "title": "Musk ties a mid-2027 Cybertruck wind-down to Cybercab floor space",
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "decision": "file",
+        "reason": "New capacity comment whose stated purpose is Cybercab floor space; no rate and no near-term ramp"
+      },
+      {
+        "title": "Robotaxi app 26.11.0 compares Cybercab and Model Y, mostly in Austin",
+        "url": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+        "decision": "file",
+        "reason": "New app selector; confirms Cybercab choice is still an Austin product as of Nov. 7"
+      },
+      {
+        "title": "Austin cameras log Cybercabs outside the paid geofence",
+        "url": "https://teslanorth.com/2026/11/02/cybercab-austin-outside-geofence/",
+        "decision": "file",
+        "reason": "New outside-fence camera trend; events only, Tesla has not confirmed a paid expansion"
+      },
+      {
+        "title": "Texas roster recap at 1,204",
+        "url": "https://teslanorth.com/2026/11/01/texas-robotaxi-fleet-1204/",
+        "decision": "skip",
+        "reason": "Same 1,204 authorization print already in hotContext; roster has since moved to 1,244"
+      },
+      {
+        "title": "Cybercab Europe display tour",
+        "url": "https://teslanorth.com/2026/11/02/tesla-cybercab-europe-tour/",
+        "decision": "skip",
+        "reason": "Display stops only; same class of tour as prior Japan, China, and Australia coverage"
+      },
+      {
+        "title": "Giga Texas reportedly moves to 24/7 production",
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "decision": "skip",
+        "reason": "Tesla has not assigned the night shift to the Cybercab line"
+      },
+      {
+        "title": "Houston 74-mile Robotaxi ride",
+        "url": "https://teslanorth.com/2026/10/31/houston-robotaxi-74-mile-ride/",
+        "decision": "skip",
+        "reason": "Anecdote; Houston service-area growth already filed"
+      },
+      {
+        "title": "Halloween skeleton Cybercab",
+        "url": "https://teslanorth.com/2026/10/31/robotaxi-halloween-skeleton-cybercab/",
+        "decision": "skip",
+        "reason": "Stunt"
+      },
+      {
+        "title": "Tesla will end Cybertruck production to make more Cybercabs",
+        "url": "https://www.notateslaapp.com/news/4954/tesla-will-end-cybertruck-production-to-make-more-cybercabs",
+        "decision": "skip",
+        "reason": "Same Nov. 6 Musk comment already filed from Tesla North"
+      },
+      {
+        "title": "Tesla wants sworn Cybercab answers kept entirely secret",
+        "decision": "skip",
+        "reason": "Electrek corroboration of the Question 8 CBI story filed from Tesla North and the NHTSA PDF"
+      },
+      {
+        "title": "Geofences are smaller than advertised",
+        "url": "https://www.notateslaapp.com/news/4953/teslas-robotaxi-geofences-are-smaller-than-advertised-their-actual-sizes",
+        "decision": "skip",
+        "reason": "Area measurements, including the Fort Worth trace already covered in the launch item; not a vehicle count"
+      },
+      {
+        "title": "Cybercabs join Waymo in Detroit robotaxi testing",
+        "decision": "skip",
+        "reason": "Headline only from local papers; no Tier 1 confirmation of paid Detroit service"
+      },
+      {
+        "title": "Dallas in November and Nevada cleared 5,000",
+        "decision": "skip",
+        "reason": "Motley Fool/Yahoo recap recycles the Dallas November comment and the earlier Las Vegas permit story"
+      },
+      {
+        "title": "Ron Baron conference transcript",
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "decision": "skip",
+        "reason": "Headline only; Terafab and Optimus remarks belong to other categories, and no new Cybercab fleet or production figure was extracted"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiRegistered",
+        "count": 1244,
+        "decision": "file",
+        "reason": "Texas DMV / TxMCCS roster moved from 1,204 to 1,244 on Nov. 1 and held through Nov. 7: 671 Model Y + 573 Cybercab. Authorization, not in service."
+      },
+      {
+        "series": "robotaxiRegistered",
+        "count": 1204,
+        "decision": "reject",
+        "reason": "Unchanged versus hotContext latestRegistered and stale after the Nov. 1 print of 1,244"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 1244,
+        "decision": "reject",
+        "reason": "Statewide authorization roster, not a network-wide in-service total"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 357,
+        "decision": "reject",
+        "reason": "matched_active_count is community VINs matched to the Texas roster, not a dispatch census"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 582,
+        "decision": "reject",
+        "reason": "matched_community_count is a VIN-match total, not cars in service"
+      },
+      {
+        "series": "cybercab",
+        "count": 573,
+        "decision": "reject",
+        "reason": "Cybercab slice of the Texas authorization roster, flat since Oct. 30; not a production count"
+      },
+      {
+        "series": "cybercab",
+        "count": 2172,
+        "decision": "reject",
+        "reason": "VIN floor unchanged from the Aug. 10 hotContext metric; no new production print this week"
+      },
+      {
+        "series": "cityFleet",
+        "count": 405,
+        "decision": "reject",
+        "reason": "Austin 30-day sighting floor unchanged versus hotContext asOf 2026-10-16; no newer distinct-vehicle floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 70,
+        "decision": "reject",
+        "reason": "Dallas 30-day sighting floor unchanged versus hotContext asOf 2026-10-16"
+      },
+      {
+        "series": "cityFleet",
+        "count": 721,
+        "decision": "reject",
+        "reason": "Bay Area 30-day sighting floor unchanged versus hotContext asOf 2026-10-16"
+      },
+      {
+        "series": "cityFleet",
+        "count": 33,
+        "decision": "reject",
+        "reason": "Southwest Austin camera events in one week, not distinct vehicles in service"
+      },
+      {
+        "series": "cityFleet",
+        "count": 27,
+        "decision": "reject",
+        "reason": "North-of-fence engineering camera detections, not a city fleet floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 1576,
+        "decision": "reject",
+        "reason": "Halloween Cybercab camera events in Austin, not a 30-day distinct-vehicle floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 357,
+        "decision": "reject",
+        "reason": "Statewide matched-active VIN count, not a per-city sighting floor"
+      },
+      {
+        "series": "geofenceSqMi",
+        "count": 145,
+        "decision": "reject",
+        "reason": "Fort Worth map area in square miles, not a vehicle count"
+      },
+      {
+        "series": "robotaxiMiles",
+        "count": 4670000,
+        "decision": "reject",
+        "reason": "robotaxistats pace extrapolation; the confirmed safety-page figure remains 3.1 million miles through Oct. 18 and is already filed"
+      }
+    ]
+  }
+}

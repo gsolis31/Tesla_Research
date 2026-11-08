@@ -1,0 +1,233 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-11-07",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 OR AI6 chip Samsung TSMC Dojo 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI5 chip",
+        "tool": "brave-news",
+        "hits": 38
+      },
+      {
+        "q": "Tesla AI6 Samsung 2nm",
+        "tool": "brave-news",
+        "hits": 42
+      },
+      {
+        "q": "Tesla Dojo chip",
+        "tool": "brave-news",
+        "hits": 53
+      },
+      {
+        "q": "Samsung Taylor Tesla AI chip",
+        "tool": "brave-news",
+        "hits": 53
+      },
+      {
+        "q": "Tesla TSMC AI5 OR AI6",
+        "tool": "brave-news",
+        "hits": 7
+      },
+      {
+        "q": "Intel 14A Tesla chip",
+        "tool": "brave-news",
+        "hits": 53
+      },
+      {
+        "q": "Tesla AI5 tape-out OR yield",
+        "tool": "brave-news",
+        "hits": 3
+      },
+      {
+        "q": "Tesla SI5 OR SI6 roadmap Dojo D3",
+        "tool": "brave-news",
+        "hits": 12
+      },
+      {
+        "q": "site:teslarati.com AI5 OR AI6 OR Dojo past week",
+        "tool": "brave",
+        "hits": 2
+      },
+      {
+        "q": "site:teslanorth.com AI5 OR AI6 OR chip OR Dojo past month",
+        "tool": "brave",
+        "hits": 20
+      },
+      {
+        "q": "site:notateslaapp.com AI5 OR AI6 OR Dojo past week",
+        "tool": "brave",
+        "hits": 0
+      },
+      {
+        "q": "Tesla AI5 OR AI6 OR SI6 OR Dojo chip when:7d",
+        "tool": "google-news-rss",
+        "hits": 7
+      },
+      {
+        "q": "Tesla Samsung Taylor AI chip when:7d",
+        "tool": "google-news-rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Intel 14A when:7d",
+        "tool": "google-news-rss",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Dojo when:7d",
+        "tool": "google-news-rss",
+        "hits": 2
+      },
+      {
+        "q": "Tesla TSMC AI5 when:7d",
+        "tool": "google-news-rss",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/semivision_tw/status/2118126541737693387",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://mezha.net/eng/news/mezha-4e7918314775f39f25c35fe2_tesla_outlines_ai",
+        "kept": false,
+        "reason": "rewrite of Tom's Hardware, no independent facts"
+      },
+      {
+        "url": "https://kantan.news/news/tesla-updates-processor-roadmap-si-naming-convention-and-si6-incoming",
+        "kept": false,
+        "reason": "rewrite of Tom's Hardware"
+      },
+      {
+        "url": "https://www.whats-ai.com/teslas-si6-and-dojo-d3-push-toward-super-intelligence/",
+        "kept": false,
+        "reason": "sponsored rewrite of Tom's Hardware"
+      },
+      {
+        "url": "https://sammyguru.com/tesla-lowers-ai6-chip-memory-requirements-for-its-optimus-humanoid-robot",
+        "kept": false,
+        "reason": "October Musk memory-cut recap"
+      },
+      {
+        "url": "https://www.sammyfans.com/2026/11/05/tesla-cuts-optimus-ai6-chip-dram-memory-from-216gb-to-144gb/",
+        "kept": false,
+        "reason": "same October memory-cut recap"
+      },
+      {
+        "url": "https://finance.biggo.com/news/4b5877a2-9269-4437-adb3-662da86d8f29",
+        "kept": false,
+        "reason": "says Musk disclosed the 216GB-to-144GB cut on Oct 1"
+      },
+      {
+        "url": "https://www.trendforce.com/news/2026/11/04/news-samsungs-2nm-taylor-fab-2-reportedly-fully-booked-before-2030-output-with-amd-leading-hbm-base-die-orders",
+        "kept": false,
+        "reason": "Taylor Fab 2 is AMD and NVIDIA HBM base dies, not Tesla inference wafers"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "kept": false,
+        "reason": "Terafab research-fab comments belong to terafab"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/space-ai-compute-100-percent",
+        "kept": false,
+        "reason": "SpaceX orbital-compute forecast, not a Tesla chip"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "kept": false,
+        "reason": "Oct 27 manual rename, before the window"
+      },
+      {
+        "url": "https://www.techpowerup.com/354442/intel-releases-0-9-pdk-for-14a-node-final-version-in-q1-2027",
+        "kept": false,
+        "reason": "Intel process kit; Tesla not named"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla slide sets SI6 at 80x SI4 and leaves Dojo D3 undated",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+        "decision": "file",
+        "reason": "Nov 4 slide and Nov 6 writeup are inside the window and not in seenUrls; multipliers are targets, D3 node is TBA"
+      },
+      {
+        "title": "Tesla lowers AI6 chip memory for Optimus from 216GB to 144GB",
+        "url": "https://sammyguru.com/tesla-lowers-ai6-chip-memory-requirements-for-its-optimus-humanoid-robot",
+        "decision": "skip",
+        "reason": "Republish of Musk's October X post; same cut as the seen Not a Tesla App RAM article"
+      },
+      {
+        "title": "Samsung 2nm Taylor Fab 2 booked by AMD HBM base dies before 2030",
+        "url": "https://www.trendforce.com/news/2026/11/04/news-samsungs-2nm-taylor-fab-2-reportedly-fully-booked-before-2030-output-with-amd-leading-hbm-base-die-orders",
+        "decision": "skip",
+        "reason": "Fab 2 orders are AMD and NVIDIA HBM base dies. Tesla is not in the article. Not an AI5 or AI6 wafer deal."
+      },
+      {
+        "title": "AMD, Nvidia could join Tesla on Samsung's Texas chip plant customer list",
+        "url": "https://finance.yahoo.com/technology/ai/articles/amd-nvidia-could-join-tesla-121443975.html",
+        "decision": "skip",
+        "reason": "Headline name-drops Tesla. The Maeil and TrendForce reporting is HBM base dies for AMD and NVIDIA, not Tesla logic wafers."
+      },
+      {
+        "title": "Intel releases 14A PDK 0.9, PDK 1.0 in Q1 2027",
+        "url": "https://www.techpowerup.com/354442/intel-releases-0-9-pdk-for-14a-node-final-version-in-q1-2027",
+        "decision": "skip",
+        "reason": "No Tesla customer, price, or wafers. Volume still 2028, same unnamed option filed last week."
+      },
+      {
+        "title": "Musk at Baron conference on a research fab and a terawatt target",
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "decision": "skip",
+        "reason": "Research fab and Terafab scale belong to terafab, not AI5/AI6 design"
+      },
+      {
+        "title": "Musk says superintelligence compute rounds up to 100 percent in orbit",
+        "url": "https://teslanorth.com/2026/11/02/space-ai-compute-100-percent",
+        "decision": "skip",
+        "reason": "SpaceX and NVIDIA orbital compute, not Tesla inference or Dojo silicon"
+      },
+      {
+        "title": "Goodbye AI4, hello SI4 in Tesla owner manuals",
+        "url": "https://www.notateslaapp.com/news/4910/goodbye-ai4-hello-si4-tesla-renames-its-fsd-computers",
+        "decision": "skip",
+        "reason": "Published Oct 27, before this window. Cosmetic rename, not a new chip"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChipPerformance",
+        "count": 80,
+        "decision": "reject",
+        "reason": "SI6 80x versus SI4 is a slide target, not chips produced or wafers shipped"
+      },
+      {
+        "series": "ai6MemoryGb",
+        "count": 144,
+        "decision": "reject",
+        "reason": "144GB is the October AI6 LPDDR cut republished Nov 5, not a production or fleet count"
+      },
+      {
+        "series": "taylorFab2OutputYear",
+        "count": 2030,
+        "decision": "reject",
+        "reason": "2030 is Samsung Taylor Fab 2 HBM base-die output for AMD and NVIDIA, not Tesla AI5 or AI6 volume"
+      }
+    ]
+  }
+}

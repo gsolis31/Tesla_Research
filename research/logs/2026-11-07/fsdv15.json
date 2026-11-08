@@ -1,0 +1,179 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-11-07",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 OR \"FSD v14\" OR \"Full Self-Driving\" when:7d",
+        "tool": "web_search",
+        "hits": 37
+      },
+      {
+        "q": "FSD Tesla 2026.38 OR v14.3 OR v15 after:2026-10-30",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD v15 November 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD 14.3.13 2026.38.5.12",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Tesla FSD billion miles November 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Assisted Driving speed offset November 2026",
+        "tool": "web_search",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.12/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-update-2026-38-5-12",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/02/tesla-fsd-v14-3-13-gets-involved-in-a-crash-and-shows-multiple-regressions-review-videos/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4938/tesla-fsd-gets-reduced-speed-offset-more-changes-in-europe",
+        "kept": false,
+        "reason": "EU type approval; owned by fsd"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "kept": false,
+        "reason": "EU type approval; owned by fsd"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.39.6/release-notes",
+        "kept": false,
+        "reason": "Release date 2026-10-29, before window; Europe FSD 14.2.2.6 notes do not include the new speed cap"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.6/release-notes",
+        "kept": false,
+        "reason": "No FSD version; dated 2026-10-29"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.6.2/release-notes",
+        "kept": false,
+        "reason": "No FSD version; TeslaFi shows 0 cars"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/04/tesla-update-2026-38-6-goes-into-wide-release-grok-comes-out-of-beta-latvian-language-support-added/",
+        "kept": false,
+        "reason": "Wide release for non-FSD cars; no FSD version change"
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/03/tesla-owners-can-earn-up-to-12-months-of-free-full-self-driving-fsd-via-the-referral-program/",
+        "kept": false,
+        "reason": "Subscription referral, not a software release"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "kept": false,
+        "reason": "No FSD version, miles, or v15 ship-date content"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4943/tesla-2026-shareholder-meeting-whats-on-the-ballot",
+        "kept": false,
+        "reason": "Ballot only; no FSD product news"
+      }
+    ],
+    "considered": [
+      {
+        "title": "2026.38.5.12 keeps the same supervised v14.3.13 notes",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.12/release-notes",
+        "decision": "file",
+        "reason": "New point build in window; notes identical to v14.3.13, not a v15 ship"
+      },
+      {
+        "title": "FSD V14.3.13 Wave 3 Rolling Out in 2026.38.5.12",
+        "url": "https://www.basenor.com/blogs/news/tesla-update-2026-38-5-12",
+        "decision": "file",
+        "reason": "Corroborates the Nov 5 AI4 wave; headline calls a same-version push an FSD bump"
+      },
+      {
+        "title": "Owner clips flag v14.3.13 left-turn and Cybertruck regressions",
+        "url": "https://www.teslaoracle.com/2026/11/02/tesla-fsd-v14-3-13-gets-involved-in-a-crash-and-shows-multiple-regressions-review-videos/",
+        "decision": "file",
+        "reason": "In-window owner evidence on the current supervised build; low confidence, single outlet"
+      },
+      {
+        "title": "Tesla FSD gets reduced speed offset and more changes in Europe",
+        "url": "https://www.notateslaapp.com/news/4938/tesla-fsd-gets-reduced-speed-offset-more-changes-in-europe",
+        "decision": "skip",
+        "reason": "RDW type-approval and EU vote; owned by fsd, not a US version changelog"
+      },
+      {
+        "title": "Tesla Full Self-Driving gets hit with some adjustments in Europe",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "decision": "skip",
+        "reason": "Same RDW speed-margin and TAD approval; owned by fsd"
+      },
+      {
+        "title": "Tesla reportedly faces Korea complaint for selling FSD 99% can't use",
+        "url": "https://teslanorth.com/2026/11/04/korea-fsd-kftc-complaint/",
+        "decision": "skip",
+        "reason": "Country marketing complaint; owned by fsd, not a software release"
+      },
+      {
+        "title": "Tesla update 2026.38.6 goes wide, Grok leaves beta",
+        "url": "https://www.teslaoracle.com/2026/11/04/tesla-update-2026-38-6-goes-into-wide-release-grok-comes-out-of-beta-latvian-language-support-added/",
+        "decision": "skip",
+        "reason": "Non-FSD branch; Oracle says FSD firmware stayed on 2026.38.5.11"
+      },
+      {
+        "title": "Referral program offers up to 12 months of free FSD",
+        "url": "https://www.teslaoracle.com/2026/11/03/tesla-owners-can-earn-up-to-12-months-of-free-full-self-driving-fsd-via-the-referral-program/",
+        "decision": "skip",
+        "reason": "Commercial referral, not an OTA, miles milestone, or v15 date"
+      },
+      {
+        "title": "2026.39.6 FSD 14.2.2.6 Europe",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.39.6/release-notes",
+        "decision": "skip",
+        "reason": "Release date 2026-10-29, before the window"
+      },
+      {
+        "title": "Elon Musk Ron Baron interview",
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "decision": "skip",
+        "reason": "Terafab, Optimus, Starship, and SpaceX revenue; no FSD software news"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdBuildShare",
+        "count": 11.8,
+        "decision": "reject",
+        "reason": "TeslaFi share of build 2026.38.5.12 only. Not cumulative FSD miles and not a fleet census. Config metrics list is empty."
+      },
+      {
+        "series": "fsdWaveVehicles",
+        "count": 1650,
+        "decision": "reject",
+        "reason": "Teslascope wave size of additional AI4 cars, not an in-service or cumulative-miles total"
+      }
+    ]
+  }
+}

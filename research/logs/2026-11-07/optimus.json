@@ -1,0 +1,257 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-11-07",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "site:teslarati.com Optimus",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "site:teslanorth.com Optimus",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "teslanorth.com/tag/optimus",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "optimusk.blog blog index",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "teslarati.com homepage week of 2026-11-02",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Optimus when:7d",
+        "tool": "google_news_rss",
+        "hits": 43
+      },
+      {
+        "q": "Tesla Optimus when:14d",
+        "tool": "google_news_rss",
+        "hits": 53
+      },
+      {
+        "q": "Tesla humanoid robot when:7d",
+        "tool": "google_news_rss",
+        "hits": 42
+      },
+      {
+        "q": "Tesla robot hand patent when:14d",
+        "tool": "google_news_rss",
+        "hits": 9
+      },
+      {
+        "q": "Optimus Fremont when:7d",
+        "tool": "google_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Optimus Giga Texas when:14d",
+        "tool": "google_news_rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus Academy when:14d",
+        "tool": "google_news_rss",
+        "hits": 9
+      },
+      {
+        "q": "Tesla Optimus",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Optimus rent Baron Musk",
+        "tool": "bing_news_rss",
+        "hits": 9
+      },
+      {
+        "q": "What Robotics Experts Think of Tesla Optimus IEEE",
+        "tool": "bing_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Tesla patent tendon robot fingers",
+        "tool": "bing_news_rss",
+        "hits": 2
+      },
+      {
+        "q": "Agility Robotics SPAC Tesla Optimus",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Optimus November 2026",
+        "tool": "bing_web",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Optimus November 2026",
+        "tool": "brave",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-robot-hand-tendon-patent/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/elon-musk-tesla-optimus-rental-plans/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/niccruzpatane/status/2118776940996022433",
+        "kept": true,
+        "reason": "clip caption only; quotes taken from the two writeups of the same video"
+      },
+      {
+        "url": "https://www.baroncapitalgroup.com/conference-2026",
+        "kept": false,
+        "reason": "confirms the Musk fireside, no transcript of the rent line"
+      },
+      {
+        "url": "https://patentlyze.com/patent/tesla-robot-hand-tendon-like-cable-fingers/",
+        "kept": false,
+        "reason": "title only; body did not render"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-6-details-that-matter",
+        "kept": false,
+        "reason": "Nov 2 drone recap; 10 million a year not confirmed by Tesla; status still construction"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "kept": false,
+        "reason": "vehicle general assembly, not the Optimus plant"
+      },
+      {
+        "url": "https://optimusk.blog/blog/",
+        "kept": false,
+        "reason": "no November 2026 Optimus post"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk says Tesla will probably rent Optimus, with no price",
+        "url": "https://www.notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them",
+        "decision": "file",
+        "reason": "Nov 6 Baron conference remark; new commercial-model statement inside the window"
+      },
+      {
+        "title": "Elon Musk Says Tesla Will Probably Rent Its Optimus Robots",
+        "url": "https://driveteslacanada.ca/news/elon-musk-tesla-optimus-rental-plans/",
+        "decision": "file",
+        "reason": "same conference, second writeup; used as corroboration, not a second keyChange"
+      },
+      {
+        "title": "Published robot-hand patent is a 2022 design, not a production hand",
+        "url": "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers/",
+        "decision": "file",
+        "reason": "USPTO publication Nov 5; hardware design Optimus owns; not the October tactile-skin patent"
+      },
+      {
+        "title": "Tesla patent describes tendon-like cables for underactuated robot fingers",
+        "url": "https://driveteslacanada.ca/news/tesla-robot-hand-tendon-patent/",
+        "decision": "file",
+        "reason": "same application; adds the Oct 27 examiner objection"
+      },
+      {
+        "title": "Giga Texas Optimus Factory: 6 Details That Matter",
+        "url": "https://www.basenor.com/blogs/news/giga-texas-optimus-factory-6-details-that-matter",
+        "decision": "skip",
+        "reason": "Nov 2 aerial plus an Oct 1 concrete recap; 10 million a year is unconfirmed and the plant is still construction with no open date, already filed Oct 21"
+      },
+      {
+        "title": "Tesla Optimus Reservations Rumored for December: What We Know",
+        "url": "https://www.basenor.com/blogs/news/tesla-optimus-reservations-rumored-for-december-what-we-know",
+        "decision": "skip",
+        "reason": "same December-orders story Musk denied Oct 30; already in recentKeyChanges"
+      },
+      {
+        "title": "Musk Denies Reports that Optimus Orders Will Go Live in December",
+        "url": "https://driveteslacanada.ca/news/musk-denies-reports-that-optimus-orders-will-go-live-in-december/",
+        "decision": "skip",
+        "reason": "Oct 31 rewrite of the Oct 30 denial already filed"
+      },
+      {
+        "title": "Tesla Wants to Build 20,000 Optimus Robots a Week",
+        "url": "https://www.msn.com/en-us/news/other/tesla-wants-to-build-20000-optimus-robots-a-week-heres-the-supplier-that-gets-paid-for-every-single-one-and-its-not-nvidia/ar-AA2gLfAA",
+        "decision": "skip",
+        "reason": "Nov 4 Motley Fool supplier pitch recycling the Q3 20,000-a-week target, which was already at least a year away; not a new output count"
+      },
+      {
+        "title": "Tesla Optimus rival Agility Robotics begins trading after SPAC merger",
+        "url": "https://www.msn.com/en-us/news/other/tesla-optimus-rival-agility-robotics-begins-trading-after-spac-merger/ar-AA2gPkV5",
+        "decision": "skip",
+        "reason": "Agility listing, not an Optimus ramp, factory, or sales-timeline fact; rival label is not a production contrast"
+      },
+      {
+        "title": "Tesla Giga Texas reportedly moves to 24/7 production",
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "decision": "skip",
+        "reason": "Model Y and Cybertruck general assembly; vehicle production is not owned here"
+      },
+      {
+        "title": "Elon Musk's Tesla Optimus Timeline: Robots Targeted for 2027 Launch",
+        "url": "https://www.techrepublic.com/article/news-tesla-optimus-robot-production-2027-sales-timeline/",
+        "decision": "skip",
+        "reason": "Oct 12 timeline piece resurfaced in news search, outside the window"
+      },
+      {
+        "title": "What Robotics Experts Think of Tesla's Optimus Robot",
+        "decision": "skip",
+        "reason": "Google News dated Nov 5 IEEE Spectrum, but no canonical article URL resolved and Bing returned only older Optimus pieces"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 20000,
+        "decision": "reject",
+        "reason": "Q3 target of 20,000 a week, already described as at least a year away; not units built this week"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 10000000,
+        "decision": "reject",
+        "reason": "Basenor Austin design target; the same post says Tesla has not confirmed 10 million a year, and the building is still a shell"
+      },
+      {
+        "series": "optimusBuildCost",
+        "count": 30000,
+        "decision": "reject",
+        "reason": "Interview build-cost remark, not a production or delivery count"
+      },
+      {
+        "series": "optimusProductivity",
+        "count": 5,
+        "decision": "reject",
+        "reason": "Hours projection versus a human, not measured robot output"
+      }
+    ]
+  }
+}

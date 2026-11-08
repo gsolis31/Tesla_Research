@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-07",
+  "weekOf": "2026-11-02",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 5,
+      "queries": 11,
+      "fetched": 16,
+      "considered": 16,
+      "skipped": 11,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 10,
+      "fetched": 14,
+      "considered": 10,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 19,
+      "fetched": 10,
+      "considered": 12,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 6,
+      "fetched": 12,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 8,
+      "queries": 13,
+      "fetched": 18,
+      "considered": 15,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 17,
+      "fetched": 13,
+      "considered": 8,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 12,
+      "fetched": 8,
+      "considered": 4,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 10,
+      "fetched": 10,
+      "considered": 9,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 8,
+      "fetched": 17,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 1,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-11-07/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-11-07/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 15,
+    "covered": 14,
+    "ignored": 0,
+    "gapCount": 1,
+    "queries": 6,
+    "gaps": [
+      {
+        "title": "FSD supervised fleet counter passes 17 billion miles",
+        "url": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles/",
+        "likelyCategory": "fsdv15"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 25,
+    "duplicatesRemoved": 1,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 1,
+    "totalKeyChanges": 26,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-07",
+  "errorCount": 0,
+  "warningCount": 1,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 5,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: FSD supervised fleet counter passes 17 billion miles",
+          "category": "fsdv15",
+          "title": "FSD supervised fleet counter passes 17 billion miles",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 8,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

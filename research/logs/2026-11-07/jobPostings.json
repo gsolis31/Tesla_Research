@@ -1,0 +1,232 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-11-07",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring job posting November 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Optimus OR robotaxi OR Tesla AI hiring OR job posting 2026 past week",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Data Collection Operations Lead Optimus Littleton 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "Tesla hiring jobs November 2026 Optimus OR robotaxi teslarati OR teslanorth OR notateslaapp",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "site:linkedin.com/jobs/view Tesla Optimus November 2026",
+        "tool": "web_fetch",
+        "hits": 9
+      },
+      {
+        "q": "Tesla AI Vehicle Operator Dublin OR Birmingham 2026",
+        "tool": "web_fetch",
+        "hits": 7
+      },
+      {
+        "q": "site:teslarati.com Tesla hiring OR job posting Optimus OR robotaxi 2026",
+        "tool": "web_fetch",
+        "hits": 2
+      },
+      {
+        "q": "Data Collection Operations Lead, Optimus Littleton linkedin Tesla",
+        "tool": "web_fetch",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://optimusk.blog",
+        "kept": false,
+        "reason": "homepage; no hiring article in the window"
+      },
+      {
+        "url": "https://robottraining.jobs/platforms/tesla-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/tesla-optimus-jobs",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/research/tesla-optimus-hiring-data",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tesla.com/careers/search/job/data-collection-operations-lead-optimus-277920",
+        "kept": false,
+        "reason": "Akamai 403; requisition indexed but body not readable"
+      },
+      {
+        "url": "https://www.hrlens.io/articles/tesla-optimus-jobs-how-to-get-hired",
+        "kept": false,
+        "reason": "published 2026-10-22, before the window"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries",
+        "kept": false,
+        "reason": "seenUrl; 2026-04-21 and a different country list"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-seeks-engineer-ios-robotaxi-app-feel-magical/",
+        "kept": false,
+        "reason": "iOS req tied to a 2026-01-11 post, outside the window"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-latest-robotaxi-job-posting-takes-the-whole-program-a-step-forward/",
+        "kept": false,
+        "reason": "insurance-claims story anchored to a 2025-11-05 post"
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/ai-vehicle-operator-self-driving-birmingham",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.eurotoptech.com/jobs/preview/ai-vehicle-operator-self-driving-birmingham-tesla-birmingham-2518463",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/ai-vehicle-operator-self-driving-dublin",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/supervisor-robotaxi-fleet-support-night-shift",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-supervisor-self-driving",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://uk.linkedin.com/jobs/view/ai-vehicle-operator-self-driving-birmingham-at-tesla-4487583246",
+        "kept": false,
+        "reason": "empty fetch; listing only confirmed via search snippet"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Littleton Optimus opening is another data-collection shift lead",
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+        "decision": "file",
+        "reason": "Tesla req 277920 posted 2026-11-07; shift lead, not an engineering ramp"
+      },
+      {
+        "title": "New FSD seats are temp safety drivers and local supervisors",
+        "url": "https://www.eurotoptech.com/jobs/preview/ai-vehicle-operator-self-driving-birmingham-tesla-birmingham-2518463",
+        "decision": "file",
+        "reason": "Birmingham temp safety operator dated 2026-11-04, plus this week's US supervisor adds"
+      },
+      {
+        "title": "AltIndex job-posting counter is not a real hiring collapse",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "file",
+        "reason": "Live 2,393 conflicts with the page's own October 7,445 and the prior ~8,155 series"
+      },
+      {
+        "title": "Littleton Optimus post is hourly data collection, already flagged closed",
+        "url": "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4484420159",
+        "decision": "skip",
+        "reason": "seenUrl and last week's keyChange; not refiled"
+      },
+      {
+        "title": "Tesla Begins Hiring FSD Vehicle Operators in 9 New Countries",
+        "url": "https://www.notateslaapp.com/news/4013/tesla-begins-hiring-fsd-vehicle-operators-in-nine-new-countries",
+        "decision": "skip",
+        "reason": "seenUrl; 2026-04-21; UK and Ireland were not in that list"
+      },
+      {
+        "title": "Tesla seeks engineer to make its iOS Robotaxi app feel magical",
+        "url": "https://www.teslarati.com/tesla-seeks-engineer-ios-robotaxi-app-feel-magical/",
+        "decision": "skip",
+        "reason": "outside window; post points at 2026-01-11"
+      },
+      {
+        "title": "Tesla's latest Robotaxi job posting takes the whole program a step forward",
+        "url": "https://www.teslarati.com/tesla-latest-robotaxi-job-posting-takes-the-whole-program-a-step-forward/",
+        "decision": "skip",
+        "reason": "Senior insurance claims specialist story is from 2025-11-05"
+      },
+      {
+        "title": "Tesla Robotaxi app update now tells riders if Cybercab is the better choice",
+        "url": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+        "decision": "skip",
+        "reason": "2026-11-07 product change, not a job posting; cybercab owns the app"
+      },
+      {
+        "title": "Tesla Optimus jobs: how do you get hired in 2026?",
+        "url": "https://www.hrlens.io/articles/tesla-optimus-jobs-how-to-get-hired",
+        "decision": "skip",
+        "reason": "career-advice piece published 2026-10-22"
+      },
+      {
+        "title": "Older LinkedIn Optimus engineering listings",
+        "url": "https://www.linkedin.com/jobs/view/internship-sensor-hardware-design-engineer-optimus-fall-2026-at-tesla-4422666235",
+        "decision": "skip",
+        "reason": "older job ids; tactile-sensing internship snippet says posted 4 months ago"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 2393,
+        "decision": "reject",
+        "reason": "AltIndex live count is discontinuous with 8,185 on 2026-10-10 and with 8,155 on 29 Oct, then 462 and 710. Same page still shows October at 7,445 and a +139.3% three-month claim that does not match August's 5,026."
+      },
+      {
+        "series": "jobPostings",
+        "count": 7445,
+        "decision": "reject",
+        "reason": "AltIndex October 2026 monthly aggregate, not a new daily point inside this week and not a replacement for the broken live series."
+      },
+      {
+        "series": "jobPostings",
+        "count": 178,
+        "decision": "reject",
+        "reason": "RobotTraining count on 2026-11-06 of safety-operator, fleet-support and data-collection roles only, not company-wide LinkedIn openings."
+      },
+      {
+        "series": "jobPostings",
+        "count": 175,
+        "decision": "reject",
+        "reason": "Same robot-training subset on 2026-11-07. Filing it against the 8,185 series would look like a 98% collapse."
+      },
+      {
+        "series": "jobPostings",
+        "count": 31,
+        "decision": "reject",
+        "reason": "Optimus data-collection postings only (operators, leads, supervisors), not the company-wide series."
+      }
+    ]
+  }
+}

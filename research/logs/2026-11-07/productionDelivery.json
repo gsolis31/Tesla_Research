@@ -1,0 +1,292 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-11-07",
+  "filed": 8,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla North homepage vehicle production and deliveries 2026-11-07",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Teslarati homepage production deliveries October November 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla North page 2 October registrations Shanghai Norway",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla North pages 3-4 early November vehicle sales",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "Tesla China October 2026 wholesale CPCA",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "KBA Fahrzeugzulassungen Oktober 2026 Tesla",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "ir.tesla.com press November 2026 production deliveries",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla UK SMMT October 2026 registrations",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Q4 2026 delivery estimate November",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Giga Texas 24/7 production November 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Australia sales October 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla France registrations October 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Cybertruck price hike November 2026",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-is-ending-cybertruck-production/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/05/cybertruck-us-price-hike-nov-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/11/03/tesla-china-oct-2026-wholesale/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/03/tesla-shanghai-october-2026-wholesale/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm44_2026_n_10_26_pm_komplett.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-registrations-germany-nearly-quadruple-october/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/04/tesla-germany-october-registrations/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/05/tesla-argentina-unicenter-store/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-korea-kaida-9-months-import/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/03/tesla-norway-top-brand-21523-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/01/tesla-china-cpo-5000-november/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/10/31/model-3-red-premium-canada/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "kept": false,
+        "reason": "single unconfirmed drone report, no Tesla unit figure"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-semi-megawatt-chargers-long-beach/",
+        "kept": false,
+        "reason": "third-party chargers, no new Tesla Semi delivery count"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "kept": false,
+        "reason": "no auto delivery or margin guide"
+      },
+      {
+        "url": "https://cnevpost.com/2026/11/06/tesla-shanghai-plant-localization-98/",
+        "kept": false,
+        "reason": "supplier localization, capacity unchanged"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk sets Cybertruck wind-down for mid-2027 after another US price hike",
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "decision": "file",
+        "reason": "Vehicle-line exit with no residual volume; Cybercab build rate was not disclosed"
+      },
+      {
+        "title": "Cybertruck Premium hits $92,490",
+        "url": "https://teslanorth.com/2026/11/05/cybertruck-us-price-hike-nov-2026/",
+        "decision": "skip",
+        "reason": "Sticker hike is evidence inside the Nov 6 wind-down item, not a second change"
+      },
+      {
+        "title": "Shanghai October wholesale falls to 67,829",
+        "url": "https://cnevpost.com/2026/11/03/tesla-china-oct-2026-wholesale/",
+        "decision": "file",
+        "reason": "New CPCA October wholesale print inside the window"
+      },
+      {
+        "title": "Germany October registrations quadruple but trail BYD",
+        "url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm44_2026_n_10_26_pm_komplett.html",
+        "decision": "file",
+        "reason": "KBA October brand table confirms 2,932 and the BYD lead"
+      },
+      {
+        "title": "Tesla sets Argentina launch for November 20",
+        "url": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+        "decision": "file",
+        "reason": "New country sales date; no order book yet"
+      },
+      {
+        "title": "Cencosud Unicenter store for late November",
+        "url": "https://teslanorth.com/2026/11/05/tesla-argentina-unicenter-store/",
+        "decision": "skip",
+        "reason": "Mall preview folded into the Nov 20 Tesla confirmation"
+      },
+      {
+        "title": "Korea import lead hits nine months",
+        "url": "https://teslanorth.com/2026/11/06/tesla-korea-kaida-9-months-import/",
+        "decision": "file",
+        "reason": "New October KAIDA count, with a sequential decline"
+      },
+      {
+        "title": "Norway year-to-date brand lead through October",
+        "url": "https://teslanorth.com/2026/11/03/tesla-norway-top-brand-21523-2026/",
+        "decision": "file",
+        "reason": "New OFV October and year-to-date registration print"
+      },
+      {
+        "title": "China November incentives and certified-used discount",
+        "url": "https://teslanorth.com/2026/11/01/tesla-china-cpo-5000-november/",
+        "decision": "file",
+        "reason": "Q4 pricing change on Model 3, Model Y, and used inventory"
+      },
+      {
+        "title": "Canada Model 3 Premium listed but not orderable",
+        "url": "https://teslanorth.com/2026/10/31/model-3-red-premium-canada/",
+        "decision": "file",
+        "reason": "In-window configurator update; orders remain closed"
+      },
+      {
+        "title": "Giga Texas reportedly moves to 24/7 production",
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "decision": "skip",
+        "reason": "One drone observer, Tesla has not confirmed lines or units"
+      },
+      {
+        "title": "Tesla Semi megawatt chargers at the Port of Long Beach",
+        "url": "https://teslanorth.com/2026/11/06/tesla-semi-megawatt-chargers-long-beach/",
+        "decision": "skip",
+        "reason": "Forum Mobility depot opening; no new Tesla Semi delivery count"
+      },
+      {
+        "title": "Ron Baron conference recap",
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "decision": "skip",
+        "reason": "Terafab, SpaceX, and Optimus; no auto volume guide"
+      },
+      {
+        "title": "Shanghai parts localization to 98%",
+        "url": "https://cnevpost.com/2026/11/06/tesla-shanghai-plant-localization-98/",
+        "decision": "skip",
+        "reason": "Supply-chain share; stated plant capacity still about 1 million"
+      },
+      {
+        "title": "Q3 auto revenue and 2.6% operating margin",
+        "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+        "decision": "skip",
+        "reason": "Already in recentKeyChanges for 2026-10-21"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 67829,
+        "decision": "reject",
+        "reason": "October CPCA wholesale, exports included and preliminary; not a new quarterly IR production or delivery print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 2932,
+        "decision": "reject",
+        "reason": "Germany monthly registrations, not quarterly company deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 9165,
+        "decision": "reject",
+        "reason": "Korea monthly registrations, not quarterly company deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 1548,
+        "decision": "reject",
+        "reason": "Norway monthly registrations, not quarterly company deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 486532,
+        "decision": "reject",
+        "reason": "Q3 deliveries already reported before this window and unchanged"
+      }
+    ]
+  }
+}

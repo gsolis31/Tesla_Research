@@ -1,0 +1,203 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-11-07",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 14
+      },
+      {
+        "q": "Tesla FSD Korea Fair Trade Commission November 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD approval Europe OR NHTSA OR NTSB November 2026",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD approval Europe past week",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Full Self-Driving Tesla NHTSA past week",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Tesla Italy FSD OR assisted driving past week",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "RDW Tesla Assisted Driving speed past week",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Tesla forced to rename Full Self-Driving RDW November 2026",
+        "tool": "web_search",
+        "hits": 15
+      },
+      {
+        "q": "Tesla FSD Korea Fair Trade Commission news",
+        "tool": "web_search",
+        "hits": 18
+      },
+      {
+        "q": "Tesla FSD NHTSA OR crash OR China approval news",
+        "tool": "web_search",
+        "hits": 20
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/04/korea-fsd-kftc-complaint/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4938/tesla-fsd-gets-reduced-speed-offset-more-changes-in-europe",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.chosun.com/english/industry-en/2026/11/05/3H3QCQHTLZDHNOLSFZCI46VPLY/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/",
+        "kept": true,
+        "reason": "tier-2 corroboration of the RDW notice, not the cited source"
+      },
+      {
+        "url": "https://www.koreajoongangdaily.com/business/tesla-korea-seeks-exemption-to-unlock-fsd-for-chinamade-cars/12941649",
+        "kept": false,
+        "reason": "published 2026-10-29, before the window"
+      },
+      {
+        "url": "https://en.sedaily.com/finance/2026/11/07/tesla-wins-korean-fsd-refund-suit-as-global-disputes-mount",
+        "kept": false,
+        "reason": "7 Nov recap of the 29 Oct court ruling, no new decision"
+      },
+      {
+        "url": "https://www.fleetnews.co.uk/news/tesla-removes-full-self-driving-branding-in-europe-including-in-uk",
+        "kept": false,
+        "reason": "website rebrand writeup, not a UK approval and not the RDW decision"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4957/nhtsa-to-modernize-vehicle-recalls-with-a-focus-on-ota-fixes",
+        "kept": false,
+        "reason": "general NHTSA recall-notice policy, not an FSD probe or country decision"
+      },
+      {
+        "url": "https://www.scmp.com/business/china-evs/article/3363606/tesla-faces-uphill-battle-fsd-entry-china-rewrites-self-driving-car-rules-analysts",
+        "kept": false,
+        "reason": "published 11 Aug 2026"
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
+        "kept": false,
+        "reason": "paywall/401; used only as the wire TeslaNorth and Chosun cite"
+      },
+      {
+        "url": "https://etsc.eu/tesla-drops-full-self-driving-name-in-europe-but-germany-backs-letting-the-system-exceed-speed-limits/",
+        "kept": false,
+        "reason": "page returned a title only"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/rdw-approves-tesla-assisted-driving-changes-europe/",
+        "kept": false,
+        "reason": "fetch did not return the article body"
+      }
+    ],
+    "considered": [
+      {
+        "title": "RDW Caps Europe Speed Margin at 10% and Locks In the Assisted-Driving Name",
+        "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system",
+        "decision": "file",
+        "reason": "3 Nov RDW decision inside the window; official notice plus Teslarati and Not a Tesla App"
+      },
+      {
+        "title": "Korean Consumer Group Files KFTC Complaint Over FSD Sold on Ineligible Cars",
+        "url": "https://www.chosun.com/english/industry-en/2026/11/05/3H3QCQHTLZDHNOLSFZCI46VPLY/",
+        "decision": "file",
+        "reason": "5 Nov filing confirmed; distinct from the 27 Oct police bookings already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla Korea seeks exemption to unlock FSD for China-made cars",
+        "url": "https://www.koreajoongangdaily.com/business/tesla-korea-seeks-exemption-to-unlock-fsd-for-chinamade-cars/12941649",
+        "decision": "skip",
+        "reason": "published 29 Oct, before 31 Oct; used only as background that the exemption is still open"
+      },
+      {
+        "title": "Tesla Wins Korean FSD Refund Suit as Global Disputes Mount",
+        "url": "https://en.sedaily.com/finance/2026/11/07/tesla-wins-korean-fsd-refund-suit-as-global-disputes-mount",
+        "decision": "skip",
+        "reason": "7 Nov commentary on the 29 Oct Seoul ruling, not a new judgment"
+      },
+      {
+        "title": "NHTSA to Modernize Vehicle Recalls With a Focus on OTA Fixes",
+        "url": "https://www.notateslaapp.com/news/4957/nhtsa-to-modernize-vehicle-recalls-with-a-focus-on-ota-fixes",
+        "decision": "skip",
+        "reason": "6 Nov general recall-completion policy; Tesla is an example, not a new FSD investigation"
+      },
+      {
+        "title": "Tesla wants its sworn Cybercab answers to NHTSA kept entirely secret",
+        "url": "https://electrek.co/2026/11/05/tesla-cybercab-nhtsa-sworn-answers-confidential/",
+        "decision": "skip",
+        "reason": "Cybercab NHTSA confidentiality fight; best owned by cybercab, and Electrek-only here"
+      },
+      {
+        "title": "Tesla FSD v14.3.13 gets involved in a crash",
+        "url": "https://www.teslaoracle.com/2026/11/02/tesla-fsd-v14-3-13-gets-involved-in-a-crash-and-shows-multiple-regressions-review-videos/",
+        "decision": "skip",
+        "reason": "software build and driving behavior; owned by fsdv15"
+      },
+      {
+        "title": "Tesla faces uphill battle for FSD entry as China rewrites self-driving rules",
+        "url": "https://www.scmp.com/business/china-evs/article/3363606/tesla-faces-uphill-battle-fsd-entry-china-rewrites-self-driving-car-rules-analysts",
+        "decision": "skip",
+        "reason": "11 Aug 2026, outside the window"
+      },
+      {
+        "title": "Salvini backs a fast EU vote",
+        "url": "https://teslanorth.com/2026/10/29/italy-salvini-tesla-assisted-driving-eu/",
+        "decision": "skip",
+        "reason": "already in recentKeyChanges; Italy still has no national approval and no new decision this week"
+      },
+      {
+        "title": "Latvia recognizes Dutch FSD approval",
+        "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+        "decision": "skip",
+        "reason": "seenUrl; RDW's 3 Nov notice still lists the same ten states"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 10,
+        "decision": "reject",
+        "reason": "RDW's 3 Nov notice still names the same ten recognizing states, including the Netherlands. No new active country versus latestMetric Denmark and totalCountries 6. Recognition is not a new rollout, and the count did not change this week."
+      }
+    ]
+  }
+}

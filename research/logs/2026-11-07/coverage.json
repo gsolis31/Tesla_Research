@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-07",
+  "weekOf": "2026-11-02",
+  "dateFrom": "2026-10-31",
+  "dateTo": "2026-11-07",
+  "candidates": [
+    {
+      "title": "Tesla opens Robotaxi rides in Fort Worth, a fourth Texas city",
+      "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+      "date": "2026-11-01",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Official account set a Monday 6 a.m. start and a downtown geofence, with no vehicle count, safety-monitor status, or price; the same report cites a 1,204-vehicle Texas roster"
+    },
+    {
+      "title": "Tesla sends Cybercab on a 12-stop Europe display tour",
+      "url": "https://teslanorth.com/2026/11/02/tesla-cybercab-europe-tour/",
+      "date": "2026-11-02",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Display-only tour starts in Zürich on Nov 5 and runs into January; Tesla offers no rides, sales, or European robotaxi date"
+    },
+    {
+      "title": "Oracle reports an FSD v14.3.13 crash and regression videos",
+      "url": "https://www.teslaoracle.com/2026/11/02/tesla-fsd-v14-3-13-gets-involved-in-a-crash-and-shows-multiple-regressions-review-videos/",
+      "date": "2026-11-02",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Published Nov 2 as a supervised v14.3.13 crash plus regressions; the article body did not render on fetch, so the claim is the headline only"
+    },
+    {
+      "title": "FSD supervised fleet counter passes 17 billion miles",
+      "url": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles/",
+      "date": "2026-11-02",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Live safety page showed about 17.003 billion supervised miles and 6.76 billion city miles, only a few hundred million above the late-October print, and still driver-supervised"
+    },
+    {
+      "title": "RDW cuts Tesla Assisted Driving speed margin from +50% to +10%",
+      "url": "https://teslanorth.com/2026/11/03/rdw-tesla-assisted-driving-speed-margin-10-percent/",
+      "date": "2026-11-03",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Dutch type approval stays in force, but the offset cap falls to +10%, resets to 0% at startup, and applies to HW4 cars in the countries that already recognize the approval"
+    },
+    {
+      "title": "Korean consumer group plans a KFTC complaint over FSD sold to cars that cannot use it",
+      "url": "https://teslanorth.com/2026/11/04/korea-fsd-kftc-complaint/",
+      "date": "2026-11-04",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Draft complaint asks the Fair Trade Commission to halt marketing of a 9.043 million won FSD package; Tesla data cited in the report put most 2025 Korean Teslas outside legal FSD use"
+    },
+    {
+      "title": "Germany October Tesla registrations jump 290.9% to 2,932",
+      "url": "https://teslanorth.com/2026/11/04/tesla-germany-october-registrations/",
+      "date": "2026-11-04",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "KBA October print is 2,932 and year-to-date is 47,742, but BYD still led the month and sits 219 units ahead for the year"
+    },
+    {
+      "title": "Giga Texas reportedly adds a night shift and skips holiday shutdowns",
+      "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+      "date": "2026-11-05",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Drone observer says two 12-hour shifts through year-end; Tesla has not confirmed it, and the report says Cybercab may not be the line that can absorb the extra output"
+    },
+    {
+      "title": "Tesla opens a Berlin engineering center with about 250 staff",
+      "url": "https://www.teslarati.com/tesla-berlin-btec-engineering-center/",
+      "date": "2026-11-05",
+      "likelyCategory": "jobPostings",
+      "whyItMightMatter": "BTEC opened Nov 4 near Giga Berlin with four sites consolidated, cell and powertrain labs, and a phase-two ask toward roughly 500 people; it is not a new 4680 output figure"
+    },
+    {
+      "title": "Cybertruck Premium sticker rises to $92,490 and Dual Motor is grayed out",
+      "url": "https://teslanorth.com/2026/11/05/cybertruck-us-price-hike-nov-2026/",
+      "date": "2026-11-05",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Premium is up $7,500 from the August sticker and Cyberbeast is $102,490; Dual Motor lists at $82,490 but is no longer selectable, with no Tesla explanation"
+    },
+    {
+      "title": "Musk says Cybertruck production winds down mid-2027 to free space for Cybercab",
+      "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+      "date": "2026-11-06",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Musk gave no volume, hard stop, or Cybercab add; Cybertruck lead Wes Morrill said parts and service continue"
+    },
+    {
+      "title": "Musk says the Austin research fab could cut a chip cycle from a year to a month",
+      "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+      "date": "2026-11-06",
+      "likelyCategory": "terafab",
+      "whyItMightMatter": "Nov 6 Baron chat restates a 1 TW Terafab goal and says successful Austin research processes would move to Grimes County; he also preferred renting Optimus and floated 5x human productivity"
+    },
+    {
+      "title": "USPTO publishes Tesla underactuated robot-hand cable application",
+      "url": "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers/",
+      "date": "2026-11-06",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "US 2026/0346473 A1 describes one floating cable per two-joint finger and never names Optimus; it is a 2022-priority filing, not a production or ship-date claim"
+    },
+    {
+      "title": "Tesla sets an Argentina market launch for November 20",
+      "url": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+      "date": "2026-11-06",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Tesla and Tesla Latinoamérica named Nov 20, but posted no prices, order page, or which models go on sale that day"
+    },
+    {
+      "title": "A production Tesla Semi takes the first Long Beach v4 megawatt charge",
+      "url": "https://teslanorth.com/2026/11/06/tesla-semi-megawatt-chargers-long-beach/",
+      "date": "2026-11-06",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Forum Mobility says a customer's production Semi used two v4 MCS stalls on Nov 5 and claims reservations for more than 330 Semis; Tesla did not disclose a delivery count"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "teslarati.com homepage Tesla week of 2026-11-02",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "teslanorth.com homepage Tesla week of 2026-11-02",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "teslaoracle.com homepage Tesla 2026-11-02 to 2026-11-07",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "Tesla NHTSA Optimus AI5 4680 November 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "ir.tesla.com/press",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "notateslaapp.com/news",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/06/baron-conference-full-recap/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-is-ending-cybertruck-production/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/04/korea-fsd-kftc-complaint/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/03/rdw-tesla-assisted-driving-speed-margin-10-percent/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/02/tesla-fsd-v14-3-13-gets-involved-in-a-crash-and-shows-multiple-regressions-review-videos/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/05/nhtsa-ota-recalls-tesla/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/04/tesla-germany-october-registrations/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-berlin-btec-engineering-center/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/04/tesla-update-2026-38-6-goes-into-wide-release-grok-comes-out-of-beta-latvian-language-support-added/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-semi-megawatt-chargers-long-beach/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/australia-fsd-lane-hug-service-note/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/05/cybertruck-us-price-hike-nov-2026/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/02/tesla-cybercab-europe-tour/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/06/tesla-robot-hand-tendon-cable-fingers/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/03/tesla-2026-38-6-fixes-bc-time-zone-clock/",
+        "kept": false
+      }
+    ]
+  }
+}
