@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+Weekly research follows `.claude/skills/tesla-update-v2/SKILL.md`. When this guide and that skill disagree, follow the skill.
+
 # Tesla Investor Tracking Dashboard — Developer Guide
 
 **Project**: Tesla Investor Tracking Dashboard  
@@ -929,6 +931,5 @@ Check GitHub Actions for errors:
 
 ---
 
-**Last Updated**: 2026-07-18  
 **Project Type**: Personal research + public dashboard  
 **License**: Educational and investment tracking (not financial advice)

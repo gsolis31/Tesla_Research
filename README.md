@@ -1,9 +1,8 @@
 # Tesla Investor Tracking Dashboard
 
-An automated tracking system for Tesla's key milestones across AI chips, autonomy, robotics, batteries, and production. Built with React + TypeScript; researched and updated via Claude skills (`/tesla-update-v2` preferred).
+An automated tracking system for Tesla's key milestones across AI chips, autonomy, robotics, batteries, and production. Built with React + TypeScript; researched and updated with `/tesla-update-v2`.
 
 ![Dashboard Preview](https://img.shields.io/badge/Status-Active-success)
-![Last Updated](https://img.shields.io/badge/Updated-2026--07--17-blue)
 [![Deployed](https://img.shields.io/badge/Live-GitHub%20Pages-brightgreen)](https://gsolis31.github.io/Tesla_Research/)
 
 ## What This Tracks
@@ -47,7 +46,7 @@ npm run build        # production → dist/
 /tesla-update-v2
 ```
 
-Then finalize with one command:
+That run researches, curates, and finalizes. The finalize step is:
 
 ```bash
 python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
@@ -89,7 +88,7 @@ Research/
 │   └── archive_old_data.py      # → data/archives/
 ├── docs/                        # Architecture notes (see below)
 ├── .claude/
-│   ├── agents/                  # tesla-researcher, tesla-curator
+│   ├── agents/                  # tesla-researcher, tesla-coverage-scout, tesla-curator
 │   └── skills/                  # tesla-update-v2 (preferred), tesla-update (retired)
 ├── .github/workflows/deploy.yml # Validate → build → GitHub Pages
 ├── package.json
@@ -185,8 +184,12 @@ Live: https://gsolis31.github.io/Tesla_Research/
 Actions: https://github.com/gsolis31/Tesla_Research/actions
 
 ```bash
-git add data/tesla-tracking-data.json research/findings/YYYY-MM-DD.json research/findings/url-cache.json
-git commit -m "Update: …"
+git add data/tesla-tracking-data.json \
+        research/findings/YYYY-MM-DD.json \
+        research/findings/curator-report-YYYY-MM-DD.md \
+        research/findings/url-cache.json \
+        research/logs/YYYY-MM-DD
+git commit -m "Update: Research for YYYY-MM-DD"
 git push origin main
 ```
 
@@ -247,10 +250,6 @@ Personal research project for educational and investment tracking. Not financial
 
 ## Credits
 
-- **Research pipeline:** Claude agents (tesla-researcher / tesla-curator) + `/tesla-update-v2`
+- **Research pipeline:** Grok agents (tesla-researcher, tesla-coverage-scout, tesla-curator) + `/tesla-update-v2`
 - **Dashboard:** React + TypeScript + Tailwind
 - **Deploy:** GitHub Actions + GitHub Pages
-
----
-
-**Last data update:** 2026-07-17 · [Live dashboard](https://gsolis31.github.io/Tesla_Research/)
