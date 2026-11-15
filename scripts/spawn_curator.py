@@ -14,6 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from paths import (  # noqa: E402
+    ROOT,
     TRACKING_DATA,
     RAW_DIR,
     coverage_gaps_path,
@@ -24,8 +25,8 @@ from paths import (  # noqa: E402
     lint_raw_path,
     logs_dir,
 )
-from spawn_researcher import all_seen_urls, slim_key_change  # noqa: E402
-from url_cache import load_cache  # noqa: E402
+from assemble_findings import write_draft  # noqa: E402
+from spawn_researcher import slim_key_change  # noqa: E402
 
 
 def main():
@@ -77,8 +78,6 @@ def main():
             for kc in data['weeklySummaries'][0].get('keyChanges', [])
         ]
 
-    seen_urls = all_seen_urls(load_cache().get("urls", {}))
-
     gaps = []
     gaps_file = coverage_gaps_path(date)
     if gaps_file.exists():
@@ -87,19 +86,43 @@ def main():
         except json.JSONDecodeError:
             gaps = []
 
+    date_from = None
+    date_to = date
+    research_cfg = ROOT / "research" / "configs" / "research-config-cybercab.json"
+    if research_cfg.exists():
+        research_window = json.loads(research_cfg.read_text())
+        date_from = research_window.get("dateFrom")
+        date_to = research_window.get("dateTo") or date
+
+    try:
+        _findings, review = write_draft(
+            date,
+            week_of,
+            date_from=date_from,
+            date_to=date_to,
+            last_week=last_week_key_changes,
+            gaps=gaps,
+        )
+    except FileNotFoundError as exc:
+        print(f"❌ {exc}")
+        sys.exit(1)
+
     config = {
         "date": date,
         "weekOf": week_of,
+        "draftPath": str(curated_findings_path(date).as_posix()),
         "findingsFiles": relative_paths,
         "hotContext": {
             "lastWeekKeyChanges": last_week_key_changes,
-            "seenUrls": seen_urls,
+            "cacheHits": review["cacheHits"],
         },
+        "review": review,
         "lintReport": str(lint_raw_path(date).as_posix()),
         "coverageReport": str(coverage_path(date).as_posix()),
         "coverageGaps": gaps,
         "logsDir": str(logs_dir(date).as_posix()),
         "outputPath": str(curated_findings_path(date).as_posix()),
+        "reportPath": f"research/findings/curator-report-{date}.md",
     }
 
     config_path = curator_config_path()
@@ -112,7 +135,10 @@ def main():
     print(f"  Week of: {week_of}")
     print(f"  Category findings: {len(findings_files)}")
     print(f"  Last week keyChanges: {len(last_week_key_changes)} (slim)")
-    print(f"  seenUrls: {len(seen_urls)}")
+    print(f"  Draft keyChanges: {review['keyChangeCount']}")
+    print(f"  cacheHits: {len(review['cacheHits'])} (not the full URL cache)")
+    print(f"  mustFix: {len(review['mustFix'])}")
+    print(f"  metricDrops: {len(review['metricDrops'])}")
     lint_path = lint_raw_path(date)
     print(f"  lintReport: {lint_path} ({'exists' if lint_path.exists() else 'missing — run lint_findings.py --raw'})")
     print(f"  coverageGaps: {len(gaps)}"

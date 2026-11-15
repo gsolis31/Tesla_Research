@@ -9,5 +9,5 @@ git config core.hooksPath .githooks
 chmod +x .githooks/pre-commit 2>/dev/null || true
 
 echo "✓ git core.hooksPath → .githooks"
-echo "  pre-commit will run: validate_data.py + pytest (if installed)"
+echo "  pre-commit will run: pytest (if installed)"
 echo "  Bypass: git commit --no-verify"

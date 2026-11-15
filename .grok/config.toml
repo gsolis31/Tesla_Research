@@ -1,0 +1,7 @@
+# Pins the weekly research agents to the current frontier model.
+# Reasoning effort is declared on each agent file (high for research, medium for the curator).
+
+[subagents.models]
+tesla-researcher = "grok-4.7"
+tesla-coverage-scout = "grok-4.7"
+tesla-curator = "grok-4.7"

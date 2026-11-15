@@ -39,12 +39,12 @@ npm run dev          # http://localhost:5173
 npm run build        # production → dist/
 ```
 
-### Research update (Claude Code)
+### Research update
 
 **Only path (all cases):**
 
 ```bash
-/tesla-update-v2     # 12–15 min, ~$0.02/run
+/tesla-update-v2
 ```
 
 Then finalize with one command:
@@ -54,11 +54,10 @@ python3 scripts/finalize_update.py research/findings/YYYY-MM-DD.json
 ```
 
 V2 pipeline:
-1. Generates configs under `research/configs/` (gitignored)
-2. Spawns 9 researchers in 3 batches → `research/raw/findings-*.json` (gitignored; must include `searchLog`)
-   Coverage scout (with batch 3) → `research/logs/YYYY-MM-DD/coverage.json`
+1. `spawn_researcher.py --all` archives leftover raw files, then writes configs under `research/configs/` (gitignored)
+2. Nine researchers and the coverage scout run together. Researchers use `web_search` (about 6 searches) then `web_fetch`. Raw output is `research/raw/findings-*.json` (gitignored; must include `searchLog`). Scout output is `research/logs/YYYY-MM-DD/coverage.json`
 3. `lint_findings.py --raw` → `research/logs/YYYY-MM-DD/` (committed; diffs scout vs researchers)
-4. Curator validates/dedupes/sentiment-corrects and addresses coverage gaps → `research/findings/YYYY-MM-DD.json`
+4. `spawn_curator.py` copies the raw files into a draft. The curator judges close calls (coverage gaps, sentiment, cache hits, metric basis) → `research/findings/YYYY-MM-DD.json`
 5. `finalize_update.py` chains: lint-curated → merge → url-cache → archive → validate (Python + Zod) → build
 
 ## Project Structure
@@ -78,12 +77,13 @@ Research/
 ├── scripts/
 │   ├── paths.py                 # Canonical paths (import this; don't hardcode)
 │   ├── spawn_researcher.py      # slim configs (titles + seenUrls) → research/configs/
-│   ├── spawn_curator.py         # curator-config (slim last week + seenUrls + lintReport)
+│   ├── assemble_findings.py     # raw files → curated draft + curator review list
+│   ├── spawn_curator.py         # writes the draft, then curator-config (review, not the URL cache)
 │   ├── lint_findings.py         # Mechanical quality gate + run ledger
 │   ├── finalize_update.py       # lint-curated → merge → cache → archive → validate → build
 │   ├── merge_findings.py        # curated findings → data/
 │   ├── validate_data.py         # Python structure + invariants
-│   ├── validate-zod-schema.ts   # Zod check (CI + pre-commit)
+│   ├── validate-zod-schema.ts   # Zod check (finalize + CI)
 │   ├── update_url_cache.py      # Canonical article URLs only
 │   ├── url_cache.py             # Cache primitives + noise filters
 │   └── archive_old_data.py      # → data/archives/
@@ -101,27 +101,21 @@ All script paths go through `scripts/paths.py` so layout stays consistent.
 ## How Updates Work (V2)
 
 ```
-spawn_researcher.py --all
+spawn_researcher.py --all   # archives leftover raw files, writes configs
         ↓
-research/configs/research-config-*.json
-        ↓
-9× tesla-researcher (3 batches of 3)
-+ tesla-coverage-scout (with batch 3)
+9× tesla-researcher + tesla-coverage-scout   # one wave
         ↓
 research/raw/findings-{category}.json
 research/logs/YYYY-MM-DD/coverage.json
         ↓
 lint_findings.py --raw → research/logs/YYYY-MM-DD/
         ↓
-spawn_curator.py + tesla-curator
+spawn_curator.py   # assembles the draft
+tesla-curator      # edits the close calls
         ↓
 research/findings/YYYY-MM-DD.json
         ↓
-lint_findings.py --curated
-        ↓
-merge_findings.py → data/tesla-tracking-data.json
-        ↓
-update_url_cache.py · archive_old_data.py · validate · npm run build
+finalize_update.py   # curated lint, merge, cache, archive, validate, build
         ↓
 git commit + push → GitHub Actions deploys Pages
 ```
@@ -134,7 +128,8 @@ git commit + push → GitHub Actions deploys Pages
 | **searchLog + run ledger** | Every researcher records queries/skips; `research/logs/YYYY-MM-DD/run.json` shows ok / empty / lint_error / missing |
 | **Coverage scout** | Independent news sweep. Lint diffs it against the 9 researchers; unmatched items become curator `coverageGaps` |
 | **lint_findings.py** | Deterministic gates (registration-as-fleet, stale dates, Electrek-only, ownership trespass). Gold evals in `tests/evals/` |
-| **Curator** | Dedupes vs last week's titles + `seenUrls`; honors lint-raw errors as must-drops; files or rejects every coverage gap |
+| **Assemble** | Copies raw keyChanges and metrics into the draft. Drops lint errors, exact duplicates, and registry counts filed as fleet or production. Lists cache hits; does not delete them |
+| **Curator** | Judges the review list: sentiment flips, cache hits, coverage gaps, weak claims, trend wording |
 | **Canonical URL cache** | Only article source URLs are cached (no search pages, RSS, homepages) |
 | **Dual validation** | Python `validate_data.py` + Zod `src/schema.ts` (CI + build) |
 
@@ -142,7 +137,7 @@ git commit + push → GitHub Actions deploys Pages
 
 **Frontend:** React 18, TypeScript, Vite, Tailwind, Chart.js, TradingView  
 **Data:** JSON source of truth (`data/tesla-tracking-data.json`), imported directly by Vite  
-**Research:** Claude agents + Python merge/validate scripts  
+**Research:** Grok agents + Python assemble/merge/validate scripts  
 **Deploy:** GitHub Actions → GitHub Pages on every push to `main`
 
 ## Dashboard Features
@@ -206,13 +201,9 @@ npm run hooks:install
 # or: bash scripts/install_hooks.sh
 ```
 
-Every `git commit` then runs:
+Every `git commit` then runs `python3 -m pytest` when pytest is installed.
 
-1. `python3 scripts/validate_data.py`
-2. `python3 -m pytest` (if pytest is installed)
-3. `npx tsx scripts/validate-zod-schema.ts`
-
-No ESLint, no full build — fast fail before push. Bypass: `git commit --no-verify`.
+`finalize_update.py` is the one local pass for lint, data validation, Zod, and the production build. GitHub Actions runs those again, plus the tests, before the site updates. Bypass the hook: `git commit --no-verify`.
 
 ### Manual checks
 

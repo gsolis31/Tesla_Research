@@ -109,6 +109,21 @@ def normalize_url(url: str) -> str:
     return normalized
 
 
+def canonical_seen_url(url: str) -> str:
+    """One comparison form: lowercase, no www, no trailing slash.
+
+    Cache keys and originalUrl often differ only by those. Agents should
+    see each article once.
+    """
+    if not url or not isinstance(url, str):
+        return ""
+    try:
+        normalized = normalize_url(url.strip()).lower()
+    except Exception:
+        normalized = url.strip().lower().rstrip("/")
+    return normalized.replace("://www.", "://", 1)
+
+
 def non_canonical_reason(url: str) -> Optional[str]:
     """
     Return a short reason if URL is not a cacheable article source, else None.

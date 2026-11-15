@@ -10,7 +10,7 @@ Features:
 - Caps on keyPoints/timeline (prevents unbounded growth)
 - Deterministic (same inputs → same output)
 - Idempotent (can re-run safely)
-- Validates before and after merge
+- Validates after merge unless --skip-validate (finalize_update.py validates once)
 
 Usage:
     python3 scripts/merge_findings.py research/findings/2026-07-08.json
@@ -576,7 +576,12 @@ def apply_caps_retrospectively(main_data: dict) -> dict:
     return main_data
 
 
-def merge_findings(findings_path: Path, data_path: Path, apply_caps: bool = False) -> dict:
+def merge_findings(
+    findings_path: Path,
+    data_path: Path,
+    apply_caps: bool = False,
+    skip_validate: bool = False,
+) -> dict:
     """
     Main merge function
 
@@ -621,21 +626,24 @@ def merge_findings(findings_path: Path, data_path: Path, apply_caps: bool = Fals
     print(f"\n[6/7] Saving merged data...")
     save_json(main_data, data_path)
 
-    # Validate
-    print(f"\n[7/7] Validating merged data...")
-    result = subprocess.run(
-        ['python3', str(ROOT / 'scripts' / 'validate_data.py')],
-        capture_output=True,
-        text=True,
-        cwd=str(ROOT),
-    )
-
-    if result.returncode == 0:
-        print("✓ Validation passed")
+    # Validate unless the caller (finalize_update.py) will do it once.
+    if skip_validate:
+        print("\n[7/7] Skipping validation (finalize runs it once)")
     else:
-        print("✗ Validation failed:")
-        print(result.stdout)
-        sys.exit(1)
+        print(f"\n[7/7] Validating merged data...")
+        result = subprocess.run(
+            ['python3', str(ROOT / 'scripts' / 'validate_data.py')],
+            capture_output=True,
+            text=True,
+            cwd=str(ROOT),
+        )
+
+        if result.returncode == 0:
+            print("✓ Validation passed")
+        else:
+            print("✗ Validation failed:")
+            print(result.stdout)
+            sys.exit(1)
 
     print("\n" + "=" * 70)
     print("✓ MERGE COMPLETE")
@@ -647,21 +655,28 @@ def merge_findings(findings_path: Path, data_path: Path, apply_caps: bool = Fals
 def main():
     """CLI entry point"""
     if len(sys.argv) < 2:
-        print("Usage: python3 scripts/merge_findings.py research/findings/YYYY-MM-DD.json [--apply-caps]")
+        print("Usage: python3 scripts/merge_findings.py research/findings/YYYY-MM-DD.json [--apply-caps] [--skip-validate]")
         print("\nOptions:")
-        print("  --apply-caps    Apply caps to existing data (one-time cleanup)")
+        print("  --apply-caps      Apply caps to existing data (one-time cleanup)")
+        print("  --skip-validate   Skip validate_data.py (finalize_update.py runs it)")
         sys.exit(1)
 
     findings_path = Path(sys.argv[1])
     if not findings_path.is_absolute():
         findings_path = ROOT / findings_path
     apply_caps = '--apply-caps' in sys.argv
+    skip_validate = '--skip-validate' in sys.argv
 
     if not findings_path.exists():
         print(f"Error: {findings_path} not found")
         sys.exit(1)
 
-    merge_findings(findings_path, TRACKING_DATA, apply_caps=apply_caps)
+    merge_findings(
+        findings_path,
+        TRACKING_DATA,
+        apply_caps=apply_caps,
+        skip_validate=skip_validate,
+    )
 
 
 if __name__ == '__main__':

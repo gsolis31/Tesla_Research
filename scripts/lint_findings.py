@@ -38,7 +38,7 @@ from paths import (  # noqa: E402
     research_config_path,
 )
 from spawn_researcher import CATEGORIES, CATEGORY_DISPLAY_NAMES, all_seen_urls  # noqa: E402
-from url_cache import load_cache, non_canonical_reason, normalize_url  # noqa: E402
+from url_cache import canonical_seen_url, load_cache, non_canonical_reason  # noqa: E402
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DATE_RANGE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})\s+to\s+(\d{4}-\d{2}-\d{2})")
@@ -380,6 +380,28 @@ def lint_raw_file(
         add("error", "MISSING_SEARCH_LOG", "raw findings missing searchLog")
     elif not queries:
         add("error", "NO_QUERIES", "searchLog.queries is empty — cannot tell if research ran")
+    else:
+        if len(queries) > MAX_SEARCH_QUERIES:
+            add(
+                "warning",
+                "QUERY_CAP",
+                f"{len(queries)} searches (cap {MAX_SEARCH_QUERIES}) — use web_search, then stop",
+            )
+        bad_tools = sorted({
+            (q.get("tool") or "").strip()
+            for q in queries
+            if isinstance(q, dict)
+            and (q.get("tool") or "").strip()
+            and (q.get("tool") or "").strip() not in _ALLOWED_QUERY_TOOLS
+        })
+        if bad_tools:
+            add(
+                "warning",
+                "SEARCH_TOOL",
+                "queries used "
+                + ", ".join(bad_tools)
+                + " — discovery is web_search only",
+            )
 
     if result.filed == 0 and not result.skip_reason:
         add("error", "EMPTY_NO_SKIP_REASON",
@@ -543,13 +565,11 @@ def _missing_result(category_key: str) -> FileLintResult:
 
 
 def coverage_norm_url(url: str) -> str:
-    if not url or not isinstance(url, str):
-        return ""
-    try:
-        n = normalize_url(url.strip()).lower()
-    except Exception:
-        n = url.strip().lower().rstrip("/")
-    return n.replace("://www.", "://", 1)
+    return canonical_seen_url(url)
+
+
+MAX_SEARCH_QUERIES = 6
+_ALLOWED_QUERY_TOOLS = {"web_search", "web_fetch"}
 
 
 def title_tokens(text: str) -> set[str]:

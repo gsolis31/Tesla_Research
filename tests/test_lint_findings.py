@@ -100,6 +100,23 @@ class TestSearchLogContract:
         assert "MISSING_SEARCH_LOG" in _codes(result, "error")
         assert result.status == "lint_error"
 
+    def test_too_many_or_scraped_queries_are_warnings(self):
+        data = {
+            "categoryKey": "terafab",
+            "keyChanges": [],
+            "metadata": {"skipReason": "Nothing new in window"},
+            "searchLog": {
+                "queries": [
+                    {"q": f"q{i}", "tool": "duckduckgo"} for i in range(7)
+                ]
+            },
+        }
+        result = lint_raw_file(data, category_key="terafab", path="inline")
+        assert result.errors == []
+        assert "QUERY_CAP" in _codes(result, "warning")
+        assert "SEARCH_TOOL" in _codes(result, "warning")
+        assert result.status == "empty"
+
 
 class TestWeakClaims:
     def test_electrek_only_low(self):

@@ -24,7 +24,7 @@ from paths import (  # noqa: E402
     logs_dir,
     research_config_path,
 )
-from url_cache import load_cache  # noqa: E402
+from url_cache import canonical_seen_url, load_cache  # noqa: E402
 
 # Canonical display names used in keyChanges.category (for hot-context matching)
 CATEGORY_DISPLAY_NAMES = {
@@ -284,20 +284,20 @@ def _add_url(url, ordered: list, seen: set) -> None:
 
 
 def all_seen_urls(cache_urls=None):
-    """Flat URL list (normalized key + originalUrl) so agents skip the 64KB cache file."""
+    """One canonical URL per cached article, for agent dedup lists."""
     if cache_urls is None:
         cache_urls = load_cache().get("urls", {})
     ordered = []
     seen = set()
     for key, meta in cache_urls.items():
-        _add_url(key, ordered, seen)
+        _add_url(canonical_seen_url(key), ordered, seen)
         if isinstance(meta, dict):
-            _add_url(meta.get("originalUrl"), ordered, seen)
+            _add_url(canonical_seen_url(meta.get("originalUrl") or ""), ordered, seen)
     return ordered
 
 
 def urls_for_category(category_key, cache_urls=None, extra_urls=None):
-    """URLs already filed under this category, plus any extra (e.g. last week's sources)."""
+    """Canonical URLs already filed under this category, plus any extra."""
     if cache_urls is None:
         cache_urls = load_cache().get("urls", {})
     aliases = _category_label_aliases(category_key)
@@ -307,12 +307,35 @@ def urls_for_category(category_key, cache_urls=None, extra_urls=None):
         cat = meta.get("category") if isinstance(meta, dict) else None
         if not cat or _normalize_label(cat) not in aliases:
             continue
-        _add_url(key, ordered, seen)
+        _add_url(canonical_seen_url(key), ordered, seen)
         if isinstance(meta, dict):
-            _add_url(meta.get("originalUrl"), ordered, seen)
+            _add_url(canonical_seen_url(meta.get("originalUrl") or ""), ordered, seen)
     for url in extra_urls or []:
-        _add_url(url, ordered, seen)
+        _add_url(canonical_seen_url(url), ordered, seen)
     return ordered
+
+
+def archive_raw_findings(archive_date, raw_dir=None):
+    """Move leftover findings-*.json out of research/raw so a new run starts empty.
+
+    The batch wait counts those files. Last week's output would look like
+    this week's if it stayed in place.
+    """
+    raw_dir = raw_dir or RAW_DIR
+    files = sorted(raw_dir.glob("findings-*.json"))
+    if not files:
+        return []
+    dest = raw_dir / f"archive-{archive_date}"
+    dest.mkdir(parents=True, exist_ok=True)
+    moved = []
+    for src in files:
+        target = dest / src.name
+        if target.exists():
+            stamp = datetime.now().strftime("%H%M%S")
+            target = dest / f"{src.stem}-{stamp}{src.suffix}"
+        src.rename(target)
+        moved.append(str(target.name))
+    return moved
 
 
 def load_hot_context(category_key, data=None, cache_urls=None):
@@ -488,6 +511,13 @@ def main():
         print(f"Research period: {date_from} → {date_to}")
         print(f"Week of: {week_of}\n")
 
+        archived = archive_raw_findings(date_from or "previous")
+        if archived:
+            print(f"Archived {len(archived)} previous raw findings → research/raw/archive-{date_from}/")
+        else:
+            print("No previous raw findings to archive")
+        print()
+
         for category_key in CATEGORIES.keys():
             config = create_config(
                 category_key, date_from, date_to, week_of,
@@ -498,16 +528,15 @@ def main():
                 json.dump(config, f, indent=2)
 
             priority = config["priority"]
-            model = "sonnet" if priority in ["critical", "high"] else "haiku"
             seen_n = len(config["hotContext"].get("seenUrls", []))
             print(
-                f"✓ {category_key:20} priority={priority:8} model={model:6} "
+                f"✓ {category_key:20} priority={priority:8} "
                 f"{config_path.stat().st_size:5}B seenUrls={seen_n:2} "
                 f"→ {config_path.relative_to(config_path.parents[1])}"
             )
 
         scout_path = write_scout_config(date_from, date_to, week_of, data=data)
-        print(f"✓ {'coverage-scout':20} {'(recall)':8} model=sonnet "
+        print(f"✓ {'coverage-scout':20} {'(recall)':8} "
               f"{scout_path.stat().st_size:5}B "
               f"→ {scout_path.relative_to(scout_path.parents[1])}")
 
@@ -515,10 +544,10 @@ def main():
         print(f"   Researchers write to research/raw/findings-{{category}}.json")
         print(f"   Scout writes to research/logs/{date_to}/coverage.json")
         print(f"\nNext steps:")
-        print(f"1. Spawn researchers in 3 batches; spawn coverage scout with batch 3")
+        print(f"1. Spawn all 9 researchers and the coverage scout together")
         print(f"2. Wait for 9 raw files + coverage.json")
         print(f"3. python3 scripts/lint_findings.py --raw --date {date_to} --write-logs")
-        print(f"4. Run tesla-curator to merge findings")
+        print(f"4. python3 scripts/spawn_curator.py {date_to}  # assembles the draft, then spawn tesla-curator")
 
     else:
         category_key = sys.argv[1]

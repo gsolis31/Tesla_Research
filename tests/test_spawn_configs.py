@@ -1,8 +1,11 @@
 """Tests for slim research/curator config hot context."""
 
+from pathlib import Path
+
 from spawn_researcher import (
     SLIM_KEY_CHANGE_FIELDS,
     all_seen_urls,
+    archive_raw_findings,
     load_hot_context,
     slim_key_change,
     slim_metric_point,
@@ -52,10 +55,10 @@ def test_slim_metric_point_truncates_note():
     assert "breakdown" not in point
 
 
-def test_urls_for_category_filters_and_adds_original():
+def test_urls_for_category_keeps_one_form_per_article():
     cache = {
         "https://example.com/cybercab-a": {
-            "originalUrl": "https://example.com/cybercab-a/",
+            "originalUrl": "https://www.example.com/cybercab-a/",
             "category": "Cybercab Production",
         },
         "https://example.com/fsd-a": {
@@ -67,9 +70,9 @@ def test_urls_for_category_filters_and_adds_original():
             "category": "unknown",
         },
     }
-    urls = urls_for_category("cybercab", cache_urls=cache, extra_urls=["https://extra.example/last-week"])
-    assert "https://example.com/cybercab-a" in urls
-    assert "https://example.com/cybercab-a/" in urls
+    urls = urls_for_category("cybercab", cache_urls=cache, extra_urls=["https://extra.example/last-week/"])
+    assert urls.count("https://example.com/cybercab-a") == 1
+    assert "https://www.example.com/cybercab-a/" not in urls
     assert "https://extra.example/last-week" in urls
     assert "https://example.com/fsd-a" not in urls
     assert "https://example.com/unknown" not in urls
@@ -86,15 +89,40 @@ def test_terafab_alias_matches_old_cache_label():
     assert "https://example.com/terafab-old" in urls
 
 
-def test_all_seen_urls_is_flat_list():
+def test_all_seen_urls_is_one_canonical_form():
     cache = {
-        "https://example.com/a": {"originalUrl": "https://example.com/a/", "category": "Research"},
+        "https://example.com/a": {"originalUrl": "https://www.example.com/a/", "category": "Research"},
         "https://example.com/b": {"originalUrl": "https://example.com/b", "category": "Cybercab Production"},
     }
     urls = all_seen_urls(cache)
-    assert "https://example.com/a" in urls
-    assert "https://example.com/a/" in urls
-    assert "https://example.com/b" in urls
+    assert urls == ["https://example.com/a", "https://example.com/b"]
+
+
+def test_archive_raw_findings_moves_files_and_does_not_clobber(tmp_path):
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    (raw / "findings-cybercab.json").write_text("{}")
+    (raw / "notes.txt").write_text("keep")
+    dest = raw / "archive-2026-11-14"
+    dest.mkdir()
+    (dest / "findings-cybercab.json").write_text("old")
+
+    moved = archive_raw_findings("2026-11-14", raw_dir=raw)
+
+    assert not (raw / "findings-cybercab.json").exists()
+    assert (raw / "notes.txt").read_text() == "keep"
+    assert (dest / "findings-cybercab.json").read_text() == "old"
+    assert len(moved) == 1
+    assert moved[0].startswith("findings-cybercab-")
+    assert moved[0].endswith(".json")
+    assert (dest / moved[0]).read_text() == "{}"
+
+
+def test_archive_raw_findings_empty_dir_does_nothing(tmp_path):
+    raw = tmp_path / "empty"
+    raw.mkdir()
+    assert archive_raw_findings("2026-11-14", raw_dir=raw) == []
+    assert not (raw / "archive-2026-11-14").exists()
 
 
 def test_load_hot_context_is_slim_and_does_not_mix_fsd_with_fsdv15():

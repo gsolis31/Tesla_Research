@@ -55,7 +55,10 @@ def main() -> None:
             "--write-logs",
         ],
     )
-    run("merge findings", ["python3", "scripts/merge_findings.py", findings_file])
+    run(
+        "merge findings",
+        ["python3", "scripts/merge_findings.py", findings_file, "--skip-validate"],
+    )
     run("update url cache", ["python3", "scripts/update_url_cache.py", findings_file])
     run("archive old data", ["python3", "scripts/archive_old_data.py"])
     run("python validate", ["python3", "scripts/validate_data.py"])
