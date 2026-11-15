@@ -1,0 +1,174 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-11-14",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 November 2026",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla FSD v15 OR \"FSD Supervised\" OR \"2026.38\" OR \"2026.40\" after:2026-11-06",
+        "tool": "web_search",
+        "hits": 22
+      },
+      {
+        "q": "\"FSD v15\" OR \"v14.3.13\" OR \"2026.39.100\" OR \"billion miles\" Tesla after:2026-11-06",
+        "tool": "web_search",
+        "hits": 11
+      },
+      {
+        "q": "site:teslarati.com FSD OR v14 OR v15 after:2026-11-06",
+        "tool": "web_search",
+        "hits": 24
+      },
+      {
+        "q": "site:teslanorth.com FSD OR \"Full Self-Driving\" after:2026-11-06",
+        "tool": "web_search",
+        "hits": 20
+      },
+      {
+        "q": "Tesla Wins Patent for Finding Rare Driving Moments site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.39.100/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.13/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-update-14-2-2-7",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-update-2026-38-5-13",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.4.5/release-notes",
+        "kept": false,
+        "reason": "no FSD version, 0 TeslaFi cars"
+      },
+      {
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.100/release-notes",
+        "kept": false,
+        "reason": "no FSD version, 0 TeslaFi cars"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/14/tesla-fsd-times-square-billboard-ad/",
+        "kept": false,
+        "reason": "ad creative; 15+ billion is below the Nov 2 miles print"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4988/exclusive-musk-cut-basic-autopilot-from-new-vehicles-to-boost-fsd-subscriptions",
+        "kept": false,
+        "reason": "subscription packaging recap, not an OTA or v15 ship"
+      },
+      {
+        "url": "https://www.tesla.com/fsd/safety",
+        "kept": false,
+        "reason": "blocked; no new miles figure"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Europe 2026.39.100 is still v14.2.2.7 and quietly caps speed offset",
+        "url": "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+        "decision": "file",
+        "reason": "new customer OTA in window; version and behavior change, not a country approval"
+      },
+      {
+        "title": "2026.38.5.13 still ships supervised v14.3.13 and HW3 Lite",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.13/release-notes",
+        "decision": "file",
+        "reason": "new Nov 13 build; FSD version unchanged from 2026.38.5.12"
+      },
+      {
+        "title": "Tesla FSD Approved in Finland, Rolling Out Soon",
+        "url": "https://www.notateslaapp.com/news/4986/tesla-fsd-approved-in-finland-rolling-out-soon",
+        "decision": "skip",
+        "reason": "country approval belongs to fsd"
+      },
+      {
+        "title": "Exclusive: Musk Cut Basic Autopilot From New Vehicles to Boost FSD Subscriptions",
+        "url": "https://www.notateslaapp.com/news/4988/exclusive-musk-cut-basic-autopilot-from-new-vehicles-to-boost-fsd-subscriptions",
+        "decision": "skip",
+        "reason": "January product-packaging recap and Q3 subscriber figure, not a software release"
+      },
+      {
+        "title": "Tesla Takes FSD to Times Square With New Billboard Ad",
+        "url": "https://teslanorth.com/2026/11/14/tesla-fsd-times-square-billboard-ad/",
+        "decision": "skip",
+        "reason": "marketing; 15+ billion miles is a stale floor under the Nov 2 17.003 billion print"
+      },
+      {
+        "title": "Cybercab Unsupervised FSD: 5 Details That Matter",
+        "url": "https://www.basenor.com/blogs/news/cybercab-unsupervised-fsd-5-details-that-matter",
+        "decision": "skip",
+        "reason": "Cybercab geofence and personal-sale ops belong to cybercab; December unsupervised claim is unverified social posts"
+      },
+      {
+        "title": "Tesla puts steering-less Cybercab on sale for $29,990",
+        "url": "https://www.teslaoracle.com/2026/11/14/tesla-puts-steering-less-cybercab-on-sale-for-29990-before-the-end-of-2026-as-musk-promised/",
+        "decision": "skip",
+        "reason": "Cybercab sale; Oracle's 'FSD v15 and later' line is a tag gloss, not a customer OTA"
+      },
+      {
+        "title": "FSD V14.3.13 Wave 3 Rolling Out in 2026.38.5.12",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.5.12/release-notes",
+        "decision": "skip",
+        "reason": "same build already filed Nov 4; seenUrl"
+      },
+      {
+        "title": "2026.38.4.5 and 2026.38.100 release-note stubs",
+        "url": "https://www.notateslaapp.com/software-updates/version/2026.38.4.5/release-notes",
+        "decision": "skip",
+        "reason": "no FSD version string and zero TeslaFi cars"
+      },
+      {
+        "title": "Tesla Launches FSD Referral Program in Canada and Mexico",
+        "decision": "skip",
+        "reason": "referral marketing seen in TeslaNorth/Google News headlines; not a version, miles print, or architecture change"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdSupervisedMiles",
+        "count": 15,
+        "decision": "reject",
+        "reason": "Times Square ad says 15+ billion. That floor is older than the Nov 2 safety-page print of 17.003 billion already filed. Not a new miles point."
+      },
+      {
+        "series": "fsdSupervisedMiles",
+        "count": 17.003,
+        "decision": "reject",
+        "reason": "No newer safety-page total this window. tesla.com/fsd/safety was blocked. Do not refile the Nov 2 figure."
+      },
+      {
+        "series": "fsdTeslaFiFleetShare",
+        "count": 2.3,
+        "decision": "reject",
+        "reason": "TeslaFi share of build 2026.38.5.13, not an official install count or a config metric."
+      }
+    ]
+  }
+}

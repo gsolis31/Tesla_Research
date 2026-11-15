@@ -1,0 +1,231 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-11-14",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus when:7d",
+        "tool": "google-news-rss",
+        "hits": 35
+      },
+      {
+        "q": "Optimus Fremont OR Giga Texas when:7d",
+        "tool": "google-news-rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla humanoid robot when:7d",
+        "tool": "google-news-rss",
+        "hits": 28
+      },
+      {
+        "q": "site:teslarati.com Optimus when:14d",
+        "tool": "google-news-rss",
+        "hits": 14
+      },
+      {
+        "q": "site:teslanorth.com Optimus when:14d",
+        "tool": "google-news-rss",
+        "hits": 8
+      },
+      {
+        "q": "site:notateslaapp.com Optimus when:14d",
+        "tool": "google-news-rss",
+        "hits": 56
+      },
+      {
+        "q": "site:humanoidsdaily.com Optimus when:14d",
+        "tool": "google-news-rss",
+        "hits": 11
+      },
+      {
+        "q": "site:electrek.co Optimus when:14d",
+        "tool": "google-news-rss",
+        "hits": 6
+      },
+      {
+        "q": "Musk Optimus rent OR production OR factory when:7d",
+        "tool": "google-news-rss",
+        "hits": 24
+      },
+      {
+        "q": "Optimus snack OR teleoperated OR vision-based when:14d",
+        "tool": "google-news-rss",
+        "hits": 3
+      },
+      {
+        "q": "Optimus Austin conference OR demo when:14d",
+        "tool": "google-news-rss",
+        "hits": 1
+      },
+      {
+        "q": "Optimus Tegtmeyer OR 60% when:14d",
+        "tool": "google-news-rss",
+        "hits": 3
+      },
+      {
+        "q": "Web Summit Agibot Optimus OR Tesla humanoid",
+        "tool": "google-news-rss",
+        "hits": 7
+      },
+      {
+        "q": "J.P. Morgan humanoid Tesla 10000 OR 30000 OR 300000",
+        "tool": "google-news-rss",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.reuters.com/business/us-humanoid-robot-production-could-hit-400000-by-2030-deployment-ramps-jp-morgan-2026-11-12/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-us-humanoid-robot-production-could-hit-400000-by-2030-jp-morgan/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/jp-morgan-us-humanoid-production-400000-2030-forecast",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://spectrum.ieee.org/robotics-experts-tesla-bot-optimus",
+        "kept": false,
+        "reason": "2022 analysis, April 2024 update, resurfaced"
+      },
+      {
+        "url": "https://www.neoteo.com/en/tegtmeyer-said-teslas-texas-optimus-structure-was-nearing-60-assembly",
+        "kept": false,
+        "reason": "Nov 2 drone post, outside window"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-optimus-5-details-that-matter-right-now",
+        "kept": false,
+        "reason": "misread fan posts, not a Tesla demo"
+      },
+      {
+        "url": "https://interestingengineering.com/ai-robotics/what-could-teslas-optimus-humanoid-robot-actually-do-in-2027",
+        "kept": false,
+        "reason": "unsourced recap"
+      },
+      {
+        "url": "https://www.tikr.com/blog/musk-it-takes-20-to-30-million-robots-to-match-americas-output-thats-optimus-market",
+        "kept": false,
+        "reason": "Nov 6 Baron quote, outside window"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4990/tesla-shop-launches-cybertruck-rc-car-new-optimus-figure",
+        "kept": false,
+        "reason": "merchandise, not a robot"
+      },
+      {
+        "url": "https://www.humanoidsdaily.com/news/gxo-apptronik-apollo-1000-humanoids-letter-of-intent",
+        "kept": false,
+        "reason": "does not mention Optimus"
+      },
+      {
+        "url": "https://www.forbes.com/sites/robertszczerba/2026/11/10/tesla-may-rent-optimus-your-next-coworker-could-be-a-subscription/",
+        "kept": false,
+        "reason": "recap of Nov 6 rent comment"
+      },
+      {
+        "url": "https://www.aol.co.uk/news/portugal-humanoid-robots-centre-stage-120000000.html",
+        "kept": false,
+        "reason": "Web Summit dance, no Tesla"
+      }
+    ],
+    "considered": [
+      {
+        "title": "J.P. Morgan humanoid forecast names Tesla and still gives Optimus no volume",
+        "url": "https://www.reuters.com/business/us-humanoid-robot-production-could-hit-400000-by-2030-deployment-ramps-jp-morgan-2026-11-12/",
+        "decision": "file",
+        "reason": "Nov 12 Reuters note contrasts Tesla with other U.S. makers and restates unsolved bottlenecks"
+      },
+      {
+        "title": "Musk Says Tesla Will Probably Rent Optimus. What Renters Should Know",
+        "url": "https://www.forbes.com/sites/robertszczerba/2026/11/10/tesla-may-rent-optimus-your-next-coworker-could-be-a-subscription/",
+        "decision": "skip",
+        "reason": "same Nov 6 rent-not-sell comment already filed; no new price"
+      },
+      {
+        "title": "What Robotics Experts Think of Tesla\u2019s Optimus Robot",
+        "url": "https://spectrum.ieee.org/robotics-experts-tesla-bot-optimus",
+        "decision": "skip",
+        "reason": "original story 4 Oct 2022, update 6 Apr 2024; Google News resurfaced it"
+      },
+      {
+        "title": "Tesla Optimus factory construction: frame nears 60%",
+        "url": "https://www.neoteo.com/en/tegtmeyer-said-teslas-texas-optimus-structure-was-nearing-60-assembly",
+        "decision": "skip",
+        "reason": "Joe Tegtmeyer post is 2 Nov 2026, before the window; NeoTeo is a later rewrite"
+      },
+      {
+        "title": "Tesla Optimus: 5 Details That Matter Right Now",
+        "url": "https://www.basenor.com/blogs/news/tesla-optimus-5-details-that-matter-right-now",
+        "decision": "skip",
+        "reason": "cited posts are a Whole Mars link and a Sawyer Merritt reaction to Musk on Jensen Huang, not a vision-control demo"
+      },
+      {
+        "title": "Inside Tesla\u2019s 2027 plan to put its humanoid robot Optimus to work",
+        "url": "https://interestingengineering.com/ai-robotics/what-could-teslas-optimus-humanoid-robot-actually-do-in-2027",
+        "decision": "skip",
+        "reason": "single unsourced Austin snack claim; rest recycles January and October comments"
+      },
+      {
+        "title": "Musk: It Takes 20 to 30 Million Robots to Match America\u2019s Output",
+        "url": "https://www.tikr.com/blog/musk-it-takes-20-to-30-million-robots-to-match-americas-output-thats-optimus-market",
+        "decision": "skip",
+        "reason": "quote is from the Nov 6 Baron conference, outside this window"
+      },
+      {
+        "title": "Tesla Shop Launches Cybertruck RC Car, New Optimus Figure",
+        "url": "https://www.notateslaapp.com/news/4990/tesla-shop-launches-cybertruck-rc-car-new-optimus-figure",
+        "decision": "skip",
+        "reason": "Gen 2.5 action figure and RC truck, not hardware or production"
+      },
+      {
+        "title": "GXO letter of intent for up to 1,000 Apollo humanoids",
+        "url": "https://www.humanoidsdaily.com/news/gxo-apptronik-apollo-1000-humanoids-letter-of-intent",
+        "decision": "skip",
+        "reason": "competitor logistics LOI; article does not contrast Optimus"
+      },
+      {
+        "title": "Robot trash talk at Web Summit as Agibot disses Tesla",
+        "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/10/robot-trash-talk-at-web-summit-as-agibot-disses-tesla-figure-unitree/",
+        "decision": "skip",
+        "reason": "Forbes body blocked; Euronews account of the summit does not mention Tesla"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 400000,
+        "decision": "reject",
+        "reason": "J.P. Morgan U.S. industry forecast for 2030, not a Tesla build or delivery count; annual vs cumulative is unclear"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 10000000,
+        "decision": "reject",
+        "reason": "Tegtmeyer\u2019s Nov 2 design-capacity claim for Gen 4 at Giga Texas, not an official output figure, and outside the window"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 60,
+        "decision": "reject",
+        "reason": "NeoTeo\u2019s ~60% structure figure restates a Nov 2 drone update, not robots built"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 1000,
+        "decision": "reject",
+        "reason": "GXO\u2013Apptronik conditional Apollo letter of intent, not an Optimus fleet"
+      }
+    ]
+  }
+}

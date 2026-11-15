@@ -1,0 +1,350 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-11-14",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab OR Robotaxi November 2026",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab orders November 2026 site:teslarati.com",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Robotaxi November 2026 site:teslanorth.com",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab site:teslaoracle.com November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Robotaxi Dallas Cybercab November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Cybercab production line November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Robotaxi new city November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "robotaxi tracker Texas DMV Cybercab November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Cybercab November 14 2026",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Robotaxi San Antonio Cybercab 2026",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab production idle November 2026",
+        "tool": "duckduckgo",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Robotaxi Las Vegas Phoenix Jacksonville November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      },
+      {
+        "q": "site:teslarati.com Cybercab November 2026",
+        "tool": "duckduckgo",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-29990-december-deliveries/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/13/tesla-cybercab-autonomy-subscription-terms/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/13/tesla-cybercab-personal-purchase-invitations/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/",
+        "kept": false,
+        "reason": "Tier-2 corroboration of the sale terms; not used as sole source"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/tesla-robotaxi-san-antonio-launch/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/09/tesla-robotaxi-san-antonio-launch-geofence/",
+        "kept": false,
+        "reason": "Tier-2 geofence criticism; launch itself is in TeslaNorth and TechCrunch"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/tesla-robotaxi-5am-start-21-hours/",
+        "kept": false,
+        "reason": "Superseded within the window by the 24/7 announcement"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/government",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/vehicles",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "Invite-only Cybercab orders open at $29,990, but the car will not run without a $299 subscription",
+        "url": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+        "decision": "file",
+        "reason": "New Nov. 13-14 personal-sale opening; terms show the car is not an ordinary product and does not expand the paid fleet"
+      },
+      {
+        "title": "San Antonio Robotaxi announced Nov. 9 with no fleet size and no Cybercab",
+        "url": "https://teslanorth.com/2026/11/09/tesla-robotaxi-san-antonio-launch/",
+        "decision": "file",
+        "reason": "New Texas city in the date window; Tesla gave no fleet or Cybercab commitment"
+      },
+      {
+        "title": "Robotaxi hours go 24/7 in current cities, without new cars or new markets",
+        "url": "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city/",
+        "decision": "file",
+        "reason": "Official hours expansion this week; does not add capacity"
+      },
+      {
+        "title": "Austin Robotaxi polygon grows again; square miles are a tracker estimate",
+        "url": "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442/",
+        "decision": "file",
+        "reason": "Tesla confirmed a larger Austin area on Nov. 9; square miles are the tracker's, not a fleet count"
+      },
+      {
+        "title": "Tesla Robotaxi app shows 5 a.m. starts",
+        "url": "https://teslanorth.com/2026/11/09/tesla-robotaxi-5am-start-21-hours/",
+        "decision": "skip",
+        "reason": "Intermediate hours step on Nov. 8-9, superseded by the Nov. 11-12 24/7 post"
+      },
+      {
+        "title": "Tesla Cybercab gets a for sale date at last",
+        "url": "https://www.teslarati.com/tesla-cybercab-gets-sale-date-at-last/",
+        "decision": "skip",
+        "reason": "seenUrl; this week's story is orders actually opening, not the earlier date tease"
+      },
+      {
+        "title": "Fort Worth Robotaxi opens Nov 2 on Model Y",
+        "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/",
+        "decision": "skip",
+        "reason": "seenUrl and already in recentKeyChanges; only the new sighting floor is filed"
+      },
+      {
+        "title": "NHTSA Question 8 Cybercab compliance answers stay fully withheld",
+        "url": "https://teslanorth.com/2026/11/03/tesla-cybercab-nhtsa-question-8-secret/",
+        "decision": "skip",
+        "reason": "seenUrl; still true, used only as context on the sale"
+      },
+      {
+        "title": "Robotaxi app compares Cybercab and Model Y",
+        "url": "https://www.teslarati.com/tesla-robotaxi-app-cybercab-vs-model-y/",
+        "decision": "skip",
+        "reason": "seenUrl / already in recentKeyChanges"
+      },
+      {
+        "title": "Cybercab cameras outside the Austin geofence",
+        "url": "https://teslanorth.com/2026/11/02/cybercab-austin-outside-geofence/",
+        "decision": "skip",
+        "reason": "seenUrl; the new fact is Tesla confirming the larger area on Nov. 9"
+      },
+      {
+        "title": "Tesla Cybercab arrives in Korea for a four-day display",
+        "url": "https://teslanorth.com/2026/11/11/tesla-cybercab-korea-anseong-display/",
+        "decision": "skip",
+        "reason": "Static overseas display, not production, fleet, or ride service"
+      },
+      {
+        "title": "Cybertruck production wind-down for later Cybercab capacity",
+        "url": "https://teslanorth.com/2026/11/06/tesla-cybertruck-wind-down-cybercab-2027/",
+        "decision": "skip",
+        "reason": "Nov. 6 is before the window and already in criticalNews; no new Cybercab output figure"
+      },
+      {
+        "title": "No new Dallas Cybercab launch",
+        "url": "https://robotaxitracker.com/vehicles",
+        "decision": "skip",
+        "reason": "Dallas 30-day sightings are 56 Model Y and zero Cybercab; the November Cybercab comment is still unmet"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiRegistered",
+        "count": 1306,
+        "decision": "file",
+        "reason": "Texas authorization roster changed from 1,244 to 1,306 on the Nov. 14 tracker snapshot: 733 Model Y + 573 Cybercab. Cybercab flat."
+      },
+      {
+        "series": "cityFleet",
+        "count": 186,
+        "decision": "file",
+        "reason": "Austin 30-day distinct sighting floor, 159 Cybercab + 27 Model Y, versus stored 405 as of 2026-10-16"
+      },
+      {
+        "series": "cityFleet",
+        "count": 56,
+        "decision": "file",
+        "reason": "Dallas 30-day Model Y sighting floor versus stored 70 as of 2026-10-16"
+      },
+      {
+        "series": "cityFleet",
+        "count": 41,
+        "decision": "file",
+        "reason": "Houston had no stored activeVehicles; 30-day Model Y floor is 41"
+      },
+      {
+        "series": "cityFleet",
+        "count": 35,
+        "decision": "file",
+        "reason": "Fort Worth had no stored count; 30-day Model Y floor is 35"
+      },
+      {
+        "series": "cityFleet",
+        "count": 11,
+        "decision": "file",
+        "reason": "San Antonio had no stored count; 30-day Model Y floor is 11 after the Nov. 9 announcement"
+      },
+      {
+        "series": "cityFleet",
+        "count": 16,
+        "decision": "file",
+        "reason": "Tampa had no stored activeVehicles; 30-day Model Y floor is 16"
+      },
+      {
+        "series": "cityFleet",
+        "count": 6,
+        "decision": "reject",
+        "reason": "Bay Area 30-day sightings are 6 because the community log stalled (one November sighting). That is a coverage failure, not evidence the safety-monitor fleet fell from 721. Do not overwrite the stored figure."
+      },
+      {
+        "series": "cityFleet",
+        "count": 771,
+        "decision": "reject",
+        "reason": "Bay Area all-time rider log, not a 30-day sighting floor and not a company in-service figure"
+      },
+      {
+        "series": "cityFleet",
+        "count": 509,
+        "decision": "reject",
+        "reason": "Austin all-time rider log, not the 30-day floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 745,
+        "decision": "reject",
+        "reason": "Austin count derived from Tesla's robotaxi VIN lookup (547 Cybercab + 198 Model Y). Region assignment, not a stated in-service total and not the 30-day floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 226,
+        "decision": "reject",
+        "reason": "Dallas Tesla VIN-lookup region assignment, not a 30-day sighting floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 178,
+        "decision": "reject",
+        "reason": "Houston Tesla VIN-lookup region assignment, not a 30-day sighting floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 109,
+        "decision": "reject",
+        "reason": "San Antonio Tesla VIN-lookup region assignment, not a stated fleet and not the 11-car 30-day floor"
+      },
+      {
+        "series": "cityFleet",
+        "count": 453,
+        "decision": "reject",
+        "reason": "Electrek Nov. 9 citation of 453 unsupervised Austin vehicles. Not reproduced as the 30-day distinct floor (186)"
+      },
+      {
+        "series": "cityFleet",
+        "count": 3,
+        "decision": "reject",
+        "reason": "Orlando 30-day floor is only 3 vehicles, too thin to treat as a fleet census"
+      },
+      {
+        "series": "cityFleet",
+        "count": 0,
+        "decision": "reject",
+        "reason": "Miami has no community sighting inside the 30-day window; last logs are September. Not a new fleet print"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 1306,
+        "decision": "reject",
+        "reason": "Statewide authorization roster, not a network in-service total. Filed as robotaxiRegistered"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 354,
+        "decision": "reject",
+        "reason": "Sum of city 30-day floors. Not a Tesla network in-service total"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 666,
+        "decision": "reject",
+        "reason": "Electrek's national Tesla figure versus Waymo. Not reproduced from the tracker vehicle directory"
+      }
+    ]
+  }
+}

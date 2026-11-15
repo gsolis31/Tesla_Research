@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-14",
+  "errorCount": 0,
+  "warningCount": 1,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Texas registry lists 1,302 Tesla Robotaxis, including 573 Cybercabs, just ahead of Waymo",
+          "category": "cybercab",
+          "title": "Texas registry lists 1,302 Tesla Robotaxis, including 573 Cybercabs, just ahead of Waymo",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 5,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

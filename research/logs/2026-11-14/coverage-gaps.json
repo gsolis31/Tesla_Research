@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-14",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 13,
+  "ignored": 0,
+  "gapCount": 2,
+  "gaps": [
+    {
+      "title": "Texas registry lists 1,302 Tesla Robotaxis, including 573 Cybercabs, just ahead of Waymo",
+      "url": "https://www.teslarati.com/tesla-overtakes-waymo-texas-robotaxi-fleet-performs-shock-flip/",
+      "date": "2026-11-11",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Nov. 10 TxDMV count is 729 Model Ys plus 573 Cybercabs versus Waymo's 1,297, and registrations are not active riders",
+      "match": "gap"
+    },
+    {
+      "title": "Bloomberg says a Tesla-SpaceX merger could be announced in December",
+      "url": "https://www.teslarati.com/tesla-spacex-merger-timeline/",
+      "date": "2026-11-12",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Boards are on terms and governance; China operations versus SpaceX defense work is the open hurdle, and Terafab is cited as shared work",
+      "match": "gap"
+    }
+  ]
+}

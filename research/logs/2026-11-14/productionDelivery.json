@@ -1,0 +1,368 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-11-14",
+  "filed": 5,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla deliveries OR registrations November 2026",
+        "tool": "duckduckgo_html",
+        "hits": 0
+      },
+      {
+        "q": "Tesla China October 2026 retail sales 8817",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Q4 2026 delivery estimate November",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla UK SMMT October 2026 registrations",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla France registrations October 2026",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Semi Chicago 50 November 2026",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Argentina launch November 2026",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Sweden Norway Netherlands Spain Italy registrations October 2026",
+        "tool": "duckduckgo_api",
+        "hits": 0
+      },
+      {
+        "q": "ir.tesla.com/press November 2026 production deliveries",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "teslanorth.com homepage and recent pages Nov 7-14 2026",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "teslarati.com recent Tesla production delivery Cybertruck Model Y Semi",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "cnevpost.com Tesla October 2026 retail exports share",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "notateslaapp.com Model Y AWD range Cybertruck November 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/11/10/china-nev-share-oct-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://cnevpost.com/2026/11/10/automakers-shares-china-nev-exports-oct-2026/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-premium-awd-orders-cyberbeast-price-increase/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-extends-cybertruck-production-slightly-handle-order-log/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-trims-model-y-offerings-all-wheel-drive-gets-axe/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/5002/tesla-stops-taking-orders-for-entry-level-model-y-awd",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/5017/tesla-model-y-rwd-gets-increased-range-at-same-price",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://ir.tesla.com/press",
+        "kept": false,
+        "reason": "Akamai access denied; no new IR release retrieved"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-china-retail-sales-october-2026/",
+        "kept": false,
+        "reason": "404 guessed URL"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "kept": false,
+        "reason": "Underlying drone report is November 2, before the window, and Tesla has not confirmed a rate"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4989/tesla-to-still-build-the-model-2-giga-berlin-may-build-a-new-vehicle",
+        "kept": false,
+        "reason": "No product decision; 7,500/week restates a seen ramp target; cell line is battery4680"
+      },
+      {
+        "url": "https://electrek.co/2026/11/13/tesla-kills-41990-model-y-awd-configurator/",
+        "kept": false,
+        "reason": "Electrek corroboration only"
+      },
+      {
+        "url": "https://electrek.co/2026/11/13/tesla-only-sells-cybertruck-cyberbeast-109990/",
+        "kept": false,
+        "reason": "Electrek corroboration only"
+      },
+      {
+        "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/",
+        "kept": false,
+        "reason": "Electrek corroboration only; its $92,490 cheapest-trim line was stale after the November 13 Cyberbeast-only configurator"
+      },
+      {
+        "url": "https://electrek.co/2026/11/10/tesla-china-sales-crash-october-2026-lowest-four-years/",
+        "kept": false,
+        "reason": "Electrek corroboration only"
+      }
+    ],
+    "considered": [
+      {
+        "title": "China October retail falls to 8,817, lowest since July 2022",
+        "url": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/",
+        "decision": "file",
+        "reason": "New CPCA retail/export split inside the window; wholesale 67,829 was already filed November 3"
+      },
+      {
+        "title": "Tesla drops out of China's October NEV top 10",
+        "url": "https://cnevpost.com/2026/11/10/china-nev-share-oct-2026/",
+        "decision": "skip",
+        "reason": "Same CPCA October print as the retail story; folded into that keyChange"
+      },
+      {
+        "title": "Tesla China NEV export share rises to 10.1%",
+        "url": "https://cnevpost.com/2026/11/10/automakers-shares-china-nev-exports-oct-2026/",
+        "decision": "skip",
+        "reason": "Same October export total of 59,012; folded into the retail keyChange"
+      },
+      {
+        "title": "Cybertruck deposits face refunds as cheaper trims close",
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end/",
+        "decision": "file",
+        "reason": "New versus the November 6 wind-down: refunds plus configurator cuts the same day"
+      },
+      {
+        "title": "Tesla closes Cybertruck Premium AWD and raises Cyberbeast to $109,990",
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-premium-awd-orders-cyberbeast-price-increase/",
+        "decision": "skip",
+        "reason": "Same-day order-book change; combined with the refund story"
+      },
+      {
+        "title": "Cybertruck extra shift before June/July 2027 dismantling",
+        "url": "https://teslanorth.com/2026/11/07/tesla-cybertruck-backlog-extra-shift/",
+        "decision": "skip",
+        "reason": "Context for the November 9 refund post; the later refund and summer extension are the developments"
+      },
+      {
+        "title": "Cybertruck production extended through end of summer 2027",
+        "url": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/",
+        "decision": "file",
+        "reason": "New end date and Musk's sentimentality comment; wind-down itself was already filed November 6"
+      },
+      {
+        "title": "Tesla extends Cybertruck production as Musk concedes sentimentality",
+        "url": "https://www.teslarati.com/tesla-extends-cybertruck-production-slightly-handle-order-log/",
+        "decision": "skip",
+        "reason": "Same Musk posts as the Tesla North extension story"
+      },
+      {
+        "title": "$41,990 Model Y AWD removed; Premium and Model Y L slip into 2027",
+        "url": "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027/",
+        "decision": "file",
+        "reason": "New U.S. configurator change and later delivery windows inside the window"
+      },
+      {
+        "title": "Tesla trims Model Y offerings as AWD gets the axe",
+        "url": "https://www.teslarati.com/tesla-trims-model-y-offerings-all-wheel-drive-gets-axe/",
+        "decision": "skip",
+        "reason": "Same configurator change as the Tesla North Model Y story"
+      },
+      {
+        "title": "Model Y RWD EPA range rises from 321 to 348 miles at $39,990",
+        "url": "https://www.notateslaapp.com/news/5017/tesla-model-y-rwd-gets-increased-range-at-same-price",
+        "decision": "skip",
+        "reason": "Unexplained sticker change on the remaining cheap trim; folded into the Model Y keyChange"
+      },
+      {
+        "title": "Chicago's first 50 Semis en route",
+        "url": "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery/",
+        "decision": "file",
+        "reason": "Volume-adjacent Semi shipment inside the window; filed as neutral because delivery is unconfirmed"
+      },
+      {
+        "title": "Tesla Cybercab goes on sale for $29,990",
+        "url": "https://www.teslarati.com/tesla-cybercab-29990-december-deliveries/",
+        "decision": "skip",
+        "reason": "Cybercab unit sales belong to cybercab"
+      },
+      {
+        "title": "Cybercab ownership fine print and $299 subscription",
+        "url": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+        "decision": "skip",
+        "reason": "Cybercab ownership terms belong to cybercab"
+      },
+      {
+        "title": "Giga Berlin full battery cell production mid-2027",
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027/",
+        "decision": "skip",
+        "reason": "4680 cell manufacturing belongs to battery4680"
+      },
+      {
+        "title": "Giga Berlin may build a new vehicle; 7,500 Model Y weekly ramp",
+        "url": "https://www.notateslaapp.com/news/4989/tesla-to-still-build-the-model-2-giga-berlin-may-build-a-new-vehicle",
+        "decision": "skip",
+        "reason": "No product decision; 7,500/week restates a ramp already in seenUrls"
+      },
+      {
+        "title": "Giga Texas reportedly moves to 24/7 production",
+        "url": "https://www.teslarati.com/tesla-giga-texas-reportedly-moves-24-7-production/",
+        "decision": "skip",
+        "reason": "Drone observation dated November 2, before the window; Tesla has not confirmed a production rate"
+      },
+      {
+        "title": "Canada proposes a higher ZEV luxury-tax threshold",
+        "url": "https://teslanorth.com/2026/11/13/canada-ev-luxury-tax-threshold-150000/",
+        "decision": "skip",
+        "reason": "Budget proposal still needs parliamentary approval and is not a Tesla volume event"
+      },
+      {
+        "title": "Tesla Canada ends new-car referral rewards",
+        "url": "https://teslanorth.com/2026/11/13/tesla-canada-new-car-referral-rewards-end/",
+        "decision": "skip",
+        "reason": "Referral marketing change; remaining FSD referral terms belong to the FSD categories"
+      },
+      {
+        "title": "Tesla marks 200,000 owners in Australia",
+        "url": "https://teslanorth.com/2026/11/11/tesla-200000-owners-australia/",
+        "decision": "skip",
+        "reason": "Cumulative multi-year PR milestone, not a period sales rate"
+      },
+      {
+        "title": "Unplugged Performance offers to take the Cybertruck line",
+        "url": "https://teslanorth.com/2026/11/10/unplugged-performance-cybertruck-line-cybersuv-proposal/",
+        "decision": "skip",
+        "reason": "Third-party offer with no Tesla agreement"
+      },
+      {
+        "title": "China NEV retail down 7% in the first 8 days of November",
+        "url": "https://cnevpost.com/2026/11/11/china-nev-retail-first-8-days-nov-2026/",
+        "decision": "skip",
+        "reason": "Industry total with no Tesla split"
+      },
+      {
+        "title": "Tesla Argentina launch November 20",
+        "url": "https://teslanorth.com/2026/11/06/tesla-argentina-november-20-launch/",
+        "decision": "skip",
+        "reason": "Already filed November 6; no new price or order development in this window"
+      },
+      {
+        "title": "Shanghai October wholesale 67,829",
+        "url": "https://cnevpost.com/2026/11/03/tesla-china-oct-2026-wholesale/",
+        "decision": "skip",
+        "reason": "seenUrl; the new fact this week is the retail and export split"
+      },
+      {
+        "title": "UK, France, and other Europe October registration prints",
+        "url": "https://teslanorth.com/2026/11/03/tesla-norway-top-brand-21523-2026/",
+        "decision": "skip",
+        "reason": "Norway and Germany October prints are already filed; fresh UK, France, Sweden, Spain, Italy, and Netherlands searches returned no in-window articles"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 8817,
+        "decision": "reject",
+        "reason": "CPCA China monthly retail, not an official quarterly production or delivery total"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 67829,
+        "decision": "reject",
+        "reason": "Already-filed October Shanghai wholesale; monthly CPCA figure, not a new quarterly print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 59012,
+        "decision": "reject",
+        "reason": "CPCA October export count, not IR quarterly production or deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 50,
+        "decision": "reject",
+        "reason": "Semi batch described as en route to an unnamed customer, not a delivery total or production rate"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 200000,
+        "decision": "reject",
+        "reason": "Australia cumulative owner milestone, not a period production or delivery figure"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 7500,
+        "decision": "reject",
+        "reason": "Restated Giga Berlin weekly Model Y ramp target, already covered, and not a quarterly official number"
+      }
+    ]
+  }
+}

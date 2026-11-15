@@ -1,0 +1,154 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-11-14",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab November 2026",
+        "tool": "web_search",
+        "hits": 30
+      },
+      {
+        "q": "Terafab Grimes County",
+        "tool": "web_search",
+        "hits": 9
+      },
+      {
+        "q": "Terafab JETI Hinojosa",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "Terafab Japanese equipment suppliers",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Terafab land holdings 10000 acres KBTX",
+        "tool": "web_search",
+        "hits": 2
+      },
+      {
+        "q": "site:teslanorth.com Terafab",
+        "tool": "web_search",
+        "hits": 17
+      },
+      {
+        "q": "site:kbtx.com Terafab",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "HB 732 data center JETI Terafab",
+        "tool": "web_search",
+        "hits": 7
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/10/terafab-japanese-suppliers-memory-chips/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://asia.nikkei.com/business/tech/semiconductors/musk-s-terafab-chipmaking-project-lines-up-japan-suppliers",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://biz.chosun.com/en/en-it/2026/11/09/ZTY3NWR34VCTLLJR54TVLC34UM/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://en.sedaily.com/international/2026/11/09/musks-terafab-accelerates-with-orders-to-japanese-chip",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.kbtx.com/2026/11/13/marijuana-guns-data-centers-what-texas-lawmakers-are-proposing/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00732I.htm",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB732",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslarati.com/nvidias-board-meets-on-jensen-huang-and-elon-musk-already-has-an-answer/",
+        "kept": false,
+        "reason": "Musk reply does not assign Huang to Terafab"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Grimes Terafab land tops 10,000 acres as SpaceX widens records fight",
+        "url": "https://www.kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx/",
+        "decision": "file",
+        "reason": "New acreage count versus the August 7,700-acre review, plus a Nov. 9 amendment covering KBTX's records request"
+      },
+      {
+        "title": "Terafab's Japan tool push is supplier talks on an outlandish clock, not orders",
+        "url": "https://teslanorth.com/2026/11/10/terafab-japanese-suppliers-memory-chips/",
+        "decision": "file",
+        "reason": "New this window; Nikkei origin plus tier-1 write-up. Not an AI5 tape-out or a confirmed purchase order"
+      },
+      {
+        "title": "House data-center bill leaves Terafab's existing JETI deal in place",
+        "url": "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00732I.htm",
+        "decision": "file",
+        "reason": "HB 732 filed Nov. 9 and directly amends JETI eligibility; text grandfathers the existing deal"
+      },
+      {
+        "title": "Baron floats a $1 trillion Terafab bill; Musk will not fund it now",
+        "url": "https://teslanorth.com/2026/11/07/elon-musks-full-ron-baron-interview-2026-tesla-spacex-starship-ai-and-more/",
+        "decision": "skip",
+        "reason": "seenUrl and already in recentKeyChanges"
+      },
+      {
+        "title": "Texas Gov.-Elect Hinojosa Targets AI Data Center Moratorium",
+        "url": "https://teslanorth.com/2026/11/06/hinojosa-texas-data-center-moratorium/",
+        "decision": "skip",
+        "reason": "Published Nov. 6, before the window; Hinojosa's attack on the break is already filed"
+      },
+      {
+        "title": "Elon Musk spent at least $225M in Texas. The governor-elect who sued for Abbott emails won anyway",
+        "url": "https://fortune.com/2026/11/05/elon-musk-texas-democrats-hinojosa-terafab/",
+        "decision": "skip",
+        "reason": "seenUrl and already in recentKeyChanges"
+      },
+      {
+        "title": "Nvidia's board meets on Jensen Huang, and Elon Musk already has an answer",
+        "url": "https://www.teslarati.com/nvidias-board-meets-on-jensen-huang-and-elon-musk-already-has-an-answer/",
+        "decision": "skip",
+        "reason": "One-line reply that it would be an honor; Teslarati does not tie him to Terafab construction or JETI"
+      },
+      {
+        "title": "What to know before selling your land to Terafab or other major developers",
+        "decision": "skip",
+        "reason": "August 2026 KBTX land-sale explainer resurfaced in search, outside the window"
+      },
+      {
+        "title": "Citizens group sues Grimes County for public records tied to SpaceX Terafab",
+        "url": "https://www.kbtx.com/2026/10/29/citizens-group-sues-grimes-county-terafab-records-fights-spacex-bid-keep-some-private/",
+        "decision": "skip",
+        "reason": "seenUrl; the new fact this week is the Nov. 9 amendment, filed with the acreage story"
+      }
+    ],
+    "metricCandidates": []
+  }
+}

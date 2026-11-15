@@ -1,0 +1,184 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-11-14",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD OR \"Full Self-Driving\" OR \"Tesla Assisted Driving\" when:7d",
+        "tool": "google_news_rss",
+        "hits": 63
+      },
+      {
+        "q": "Finland Tesla assisted driving 2026",
+        "tool": "bing_news_rss",
+        "hits": 10
+      },
+      {
+        "q": "Tesla FSD South Korea approval delay",
+        "tool": "bing_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "NHTSA Tesla Full Self-Driving November 2026",
+        "tool": "bing_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Tesla FSD China OR UK OR Germany OR EU vote November 2026",
+        "tool": "bing_news_rss",
+        "hits": 0
+      },
+      {
+        "q": "Jukka Juhola Tesla Traficom",
+        "tool": "bing_news_rss",
+        "hits": 9
+      },
+      {
+        "q": "Finland approves Tesla Assisted Driving Traficom Reuters",
+        "tool": "bing_news_rss",
+        "hits": 11
+      },
+      {
+        "q": "Tesla Korea FSD incomplete documents MOLIT November 2026",
+        "tool": "bing_news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Tesla threatens legal action Chinese media FSD",
+        "tool": "bing_news_rss",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "kept": false,
+        "reason": "Nov 3 RDW speed-cap and rename already in recentKeyChanges"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-fsd-finland-approval-europe-11/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/11/finland-approves-fsd-supervised-automaker-renames-it-to-tesla-assisted-driving-in-europe/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/finland-approves-tesla-assisted-driving/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/11/12/finland-approves-tesla039s-assisted-driving-system",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-korea-fsd-exemption-filing-incomplete/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://carnewschina.com/2026/11/11/chinese-media-ceo-defies-teslas-legal-threat-over-unauthorized-fsd-testing-see-you-in-court/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/opp-417-self-driving-careless-driving/",
+        "kept": false,
+        "reason": "Driver misuse charges, not a Tesla regulatory probe"
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-nhtsa-fmvss-108-lighting-committee/",
+        "kept": false,
+        "reason": "Headlight rulemaking, not FSD approval"
+      },
+      {
+        "url": "https://www.traficom.fi/en/news",
+        "kept": false,
+        "reason": "English news index had no Tesla item; decision reported via AFP"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Finland Clears Supervised Assisted Driving; EU-Wide Approval Is Next Year",
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/11/12/finland-approves-tesla039s-assisted-driving-system",
+        "decision": "file",
+        "reason": "New Traficom recognition on 11 November, still supervised and not EU-wide"
+      },
+      {
+        "title": "Korea Says Tesla's China-Built FSD Exemption File Is Still Incomplete",
+        "url": "https://driveteslacanada.ca/news/tesla-korea-fsd-exemption-filing-incomplete/",
+        "decision": "file",
+        "reason": "Distinct from last week's KFTC marketing complaint; exemption still incomplete"
+      },
+      {
+        "title": "Tesla Threatens a Chinese Outlet Over Grey-Market FSD That Is Still Unapproved",
+        "url": "https://carnewschina.com/2026/11/11/chinese-media-ceo-defies-teslas-legal-threat-over-unauthorized-fsd-testing-see-you-in-court/",
+        "decision": "file",
+        "reason": "Confirms China V14 is still unapproved; legal threat is not a certification"
+      },
+      {
+        "title": "Tesla Full Self-Driving gets hit with some adjustments in Europe",
+        "url": "https://www.teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe/",
+        "decision": "skip",
+        "reason": "Recap of the 3 November RDW notice already in recentKeyChanges and seenUrls"
+      },
+      {
+        "title": "OPP charges two Tesla drivers for sleeping and watching videos while using FSD",
+        "url": "https://driveteslacanada.ca/news/opp-417-self-driving-careless-driving/",
+        "decision": "skip",
+        "reason": "Local driver charges for misuse of a supervised system, not an NHTSA, NTSB or country decision"
+      },
+      {
+        "title": "Tesla backs NHTSA plan to modernize headlight rules",
+        "url": "https://driveteslacanada.ca/news/tesla-nhtsa-fmvss-108-lighting-committee/",
+        "decision": "skip",
+        "reason": "FMVSS 108 lighting committee, not an FSD approval or safety probe"
+      },
+      {
+        "title": "FSD software rollouts, referrals, Times Square ad, and HW3 Korea test drive",
+        "url": "https://teslanorth.com/2026/11/14/tesla-fsd-times-square-billboard-ad/",
+        "decision": "skip",
+        "reason": "OTA, marketing and miles belong to fsdv15, not country approvals"
+      },
+      {
+        "title": "Cybercab personal sale and NHTSA Cybercab secrecy",
+        "url": "https://www.teslarati.com/tesla-cybercab-29990-december-deliveries/",
+        "decision": "skip",
+        "reason": "Robotaxi product and fleet terms belong to cybercab"
+      },
+      {
+        "title": "South Korea police crackdown on FSD jailbreaks",
+        "url": "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
+        "decision": "skip",
+        "reason": "October booking already in seenUrls; this week's copies are recaps"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 11,
+        "decision": "reject",
+        "reason": "Running EU recognition tally, not the active-country series. latestMetric is still 6 active, latest Denmark on 2026-06-09. Finland may be offered immediately, but Tesla said rollout begins soon and no customer activation date is confirmed. Merge does not append a count into the fsdApprovals country list."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 6,
+        "decision": "reject",
+        "reason": "Active-country total did not change. Do not re-file Denmark and totalCountries 6."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 53477,
+        "decision": "reject",
+        "reason": "End-September count of Korean Teslas eligible to use FSD (22.4% of 238,968). Not an fsdApprovals country total and not a new ministry certification."
+      }
+    ]
+  }
+}

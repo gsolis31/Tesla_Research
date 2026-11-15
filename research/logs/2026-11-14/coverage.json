@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-14",
+  "weekOf": "2026-11-09",
+  "dateFrom": "2026-11-07",
+  "dateTo": "2026-11-14",
+  "candidates": [
+    {
+      "title": "Invite-only Cybercab orders open at $29,990 for December Austin delivery",
+      "url": "https://www.teslarati.com/tesla-cybercab-29990-december-deliveries/",
+      "date": "2026-11-13",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "First personal Cybercab sales, still invite-only, with a mandatory $299 autonomy subscription and a $1,000 deposit"
+    },
+    {
+      "title": "Cybercab will not drive without a paid subscription and is barred from commercial use",
+      "url": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+      "date": "2026-11-14",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Contract locks the car to Robotaxi geofences, bans ride-hail without Tesla's OK, and Musk already calls the $299 fee too high versus about $115"
+    },
+    {
+      "title": "Unsupervised Robotaxi opens in San Antonio on Model Y, Cybercab stays Austin-only",
+      "url": "https://www.teslarati.com/tesla-robotaxi-enters-newest-city-san-antonio/",
+      "date": "2026-11-09",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Eighth unsupervised city and a roughly 275-square-mile day-one zone, Tesla's fifth Texas market after Fort Worth"
+    },
+    {
+      "title": "Austin Robotaxi service area jumps about 62% to roughly 442 square miles",
+      "url": "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442/",
+      "date": "2026-11-09",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Tesla confirmed a larger paid Austin map the same day earlier out-of-geofence Cybercab sightings had been only cameras"
+    },
+    {
+      "title": "Robotaxi hours go 24/7 in every city Tesla already serves",
+      "url": "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city/",
+      "date": "2026-11-11",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Closes the overnight gap ahead of the year-end target, without adding cities or highway access"
+    },
+    {
+      "title": "Texas registry lists 1,302 Tesla Robotaxis, including 573 Cybercabs, just ahead of Waymo",
+      "url": "https://www.teslarati.com/tesla-overtakes-waymo-texas-robotaxi-fleet-performs-shock-flip/",
+      "date": "2026-11-11",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Nov. 10 TxDMV count is 729 Model Ys plus 573 Cybercabs versus Waymo's 1,297, and registrations are not active riders"
+    },
+    {
+      "title": "Finland becomes the 11th EU country to approve supervised FSD",
+      "url": "https://teslanorth.com/2026/11/11/tesla-fsd-finland-approval-europe-11/",
+      "date": "2026-11-11",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Tesla Europe says rollout begins soon, with no date or version, and it is still assisted driving rather than EU-wide approval"
+    },
+    {
+      "title": "2026.39.100 ships Europe's 10% speed cap under the Tesla Assisted Driving name",
+      "url": "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+      "date": "2026-11-12",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "FSD v14.2.2.6 actually installs the RDW cap and resets offset to zero, while notes claim it is only a rename, ahead of December's EU vote"
+    },
+    {
+      "title": "Giga Berlin targets mid-2027 for full 4680 cell production",
+      "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027/",
+      "date": "2026-11-12",
+      "likelyCategory": "battery4680",
+      "whyItMightMatter": "Plant director says electrodes still ship to Texas for cells; he also put Model Y output at 7,500 a week"
+    },
+    {
+      "title": "U.S. order page drops the $41,990 Model Y AWD and stretches Premium deliveries into 2027",
+      "url": "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027/",
+      "date": "2026-11-12",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Cheapest AWD path is gone; Premium shows January-March 2027 and Model Y L shows February-April 2027 in a Seattle check"
+    },
+    {
+      "title": "Musk extends Cybertruck production through the end of summer 2027",
+      "url": "https://www.teslarati.com/tesla-extends-cybertruck-production-slightly-handle-order-log/",
+      "date": "2026-11-11",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Pushes the wind-down past the earlier mid-2027 line so more backlog can be built, while only Cyberbeast remains orderable"
+    },
+    {
+      "title": "Musk says many Cybertruck deposits will be refunded because orders outrun the line",
+      "url": "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end/",
+      "date": "2026-11-09",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Order rate still exceeds production, so a lot of buyers will not get a truck before the line is torn down for Cybercab"
+    },
+    {
+      "title": "U.S. Cybertruck orders collapse to a $109,990 Cyberbeast",
+      "url": "https://teslanorth.com/2026/11/09/cybertruck-premium-awd-orders-cyberbeast-price-increase/",
+      "date": "2026-11-09",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Premium AWD and dual-motor orders are disabled and Cyberbeast is up $7,500 from $102,490 earlier the same day"
+    },
+    {
+      "title": "Tesla says Chicago's first 50 Semis are en route",
+      "url": "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery/",
+      "date": "2026-11-11",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "A numbered customer shipment, not a confirmed handoff, a day after six Megacharger stalls were announced in Hodgkins"
+    },
+    {
+      "title": "Bloomberg says a Tesla-SpaceX merger could be announced in December",
+      "url": "https://www.teslarati.com/tesla-spacex-merger-timeline/",
+      "date": "2026-11-12",
+      "likelyCategory": "unknown",
+      "whyItMightMatter": "Boards are on terms and governance; China operations versus SpaceX defense work is the open hurdle, and Terafab is cited as shared work"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Teslarati Tesla news November 7-14 2026",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "TeslaNorth Tesla news November 7-14 2026",
+        "tool": "web_search",
+        "hits": 20
+      },
+      {
+        "q": "Tesla Oracle Cybercab FSD Robotaxi November 2026",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Not a Tesla App FSD Robotaxi software November 7-14 2026",
+        "tool": "web_search",
+        "hits": 14
+      },
+      {
+        "q": "Tesla November 7-14 2026 robotaxi FSD Optimus AI5 4680 Terafab deliveries",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla NHTSA NTSB Cybercab FSD Optimus November 2026",
+        "tool": "web_search",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/page/2/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/page/2/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/page/3/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/",
+        "kept": false
+      },
+      {
+        "url": "https://electrek.co/2026/11/14/",
+        "kept": false
+      },
+      {
+        "url": "https://ir.tesla.com/",
+        "kept": false
+      },
+      {
+        "url": "https://www.nhtsa.gov/press-releases",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-29990-december-deliveries/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-robotaxi-enters-newest-city-san-antonio/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-overtakes-waymo-texas-robotaxi-fleet-performs-shock-flip/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-fsd-finland-approval-europe-11/",
+        "kept": true
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-extends-cybertruck-production-slightly-handle-order-log/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/cybertruck-premium-awd-orders-cyberbeast-price-increase/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-spacex-merger-timeline/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-begins-10b-project-solar-panel-manufacturing-project/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/10/tesla-fsd-v14-2-lite-hw3-korea-test/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/09/tesla-semi-laredo-service-center-opening/",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/5014/musk-cybercab-sales-are-going-nationwide-299-subscription-too-high",
+        "kept": false
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4988/exclusive-musk-cut-basic-autopilot-from-new-vehicles-to-boost-fsd-subscriptions",
+        "kept": false
+      }
+    ]
+  }
+}

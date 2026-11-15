@@ -1,0 +1,238 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-11-14",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring November 2026",
+        "tool": "web_search",
+        "hits": 27
+      },
+      {
+        "q": "Tesla FSD job posting November 2026",
+        "tool": "web_search",
+        "hits": 30
+      },
+      {
+        "q": "Tesla AI engineer careers robotaxi hiring November 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla data collection Optimus job",
+        "tool": "web_search",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Optimus OR vehicle operator OR robotaxi hiring after 2026-11-06",
+        "tool": "web_search",
+        "hits": 31
+      },
+      {
+        "q": "Tesla Optimus is hiring OR job opening 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla \"SI Vehicle Operator\"",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla \"Market Lead, Robotaxi\"",
+        "tool": "web_search",
+        "hits": 0
+      },
+      {
+        "q": "Tesla SI Vehicle Operator Self-Driving site:linkedin.com/jobs f_C=15564 past month",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Market Lead Robotaxi Business Operations site:linkedin.com/jobs f_C=15564",
+        "tool": "web_search",
+        "hits": 4
+      },
+      {
+        "q": "Tesla Optimus actuator OR fleet coordinator OR data collection site:linkedin.com/jobs f_C=15564",
+        "tool": "web_search",
+        "hits": 12
+      },
+      {
+        "q": "Tesla Robotaxi fleet support night shift site:linkedin.com/jobs f_C=15564 Nov 2026",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": false,
+        "reason": "seenUrl; live 3943 still conflicts with October 7445 and filed 8185"
+      },
+      {
+        "url": "https://optimusk.blog/blog/optimusk-november-2026-update/",
+        "kept": false,
+        "reason": "blog's own editorial hiring, not Tesla"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4490559085",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4488750467",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4488812513",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4488797963",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-safety-operator-at-tesla-4490544546",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/reinforcement-learning-engineer-self-driving-tesla-si-at-tesla-4490553296",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/si-engineer-foundation-models-tesla-si-at-tesla-4488809599",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4490073023",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4489676472",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/robotaxi-operations-advisor-at-tesla-4490539810",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/fleet-coordinator-optimus-at-tesla-4491025301",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/robotics-technical-program-manager-motors-optimus-at-tesla-4489183596",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/robotics-mechanical-engineer-actuator-integration-optimus-at-tesla-4489665898",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/robotics-modeling-simulation-design-engineer-optimus-at-tesla-4489186401",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/data-collection-operator-optimus-at-tesla-4487089424",
+        "kept": false,
+        "reason": "posted 2026-11-04, before window; same pattern as Littleton lead already filed"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/lead-forward-deployed-engineer-robotics-fleet-software-at-tesla-4490542647",
+        "kept": false,
+        "reason": "factory AMR commissioning, not robotaxi or Optimus humanoid hiring"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-si-what-the-super-intelligence-rebrand-actually-means",
+        "kept": false,
+        "reason": "October 2026 rebrand recap, outside window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla SI vehicle-operator reqs are still hourly FSD safety drivers",
+        "url": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4490559085",
+        "decision": "file",
+        "reason": "Seven new US cities 8\u201313 Nov; JD is hourly supervised prototype driving"
+      },
+      {
+        "title": "Palo Alto Tesla SI research seats are single reqs and still use human data",
+        "url": "https://www.linkedin.com/jobs/view/reinforcement-learning-engineer-self-driving-tesla-si-at-tesla-4490553296",
+        "decision": "file",
+        "reason": "Real RL and foundation-model reqs, but single seats tied to fleet data collection"
+      },
+      {
+        "title": "New robotaxi reqs are city managers and night-shift staff, not autonomy engineers",
+        "url": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4490073023",
+        "decision": "file",
+        "reason": "New city copies of an existing market-lead role plus night-shift fleet support inside the window"
+      },
+      {
+        "title": "Optimus reqs are a few Palo Alto design seats plus people who ship the robots",
+        "url": "https://www.linkedin.com/jobs/view/fleet-coordinator-optimus-at-tesla-4491025301",
+        "decision": "file",
+        "reason": "Motors, actuator, and simulation seats are real; Fremont coordinator shows robots are still hand-shipped for data collection"
+      },
+      {
+        "title": "AltIndex job-posting counter is not a real hiring collapse",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "seenUrl and already filed 2026-11-07; live ticker moved 2393 to 3943 but October still prints 7445 and the filed point is 8185"
+      },
+      {
+        "title": "Littleton Optimus opening is another data-collection shift lead",
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+        "decision": "skip",
+        "reason": "already in recentKeyChanges; Austin, Fremont, and Palo Alto operator reqs are dated 1\u20134 Nov"
+      },
+      {
+        "title": "OPTIMUSK.BLOG November 2026 update says the blog is hiring",
+        "url": "https://optimusk.blog/blog/optimusk-november-2026-update/",
+        "decision": "skip",
+        "reason": "five open roles are the blog's staff, not Tesla AI or Optimus hiring"
+      },
+      {
+        "title": "Lead Forward Deployed Engineer, Robotics Fleet Software, Austin",
+        "url": "https://www.linkedin.com/jobs/view/lead-forward-deployed-engineer-robotics-fleet-software-at-tesla-4490542647",
+        "decision": "skip",
+        "reason": "JD is factory AMR and MES commissioning, not a robotaxi or Optimus humanoid seat"
+      },
+      {
+        "title": "Tesla SI Super Intelligence rebrand",
+        "url": "https://www.basenor.com/blogs/news/tesla-si-what-the-super-intelligence-rebrand-actually-means",
+        "decision": "skip",
+        "reason": "published 8\u201310 Oct 2026, outside the 7\u201314 Nov window"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 3943,
+        "decision": "reject",
+        "reason": "AltIndex live ticker on 14 Nov reads 3,943 with an unlabeled 5.2% badge and no timestamp. The same page's October figure is 7,445, September 7,928, and the last filed point is 8,185 on 2026-10-10. Hot context already had the live count at 2,393. FAQ says both +31.4% over three months and trending down. Not a company-wide openings print."
+      },
+      {
+        "series": "jobPostings",
+        "count": 7445,
+        "decision": "reject",
+        "reason": "October 2026 month figure on AltIndex, unchanged from the figure already cited in criticalNews. Not a new data point."
+      }
+    ]
+  }
+}

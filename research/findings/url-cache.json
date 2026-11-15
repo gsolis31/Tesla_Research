@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-14",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -2717,23 +2717,205 @@
       "lastSeen": "2026-11-07",
       "category": "Vehicle Production & Delivery",
       "title": "Tesla sets Argentina launch for November 20 with no prices or orders"
+    },
+    "https://www.koreaherald.com/article/10929626": {
+      "originalUrl": "https://www.koreaherald.com/article/10929626",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "AI Chip Production",
+      "title": "Taylor AI6 trial still ahead of Samsung, and only maybe in December"
+    },
+    "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant": {
+      "originalUrl": "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "4680 Battery Cell Production",
+      "title": "Giga Texas 4680 'largest plant' claim is a hiring post, not new GWh"
+    },
+    "https://www.automobilwoche-kongress.de/article/amwk-Tesla-Manager-Andre-Thierig-38-Stunden-Woche-rote-Linie": {
+      "originalUrl": "https://www.automobilwoche-kongress.de/article/amwk-Tesla-Manager-Andre-Thierig-38-Stunden-Woche-rote-Linie",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "4680 Battery Cell Production",
+      "title": "Berlin 4680 cells still finished in Texas; full local start aimed at mid-2027"
+    },
+    "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print": {
+      "originalUrl": "https://www.teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Cybercab Production",
+      "title": "Invite-only Cybercab orders open at $29,990, but the car will not run without a $299 subscription"
+    },
+    "https://teslanorth.com/2026/11/09/tesla-robotaxi-san-antonio-launch": {
+      "originalUrl": "https://teslanorth.com/2026/11/09/tesla-robotaxi-san-antonio-launch/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Cybercab Production",
+      "title": "San Antonio Robotaxi announced Nov. 9 with no fleet size and no Cybercab"
+    },
+    "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city": {
+      "originalUrl": "https://teslanorth.com/2026/11/11/tesla-robotaxi-24-7-every-city/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Cybercab Production",
+      "title": "Robotaxi hours go 24/7 in current cities, without new cars or new markets"
+    },
+    "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442": {
+      "originalUrl": "https://teslanorth.com/2026/11/09/tesla-austin-robotaxi-area-expansion-442/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Cybercab Production",
+      "title": "Austin Robotaxi polygon grows again; square miles are a tracker estimate"
+    },
+    "https://www.teslarati.com/tesla-overtakes-waymo-texas-robotaxi-fleet-performs-shock-flip": {
+      "originalUrl": "https://www.teslarati.com/tesla-overtakes-waymo-texas-robotaxi-fleet-performs-shock-flip/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Cybercab Production",
+      "title": "Texas registry lead over Waymo is five Model Ys; Cybercab still 573"
+    },
+    "https://www.thestar.com.my/tech/tech-news/2026/11/12/finland-approves-tesla039s-assisted-driving-system": {
+      "originalUrl": "https://www.thestar.com.my/tech/tech-news/2026/11/12/finland-approves-tesla039s-assisted-driving-system",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "FSD Country Approvals",
+      "title": "Finland Clears Supervised Assisted Driving; EU-Wide Approval Is Next Year"
+    },
+    "https://driveteslacanada.ca/news/tesla-korea-fsd-exemption-filing-incomplete": {
+      "originalUrl": "https://driveteslacanada.ca/news/tesla-korea-fsd-exemption-filing-incomplete/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "FSD Country Approvals",
+      "title": "Korea Says Tesla's China-Built FSD Exemption File Is Still Incomplete"
+    },
+    "https://carnewschina.com/2026/11/11/chinese-media-ceo-defies-teslas-legal-threat-over-unauthorized-fsd-testing-see-you-in-court": {
+      "originalUrl": "https://carnewschina.com/2026/11/11/chinese-media-ceo-defies-teslas-legal-threat-over-unauthorized-fsd-testing-see-you-in-court/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "FSD Country Approvals",
+      "title": "Tesla Threatens a Chinese Outlet Over Grey-Market FSD That Is Still Unapproved"
+    },
+    "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe": {
+      "originalUrl": "https://www.notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "FSD v15 Software",
+      "title": "Europe 2026.39.100 is still v14.2.2.7 and quietly caps speed offset"
+    },
+    "https://www.notateslaapp.com/software-updates/version/2026.38.5.13/release-notes": {
+      "originalUrl": "https://www.notateslaapp.com/software-updates/version/2026.38.5.13/release-notes",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "FSD v15 Software",
+      "title": "2026.38.5.13 still ships supervised v14.3.13 and HW3 Lite"
+    },
+    "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4490559085": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/si-vehicle-operator-self-driving-at-tesla-4490559085",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Job Postings",
+      "title": "Tesla SI vehicle-operator reqs are still hourly FSD safety drivers"
+    },
+    "https://www.linkedin.com/jobs/view/reinforcement-learning-engineer-self-driving-tesla-si-at-tesla-4490553296": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/reinforcement-learning-engineer-self-driving-tesla-si-at-tesla-4490553296",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Job Postings",
+      "title": "Palo Alto Tesla SI research seats are single reqs and still use human data"
+    },
+    "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4490073023": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/market-lead-robotaxi-business-operations-at-tesla-4490073023",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Job Postings",
+      "title": "New robotaxi reqs are city managers and night-shift staff, not autonomy engineers"
+    },
+    "https://www.linkedin.com/jobs/view/fleet-coordinator-optimus-at-tesla-4491025301": {
+      "originalUrl": "https://www.linkedin.com/jobs/view/fleet-coordinator-optimus-at-tesla-4491025301",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Job Postings",
+      "title": "Optimus reqs are a few Palo Alto design seats plus people who ship the robots"
+    },
+    "https://www.reuters.com/business/us-humanoid-robot-production-could-hit-400000-by-2030-deployment-ramps-jp-morgan-2026-11-12": {
+      "originalUrl": "https://www.reuters.com/business/us-humanoid-robot-production-could-hit-400000-by-2030-deployment-ramps-jp-morgan-2026-11-12/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Optimus Production",
+      "title": "J.P. Morgan humanoid forecast names Tesla and still gives Optimus no volume"
+    },
+    "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026": {
+      "originalUrl": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Vehicle Production & Delivery",
+      "title": "China October retail falls to 8,817, lowest since July 2022"
+    },
+    "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end": {
+      "originalUrl": "https://teslanorth.com/2026/11/09/cybertruck-deposit-refunds-production-end/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Vehicle Production & Delivery",
+      "title": "Cybertruck deposits face refunds as cheaper trims close and Cyberbeast rises to $109,990"
+    },
+    "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027": {
+      "originalUrl": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Vehicle Production & Delivery",
+      "title": "Cybertruck production extended only through the end of summer 2027"
+    },
+    "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027": {
+      "originalUrl": "https://teslanorth.com/2026/11/12/tesla-model-y-awd-removed-us-delivery-2027/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Vehicle Production & Delivery",
+      "title": "$41,990 Model Y AWD pulled as Premium and Model Y L orders slip into 2027"
+    },
+    "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery": {
+      "originalUrl": "https://teslanorth.com/2026/11/11/tesla-chicago-first-50-semis-delivery/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Vehicle Production & Delivery",
+      "title": "Chicago's first 50 Semis are en route, with deliveries still unconfirmed"
+    },
+    "https://www.kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx": {
+      "originalUrl": "https://www.kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Grimes Terafab land tops 10,000 acres as SpaceX widens records fight"
+    },
+    "https://teslanorth.com/2026/11/10/terafab-japanese-suppliers-memory-chips": {
+      "originalUrl": "https://teslanorth.com/2026/11/10/terafab-japanese-suppliers-memory-chips/",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Terafab's Japan tool push is supplier talks on an outlandish clock, not orders"
+    },
+    "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00732I.htm": {
+      "originalUrl": "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00732I.htm",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "House data-center bill leaves Terafab's existing JETI deal in place"
     }
   },
   "stats": {
-    "totalUrls": 388,
+    "totalUrls": 414,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 33,
-      "Cybercab Production": 62,
-      "FSD v15 Software": 42,
-      "Vehicle Production & Delivery": 66,
+      "Optimus Production": 34,
+      "Cybercab Production": 67,
+      "FSD v15 Software": 44,
+      "Vehicle Production & Delivery": 71,
       "unknown": 52,
-      "FSD Country Approvals": 39,
-      "4680 Battery Cell Production": 10,
+      "FSD Country Approvals": 42,
+      "4680 Battery Cell Production": 12,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 19,
-      "Job Postings": 23,
-      "Terafab In-House Chip Manufacturing": 29
+      "AI Chip Production": 20,
+      "Job Postings": 27,
+      "Terafab In-House Chip Manufacturing": 32
     }
   }
 }

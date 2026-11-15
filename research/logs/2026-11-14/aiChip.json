@@ -1,0 +1,143 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-11-14",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla (AI5 OR AI6 OR Dojo OR inference chip OR SI6) when:7d",
+        "tool": "news_rss",
+        "hits": 9
+      },
+      {
+        "q": "Tesla Samsung (2nm OR Taylor OR AI6 OR AI5) when:14d",
+        "tool": "news_rss",
+        "hits": 18
+      },
+      {
+        "q": "Korea Herald Samsung Taylor trial December Tesla",
+        "tool": "news_rss",
+        "hits": 7
+      },
+      {
+        "q": "Samsung Taylor mid-to-late December OR late December chip",
+        "tool": "news_rss",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 yield OR tape-out OR samples when:10d",
+        "tool": "news_rss",
+        "hits": 0
+      },
+      {
+        "q": "Dojo 3 OR Dojo D3 OR Project Dojo Tesla when:10d",
+        "tool": "news_rss",
+        "hits": 3
+      },
+      {
+        "q": "Samsung 2nm yield Tesla when:10d",
+        "tool": "news_rss",
+        "hits": 4
+      },
+      {
+        "q": "site:tomshardware.com Tesla AI chip OR SI6 OR Dojo when:14d",
+        "tool": "news_rss",
+        "hits": 6
+      },
+      {
+        "q": "site:notateslaapp.com AI5 OR AI6 OR Dojo OR chip when:14d",
+        "tool": "news_rss",
+        "hits": 5
+      },
+      {
+        "q": "Intel Tesla chip AI6 when:14d",
+        "tool": "news_rss",
+        "hits": 2
+      },
+      {
+        "q": "TSMC Tesla AI5 OR AI6 when:14d",
+        "tool": "news_rss",
+        "hits": 2
+      },
+      {
+        "q": "teslarati.com WP API posts after 2026-11-01 search AI5/AI6/Dojo/Samsung/chip",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.koreaherald.com/article/10929626",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.sammobile.com/news/samsung-texas-plant-could-enter-trial-chip-production-by-next-month/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://startupfortune.com/samsungs-texas-fab-nears-a-trial-run-for-tesla-chips-as-the-kospi-wobbles/",
+        "kept": false,
+        "reason": "rewrite of the Korea Herald report"
+      },
+      {
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "kept": false,
+        "reason": "seenUrl; September trial claim used only as contrast"
+      },
+      {
+        "url": "https://www.teslarati.com/nvidias-board-meets-on-jensen-huang-and-elon-musk-already-has-an-answer/",
+        "kept": false,
+        "reason": "not opened in full; headline is a Jensen quip, not a chip milestone"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Samsung's Texas chip plant could begin trial runs in December",
+        "url": "https://www.koreaherald.com/article/10929626",
+        "decision": "file",
+        "reason": "Nov 8 primary report: Taylor trial still prospective, AI6 volume still 2H 2027, Samsung has not confirmed the date"
+      },
+      {
+        "title": "Samsung Texas plant could enter trial chip production by next month",
+        "url": "https://www.sammobile.com/news/samsung-texas-plant-could-enter-trial-chip-production-by-next-month/",
+        "decision": "skip",
+        "reason": "Nov 10 rewrite of the same Korea Herald report, not a second development"
+      },
+      {
+        "title": "Samsung's Texas fab nears a trial run for Tesla chips as the Kospi wobbles",
+        "url": "https://startupfortune.com/samsungs-texas-fab-nears-a-trial-run-for-tesla-chips-as-the-kospi-wobbles/",
+        "decision": "skip",
+        "reason": "secondary rewrite; explicitly says Samsung has not confirmed a trial date"
+      },
+      {
+        "title": "Tesla unveils AI accelerator roadmap, SI6 at 80x, Dojo 3 to HBM",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+        "decision": "skip",
+        "reason": "seenUrl from Nov 6; Nov 7 BigGo and Mezha items are recaps, not a new tape-out"
+      },
+      {
+        "title": "Elon Musk's Terafab targets 1 million wafers a month after 2032",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-targets-1-million-wafers-a-month-after-2032-planned-700-000-monthly-memory-wafers-could-rival-samsungs-entire-estimated-dram-production-capacity",
+        "decision": "skip",
+        "reason": "Terafab capacity target; owned by terafab, not aiChip"
+      },
+      {
+        "title": "Tesla to Hire NVIDIA CEO? Musk Says It Would Be an Honor",
+        "url": "https://www.notateslaapp.com/news/4992/tesla-to-hire-nvidia-ceo-musk-says-it-would-be-an-honor",
+        "decision": "skip",
+        "reason": "hiring quip, not an AI5/AI6 tape-out, yield, or Samsung/TSMC foundry update"
+      },
+      {
+        "title": "Samsung Starts Trial Production of Tesla AI Chips in Texas",
+        "url": "https://en.sedaily.com/finance/2026/09/16/samsung-starts-trial-production-of-tesla-ai-chips-in-texas",
+        "decision": "skip",
+        "reason": "seenUrl from Sept 16; used only to show this week's sourcing walks that claim back"
+      }
+    ],
+    "metricCandidates": []
+  }
+}

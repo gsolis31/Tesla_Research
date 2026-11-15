@@ -1,0 +1,183 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-11-14",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:teslarati.com 4680",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "site:teslanorth.com 4680",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla 4680 battery November 2026 past week",
+        "tool": "brave_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla 4680 when:7d",
+        "tool": "google_news_rss",
+        "hits": 12
+      },
+      {
+        "q": "4680 Tesla (Berlin OR Gr\u00fcnheide OR yield OR dry electrode OR Panasonic OR LG) when:7d",
+        "tool": "google_news_rss",
+        "hits": 6
+      },
+      {
+        "q": "teslanorth wp posts search 4680 after 2026-11-01",
+        "tool": "wp_json",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://x.com/MichaelGuilfoy/status/2119784795924214065",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/giga-texas-is-becoming-north-americas-largest-battery-cell-plant",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-exec-giga-texas-4680-expansion-largest-cell-plant/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.automobilwoche-kongress.de/article/amwk-Tesla-Manager-Andre-Thierig-38-Stunden-Woche-rote-Linie",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tokenpost.com/news/business/54798",
+        "kept": false,
+        "reason": "same mid-2027 Berlin claim; muddles the second vehicle hall with the cell line"
+      },
+      {
+        "url": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+        "kept": false,
+        "reason": "seenUrl; October plan, not this week's speech"
+      },
+      {
+        "url": "https://teslanorth.com/2026/05/12/tesla-is-pouring-250-million-into-giga-berlin-to-ramp-up-battery-production/",
+        "kept": false,
+        "reason": "May 2026 $250 million / 18 GWh plan, restated not new"
+      },
+      {
+        "url": "https://www.notateslaapp.com/news/4965/musk-silver-cybercab-with-smaller-40-kwh-battery-is-coming",
+        "kept": false,
+        "reason": "Cybercab product spec, not cell output"
+      },
+      {
+        "url": "https://www.bgr.com/2311832/tesla-batteries-who-makes-them-where-are-they-produced/",
+        "kept": false,
+        "reason": "explainer; no new 4680 output figure"
+      },
+      {
+        "url": "https://www.basenor.com/blogs/news/tesla-lithium-plant-expansion-new-equipment-spotted-at-texas-refinery",
+        "kept": false,
+        "reason": "refinery equipment, not a cell-line or GWh update"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Giga Texas 4680 expansion will soon be North America's largest cell plant",
+        "url": "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant/",
+        "decision": "file",
+        "reason": "Nov 9 Guilfoy post is new this week; no capacity number, so reality stays neutral"
+      },
+      {
+        "title": "Tesla targets mid-2027 for full battery cell production at Giga Berlin",
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027/",
+        "decision": "file",
+        "reason": "Nov 11 Thierig speech: electrodes already ship to Texas; full cell start still mid-2027"
+      },
+      {
+        "title": "Tesla Aims to Start German 4680 Cell Output by Mid-2027",
+        "url": "https://www.tokenpost.com/news/business/54798",
+        "decision": "skip",
+        "reason": "duplicate of the Berlin speech; filed from Automobilwoche and TeslaNorth"
+      },
+      {
+        "title": "Musk: Silver Cybercab With Smaller 40 kWh Battery Is Coming",
+        "url": "https://www.notateslaapp.com/news/4965/musk-silver-cybercab-with-smaller-40-kwh-battery-is-coming",
+        "decision": "skip",
+        "reason": "Cybercab pack size and color; cell production not owned here"
+      },
+      {
+        "title": "Cybercab Pack Ready for LFP, 4680 NMC Today",
+        "url": "https://shattered.io/tesla-cybercab-lfp-ready-battery-pack-4680-nmc-2026/",
+        "decision": "skip",
+        "reason": "restates the already-seen Cybercab nickel-4680 / LFP-ready pack story"
+      },
+      {
+        "title": "Who Makes Tesla Batteries, And Where Are They Produced?",
+        "url": "https://www.bgr.com/2311832/tesla-batteries-who-makes-them-where-are-they-produced/",
+        "decision": "skip",
+        "reason": "Nov 14 explainer; repeats the 2024 100-million-cell milestone and adds no output"
+      },
+      {
+        "title": "The Tesla Model Y structural battery was nearly impossible to repair. The Cybercab fixes that",
+        "decision": "skip",
+        "reason": "pack serviceability headline only; article body not retrieved, and it is not a cell yield or GWh update"
+      },
+      {
+        "title": "Tesla Lithium Plant Expansion: New Equipment Spotted at Texas Refinery",
+        "url": "https://www.basenor.com/blogs/news/tesla-lithium-plant-expansion-new-equipment-spotted-at-texas-refinery",
+        "decision": "skip",
+        "reason": "upstream refinery equipment, not a 4680 line, yield, or GWh change"
+      },
+      {
+        "title": "Berlin 7,500 Model Ys a week and undecided second hall",
+        "url": "https://www.automobilwoche-kongress.de/article/amwk-Tesla-Manager-Andre-Thierig-38-Stunden-Woche-rote-Linie",
+        "decision": "skip",
+        "reason": "vehicle volume and second factory belong to productionDelivery; only the cell timeline was filed"
+      },
+      {
+        "title": "Battery cells made in Gr\u00fcnheide",
+        "url": "https://battery-news.de/en/2026/10/02/battery-cells-made-in-gruenheide-how-tesla-plans-to-scale-cell-manufacturing-in-europe/",
+        "decision": "skip",
+        "reason": "seenUrl from October 2; 2027 start and 18 GWh plan already known"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680",
+        "count": 40,
+        "decision": "reject",
+        "reason": "Q3 Texas installed capacity still more than 40 GWh, unchanged versus Q2 and not measured output"
+      },
+      {
+        "series": "battery4680",
+        "count": 18,
+        "decision": "reject",
+        "reason": "Berlin 18 GWh is the May 2026 planned capacity restated in October, not cells produced"
+      }
+    ]
+  }
+}
