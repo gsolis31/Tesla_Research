@@ -1,0 +1,126 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-11-21",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Terafab TeslaNorth November 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Terafab Teslarati November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "KBTX local news Terafab November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "KBTX Terafab topic latest",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Texas HB 732 90R history JETI data centers",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Eagle and Statesman business Terafab November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://kbtx.com/2026/11/17/terafab-makes-texas-ams-chip-institute-more-relevant-university-leader-says",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/texas-am-terafab-chip-training-pipeline",
+        "kept": true,
+        "reason": "same briefing; corroboration only, not a second keyChange"
+      },
+      {
+        "url": "https://kbtx.com/2026/11/17/texas-am-conference-highlights-taiwan-partnership-semiconductor-industry",
+        "kept": false,
+        "reason": "Taiwan trade conference; no Terafab mention"
+      },
+      {
+        "url": "https://theeagle.com/news/a_m/article_ea4ae554-0b0b-475a-b714-14eeeb1edb12.html",
+        "kept": false,
+        "reason": "summit story is grouped with October business items and has no in-window date"
+      },
+      {
+        "url": "https://kbtx.com/2026/09/05/regents-approve-117m-water-tower-keep-texas-ams-semiconductor-push-track",
+        "kept": false,
+        "reason": "September background on the same RELLIS water program"
+      }
+    ],
+    "considered": [
+      {
+        "title": "A&M's Terafab workforce pitch is a half-built institute, not a hiring deal",
+        "url": "https://kbtx.com/2026/11/17/terafab-makes-texas-ams-chip-institute-more-relevant-university-leader-says",
+        "decision": "file",
+        "reason": "Nov. 16 briefing is inside the window and is the only new Terafab development"
+      },
+      {
+        "title": "Texas A&M Says Terafab Is Counting on Its Chip-Training Pipeline",
+        "url": "https://teslanorth.com/2026/11/17/texas-am-terafab-chip-training-pipeline",
+        "decision": "skip",
+        "reason": "rewrite of the same KBTX briefing; not a second story"
+      },
+      {
+        "title": "Texas A&M conference highlights Taiwan partnership, semiconductor industry",
+        "url": "https://kbtx.com/2026/11/17/texas-am-conference-highlights-taiwan-partnership-semiconductor-industry",
+        "decision": "skip",
+        "reason": "no Terafab, Grimes, or JETI content"
+      },
+      {
+        "title": "Largest Texas A&M Semiconductor Summit concludes with discussion on workforce",
+        "url": "https://theeagle.com/news/a_m/article_ea4ae554-0b0b-475a-b714-14eeeb1edb12.html",
+        "decision": "skip",
+        "reason": "no publication date in the Nov. 14-21 window; index places it with October items"
+      },
+      {
+        "title": "House data-center bill leaves Terafab's existing JETI deal in place",
+        "url": "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00732I.htm",
+        "decision": "skip",
+        "reason": "HB 732 last action remains filed on 2026-11-09; already in recentKeyChanges"
+      },
+      {
+        "title": "Terafab land holdings top 10,000 acres",
+        "url": "https://kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx",
+        "decision": "skip",
+        "reason": "seenUrl; still the newest item on the KBTX Terafab topic page"
+      },
+      {
+        "title": "In apparent first, South Texas county rejects tax break for SpaceX data center",
+        "url": "https://www.statesman.com/business/article/spacex-cameron-county-data-center-tax-break-22540117.php",
+        "decision": "skip",
+        "reason": "Cameron County data-center incentive, not Grimes Terafab or its JETI deal"
+      },
+      {
+        "title": "Tesla proposes new $3.1 billion facility in Texas",
+        "url": "https://www.statesman.com/business/article/tesla-polysilicon-refinery-texas-22537960.php",
+        "decision": "skip",
+        "reason": "polysilicon for solar cells, not Terafab construction or incentives"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafab",
+        "count": 205500000,
+        "decision": "reject",
+        "reason": "Previously disclosed Texas A&M Semiconductor Institute budget, not Terafab output, tools, or a new company figure"
+      }
+    ]
+  }
+}

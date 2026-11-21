@@ -1,6 +1,604 @@
 {
-  "lastUpdated": "2026-11-14",
+  "lastUpdated": "2026-11-21",
   "weeklySummaries": [
+    {
+      "weekOf": "2026-11-16",
+      "keyChanges": [
+        {
+          "title": "Dallas Cybercab rides open in the existing zone, with no Tesla fleet count",
+          "description": "On November 19, 2026, Tesla's Robotaxi account posted that Cybercab had arrived in Dallas. Robotaxi Tracker reports public app bookings inside the existing 81.1-square-mile Dallas zone, where unsupervised Model Y robotaxis have run since April. Austin public Cybercab bookings dated to September 4, so this is the second city for the purpose-built car, not a new market. Tesla did not state how many Cybercabs are carrying riders. A first-responder vehicle lookup listed 192 Cybercabs under Dallas that day, and all 192 were from the 200 cars added to the Texas register on November 17. That is an assignment list of newly registered vehicles, not a 30-day sighting floor and not a dispatch census. Fort Worth's separate zone was not included. A rider posted a Dallas Cybercab trip the same day, which supports that at least some rides happened, but it does not size the fleet.",
+          "date": "2026-11-19",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Official Robotaxi account announced Cybercab in Dallas on November 19",
+              "Robotaxi Tracker and Teslarati report bookings in the existing Dallas Robotaxi app zone",
+              "A rider posted a Dallas Cybercab trip the same day",
+              "Second city for the purpose-built vehicle after Austin"
+            ],
+            "negative_signals": [
+              "Tesla published no in-service count",
+              "The 192 figure is a lookup of cars registered two days earlier, not cars seen giving rides",
+              "Dallas already had unsupervised Model Y robotaxis; this is not a new city",
+              "Fort Worth was left out, and customer-owned Cybercabs still cannot join the paid network without separate approval"
+            ]
+          },
+          "source": "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas",
+          "impact": "high"
+        },
+        {
+          "title": "Texas roster adds 200 Cybercabs to 1,507; that is still not riders",
+          "description": "Robotaxi Tracker's Texas DMV / TxMCCS snapshot generated 2026-11-21T18:17:45Z still shows Tesla Robotaxi LLC at 1,507 authorized vehicles: 773 Cybercab and 734 Model Y. The Tesla total last changed at 2026-11-17T21:41:44Z, from 1,306 (733 Model Y and 573 Cybercab) to 1,507. The jump was 200 Cybercabs plus one Model Y, the first Cybercab increase after three weeks stuck at 573, and Cybercab is now 51 percent of Tesla's Texas list. The same snapshot shows 1,160 registry vehicles matched to community records, 881 matched-active, and 347 unmatched. Those match fields are not a network in-service total and are not filed as fleet. Waymo's Texas list was 1,364 on the November 21 snapshot (up from 1,328 in the November 18 writeup), so Tesla's authorization lead had already narrowed to 143. The public register does not say which city a car serves or whether it is carrying a passenger.",
+          "date": "2026-11-17",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Largest one-day Cybercab batch on the Texas register, 200 vehicles",
+              "Cybercab authorizations rose from 573 to 773 after three flat weeks",
+              "Cybercab is a slim majority of Tesla's Texas list for the first time since late October"
+            ],
+            "negative_signals": [
+              "1,507 is authorization, not cars in service",
+              "347 of the 1,507 Tesla entries were unmatched to community records",
+              "Waymo rose to 1,364 after the November 17 print, cutting the paperwork lead to 143",
+              "The DMV list does not assign the new Cybercabs to a city or prove they are giving rides"
+            ]
+          },
+          "source": "https://robotaxitracker.com/government",
+          "impact": "high"
+        },
+        {
+          "title": "Berlin Cybercab hall is a 2029 plan, and the permit is not filed",
+          "description": "On November 16, 2026, Giga Berlin plant manager Andr\u00e9 Thierig said Tesla will spend about \u20ac3 billion on a new production hall at Gr\u00fcnheide for Cybercab, with construction targeted for the first half of 2027 and production in 2029. The one-million-a-year figure is the hall's design capacity as output ramps, not a 2029 run rate. TeslaNorth describes a company statement on the construction window. Robotaxi Tracker adds that the building-permit application is only planned before the end of 2026, Brandenburg environmental sign-off is still required, and only the first phase of a 2023 three-phase expansion is approved. A million-a-year line would be about 19,200 cars a week. Texas has 773 Cybercabs on the register. Tesla has no European driverless approval, the car has no steering wheel, and Germany's public autonomous pilots still use safety drivers, so the hall does not create a European ride service.",
+          "date": "2026-11-16",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Named plant manager committed the next Berlin vehicle hall to Cybercab",
+              "Stated investment is about \u20ac3 billion, with planning hires said to start now",
+              "Construction window is the first half of 2027, which is a date rather than an open-ended tease"
+            ],
+            "negative_signals": [
+              "Production start is 2029, and one million a year is eventual capacity, not the start rate",
+              "Building permit is not filed; environmental approval is still outstanding",
+              "No European driverless approval, so the factory cannot support a Cybercab ride service on current rules",
+              "Current Texas Cybercab authorizations, 773, are orders of magnitude below a 19,200-a-week line"
+            ]
+          },
+          "source": "https://robotaxitracker.com/news/tesla-plans-cybercab-factory-at-giga-berlin",
+          "impact": "high"
+        },
+        {
+          "title": "Miami Robotaxi map nearly doubles; Tesla did not state miles or cars",
+          "description": "On November 16, 2026, Tesla's Robotaxi account posted a larger Miami service map and said it was serving more of the city. Tesla did not publish square miles or a vehicle count. TeslaNorth, citing Robotaxi Tracker's measurement of that map, puts the zone at about 59 square miles after a roughly 28-square-mile add, about 92 percent larger. The airport was already inside the old boundary. Coverage pushes east toward downtown and the coast and does not cross to Miami Beach. This is a geofence redraw in a city that has had robotaxi service since July, not a fleet increase. Austin's November 9 expansion, which the same coverage mentions, was already filed and is not a new Austin change.",
+          "date": "2026-11-16",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Official Robotaxi account published a larger Miami map on November 16",
+              "Two outlets measure the new zone at about 59 square miles, roughly double the prior area",
+              "The add reaches denser neighborhoods toward downtown and the coast"
+            ],
+            "negative_signals": [
+              "Square miles are a tracker measurement, not a Tesla figure",
+              "No vehicle count and no new city",
+              "Miami Beach is still outside the zone",
+              "Area growth without cars does not show scaling"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/16/tesla-miami-robotaxi-service-area-nearly-doubles",
+          "impact": "medium"
+        },
+        {
+          "title": "Customer-owned Robotaxi trials may start next month only if things go well",
+          "description": "On November 16, 2026, Elon Musk replied on X to an Austin Uber driver who uses a Model Y with Full Self-Driving: \"Coming soon. If things well, may start trials next month.\" Teslarati reads that as a December pilot of customer-owned cars on the Robotaxi platform, earlier than the roughly second-quarter 2027 timing Tesla's AI leadership gave on the Q3 call. Musk did not name a city, a vehicle count, or eligibility rules, and he conditioned it on things going well. The Austin and Model Y setting is Teslarati's inference from the person he answered, not a Tesla service announcement. No customer-owned trial is operating, and the reply adds nothing to the in-service fleet. It is also not the invite-only Cybercab sale: those personal cars still cannot join the paid network without separate approval.",
+          "date": "2026-11-16",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Musk put a possible trial window of next month on customer-owned cars, ahead of the Q2 2027 earnings-call timing",
+              "The line is his own November 16 reply, not a secondhand paraphrase"
+            ],
+            "negative_signals": [
+              "The wording is may, and only if things go well, not a start date",
+              "No city, count, hardware cutoff, insurance, or regulatory step was announced",
+              "No customer-owned trial is operating, so the in-service fleet is unchanged",
+              "Personal Cybercabs from last week's invite remain barred from the paid network",
+              "Teslarati's Austin pilot is an inference from the reply, not a stated launch market"
+            ],
+            "key_metrics": {
+              "actual": "No customer-owned Robotaxi trial",
+              "target": "Musk: may start trials next month if things go well; Q3 call pointed to about Q2 2027",
+              "trajectory": "Conditional reply only; the later guidance is not replaced"
+            }
+          },
+          "source": "https://teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says",
+          "impact": "medium"
+        },
+        {
+          "title": "Order screens list a 279-mile Cybercab estimate and a 50,000-mile warranty",
+          "description": "Invitation screenshots shared November 18-19 list an EPA-estimated 279 miles, 123 miles added in 15 minutes of Supercharging, a 21-inch display, 100 W USB power, and 20.1 cubic feet of cargo. The charge footnote assumes constant 65 mph efficiency. Warranty on the same screens is 4 years or 50,000 miles basic, and 8 years or 100,000 miles for the battery and drive unit with at least 70 percent capacity retention. TeslaNorth is explicit that the range label is an estimate on a screenshot, not evidence of a new EPA certificate. The June lab-equivalent figure near 418 miles is an older filing, and 279 is the adjusted consumer number analysts had already expected around 280-300. None of this removes the invite-only limit, the required subscription, the geofence, or the ban on paid-network use without separate Tesla approval. No customer delivery has happened. December delivery remains an estimate.",
+          "date": "2026-11-19",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Invitees can now see range, charge rate, cargo, and warranty on the order flow",
+              "279 miles lines up with the expected adjusted range, not a cut below that band"
+            ],
+            "negative_signals": [
+              "EPA est. on a screenshot is not a new certification document",
+              "123 miles in 15 minutes is quoted at a constant 65 mph, not a peak session",
+              "A 50,000-mile basic warranty is a low-use personal-car term on a vehicle pitched as a robotaxi",
+              "The car still will not move without the subscription and still cannot join the paid fleet on these terms"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs",
+          "impact": "medium"
+        },
+        {
+          "title": "Cybercab responder guide sets an 85 mph posted-limit design, not a faster service",
+          "description": "Tesla's Cybercab First Responder Interaction Plan version 1.3, dated November 20, 2026, says Cybercab is designed to operate on public roads with posted speed limits up to 85 mph and to adjust speed to traffic. It also says capability is limited in flooding, heavy rain, snow, ice, and hurricane-strength winds. The same document says vehicles manufactured starting November 2026 have a Starlink terminal embedded in the trunk lid, and that the secondary first-responder loop on those cars is bundled with the cables at the B-pillar applique camera. That is an official production-month hardware note, not a volume figure. Starlink hardware had already been spotted earlier. The guide's Arizona or California areas-of-operation appendix is a document pointer, not a launch. TeslaNorth notes California's DMV roster still lists Tesla Robotaxi LLC for testing with a safety driver, not driverless deployment. A separate Dallas spotter clip of a trunk camera does not, on TeslaNorth's own account, prove a new cargo-facing camera; the guide text confirms the trunk-lid Starlink and the B-pillar camera, not a cargo camera.",
+          "date": "2026-11-20",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Primary Tesla document, version 1.3, dated November 20, 2026",
+              "November 2026 builds officially include trunk-lid Starlink",
+              "First-responder loop access is documented for those newer builds"
+            ],
+            "negative_signals": [
+              "85 mph is the posted limit in the design domain, not a statement that Robotaxi drives at 85",
+              "Severe weather is still outside the operating domain",
+              "The California and Arizona appendix is not a permit or a new city",
+              "No production or in-service count is attached to the hardware note"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides",
+          "impact": "medium"
+        },
+        {
+          "title": "Musk describes a wheel-less six-seat Model Y with no date or plant",
+          "description": "At the November 18, 2026 New York Times DealBook Summit, Elon Musk said Tesla plans an autonomous Model Y for six or seven people with no steering wheel or pedals, as a complement to the two-seat Cybercab. He gave no production date, price, factory, or market list. TeslaNorth and Teslarati both report the remark and both note it is not a retrofit of cars already on the road. He also said a two-seater covers most passenger miles because average occupancy is about 1.2. That defends the Cybercab layout; it does not put a larger robotaxi into production. A suggestion that Model Y output might shift toward the long-wheelbase Model Y L was not a line change and is not filed here.",
+          "date": "2026-11-18",
+          "category": "Cybercab Production",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Musk acknowledged group trips do not fit in a two-seat Cybercab",
+              "The larger vehicle was described as a future product, not a conversion of the current fleet"
+            ],
+            "negative_signals": [
+              "No date, price, factory, or regulatory path",
+              "One interview remark, not a program start",
+              "Cybercab remains the only purpose-built robotaxi Tesla is building, and customer deliveries have not started"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+          "impact": "medium"
+        },
+        {
+          "title": "Italy Grants Provisional Assisted-Driving Approval; Cars Are Not Live",
+          "description": "On 20 November 2026, Transport Minister Matteo Salvini said Italy's Ministry of Infrastructure and Transport cleared provisional homologation of Tesla Assisted Driving after a technical feasibility check, ahead of an EU recognition process he said is still being defined. Teslarati and TeslaNorth treat this as the 12th EU clearance and the first large member state, after the Netherlands' April approval and later recognitions by smaller states including Finland. Tesla has not given a date for the software update, customer cars are not confirmed live, and the feature remains supervised. The RDW's 16 November list of countries that have adopted the Dutch approval still excludes Italy, Germany, France, and Spain, and the EU-wide Technical Committee on Motor Vehicles process is unfinished.",
+          "date": "2026-11-20",
+          "category": "FSD Country Approvals",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Salvini said the ministry cleared provisional homologation after a technical feasibility check",
+              "First large EU market to take a national step; outlets count it as the 12th EU clearance",
+              "Italy adds population weight toward a future qualified-majority EU vote that still needs 15 states and 65 percent of the population"
+            ],
+            "negative_signals": [
+              "The approval is provisional and Salvini said it anticipates an EU recognition process that is still being defined",
+              "No customer go-live date; Tesla says rollout will begin soon, the same gap left after Finland",
+              "Still supervised assisted driving, with the driver responsible",
+              "Germany, France, and Spain are not on the RDW's 16 November recognition list, so bloc-wide approval is not in hand"
+            ]
+          },
+          "source": "https://teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country",
+          "impact": "high"
+        },
+        {
+          "title": "RDW Requires Hands on the Wheel Above 130 km/h",
+          "description": "On 16 November 2026 the Dutch RDW approved an extension of the existing Tesla Assisted Driving type approval for Hardware 4 and newer. Above 130 km/h the driver must keep hands on the wheel. Inattentive drivers get earlier warnings and a full strike during maneuvers, and a higher maximum speed must be confirmed on the scroll wheel. The RDW tested the changes on a track and public roads, found no adverse effects, and notified Belgium, Denmark, Estonia, Finland, Croatia, Latvia, Lithuania, Slovenia, Slovakia, and the Czech Republic. It said this is not a regular type approval because the system sits under Article 39 of Regulation 2018/858, and the EU-wide TCMV procedure is still ongoing and confidential. Tesla chooses when cars receive the update.",
+          "date": "2026-11-16",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "neutral",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "RDW track and public-road tests found no adverse or unintended effects, so the existing approval was extended rather than pulled",
+              "The ten countries that already recognize the Dutch approval, including Finland, were notified"
+            ],
+            "negative_signals": [
+              "Hands must stay on the wheel above 130 km/h, so European highway use is explicitly not hands-free",
+              "Earlier attention warnings, a full strike during maneuvers, and extra anti-misuse measures tighten supervision",
+              "RDW says the approval is not a normal type approval and the EU-wide process is still open and confidential",
+              "No date for when Tesla will put the restrictions on customer cars"
+            ]
+          },
+          "source": "https://rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update",
+          "impact": "medium"
+        },
+        {
+          "title": "Korea Says Tesla's FSD Exemption File Still Cannot Be Reviewed",
+          "description": "On 20 November 2026 South Korea's Ministry of Land, Infrastructure and Transport published a notice that the Korea Transportation Safety Authority had told Tesla the current documents are not enough for a technical review of its FSD special-exemption application. Tesla Korea filed on 22 October for Shanghai-built Model 3 and Model Y vehicles, which do not get the U.S.-standard path available to eligible American-built cars. This is the formal version of the incomplete-file status already reported on 11 November, not a new certification or a rejection after review. The review has not started.",
+          "date": "2026-11-20",
+          "category": "FSD Country Approvals",
+          "status": "negative",
+          "sentiment": {
+            "headline": "negative",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Eligible U.S.-built cars already have a trade-agreement path to supervised FSD in Korea",
+              "MOLIT put the deficiency on the record instead of leaving the October filing in silence"
+            ],
+            "negative_signals": [
+              "KOTSA notified Tesla on 20 November that it cannot review the file from the documents received",
+              "The 22 October exemption for China-built Model 3 and Model Y is still not in technical review",
+              "Same incomplete-file problem as 11 November; supplementary material is still required",
+              "Supervised FSD for the Shanghai-built fleet in Korea remains blocked"
+            ]
+          },
+          "source": "https://korea.kr/briefing/pressReleaseView.do?newsId=156790094",
+          "impact": "medium"
+        },
+        {
+          "title": "Austin Optimus site has press mounts in rebar, not presses",
+          "description": "On November 20, Giga Texas drone observer Joe Tegtmeyer posted close-ups from the southeast side of the Optimus factory. Four reinforced foundations have metal frame mounts set into the rebar, and the concrete has not been poured. He identified the hardware as IDRA Giga Press frame mounts, the same pattern he saw when casting machines went into the main Texas factory, and said he is still waiting for the press parts to arrive. His same-day flyover repeated that the four foundations and embedded mounts are under construction. Tesla has not confirmed the machines or named any Optimus part that end of the building will cast. TeslaNorth\u2019s write-up matches the posts and notes the plant was still listed as under construction in the October quarterly update, when Tesla said the first production-quality Optimus robots were coming off a Fremont line. Four pads in rebar are site work. They are not a production ramp, a delivery, or a price.",
+          "date": "2026-11-20",
+          "category": "Optimus Production",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Four reinforced foundations on the southeast side of the Austin Optimus building have embedded frame mounts ahead of the concrete pour.",
+              "Tegtmeyer says the mounts match the IDRA casting-machine pattern already used in the main Giga Texas casting hall.",
+              "The work is past the September steel-frame stage. Tesla\u2019s CFO said in October that the Austin plant is meant to build more robots than Fremont."
+            ],
+            "negative_signals": [
+              "The presses are not on site. Tegtmeyer said he is still watching for IDRA parts deliveries.",
+              "Concrete has not been poured. This is civil preparation, not installed production equipment.",
+              "Tesla has not confirmed the pads, the supplier, or which parts, if any, Austin will cast.",
+              "The dedicated Austin plant is still a construction site. The October update still listed it as under construction.",
+              "No new unit count, rental price, or customer. Four pads do not change the missing volume."
+            ],
+            "key_metrics": {
+              "actual": "4 foundation pads with embedded mounts; presses not delivered",
+              "target": "Austin plant meant to outproduce Fremont; no public Optimus volume this week",
+              "trajectory": "civil work only; dedicated factory still not producing"
+            }
+          },
+          "source": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+          "impact": "medium"
+        },
+        {
+          "title": "Musk dates FSD v15 for December, but customer cars are still on v14",
+          "description": "On November 21 Elon Musk wrote that FSD v15 goes to wide release next month and answered yes when asked if that is the 2026 holiday update. He said HOV-lane refusal and last-second merges should be fixed in v15, answered yes to pothole avoidance and home-garage parking, and said the UI will re-render reality. The day before, Tesla's AI account posted XV, Ashok Elluswamy reshared it, and Musk later called XV the start of the super part of Tesla SI. None of that is a customer build. Software 2026.44.1, which started rolling out November 17, still ships supervised v14.3.13 on HW4 and v14.3 Lite on HW3. Musk did not claim unsupervised driving, did not name a build, and did not say which cars get the December wave. Tesla has not announced a v15 Lite. v15 has been described since April as an AI4 large-model rewrite aimed at late 2026 or early 2027, so December sits inside that old window. Pothole avoidance is already an unshipped upcoming item on the v14.3.13 notes that just shipped again. Robotaxi was described as running early v15 in July, and consumer cars still do not have it.",
+          "date": "2026-11-21",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Musk set a wide-release window of next month and tied v15 to the 2026 holiday update",
+              "He said HOV-lane refusal and late lane changes should be fixed in v15, and agreed pothole avoidance and home-garage parking are in scope",
+              "Tesla SI, Elluswamy, and the main Tesla account posted the XV teaser on November 20"
+            ],
+            "negative_signals": [
+              "No customer OTA contains v15. 2026.44.1, released November 17, still carries supervised v14.3.13 and HW3 v14.3 Lite",
+              "Musk did not announce unsupervised driving, a version string, or hardware eligibility for December",
+              "No v15 Lite has been announced. HW3 stays on the distilled branch, and the April plan still says HW3 cannot run unsupervised FSD",
+              "Pothole avoidance is already an upcoming line in the v14.3.13 notes, so the yes is not a feature that landed this week",
+              "Early v15 was already attributed to the robotaxi stack in July, without a consumer release"
+            ],
+            "key_metrics": {
+              "actual": "Customer software on 2026.44.1: supervised v14.3.13 (HW4) and v14.3 Lite (HW3)",
+              "target": "Musk: v15 wide release in December 2026 with the holiday update",
+              "trajectory": "Not shipping. The date is a post, not a build, and it does not lift supervision or the HW3 ceiling"
+            }
+          },
+          "source": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know",
+          "impact": "high"
+        },
+        {
+          "title": "2026.44.1 repeats supervised v14.3.13 and HW3 Lite on the general track",
+          "description": "Update 2026.44.1 started rolling out on November 17 as the first build of the 2026.44 branch. The release notes still list FSD (Supervised) v14.3.13 for HW4 and FSD (Supervised) v14.3 Lite for HW3, the same versions already on 2026.38.5.13. Not a Tesla App says new North American subscribers on the regular software track now get those builds immediately instead of starting on v12.6 (HW3) or v13 (HW4) and waiting for the FSD track. That is a distribution change, not a model change. The notes still require an attentive driver, still list pothole avoidance and broader reasoning as upcoming, and Tesla North says Tesla has not labeled 2026.44.1 the holiday update. HW3 remains a distilled Lite build. Undocumented strings rename the FSD computer label from AI Computer to SI Computer and hint at a Grok navigation button, major-road routing, and Supercharger price alerts that are not live features.",
+          "date": "2026-11-17",
+          "category": "FSD v15 Software",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "New subscribers on the regular North American track get v14.3.13 or v14.3 Lite immediately instead of v12.6 or v13",
+              "2026.44.1 is a general-track branch, not another point release confined to the FSD track",
+              "Release notes include security fixes and a clustered charger-network map"
+            ],
+            "negative_signals": [
+              "The FSD version did not move: still supervised v14.3.13 on HW4 and distilled v14.3 Lite on HW3",
+              "v15 is absent. Pothole avoidance and expanded reasoning remain upcoming notes, not shipped behavior",
+              "Tesla has not called 2026.44.1 the holiday update. Hidden Grok, routing, and price-alert strings are not enabled features",
+              "Not a Tesla App says the regular track and the FSD track are likely to split again once a newer FSD build exists, so this parity is temporary"
+            ],
+            "key_metrics": {
+              "actual": "2026.44.1 FSD stack: v14.3.13 HW4 and v14.3 Lite HW3, both supervised",
+              "target": "A newer FSD version than the 2026.38.5.13 stack",
+              "trajectory": "Unchanged model, wider install path for new subscribers"
+            }
+          },
+          "source": "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner",
+          "impact": "medium"
+        },
+        {
+          "title": "Musk pledges more Shanghai output with no target while China retail stays broken",
+          "description": "On November 19, during APEC meetings in Shenzhen, Elon Musk told Ren Hongbin of the China Council for the Promotion of International Trade that Tesla would keep increasing production in China, according to CCTV-affiliated Yuyuan Tantian. He then flew to Giga Shanghai. Vice president Grace Tao confirmed the visit and said he praised the plant's execution. She did not announce a new vehicle or a factory project, and the pledge has no unit target and no date. Shanghai's installed Model 3/Y capacity is already above 950,000 a year. January\u2013October wholesale was 810,889, up 21.4% year over year, but China retail in that stretch was 389,905, down 15%, while exports were 420,984, up 101%. October retail was 8,817 and exports were 59,012 of 67,829 wholesale, about 87%. Raising output from here means filling a plant that is already near its stated capacity with export demand, not a recovery in Chinese buyers. Q4 still has no delivery guide.",
+          "date": "2026-11-19",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Musk said China output would keep rising and visited the Shanghai team the same day",
+              "January\u2013October Shanghai wholesale was 810,889, up 21.4% year over year, with exports of 420,984 up 101%"
+            ],
+            "negative_signals": [
+              "No new capacity number, timetable, or expansion project",
+              "Installed capacity is already above 950,000 a year, so ten-month shipments leave little unused headroom",
+              "China retail is down 15% year to date, and October retail of 8,817 was 87% export wholesale",
+              "Q4 still has no company delivery guide"
+            ]
+          },
+          "source": "https://cnevpost.com/2026/11/19/elon-musk-tesla-keep-boosting-china-output",
+          "impact": "high"
+        },
+        {
+          "title": "HMD's own account still shows one Illinois Semi, not a finished batch of 50",
+          "description": "Last week Tesla said Chicago's first 50 Semis were en route and that deliveries were unconfirmed. On November 18, creator Chris Kuna said HMD Trucking had just received all 50 after he visited the Hodgkins Megacharger and interviewed CEO Henry Malukas. HMD's own writeup, which TeslaNorth cites as updated November 17 and which still reads that way, is narrower: unit one of the 50-truck order arrived November 2, became the first Tesla Semi registered in Illinois, and 'the other 49 units are coming.' HMD says the trucks are for regional Chicago loops, not a replacement for its 650-truck diesel fleet, and that Semi has no Full Self-Driving. The same week EV Semi Fleet confirmed one production Semi in San Bernardino and said it expects seven trucks later, with Florida and Georgia routes discussed for the third quarter of 2027. That is two confirmed customer trucks. It is not a 50-unit handover, and Tesla has not published a Semi production total since the September Nevada volume claim.",
+          "date": "2026-11-18",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "HMD has at least one production Semi registered in Illinois and in its Chicago Ridge yard",
+              "EV Semi Fleet confirmed a separate first production Semi in San Bernardino on November 15"
+            ],
+            "negative_signals": [
+              "HMD's own post says the other 49 units are still coming",
+              "Kuna's claim that all 50 are in hand is not a Tesla delivery confirmation and is not matched by the carrier's text",
+              "HMD will not use the truck for long-haul; it says the megawatt charging network is not there",
+              "EV Semi Fleet's next six trucks and 2027 routes are plans, not deliveries",
+              "No Tesla Semi production count has been released against the September high-volume claim"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered",
+          "impact": "high"
+        },
+        {
+          "title": "Argentina Model 3 and Model Y orders open, with no deliveries yet",
+          "description": "Tesla opened the Argentina configurator on November 19, a day before the November 20 sales date it had already announced. Model 3 rear-wheel drive starts at $40,990 and Model Y Premium rear-wheel drive at $43,990, both in US dollars, before reservation and destination fees that take the base cars to $41,590 and $44,590. The launch list is five trims. Only the Model 3 Performance is all-wheel drive. Argentina is Tesla's fourth South American market after Chile, Colombia, and Uruguay. The Unicenter showroom near Buenos Aires is still described as opening in late November, so the order page is ahead of a store and ahead of any counted deliveries. A $119 monthly Full Self-Driving Capability line is a subscription label, not a supervised-driving launch. A new configurator in a small market does not change the Q4 delivery picture. Electrek's November 21 account of the November 20 Buenos Aires launch repeats those five Shanghai-built prices and says first deliveries are not expected until March or April 2027. That date is one outlet's expectation, not a Tesla delivery count, and the awkward video is not a volume figure.",
+          "date": "2026-11-19",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Model 3 and Model Y orders are actually open, not only a launch-date announcement",
+              "Five trims are priced on the local configurator"
+            ],
+            "negative_signals": [
+              "No deliveries have been reported",
+              "The Buenos Aires showroom is still scheduled for late November, not confirmed open",
+              "Prices are quoted in US dollars and there is no local volume target",
+              "A new small-market order page does not offset China retail or the narrower US order book",
+              "Electrek expects the first Argentina deliveries in March or April 2027, so the open order page is not a Q4 delivery"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders",
+          "impact": "medium"
+        },
+        {
+          "title": "First Texas Semi Megacharger opens with eight stalls and no assigned fleet",
+          "description": "Tesla's Semi account said on November 17 that the first Megacharger in Texas is open in Mesquite with eight stalls, and that the company is rapidly scaling charging and service in the state. The site is on Tesla's charging map. Tesla did not publish a price, hours, or which fleets will use it. A Laredo Semi service-center opening had already been set for November 12. Eight stalls in one city is a real site. It is not a statewide truck network, and it does not come with a delivery count.",
+          "date": "2026-11-18",
+          "category": "Vehicle Production & Delivery",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "high"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla's Semi account confirmed the Mesquite site rather than a spotter rumor",
+              "Eight stalls are listed on Tesla's charging map, adding Texas to the Illinois and Georgia Megacharger sites"
+            ],
+            "negative_signals": [
+              "No fleet is assigned and no truck-delivery number is attached",
+              "Tesla's 'rapidly scaling' line describes one eight-stall site, not a finished network",
+              "No price or operating hours were given"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/18/tesla-first-texas-megacharger-mesquite",
+          "impact": "medium"
+        },
+        {
+          "title": "Tesla will cover Quebec's expiring $2,000 rebate, not the old $7,000",
+          "description": "Quebec's Roulez vert rebate for a new fully electric vehicle ends for deliveries after December 31. The maximum already fell from $7,000 CAD in 2024 to $4,000 in 2025 and $2,000 in 2026. Tesla's Canadian incentives guide says the company will take up to $2,000 CAD off qualifying deliveries from January 1, 2027, with no end date posted. That matches this year's reduced rebate. It does not restore the earlier $7,000. The vehicle still needs a base price under $65,000 CAD. Model 3 does not qualify for the federal Electric Vehicle Affordability Program. New federal assessments from January 1 cut the battery-electric maximum from $5,000 to $4,000 CAD, and the lock-in date is the dealer's VIN submission, not the order. Quebec also adds a $125 CAD annual EV registration fee on January 1, 2027, a charge set in the 2025 budget, and ends free EV access to some tolls and ferries on April 1, 2027. Tesla is replacing a shrinking subsidy. No delivery count is attached.",
+          "date": "2026-11-21",
+          "category": "Vehicle Production & Delivery",
+          "status": "negative",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Tesla, not the province, will fund up to $2,000 CAD on qualifying deliveries from January 1, 2027",
+              "The company discount can stack with the federal program on vehicles that qualify, and no end date is posted"
+            ],
+            "negative_signals": [
+              "The company amount replaces the already-cut $2,000 rebate, not the 2024 maximum of $7,000 CAD",
+              "The federal battery-electric maximum falls to $4,000 CAD for new 2027 assessments, and Model 3 is excluded from that program",
+              "A new $125 CAD annual EV registration fee starts January 1, 2027, with toll and ferry perks ending April 1",
+              "No Quebec delivery figure is attached to the offer"
+            ]
+          },
+          "source": "https://teslanorth.com/2026/11/21/tesla-quebec-2000-ev-rebate-2027",
+          "impact": "medium"
+        },
+        {
+          "title": "A&M's Terafab workforce pitch is a half-built institute, not a hiring deal",
+          "description": "On Nov. 16, Texas A&M Semiconductor Institute director Steve Putna and system research deputy David Staack told the Brazos Valley Intergovernmental Committee that Terafab makes the university chip institute more relevant and that its job is to train students for plants such as Terafab. Putna said Terafab is counting on A&M to draw talent. That is a university briefing, not a Tesla or SpaceX hiring agreement, headcount, or funding package. Staack said the institute was planned before Terafab and that Terafab would be one customer among other regional companies. KBTX reports the institute building is about 20 percent complete inside a $205.5 million RELLIS project the system had already disclosed in September. Substantial building completion is targeted for the end of 2027, equipment installation follows, and significant institute operations are planned for mid-2028. That date is the university cleanroom, not Terafab wafer starts. KBTX also says regents voted the prior Thursday to fund additional water-well infrastructure at RELLIS, with well construction scheduled to start in December 2026 and finish in March 2028. That water work serves the campus institute. It is not Grimes County process water for the fab, and it does not show tools installed or chips coming out of Terafab. KBTX's Terafab file still has no newer site, permit, land, or records development than the Nov. 11 acreage story.",
+          "date": "2026-11-16",
+          "category": "Terafab In-House Chip Manufacturing",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "negative",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "Named A&M leaders briefed regional officials on Nov. 16 that the institute will train students for plants such as Terafab",
+              "Regents approved additional RELLIS water-well infrastructure, with construction scheduled to start in December 2026 and finish in March 2028",
+              "The institute building is reported about 20 percent complete inside the already disclosed $205.5 million campus project"
+            ],
+            "negative_signals": [
+              "Staack said the institute predates Terafab and that Terafab is one customer among other regional companies",
+              "No Tesla or SpaceX hiring number, contract, or funding was announced",
+              "Significant institute operations are not until mid-2028, and that is the university facility, not Terafab output",
+              "The water approval is RELLIS campus infrastructure, not Grimes County fab process water",
+              "The Grimes site still has no reported chip output; KBTX's Terafab topic has nothing newer than the Nov. 11 land story"
+            ],
+            "key_metrics": {
+              "actual": "Institute building about 20 percent complete; significant operations targeted mid-2028",
+              "target": "A staffed Terafab producing chips",
+              "trajectory": "University training site still years from operations; no company hiring commitment"
+            }
+          },
+          "source": "https://kbtx.com/2026/11/17/terafab-makes-texas-ams-chip-institute-more-relevant-university-leader-says",
+          "impact": "medium"
+        },
+        {
+          "title": "Optimus hiring call is seven program-manager seats, not a ramp",
+          "description": "On November 21, 2026, Tesla Optimus engineer Nick di Lello posted seven Tesla Careers links: Robotics Technical Program Manager roles for motors (req 289369), electronics (276028), data-collection hardware (290206), hardware (246796), and actuator manufacturing (275613), plus Optimus hardware TPM internships for winter/spring 2027 (284822) and summer 2027 (290425). LinkedIn's off-site interstitial resolved each short link to those careers URLs. TeslaNorth's same-day writeup confirms the post and says the electronics and hardware listings it opened are in Palo Alto. Tesla Careers itself returned Access Denied, so pay, location for the other five, and whether any req is a repost were not read. The actuator-manufacturing seat is closer to building robots than last week's data-collection operators and fleet coordinators. The call is still five full-time coordinators and two internships. It is not an Optimus production headcount, not an autonomy-research ramp, and not a new robotaxi or FSD safety-driver wave.",
+          "date": "2026-11-21",
+          "category": "Job Postings",
+          "status": "neutral",
+          "sentiment": {
+            "headline": "positive",
+            "reality": "neutral",
+            "confidence": "medium"
+          },
+          "evidence": {
+            "positive_signals": [
+              "A Tesla Optimus engineer posted seven live careers links on November 21 covering motors, electronics, hardware, actuator manufacturing, and data-collection hardware, plus two internships.",
+              "The actuator-manufacturing TPM is a manufacturing seat, not another hourly operator who moves robots.",
+              "TeslaNorth independently wrote up the post the same day and reports the electronics and hardware listings it opened are in Palo Alto."
+            ],
+            "negative_signals": [
+              "The entire call is five full-time program-manager seats and two internships, not a production or autonomy-engineer ramp.",
+              "One full-time seat is specifically data-collection hardware, so Optimus is still staffing people to gather training data.",
+              "Tesla Careers pages were blocked, so salary, headcount per req, and repost-versus-new status were not verified.",
+              "AltIndex printed 0 company-wide LinkedIn openings the same day these reqs were live, so the aggregate series is still unusable."
+            ]
+          },
+          "source": "https://x.com/nick_dilello/status/2123944587215692223",
+          "impact": "medium"
+        }
+      ],
+      "trends": [
+        "Cybercab Production: Dallas Cybercab rides open in the existing zone, with no Tesla fleet count",
+        "Vehicle Production & Delivery: Musk pledges more Shanghai output with no target while China retail stays broken",
+        "FSD Country Approvals: RDW Requires Hands on the Wheel Above 130 km/h",
+        "FSD v15 Software: Musk dates FSD v15 for December, but customer cars are still on v14"
+      ]
+    },
     {
       "weekOf": "2026-11-09",
       "keyChanges": [
@@ -14586,6 +15184,12 @@
           "count": 1306,
           "note": "Texas DMV / TxMCCS authorization roster from Robotaxi Tracker government data. Snapshot generated 2026-11-15T05:17:45Z, last changed 2026-11-14T21:41:38Z: 733 Model Y + 573 Cybercab = 1,306. Authorization, not cars in service. Versus the Nov. 1 roster of 1,244 (671 Model Y + 573 Cybercab), Cybercab is flat and the entire +62 is Model Y.",
           "source": "https://robotaxitracker.com/government"
+        },
+        {
+          "date": "2026-11-21",
+          "count": 1507,
+          "note": "Texas DMV / TxMCCS authorization roster via Robotaxi Tracker government data. Snapshot generated 2026-11-21T18:17:45Z. Tesla last changed 2026-11-17T21:41:44Z: 773 Cybercab + 734 Model Y = 1,507, up from 1,306 (573 Cybercab + 733 Model Y) on 2026-11-14. Waymo on the same snapshot is 1,364. Authorization, not cars in service. matched_active_count 881 is a registry-to-community match, not an in-service total.",
+          "source": "https://robotaxitracker.com/government"
         }
       ]
     }
@@ -14593,10 +15197,9 @@
   "categories": {
     "aiChip": {
       "title": "AI Chip Production (Samsung/TSMC)",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Taylor is still pre-trial. A Nov. 8 Korea Herald report says a mid-to-late December trial is possible but unconfirmed, and commercial AI6 output remains the second half of 2027.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "No AI5 or AI6 tape-out, yield, sample, or volume update from Nov 14-21. Samsung Taylor is still pre-trial, and commercial AI6 output is still the second half of 2027.",
       "keyPoints": [
-        "Tesla planning to double AI6 orders to 40,000 wafers/month (from 16,000)",
         "Terafab: $25B joint chip factory announced (Tesla/SpaceX/xAI) in Austin",
         "Dual-foundry strategy: AI5 split between Samsung and TSMC; AI6 entirely at Samsung Taylor",
         "Next milestone: Taylor fab initial operations late 2026; AI5 engineering samples/qualification from Taylor line; AI6 tape-out targeted December 2026",
@@ -14610,7 +15213,8 @@
         "Next milestone: Taylor Fab 1 operations by the end of 2026 and 2nm volume production in 2027; Fab 2 groundbreaking in November 2026.",
         "Next milestone: Samsung 2nm volume and Taylor qualification in 2027; claimed AI5-in-Optimus around April 2027; SEMCO mass production in 2H 2028 and Tesla substrate deliveries in 2029.",
         "Next milestone: Samsung and TSMC AI5 volume, plus the prior Musk line that AI5 reaches Optimus around April 2027. This slide added no car date and no D3 date.",
-        "Next milestone: A Samsung-confirmed Taylor trial wafer and a disclosed 2nm yield. Neither exists. AI6 volume is still guided to the second half of 2027."
+        "Next milestone: A Samsung-confirmed Taylor trial wafer and a disclosed 2nm yield. Neither exists. AI6 volume is still guided to the second half of 2027.",
+        "Next milestone: A Taylor trial run is still only a possible mid-to-late December event, and it is unconfirmed."
       ],
       "timeline": [
         {
@@ -14669,10 +15273,9 @@
     },
     "cybercab": {
       "title": "Cybercab Production",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Invite-only Cybercab orders opened Nov. 13 at $29,990 plus a mandatory subscription, but the car cannot operate outside Tesla geofences or join the paid robotaxi network without separate approval. San Antonio was announced Nov. 9 with no Tesla fleet figure and only a Model Y sighting floor. Hours went 24/7 in existing cities. A Nov. 10 Texas registry print put Tesla at 1,302 versus Waymo at 1,297; the Nov. 14 roster is 1,306 (733 Model Y and 573 Cybercab). That lead is authorizations, not riders, and Cybercab did not increase.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "Cybercab can be booked in Dallas as of November 19, but Tesla gave no fleet size and the 192-car lookup is a slice of the new Texas registrations. The state roster is 1,507 authorized vehicles (773 Cybercab), unchanged since November 17, while Waymo's list rose to 1,364. Berlin is a 2029 factory plan with the permit not filed. Miami's map grew; the car count did not. Musk said customer-owned Robotaxi trials may start next month if things go well; that reply is not a started pilot and does not put personal Cybercabs on the paid network.",
       "keyPoints": [
-        "Nevada Transportation Authority issued a Las Vegas Strip permit capped at 10 vehicles \u2014 a 99.8% reduction from Tesla's 5,000-vehicle request, with airport pickups prohibited and 45 mph speed cap.",
         "Nevada restored Tesla's original 5,000-vehicle Clark County robotaxi ceiling (including airports) on Aug 20, but Tesla's Cybercab lead said 2,500 in 12 months would be a stretch, first vehicles will be Model Ys, and zero Cybercabs are in paid service \u2014 a paper permit, not a launch.",
         "Next milestone: Sept 3, 2026 Austin Cybercab launch event \u2014 watch whether paid unsupervised Cybercab rides actually open in the Robotaxi app, versus a demo/influencer reveal",
         "Next milestone: Sept 3, 2026 Austin Cybercab launch event \u2014 watch whether paid public Cybercab rides actually start, and whether unsupervised active fleet leaves the ~20-vehicle range",
@@ -14686,7 +15289,8 @@
         "Next milestone: Q3 earnings on October 21 is the nearest venue for a Dallas date or a real ride count. Sworn Cybercab FMVSS answers are due October 30. NHTSA's grant-or-deny on DP26010 is around January 21, 2027. Overnight hours still depend on night vision and v15, which is not in the fleet.",
         "Next milestone: November Cybercab rides in Dallas, if Elluswamy's call comment holds; year-end 24/7 and a first customer handoff, both still aims; a public NHTSA response on AQ26002.",
         "Next milestone: Dallas Cybercab service, still described as later this month and unmet as of Nov. 7. Year-end customer deliveries remain an aim. Austin 24/7 hours were discussed earlier and are not in place.",
-        "Next milestone: First invited-customer Cybercab deliveries, estimated December 2026 in Austin. That is still not a public order book, a delivered unit, or a production ramp."
+        "Next milestone: First invited-customer Cybercab deliveries, estimated December 2026 in Austin. That is still not a public order book, a delivered unit, or a production ramp.",
+        "Next milestone: Invite-only Cybercab deliveries are still estimated for December and remain geofenced, subscription-locked, and barred from the paid network without separate approval. Berlin's building-permit application is only targeted before the end of 2026."
       ],
       "timeline": [
         {
@@ -14757,10 +15361,9 @@
     },
     "fsd": {
       "title": "FSD Country Approvals",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Finland's Traficom cleared supervised Tesla Assisted Driving on 11 November, the 11th EU recognition of the Dutch file, but the regulator put EU-wide approval next year and Finnish cars are not confirmed live. Korea's China-built exemption is stuck on an incomplete file, and supervised FSD in China remains unapproved.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "Italy has a provisional national Assisted Driving approval that is not live in customer cars. The RDW added a hands-on rule above 130 km/h. Korea's China-built exemption still cannot be reviewed. EU-wide approval is unfinished.",
       "keyPoints": [
-        "Next milestone: NHTSA EA26002 Tesla response deadline August 12, 2026; TCMV EU-wide vote October 6, 2026",
         "NHTSA EA26002 probe \u2014 now at the last investigative tier before potential recall of 3.2M vehicles \u2014 formally scrutinizes CEO social-media posts that instructed users to text and make espresso while FSD was engaged.",
         "Tesla Korea's 50 million km Supervised FSD figure excludes the Shanghai-built Model 3/Y majority fleet, which remains locked out by origin-based safety certification; Tesla has not applied for the self-certification path MOLIT left open in April.",
         "Next milestone: October 6 TCMV mutual-recognition vote; any Astra (Switzerland), Traficom (Finland), or Italy filing/decision",
@@ -14774,7 +15377,8 @@
         "Next milestone: A dated Slovak activation, or a dated first install in Czechia or Croatia. The EU-wide vote Germany is lobbying for is still not expected before December. CHP or Tesla would have to release the I-80 vehicle log before FSD engagement is established.",
         "Next milestone: A qualified-majority vote in the EU Technical Committee on Motor Vehicles, described as expected in December and still short of 15 states and 65 percent of the population. Germany, France, and Italy are not nationally cleared. Japan still needs an MLIT decision before any 2026 launch.",
         "Next milestone: A confidential EU TCMV decision, which outside reporting still places no earlier than December 2026 and which needs a qualified majority. In Korea, any KFTC response, and a transport-ministry ruling on whether the October exemption request can cover China-built cars.",
-        "Next milestone: A dated Finnish customer rollout, and the EU-wide decision Traficom now places next year. Korea still needs a complete exemption file before any review clock starts."
+        "Next milestone: A dated Finnish customer rollout, and the EU-wide decision Traficom now places next year. Korea still needs a complete exemption file before any review clock starts.",
+        "Next milestone: A dated Italian software rollout, a complete Korean exemption file, or a public TCMV result on EU-wide approval."
       ],
       "activeCountries": [
         "United States",
@@ -14879,10 +15483,9 @@
     },
     "jobPostings": {
       "title": "Job Postings",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Visible AI hiring this week is hourly FSD (Supervised) safety drivers in seven more US cities, robotaxi city managers and night-shift fleet staff, and a handful of single Palo Alto Tesla SI and Optimus design seats. Optimus operations hiring is still people who move robots for data collection. The company-wide LinkedIn openings series is still unusable.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "This week's new AI/robotics hiring is seven Optimus technical-program-manager seats (five full-time, two internships), including actuator manufacturing and data-collection hardware. No new FSD safety-driver or robotaxi operations wave beyond last week's filings.",
       "keyPoints": [
-        "Next milestone: Independent re-count of Tesla careers Optimus query above/below 110; any disclosed Optimus org headcount or fill rates; sustained Production Associate / factory tech hiring wave lasting multiple weeks",
         "Tesla's total hiring is flat year-over-year at ~5,000 open positions despite simultaneous Optimus, Cybercab, and Semi ramps \u2014 suggesting budget pressure, execution constraints, or a deliberate decision to run lean on headcount ahead of product launches.",
         "Fresh Optimus and FSD postings this week are mocap/data-collection/supervisor ops, not manufacturing-line or core Autopilot engineering \u2014 total U.S. openings remain a ~5,030 plateau.",
         "Next milestone: A counted Tesla-careers Optimus/FSD engineering wave, or production-associate / shift staffing for an Optimus line \u2014 not more mocap, supervisors, or single process-tech reqs",
@@ -14896,7 +15499,8 @@
         "Next milestone: A repeated wave of Optimus line or Tesla AI research reqs, or a real move in the engineering and autonomy share off about 8% and 6%.",
         "Next milestone: Whether the Littleton req stays open on Tesla's own board through the 16 Nov close date, and whether any AI research requisitions appear.",
         "Next milestone: A Tesla careers or LinkedIn total that can be compared with the 8,185 series, or a dated Optimus manufacturing-engineer req rather than another collector or shift lead.",
-        "Next milestone: A stable official openings count, or a clear shift from safety-operator and night-shift fleet-support reqs to production and unsupervised-ops headcount."
+        "Next milestone: A stable official openings count, or a clear shift from safety-operator and night-shift fleet-support reqs to production and unsupervised-ops headcount.",
+        "Next milestone: A broader Optimus manufacturing or autonomy-engineer hiring wave, rather than another handful of program-manager reqs."
       ],
       "roleTypes": [
         "AI Engineers (manipulation, world modeling, video generation)",
@@ -14926,10 +15530,9 @@
     },
     "optimus": {
       "title": "Optimus Production",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "J.P. Morgan\u2019s Nov. 12 note treats Tesla as the U.S. humanoid maker aiming above a 10,000\u201330,000-a-year peer band, but it gives Optimus no volume, price, or customer, and says hands, actuators, the brain, and capacity still bind the industry. Austin is still a construction site and there is still no rental price.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "The Austin Optimus factory is still a construction site. November 20 photos show four foundations with embedded mounts an observer identifies as IDRA Giga Press frames. No presses are on site, Tesla has not confirmed the cell, and there is still no public volume or rental price.",
       "keyPoints": [
-        "Next milestone: Official confirmation of first Fremont line robot output and Optimus Academy unit delivery; V3 public reveal (no date set); Giga Texas volume production (Summer 2027 target)",
         "Both the Q1-guided Fremont production start window (late July/August) and the V3 full-body reveal promise have elapsed with no official Tesla confirmation \u2014 the only output is a CGI concept render. Production at Giga Texas factory is not targeted until Summer 2027.",
         "First external Optimus sales slipped from late 2026 to H2 2027 while Fremont SOP is still unconfirmed after the Q1-guided window elapsed \u2014 a missed start plus a ~12-month commercial slip, against Unitree already selling 5,215 humanoids.",
         "Next milestone: An official Fremont first-unit or SOP confirmation, a public Optimus Gen 3 reveal tied to that line, or any disclosed internal factory deployment with a unit count.",
@@ -14943,7 +15546,8 @@
         "Next milestone: Q3 2026 earnings call on October 21, the first likely place for a unit count, Gen 3 date, or a revised 2026 production target",
         "Next milestone: The non-scripted Optimus video Musk said could arrive within one or two months of the October 21 call. Any external shipment is still guided to the end of 2027.",
         "Next milestone: Outside robots are still an end-of-2027 target. A Gen 3 demo Musk had pointed at November had not shown up by November 7.",
-        "Next milestone: A Tesla count of robots actually built, or a rental price. Outside deliveries are still only discussed for around the end of 2027."
+        "Next milestone: A Tesla count of robots actually built, or a rental price. Outside deliveries are still only discussed for around the end of 2027.",
+        "Next milestone: A concrete pour and delivery of the casting machines, or a Tesla statement on what Austin will cast. External rental still has no price."
       ],
       "timeline": [
         {
@@ -15016,8 +15620,8 @@
     },
     "productionDelivery": {
       "title": "Vehicle Production & Delivery",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "October China retail collapsed to 8,817, and 87% of Shanghai's wholesale was export, while Q4 still has no delivery guide. The U.S. order book narrowed: the $41,990 Model Y AWD disappeared and Premium and Model Y L estimates moved into 2027. New Cybertruck orders are Cyberbeast-only at $109,990, many deposits are expected back, and production still ends by the end of summer 2027. Semi's new volume signal is 50 trucks en route to Chicago.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "Q4 still has no delivery guide. Musk pledged more Shanghai output with no target while China retail is down 15% year to date and October was an export month. Argentina orders are open with zero deliveries. Semi proof is still single customer trucks: HMD says 49 of its 50 are still coming.",
       "totalProduction": "10,224,271",
       "totalDeliveries": "10,150,606",
       "quarterlyData": [
@@ -15327,10 +15931,9 @@
     },
     "terafab": {
       "title": "Terafab In-House Chip Manufacturing",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Grimes acreage is past 10,000 acres and the records suit now covers KBTX's request, but the site still shows no chip output. Japan coverage is supplier meetings on a compressed clock, not confirmed tool orders. HB 732 does not repeal the existing JETI agreement.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "A&M told local officials on Nov. 16 that Terafab makes its RELLIS chip institute more relevant, but the building is about 20 percent complete, significant operations are mid-2028, and Tesla/SpaceX did not confirm hiring. The Grimes site still shows no chip output. HB 732 has not moved since it was filed Nov. 9.",
       "keyPoints": [
-        "Next milestone: Full-scale construction within several months (target Q4 2026 / Q1 2027); tool procurement and installation; process qualification and first-silicon targets unknown but likely 2027-2028 for initial wafer production",
         "Drone footage on August 13 confirms civil construction began within 7 days of the August 6 groundbreaking \u2014 the fastest mobilization Tesla/SpaceX has demonstrated from approval to ground-breaking to active construction across any major project.",
         "WIT TECH land holdings jumped to 4,620 acres (~21% of the advertised 22,000-acre site) while local officials marked phase-1 jobs down to 1,500 vs SpaceX's 3,000 pledge \u2014 site assembly and headcount are both tracking below the JETI pitch, with first wafers still Q1 2029.",
         "Next milestone: Vertical construction / cleanroom / tool install; first Terafab taxable value on school rolls in 2029-30; Q1 2029 commercial operations",
@@ -15344,7 +15947,8 @@
         "Next milestone: Grimes full-construction start is still dated Dec. 1, 2026. No public Abbott response turned up on the Oct. 13 records demand. Control of any TSMC line is unresolved.",
         "Next milestone: Equipment commissioning at the Austin research fab in the first half of 2027, with a first test chip around May or June 2027 only if the line works. The citizens' records case may get a hearing in December 2026.",
         "Next milestone: Hinojosa takes office in January 2027. Commissioning of the Austin research fab is still hoped for in the first half of 2027, with a first test chip only around May or June 2027 and volume still an aggressive late-2028 claim.",
-        "Next milestone: A court ruling on the Nov. 9 amended petition, or a Tesla or SpaceX confirmation of an actual equipment order rather than another trade-press retelling."
+        "Next milestone: A court ruling on the Nov. 9 amended petition, or a Tesla or SpaceX confirmation of an actual equipment order rather than another trade-press retelling.",
+        "Next milestone: A&M's RELLIS water-well construction is scheduled to start in December 2026. Institute substantial completion is targeted for the end of 2027. This briefing did not set a Terafab wafer-start date."
       ],
       "timeline": [
         {
@@ -15457,10 +16061,9 @@
     },
     "fsdv15": {
       "title": "FSD v15 Software",
-      "latestUpdate": "2026-11-14",
-      "criticalNews": "Customer software is still supervised. North America 2026.38.5.13 repeats v14.3.13 on HW4 and v14.3 Lite on HW3. Europe 2026.39.100 is only v14.2.2.7 and caps speed offset at +10% while the notes claim behavior did not change. v15 is not in a customer OTA.",
+      "latestUpdate": "2026-11-21",
+      "criticalNews": "Customer software is still supervised. North America 2026.44.1, out November 17, repeats v14.3.13 on HW4 and v14.3 Lite on HW3, now on the general track for new subscribers. Musk says v15 wide-releases next month with the holiday update. It is not in an OTA, and no HW3 v15 Lite has been announced.",
       "keyPoints": [
-        "Tesla's FSD v14 Lite OTA caused documented ECU board thermal failures (96-102\u00b0C) on HW3 vehicles, requiring Tesla to ship a capability-downgraded v14.1 Lite fix \u2014 confirming HW3 as a structural hardware ceiling that FSD v14 already exceeds.",
         "FSD v15 completion is stalled at ~40% of planned tracks four weeks after the Q2 disclosure \u2014 no consumer OTA date, and the Summer Update continues to ship without FSD.",
         "Next milestone: A consumer FSD v15 OTA, or at least a merge of the current v14 stack into the 2026.26 Summer Update so owners are not stuck choosing between cabin features and the latest FSD.",
         "Next milestone: Wide 2026.26.6.5 / v14.3.8 adoption; AU/NZ HW3 v14 Lite download with a date; consumer FSD v15",
@@ -15474,7 +16077,8 @@
         "Next milestone: A real v14 note change that ships pothole avoidance or expanded reasoning, or the first customer FSD v15 build. Neither is dated.",
         "Next milestone: FSD v15 customer deploy, which is supposed to bring the first in-house AI map use. Unsupervised customer enablement is only a hedged Q2 2027 target inside Tesla geofences. Pothole avoidance is still an upcoming note on v14.3.13.",
         "Next milestone: A customer build whose notes actually change, or a real v15 OTA. Prior guidance still puts customer unsupervised FSD around Q2 2027.",
-        "Next milestone: A customer v15 build, or at least Europe moving off v14.2 onto the North American 14.3 line. The December EU vote is more likely to add supervised limits than to ship unsupervised software."
+        "Next milestone: A customer v15 build, or at least Europe moving off v14.2 onto the North American 14.3 line. The December EU vote is more likely to add supervised limits than to ship unsupervised software.",
+        "Next milestone: December 2026 holiday update, which Musk says is the wide release of FSD v15. He did not give a day, a build number, or hardware eligibility."
       ],
       "timeline": [
         {

@@ -1,0 +1,147 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-11-21",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval Europe November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "TeslaNorth FSD Italy Korea regulatory November 2026",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "Teslarati Tesla Assisted Driving Italy 12th EU country",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "RDW Tesla Assisted Driving update 16 November 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "MOLIT Korea Tesla FSD exemption 20 November 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "NHTSA Tesla FSD probe November 2026 Tesla Oracle InsideEVs",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-italy-approval-rollout",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/matteosalvinimi/status/2123739830194512067",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/tesla-assisted-driving-update-hands-on-130-kmh",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://korea.kr/briefing/pressReleaseView.do?newsId=156790094",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-south-korea-exemption-review",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe",
+        "kept": false,
+        "reason": "3 November RDW speed-margin story, before this window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Italy Grants Provisional Assisted-Driving Approval; Cars Are Not Live",
+        "url": "https://teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country",
+        "decision": "file",
+        "reason": "New 20 November ministerial provisional homologation inside the window"
+      },
+      {
+        "title": "RDW Requires Hands on the Wheel Above 130 km/h",
+        "url": "https://rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update",
+        "decision": "file",
+        "reason": "New 16 November RDW decision tightening supervised use; not a software-version changelog"
+      },
+      {
+        "title": "Korea Says Tesla's FSD Exemption File Still Cannot Be Reviewed",
+        "url": "https://korea.kr/briefing/pressReleaseView.do?newsId=156790094",
+        "decision": "file",
+        "reason": "New 20 November MOLIT notice; distinct from the 11 November incomplete-file recap"
+      },
+      {
+        "title": "Finland Clears Supervised Assisted Driving",
+        "url": "https://thestar.com.my/tech/tech-news/2026/11/12/finland-approves-tesla039s-assisted-driving-system",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange from 11 November"
+      },
+      {
+        "title": "Korea exemption file incomplete",
+        "url": "https://driveteslacanada.ca/news/tesla-korea-fsd-exemption-filing-incomplete",
+        "decision": "skip",
+        "reason": "seenUrl from 11 November; only the 20 November notice is new"
+      },
+      {
+        "title": "Tesla threatens Chinese outlet over grey-market FSD",
+        "url": "https://carnewschina.com/2026/11/11/chinese-media-ceo-defies-teslas-legal-threat-over-unauthorized-fsd-testing-see-you-in-court",
+        "decision": "skip",
+        "reason": "seenUrl; no new China approval this week"
+      },
+      {
+        "title": "Tesla FSD v15 gets a December release date",
+        "url": "https://teslarati.com/tesla-full-self-driving-v15-gets-release-date-elon-musk",
+        "decision": "skip",
+        "reason": "FSD software version belongs to fsdv15"
+      },
+      {
+        "title": "RDW 3 November speed-margin cut",
+        "url": "https://teslarati.com/tesla-full-self-driving-gets-hit-with-some-adjustments-europe",
+        "decision": "skip",
+        "reason": "Before 14 November; prior RDW approval already in seenUrls"
+      },
+      {
+        "title": "NHTSA tag, no new FSD probe",
+        "url": "https://teslarati.com/tag/nhtsa",
+        "decision": "skip",
+        "reason": "No NHTSA or NTSB FSD item dated inside 14-21 November"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 12,
+        "decision": "reject",
+        "reason": "Outlet tally of EU clearances, not the active-country series. latestMetric.totalCountries is 6. Italy is provisional and cars are not confirmed live."
+      }
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-11-21",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "notateslaapp.com/software-updates FSD versions 2026-11-14 to 2026-11-21",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Tesla FSD v15 release date Musk November 2026 teslarati",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "teslanorth.com FSD v15 and 2026.44 November 2026",
+        "tool": "web_fetch",
+        "hits": 5
+      },
+      {
+        "q": "notateslaapp.com/fsd-beta/news November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 7
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-december-wide-release",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-full-self-driving-v15-gets-release-date-elon-musk",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/news/5057/tesla-fsd-v15-coming-next-month-with-holiday-update-musk",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/software-updates/version/2026.44.1/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/tesla-2026-44-1-release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-v15-xv-teaser",
+        "kept": false,
+        "reason": "same v15 cycle, folded into the December date item"
+      },
+      {
+        "url": "https://notateslaapp.com/news/5052/tesla-fsd-jailbroken-in-china-fix-already-on-the-way",
+        "kept": false,
+        "reason": "China geo-lock and rollout stall belong to fsd"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-wide-release-next-month",
+        "kept": false,
+        "reason": "404 guessed URL"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/elon-musk-fsd-v15-december",
+        "kept": false,
+        "reason": "404 guessed URL"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk dates FSD v15 for December, but customer cars are still on v14",
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know",
+        "decision": "file",
+        "reason": "New November 21 wide-release claim, corroborated by Teslarati and Not a Tesla App, and it is not in seenUrls"
+      },
+      {
+        "title": "2026.44.1 repeats supervised v14.3.13 and HW3 Lite on the general track",
+        "url": "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner",
+        "decision": "file",
+        "reason": "New November 17 branch. Same FSD versions as 2026.38.5.13, but they are now on the general track for new subscribers"
+      },
+      {
+        "title": "Tesla Drops an XV Teaser as Owners Wait for FSD v15",
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-v15-xv-teaser",
+        "decision": "skip",
+        "reason": "Same v15 cycle. The November 21 wide-release posts supersede the teaser"
+      },
+      {
+        "title": "Tesla FSD Jailbroken in China, Fix Already on the Way",
+        "url": "https://notateslaapp.com/news/5052/tesla-fsd-jailbroken-in-china-fix-already-on-the-way",
+        "decision": "skip",
+        "reason": "China geo-unlock and stalled official rollout belong to fsd, not a new customer version"
+      },
+      {
+        "title": "Tesla Assisted Driving Approved in Italy, 12th EU Country",
+        "url": "https://notateslaapp.com/news/5047/tesla-assisted-driving-approved-in-italy-12th-eu-country",
+        "decision": "skip",
+        "reason": "Country approval belongs to fsd"
+      },
+      {
+        "title": "Tesla TAD in Europe to Require Attention During Maneuvers and Hands on Wheel Over 130 Km/h",
+        "url": "https://notateslaapp.com/news/5029/tesla-tad-in-europe-to-require-hands-on-wheel-over-130-kmh-more",
+        "decision": "skip",
+        "reason": "Europe supervised-driving rules belong to fsd"
+      },
+      {
+        "title": "Tesla's Push to Expand FSD in South Korea Hits a Roadblock",
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-south-korea-exemption-review",
+        "decision": "skip",
+        "reason": "Country regulatory review belongs to fsd"
+      },
+      {
+        "title": "Tesla Launches Its First FSD Ad in Times Square",
+        "url": "https://notateslaapp.com/news/5030/tesla-launches-its-first-fsd-ad-in-times-square",
+        "decision": "skip",
+        "reason": "Marketing. No version, changelog, or miles change"
+      },
+      {
+        "title": "Tesla Owners Could Add Their Vehicles to the Robotaxi Network As Early as Next Month",
+        "url": "https://notateslaapp.com/news/5022/tesla-to-allow-customers-to-add-their-vehicles-to-robotaxi-as-early-as-next-month",
+        "decision": "skip",
+        "reason": "Robotaxi network ops belong to cybercab"
+      },
+      {
+        "title": "Tesla Adds Grok Button to Navigation Search Bar",
+        "url": "https://notateslaapp.com/news/5053/tesla-adds-grok-button-to-navigation-search-bar",
+        "decision": "skip",
+        "reason": "Navigation UI button in 2026.44.1, not a Grok planning-architecture or FSD version change"
+      },
+      {
+        "title": "Europe 2026.39.100 is still v14.2.2.7 and quietly caps speed offset",
+        "url": "https://notateslaapp.com/news/4998/tesla-update-202639100-quietly-reduces-fsdtad-max-speed-in-europe",
+        "decision": "skip",
+        "reason": "seenUrl and recentKeyChange, dated November 12, before this window"
+      },
+      {
+        "title": "2026.38.5.13 still ships supervised v14.3.13 and HW3 Lite",
+        "url": "https://notateslaapp.com/software-updates/version/2026.38.5.13/release-notes",
+        "decision": "skip",
+        "reason": "recentKeyChange. This week's distinct item is the 2026.44 branch, not another 2026.38 point release"
+      },
+      {
+        "title": "No new cumulative FSD miles milestone",
+        "url": "https://teslanorth.com/2026/11/02/fsd-fleet-17-billion-miles",
+        "decision": "skip",
+        "reason": "Tier-1 update and FSD news pages for November 14-21 had no miles figure after the November 2 17-billion story already in seenUrls"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdMiles",
+        "decision": "reject",
+        "reason": "No new cumulative-miles figure in the November 14-21 window. The November 2 17-billion milestone is already in seenUrls."
+      },
+      {
+        "series": "fsdInstallShare",
+        "count": 23.3,
+        "decision": "reject",
+        "reason": "TeslaFi share on the 2026.44.1 notes page is a tracker sample, not an official Tesla fleet or version metric. The FSD build is unchanged from v14.3.13 and v14.3 Lite."
+      }
+    ]
+  }
+}

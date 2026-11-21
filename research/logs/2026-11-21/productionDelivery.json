@@ -1,0 +1,189 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-11-21",
+  "filed": 5,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla production deliveries November 14-21 2026 Teslarati front page",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "TeslaNorth front page Semi Model Y Cybertruck deliveries November 2026",
+        "tool": "web_fetch",
+        "hits": 24
+      },
+      {
+        "q": "CnEVPost Tesla China sales and output November 2026",
+        "tool": "web_fetch",
+        "hits": 10
+      },
+      {
+        "q": "TeslaNorth November 19-21 Argentina Quebec Cybertruck order book",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "TeslaNorth November 15-19 Semi Shanghai DealBook deliveries",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "HMD Trucking 50 Tesla Semi Chicago delivery confirmation",
+        "tool": "web_fetch",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://cnevpost.com/2026/11/19/elon-musk-tesla-keep-boosting-china-output",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-shanghai-visit-china-production-pledge",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/elon-musk-makes-surprise-stop-at-giga-shanghai-with-a-message-for-teslas-china-team",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.investing.com/news/stock-market-news/musk-pledges-higher-tesla-output-at-china-plant-chinese-state-media-says-5037774",
+        "kept": false,
+        "reason": "Reuters brief; same pledge already filed from CnEVPost"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://hmdtrucking.com/blog/the-truth-about-hmds-50-tesla-trucks-in-chicago",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/15/ev-semi-fleet-first-tesla-semi-delivery",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/18/tesla-first-texas-megacharger-mesquite",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-quebec-2000-ev-rebate-2027",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/quebec-ev-registration-fee-2027",
+        "kept": false,
+        "reason": "2025 budget fee, folded into the Quebec rebate story"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-cybertruck-2027-tighter-turns",
+        "kept": false,
+        "reason": "steering-rack feature, not volume"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+        "kept": false,
+        "reason": "driverless Model Y is cybercab; Y L mix comment has no schedule"
+      },
+      {
+        "url": "https://teslarati.com/elon-musk-tesla-model-yl-no-steering-wheel-robotaxi",
+        "kept": false,
+        "reason": "cybercab vehicle story; no production-line change"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk pledges more Shanghai output with no target while China retail stays broken",
+        "url": "https://cnevpost.com/2026/11/19/elon-musk-tesla-keep-boosting-china-output",
+        "decision": "file",
+        "reason": "New November 19 pledge; no target, and year-to-date retail is still down"
+      },
+      {
+        "title": "HMD's own account still shows one Illinois Semi, not a finished batch of 50",
+        "url": "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered",
+        "decision": "file",
+        "reason": "New versus last week's en-route note; carrier text still says 49 are coming"
+      },
+      {
+        "title": "Argentina Model 3 and Model Y orders open, with no deliveries yet",
+        "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders",
+        "decision": "file",
+        "reason": "Orders opened this week; November 6 item was only the launch date"
+      },
+      {
+        "title": "First Texas Semi Megacharger opens with eight stalls and no assigned fleet",
+        "url": "https://teslanorth.com/2026/11/18/tesla-first-texas-megacharger-mesquite",
+        "decision": "file",
+        "reason": "Tesla-confirmed November 17 site; infrastructure, not a truck count"
+      },
+      {
+        "title": "Tesla will cover Quebec's expiring $2,000 rebate, not the old $7,000",
+        "url": "https://teslanorth.com/2026/11/21/tesla-quebec-2000-ev-rebate-2027",
+        "decision": "file",
+        "reason": "New company incentive after the provincial rebate ends"
+      },
+      {
+        "title": "Tesla Plans a Driverless Model Y for Up to Seven People",
+        "url": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+        "decision": "skip",
+        "reason": "Cybercab owns the driverless vehicle; the Model Y L line-shift comment has no schedule and US delays were filed November 12"
+      },
+      {
+        "title": "Tesla Says the 2027 Cybertruck Now Turns Tighter Than a Model Y",
+        "url": "https://teslanorth.com/2026/11/20/tesla-cybertruck-2027-tighter-turns",
+        "decision": "skip",
+        "reason": "Software and steering travel on 2027 trucks; production end date already filed"
+      },
+      {
+        "title": "China October retail falls to 8,817",
+        "url": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026",
+        "decision": "skip",
+        "reason": "seenUrl and last week's key change; November retail is not out"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 810889,
+        "decision": "reject",
+        "reason": "January\u2013October Shanghai wholesale, exports included, not a global quarter"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 8817,
+        "decision": "reject",
+        "reason": "October China retail already filed last week; not a new quarterly total"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 50,
+        "decision": "reject",
+        "reason": "Kuna's HMD batch claim is not a Tesla production total and HMD still says 49 trucks are coming"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 1,
+        "decision": "reject",
+        "reason": "Single customer Semi deliveries are not quarterly production"
+      }
+    ]
+  }
+}

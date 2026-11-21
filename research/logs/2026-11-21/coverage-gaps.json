@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-21",
+  "status": "ok",
+  "candidates": 15,
+  "covered": 11,
+  "ignored": 0,
+  "gapCount": 4,
+  "gaps": [
+    {
+      "title": "Texas registry adds 200 Cybercabs in one day, taking the count to 773",
+      "url": "https://www.teslarati.com/teslas-cybercab-fleet-just-had-its-biggest-day-ever/",
+      "date": "2026-11-18",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Nov. 17 batch put Cybercabs ahead of Model Ys on the Texas list; registration is not riders in service",
+      "match": "gap"
+    },
+    {
+      "title": "Miami Robotaxi geofence roughly doubles, still short of the beach",
+      "url": "https://www.teslarati.com/tesla-doubled-miami-robotaxi-geofence/",
+      "date": "2026-11-16",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Service area grew from about 31 to about 59 square miles and now includes downtown; Miami Beach is still out",
+      "match": "gap"
+    },
+    {
+      "title": "Musk says customer-owned Robotaxi trials may start next month",
+      "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/",
+      "date": "2026-11-16",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Conditional December pilot would pull ahead of the Q2 2027 timing given on the Q3 call",
+      "match": "gap"
+    },
+    {
+      "title": "Tesla opens Argentina orders for Shanghai-built Model 3 and Model Y",
+      "url": "https://electrek.co/2026/11/21/elon-musk-tesla-argentina-launch-awkward-video-milei/",
+      "date": "2026-11-21",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Direct sales started Nov. 21 with five trims from $40,990, but first deliveries are not expected until March or April 2027",
+      "match": "gap"
+    }
+  ]
+}

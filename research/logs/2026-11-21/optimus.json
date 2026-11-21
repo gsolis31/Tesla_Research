@@ -1,0 +1,124 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-11-21",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Optimus teslarati.com",
+        "tool": "web_fetch",
+        "hits": 20
+      },
+      {
+        "q": "Optimus teslanorth.com",
+        "tool": "web_fetch",
+        "hits": 15
+      },
+      {
+        "q": "Tesla Optimus Giga Press Austin November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "optimusk.blog November 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "teslarati.com category news recent",
+        "tool": "web_fetch",
+        "hits": 18
+      },
+      {
+        "q": "teslaoracle.com homepage November 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/JoeTegtmeyer/status/2123838390843961444",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/JoeTegtmeyer/status/2123924488064479529",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "kept": false,
+        "reason": "Optimus hiring signal belongs to jobPostings"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/tesla-optimus-shareholder-voting-guide-2026/",
+        "kept": false,
+        "reason": "shareholder vote explainer, not production or a sales timeline"
+      },
+      {
+        "url": "https://optimusk.blog/blog/foundation-humanoid-robot-missed-payroll/",
+        "kept": false,
+        "reason": "competitor payroll story; Optimus benefit is the blog's opinion"
+      },
+      {
+        "url": "https://optimusk.blog/blog/optimusk-november-2026-update/",
+        "kept": false,
+        "reason": "site redesign dated 2026-11-10, outside the window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Drone Photos Hint at Giga Presses for Tesla's Optimus Factory",
+        "url": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+        "decision": "file",
+        "reason": "new Nov 20 site evidence on the Austin Optimus factory, corroborated by the observer's posts"
+      },
+      {
+        "title": "Tesla Is Hiring for Optimus Motors, Electronics and More",
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "decision": "skip",
+        "reason": "hiring signal; Optimus job posting counts and hiring signals belong to jobPostings"
+      },
+      {
+        "title": "Tesla Puts Optimus to Work Ahead of Its Shareholder Meeting",
+        "url": "https://teslanorth.com/2026/11/17/tesla-optimus-shareholder-voting-guide-2026/",
+        "decision": "skip",
+        "reason": "Optimus appears in a Dec 3 voting how-to video; no hardware, ramp, or sales-timeline change"
+      },
+      {
+        "title": "Humanoid Startup Foundation Misses Payroll",
+        "url": "https://optimusk.blog/blog/foundation-humanoid-robot-missed-payroll/",
+        "decision": "skip",
+        "reason": "competitor cash crisis; the claim that it helps Optimus is editorial and adds no Tesla volume, price, or factory fact"
+      },
+      {
+        "title": "OPTIMUSK.BLOG November 2026 Update",
+        "url": "https://optimusk.blog/blog/optimusk-november-2026-update/",
+        "decision": "skip",
+        "reason": "published 2026-11-10, before the window, and it is a site redesign rather than an Optimus event"
+      },
+      {
+        "title": "Tesla reveals Optimus Academy, where robots teach themselves",
+        "url": "https://teslarati.com/tesla-reveals-optimus-academy-where-robots-teach-themselves/",
+        "decision": "skip",
+        "reason": "seenUrl; Teslarati's newest Optimus item is about four weeks old, and this week's Teslarati news list has no Optimus story"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 4,
+        "decision": "reject",
+        "reason": "Four foundation pads at the Austin Optimus building, not robots built, shipped, or in service."
+      }
+    ]
+  }
+}

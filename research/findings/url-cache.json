@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-14",
+  "lastUpdated": "2026-11-21",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -2899,23 +2899,170 @@
       "lastSeen": "2026-11-14",
       "category": "Terafab In-House Chip Manufacturing",
       "title": "House data-center bill leaves Terafab's existing JETI deal in place"
+    },
+    "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas": {
+      "originalUrl": "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Dallas Cybercab rides open in the existing zone, with no Tesla fleet count"
+    },
+    "https://robotaxitracker.com/government": {
+      "originalUrl": "https://robotaxitracker.com/government",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Texas roster adds 200 Cybercabs to 1,507; that is still not riders"
+    },
+    "https://robotaxitracker.com/news/tesla-plans-cybercab-factory-at-giga-berlin": {
+      "originalUrl": "https://robotaxitracker.com/news/tesla-plans-cybercab-factory-at-giga-berlin",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Berlin Cybercab hall is a 2029 plan, and the permit is not filed"
+    },
+    "https://teslanorth.com/2026/11/16/tesla-miami-robotaxi-service-area-nearly-doubles": {
+      "originalUrl": "https://teslanorth.com/2026/11/16/tesla-miami-robotaxi-service-area-nearly-doubles",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Miami Robotaxi map nearly doubles; Tesla did not state miles or cars"
+    },
+    "https://teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says": {
+      "originalUrl": "https://teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Customer-owned Robotaxi trials may start next month only if things go well"
+    },
+    "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs": {
+      "originalUrl": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Order screens list a 279-mile Cybercab estimate and a 50,000-mile warranty"
+    },
+    "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides": {
+      "originalUrl": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Cybercab responder guide sets an 85 mph posted-limit design, not a faster service"
+    },
+    "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats": {
+      "originalUrl": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Cybercab Production",
+      "title": "Musk describes a wheel-less six-seat Model Y with no date or plant"
+    },
+    "https://teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country": {
+      "originalUrl": "https://teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "FSD Country Approvals",
+      "title": "Italy Grants Provisional Assisted-Driving Approval; Cars Are Not Live"
+    },
+    "https://rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update": {
+      "originalUrl": "https://rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "FSD Country Approvals",
+      "title": "RDW Requires Hands on the Wheel Above 130 km/h"
+    },
+    "https://korea.kr/briefing/pressReleaseView.do": {
+      "originalUrl": "https://korea.kr/briefing/pressReleaseView.do?newsId=156790094",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "FSD Country Approvals",
+      "title": "Korea Says Tesla's FSD Exemption File Still Cannot Be Reviewed"
+    },
+    "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations": {
+      "originalUrl": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Optimus Production",
+      "title": "Austin Optimus site has press mounts in rebar, not presses"
+    },
+    "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know": {
+      "originalUrl": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "FSD v15 Software",
+      "title": "Musk dates FSD v15 for December, but customer cars are still on v14"
+    },
+    "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner": {
+      "originalUrl": "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "FSD v15 Software",
+      "title": "2026.44.1 repeats supervised v14.3.13 and HW3 Lite on the general track"
+    },
+    "https://cnevpost.com/2026/11/19/elon-musk-tesla-keep-boosting-china-output": {
+      "originalUrl": "https://cnevpost.com/2026/11/19/elon-musk-tesla-keep-boosting-china-output",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Vehicle Production & Delivery",
+      "title": "Musk pledges more Shanghai output with no target while China retail stays broken"
+    },
+    "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered": {
+      "originalUrl": "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Vehicle Production & Delivery",
+      "title": "HMD's own account still shows one Illinois Semi, not a finished batch of 50"
+    },
+    "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders": {
+      "originalUrl": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Vehicle Production & Delivery",
+      "title": "Argentina Model 3 and Model Y orders open, with no deliveries yet"
+    },
+    "https://teslanorth.com/2026/11/18/tesla-first-texas-megacharger-mesquite": {
+      "originalUrl": "https://teslanorth.com/2026/11/18/tesla-first-texas-megacharger-mesquite",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Vehicle Production & Delivery",
+      "title": "First Texas Semi Megacharger opens with eight stalls and no assigned fleet"
+    },
+    "https://teslanorth.com/2026/11/21/tesla-quebec-2000-ev-rebate-2027": {
+      "originalUrl": "https://teslanorth.com/2026/11/21/tesla-quebec-2000-ev-rebate-2027",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla will cover Quebec's expiring $2,000 rebate, not the old $7,000"
+    },
+    "https://kbtx.com/2026/11/17/terafab-makes-texas-ams-chip-institute-more-relevant-university-leader-says": {
+      "originalUrl": "https://kbtx.com/2026/11/17/terafab-makes-texas-ams-chip-institute-more-relevant-university-leader-says",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "A&M's Terafab workforce pitch is a half-built institute, not a hiring deal"
+    },
+    "https://x.com/nick_dilello/status/2123944587215692223": {
+      "originalUrl": "https://x.com/nick_dilello/status/2123944587215692223",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "category": "Job Postings",
+      "title": "Optimus hiring call is seven program-manager seats, not a ramp"
     }
   },
   "stats": {
-    "totalUrls": 414,
+    "totalUrls": 435,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 34,
-      "Cybercab Production": 67,
-      "FSD v15 Software": 44,
-      "Vehicle Production & Delivery": 71,
+      "Optimus Production": 35,
+      "Cybercab Production": 75,
+      "FSD v15 Software": 46,
+      "Vehicle Production & Delivery": 76,
       "unknown": 52,
-      "FSD Country Approvals": 42,
+      "FSD Country Approvals": 45,
       "4680 Battery Cell Production": 12,
       "Terafab Manufacturing": 4,
       "AI Chip Production": 20,
-      "Job Postings": 27,
-      "Terafab In-House Chip Manufacturing": 32
+      "Job Postings": 28,
+      "Terafab In-House Chip Manufacturing": 33
     }
   }
 }

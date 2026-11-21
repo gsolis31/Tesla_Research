@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-21",
+  "errorCount": 0,
+  "warningCount": 4,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 7,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 3,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Texas registry adds 200 Cybercabs in one day, taking the count to 773",
+          "category": "cybercab",
+          "title": "Texas registry adds 200 Cybercabs in one day, taking the count to 773",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Miami Robotaxi geofence roughly doubles, still short of the beach",
+          "category": "cybercab",
+          "title": "Miami Robotaxi geofence roughly doubles, still short of the beach",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        },
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Musk says customer-owned Robotaxi trials may start next month",
+          "category": "cybercab",
+          "title": "Musk says customer-owned Robotaxi trials may start next month",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 5,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Tesla opens Argentina orders for Shanghai-built Model 3 and Model Y",
+          "category": "productionDelivery",
+          "title": "Tesla opens Argentina orders for Shanghai-built Model 3 and Model Y",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 1,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

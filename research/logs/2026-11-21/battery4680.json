@@ -1,0 +1,112 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-11-21",
+  "filed": 0,
+  "skipReason": "No significant news found in date range",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 Giga Texas yield dry electrode November 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla 4680 site:teslarati.com November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Giga Berlin 4680 cell production mid-2027 November 2026",
+        "tool": "web_fetch",
+        "hits": 4
+      },
+      {
+        "q": "Tesla 4680 GWh dry electrode basenor electrek November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant/",
+        "kept": false,
+        "reason": "seenUrl; hiring-post claim already filed Nov 9-10"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-move-away-battery-technology/",
+        "kept": false,
+        "reason": "2014 18650 Straubel piece, not a November 2026 4680 story"
+      },
+      {
+        "url": "https://batteriesnews.com/tesla-plans-to-start-battery-cell-production-in-germany-by-mid-2027/",
+        "kept": false,
+        "reason": "restates mid-2027, 18 GWh, dry electrode, and ~\u20ac1B already covered from the Nov 11 Berlin plan"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-makes-e3-billion-cybercab-bet-giga-berlin/",
+        "kept": false,
+        "reason": "Nov 16 news is a Cybercab vehicle hall; 4680 paragraph repeats the Nov 11 Thierig timeline"
+      },
+      {
+        "url": "https://www.tagesschau.de/inland/regional/brandenburg/tesla-investitionen-brandenburg-100.html",
+        "kept": false,
+        "reason": "\u20ac3B Gr\u00fcnheide item is Cybercab production, not a new cell line or GWh figure"
+      },
+      {
+        "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/11/tesla-werk-gruenheide-investition-drei-milliarden-euro-robotaxi.html",
+        "kept": false,
+        "reason": "same Cybercab hall; one sentence that cell manufacturing should be expanded, no new 4680 fact"
+      },
+      {
+        "url": "https://biz.chosun.com/en/en-industry/2026/11/20/WORQDO7URFA3ZISJDXDQOUQRWE/",
+        "kept": false,
+        "reason": "Cybercab sales story; cell quote is the Nov 11 Berlin conference already filed"
+      },
+      {
+        "url": "https://es.tradingview.com/news/zacks:3570e9c53094b:0-tesla-s-3-3b-cybercab-push-in-germany-will-it-pay-off/",
+        "kept": false,
+        "reason": "Zacks recap of the Cybercab hall plus the same 18 GWh mid-2027 cell target"
+      },
+      {
+        "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/11/tesla-eroeffnet-entwicklungszentrum-berlin-koepenick-eauto.html",
+        "kept": false,
+        "reason": "BTEC opening was Nov 4, outside the window, and is vehicle/motor labs not cell production"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla makes $3.3 billion Cybercab bet at Giga Berlin",
+        "url": "https://www.teslarati.com/tesla-makes-e3-billion-cybercab-bet-giga-berlin/",
+        "decision": "skip",
+        "reason": "Vehicle-hall story for cybercab/productionDelivery. 4680 text only repeats electrodes-to-Texas and a mid-2027 dry-electrode start already filed Nov 11."
+      },
+      {
+        "title": "Tesla plans to start battery cell production in Germany by mid-2027",
+        "url": "https://batteriesnews.com/tesla-plans-to-start-battery-cell-production-in-germany-by-mid-2027/",
+        "decision": "skip",
+        "reason": "Nov 16 rewrite of the existing Gr\u00fcnheide plan: still no local cells until mid-2027, 18 GWh target, dry electrode, about \u20ac1 billion. Not a new output or yield number."
+      },
+      {
+        "title": "Tesla Says Giga Texas Will Become North America's Largest Cell Plant",
+        "url": "https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant/",
+        "decision": "skip",
+        "reason": "seenUrl and last week's hiring-post story; TeslaNorth 4680 tag has nothing newer in this window"
+      },
+      {
+        "title": "Tesla's Cybercab raises concerns among automakers and battery suppliers",
+        "url": "https://biz.chosun.com/en/en-industry/2026/11/20/WORQDO7URFA3ZISJDXDQOUQRWE/",
+        "decision": "skip",
+        "reason": "Cybercab demand story. In-house 4680 comments recycle the Nov 11 Berlin conference and known Texas/Cybertruck use, with no new GWh or yield."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680",
+        "count": 18,
+        "decision": "reject",
+        "reason": "18 GWh is the restated Gr\u00fcnheide dry-electrode annual target for mid-2027, not installed capacity or cells produced. Config metrics list is empty and the figure did not change this week."
+      }
+    ]
+  }
+}

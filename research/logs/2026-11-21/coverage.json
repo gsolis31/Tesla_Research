@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-21",
+  "weekOf": "2026-11-16",
+  "dateFrom": "2026-11-14",
+  "dateTo": "2026-11-21",
+  "candidates": [
+    {
+      "title": "Musk says FSD v15 wide release is next month with the holiday update",
+      "url": "https://www.teslarati.com/tesla-full-self-driving-v15-gets-release-date-elon-musk/",
+      "date": "2026-11-21",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "December wide-release claim names a new UI plus HOV and late-merge fixes, not unsupervised driving"
+    },
+    {
+      "title": "Italy grants provisional approval for Tesla Assisted Driving, its 12th European country",
+      "url": "https://www.teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country/",
+      "date": "2026-11-20",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "First large EU market to clear supervised TAD, at €99 a month, ahead of a bloc-wide vote"
+    },
+    {
+      "title": "Korea says it still cannot review Tesla's China-built FSD exemption",
+      "url": "https://teslanorth.com/2026/11/20/tesla-fsd-south-korea-exemption-review/",
+      "date": "2026-11-20",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Nov. 20 ministry notice that the Oct. 22 China-built filing lacks enough detail for a technical review"
+    },
+    {
+      "title": "Tesla plans a €3 billion Giga Berlin hall for up to 1 million Cybercabs a year",
+      "url": "https://www.teslarati.com/tesla-makes-e3-billion-cybercab-bet-giga-berlin/",
+      "date": "2026-11-16",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Permit filing is later this year, construction H1 2027, and Cybercab output is aimed at 2029"
+    },
+    {
+      "title": "Texas registry adds 200 Cybercabs in one day, taking the count to 773",
+      "url": "https://www.teslarati.com/teslas-cybercab-fleet-just-had-its-biggest-day-ever/",
+      "date": "2026-11-18",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Nov. 17 batch put Cybercabs ahead of Model Ys on the Texas list; registration is not riders in service"
+    },
+    {
+      "title": "Public Cybercab rides with no wheel or pedals open in Dallas",
+      "url": "https://www.teslarati.com/tesla-cybercab-without-steering-wheel-pedals-expands-public-rides-dallas/",
+      "date": "2026-11-19",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Second city after Austin for public rides in the purpose-built no-controls vehicle"
+    },
+    {
+      "title": "Miami Robotaxi geofence roughly doubles, still short of the beach",
+      "url": "https://www.teslarati.com/tesla-doubled-miami-robotaxi-geofence/",
+      "date": "2026-11-16",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Service area grew from about 31 to about 59 square miles and now includes downtown; Miami Beach is still out"
+    },
+    {
+      "title": "Musk says customer-owned Robotaxi trials may start next month",
+      "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/",
+      "date": "2026-11-16",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Conditional December pilot would pull ahead of the Q2 2027 timing given on the Q3 call"
+    },
+    {
+      "title": "Musk describes a driverless Model Y for six or seven people",
+      "url": "https://www.teslarati.com/elon-musk-tesla-model-yl-no-steering-wheel-robotaxi/",
+      "date": "2026-11-19",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "DealBook comment of a no-wheel Model Y for groups Cybercab cannot seat, with no date, price, or factory"
+    },
+    {
+      "title": "Cybercab invite screens list 279 miles of EPA-estimated range",
+      "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs/",
+      "date": "2026-11-19",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Buyer screenshots add range, 15-minute charge claim, and a 4-year/50,000-mile basic warranty; EPA label is an estimate"
+    },
+    {
+      "title": "Robotaxi first-responder guides cite 85 mph roads and new Cybercab hardware",
+      "url": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides/",
+      "date": "2026-11-20",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Nov. 20 guides say Cybercab and Model Y are designed for posted limits up to 85 mph and note trunk Starlink plus a trunk camera"
+    },
+    {
+      "title": "Drone photos show possible Giga Press pads at the Austin Optimus factory",
+      "url": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+      "date": "2026-11-20",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Four reinforced foundations are being poured; Tesla has not confirmed the machines, and the plant was still under construction last quarter"
+    },
+    {
+      "title": "2026.44.1 starts rolling out and still carries supervised FSD v14.3.13",
+      "url": "https://teslanorth.com/2026/11/17/tesla-2026-44-1-release-notes/",
+      "date": "2026-11-17",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "New firmware train adds a charging map and is not labeled the holiday update; FSD in the notes is still v14.3.13"
+    },
+    {
+      "title": "Tesla opens Argentina orders for Shanghai-built Model 3 and Model Y",
+      "url": "https://electrek.co/2026/11/21/elon-musk-tesla-argentina-launch-awkward-video-milei/",
+      "date": "2026-11-21",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Direct sales started Nov. 21 with five trims from $40,990, but first deliveries are not expected until March or April 2027"
+    },
+    {
+      "title": "Musk stops at Giga Shanghai and pledges more China production without a number",
+      "url": "https://www.teslarati.com/elon-musk-makes-surprise-stop-at-giga-shanghai-with-a-message-for-teslas-china-team/",
+      "date": "2026-11-19",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Visit covered manufacturing, driver assistance, and Optimus; the output pledge had no target while October China retail stayed at the already-reported low"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Teslarati Tesla Cybercab FSD Optimus November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 14
+      },
+      {
+        "q": "TeslaNorth Tesla robotaxi FSD Optimus deliveries November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 16
+      },
+      {
+        "q": "Tesla Oracle FSD software Cybercab November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 3
+      },
+      {
+        "q": "NTSB press releases Tesla Cybercab FSD Optimus November 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "NHTSA and ir.tesla.com Tesla November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Electrek Tesla Argentina FSD Italy robotaxi November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://www.teslarati.com/tesla-full-self-driving-v15-gets-release-date-elon-musk/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-fsd-south-korea-exemption-review/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-makes-e3-billion-cybercab-bet-giga-berlin/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/teslas-cybercab-fleet-just-had-its-biggest-day-ever/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-cybercab-without-steering-wheel-pedals-expands-public-rides-dallas/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-doubled-miami-robotaxi-geofence/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/elon-musk-tesla-model-yl-no-steering-wheel-robotaxi/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/tesla-2026-44-1-release-notes/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/11/21/elon-musk-tesla-argentina-launch-awkward-video-milei/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/elon-musk-makes-surprise-stop-at-giga-shanghai-with-a-message-for-teslas-china-team/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-robotaxi-takes-over-uber-credits-loaners-service/",
+        "kept": false
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/18/tesla-update-2026-44-1-goes-wide-release-with-fsd-v14-3-lite-hw3-fsd-v14-3-13-hw4-and-charger-network-view-release-notes/",
+        "kept": false
+      }
+    ]
+  }
+}

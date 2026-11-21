@@ -1,0 +1,120 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-11-21",
+  "filed": 1,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "TeslaNorth November 2026 archive Optimus FSD robotaxi hiring",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Teslarati news Nov 14-21 2026 Tesla hiring Optimus",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Not a Tesla App homepage Nov 18-21 2026 hiring",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Tesla Oracle homepage Nov 14-21 2026 Optimus hiring",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Nick di Lello Optimus technical program manager hiring November 21 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "AltIndex TSLA LinkedIn job posts count November 21 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://x.com/nick_dilello/status/2123944587215692223",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": false,
+        "reason": "live count of 0 contradicts open Optimus reqs; series still unusable"
+      },
+      {
+        "url": "https://optimusk.blog/blog/optimusk-november-2026-update/",
+        "kept": false,
+        "reason": "blog's own editorial roles, published 2026-11-10, not Tesla hiring"
+      },
+      {
+        "url": "https://www.teslarati.com/tesla-ramps-optimus-hiring-efforts/",
+        "kept": false,
+        "reason": "2025 Optimus hiring recap, outside window"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Optimus hiring call is seven program-manager seats, not a ramp",
+        "url": "https://x.com/nick_dilello/status/2123944587215692223",
+        "decision": "file",
+        "reason": "new Nov 21 Optimus TPM reqs inside the window, distinct from last week's operators and fleet coordinator"
+      },
+      {
+        "title": "Tesla Is Hiring for Optimus Motors, Electronics and More",
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "decision": "file",
+        "reason": "same-day corroboration of the di Lello post; not used as the primary source because it mislabels req 246796 and dates the post Nov 20"
+      },
+      {
+        "title": "Drone Photos Hint at Giga Presses for Tesla's Optimus Factory",
+        "url": "https://teslanorth.com/2026/11/20/tesla-optimus-texas-giga-press-foundations/",
+        "decision": "skip",
+        "reason": "factory narrative without a hiring metric; owned by optimus"
+      },
+      {
+        "title": "Tesla Eyes $3.1 Billion Texas Refinery for Its Solar Push",
+        "url": "https://teslanorth.com/2026/11/18/tesla-texas-polysilicon-refinery-proposal/",
+        "decision": "skip",
+        "reason": "energy-site jobs, not AI, robotics, FSD, or Optimus hiring"
+      },
+      {
+        "title": "Texas A&M Says Terafab Is Counting on Its Chip-Training Pipeline",
+        "url": "https://teslanorth.com/2026/11/17/texas-am-terafab-chip-training-pipeline/",
+        "decision": "skip",
+        "reason": "Terafab workforce pipeline, not an AI-org job-posting count"
+      },
+      {
+        "title": "Optimus reqs are a few Palo Alto design seats plus people who ship the robots",
+        "url": "https://linkedin.com/jobs/view/fleet-coordinator-optimus-at-tesla-4491025301",
+        "decision": "skip",
+        "reason": "seenUrl from last week; no new development on that req"
+      },
+      {
+        "title": "AltIndex Tesla job posts shows 0 openings",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "seenUrl series; 0 is not an official count and conflicts with live Optimus reqs"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 0,
+        "decision": "reject",
+        "reason": "AltIndex live LinkedIn total printed 0 on 2026-11-21 versus 8185 on 2026-10-10, while seven Optimus careers reqs were live the same day. Not an official number. Series remains unusable. Do not append."
+      }
+    ]
+  }
+}

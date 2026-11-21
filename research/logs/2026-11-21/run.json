@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-21",
+  "weekOf": "2026-11-16",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 7,
+      "queries": 6,
+      "fetched": 22,
+      "considered": 15,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 3,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 8,
+      "considered": 9,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 6,
+      "fetched": 7,
+      "considered": 6,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 4,
+      "fetched": 11,
+      "considered": 13,
+      "skipped": 11,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 5,
+      "queries": 6,
+      "fetched": 14,
+      "considered": 8,
+      "skipped": 3,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 6,
+      "fetched": 6,
+      "considered": 6,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 4,
+      "fetched": 9,
+      "considered": 4,
+      "skipped": 4,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant news found in date range",
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 6,
+      "fetched": 5,
+      "considered": 8,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 1,
+      "queries": 6,
+      "fetched": 5,
+      "considered": 7,
+      "skipped": 5,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 4,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-11-21/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-11-21/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 15,
+    "covered": 11,
+    "ignored": 0,
+    "gapCount": 4,
+    "queries": 6,
+    "gaps": [
+      {
+        "title": "Texas registry adds 200 Cybercabs in one day, taking the count to 773",
+        "url": "https://www.teslarati.com/teslas-cybercab-fleet-just-had-its-biggest-day-ever/",
+        "likelyCategory": "cybercab"
+      },
+      {
+        "title": "Miami Robotaxi geofence roughly doubles, still short of the beach",
+        "url": "https://www.teslarati.com/tesla-doubled-miami-robotaxi-geofence/",
+        "likelyCategory": "cybercab"
+      },
+      {
+        "title": "Musk says customer-owned Robotaxi trials may start next month",
+        "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/",
+        "likelyCategory": "cybercab"
+      },
+      {
+        "title": "Tesla opens Argentina orders for Shanghai-built Model 3 and Model Y",
+        "url": "https://electrek.co/2026/11/21/elon-musk-tesla-argentina-launch-awkward-video-milei/",
+        "likelyCategory": "productionDelivery"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 21,
+    "duplicatesRemoved": 0,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 0,
+    "totalKeyChanges": 21,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

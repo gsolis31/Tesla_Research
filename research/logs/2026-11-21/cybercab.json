@@ -1,0 +1,289 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-11-21",
+  "filed": 7,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "TeslaNorth Cybercab category November 14-21 2026",
+        "tool": "web_fetch",
+        "hits": 12
+      },
+      {
+        "q": "Teslarati Cybercab robotaxi November 2026",
+        "tool": "web_fetch",
+        "hits": 6
+      },
+      {
+        "q": "Robotaxi Tracker news Tesla Cybercab November 2026",
+        "tool": "web_fetch",
+        "hits": 8
+      },
+      {
+        "q": "Robotaxi Tracker Texas DMV government roster",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Cybercab first responder interaction plan November 2026",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "Tesla Miami robotaxi service area November 16 2026",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://robotaxitracker.com/government",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/v1/api/texas-dmv",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-arrives-dallas",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-cybercab-without-steering-wheel-pedals-expands-public-rides-dallas",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/news/tesla-registers-200-cybercabs-in-a-day-texas",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/tesla-200-cybercabs-texas-registry-1507",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/news/tesla-plans-cybercab-factory-at-giga-berlin",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/16/tesla-berlin-cybercab-3-billion-expansion-2029",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/16/tesla-miami-robotaxi-service-area-nearly-doubles",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/news/tesla-robotaxi-expands-houston-austin-miami",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-cybercabs-autonomy-subscription-covers-all-bases-for-a-self-driving-car",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/cybercab-first-responder-interaction-plan.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/elon-musk-tesla-model-yl-no-steering-wheel-robotaxi",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/mkbhd-tesla-cybercab-bet",
+        "kept": false,
+        "reason": "same invite-only order launch already filed November 14"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/20/mkbhd-tesla-cybercab-deposit-austin",
+        "kept": false,
+        "reason": "one influencer deposit on the already-filed order program"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/16/tesla-robotaxi-x-money-payment-integration",
+        "kept": false,
+        "reason": "payment rail go-live; no fleet or city change; code already seen in September"
+      },
+      {
+        "url": "https://teslarati.com/tesla-cybercab-specs-revealed-range-curb-weight-range-rating",
+        "kept": false,
+        "reason": "June 2026 EPA lab writeup, outside the window"
+      },
+      {
+        "url": "https://teslarati.com/tesla-cybercab-arrives-steep-ownership-fine-print",
+        "kept": false,
+        "reason": "seenUrl; November 14 order fine print already filed"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Dallas Cybercab rides open in the existing zone, with no Tesla fleet count",
+        "url": "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas",
+        "decision": "file",
+        "reason": "new second-city Cybercab service on November 19; no Tesla in-service count"
+      },
+      {
+        "title": "Texas roster adds 200 Cybercabs to 1,507; that is still not riders",
+        "url": "https://robotaxitracker.com/government",
+        "decision": "file",
+        "reason": "roster changed from 1,306 to 1,507 on November 17 and was still 1,507 on the November 21 snapshot"
+      },
+      {
+        "title": "Berlin Cybercab hall is a 2029 plan, and the permit is not filed",
+        "url": "https://robotaxitracker.com/news/tesla-plans-cybercab-factory-at-giga-berlin",
+        "decision": "file",
+        "reason": "November 16 plant announcement; capacity headline is not near-term output"
+      },
+      {
+        "title": "Miami Robotaxi map nearly doubles; Tesla did not state miles or cars",
+        "url": "https://teslanorth.com/2026/11/16/tesla-miami-robotaxi-service-area-nearly-doubles",
+        "decision": "file",
+        "reason": "November 16 geofence change not in last week's key changes"
+      },
+      {
+        "title": "Order screens list a 279-mile Cybercab estimate and a 50,000-mile warranty",
+        "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-279-mile-range-specs",
+        "decision": "file",
+        "reason": "new order-screen specs; not a repeat of the November 14 price story"
+      },
+      {
+        "title": "Cybercab responder guide sets an 85 mph posted-limit design, not a faster service",
+        "url": "https://teslanorth.com/2026/11/20/tesla-robotaxi-85-mph-first-responder-guides",
+        "decision": "file",
+        "reason": "official v1.3 document dated November 20; 85 mph is easy to misread"
+      },
+      {
+        "title": "Musk describes a wheel-less six-seat Model Y with no date or plant",
+        "url": "https://teslanorth.com/2026/11/19/tesla-driverless-model-y-seven-seats",
+        "decision": "file",
+        "reason": "November 18 DealBook remark; no program"
+      },
+      {
+        "title": "MKBHD ordered a Cybercab",
+        "url": "https://teslarati.com/mkbhd-tesla-cybercab-bet",
+        "decision": "skip",
+        "reason": "celebrity order on the invite program already filed November 14; no delivery"
+      },
+      {
+        "title": "MKBHD put $1,000 down and picked Austin",
+        "url": "https://teslanorth.com/2026/11/20/mkbhd-tesla-cybercab-deposit-austin",
+        "decision": "skip",
+        "reason": "same invite-only sale; Musk fee comment already in last week's fine-print item"
+      },
+      {
+        "title": "Robotaxi riders can link X Money",
+        "url": "https://teslanorth.com/2026/11/16/tesla-robotaxi-x-money-payment-integration",
+        "decision": "skip",
+        "reason": "app payment option already found in the September decompile; no fleet change"
+      },
+      {
+        "title": "Cybercab trunk camera spotted in Dallas",
+        "url": "https://teslanorth.com/2026/11/19/tesla-cybercab-trunk-camera-dallas",
+        "decision": "skip",
+        "reason": "spotter clip does not establish new hardware; guide confirms B-pillar camera and trunk-lid Starlink instead"
+      },
+      {
+        "title": "Cybercabs spotted with a new Starlink cover",
+        "url": "https://teslanorth.com/2026/11/18/tesla-cybercab-starlink-cover-giga-texas",
+        "decision": "skip",
+        "reason": "cosmetic cover photos; Starlink itself was already reported and is now in the November 20 guide"
+      },
+      {
+        "title": "Cybercab monthly fee could fall from $299 to $115",
+        "url": "https://teslanorth.com/2026/11/14/tesla-cybercab-monthly-fee-115-musk",
+        "decision": "skip",
+        "reason": "same Musk comment already inside the filed November 14 ownership story"
+      },
+      {
+        "title": "Tesla to end Cybertruck production in mid-2027 for Cybercab",
+        "url": "https://robotaxitracker.com/news/tesla-to-end-cybertruck-production-for-cybercab",
+        "decision": "skip",
+        "reason": "Musk comment dated November 6, before this window"
+      },
+      {
+        "title": "June EPA Cybercab specs of about 418 miles lab equivalent",
+        "url": "https://teslarati.com/tesla-cybercab-specs-revealed-range-curb-weight-range-rating",
+        "decision": "skip",
+        "reason": "June 15, 2026 story; the new item is the November order-screen 279-mile estimate"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiRegistered",
+        "count": 1507,
+        "decision": "file",
+        "reason": "November 21 Texas roster snapshot: 773 Cybercab + 734 Model Y. Changed from 1,306 on November 14. Authorization only."
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 1507,
+        "decision": "reject",
+        "reason": "Texas DMV roster total, not a network in-service count"
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 881,
+        "decision": "reject",
+        "reason": "Tracker matched_active_count on the registry object, not a Tesla in-service census and not a city sighting floor"
+      },
+      {
+        "series": "cybercab",
+        "count": 773,
+        "decision": "reject",
+        "reason": "Cybercab share of the Texas authorization roster, not a production or VIN count"
+      },
+      {
+        "series": "cityFleet",
+        "count": 192,
+        "decision": "reject",
+        "reason": "Dallas first-responder lookup of Cybercabs registered November 17, not a 30-day distinct-vehicle sighting floor and not a Tesla in-service statement"
+      },
+      {
+        "series": "cityFleet",
+        "count": 545,
+        "decision": "reject",
+        "reason": "November 18 Austin lookup assignment of registered Cybercabs, taken before the Dallas split; not a sighting floor versus Austin's 186"
+      },
+      {
+        "series": "cityFleet",
+        "count": 186,
+        "decision": "reject",
+        "reason": "No new 30-day sighting floors versus hotContext: Austin 186, Dallas 56, Houston 41, Tampa 16, Fort Worth 35, San Antonio 11, Bay Area 721. City pages did not publish a changed floor."
+      }
+    ]
+  }
+}

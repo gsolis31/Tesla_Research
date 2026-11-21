@@ -1,0 +1,112 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-11-21",
+  "filed": 0,
+  "skipReason": "No significant news found in date range",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "teslarati.com news and Elon Musk, Nov 14-21 2026, AI5 AI6 Dojo Samsung",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "teslanorth.com news, Nov 14-21 2026, AI chip",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "notateslaapp.com news and hardware, Nov 14-21 2026, AI5 AI6",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "teslaoracle.com homepage, Nov 14-21 2026, AI computer",
+        "tool": "web_fetch",
+        "hits": 1
+      },
+      {
+        "q": "trendforce.com news Nov 17-21 2026 and Tesla tag",
+        "tool": "web_fetch",
+        "hits": 0
+      },
+      {
+        "q": "Korea Herald, JoongAng, Seoul Economic Daily, Nov 14-21 2026, Samsung Tesla AI5 AI6 Taylor",
+        "tool": "web_fetch",
+        "hits": 2
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslarati.com/tesla-changes-vehicle-computers-from-ai-to-si-reflecting-president-trump-change",
+        "kept": false,
+        "reason": "2026.44.1 string rename only; no silicon change; fsdv15 owns the OTA"
+      },
+      {
+        "url": "https://teslaoracle.com/2026/11/20/tesla-update-2026-44-1-hacker-discovers-transition-from-ai-computer-to-super-intelligence-grok-sync-and-more",
+        "kept": false,
+        "reason": "Same firmware label change; article body did not add a chip fact"
+      },
+      {
+        "url": "https://en.sedaily.com/finance/2026/11/15/samsung-to-make-spacex-satellite-chips-in-texas",
+        "kept": false,
+        "reason": "Starlink MCU at Samsung Austin on a mature node, not Tesla AI5/AI6 at Taylor"
+      },
+      {
+        "url": "https://koreajoongangdaily.com/business/samsung-promotes-three-chip-veterans-in-2027-leadership-reshuffle/12983009",
+        "kept": false,
+        "reason": "Samsung exec shuffle; no Tesla, Taylor, AI5, AI6, or yield fact"
+      },
+      {
+        "url": "https://trendforce.com/news/2026/11/19/news-intel-scores-dual-foundry-wins-microsoft-named-first-emib-customer-tan-says-18a-secures-first-external-deal",
+        "kept": false,
+        "reason": "First external 18A customer is unnamed and Tesla is not mentioned"
+      },
+      {
+        "url": "https://en.sedaily.com/finance/2026/11/21/us-chip-export-curbs-widen-samsung-halts-ai-chip-shipments",
+        "kept": false,
+        "reason": "Samsung and TSMC halted China shipments for Baidu, ByteDance, and phone chips, not Tesla inference wafers"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla changes vehicle computers from AI to SI",
+        "url": "https://teslarati.com/tesla-changes-vehicle-computers-from-ai-to-si-reflecting-president-trump-change",
+        "decision": "skip",
+        "reason": "Nov 17 firmware property in 2026.44.1. Teslarati says it does not change compute or the model. FSD software versions belong to fsdv15. Prior SI roadmap URL is already seen."
+      },
+      {
+        "title": "Samsung to make SpaceX satellite chips in Austin",
+        "url": "https://en.sedaily.com/finance/2026/11/15/samsung-to-make-spacex-satellite-chips-in-texas",
+        "decision": "skip",
+        "reason": "Nov 15 report is an 18nm FD-SOI Starlink MCU at the Austin mature-node fab, with output aimed at 2030 and the contract unconfirmed. Tesla is only named as an existing customer. It is not Taylor, 2nm, or AI5/AI6."
+      },
+      {
+        "title": "Intel says 18A has a first external customer, still unnamed",
+        "url": "https://trendforce.com/news/2026/11/19/news-intel-scores-dual-foundry-wins-microsoft-named-first-emib-customer-tan-says-18a-secures-first-external-deal",
+        "decision": "skip",
+        "reason": "Nov 19. Customer not identified. Cited candidates are Apple, NVIDIA, hyperscalers, and Microsoft. Does not update the October Tesla-Intel rumor."
+      },
+      {
+        "title": "Samsung promotes three chip veterans and shifts the DS chief toward foundry",
+        "url": "https://koreajoongangdaily.com/business/samsung-promotes-three-chip-veterans-in-2027-leadership-reshuffle/12983009",
+        "decision": "skip",
+        "reason": "Nov 20 management story. No Tesla wafer, node, yield, or schedule change."
+      },
+      {
+        "title": "Samsung and TSMC pause some China chip shipments under new U.S. rules",
+        "url": "https://en.sedaily.com/finance/2026/11/21/us-chip-export-curbs-widen-samsung-halts-ai-chip-shipments",
+        "decision": "skip",
+        "reason": "Nov 21 curbs hit Baidu, ByteDance, and Chinese phone chips. No stated effect on Tesla AI5 or AI6."
+      },
+      {
+        "title": "SpaceX lenders want pledged AI chips kept on Earth",
+        "url": "https://teslanorth.com/2026/11/20/spacex-lenders-ai-chips-orbit-ban",
+        "decision": "skip",
+        "reason": "Nov 20 financing collateral for Nvidia hardware, not Tesla inference chips."
+      }
+    ],
+    "metricCandidates": []
+  }
+}
