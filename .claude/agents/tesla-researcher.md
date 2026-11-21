@@ -1,7 +1,7 @@
 ---
 name: tesla-researcher
 description: Researches Tesla across a specific category (AI chips, Cybercab, FSD, Optimus, battery 4680, Terafab, job postings, production/delivery). Use for focused research on a particular topic area.
-tools: WebSearch, WebFetch, Read, Glob, Grep, Bash, Write
+tools: web_search, WebFetch, Read, Glob, Grep, Bash, Write
 model: grok-4.7
 reasoning_effort: high
 ---
@@ -30,8 +30,9 @@ When invoked, you will receive a research configuration file path (e.g., `resear
    - Note the date range, keywords, sources, and hot context
 
 2. **Search Strategy**
-   - Use `web_search` for discovery, then `web_fetch` for an article you may file or need to reject with a source.
-   - At most 6 `web_search` calls. Then stop searching.
+   - Use `web_search` for discovery. At most 6 `web_search` calls. Then stop searching.
+   - Fetch every article URL from a search in the same step. `web_fetch` an article you may file or need to reject with a source.
+   - If `web_search` is not in your tools, stop and report that. Do not replace it with Google, site search, RSS, or shell.
    - Do not call `search_tool`. That searches the tool catalog, not the web.
    - Do not scrape RSS, DuckDuckGo, Bing, Google News, WordPress JSON, or site `?s=` search pages.
    - Do not run `scripts/lint_findings.py`. The orchestrator lints every file after the wave.

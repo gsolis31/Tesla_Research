@@ -42,7 +42,7 @@ Research ONLY CATEGORY.
 Read research/configs/research-config-CATEGORY.json and write to its outputPath.
 Do not read data/tesla-tracking-data.json, research/findings/url-cache.json, or any research/findings/YYYY-MM-DD.json.
 Dedup using hotContext.recentKeyChanges and hotContext.seenUrls in the config.
-Use web_search, at most 6 searches, then web_fetch the articles you might file.
+Use web_search, at most 6 searches. Fetch every article URL from a search in the same step.
 Do not scrape. Do not call search_tool. Do not run lint_findings.py.
 Follow your system instructions for sentiment, ownership, searchLog, and output schema.
 ```
@@ -54,7 +54,7 @@ Scout prompt, spawned with the researchers:
 ```
 Read research/configs/coverage-scout-config.json and write to its outputPath only.
 Do not read data/tesla-tracking-data.json, research/findings/, or any research/raw/findings-*.json.
-Use web_search, at most 6 searches. Independent sweep — do not copy category researchers.
+Use web_search, at most 6 searches. Fetch the candidate URLs from each search in the same step. Independent sweep — do not copy category researchers.
 ```
 
 If this wave hits HTTP 429 often enough that agents stall, the next run uses two waves of five. Do not go back to three waves of three by default.
@@ -85,7 +85,8 @@ Read that config and outputPath. Write reportPath.
 Do not rebuild the file from raw findings.
 Do not read data/tesla-tracking-data.json, research/findings/url-cache.json, or a prior findings/YYYY-MM-DD.json.
 Clear every review.mustFix. Decide every cacheHit and every coverageGap.
-web_fetch only coverage-gap URLs.
+web_fetch only coverage-gap URLs, all of them in one step.
+Do not grep the repository, the linter, the schema, or memory files.
 ```
 
 Wait until `research/findings/$today.json` and the curator report exist. Read the report. Check duplicate removals, sentiment flips, gap decisions, and metric drops.
