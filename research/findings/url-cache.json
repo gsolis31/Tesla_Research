@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-28",
   "urls": {
     "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy": {
       "originalUrl": "https://electrek.co/2026/07/06/tesla-cybercab-production-before-autonomy/",
@@ -3046,23 +3046,198 @@
       "lastSeen": "2026-11-21",
       "category": "Job Postings",
       "title": "Optimus hiring call is seven program-manager seats, not a ramp"
+    },
+    "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster": {
+      "originalUrl": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Cybercab Production",
+      "title": "Texas roster hits 1,841, and 1,107 Cybercabs are still not riders"
+    },
+    "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares": {
+      "originalUrl": "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Cybercab Production",
+      "title": "Dallas Robotaxi map grows to 150 square miles with no car or fare number"
+    },
+    "https://teslanorth.com/2026/11/24/tesla-robotaxi-surpasses-6-million-miles-on-its-live-counter": {
+      "originalUrl": "https://teslanorth.com/2026/11/24/tesla-robotaxi-surpasses-6-million-miles-on-its-live-counter/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Cybercab Production",
+      "title": "Robotaxi's 6 million-mile counter is an estimate; the safety tally still ends Oct 18"
+    },
+    "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals": {
+      "originalUrl": "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Cybercab Production",
+      "title": "Japan Cybercab trademark covers peer-to-peer rentals; no service is announced"
+    },
+    "https://www.channelnewsasia.com/business/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-6585716": {
+      "originalUrl": "https://www.channelnewsasia.com/business/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-6585716",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD Country Approvals",
+      "title": "EU Moves Assisted-Driving Meeting to Dec. 15 and Still Has Not Set a Vote"
+    },
+    "https://www.tesla-mag.com/en/tesla-fsd-italy-rollout-begun-ministry-statement": {
+      "originalUrl": "https://www.tesla-mag.com/en/tesla-fsd-italy-rollout-begun-ministry-statement/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD Country Approvals",
+      "title": "Italy Ministry Says Assisted Driving Has Reached Some Drivers"
+    },
+    "https://www.bnr.nl/nieuws/mobiliteit/10616312/rdw-geen-relevante-incidenten-met-tesla-s-rijassistent": {
+      "originalUrl": "https://www.bnr.nl/nieuws/mobiliteit/10616312/rdw-geen-relevante-incidenten-met-tesla-s-rijassistent",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD Country Approvals",
+      "title": "Dutch Regulator Reports No Relevant Tesla Assisted-Driving Incident"
+    },
+    "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus": {
+      "originalUrl": "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Optimus Production",
+      "title": "Tesla files for EMAG assets; the Optimus gear deal is not closed"
+    },
+    "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured": {
+      "originalUrl": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Optimus Production",
+      "title": "Austin Optimus pads are poured; still no presses"
+    },
+    "https://notateslaapp.com/software-updates/version/2026.38.6.11/release-notes": {
+      "originalUrl": "https://notateslaapp.com/software-updates/version/2026.38.6.11/release-notes",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD v15 Software",
+      "title": "FSD v15.0.1 reaches customer cars, still supervised and tiny"
+    },
+    "https://notateslaapp.com/news/5102/tesla-fsd-v15-to-get-point-to-drive-in-upcoming-update": {
+      "originalUrl": "https://notateslaapp.com/news/5102/tesla-fsd-v15-to-get-point-to-drive-in-upcoming-update",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD v15 Software",
+      "title": "Reality View lags on v15.0.1, and tap-to-go is not in the build"
+    },
+    "https://notateslaapp.com/news/5092/tesla-fsd-v15-rolls-out-to-model-ys-without-front-bumper-cameras": {
+      "originalUrl": "https://notateslaapp.com/news/5092/tesla-fsd-v15-rolls-out-to-model-ys-without-front-bumper-cameras",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD v15 Software",
+      "title": "v15.0.1 reaches older HW4 Model Ys, still not the rest of the fleet"
+    },
+    "https://teslanorth.com/2026/11/24/tesla-fsds-live-counter-passes-18-billion-supervised-miles": {
+      "originalUrl": "https://teslanorth.com/2026/11/24/tesla-fsds-live-counter-passes-18-billion-supervised-miles",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "FSD v15 Software",
+      "title": "Supervised FSD counter passes 18 billion miles, with no v15 split"
+    },
+    "https://www.acea.auto/files/Press_release_car_registrations_October_2026.pdf": {
+      "originalUrl": "https://www.acea.auto/files/Press_release_car_registrations_October_2026.pdf",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "October Europe Tesla registrations rise 77% to 12,116, still a 1.1% share"
+    },
+    "https://www.globenewswire.com/news-release/2026/11/23/3408557/0/en/wattev-s-port-of-oakland-charging-depot-and-new-electric-trucks-bring-cost-parity-with-diesel-to-fleets.html": {
+      "originalUrl": "https://www.globenewswire.com/news-release/2026/11/23/3408557/0/en/wattev-s-port-of-oakland-charging-depot-and-new-electric-trucks-bring-cost-parity-with-diesel-to-fleets.html",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Oakland Semi debut names no truck count, only a future 300-truck corridor"
+    },
+    "https://teslanorth.com/2026/11/26/tesla-cybertruck-taiwan-reservation-refunds": {
+      "originalUrl": "https://teslanorth.com/2026/11/26/tesla-cybertruck-taiwan-reservation-refunds",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "Tesla is cancelling Taiwan Cybertruck reservations instead of delivering trucks"
+    },
+    "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us": {
+      "originalUrl": "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us/",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Vehicle Production & Delivery",
+      "title": "U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%"
+    },
+    "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus": {
+      "originalUrl": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "AI Chip Production",
+      "title": "Musk keeps cars on AI4 and sends AI5 to Optimus, with no end date"
+    },
+    "https://teslanorth.com/2026/11/22/tesla-ai4-5-lpddr5x-memory": {
+      "originalUrl": "https://teslanorth.com/2026/11/22/tesla-ai4-5-lpddr5x-memory",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "AI Chip Production",
+      "title": "Tesla cuts planned AI4.5 memory to 24GB as AI4 build cost doubles"
+    },
+    "https://ctee.com.tw/news/20261127700096-439901": {
+      "originalUrl": "https://ctee.com.tw/news/20261127700096-439901",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "AI Chip Production",
+      "title": "Report: GUC puts TSMC 3nm ahead of Tesla, so car-scale AI5 may wait until 2028"
+    },
+    "https://teslanorth.com/2026/11/26/spacex-terafab-texas-concrete-plant-permit": {
+      "originalUrl": "https://teslanorth.com/2026/11/26/spacex-terafab-texas-concrete-plant-permit",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "SpaceX's Terafab concrete-plant air permit is filed and still pending"
+    },
+    "https://kbtx.com/2026/11/25/terafabs-growing-footprint-comes-into-view-along-highway-30": {
+      "originalUrl": "https://kbtx.com/2026/11/25/terafabs-growing-footprint-comes-into-view-along-highway-30",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Terafab In-House Chip Manufacturing",
+      "title": "Highway 30 shows Terafab truck traffic, not a chip fab"
+    },
+    "https://robottraining.jobs/research/tesla-optimus-hiring-data": {
+      "originalUrl": "https://robottraining.jobs/research/tesla-optimus-hiring-data",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Job Postings",
+      "title": "Robot-training listings net +5 in four weeks, not a ramp"
+    },
+    "https://robottraining.jobs/jobs/tesla-optimus/robotaxi-fleet-support-supervisor-night-shift": {
+      "originalUrl": "https://robottraining.jobs/jobs/tesla-optimus/robotaxi-fleet-support-supervisor-night-shift",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Job Postings",
+      "title": "Five new robotaxi supervisor reqs sit outside live cities"
+    },
+    "https://robottraining.jobs/jobs/tesla-optimus/si-vehicle-operator-self-driving": {
+      "originalUrl": "https://robottraining.jobs/jobs/tesla-optimus/si-vehicle-operator-self-driving",
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "category": "Job Postings",
+      "title": "Safety-operator hiring added Draper, not a new wave"
     }
   },
   "stats": {
-    "totalUrls": 435,
+    "totalUrls": 460,
     "categoryCounts": {
       "Research": 9,
-      "Optimus Production": 35,
-      "Cybercab Production": 75,
-      "FSD v15 Software": 46,
-      "Vehicle Production & Delivery": 76,
+      "Optimus Production": 37,
+      "Cybercab Production": 79,
+      "FSD v15 Software": 50,
+      "Vehicle Production & Delivery": 80,
       "unknown": 52,
-      "FSD Country Approvals": 45,
+      "FSD Country Approvals": 48,
       "4680 Battery Cell Production": 12,
       "Terafab Manufacturing": 4,
-      "AI Chip Production": 20,
-      "Job Postings": 28,
-      "Terafab In-House Chip Manufacturing": 33
+      "AI Chip Production": 23,
+      "Job Postings": 31,
+      "Terafab In-House Chip Manufacturing": 35
     }
   }
 }

@@ -1,0 +1,168 @@
+{
+  "categoryKey": "optimus",
+  "date": "2026-11-28",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus November 2026 production factory",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com Optimus November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "site:teslanorth.com Tesla Optimus November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Optimus Gen 3 production ramp Fremont Giga Texas week of November 23 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla EMAG Optimus Bundeskartellamt November 2026 Reuters Tesla Oracle Giga Press foundations",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "JPMorgan Tesla Fremont Optimus tour November 2026 \"Optimus Academy\"",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-bolster-optimus-company-acquisition-emag-germany",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://finanznachrichten.de/nachrichten-2026-11/70243411-laufende-fusionskontrollverfahren-tesla-emag-gruppe-vermoegenserwerb-019.htm",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/25/tesla-emag-germany-machining-company-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27",
+        "kept": true,
+        "reason": "Page was JS-blocked; lede confirmed by the search extract and the Euronext reprint of the same Reuters copy"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-optimus-musk-best-product",
+        "kept": false,
+        "reason": "Nov 22 boast and recap; no new output, price, or order date"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "kept": false,
+        "reason": "AI5 allocation belongs to aiChip"
+      },
+      {
+        "url": "https://theinference.org/article/tesla-s-first-optimus-robots-will-work-in-mines-and-refineries-musk-says",
+        "kept": false,
+        "reason": "AI-drafted recap; mines line is a Polymarket paraphrase and the construction half repeats the Nov 20 story"
+      },
+      {
+        "url": "https://teslarati.com/musk-sets-a-date-for-starship-trip-to-mars-with-optimus-on-board",
+        "kept": false,
+        "reason": "March 2025 Starship post; search date was wrong"
+      },
+      {
+        "url": "https://themarketscafe.com/what-jpmorgan-saw-inside-teslas-fremont-factory-as-humanoid-production-nears",
+        "kept": false,
+        "reason": "Byline is August 21, 2026; same Fremont tour note as the August 19-20 writeups"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Tesla files for EMAG assets; the Optimus gear deal is not closed",
+        "url": "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus",
+        "decision": "file",
+        "reason": "Nov 23 cartel filing published Nov 27; asset deal, not a closed Optimus ramp"
+      },
+      {
+        "title": "Austin Optimus pads are poured; still no presses",
+        "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured",
+        "decision": "file",
+        "reason": "New versus the Nov 20 rebar story: concrete poured and steel estimated at 60 percent, still no presses"
+      },
+      {
+        "title": "Optimus Will Be Tesla's Best Product Yet, Musk Says",
+        "url": "https://teslanorth.com/2026/11/22/tesla-optimus-musk-best-product",
+        "decision": "skip",
+        "reason": "Nov 22 X boast plus a recap of the Nov 18 soft demo window; no production number or price"
+      },
+      {
+        "title": "Tesla Cars Are Sticking With AI4 as AI5 Goes to Optimus",
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "decision": "skip",
+        "reason": "AI inference chip allocation belongs to aiChip"
+      },
+      {
+        "title": "Tesla's first Optimus robots will work in mines and refineries, Musk says",
+        "url": "https://theinference.org/article/tesla-s-first-optimus-robots-will-work-in-mines-and-refineries-musk-says",
+        "decision": "skip",
+        "reason": "Single AI-drafted article; mining line is attributed to Polymarket, and the factory half repeats the seen Nov 20 URL"
+      },
+      {
+        "title": "What JPMorgan Saw Inside Tesla's Fremont Factory",
+        "url": "https://themarketscafe.com/what-jpmorgan-saw-inside-teslas-fremont-factory-as-humanoid-production-nears",
+        "decision": "skip",
+        "reason": "August 21, 2026 tour note republished with a November site date; not a new visit"
+      },
+      {
+        "title": "Musk sets a date for Starship trip to Mars with Optimus on board",
+        "url": "https://teslarati.com/musk-sets-a-date-for-starship-trip-to-mars-with-optimus-on-board",
+        "decision": "skip",
+        "reason": "Old March 2025 post, outside the window and not a production update"
+      },
+      {
+        "title": "Tesla Is Hiring for Optimus Motors, Electronics and More",
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring",
+        "decision": "skip",
+        "reason": "Job-posting counts belong to jobPostings"
+      },
+      {
+        "title": "Tesla begins humanoid production in California",
+        "url": "https://www.manufacturingdive.com/news/tesla-begins-optimus-humanoid-production-california-shipments-2027/872864",
+        "decision": "skip",
+        "reason": "Restates the October earnings-call ramp; no new November unit count"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "optimusProduction",
+        "count": 60,
+        "decision": "reject",
+        "reason": "Observer estimate of steel-frame completion, not robots built"
+      },
+      {
+        "series": "optimusProduction",
+        "count": 1000000,
+        "decision": "reject",
+        "reason": "Fremont line design capacity repeated from prior calls, not weekly output; the 10 million Texas figure is a long-term target from an August JPMorgan note"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "categoryKey": "jobPostings",
+  "date": "2026-11-28",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Optimus hiring job posting November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI robotics OR FSD OR robotaxi careers hiring November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla job postings AltIndex LinkedIn count November 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:teslarati.com OR site:teslanorth.com OR site:notateslaapp.com Tesla hiring Optimus OR robotaxi November 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "\"Tesla\" (Optimus OR \"vehicle operator\" OR robotaxi) (hiring OR \"now hiring\" OR \"job opening\") after:2026-11-20",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Optimus \"technical program manager\" OR \"data collection\" OR actuator hiring November 2026",
+        "tool": "web_search",
+        "hits": 5
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "kept": false,
+        "reason": "Writeup of the 20 November Nick di Lello TPM call already filed in recentKeyChanges"
+      },
+      {
+        "url": "https://x.com/TeslaZoa/status/2126582356970774730",
+        "kept": false,
+        "reason": "Nov 28 claim of three brand-new Optimus roles; Doral data-collection lead was already about a month old on the 27 November board read"
+      },
+      {
+        "url": "https://x.com/TeslaZoa/status/2125488845865316470",
+        "kept": false,
+        "reason": "Calls Tyler, Lubbock, and Peabody specialist seats new on 25 November; those copies were about a month old"
+      },
+      {
+        "url": "https://x.com/TeslaZoa/status/2124124590993776996",
+        "kept": false,
+        "reason": "Four Optimus titles on 21 November, same day as the already-filed TPM wave; single fan account, no second source"
+      },
+      {
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "kept": false,
+        "reason": "Live hero is 0 Est. while the chart is still Loading; October row on the same page is 7,445"
+      },
+      {
+        "url": "https://altindex.com/ticker/tsla",
+        "kept": false,
+        "reason": "Rounds job posts to 5K with a -37.1% three-month badge and no exact dated count"
+      },
+      {
+        "url": "https://jobdataapi.com/hiring/tesla/",
+        "kept": false,
+        "reason": "Company-wide careers total of 2,660; its 0-new-in-30-days claim is contradicted by listings checked 27 November"
+      },
+      {
+        "url": "https://www.autobound.ai/companies/tesla/hiring",
+        "kept": false,
+        "reason": "1,231 open roles is a 17 November snapshot, before this window, and mixes sales and service"
+      },
+      {
+        "url": "https://robottraining.jobs/platforms/tesla-optimus/jobs",
+        "kept": false,
+        "reason": "Title index only; detail pages and the 27 November hiring report are the citations"
+      },
+      {
+        "url": "https://robottraining.jobs/research/tesla-optimus-hiring-data",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/robotaxi-fleet-support-supervisor-night-shift",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/robotaxi-fleet-support-specialist-night-shift",
+        "kept": false,
+        "reason": "Used to reject Tyler, Lubbock, and Peabody as month-old, not as a new story"
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/si-vehicle-operator-self-driving",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operator-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/data-collection-operations-lead-optimus",
+        "kept": false,
+        "reason": "Doral lead already about a month old, which rejects the 28 November 'new lead' claim"
+      },
+      {
+        "url": "https://divulgavagas.com.br/ai-training-job/tesla-si-vehicle-operator-self-driving-1131545",
+        "kept": false,
+        "reason": "Republish of the RobotTraining Draper listing, not a second source"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Robot-training listings net +5 in four weeks, not a ramp",
+        "url": "https://robottraining.jobs/research/tesla-optimus-hiring-data",
+        "decision": "file",
+        "reason": "27 November close shows 181 location-level robot-training listings, net +5 since 31 October"
+      },
+      {
+        "title": "Five new robotaxi supervisor reqs sit outside live cities",
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/robotaxi-fleet-support-supervisor-night-shift",
+        "decision": "file",
+        "reason": "Five night-shift supervisor copies marked about two days old are in cities without robotaxi service"
+      },
+      {
+        "title": "Safety-operator hiring added Draper, not a new wave",
+        "url": "https://robottraining.jobs/jobs/tesla-optimus/si-vehicle-operator-self-driving",
+        "decision": "file",
+        "reason": "Only Draper is new on a 27-city SI operator req; Lathrop is the only in-window Optimus operator add"
+      },
+      {
+        "title": "Tesla Is Hiring for Optimus Motors, Electronics and More",
+        "url": "https://teslanorth.com/2026/11/21/tesla-optimus-hardware-hiring/",
+        "decision": "skip",
+        "reason": "Same 20\u201321 November TPM hiring call already in recentKeyChanges via the nick_dilello post"
+      },
+      {
+        "title": "Optimus team hiring program managers, Joe Hansen recap",
+        "url": "https://x.com/joehansen/status/2124798862640750714",
+        "decision": "skip",
+        "reason": "23 November recap of the already-filed TPM seats and the TeslaNorth article"
+      },
+      {
+        "title": "TeslaZoa four Optimus openings on 21 November",
+        "url": "https://x.com/TeslaZoa/status/2124124590993776996",
+        "decision": "skip",
+        "reason": "Same day as the filed TPM wave; process tech, training coordinator, and sensing titles are unverified beyond one fan account"
+      },
+      {
+        "title": "TeslaZoa three Optimus openings on 28 November",
+        "url": "https://x.com/TeslaZoa/status/2126582356970774730",
+        "decision": "skip",
+        "reason": "Doral data-collection lead was already about a month old; training coordinator and equipment tech have no second source"
+      },
+      {
+        "title": "TeslaZoa Tyler, Lubbock, and Peabody fleet specialists",
+        "url": "https://x.com/TeslaZoa/status/2125488845865316470",
+        "decision": "skip",
+        "reason": "Board read shows those three specialist copies about a month old, not posted on 25 November"
+      },
+      {
+        "title": "AltIndex Tesla job posts at 0",
+        "url": "https://altindex.com/ticker/tsla/job-posts",
+        "decision": "skip",
+        "reason": "Unloaded live widget; not a real drop from 8,185"
+      },
+      {
+        "title": "Autobound 1,231 Tesla open roles",
+        "url": "https://www.autobound.ai/companies/tesla/hiring",
+        "decision": "skip",
+        "reason": "Snapshot dated 17 November, before the window, and includes sales and service"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "jobPostings",
+        "count": 0,
+        "decision": "reject",
+        "reason": "AltIndex job-posts hero is 0 Est. with the chart still Loading. October on the same page is 7,445. Not a collapse from 8,185 on 10 October."
+      },
+      {
+        "series": "jobPostings",
+        "count": 5000,
+        "decision": "reject",
+        "reason": "AltIndex ticker rounds to 5K and -37.1% over three months with no exact date. Conflicts with the 0 widget and the October 7,445 row."
+      },
+      {
+        "series": "jobPostings",
+        "count": 2660,
+        "decision": "reject",
+        "reason": "jobdataapi company-wide careers total as of 28 November, not the LinkedIn series. Its 0 new posts in 30 days is contradicted by supervisor and operator listings checked 27 November."
+      },
+      {
+        "series": "jobPostings",
+        "count": 1231,
+        "decision": "reject",
+        "reason": "Autobound snapshot dated 17 November, before this window, and it counts every department including sales and service."
+      },
+      {
+        "series": "jobPostings",
+        "count": 181,
+        "decision": "reject",
+        "reason": "RobotTraining per-city robot-training subset on 27 November (29 titles). Not comparable to the AltIndex LinkedIn series at 8,185. Cited in a keyChange only."
+      }
+    ]
+  }
+}

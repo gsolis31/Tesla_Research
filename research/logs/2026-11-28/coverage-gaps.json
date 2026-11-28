@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-28",
+  "status": "ok",
+  "candidates": 10,
+  "covered": 8,
+  "ignored": 0,
+  "gapCount": 2,
+  "gaps": [
+    {
+      "title": "Japan Cybercab trademark covers peer-to-peer rentals; no service is announced",
+      "url": "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals/",
+      "date": "2026-11-28",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "JPO mark 7101386 was granted Nov 13 and reported this week; it runs to 2036 and includes vehicle rentals, but Tesla has not launched Cybercab in Japan",
+      "match": "gap"
+    },
+    {
+      "title": "U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%",
+      "url": "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us/",
+      "date": "2026-11-24",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Second promo-rate increase in about a month; sticker prices are unchanged and Performance rates did not move with the other trims",
+      "match": "gap"
+    }
+  ]
+}

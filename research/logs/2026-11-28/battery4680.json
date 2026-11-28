@@ -1,0 +1,130 @@
+{
+  "categoryKey": "battery4680",
+  "date": "2026-11-28",
+  "filed": 0,
+  "skipReason": "No significant 4680 cell-production news in the date range. In-window hits were an Optimus acquisition, a software preconditioning note, and a restamped July Berlin recap. Texas remains the disclosed >40 GWh installed line; Berlin still finishes cells in Texas with a full local start aimed at mid-2027.",
+  "status": "empty",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla 4680 battery cell production November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com 4680 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "site:teslanorth.com Tesla 4680 November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla 4680 dry electrode yield GWh Berlin Texas November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "site:basenor.com Tesla 4680 cell 2026",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla 4680 OR \"dry electrode\" OR \"cell manufacturing\" OR \"18 GWh\" November 21..28 2026",
+        "tool": "web_search",
+        "hits": 8
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://battery-tech.net/why-tesla-is-betting-3-3-billion-more-on-gruenheide",
+        "kept": false,
+        "reason": "Published 2026-11-20, before the window. 4680 section restates the May 18 GWh / 2027 plan; the new money is a Cybercab hall, not a cell-line change."
+      },
+      {
+        "url": "https://theroboticsmedia.com/article/tesla-giga-berlin-18-gwh-4680-cell-giga-challenge-july-2026",
+        "kept": false,
+        "reason": "July 6 story. The Nov 25 stamp does not add a new capacity, yield, or start date."
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027",
+        "kept": false,
+        "reason": "2026-11-12, before the window. Same Thierig mid-2027 remarks already in seenUrls via Automobilwoche."
+      },
+      {
+        "url": "https://teslarati.com/tesla-bolster-optimus-company-acquisition-emag-germany",
+        "kept": false,
+        "reason": "2026-11-27 Optimus/EMAG filing. The 4680 line is 2019 Maxwell history, not a cell-production development."
+      },
+      {
+        "url": "https://silicontosoftware.com/tesla-4680-dry-electrode",
+        "kept": false,
+        "reason": "Explainer current through 2026-11-02. No new Tesla yield, GWh, or dry-electrode disclosure."
+      },
+      {
+        "url": "https://basenor.com/blogs/news/giga-texas-is-becoming-north-americas-largest-battery-cell-plant",
+        "kept": false,
+        "reason": "2026-11-09 Guilfoy hiring post already covered by the seen TeslaNorth 2026-11-10 URL. No new GWh figure."
+      },
+      {
+        "url": "https://basenor.com/blogs/news/tesla-lithium-plant-expansion-new-equipment-spotted-at-texas-refinery",
+        "kept": false,
+        "reason": "2026-11-12 refinery-equipment note, before the window, and not a cell-line, yield, or GWh update."
+      }
+    ],
+    "considered": [
+      {
+        "title": "Why Tesla is betting $3.3 billion more on Gr\u00fcnheide",
+        "url": "https://battery-tech.net/why-tesla-is-betting-3-3-billion-more-on-gruenheide",
+        "decision": "skip",
+        "reason": "Dated 2026-11-20. Cell plan is still 18 GWh from 2027 after the May $250 million step; $3.3 billion is the Cybercab hall, which is not a 4680 production metric."
+      },
+      {
+        "title": "Tesla doubles Giga Berlin 4680 cell target to 18 GWh",
+        "url": "https://theroboticsmedia.com/article/tesla-giga-berlin-18-gwh-4680-cell-giga-challenge-july-2026",
+        "decision": "skip",
+        "reason": "July 6 recap of the 18 GWh target and Cell Giga Challenge. Updated-Nov-25 stamp, no new facts inside 2026-11-21 to 2026-11-28."
+      },
+      {
+        "title": "Tesla targets mid-2027 for full battery cell production at Giga Berlin",
+        "url": "https://teslanorth.com/2026/11/12/tesla-giga-berlin-battery-cell-production-mid-2027",
+        "decision": "skip",
+        "reason": "2026-11-12 and the same Automobilwoche Thierig account already in seenUrls: electrodes in Berlin, cells finished in Texas, full local start mid-2027."
+      },
+      {
+        "title": "Giga Texas is becoming North America's largest battery cell plant",
+        "url": "https://basenor.com/blogs/news/giga-texas-is-becoming-north-americas-largest-battery-cell-plant",
+        "decision": "skip",
+        "reason": "Nov 9 hiring-post claim already filed via https://teslanorth.com/2026/11/10/tesla-giga-texas-4680-largest-cell-plant. Still no completion date or new capacity."
+      },
+      {
+        "title": "Tesla aims to bolster Optimus with EMAG acquisition",
+        "url": "https://teslarati.com/tesla-bolster-optimus-company-acquisition-emag-germany",
+        "decision": "skip",
+        "reason": "Optimus machining deal dated 2026-11-23/27. Dry-electrode mention is historical Maxwell context, not owned 4680 news."
+      },
+      {
+        "title": "Tesla 4680 dry electrode: four critical problems",
+        "url": "https://silicontosoftware.com/tesla-4680-dry-electrode",
+        "decision": "skip",
+        "reason": "Secondary explainer. Yield, scrap, and dry share remain undisclosed; latest company figures cited are the January and October 2026 updates."
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "battery4680InstalledGWh",
+        "count": 40,
+        "decision": "reject",
+        "reason": "Texas >40 GWh is Q3 2026 installed capacity restated in pre-window recaps, not a new output reading and unchanged versus criticalNews."
+      },
+      {
+        "series": "berlin4680PlannedGWh",
+        "count": 18,
+        "decision": "reject",
+        "reason": "Gr\u00fcnheide 18 GWh is the May 2026 plan repeated in Nov 11\u201320 coverage. No new ramp, yield, or in-window company figure."
+      }
+    ]
+  }
+}

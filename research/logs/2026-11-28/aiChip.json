@@ -1,0 +1,179 @@
+{
+  "categoryKey": "aiChip",
+  "date": "2026-11-28",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla AI5 AI6 chip November 2026 site:teslarati.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 OR AI6 Samsung OR TSMC OR Dojo November 2026 site:teslanorth.com OR site:teslaoracle.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 AI6 chip tape-out Samsung Taylor November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "\"AI6\" OR \"AI5\" Tesla chip Musk November 21 OR November 22 OR November 23 OR November 24 OR November 25 OR November 26 OR November 27 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla AI5 Optimus \"cars will remain\" site:teslarati.com OR site:teslaoracle.com OR site:notateslaapp.com",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla AI4.5 memory 24GB OR \"32GB\" November 2026 Musk",
+        "tool": "web_search",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-5-lpddr5x-memory",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-ai5-optimus-cars-ai4",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-ai4-5-ram-reduced-24gb-lpddr5x",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://trendforce.com/news/2026/11/23/news-tesla-cuts-ai4-5-memory-from-32gb-to-24gb-amid-soaring-costs-ai5-reserved-for-optimus",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://techtimes.com/articles/331296/20261123/elon-musk-says-tesla-ai4-computer-costs-twice-much-memory-prices-ai5-chip-goes-optimus.htm",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://ctee.com.tw/news/20261127700096-439901",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://trendforce.com/news/2026/11/27/news-tsmc-affiliate-guc-reportedly-lands-tesla-ai5-asic-project-but-tight-3nm-supply-could-limit-near-term-ramp-up",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-ai5-cars-2028-3nm-supply",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://tipranks.com/news/teslas-new-ai5-chip-may-not-reach-cars-until-2028",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm",
+        "kept": false,
+        "reason": "Tier-2 corroboration of Commercial Times only; not used as the cited source"
+      },
+      {
+        "url": "https://semiconductorsx.substack.com/p/tesla-ai5-chips-large-scale-shipment",
+        "kept": false,
+        "reason": "Repeats Commercial Times and adds an unsupported AI6 2029-2030 date"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Musk keeps cars on AI4 and sends AI5 to Optimus, with no end date",
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "decision": "file",
+        "reason": "Nov 22 Musk posts freeze vehicle computers on AI4 with no end date"
+      },
+      {
+        "title": "Tesla cuts planned AI4.5 memory to 24GB as AI4 build cost doubles",
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-5-lpddr5x-memory",
+        "decision": "file",
+        "reason": "Nov 22 spec cut and LPDDR5X description; AI4 cost doubling is the same thread"
+      },
+      {
+        "title": "Report: GUC puts TSMC 3nm ahead of Tesla, so car-scale AI5 may wait until 2028",
+        "url": "https://ctee.com.tw/news/20261127700096-439901",
+        "decision": "file",
+        "reason": "Nov 27 Commercial Times supply-chain report on N3 priority and 2028 car-scale timing"
+      },
+      {
+        "title": "Tesla AI5 supply constraints could explain decision to stick with AI4",
+        "url": "https://driveteslacanada.ca/news/tesla-ai5-cars-2028-3nm-supply",
+        "decision": "skip",
+        "reason": "Same Commercial Times report already filed"
+      },
+      {
+        "title": "This might be the real reason Musk is sending Tesla's AI5 chip to Optimus",
+        "url": "https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm",
+        "decision": "skip",
+        "reason": "Electrek corroboration of the Commercial Times report, not an independent source"
+      },
+      {
+        "title": "Musk Reveals Tesla AI6 Chip: Tape-out by December",
+        "url": "https://www.xix.ai/ainews/musk-reveals-tesla-ai6-chip-tapeout-by-december-rivals-dual-ai5-performance.html",
+        "decision": "skip",
+        "reason": "Republished July 13, 2026 item, not a new November tape-out"
+      },
+      {
+        "title": "Tesla FSD v15's Reality View",
+        "url": "https://www.teslarati.com/tesla-fsd-v15s-reality-drive-one-complaint-musk-solution/",
+        "decision": "skip",
+        "reason": "FSD software feature; fsdv15 owns it"
+      },
+      {
+        "title": "Tesla's Optimus Factory Gets Four Giga Press Foundations",
+        "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured/",
+        "decision": "skip",
+        "reason": "Optimus factory construction, not chip design or foundry"
+      },
+      {
+        "title": "Musk Says Tesla's AI5 Chip is Done, Not Coming to Cars First",
+        "url": "https://www.notateslaapp.com/news/3974/musk-says-teslas-ai5-chip-is-done-not-coming-to-vehicles-first",
+        "decision": "skip",
+        "reason": "April 15, 2026 recap, outside the date window"
+      },
+      {
+        "title": "Elon Musk shuts down talk of TSMC taking over Terafab",
+        "url": "https://www.teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab/",
+        "decision": "skip",
+        "reason": "October terafab ownership, outside the date window"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "aiChipVolume",
+        "count": null,
+        "decision": "reject",
+        "reason": "No AI5 or AI6 sample, yield, or shipment count was published. The 24GB versus 32GB figure is a memory spec, not a production series."
+      },
+      {
+        "series": "aiChipVolume",
+        "count": 1640000,
+        "decision": "reject",
+        "reason": "TipRanks' roughly 1.64 million is 2025 vehicle deliveries used as a wafer-demand illustration, not chips produced."
+      }
+    ]
+  }
+}

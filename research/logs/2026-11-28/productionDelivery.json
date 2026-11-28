@@ -1,0 +1,166 @@
+{
+  "categoryKey": "productionDelivery",
+  "date": "2026-11-28",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Q4 2026 deliveries production November",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslanorth.com Tesla November 2026 delivery OR production OR Semi OR sales",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslarati.com Tesla November 2026 deliveries OR production OR Semi OR \"Model Y\"",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla China November 2026 wholesale retail sales CPCA",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Europe November 2026 registrations Model Y Germany Norway",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla Semi delivery OR orders November 2026 site:teslanorth.com OR site:teslarati.com OR site:ir.tesla.com",
+        "tool": "web_search",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/23/tesla-semi-wattev-port-oakland-charging-depot",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/26/tesla-cybertruck-taiwan-reservation-refunds",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-europe-october-2026-registrations",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/11/23/3408557/0/en/wattev-s-port-of-oakland-charging-depot-and-new-electric-trucks-bring-cost-parity-with-diesel-to-fleets.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.acea.auto/files/Press_release_car_registrations_October_2026.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://x.com/Tslachan/status/2125820814465581224",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-cybertruck-pcs2-reimbursement-claim",
+        "kept": false,
+        "reason": "warranty reimbursement for existing owners, not production or deliveries"
+      }
+    ],
+    "considered": [
+      {
+        "title": "October Europe Tesla registrations rise 77% to 12,116, still a 1.1% share",
+        "url": "https://www.acea.auto/files/Press_release_car_registrations_October_2026.pdf",
+        "decision": "file",
+        "reason": "ACEA 24 Nov 2026 EU+EFTA+UK print is new and not in seenUrls; numbers checked against the PDF"
+      },
+      {
+        "title": "Oakland Semi debut names no truck count, only a future 300-truck corridor",
+        "url": "https://www.globenewswire.com/news-release/2026/11/23/3408557/0/en/wattev-s-port-of-oakland-charging-depot-and-new-electric-trucks-bring-cost-parity-with-diesel-to-fleets.html",
+        "decision": "file",
+        "reason": "23 Nov customer debut in the window; release confirms no delivered-truck count"
+      },
+      {
+        "title": "Tesla is cancelling Taiwan Cybertruck reservations instead of delivering trucks",
+        "url": "https://teslanorth.com/2026/11/26/tesla-cybertruck-taiwan-reservation-refunds",
+        "decision": "file",
+        "reason": "new overseas non-delivery on 26 Nov; distinct from the earlier US deposit-refund URL"
+      },
+      {
+        "title": "HMD Trucking Takes Delivery of 50 Tesla Semis in Illinois",
+        "url": "https://teslanorth.com/2026/11/18/hmd-trucking-50-tesla-semis-delivered",
+        "decision": "skip",
+        "reason": "seenUrl and already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla Plans More China Production as Musk Visits Shanghai Factory",
+        "url": "https://teslanorth.com/2026/11/19/tesla-shanghai-visit-china-production-pledge",
+        "decision": "skip",
+        "reason": "seenUrl; no new output target this week and November CPCA is not out"
+      },
+      {
+        "title": "Tesla retail sales in China fall to lowest since July 2022",
+        "url": "https://cnevpost.com/2026/11/09/tesla-retail-sales-china-oct-2026",
+        "decision": "skip",
+        "reason": "October China retail already in seenUrls; no November wholesale or retail print"
+      },
+      {
+        "title": "Weekly Tesla delivery estimates held near 467,100",
+        "url": "https://x.com/DigitalAssetsUS/status/2124160799807594521",
+        "decision": "skip",
+        "reason": "unofficial aggregator; post says street estimates held steady and Tesla has not published a company-compiled Q4 consensus"
+      },
+      {
+        "title": "Tesla Starts Sending Cybertruck Owners PCS2 Reimbursement Emails",
+        "url": "https://teslanorth.com/2026/11/24/tesla-cybertruck-pcs2-reimbursement-claim",
+        "decision": "skip",
+        "reason": "service reimbursement for a known part failure, not a production, delivery, or market-entry change"
+      },
+      {
+        "title": "Tesla's Optimus Factory Gets Four Giga Press Foundations",
+        "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured",
+        "decision": "skip",
+        "reason": "Optimus construction belongs to optimus"
+      },
+      {
+        "title": "Norway partial November registrations on EU-EVs",
+        "url": "https://www.eu-evs.com/bestSellers/NO/Groups/Month/2026/11",
+        "decision": "skip",
+        "reason": "tracker page, not an official full-month print; no quarterlyData point"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "quarterlyData",
+        "count": 12116,
+        "decision": "reject",
+        "reason": "ACEA EU+EFTA+UK October registrations, not Tesla quarterly global production or deliveries"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 272846,
+        "decision": "reject",
+        "reason": "ACEA year-to-date Europe registrations through October, not a Tesla quarterly print"
+      },
+      {
+        "series": "quarterlyData",
+        "count": 467100,
+        "decision": "reject",
+        "reason": "unofficial street-consensus figure from an X roundup; Tesla has not published Q4 guidance or a company-compiled consensus"
+      },
+      {
+        "series": "semiDeliveries",
+        "count": 300,
+        "decision": "reject",
+        "reason": "WattEV future corridor plan, not a counted Semi delivery"
+      }
+    ]
+  }
+}

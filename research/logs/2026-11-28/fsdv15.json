@@ -1,0 +1,229 @@
+{
+  "categoryKey": "fsdv15",
+  "date": "2026-11-28",
+  "filed": 4,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD v15 December holiday update November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla FSD software update 2026.44 OR 2026.45 v14.3 November 2026 site:notateslaapp.com",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla FSD miles milestone November 2026 site:teslanorth.com OR site:teslarati.com",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "Tesla FSD v15 OR \"FSD 15\" OR \"v14.3\" HW3 HW4 November 2026 site:teslarati.com OR site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla \"FSD\" \"2026.44\" OR \"2026.45\" OR \"v15\" site:notateslaapp.com November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla FSD supervised version rollout \"November 2026\" v14 OR v15",
+        "tool": "web_search",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://notateslaapp.com/news/5065/tesla-fsd-v15-rolls-out-with-incredible-new-reality-view-and-25x-better-safety-video",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-fsds-live-counter-passes-18-billion-supervised-miles",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-fsd-v15-reaches-an-older-model-y-without-a-bumper-camera",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslarati.com/tesla-full-self-driving-v15-rollout-begins-full-release-notes-improvements",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/software-updates/version/2026.44.3.1/release-notes",
+        "kept": true,
+        "reason": "FSD version unchanged; used as evidence the general track is still v14"
+      },
+      {
+        "url": "https://teslaoracle.com/2026/11/22/tesla-fsd-v15-2026-38-6-11-rollout-begins-official-release-notes-and-new-features",
+        "kept": false,
+        "reason": "fetch returned site chrome, not the article body"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "kept": true,
+        "reason": "HW3 stays on v14 Lite; AI5-to-Optimus allocation left to aiChip"
+      },
+      {
+        "url": "https://notateslaapp.com/software-updates/version/2026.38.6.11/release-notes",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view",
+        "kept": false,
+        "reason": "tier-2 corroboration of the same Nov 21 rollout; not used as source"
+      },
+      {
+        "url": "https://tesla.com/fsd/safety",
+        "kept": false,
+        "reason": "access denied; miles figure left on the TeslaNorth citation"
+      },
+      {
+        "url": "https://notateslaapp.com/news/5102/tesla-fsd-v15-to-get-point-to-drive-in-upcoming-update",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/news/5078/improvements-coming-to-fsd-v15-lower-latency-for-reality-view-santa-mode-more",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/news/5092/tesla-fsd-v15-rolls-out-to-model-ys-without-front-bumper-cameras",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://notateslaapp.com/news/5072/teslas-2026-holiday-update-what-to-expect-this-christmas",
+        "kept": false,
+        "reason": "speculative holiday roundup; v15 wide-release line already filed last week"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "FSD v15.0.1 reaches customer cars, still supervised and tiny",
+        "url": "https://notateslaapp.com/software-updates/version/2026.38.6.11/release-notes",
+        "decision": "file",
+        "reason": "first customer v15 OTA in the window; still supervised and a tiny HW4 Model Y branch"
+      },
+      {
+        "title": "Reality View lags on v15.0.1, and tap-to-go is not in the build",
+        "url": "https://notateslaapp.com/news/5102/tesla-fsd-v15-to-get-point-to-drive-in-upcoming-update",
+        "decision": "file",
+        "reason": "Nov 28 Musk timeline for an unshipped point release, plus acknowledged viz defects"
+      },
+      {
+        "title": "v15.0.1 reaches older HW4 Model Ys, still not the rest of the fleet",
+        "url": "https://notateslaapp.com/news/5092/tesla-fsd-v15-rolls-out-to-model-ys-without-front-bumper-cameras",
+        "decision": "file",
+        "reason": "eligibility widened past the new Model Y note, but not to the rest of the fleet"
+      },
+      {
+        "title": "Supervised FSD counter passes 18 billion miles, with no v15 split",
+        "url": "https://teslanorth.com/2026/11/24/tesla-fsds-live-counter-passes-18-billion-supervised-miles",
+        "decision": "file",
+        "reason": "new cumulative supervised-mile milestone versus the Nov 2 17 billion reading"
+      },
+      {
+        "title": "Musk dates FSD v15 for December, but customer cars are still on v14",
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-what-we-know",
+        "decision": "skip",
+        "reason": "seenUrl; last week's promise, superseded by the actual v15.0.1 OTA"
+      },
+      {
+        "title": "Tesla FSD V15 Arriving Next Month",
+        "url": "https://notateslaapp.com/news/5057/tesla-fsd-v15-coming-next-month-with-holiday-update-musk",
+        "decision": "skip",
+        "reason": "same Nov 21 Musk wide-release line already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla FSD v15 Is Headed for a December Release, Musk Says",
+        "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-december-wide-release",
+        "decision": "skip",
+        "reason": "duplicate of last week's December wide-release promise"
+      },
+      {
+        "title": "2026.44.3.1 still lists FSD v14.3.13 and v14.3 Lite",
+        "url": "https://notateslaapp.com/software-updates/version/2026.44.3.1/release-notes",
+        "decision": "skip",
+        "reason": "FSD version unchanged from 2026.44.1; used only as evidence inside the v15 rollout"
+      },
+      {
+        "title": "Tesla Update 2026.44 Includes FSD v14.3 and v14.3 Lite",
+        "url": "https://notateslaapp.com/news/5054/tesla-update-202644-brings-fsd-v143-and-v143-lite-to-every-owner",
+        "decision": "skip",
+        "reason": "seenUrl"
+      },
+      {
+        "title": "Tesla Cars Are Sticking With AI4 as AI5 Goes to Optimus",
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus",
+        "decision": "skip",
+        "reason": "AI5 allocation is aiChip/optimus; HW3-no-v15 fact is inside the v15 rollout note"
+      },
+      {
+        "title": "Tesla's 2026 Holiday Update: What to Expect This Christmas",
+        "url": "https://notateslaapp.com/news/5072/teslas-2026-holiday-update-what-to-expect-this-christmas",
+        "decision": "skip",
+        "reason": "prediction roundup, not a shipped FSD change"
+      },
+      {
+        "title": "Tesla launches FSD v15, targets its biggest weaknesses",
+        "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view",
+        "decision": "skip",
+        "reason": "tier-2 repeat of the Nov 21 rollout already filed from release notes"
+      },
+      {
+        "title": "EU Shares Agenda for Tesla FSD Meeting With Possible Vote",
+        "url": "https://notateslaapp.com/news/5098/eu-shares-agenda-for-tesla-fsd-meeting-with-possible-vote",
+        "decision": "skip",
+        "reason": "country approval belongs to fsd"
+      },
+      {
+        "title": "Tesla Robotaxi Surpasses 6 Million Miles",
+        "url": "https://teslanorth.com/2026/11/24/tesla-robotaxi-surpasses-6-million-miles-on-its-live-counter",
+        "decision": "skip",
+        "reason": "robotaxi mileage belongs to cybercab"
+      },
+      {
+        "title": "Tesla Now Has More Than 1,000 Cybercabs on Texas' Robotaxi Roster",
+        "url": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster",
+        "decision": "skip",
+        "reason": "Texas roster belongs to cybercab"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdMiles",
+        "count": 18001521096,
+        "decision": "reject",
+        "reason": "config metrics is empty; 18,001,521,096 is a supervised cumulative counter from TeslaNorth, filed as a keyChange rather than metricUpdate"
+      },
+      {
+        "series": "fsdV15Fleet",
+        "count": 84,
+        "decision": "reject",
+        "reason": "TeslaFi sample on 2026.38.6.11 (0.7%, zero installs that day), not an official in-service total"
+      }
+    ]
+  }
+}

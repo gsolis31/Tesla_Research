@@ -1,0 +1,253 @@
+{
+  "categoryKey": "cybercab",
+  "date": "2026-11-28",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Cybercab OR robotaxi after:2026-11-20 site:teslarati.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Cybercab OR robotaxi after:2026-11-20 site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla robotaxi Cybercab fleet Austin Dallas November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla Cybercab robotaxi site:robotaxitracker.com November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla expands Robotaxi Dallas fares Thanksgiving site:teslanorth.com",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "Tesla Cybercab OR robotaxi November 21..28 2026 site:teslarati.com OR site:teslaoracle.com OR site:robotaxitracker.com",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://robotaxitracker.com/government",
+        "kept": false,
+        "reason": "page shell only; roster read from the updates feed instead"
+      },
+      {
+        "url": "https://robotaxitracker.com/permits/texas",
+        "kept": false,
+        "reason": "page shell only; totals came from the updates changelog"
+      },
+      {
+        "url": "https://robotaxitracker.com/updates",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://robotaxitracker.com/vehicles",
+        "kept": false,
+        "reason": "registry-joined national mix and all-time plate logs, not a 30-day city floor"
+      },
+      {
+        "url": "https://robotaxitracker.com/cities/austin",
+        "kept": false,
+        "reason": "active figure is an estimate, not a 30-day distinct sighting floor"
+      },
+      {
+        "url": "https://robotaxitracker.com/cities/dallas",
+        "kept": false,
+        "reason": "active figure is an estimate; lookup total is not a dispatch census"
+      },
+      {
+        "url": "https://robotaxitracker.com/methodology",
+        "kept": false,
+        "reason": "methodology section did not render"
+      },
+      {
+        "url": "https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/25/tesla-texas-robotaxi-roster-822-cybercabs/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/27/tesla-expands-dallas-tx-robotaxi-geofence-83-after-cybercab-launch-watch-user-reviews-more/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-robotaxi-surpasses-6-million-miles-on-its-live-counter/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tesla.com/robotaxi/safety",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/23/tesla-cybercab-stops-austin-video/",
+        "kept": false,
+        "reason": "12-second promotional clip, one camera, no operational change"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/23/tesla-cybercab-police-traffic-stop/",
+        "kept": false,
+        "reason": "explainer of the Nov 20 responder guide already filed; no stop occurred"
+      }
+    ],
+    "considered": [
+      {
+        "title": "Texas roster hits 1,841, and 1,107 Cybercabs are still not riders",
+        "url": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster/",
+        "decision": "file",
+        "reason": "roster moved from 1,507 to 1,841 inside the window; filed as robotaxiRegistered, not fleet"
+      },
+      {
+        "title": "Texas roster step to 1,556 and 822 Cybercabs on Nov 24",
+        "url": "https://teslanorth.com/2026/11/25/tesla-texas-robotaxi-roster-822-cybercabs/",
+        "decision": "skip",
+        "reason": "intermediate authorization step folded into the Nov 26 1,841 update"
+      },
+      {
+        "title": "Dallas Robotaxi map grows to 150 square miles with no car or fare number",
+        "url": "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares/",
+        "decision": "file",
+        "reason": "new Dallas geofence on Nov 25; tracker measured 82 to 150 square miles"
+      },
+      {
+        "title": "Tesla Oracle Dallas geofence about 83 percent",
+        "url": "https://www.teslaoracle.com/2026/11/27/tesla-expands-dallas-tx-robotaxi-geofence-83-after-cybercab-launch-watch-user-reviews-more/",
+        "decision": "skip",
+        "reason": "same Nov 25 map as the TeslaNorth story; 150 square miles used as corroboration only"
+      },
+      {
+        "title": "Robotaxi's 6 million-mile counter is an estimate; the safety tally still ends Oct 18",
+        "url": "https://teslanorth.com/2026/11/24/tesla-robotaxi-surpasses-6-million-miles-on-its-live-counter/",
+        "decision": "file",
+        "reason": "new counter reading this week; official page still dates the measured report to Oct 18"
+      },
+      {
+        "title": "Tesla's Cybercab fleet just had its biggest day ever",
+        "url": "https://www.teslarati.com/teslas-cybercab-fleet-just-had-its-biggest-day-ever/",
+        "decision": "skip",
+        "reason": "Nov 19 recap of the already filed 1,507 / 200-Cybercab registration"
+      },
+      {
+        "title": "Tesla Cybercab rides launch in Dallas",
+        "url": "https://robotaxitracker.com/news/tesla-cybercab-rides-launch-in-dallas",
+        "decision": "skip",
+        "reason": "seenUrl; Nov 19 launch already in recentKeyChanges"
+      },
+      {
+        "title": "Tesla Cybercab avoids crash in a 12-second Austin clip",
+        "url": "https://teslanorth.com/2026/11/23/tesla-cybercab-stops-austin-video/",
+        "decision": "skip",
+        "reason": "Tesla and Musk reposted one short clip; no fleet, geofence, or verified incident change"
+      },
+      {
+        "title": "What happens when police pull over a Cybercab",
+        "url": "https://teslanorth.com/2026/11/23/tesla-cybercab-police-traffic-stop/",
+        "decision": "skip",
+        "reason": "restates the Nov 20 first-responder guide already filed; no traffic stop reported"
+      },
+      {
+        "title": "Uber, Lucid and Nuro driverless tests in California",
+        "url": "https://teslanorth.com/2026/11/24/uber-lucid-nuro-driverless-robotaxi-california/",
+        "decision": "skip",
+        "reason": "competitor test; Tesla Bay Area safety-driver status was already known and is noted on the miles item"
+      },
+      {
+        "title": "Dallas map 81.1 to 82 square miles",
+        "url": "https://robotaxitracker.com/updates",
+        "decision": "skip",
+        "reason": "Nov 23 log of a 0.9 square mile tweak with an as-of of Nov 20; not a separate expansion"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "robotaxiRegistered",
+        "count": 1841,
+        "decision": "file",
+        "reason": "Tracker changelog and FSD Database agree Tesla's Texas authorization list reached 1,841 on Nov 26, versus 1,507 in hot context. Not written to fleet or city series."
+      },
+      {
+        "series": "robotaxiRegistered",
+        "count": 1556,
+        "decision": "reject",
+        "reason": "Real Nov 24 step (822 Cybercab + 734 Model Y) but superseded the same week by 1,841; one registeredUpdate keeps the latest total."
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 1247,
+        "decision": "reject",
+        "reason": "Robotaxi Tracker /vehicles on Nov 28 mixes TxDMV joins and sightings (Texas 1,196 plus Florida 51). Not a network-wide in-service total."
+      },
+      {
+        "series": "cityFleet",
+        "count": 280,
+        "decision": "reject",
+        "reason": "Austin city page says 280+ active at least and that too few cars turn up twice to say more. That is a statistical estimate, not a 30-day distinct-vehicle sighting floor and not a Tesla in-service figure. Prior floor was 186."
+      },
+      {
+        "series": "cityFleet",
+        "count": 777,
+        "decision": "reject",
+        "reason": "Austin 'spotted by riders' is an all-time rider/spotter log, which cannot go in cityFleet."
+      },
+      {
+        "series": "cityFleet",
+        "count": 830,
+        "decision": "reject",
+        "reason": "Austin figure on Tesla's lookup. Same class as the Dallas 192-car lookup already treated as a registration slice, not a dispatch census."
+      },
+      {
+        "series": "cityFleet",
+        "count": 230,
+        "decision": "reject",
+        "reason": "Dallas 230+ is the same 'active at least' estimate, not a 30-day distinct floor. Prior sighting floor was 56. Not re-filed."
+      },
+      {
+        "series": "cityFleet",
+        "count": 247,
+        "decision": "reject",
+        "reason": "Dallas spotted-by-riders total is an all-time log, not a 30-day floor."
+      },
+      {
+        "series": "cityFleet",
+        "count": 472,
+        "decision": "reject",
+        "reason": "Tesla lookup for Dallas-Fort Worth, not a city sighting floor or a company in-service count."
+      },
+      {
+        "series": "robotaxiFleet",
+        "count": 6330630,
+        "decision": "reject",
+        "reason": "Live autonomous-mile estimate on tesla.com/robotaxi/safety, not an in-service vehicle count. Audited miles remain 3.1 million through Oct 18."
+      }
+    ]
+  }
+}

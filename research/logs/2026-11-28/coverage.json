@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-28",
+  "weekOf": "2026-11-23",
+  "dateFrom": "2026-11-21",
+  "dateTo": "2026-11-28",
+  "candidates": [
+    {
+      "title": "FSD v15.0.1 build 2026.38.6.11 reaches the first AI4 cars, still supervised",
+      "url": "https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1/",
+      "date": "2026-11-21",
+      "likelyCategory": "fsdv15",
+      "whyItMightMatter": "Early US Model Y AI4 cars got Reality View and a Tesla-claimed 25x safety-critical gain; wide release is still December and HW3 is not on this build"
+    },
+    {
+      "title": "Musk says cars remain on AI4 and AI5 goes to Optimus",
+      "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus/",
+      "date": "2026-11-22",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "No timeline for staying on AI4, no HW3 retrofit date, and no v15 Lite; he calls AI4 enough for superhuman driving and puts AI5 at about 12x"
+    },
+    {
+      "title": "Supply report says AI5 car volume may wait until 2028 as AI4.5 RAM is cut to 24GB",
+      "url": "https://driveteslacanada.ca/news/tesla-ai5-cars-2028-3nm-supply/",
+      "date": "2026-11-27",
+      "likelyCategory": "aiChip",
+      "whyItMightMatter": "Commercial Times, citing unnamed supply-chain sources, says GUC's 2027 TSMC 3nm goes to Google and Microsoft first; Musk separately cut planned AI4.5 memory from 32GB to 24GB"
+    },
+    {
+      "title": "EU motor-vehicle committee meeting slips from December 1 to December 15",
+      "url": "https://electrek.co/2026/11/25/eu-delays-tesla-fsd-vote-december-15-tcmv/",
+      "date": "2026-11-25",
+      "likelyCategory": "fsd",
+      "whyItMightMatter": "Commission confirmed the new TCMV date to Reuters; the file has been discussed twice without a vote, and an EU rejection could unwind the 12 national approvals"
+    },
+    {
+      "title": "Texas roster lists 1,107 Cybercabs after 285 additions, still not a rider count",
+      "url": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster/",
+      "date": "2026-11-26",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "DMV list is 1,841 Tesla Robotaxi vehicles, 1,107 Cybercabs and 734 Model Ys; registration under the operator is not cars in service"
+    },
+    {
+      "title": "Dallas Robotaxi map grows north and Tesla says fares are lower, with no numbers",
+      "url": "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares/",
+      "date": "2026-11-25",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "Official account posted a wider map toward Richardson and said more cars and lower prices, but did not state miles, vehicle counts, or the new fare"
+    },
+    {
+      "title": "Germany lists Tesla's EMAG asset bid for robot gear machines",
+      "url": "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus/",
+      "date": "2026-11-27",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Bundeskartellamt case B5-132/26, filed Nov 23 and noticed Nov 27, is a review of an asset purchase, not a closed deal, price, or Optimus output figure"
+    },
+    {
+      "title": "Austin Optimus site shows poured press pads and a steel frame an observer calls 60% done",
+      "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured/",
+      "date": "2026-11-27",
+      "likelyCategory": "optimus",
+      "whyItMightMatter": "Concrete is in the four foundations that were rebar on Nov 20; no presses are installed, and the March 2027 steel estimate is Joe Tegtmeyer's, not Tesla's"
+    },
+    {
+      "title": "Japan Cybercab trademark covers peer-to-peer rentals; no service is announced",
+      "url": "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals/",
+      "date": "2026-11-28",
+      "likelyCategory": "cybercab",
+      "whyItMightMatter": "JPO mark 7101386 was granted Nov 13 and reported this week; it runs to 2036 and includes vehicle rentals, but Tesla has not launched Cybercab in Japan"
+    },
+    {
+      "title": "U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%",
+      "url": "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us/",
+      "date": "2026-11-24",
+      "likelyCategory": "productionDelivery",
+      "whyItMightMatter": "Second promo-rate increase in about a month; sticker prices are unchanged and Performance rates did not move with the other trims"
+    }
+  ],
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla November 21-28 2026 robotaxi FSD Optimus AI5 4680 Terafab deliveries",
+        "tool": "web_search",
+        "hits": 10
+      },
+      {
+        "q": "site:teslarati.com Tesla November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslanorth.com Tesla November 22 OR 23 OR 24 OR 25 OR 26 OR 27 OR 28 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla NHTSA OR NTSB Cybercab OR FSD OR Optimus November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslaoracle.com Tesla November 2026 Cybercab OR FSD OR Optimus OR 4680 OR AI5",
+        "tool": "web_search",
+        "hits": 5
+      },
+      {
+        "q": "site:electrek.co Tesla November 22 OR 23 OR 24 OR 25 OR 26 OR 27 2026",
+        "tool": "web_search",
+        "hits": 6
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/22/tesla-ai4-ai5-optimus/",
+        "kept": true
+      },
+      {
+        "url": "https://driveteslacanada.ca/news/tesla-ai5-cars-2028-3nm-supply/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/22/tesla-fsd-v15-2026-38-6-11-rollout-begins-official-release-notes-and-new-features/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/27/tesla-optimus-factory-giga-press-foundations-poured/",
+        "kept": true
+      },
+      {
+        "url": "https://www.teslaoracle.com/2026/11/27/tesla-expands-dallas-tx-robotaxi-geofence-83-after-cybercab-launch-watch-user-reviews-more/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/guides/tesla-autopilot/",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/category/tesla/cybercab/",
+        "kept": false
+      },
+      {
+        "url": "https://roboticsprogress.com/companies/tesla",
+        "kept": false
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/26/tesla-now-has-more-than-1000-cybercabs-on-texas-robotaxi-roster/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/25/tesla-robotaxi-dallas-expansion-lower-fares/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/27/tesla-emag-acquisition-germany-optimus/",
+        "kept": true
+      },
+      {
+        "url": "https://electrek.co/2026/11/25/eu-delays-tesla-fsd-vote-december-15-tcmv/",
+        "kept": true
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1/",
+        "kept": true
+      }
+    ]
+  }
+}

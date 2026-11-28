@@ -1,0 +1,199 @@
+{
+  "categoryKey": "terafab",
+  "date": "2026-11-28",
+  "filed": 2,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla Terafab Grimes County November 2026 construction permits",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "site:teslanorth.com Terafab 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "site:teslarati.com Terafab November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "site:kbtx.com Terafab November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "\"Terafab\" SpaceX OR Tesla (JETI OR Abbott OR \"school board\" OR water OR lawsuit) November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "SpaceX TCEQ concrete batch plant Gibbons Creek Terafab November 2026",
+        "tool": "web_search",
+        "hits": 10
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://teslanorth.com/2026/11/26/spacex-terafab-texas-concrete-plant-permit",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://kbtx.com/2026/11/25/terafabs-growing-footprint-comes-into-view-along-highway-30",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.texasconstructionhub.com/stories/spacex-terafab-168b-site-preparation",
+        "kept": false,
+        "reason": "Paywalled after a lede that restates the existing JETI investment schedule"
+      },
+      {
+        "url": "https://www.texasconstructionhub.com/stories/spacex-terafab-concrete-batch-plant-registration",
+        "kept": false,
+        "reason": "Membership wall after one sentence; used only to corroborate that an air filing exists"
+      },
+      {
+        "url": "https://texaslandtracker.com/projects/grimes-terafab/",
+        "kept": false,
+        "reason": "Updated Nov. 20, before the window, and it recaps known acreage and the records fight"
+      },
+      {
+        "url": "https://thetexan.news/issues/texas-taxes-spending/grimes-county-spacex-agreement-under-scrutiny-as-terafab-litigation-continues/article_422368b1-2658-4140-81be-ba449e5d3066.html",
+        "kept": false,
+        "reason": "Dated Nov. 20, outside the window, and it recaps the records lawsuit"
+      },
+      {
+        "url": "https://www.neoteo.com/en/terafabs-texas-project-report-puts-land-holdings-above-10000-acres-spacex-amends-petition",
+        "kept": false,
+        "reason": "Nov. 18 rewrite of the Nov. 10 acreage and records story already seen"
+      },
+      {
+        "url": "https://www.terafabtexas.com/post/terafab-site-clearing-advances-in-grimes-county",
+        "kept": false,
+        "reason": "Oct. 2 recap of September KBTX clearing footage"
+      },
+      {
+        "url": "https://www.terafabtexas.com/post/knife-river-seeks-permit-for-two-concrete-batch-plants-in-gibbons-creek-area",
+        "kept": false,
+        "reason": "July 23 Knife River filing near Carlos; the article says it has no identified Terafab customer"
+      },
+      {
+        "url": "https://www.oftmw.com/projects/terafab/",
+        "kept": false,
+        "reason": "Project page verified Nov. 18, before the window, with no new event"
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/17/texas-am-terafab-chip-training-pipeline/",
+        "kept": false,
+        "reason": "Same Nov. 16 A&M briefing already filed from KBTX"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Terafab",
+        "kept": false,
+        "reason": "Encyclopedia recap with no Nov. 21-28 construction event"
+      },
+      {
+        "url": "https://www.law360.com/cases/6aa9c173be4d76f2223f3997",
+        "kept": false,
+        "reason": "Trademark docket page; public coverage is still the Sept. 16 filing"
+      },
+      {
+        "url": "https://research.33fg.com/news/spacex-files-a-tceq-permit-for-a-temporary-concrete-plant-at-the-terafab-site",
+        "kept": false,
+        "reason": "Short rewrite of the same air filing; registration number not confirmed on the TCEQ NSR list"
+      },
+      {
+        "url": "https://austinio.com/terafab-grimes-county.php",
+        "kept": false,
+        "reason": "Compiled briefing through October 2026, with stale acreage and no November permit"
+      },
+      {
+        "url": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/nsr-pending-permits.html",
+        "kept": false,
+        "reason": "Permit index, not an article; SpaceX row found was the Bastrop Starlink factory, not Gibbons Creek"
+      }
+    ],
+    "considered": [
+      {
+        "title": "SpaceX's Terafab concrete-plant air permit is filed and still pending",
+        "url": "https://teslanorth.com/2026/11/26/spacex-terafab-texas-concrete-plant-permit",
+        "decision": "file",
+        "reason": "New Nov. 25 TCEQ application inside the window; still pending, so not a construction win"
+      },
+      {
+        "title": "Highway 30 shows Terafab truck traffic, not a chip fab",
+        "url": "https://kbtx.com/2026/11/25/terafabs-growing-footprint-comes-into-view-along-highway-30",
+        "decision": "file",
+        "reason": "Nov. 24 eyewitness of widened access and truck traffic; single local source"
+      },
+      {
+        "title": "SpaceX Begins Site Preparation for $16.8 Billion Terafab",
+        "url": "https://www.texasconstructionhub.com/stories/spacex-terafab-168b-site-preparation",
+        "decision": "skip",
+        "reason": "Paywalled; $123.4 million 2026 schedule is not verified and looks like the existing JETI filing"
+      },
+      {
+        "title": "Texas A&M Says Terafab Is Counting on Its Chip-Training Pipeline",
+        "url": "https://teslanorth.com/2026/11/17/texas-am-terafab-chip-training-pipeline/",
+        "decision": "skip",
+        "reason": "Same Nov. 16 briefing as the KBTX story already in recentKeyChanges"
+      },
+      {
+        "title": "SpaceX-Grimes County Tax Abatement Agreement Remains Under Scrutiny",
+        "url": "https://thetexan.news/issues/texas-taxes-spending/grimes-county-spacex-agreement-under-scrutiny-as-terafab-litigation-continues/article_422368b1-2658-4140-81be-ba449e5d3066.html",
+        "decision": "skip",
+        "reason": "Nov. 20, before the window; recap of the records suit and the Nov. 9 amended petition already covered"
+      },
+      {
+        "title": "Knife River seeks permit for two concrete batch plants in Gibbons Creek area",
+        "url": "https://www.terafabtexas.com/post/knife-river-seeks-permit-for-two-concrete-batch-plants-in-gibbons-creek-area",
+        "decision": "skip",
+        "reason": "Different company, application received July 23, and no identified link to Terafab"
+      },
+      {
+        "title": "Tesla, Inc. et al v. TERA-print, LLC",
+        "url": "https://www.law360.com/cases/6aa9c173be4d76f2223f3997",
+        "decision": "skip",
+        "reason": "No new docket coverage beyond the September trademark case already seen"
+      },
+      {
+        "title": "Terafab land holdings top 10,000 acres",
+        "url": "https://kbtx.com/2026/11/11/terafab-land-holdings-top-10000-acres-spacex-challenges-release-records-requested-by-kbtx",
+        "decision": "skip",
+        "reason": "seenUrl from Nov. 10-11"
+      },
+      {
+        "title": "Elon Musk shuts down talk of TSMC taking over Terafab",
+        "url": "https://teslarati.com/elon-musk-shuts-down-talk-of-tsmc-taking-over-terafab",
+        "decision": "skip",
+        "reason": "seenUrl from October; Teslarati had no new Terafab article in this window"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "terafabEligibleProperty2026",
+        "count": 123.4,
+        "decision": "reject",
+        "reason": "Paywalled Texas Construction Hub figure, in millions of dollars of 2026 eligible property. Not a production count and not verified against the comptroller filing."
+      },
+      {
+        "series": "terafabLandAcres",
+        "count": 10000,
+        "decision": "reject",
+        "reason": "Repeat of the Nov. 10 WIT Tech holdings snapshot, not a new survey"
+      },
+      {
+        "series": "knifeRiverConcreteYards",
+        "count": 650000,
+        "decision": "reject",
+        "reason": "Knife River Carlos plants, applied July 23. Not a Terafab output figure and not tied to the project"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-28",
+  "errorCount": 0,
+  "warningCount": 2,
+  "files": [
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json",
+      "category": "cybercab",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: Japan Cybercab trademark covers peer-to-peer rentals; no service is announced",
+          "category": "cybercab",
+          "title": "Japan Cybercab trademark covers peer-to-peer rentals; no service is announced",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-cybercab.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsd.json",
+      "category": "fsd",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-optimus.json",
+      "category": "optimus",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-fsdv15.json",
+      "category": "fsdv15",
+      "status": "ok",
+      "filed": 4,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json",
+      "category": "productionDelivery",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "issues": [
+        {
+          "level": "warning",
+          "code": "COVERAGE_GAP",
+          "message": "scout listed unmatched story: U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%",
+          "category": "productionDelivery",
+          "title": "U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%",
+          "path": "/Users/gonzalosolis/Research/research/raw/findings-productionDelivery.json"
+        }
+      ]
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-aiChip.json",
+      "category": "aiChip",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-battery4680.json",
+      "category": "battery4680",
+      "status": "empty",
+      "filed": 0,
+      "skipReason": "No significant 4680 cell-production news in the date range. In-window hits were an Optimus acquisition, a software preconditioning note, and a restamped July Berlin recap. Texas remains the disclosed >40 GWh installed line; Berlin still finishes cells in Texas with a full local start aimed at mid-2027.",
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-terafab.json",
+      "category": "terafab",
+      "status": "ok",
+      "filed": 2,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    },
+    {
+      "path": "/Users/gonzalosolis/Research/research/raw/findings-jobPostings.json",
+      "category": "jobPostings",
+      "status": "ok",
+      "filed": 3,
+      "skipReason": null,
+      "errorCount": 0,
+      "warningCount": 0,
+      "issues": []
+    }
+  ]
+}

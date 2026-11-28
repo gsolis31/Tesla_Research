@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-28",
+  "weekOf": "2026-11-23",
+  "stage": "curated",
+  "agents": {
+    "cybercab": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 16,
+      "considered": 11,
+      "skipped": 8,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsd": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 15,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "optimus": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 6,
+      "fetched": 11,
+      "considered": 9,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "fsdv15": {
+      "status": "ok",
+      "filed": 4,
+      "queries": 6,
+      "fetched": 16,
+      "considered": 15,
+      "skipped": 11,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "productionDelivery": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 7,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 1,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "aiChip": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 12,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "battery4680": {
+      "status": "empty",
+      "filed": 0,
+      "queries": 6,
+      "fetched": 7,
+      "considered": 6,
+      "skipped": 6,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": "No significant 4680 cell-production news in the date range. In-window hits were an Optimus acquisition, a software preconditioning note, and a restamped July Berlin recap. Texas remains the disclosed >40 GWh installed line; Berlin still finishes cells in Texas with a full local start aimed at mid-2027.",
+      "errorCodes": []
+    },
+    "terafab": {
+      "status": "ok",
+      "filed": 2,
+      "queries": 6,
+      "fetched": 16,
+      "considered": 9,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    },
+    "jobPostings": {
+      "status": "ok",
+      "filed": 3,
+      "queries": 6,
+      "fetched": 16,
+      "considered": 10,
+      "skipped": 7,
+      "lintErrors": 0,
+      "lintWarnings": 0,
+      "skipReason": null,
+      "errorCodes": []
+    }
+  },
+  "lint": {
+    "rawErrors": 0,
+    "rawWarnings": 2,
+    "report": "/Users/gonzalosolis/Research/research/logs/2026-11-28/lint-raw.json",
+    "curatedErrors": 0,
+    "curatedWarnings": 0,
+    "curatedReport": "/Users/gonzalosolis/Research/research/logs/2026-11-28/lint-curated.json"
+  },
+  "coverage": {
+    "status": "ok",
+    "candidates": 10,
+    "covered": 8,
+    "ignored": 0,
+    "gapCount": 2,
+    "queries": 6,
+    "gaps": [
+      {
+        "title": "Japan Cybercab trademark covers peer-to-peer rentals; no service is announced",
+        "url": "https://teslanorth.com/2026/11/28/tesla-cybercab-japan-trademark-peer-to-peer-rentals/",
+        "likelyCategory": "cybercab"
+      },
+      {
+        "title": "U.S. promo APR on five Model 3 and Model Y trims rises to 2.99% from 2.49%",
+        "url": "https://teslanorth.com/2026/11/24/tesla-model-3-model-y-financing-2-99-apr-us/",
+        "likelyCategory": "productionDelivery"
+      }
+    ]
+  },
+  "curator": {
+    "accepted": 25,
+    "duplicatesRemoved": 0,
+    "sentimentCorrected": 0,
+    "weakClaimsRejected": 0,
+    "totalKeyChanges": 25,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "errorCodes": [],
+    "skipReason": null,
+    "trends": 4
+  }
+}

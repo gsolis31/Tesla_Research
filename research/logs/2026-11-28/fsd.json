@@ -1,0 +1,194 @@
+{
+  "categoryKey": "fsd",
+  "date": "2026-11-28",
+  "filed": 3,
+  "skipReason": null,
+  "status": "ok",
+  "searchLog": {
+    "queries": [
+      {
+        "q": "Tesla FSD approval Europe regulatory November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla FSD supervised homologation OR NHTSA OR Korea OR Italy site:teslarati.com OR site:teslanorth.com November 2026",
+        "tool": "web_search",
+        "hits": 8
+      },
+      {
+        "q": "Tesla assisted driving EU country approval November 21 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "NHTSA Tesla FSD investigation OR probe November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "Tesla FSD Korea exemption OR Japan OR UK OR Australia approval November 2026",
+        "tool": "web_search",
+        "hits": 6
+      },
+      {
+        "q": "\"Tesla\" \"FSD\" (RDW OR KBA OR NHTSA OR \"assisted driving\") after:2026-11-20",
+        "tool": "web_search",
+        "hits": 8
+      }
+    ],
+    "fetched": [
+      {
+        "url": "https://electrek.co/2026/11/25/eu-delays-tesla-fsd-vote-december-15-tcmv/",
+        "kept": false,
+        "reason": "Tier 2 corroboration of the Commission date slip; not used as the source"
+      },
+      {
+        "url": "https://www.heise.de/en/news/Tesla-Assisted-Driving-EU-decision-delayed-until-Dec-15-11539260.html",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.electrive.com/2026/11/26/eu-postpones-discussion-on-tesla-assisted-driving/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/28/dutch-regulator-tesla-fsd-safety-monitoring/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://teslanorth.com/2026/11/24/mercedes-germany-driving-assist-tesla-fsd/",
+        "kept": false,
+        "reason": "Mercedes KBA approval announced 20 Nov; no new Tesla Germany decision"
+      },
+      {
+        "url": "https://theautowire.com/2026/11/27/tesla-fsd-korea-exemption-two-page-filing/",
+        "kept": false,
+        "reason": "Restates the 20 Nov KOTSA refusal already filed; no resubmission this week"
+      },
+      {
+        "url": "https://www.wardsauto.com/news/tesla-faces-federal-probe-over-cybercab-rollout/829735/",
+        "kept": false,
+        "reason": "Page is dated 9 Sep 2026 and the Cybercab FMVSS query belongs to cybercab"
+      },
+      {
+        "url": "https://fsd-eu-tracker.de/en/",
+        "kept": false,
+        "reason": "Secondary tracker; underlying items filed from primary sources or already known"
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+        "kept": false,
+        "reason": "Reuters page blocked; used the CNA wire instead"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/11/25/eu-postpones-discussion-to-approve-teslas-self-driving-tech.html",
+        "kept": false,
+        "reason": "Access denied"
+      },
+      {
+        "url": "https://www.channelnewsasia.com/business/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-6585716",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.channelnewsasia.com/business/eu-postpones-discussion-approve-teslas-self-driving-tech-6581441",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://circabc.europa.eu/sd/a/cd7afd62-f795-4439-b14f-f7271f3fbd57/Draft%20Agenda%20TCMV%2015.12.2026.pdf",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.tesla-mag.com/en/tesla-fsd-italy-rollout-begun-ministry-statement/",
+        "kept": true,
+        "reason": null
+      },
+      {
+        "url": "https://www.bnr.nl/nieuws/mobiliteit/10616312/rdw-geen-relevante-incidenten-met-tesla-s-rijassistent",
+        "kept": true,
+        "reason": null
+      }
+    ],
+    "considered": [
+      {
+        "title": "EU Moves Assisted-Driving Meeting to Dec. 15 and Still Has Not Set a Vote",
+        "url": "https://www.channelnewsasia.com/business/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-6585716",
+        "decision": "file",
+        "reason": "Commission confirmed the slip from 1 December to 15 December, and the 24 November draft agenda marks the Tesla item with possible vote only"
+      },
+      {
+        "title": "Italy Ministry Says Assisted Driving Has Reached Some Drivers",
+        "url": "https://www.tesla-mag.com/en/tesla-fsd-italy-rollout-begun-ministry-statement/",
+        "decision": "file",
+        "reason": "New this week versus last week's not-live status, but only informal reports of some drivers"
+      },
+      {
+        "title": "Dutch Regulator Reports No Relevant Tesla Assisted-Driving Incident",
+        "url": "https://www.bnr.nl/nieuws/mobiliteit/10616312/rdw-geen-relevante-incidenten-met-tesla-s-rijassistent",
+        "decision": "file",
+        "reason": "New 28 November RDW comment; no rates, so reality stays neutral"
+      },
+      {
+        "title": "Tesla Assisted Driving (TAD) lands approval in Italy, its 12th EU country",
+        "url": "https://www.teslarati.com/tesla-assisted-driving-tad-lands-approval-italy-12th-eu-country",
+        "decision": "skip",
+        "reason": "seenUrl and last week's key change; approval dated 20 November"
+      },
+      {
+        "title": "Korea Says Tesla's FSD Exemption File Still Cannot Be Reviewed",
+        "url": "https://theautowire.com/2026/11/27/tesla-fsd-korea-exemption-two-page-filing/",
+        "decision": "skip",
+        "reason": "Same 20 November KOTSA refusal already filed; 15-day supplement clock is not a new decision and no resubmission landed this week"
+      },
+      {
+        "title": "Mercedes Gets German Driving Assist Approval While Tesla FSD Waits",
+        "url": "https://teslanorth.com/2026/11/24/mercedes-germany-driving-assist-tesla-fsd/",
+        "decision": "skip",
+        "reason": "Mercedes KBA approval was announced 20 November; Tesla still has no German recognition and no new Tesla decision"
+      },
+      {
+        "title": "Tesla faces federal probe over Cybercab rollout",
+        "url": "https://www.wardsauto.com/news/tesla-faces-federal-probe-over-cybercab-rollout/829735/",
+        "decision": "skip",
+        "reason": "Article is dated 9 September 2026, and Cybercab FMVSS certification is cybercab, not an FSD country approval"
+      },
+      {
+        "title": "Tesla FSD v15 Now Slows Down for Speed Cameras",
+        "url": "https://theautowire.com/2026/11/24/tesla-fsd-v15-adds-reality-view-and-slows-down-for-speed-cameras/",
+        "decision": "skip",
+        "reason": "Software release belongs to fsdv15; PE25012 is an existing probe with no new NHTSA action this week"
+      },
+      {
+        "title": "Which European countries have approved Tesla FSD? The full list of 12",
+        "url": "https://pasqualepillitteri.it/en/news/35950/tesla-fsd-europe-approved-countries-list",
+        "decision": "skip",
+        "reason": "22 November recap of the 20 November Italy approval; no new country"
+      },
+      {
+        "title": "RDW Requires Hands on the Wheel Above 130 km/h",
+        "url": "https://www.rdw.nl/en/news/2026/tesla-driver-assistance-system-receives-update",
+        "decision": "skip",
+        "reason": "seenUrl; 16 November update already filed"
+      }
+    ],
+    "metricCandidates": [
+      {
+        "series": "fsdApprovals",
+        "count": 12,
+        "decision": "reject",
+        "reason": "Twelve is a recap of national recognitions that already includes Italy, filed 20 November, plus earlier countries. No new country was approved from 21 to 28 November. The tracked active series is still 6, last Denmark on 9 June; writing 12 would backfill old approvals."
+      },
+      {
+        "series": "fsdApprovals",
+        "count": 28.7,
+        "decision": "reject",
+        "reason": "Tracker population share, not an fsdApprovals country count, and it did not change because no new state was added this week."
+      }
+    ]
+  }
+}
